@@ -2,3 +2,9 @@
 *.env
 .env.*
 *.html
+
+# Published GitHub Pages HTML (edition + redirect)
+!index.html
+!laatste.html
+!2026-*.html
+!achtergrond/**/*.html
