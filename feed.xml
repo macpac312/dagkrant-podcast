@@ -1,57 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nieuwsstation Dagkrant</title>
+    <title>De Dagkrant</title>
     <link>https://macpac312.github.io/dagkrant-podcast</link>
-    <description>Persoonlijk nieuwsstation — dagelijkse briefing van Marc, automatisch gegenereerd.</description>
-    <language>nl-NL</language>
-    <lastBuildDate>Tue, 01 Sep 2026 05:00:00 +0000</lastBuildDate>
-    <itunes:author>Marc van Marrewijk</itunes:author>
-    <itunes:summary>Persoonlijk nieuwsstation — dagelijkse briefing van Marc, automatisch gegenereerd.</itunes:summary>
-    <itunes:explicit>no</itunes:explicit>
+    <atom:link href="https://macpac312.github.io/dagkrant-podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Ochtendpodcast bij De Dagkrant (Marit en Max).</description>
+    <language>nl-nl</language>
+    <lastBuildDate>Tue, 01 Sep 2026 19:29:45 +0000</lastBuildDate>
     <itunes:category text="News"/>
-    <itunes:type>episodic</itunes:type>
+    <itunes:author>De Dagkrant</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
     <item>
-      <title>Nieuwsstation Dagkrant 01-09-2026 (v01)</title>
-      <description>Persoonlijke nieuwsbriefing van 2026-09-01 — gegenereerd door Nieuwsstation.</description>
-      <pubDate>Tue, 01 Sep 2026 04:58:04 +0000</pubDate>
-      <guid isPermaLink="false">nieuwsstation-2026-09-01-01</guid>
-      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-01_01.mp3" length="4530477" type="audio/mpeg"/>
-      <itunes:duration>12:35</itunes:duration>
-      <itunes:author>Marc van Marrewijk</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
+      <title>De Dagkrant — 2026-09-01</title>
+      <guid isPermaLink="false">2026-09-01_01.mp3</guid>
+      <pubDate>Tue, 01 Sep 2026 07:00:00 +0000</pubDate>
+      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-01_01.mp3" length="6176530" type="audio/mpeg"/>
     </item>
     <item>
-      <title>Nieuwsstation Dagkrant 31-08-2026 (v01)</title>
-      <description>Persoonlijke nieuwsbriefing van 2026-08-31 — gegenereerd door Nieuwsstation.</description>
-      <pubDate>Mon, 31 Aug 2026 16:08:02 +0000</pubDate>
-      <guid isPermaLink="false">nieuwsstation-2026-08-31-01</guid>
+      <title>De Dagkrant — 2026-08-31</title>
+      <guid isPermaLink="false">2026-08-31_01.mp3</guid>
+      <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-08-31_01.mp3" length="9369320" type="audio/mpeg"/>
-      <itunes:duration>16:14</itunes:duration>
-      <itunes:author>Marc van Marrewijk</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
-      <title>Nieuwsstation Dagkrant 30-08-2026 (v02)</title>
-      <description>Persoonlijke nieuwsbriefing van 2026-08-30 — gegenereerd door Nieuwsstation.</description>
-      <pubDate>Mon, 31 Aug 2026 04:52:30 +0000</pubDate>
-      <guid isPermaLink="false">nieuwsstation-2026-08-30-02</guid>
+      <title>De Dagkrant — 2026-08-30</title>
+      <guid isPermaLink="false">2026-08-30_02.mp3</guid>
+      <pubDate>Sun, 30 Aug 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-08-30_02.mp3" length="5131846" type="audio/mpeg"/>
-      <itunes:duration>10:27</itunes:duration>
-      <itunes:author>Marc van Marrewijk</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
-      <title>Nieuwsstation Dagkrant 30-08-2026 (v01)</title>
-      <description>Persoonlijke nieuwsbriefing van 2026-08-30 — gegenereerd door Nieuwsstation.</description>
-      <pubDate>Sun, 30 Aug 2026 15:21:44 +0000</pubDate>
-      <guid isPermaLink="false">nieuwsstation-2026-08-30-01</guid>
+      <title>De Dagkrant — 2026-08-30</title>
+      <guid isPermaLink="false">2026-08-30_01.mp3</guid>
+      <pubDate>Sun, 30 Aug 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-08-30_01.mp3" length="9007472" type="audio/mpeg"/>
-      <itunes:duration>15:32</itunes:duration>
-      <itunes:author>Marc van Marrewijk</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
 </rss>
