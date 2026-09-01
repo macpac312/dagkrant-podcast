@@ -3278,7 +3278,7 @@ function _buildPanel(innerHtml,saveData){
       + '</div>';
     document.body.appendChild(_readerPanel);
     requestAnimationFrame(function() { if (_readerPanel) _readerPanel.classList.add('open'); });
-    fetch('http://127.0.0.1:7432/article', {
+    fetch('/article', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({url: saveData.url, title: saveData.title || ''})
@@ -3394,7 +3394,7 @@ function openBg(id,ev){
 
 // ─── On-demand achtergrond via Nieuwsstation API ───────────────────────────
 var _bgCache={};
-var API_URL='http://127.0.0.1:7432';
+var API_URL='';
 
 function generateBg(btn,ev){
   if(ev)ev.stopPropagation();
@@ -3458,7 +3458,7 @@ function openKvDigest(digest, title) {
   if (!digest) return;
   var loadHtml = '<p style="text-align:center;color:var(--t3);padding:2rem">⏳ Digest laden…</p>';
   openKvLeftPanel(title || digest, '📅 Archief — ' + (digest.slice(0,10) || ''), loadHtml);
-  fetch('http://127.0.0.1:7432/vault-digest', {
+  fetch('/vault-digest', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({digest: digest})
@@ -3557,7 +3557,7 @@ function _startApiServer(onDone) {
   try {
     var spawn = require('child_process').spawn;
     var home  = process.env.HOME || '/home/marcel';
-    var check = spawn('nc', ['-z', '-w1', '127.0.0.1', '7432'], { stdio: 'ignore' });
+    var check = spawn('nc', ['-z', '-w1', '', '7432'], { stdio: 'ignore' });
     check.on('close', function(code) {
       if (code !== 0) {
         var proc = spawn('python3', [home + '/nieuwsstationGrok/src/api_server.py'], {
@@ -3801,7 +3801,7 @@ function _loadAchtergrondSuggesties(wrap, force) {
   box.innerHTML = '<span class="ach-chat-loading">' + (force ? 'Nieuwe ' : '') + 'Suggesties laden…</span>';
   refreshBtn.disabled = true;
 
-  fetch('http://127.0.0.1:7432/achtergrond-suggesties', {
+  fetch('/achtergrond-suggesties', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
@@ -3858,7 +3858,7 @@ function _postAchtergrondVraag(wrap, vraag) {
     + '<div class="ach-chat-thinking">⏳ Grok denkt na… (' + verwacht + ')</div>';
   sendBtn.disabled = true; ta.disabled = true;
 
-  fetch('http://127.0.0.1:7432/achtergrond-chat', {
+  fetch('/achtergrond-chat', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
@@ -4014,7 +4014,7 @@ function _scheduleDeepPrewarm(title, summary, srcs, related, stillOpenFn, deepPi
     }
     window._deepPrewarmState[key] = 'gen';
     _setDeepDot(deepPillFn, 'gen');
-    fetch('http://127.0.0.1:7432/background', {
+    fetch('/background', {
       method: 'POST', headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({title: title, summary: summary, sources: srcs || [], related_articles: related || [], mode: 'deep', model: model, effort: effort, datum_iso: (typeof DAGKRANT_DATE!=='undefined'?DAGKRANT_DATE:''), prewarm: true})
     })
@@ -4161,7 +4161,7 @@ function _handleBgGenClick(btn, e) {
     }).then(function(r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); });
   }
   postReq('/api/bg-request/').catch(function() {
-    return postReq('http://127.0.0.1:4317/api/bg-request/');
+    return postReq('/api/bg-request/');
   }).then(function(d) {
     if (d && d.html) showHtml(d.html);
   }).catch(function() {});
@@ -4338,7 +4338,7 @@ function _fetchBgFor(genBtn) {
         }).then(function(r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); });
       }
       postReq('/api/bg-request/').catch(function() {
-        return postReq('http://127.0.0.1:4317/api/bg-request/');
+        return postReq('/api/bg-request/');
       }).then(function(d) {
         if (d && d.html && showHtml(d.html)) return;
         var tries = 0;
@@ -4444,7 +4444,7 @@ function generateKruisverbandVisual(e) {
   btn.textContent = '⏳ Verbanden worden geanalyseerd...';
 
   var doFetch = function() {
-    return fetch('http://127.0.0.1:7432/kruisverband-visual', {
+    return fetch('/kruisverband-visual', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(payload)
@@ -4577,7 +4577,7 @@ function _toggleTranslate() {
   if (_readerOrigHtml === null) return;
   btn.disabled = true;
   btn.textContent = '⏳…';
-  fetch('http://127.0.0.1:7432/translate', {
+  fetch('/translate', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({html: _readerOrigHtml})
@@ -4692,7 +4692,7 @@ function openReader(card, e) {
     }).then(function(r) { return r.json(); });
   }
   _postArticle('/api/article/').catch(function() {
-    return _postArticle('http://127.0.0.1:4317/api/article/');
+    return _postArticle('/api/article/');
   }).then(function(data) {
       if (!_artPanel || !_artPanel.parentNode) return;
       var inner = _artPanel.querySelector('.reader-inner');
