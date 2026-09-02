@@ -1,0 +1,21 @@
+{
+  "title": "OpenAI’s Astra komt eraan — en is ‘critical’ in cyber",
+  "summary": "Eerste model dat de hoogste cybersecurity-drempel haalt. Toegang beperkt. Ontwikkeling vertraagd na de Hugging Face-hack. Wired, CNBC, TechCrunch.",
+  "sources": [
+    "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
+    "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
+    "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities/",
+    "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-02",
+  "slug": "openais-astra-komt-eraan-en-is-critical-in-cyber",
+  "tts_slug": "openais-astra-komt-eraan-en-is-critical-in-cyber",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-02T05:05:25",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-02/openais-astra-komt-eraan-en-is-critical-in-cyber.html",
+  "mode": "default"
+}
