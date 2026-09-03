@@ -1,0 +1,20 @@
+{
+  "title": "Gemini 3.8 Flash ‘werkt harder’ — en verbrandt meer tokens",
+  "summary": "Derde Flash-model in zes weken. The Verge: meer redeneerstappen. The Decoder: ~30% meer outputtokens, frontier-model blijft weg.",
+  "sources": [
+    "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+    "https://the-decoder.com/gemini-3-8-flash-is-googles-third-budget-model-in-six-weeks-while-frontier-models-remain-mia/",
+    "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-03",
+  "slug": "gemini-38-flash-werkt-harder-en-verbrandt-meer-tokens",
+  "tts_slug": "gemini-38-flash-werkt-harder-en-verbrandt-meer-tokens",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-03T03:21:42",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-03/gemini-38-flash-werkt-harder-en-verbrandt-meer-tokens.html",
+  "mode": "default"
+}

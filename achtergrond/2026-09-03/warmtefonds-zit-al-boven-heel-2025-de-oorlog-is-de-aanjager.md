@@ -1,0 +1,51 @@
+---
+titel: "Warmtefonds zit al boven heel 2025 — de oorlog is de aanjager"
+url: https://nos.nl/l/2629387
+bron: huizenmarkt
+kind: huizenmarkt
+gegenereerd: 2026-09-03T03:21:00
+---
+
+huizenmarkt
+
+Warmtefonds zit al boven heel 2025 — de oorlog is de aanjager
+
+3 september 2026
+
+    - Het Nationaal Warmtefonds heeft in de eerste acht maanden van 2026 al ruim 22.000 verduurzamingsleningen verstrekt.
+
+    - Hiermee is het totaal aantal leningen van heel 2025 nu al overtroffen.
+
+    - De geopolitieke spanningen en de oorlog in het Midden-Oosten fungeren als directe aanjagers door oplopende energieprijzen.
+
+    - Naast de gasprijzen vormt de noodzaak tot woningisolatie de belangrijkste drijfveer voor huiseigenaren om actie te ondernemen.
+
+     Statistiek in het kort
+
+Periode: januari t/m augustus 2026 | Aantal verstrekte leningen: >22.000 (reeds hoger dan de definitieve jaarcijfers van 2025).
+
+Geopolitieke schokken direct voelbaar in de meterkast
+
+De Nederlandse huizenmarkt en verduurzamingssector reageren direct op de aanhoudende instabiliteit in het Midden-Oosten. Waar de energiecrisis van 2022 al zorgde voor een historische piek in de aandacht voor isolatie en warmtepompen, laat de recente militaire eskalatie in de regio opnieuw diepe sporen na op de termijnmarkten voor gas en olie. Huiseigenaren worden opnieuw geconfronteerd met het vooruitzicht van grillige en potentieel torenhoge energietarieven. Dit directe prikkelsysteem trekt diepe voren in het consumentengedrag; verduurzamen is niet langer een ideologische keuze voor het klimaat, maar een keiharde financiële noodzakelijkheid geworden om de maandlasten te beheersen.
+
+Recordaantallen bij het Nationaal Warmtefonds
+
+De cijfers van het Nationaal Warmtefonds onderstrepen deze urgentie in cijfers die alle eerdere prognoses doorbreken. Tot en met augustus van dit lopende jaar 2026 zijn er reeds ruim 22.000 leningen goedgekeurd en verstrekt aan Nederlandse woningbezitters. Daarmee is de productie van het volledige voorgaande jaar (2025) al in de eerste acht maanden van dit jaar overvleugeld. Het fonds, dat tegen gunstige voorwaarden geld leidt aan huishoudens die hun woning willen isoleren, voorzien van zonnepanelen of willen overstappen op een warmtepomp, ziet de aanvragen met de week binnenstromen. De capaciteit van de uitvoerende instanties staat hierdoor onder aanzienlijke druk, hoewel de politieke wens om huishoudensfinanciering breed toegankelijk te houden vooralsnog prioriteit krijgt.
+
+     Vergelijking volume
+
+Jaar 2025: Totaal aantal leningen over 12 maanden < 2026: Totaal aantal leningen bereikt in 8 maanden reeds de grens van 22.000+.
+
+Isoleren als buffer tegen de volgende crisis
+
+In de praktijk blijkt met name isolatiemateriaal — spouwmuurisolatie, HR++ glas en dakisolatie — de primaire keuze van de consument. Waar de aanschaf van een warmtepomp soms vraagt om ingrijpende verbouwingen en specifieke technische randvoorwaarden, biedt het aanpakken van de schil van de woning een direct en permanent rendement. Het principe van 'de warmste en goedkoopste energie is de energie die je niet gebruikt' domineert de adviezen van energiecoaches en hypotheekverstrekkers. De angst voor blijvend dure fossiele brandstoffen fungeert in deze dynamiek als de ultieme katalysator voor een versnelde energietransitie van de bestaande woningvoorraad.
+
+Toekomstperspectief voor de huizenmarkt
+
+De versnelde verduurzaming heeft inmiddels ook directe consequenties voor de waarde en verkoopbaarheid van vastgoed in Nederland. Woningen met een slecht energielabel dreigen definitief op een economisch spoor te raken waar kopers voor weglopen of aanzienlijke prijskortingen bedingen. De overheid probeert via het Warmtefonds te voorkomen dat alleen welgestelde huiseigenaren in staat zijn om deze noodzakelijke ingrepen te bekostigen. Toch blijft de vraag hoe lang de staatsfinanciën deze subsidiestroom en gunstige kredietverlening kunnen blijven voeden in een tijd waarin ook op andere begrotingsposten stevige keuzes gemaakt moeten worden. De komende herfst en winter zullen uitwijzen of de aanvraaggolf aanhoudt.
+
+Conclusie
+
+De explosieve groei van het aantal verstrekte leningen via het Nationaal Warmtefonds in 2026 toont aan hoe extern gedreven geopolitieke crises direct ingrijpen in het Nederlandse huishoudboekje. Door de oorlog in het Midden-Oosten en de daarmee samenhangende vrees voor schommelende energieprijzen, grijpen tienduizenden huiseigenaren naar de isolatieknop. Isoleren is de nieuwe, noodzakelijke pompprijs geworden om grip te houden op de toekomst.
+
+ Bronnen: NOS (nos.nl/l/2629387), InFinance (infinance.nl/artikel/warmtefonds-verstrekte-dit-jaar-meer-leningen-dan-in-heel-2025/)

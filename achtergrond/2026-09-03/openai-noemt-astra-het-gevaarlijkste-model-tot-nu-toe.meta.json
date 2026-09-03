@@ -1,0 +1,20 @@
+{
+  "title": "OpenAI noemt Astra het gevaarlijkste model tot nu toe",
+  "summary": "Rating: critical cyber. Recurrent depth, ketens die buiten de gebruikelijke redeneerstap vallen. Onderzoekers vrezen dat monitoren van de chain-of-thought niet meer volstaat.",
+  "sources": [
+    "https://the-decoder.com/openai-calls-astra-its-most-dangerous-model-yet-watching-what-it-does-is-only-getting-harder/",
+    "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
+    "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-03",
+  "slug": "openai-noemt-astra-het-gevaarlijkste-model-tot-nu-toe",
+  "tts_slug": "openai-noemt-astra-het-gevaarlijkste-model-tot-nu-toe",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-03T03:21:49",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-03/openai-noemt-astra-het-gevaarlijkste-model-tot-nu-toe.html",
+  "mode": "default"
+}
