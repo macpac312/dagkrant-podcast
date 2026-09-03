@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>De Dagkrant — donderdag 3 september 2026</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -354,26 +354,70 @@ body.split .container,body.split .masthead-inner{max-width:100%}
 }
 /*ns-reader-phone-css*/
 .bg-panel.reader-swiping{transition:none}
-.bg-panel.reader-fullscreen{
-  position:fixed;inset:0;left:0;right:0;top:0;bottom:0;
-  width:100%;height:100%;height:100dvh;max-width:none;
-  border-left:none;box-shadow:none;z-index:1200;touch-action:pan-y
+html.reader-fullscreen,body.reader-fullscreen{
+  overflow:hidden;overscroll-behavior:none;overscroll-behavior-x:none;
+  touch-action:none;height:100%;height:100dvh
 }
-body.reader-fullscreen{overflow:hidden;overscroll-behavior:none}
-.bg-panel.reader-fullscreen .bg-panel-header{padding:.7rem 2.8rem .55rem .9rem}
-.bg-panel.reader-fullscreen .bg-panel-close{position:absolute;top:.5rem;right:.5rem;z-index:3}
+body.reader-fullscreen .container,
+body.reader-fullscreen .masthead,
+body.reader-fullscreen .masthead-inner,
+body.reader-fullscreen .breaking,
+body.reader-fullscreen .footer{visibility:hidden}
+.bg-panel.reader-fullscreen,body.reader-fullscreen .bg-panel{
+  position:fixed;inset:0;left:0;right:0;top:0;bottom:0;
+  width:100%;max-width:none;height:auto;
+  min-height:100%;min-height:100vh;min-height:100dvh;min-height:-webkit-fill-available;
+  background:var(--card);border:none;border-left:none;box-shadow:none;
+  z-index:10000;touch-action:pan-y;overscroll-behavior:contain
+}
+.bg-panel.reader-fullscreen .bg-panel-header{
+  padding-top:max(.7rem,env(safe-area-inset-top,0px));
+  padding-right:max(2.8rem,env(safe-area-inset-right,0px));
+  padding-bottom:.55rem;
+  padding-left:max(.9rem,env(safe-area-inset-left,0px))
+}
+.bg-panel.reader-fullscreen .bg-panel-close{
+  position:absolute;top:max(.5rem,env(safe-area-inset-top,0px));
+  right:max(.5rem,env(safe-area-inset-right,0px));z-index:3
+}
 .bg-panel.reader-fullscreen .bg-panel-header > div{flex-wrap:wrap;padding-right:.2rem}
+.bg-panel.reader-fullscreen .bg-inner,.bg-panel.reader-fullscreen .reader-inner{
+  padding-left:max(1.5rem,env(safe-area-inset-left,0px));
+  padding-right:max(2rem,env(safe-area-inset-right,0px));
+  padding-bottom:max(2.5rem,env(safe-area-inset-bottom,0px))
+}
+@media(max-width:900px){
+html.reader-fullscreen .bg-panel,body.reader-fullscreen .bg-panel,
+.bg-panel.reader-fullscreen,.bg-panel.reader-fullscreen.open{
+  position:fixed;inset:0;left:0;right:0;top:0;bottom:0;
+  width:100%;max-width:none;height:auto;
+  min-height:100%;min-height:100vh;min-height:100dvh;min-height:-webkit-fill-available;
+  background:var(--card);border:none;border-left:none;box-shadow:none;z-index:10000
+}
+}
 @media(max-width:768px){
-body.reader-fullscreen{overflow:hidden;overscroll-behavior:none}
+html.reader-fullscreen,body.reader-fullscreen{
+  overflow:hidden;overscroll-behavior:none;overscroll-behavior-x:none;
+  touch-action:none;height:100%;height:100dvh
+}
 .bg-panel{
   position:fixed;inset:0;left:0;right:0;top:0;bottom:0;
-  width:100%;height:100%;height:100dvh;max-width:none;
-  border-left:none;box-shadow:none;z-index:1200;touch-action:pan-y;
-  transform:translateX(100%)
+  width:100%;max-width:none;height:auto;
+  min-height:100%;min-height:100vh;min-height:100dvh;min-height:-webkit-fill-available;
+  background:var(--card);border:none;border-left:none;box-shadow:none;
+  z-index:10000;touch-action:pan-y;transform:translateX(100%)
 }
 .bg-panel.open{transform:translateX(0)}
-.bg-panel .bg-panel-header{padding:.7rem 2.8rem .55rem .9rem}
-.bg-panel .bg-panel-close{position:absolute;top:.5rem;right:.5rem;z-index:3}
+.bg-panel .bg-panel-header{
+  padding:.7rem 2.8rem .55rem .9rem;
+  padding-top:max(.7rem,env(safe-area-inset-top,0px));
+  padding-left:max(.9rem,env(safe-area-inset-left,0px));
+  padding-right:max(2.8rem,env(safe-area-inset-right,0px))
+}
+.bg-panel .bg-panel-close{
+  position:absolute;top:max(.5rem,env(safe-area-inset-top,0px));
+  right:max(.5rem,env(safe-area-inset-right,0px));z-index:3
+}
 .bg-panel .bg-panel-header > div{flex-wrap:wrap}
 }
 /*ns-reader-phone-css-end*/
@@ -5111,23 +5155,61 @@ function _readerIsPhone() {
   } catch (err) {}
   return window.innerWidth <= 768;
 }
+var _readerHistPushed = false;
+var _readerIgnorePop = false;
+var _readerClosingFromPop = false;
+function _readerSetFsClass(on) {
+  var root = document.documentElement;
+  if (on) {
+    if (root) root.classList.add('reader-fullscreen');
+    document.body.classList.add('reader-fullscreen');
+  } else {
+    if (root) root.classList.remove('reader-fullscreen');
+    document.body.classList.remove('reader-fullscreen');
+  }
+}
+function _readerPushHistory() {
+  if (_readerHistPushed) return;
+  try {
+    history.pushState({nsReader:1}, '');
+    _readerHistPushed = true;
+  } catch (err) {}
+}
+function _readerConsumeHistory() {
+  if (!_readerHistPushed) return;
+  _readerHistPushed = false;
+  _readerIgnorePop = true;
+  try { history.back(); } catch (err) {}
+  setTimeout(function() { _readerIgnorePop = false; }, 500);
+}
 function _readerOnOpen(panel) {
   if (!panel) return;
   if (_readerIsPhone()) {
-    document.body.classList.add('reader-fullscreen');
+    _readerSetFsClass(true);
     panel.classList.add('reader-fullscreen');
+    _readerPushHistory();
   } else {
-    document.body.classList.remove('reader-fullscreen');
+    _readerSetFsClass(false);
     panel.classList.remove('reader-fullscreen');
   }
 }
 function _readerOnClose() {
-  document.body.classList.remove('reader-fullscreen');
+  _readerSetFsClass(false);
+  if (_readerClosingFromPop) {
+    _readerClosingFromPop = false;
+    _readerHistPushed = false;
+    return;
+  }
+  setTimeout(function() {
+    var p = (typeof _readerPanel !== 'undefined') ? _readerPanel : null;
+    if (p && p.classList.contains('open')) return;
+    _readerConsumeHistory();
+  }, 0);
 }
 (function _nsReaderPhone() {
   if (window._nsReaderPhoneBound) return;
   window._nsReaderPhoneBound = true;
-  var EDGE = 24, THRESHOLD = 72, ANGLE = 1.15;
+  var EDGE = 28, THRESHOLD = 72, ANGLE = 1.15;
   var startX = 0, startY = 0, tracking = false, locked = false, lastDx = 0, pid = null;
   function panelEl() {
     return (typeof _readerPanel !== 'undefined') ? _readerPanel : null;
@@ -5150,6 +5232,7 @@ function _readerOnClose() {
     var t = e.changedTouches && e.changedTouches[0];
     if (!t) return;
     if (t.clientX > EDGE) return;
+    if (e.cancelable) e.preventDefault();
     tracking = true;
     locked = false;
     startX = t.clientX;
@@ -5201,7 +5284,16 @@ function _readerOnClose() {
     p.style.transition = '';
     if (shouldClose && typeof _closeReader === 'function') _closeReader();
   }
-  document.addEventListener('touchstart', onStart, {passive: true, capture: true});
+  document.addEventListener('touchstart', onStart, {passive: false, capture: true});
+  window.addEventListener('popstate', function() {
+    if (_readerIgnorePop) { _readerIgnorePop = false; return; }
+    var p = panelEl();
+    if (p && p.classList.contains('open')) {
+      _readerClosingFromPop = true;
+      _readerHistPushed = false;
+      if (typeof _closeReader === 'function') _closeReader();
+    }
+  });
   var origClose = (typeof _closeReader === 'function') ? _closeReader : null;
   _closeReader = function() {
     _readerOnClose();
