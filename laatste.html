@@ -273,6 +273,9 @@ body{--reader-fs:1}
 .bg-model-select{margin-left:.3rem;padding:.3rem .5rem;border:1.5px solid var(--border);background:var(--bg2);color:var(--t2);border-radius:999px;font-size:.74rem;font-weight:600;font-family:inherit;cursor:pointer;line-height:1}
 .bg-model-select:hover{border-color:var(--accent);color:var(--t1)}
 .bg-content{padding-top:.4rem}
+/* Zelfde kolommaat als .reader-article-body: volle split-view-regels lijken kleiner. */
+.bg-inner .bg-content,.bg-panel-left .bg-inner{max-width:40rem;margin:0 auto;font-family:'Source Serif 4',Georgia,'Times New Roman',serif;font-size:calc(1.125rem * var(--reader-fs,1));line-height:1.7;color:var(--t1)}
+.bg-panel-left .bg-content p,.bg-panel-left .bg-content li{font-family:'Source Serif 4',Georgia,'Times New Roman',serif;font-size:calc(1.125rem * var(--reader-fs,1));line-height:1.7;margin:0 0 1.05rem;color:var(--t1)}
 /* Reader-panel header: gewone + deep dive knop states */
 .reader-bg-btn:not([disabled]){opacity:1!important}
 .reader-bg-btn-active{box-shadow:0 0 0 2px var(--accent),0 0 0 4px rgba(0,0,0,.1);transform:scale(.97)}
