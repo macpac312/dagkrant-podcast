@@ -1,0 +1,40 @@
+---
+titel: "AFM: spaarbuffer eerst — en Heuvelman krijgt een lintje"
+url: https://www.afm.nl/nl-nl/sector/actueel/2026/sep/art-blog-bakker
+bron: regulatoir
+kind: regulatoir
+gegenereerd: 2026-09-04T03:25:55
+---
+
+- De Autoriteit Financiële Markten (AFM) benadrukt in een recente publicatie dat het opbouwen van een adequate spaarbuffer prioriteit moet krijgen boven direct consumeren.
+
+    - Jos Heuvelman, een invloedrijk gezicht binnen het Nederlandse financiële toezicht, heeft bij zijn vertrek bij de AFM een koninklijke onderscheiding ontvangen.
+
+    - De timing van het toezichtblog en de eervolle aftocht van Heuvelman vallen samen in een periode waarin de financiële sector zoekt naar balans tussen consumentenbescherming en innovatie.
+
+    - Het toezichthoudende beleid blijft onverminderd inzetten op financieel welzijn en het vroegtijdig signaleren van kwetsbaarheden bij huishoudens.
+
+         2026
+         Jaar van de beleidswissel en het vertrek van Jos Heuvelman na een lange loopbaan in het toezicht
+
+De paradox van financiële rust en toezicht
+
+Het lijkt een wonderlijke combinatie in de communicatie vanuit de woontoren van de Autoriteit Financiële Markten: een fundamenteel pleidooi voor het prioriteren van een solide spaarbuffer, direct gekoppeld aan de publieke eerbetuiging voor een vertrekkend kopstuk. Toch snijdt het mes aan twee kanten. Waar het blog over de spaarbuffer de rauwe economische realiteit van de gemiddelde burger adresseert – die door aanhoudende prijsnivellering en inflatoire golven moeite heeft om reserves aan te leggen – markeert het vertrek van Jos Heuvelman het einde van een tijdperk waarin het Nederlandse toezicht vorm kreeg. De AFM opereert hier op het snijvlak van strenge normstelling en maatschappelijke empathie. De boodschap is helder: voordat we spreken over vermogensopbouw of risicovolle investeringen, moet het fundament op orde zijn. Het toezichtlichaam legt de bal nadrukkelijk bij de individuele consument, maar wijst tegelijkertijd op de verantwoordelijkheid van financiële instellingen om geen roekeloos leengedrag te stimuleren.
+
+De nalatenschap van een bestuurder
+
+De koninklijke onderscheiding die Jos Heuvelman ten deel viel, onderstreept het gewicht van zijn bestuurlijke decennia binnen het financiële landschap. Heuvelman stond bekend als een pragmaticus binnen de kaders van de wet, iemand die begreep dat regels geen doel op zich zijn, maar een middel om het vertrouwen in het financiële stelsel te waarborgen. Onder zijn vleugels veranderde de AFM van karakter: van een reactieve wetshandhaver naar een datagestuurde waakhond die gedragswetenschappen inzette om misstanden te voorkomen nog voordat ze escaleerden. Zijn vertrek laat een vacuüm achter in een tijd waarin de sector opnieuw op de proef wordt gesteld door geopolitieke spanningen, digitalisering van het betalingsverkeer en de opkomst van crypto-activa. Het onderscheid dat hem werd toegekend is dan ook niet alleen een persoonlijke triomf, maar symboliseert de waardering vanuit de staat voor decennialang institutioneel bakenwerk.
+
+Macro-economische realiteit en de buffer
+
+Dat de AFM juist nu de nadruk legt op de spaarbuffer, is geen toeval. Uit recente marktdata blijkt dat de marges bij huishoudens onder druk blijven staan, ondanks brede loonstijgingen. De verschuiving van vaste lasten en de veranderende rentestand maken dat de liquiditeit van de gemiddelde Nederlander kwetsbaar is. De toezichthouder waarschuwt indirect voor de valkuil van de schijnzekerheid. Wie leeft bij de gratie van de maandelijkse inkomstenstroom zonder buffer, is bij een onverwachte economische schok direct overgeleverd aan dure consumptief kredieten. Door dit thema prominent te agenderen, probeert de AFM de mentaliteit van de consument te sturen naar defensieve voorzichtigheid. Het sluit naadloos aan bij de bredere Europese trend waarin financiële educatie en 'resilience' de hoekstenen vormen van consumentenbescherming.
+
+De synthese van gedrag en beleid
+
+Het toezicht van morgen vraagt om een andere心态 van zowel instellingen als burgers. Waar Heuvelman in zijn loopbaan voornamelijk stuurde op de institutionele architectuur, dwingt de huidige realiteit de AFM tot een micro-aanpak: het beïnvloeden van keukentafelbeslissingen. Het blog over de spaarbuffer laat zien dat de toezichthouder zijn toon aanpast aan een tijd van economische onzekerheid. Het is een zachtere, meer educatieve toon, zonder dat er aan tanden wordt ingeboet. De combinatie van het afscheid van een invloedrijke bestuurder en de publicatie van dit normatieve stuk laat zien dat de AFM in transitie is. Het verleden wordt geëerd met een lintje, terwijl de blik van de organisatie direct weer strak op de horizon wordt gericht: de financiële weerbaarheid van de Nederlander in een onvoorspelbare wereld.
+
+Conclusie
+
+De recente publicaties en personele wisselingen bij de Autoriteit Financiële Markten tonen een organisatie die traditie en vernutting met elkaar probeert te verzoenen. Terwijl het vertrek van Jos Heuvelman het einde markeert van een stabiele periode in het toezichtbestuur, wijst het klemmende advies over de spaarbuffer vooruit naar de uitdagingen van een economisch volatiele toekomst. De rode draad blijft onveranderd: bescherming door middel van inzicht, discipline en realisme.
+
+ Bronnen: AFM (Toezichtblog Jos Bakker / AFM), InFinance (artikel over koninklijke onderscheiding Jos Heuvelman).

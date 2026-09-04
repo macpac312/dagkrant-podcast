@@ -1,0 +1,23 @@
+{
+  "title": "OpenAI brengt GPT-6 Astra uit — en noemt het het AGI-tijdperk",
+  "summary": "Brockman: generational leap. Eerst cybersecurity-partners, daarna Plus en Enterprise. Wired: het model gebruikt een computer beter dan een mens. Wired ook: niemand zegt waarom ChatGPT, Claude en Grok tegelijk uitvielen.",
+  "sources": [
+    "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era/",
+    "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
+    "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+    "https://tweakers.net/nieuws/251754/openai-brengt-gpt-6-astra-uit-en-suggereert-dat-het-agi-is.html",
+    "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+    "https://simonwillison.net/2026/Sep/3/gpt6-astra/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-04",
+  "slug": "openai-brengt-gpt-6-astra-uit-en-noemt-het-het-agi-tijdperk",
+  "tts_slug": "openai-brengt-gpt-6-astra-uit-en-noemt-het-het-agi-tijdperk",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-04T03:23:34",
+  "size_kb": 4,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-04/openai-brengt-gpt-6-astra-uit-en-noemt-het-het-agi-tijdperk.html",
+  "mode": "default"
+}
