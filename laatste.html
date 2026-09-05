@@ -399,9 +399,26 @@ body.reader-fullscreen .footer{visibility:hidden}
 .bg-panel-left.reader-fullscreen .bg-panel-header > div{flex-wrap:wrap;padding-right:.2rem}
 .bg-panel.reader-fullscreen .bg-inner,.bg-panel.reader-fullscreen .reader-inner,
 .bg-panel-left.bg-phone-fs .bg-inner,.bg-panel-left.reader-fullscreen .bg-inner{
-  padding-left:max(1.5rem,env(safe-area-inset-left,0px));
-  padding-right:max(2rem,env(safe-area-inset-right,0px));
+  padding-left:max(.75rem,env(safe-area-inset-left,0px));
+  padding-right:max(.75rem,env(safe-area-inset-right,0px));
   padding-bottom:max(2.5rem,env(safe-area-inset-bottom,0px))
+}
+/* Phone/fullscreen: fill the panel; keep a readable cap. Desktop split stays 40rem. */
+html.reader-fullscreen:not(.ns-fold-dual) .reader-kicker,
+html.reader-fullscreen:not(.ns-fold-dual) .reader-article-body,
+body.reader-fullscreen:not(.ns-fold-dual) .reader-kicker,
+body.reader-fullscreen:not(.ns-fold-dual) .reader-article-body,
+.bg-panel.reader-fullscreen .reader-kicker,
+.bg-panel.reader-fullscreen .reader-article-body{
+  max-width:min(46rem,100%);margin-left:0;margin-right:0;width:100%;
+  padding-left:.85rem;padding-right:.85rem
+}
+html.reader-fullscreen:not(.ns-fold-dual) .bg-inner .bg-content,
+html.reader-fullscreen:not(.ns-fold-dual) .bg-panel-left .bg-inner,
+body.reader-fullscreen:not(.ns-fold-dual) .bg-inner .bg-content,
+.bg-panel-left.bg-phone-fs .bg-inner,
+.bg-panel-left.bg-phone-fs .bg-content{
+  max-width:min(46rem,100%);margin-left:0;margin-right:0;width:100%
 }
 @media(max-width:900px){
 html.reader-fullscreen .bg-panel,body.reader-fullscreen .bg-panel,
@@ -451,6 +468,50 @@ html.reader-fullscreen,body.reader-fullscreen{
   right:max(.5rem,env(safe-area-inset-right,0px));z-index:3
 }
 .bg-panel .bg-panel-header > div,.bg-panel-left.bg-phone-fs .bg-panel-header > div{flex-wrap:wrap}
+}
+/* Unfolded fold / wide phone: two tiles. Desktop auto-fill unchanged above 1023px. */
+@media(min-width:600px) and (max-width:1023px){
+.article-grid,.ai-grid{grid-template-columns:1fr 1fr}
+}
+@media(horizontal-viewport-segments:2){
+.article-grid,.ai-grid{grid-template-columns:1fr 1fr}
+}
+/* Fold dual-pane: article right, achtergrond left. Beats max-width 768/900 fullscreen. */
+html.ns-fold-dual .bg-panel,body.ns-fold-dual .bg-panel,.bg-panel.fold-dual{
+  position:fixed;inset:0 0 0 50%;
+  width:auto;max-width:none;height:auto;
+  min-height:100%;min-height:100vh;min-height:100dvh;min-height:-webkit-fill-available;
+  background:var(--card);border:none;border-left:2px solid var(--border);
+  box-shadow:-8px 0 32px rgba(0,0,0,.25);
+  z-index:10000;touch-action:pan-y;transform:translateX(100%)
+}
+html.ns-fold-dual .bg-panel.open,body.ns-fold-dual .bg-panel.open,.bg-panel.fold-dual.open{transform:translateX(0)}
+html.ns-fold-dual .bg-panel-left,body.ns-fold-dual .bg-panel-left,.bg-panel-left.fold-dual{
+  position:fixed;inset:0 50% 0 0;
+  width:auto;max-width:none;height:auto;
+  min-height:100%;min-height:100vh;min-height:100dvh;min-height:-webkit-fill-available;
+  background:var(--card);border:none;border-right:2px solid var(--border);
+  box-shadow:8px 0 32px rgba(0,0,0,.25);
+  z-index:10001;touch-action:pan-y;transform:translateX(100%)
+}
+html.ns-fold-dual .bg-panel-left.open,body.ns-fold-dual .bg-panel-left.open,.bg-panel-left.fold-dual.open{transform:translateX(0)}
+html.ns-fold-dual .reader-kicker,html.ns-fold-dual .reader-article-body,
+html.ns-fold-dual .bg-inner .bg-content,html.ns-fold-dual .bg-panel-left .bg-inner{
+  max-width:none;margin-left:0;margin-right:0;width:100%;
+  padding-left:1rem;padding-right:1rem
+}
+html.ns-fold-dual .bg-panel .bg-inner,html.ns-fold-dual .bg-panel .reader-inner,
+html.ns-fold-dual .bg-panel-left .bg-inner{
+  padding-left:max(.75rem,env(safe-area-inset-left,0px));
+  padding-right:max(.75rem,env(safe-area-inset-right,0px))
+}
+@media(horizontal-viewport-segments:2){
+html.ns-fold-dual .bg-panel-left,body.ns-fold-dual .bg-panel-left,.bg-panel-left.fold-dual{
+  left:env(viewport-segment-left 0 0,0px);width:env(viewport-segment-width 0 0,50%);right:auto;inset:auto
+}
+html.ns-fold-dual .bg-panel,body.ns-fold-dual .bg-panel,.bg-panel.fold-dual{
+  left:env(viewport-segment-left 1 0,50%);width:env(viewport-segment-width 1 0,50%);right:auto;inset:auto
+}
 }
 /*ns-reader-phone-css-end*/
 
@@ -884,7 +945,7 @@ body,.masthead,.article-card,.expandable,.widget,.ai-card{transition:background 
         <div class="masthead-date">zaterdag 5 september 2026 | Hilversum, 13&deg;C ☀️</div>
         <h1>De Dagkrant</h1>
         <nav class="masthead-nav">
-            <a class="live" data-scroll="breaking">&#9679; Live</a><a class="" data-scroll="nederland">Nederland</a><a class="" data-scroll="wereld">Wereld</a><a class="" data-scroll="financieel">Financieel</a><a class="" data-scroll="regulatoir">Regulatoir</a><a class="" data-scroll="huizenmarkt">Huizenmarkt</a><a class="" data-scroll="sport">Sport</a><a class="" data-scroll="aitech">AI &amp; Tech</a><a class="" data-scroll="huawei">Huawei</a><a class="" data-scroll="xiaomi">Xiaomi</a><a class="" data-scroll="automatische-koffiemachines">automatische koffiemachines</a><a class="" data-scroll="grok">Grok</a><a class="" data-scroll="kruisverband">Analyse</a>
+            <a class="live" data-scroll="breaking">&#9679; Live</a><a class="" data-scroll="nederland">Nederland</a><a class="" data-scroll="wereld">Wereld</a><a class="" data-scroll="financieel">Financieel</a><a class="" data-scroll="regulatoir">Regulatoir</a><a class="" data-scroll="huizenmarkt">Huizenmarkt</a><a class="" data-scroll="sport">Sport</a><a class="" data-scroll="aitech">AI &amp; Tech</a><a class="" data-scroll="automatische-koffiemachines">automatische koffiemachines</a><a class="" data-scroll="huawei">Huawei</a><a class="" data-scroll="grok">Grok</a><a class="" data-scroll="xiaomi">Xiaomi</a><a class="" data-scroll="kruisverband">Analyse</a>
             <span class="theme-toggle">
                 <button onclick="setTheme('light')" title="Light mode" id="btn-light">&#9728;</button>
                 <button onclick="setTheme('dark')" title="Dark mode" id="btn-dark">&#9790;</button>
@@ -1817,374 +1878,6 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
 </div>
 
 
-<hr class="section-sep" id="huawei"/>
-<div class="section-head">
-  <span class="tag tag-analysis">Huawei</span>
-  <h2>Huawei</h2>
-  <div class="section-line"></div>
-  <button class="gen-all-btn" id="genall-huawei" onclick="_generateSectionBackgrounds('huawei', this)" title="Genereer achtergrond (Gemini 3.5 Flash-Lite) voor alle artikelen in deze sectie">&#128218; alle achtergronden</button>
-  
-</div>
-<div class="article-grid" id="grid-huawei">
-
-<div class="article-card" data-reader-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm" data-reader-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm." data-reader-teaser="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-reader-slug="review-van-de-huawei-pura-x-view-uniek-scherm-met-een-beeldv" data-reader-body="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-reader-bgid="bg-ond-huawei-0-review-van-de-huawei-pur" data-reader-bron="Vietnam.vn" data-reader-datum="29 aug" data-reader-tag="huawei" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur" data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm." data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur" data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm." data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Huawei</span>
-    <h3>Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm.</h3>
-    <p>Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn</p>
-    <div class="meta">Vietnam.vn &bull; 29 aug</div>
-    
-  </div>
-</div>
-
-<div class="article-card" data-reader-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei" data-reader-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon." data-reader-teaser="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-reader-slug="een-eerste-kennismaking-met-de-pura-x-view-huaweis-uniek-ont" data-reader-body="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-reader-bgid="bg-ond-huawei-1-een-eerste-kennismaking-" data-reader-bron="Vietnam.vn" data-reader-datum="28 aug" data-reader-tag="huawei" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-" data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon." data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-" data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon." data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Huawei</span>
-    <h3>Een eerste kennismaking met de Pura X View - Huawei's uniek ontworpen telefoon.</h3>
-    <p>Een eerste kennismaking met de Pura X View - Huawei's uniek ontworpen telefoon. Vietnam.vn</p>
-    <div class="meta">Vietnam.vn &bull; 28 aug</div>
-    
-  </div>
-</div>
-
-<div class="article-card" data-reader-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/" data-reader-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen" data-reader-teaser="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-reader-slug="huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je" data-reader-body="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-reader-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta" data-reader-bron="Androidworld.nl" data-reader-datum="26 aug" data-reader-tag="huawei" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta" data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen" data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-sources="Androidworld.nl" data-tag="huawei" data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta" data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen" data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-sources="Androidworld.nl" data-tag="huawei" data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Huawei</span>
-    <h3>Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen</h3>
-    <p>Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl</p>
-    <div class="meta">Androidworld.nl &bull; 26 aug</div>
-    
-  </div>
-</div>
-</div>
-
-<div class="bg-article" id="bg-ond-huawei-0-review-van-de-huawei-pur">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm.</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur"
-                data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm."
-                data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn"
-                data-sources="Vietnam.vn"
-                data-tag="huawei"
-                data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur"
-                data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm."
-                data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn"
-                data-sources="Vietnam.vn"
-                data-tag="huawei"
-                data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-article" id="bg-ond-huawei-1-een-eerste-kennismaking-">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon.</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-"
-                data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon."
-                data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn"
-                data-sources="Vietnam.vn"
-                data-tag="huawei"
-                data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-"
-                data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon."
-                data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn"
-                data-sources="Vietnam.vn"
-                data-tag="huawei"
-                data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-article" id="bg-ond-huawei-2-huawei-is-alweer-een-sta">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta"
-                data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen"
-                data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl"
-                data-sources="Androidworld.nl"
-                data-tag="huawei"
-                data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta"
-                data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen"
-                data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl"
-                data-sources="Androidworld.nl"
-                data-tag="huawei"
-                data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<hr class="section-sep" id="xiaomi"/>
-<div class="section-head">
-  <span class="tag tag-analysis">Xiaomi</span>
-  <h2>Xiaomi</h2>
-  <div class="section-line"></div>
-  <button class="gen-all-btn" id="genall-xiaomi" onclick="_generateSectionBackgrounds('xiaomi', this)" title="Genereer achtergrond (Gemini 3.5 Flash-Lite) voor alle artikelen in deze sectie">&#128218; alle achtergronden</button>
-  <button class="more-btn" id="morebtn-xiaomi" onclick="toggleMore('xiaomi')" title="Meer artikelen">meer &#9662;</button>
-</div>
-<div class="article-grid" id="grid-xiaomi">
-
-<div class="article-card" data-reader-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/" data-reader-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit" data-reader-teaser="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-reader-slug="dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-dan-ooit" data-reader-body="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-reader-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo" data-reader-bron="Android Planet" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Xiaomi</span>
-    <h3>Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit</h3>
-    <p>Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet</p>
-    <div class="meta">Android Planet &bull; 4 sep</div>
-    
-  </div>
-</div>
-
-<div class="article-card" data-reader-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html" data-reader-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk" data-reader-teaser="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-reader-slug="dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurri" data-reader-body="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-reader-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo" data-reader-bron="Drimble" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-sources="Drimble" data-tag="xiaomi" data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-sources="Drimble" data-tag="xiaomi" data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Xiaomi</span>
-    <h3>Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk</h3>
-    <p>Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble</p>
-    <div class="meta">Drimble &bull; 4 sep</div>
-    
-  </div>
-</div>
-
-<div class="article-card" data-reader-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/" data-reader-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand" data-reader-teaser="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-reader-slug="xiaomi-maakt-ifa-debuut-dit-zagen-we-op-de-gigantische-stand" data-reader-body="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-reader-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-" data-reader-bron="Android Planet" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-" data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand" data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-" data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand" data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Xiaomi</span>
-    <h3>Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand</h3>
-    <p>Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet</p>
-    <div class="meta">Android Planet &bull; 4 sep</div>
-    
-  </div>
-</div>
-<div class="extra-cards" id="more-xiaomi">
-
-<div class="article-card" data-reader-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp" data-reader-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP." data-reader-teaser="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-reader-slug="de-technologische-doorbraak-van-de-xiaomi-18-fold-een-ultrad" data-reader-body="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-reader-bgid="bg-ond-xiaomi-3-de-technologische-doorbr" data-reader-bron="Vietnam.vn" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
-  
-  <div class="article-body">
-    <div class="card-bg-actions">
-      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr" data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP." data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-sources="Vietnam.vn" data-tag="xiaomi" data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp" data-mode="default">&#9889; Achtergrond</button>
-      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr" data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP." data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-sources="Vietnam.vn" data-tag="xiaomi" data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
-    </div>
-    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
-    <span class="tag tag-analysis">Xiaomi</span>
-    <h3>De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP.</h3>
-    <p>De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn</p>
-    <div class="meta">Vietnam.vn &bull; 4 sep</div>
-    
-  </div>
-</div>
-</div>
-</div>
-
-<div class="bg-article" id="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo"
-                data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit"
-                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet"
-                data-sources="Android Planet"
-                data-tag="xiaomi"
-                data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo"
-                data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit"
-                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet"
-                data-sources="Android Planet"
-                data-tag="xiaomi"
-                data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-article" id="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo"
-                data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk"
-                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble"
-                data-sources="Drimble"
-                data-tag="xiaomi"
-                data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo"
-                data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk"
-                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble"
-                data-sources="Drimble"
-                data-tag="xiaomi"
-                data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-article" id="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-"
-                data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand"
-                data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet"
-                data-sources="Android Planet"
-                data-tag="xiaomi"
-                data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-"
-                data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand"
-                data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet"
-                data-sources="Android Planet"
-                data-tag="xiaomi"
-                data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-article" id="bg-ond-xiaomi-3-de-technologische-doorbr">
-  <div class="bg-inner">
-    
-    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
-      <p style="color:var(--t3);font-size:.9rem">De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP.</p>
-      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
-        <button class="bg-gen-btn"
-                data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr"
-                data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP."
-                data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn"
-                data-sources="Vietnam.vn"
-                data-tag="xiaomi"
-                data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp"
-                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
-          &#9889; Genereer achtergrond
-        </button>
-        <button class="bg-gen-btn bg-deep-btn"
-                data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr"
-                data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP."
-                data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn"
-                data-sources="Vietnam.vn"
-                data-tag="xiaomi"
-                data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp"
-                data-mode="deep"
-                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
-                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
-          &#128302; Deep dive
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <hr class="section-sep" id="automatische-koffiemachines"/>
 <div class="section-head">
   <span class="tag tag-analysis">automatische koffiemachines</span>
@@ -2394,6 +2087,164 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
   </div>
 </div>
 
+<hr class="section-sep" id="huawei"/>
+<div class="section-head">
+  <span class="tag tag-analysis">Huawei</span>
+  <h2>Huawei</h2>
+  <div class="section-line"></div>
+  <button class="gen-all-btn" id="genall-huawei" onclick="_generateSectionBackgrounds('huawei', this)" title="Genereer achtergrond (Gemini 3.5 Flash-Lite) voor alle artikelen in deze sectie">&#128218; alle achtergronden</button>
+  
+</div>
+<div class="article-grid" id="grid-huawei">
+
+<div class="article-card" data-reader-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm" data-reader-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm." data-reader-teaser="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-reader-slug="review-van-de-huawei-pura-x-view-uniek-scherm-met-een-beeldv" data-reader-body="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-reader-bgid="bg-ond-huawei-0-review-van-de-huawei-pur" data-reader-bron="Vietnam.vn" data-reader-datum="29 aug" data-reader-tag="huawei" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur" data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm." data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur" data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm." data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Huawei</span>
+    <h3>Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm.</h3>
+    <p>Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn</p>
+    <div class="meta">Vietnam.vn &bull; 29 aug</div>
+    
+  </div>
+</div>
+
+<div class="article-card" data-reader-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei" data-reader-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon." data-reader-teaser="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-reader-slug="een-eerste-kennismaking-met-de-pura-x-view-huaweis-uniek-ont" data-reader-body="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-reader-bgid="bg-ond-huawei-1-een-eerste-kennismaking-" data-reader-bron="Vietnam.vn" data-reader-datum="28 aug" data-reader-tag="huawei" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-" data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon." data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-" data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon." data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn" data-sources="Vietnam.vn" data-tag="huawei" data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Huawei</span>
+    <h3>Een eerste kennismaking met de Pura X View - Huawei's uniek ontworpen telefoon.</h3>
+    <p>Een eerste kennismaking met de Pura X View - Huawei's uniek ontworpen telefoon. Vietnam.vn</p>
+    <div class="meta">Vietnam.vn &bull; 28 aug</div>
+    
+  </div>
+</div>
+
+<div class="article-card" data-reader-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/" data-reader-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen" data-reader-teaser="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-reader-slug="huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je" data-reader-body="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-reader-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta" data-reader-bron="Androidworld.nl" data-reader-datum="26 aug" data-reader-tag="huawei" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta" data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen" data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-sources="Androidworld.nl" data-tag="huawei" data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta" data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen" data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl" data-sources="Androidworld.nl" data-tag="huawei" data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Huawei</span>
+    <h3>Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen</h3>
+    <p>Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl</p>
+    <div class="meta">Androidworld.nl &bull; 26 aug</div>
+    
+  </div>
+</div>
+</div>
+
+<div class="bg-article" id="bg-ond-huawei-0-review-van-de-huawei-pur">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm.</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur"
+                data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm."
+                data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn"
+                data-sources="Vietnam.vn"
+                data-tag="huawei"
+                data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-huawei-0-review-van-de-huawei-pur"
+                data-title="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm."
+                data-summary="Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm. Vietnam.vn"
+                data-sources="Vietnam.vn"
+                data-tag="huawei"
+                data-url="https://www.vietnam.vn/nl/danh-gia-huawei-pura-x-view-man-hinh-ty-le-16-9-5-doc-la-cung-pin-7-000-mah-mong-6-68-mm"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-article" id="bg-ond-huawei-1-een-eerste-kennismaking-">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon.</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-"
+                data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon."
+                data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn"
+                data-sources="Vietnam.vn"
+                data-tag="huawei"
+                data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-huawei-1-een-eerste-kennismaking-"
+                data-title="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon."
+                data-summary="Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon. Vietnam.vn"
+                data-sources="Vietnam.vn"
+                data-tag="huawei"
+                data-url="https://www.vietnam.vn/nl/tren-tay-pura-x-view-chiec-dien-thoai-kieu-dang-la-cua-huawei"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-article" id="bg-ond-huawei-2-huawei-is-alweer-een-sta">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta"
+                data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen"
+                data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl"
+                data-sources="Androidworld.nl"
+                data-tag="huawei"
+                data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-huawei-2-huawei-is-alweer-een-sta"
+                data-title="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen"
+                data-summary="Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen Androidworld.nl"
+                data-sources="Androidworld.nl"
+                data-tag="huawei"
+                data-url="https://androidworld.nl/nieuws/huawei-is-alweer-een-stap-verder-met-brede-smartphone-die-je-niet-kunt-vouwen/"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <hr class="section-sep" id="grok"/>
 <div class="section-head">
   <span class="tag tag-analysis">Grok</span>
@@ -2593,6 +2444,215 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
                 data-sources="Vietnam.vn"
                 data-tag="grok"
                 data-url="https://www.vietnam.vn/nl/hang-loat-chatbot-ai-gom-chatgpt-claude-va-grok-dong-loat-gap-su-co-gian-doan-trong-dem"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-sep" id="xiaomi"/>
+<div class="section-head">
+  <span class="tag tag-analysis">Xiaomi</span>
+  <h2>Xiaomi</h2>
+  <div class="section-line"></div>
+  <button class="gen-all-btn" id="genall-xiaomi" onclick="_generateSectionBackgrounds('xiaomi', this)" title="Genereer achtergrond (Gemini 3.5 Flash-Lite) voor alle artikelen in deze sectie">&#128218; alle achtergronden</button>
+  <button class="more-btn" id="morebtn-xiaomi" onclick="toggleMore('xiaomi')" title="Meer artikelen">meer &#9662;</button>
+</div>
+<div class="article-grid" id="grid-xiaomi">
+
+<div class="article-card" data-reader-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/" data-reader-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit" data-reader-teaser="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-reader-slug="dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-dan-ooit" data-reader-body="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-reader-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo" data-reader-bron="Android Planet" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Xiaomi</span>
+    <h3>Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit</h3>
+    <p>Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet</p>
+    <div class="meta">Android Planet &bull; 4 sep</div>
+    
+  </div>
+</div>
+
+<div class="article-card" data-reader-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html" data-reader-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk" data-reader-teaser="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-reader-slug="dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurri" data-reader-body="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-reader-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo" data-reader-bron="Drimble" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-sources="Drimble" data-tag="xiaomi" data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo" data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk" data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble" data-sources="Drimble" data-tag="xiaomi" data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Xiaomi</span>
+    <h3>Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk</h3>
+    <p>Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble</p>
+    <div class="meta">Drimble &bull; 4 sep</div>
+    
+  </div>
+</div>
+
+<div class="article-card" data-reader-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/" data-reader-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand" data-reader-teaser="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-reader-slug="xiaomi-maakt-ifa-debuut-dit-zagen-we-op-de-gigantische-stand" data-reader-body="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-reader-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-" data-reader-bron="Android Planet" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-" data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand" data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-" data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand" data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet" data-sources="Android Planet" data-tag="xiaomi" data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Xiaomi</span>
+    <h3>Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand</h3>
+    <p>Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet</p>
+    <div class="meta">Android Planet &bull; 4 sep</div>
+    
+  </div>
+</div>
+<div class="extra-cards" id="more-xiaomi">
+
+<div class="article-card" data-reader-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp" data-reader-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP." data-reader-teaser="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-reader-slug="de-technologische-doorbraak-van-de-xiaomi-18-fold-een-ultrad" data-reader-body="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-reader-bgid="bg-ond-xiaomi-3-de-technologische-doorbr" data-reader-bron="Vietnam.vn" data-reader-datum="4 sep" data-reader-tag="xiaomi" onclick="openReader(this, event)">
+  
+  <div class="article-body">
+    <div class="card-bg-actions">
+      <button class="bg-badge bg-gen-btn" data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr" data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP." data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-sources="Vietnam.vn" data-tag="xiaomi" data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp" data-mode="default">&#9889; Achtergrond</button>
+      <button class="bg-badge bg-gen-btn bg-deep-btn" data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr" data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP." data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn" data-sources="Vietnam.vn" data-tag="xiaomi" data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp" data-mode="deep" title="Langere analyse uit deze editie">&#128302; Deep dive</button>
+    </div>
+    <button class="save-btn" onclick="saveArticle(this, event)" title="Opslaan als Obsidian-notitie">&#128190;</button>
+    <span class="tag tag-analysis">Xiaomi</span>
+    <h3>De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP.</h3>
+    <p>De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn</p>
+    <div class="meta">Vietnam.vn &bull; 4 sep</div>
+    
+  </div>
+</div>
+</div>
+</div>
+
+<div class="bg-article" id="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo"
+                data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit"
+                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet"
+                data-sources="Android Planet"
+                data-tag="xiaomi"
+                data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo"
+                data-title="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit"
+                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit Android Planet"
+                data-sources="Android Planet"
+                data-tag="xiaomi"
+                data-url="https://www.androidplanet.nl/nieuws/xiaomi-band-11-kleurrijke-fitnesstracker/"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-article" id="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo"
+                data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk"
+                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble"
+                data-sources="Drimble"
+                data-tag="xiaomi"
+                data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo"
+                data-title="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk"
+                data-summary="Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk Drimble"
+                data-sources="Drimble"
+                data-tag="xiaomi"
+                data-url="https://drimble.nl/dossiers/smartphones/107896719/dit-nieuwe-sportieve-klokje-van-xiaomi-is-slanker-en-kleurrijk.html"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-article" id="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-"
+                data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand"
+                data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet"
+                data-sources="Android Planet"
+                data-tag="xiaomi"
+                data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-"
+                data-title="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand"
+                data-summary="Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand Android Planet"
+                data-sources="Android Planet"
+                data-tag="xiaomi"
+                data-url="https://www.androidplanet.nl/nieuws/xiaomi-debuut-ifa-smarthome-strategie/"
+                data-mode="deep"
+                title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
+                style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
+          &#128302; Deep dive
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-article" id="bg-ond-xiaomi-3-de-technologische-doorbr">
+  <div class="bg-inner">
+    
+    <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
+      <p style="color:var(--t3);font-size:.9rem">De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP.</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center">
+        <button class="bg-gen-btn"
+                data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr"
+                data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP."
+                data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn"
+                data-sources="Vietnam.vn"
+                data-tag="xiaomi"
+                data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp"
+                style="padding:.7rem 1.6rem;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem;font-weight:600">
+          &#9889; Genereer achtergrond
+        </button>
+        <button class="bg-gen-btn bg-deep-btn"
+                data-bgid="bg-ond-xiaomi-3-de-technologische-doorbr"
+                data-title="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP."
+                data-summary="De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP. Vietnam.vn"
+                data-sources="Vietnam.vn"
+                data-tag="xiaomi"
+                data-url="https://www.vietnam.vn/nl/dot-pha-ky-thuat-xiaomi-18-fold-pin-silicon-6-000-mah-sieu-mong-va-camera-leica-200mp"
                 data-mode="deep"
                 title="Investigatieve analyse — kiesbaar model + xhigh, 1200-1500 woorden, 6 bronnen, 12 archief-passages, 5-7 visuals (~3 min generatie)"
                 style="padding:.7rem 1.4rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600">
@@ -6020,12 +6080,38 @@ function openReader(card, e) {
 }
 
 /*ns-reader-phone*/
+function _readerMq(q) {
+  try { return window.matchMedia(q).matches; } catch (err) { return false; }
+}
+function _readerIsFoldDual() {
+  if (_readerMq('(horizontal-viewport-segments: 2)')) return true;
+  if (_readerMq('(vertical-viewport-segments: 2)')) return true;
+  if (_readerMq('(spanning: single-fold-vertical)')) return true;
+  if (_readerMq('(spanning: single-fold-horizontal)')) return true;
+  var coarse = _readerMq('(pointer: coarse)');
+  var w = window.innerWidth || 0, h = window.innerHeight || 0;
+  if (!coarse) return false;
+  if (w >= 640 && h >= 560 && w <= 1100) return true;
+  return false;
+}
 function _readerIsPhone() {
+  if (_readerIsFoldDual()) return false;
   try {
     if (window.matchMedia('(max-width:768px)').matches) return true;
     if (window.matchMedia('(pointer:coarse)').matches && window.innerWidth <= 900) return true;
   } catch (err) {}
   return window.innerWidth <= 768;
+}
+function _readerWantsGestures() {
+  return _readerIsPhone() || _readerIsFoldDual();
+}
+function _readerSyncFoldClass() {
+  var on = _readerIsFoldDual();
+  try {
+    if (document.documentElement) document.documentElement.classList.toggle('ns-fold-dual', on);
+    if (document.body) document.body.classList.toggle('ns-fold-dual', on);
+  } catch (err) {}
+  return on;
 }
 var _readerHistPushed = false;
 var _readerBgHistPushed = false;
@@ -6078,6 +6164,15 @@ function _readerBgPanelEl() {
 }
 function _readerOnOpen(panel) {
   if (!panel) return;
+  var fold = _readerSyncFoldClass();
+  if (fold) {
+    _readerSetFsClass(false);
+    panel.classList.remove('reader-fullscreen');
+    panel.classList.add('fold-dual');
+    _readerPushHistory();
+    return;
+  }
+  panel.classList.remove('fold-dual');
   if (_readerIsPhone()) {
     _readerSetFsClass(true);
     panel.classList.add('reader-fullscreen');
@@ -6089,6 +6184,15 @@ function _readerOnOpen(panel) {
 }
 function _readerBgOnOpen(panel) {
   if (!panel) return;
+  var fold = _readerSyncFoldClass();
+  if (fold) {
+    panel.classList.remove('bg-phone-fs', 'reader-fullscreen');
+    panel.classList.add('fold-dual');
+    try { document.body.classList.add('split'); } catch (err) {}
+    _readerBgPushHistory();
+    return;
+  }
+  panel.classList.remove('fold-dual');
   if (_readerIsPhone()) {
     panel.classList.add('bg-phone-fs', 'reader-fullscreen');
     try { document.body.classList.remove('split'); } catch (err) {}
@@ -6133,7 +6237,7 @@ function _readerBgOnClose() {
   var startX = 0, startY = 0, tracking = false, locked = false, lastDx = 0, pid = null;
   function panelEl() {
     var bg = _readerBgPanelEl();
-    if (bg && (bg.classList.contains('open') || bg.classList.contains('bg-phone-fs'))) return bg;
+    if (bg && (bg.classList.contains('open') || bg.classList.contains('bg-phone-fs') || bg.classList.contains('fold-dual'))) return bg;
     return (typeof _readerPanel !== 'undefined') ? _readerPanel : null;
   }
   function isBgPanel(el) {
@@ -6150,13 +6254,19 @@ function _readerBgOnClose() {
     document.removeEventListener('touchend', onEnd, true);
     document.removeEventListener('touchcancel', onEnd, true);
   }
+  function gestureEdgeLeft(p) {
+    if (!_readerIsFoldDual() || !p || !p.getBoundingClientRect) return 0;
+    var r = p.getBoundingClientRect();
+    return Math.max(0, r.left);
+  }
   function onStart(e) {
     var p = panelEl();
     if (!p || !p.classList.contains('open')) return;
-    if (!_readerIsPhone()) return;
+    if (!_readerWantsGestures()) return;
     var t = e.changedTouches && e.changedTouches[0];
     if (!t) return;
-    if (t.clientX > EDGE) return;
+    var edgeLeft = gestureEdgeLeft(p);
+    if (t.clientX < edgeLeft || t.clientX > edgeLeft + EDGE) return;
     if (e.cancelable) e.preventDefault();
     tracking = true;
     locked = false;
@@ -6250,6 +6360,26 @@ function _readerBgOnClose() {
       if (p) _readerBgOnOpen(p);
     };
   }
+  function onViewportChange() {
+    _readerSyncFoldClass();
+    var rp = (typeof _readerPanel !== 'undefined') ? _readerPanel : null;
+    if (rp && rp.classList.contains('open')) _readerOnOpen(rp);
+    var bg = _readerBgPanelEl();
+    if (bg && bg.parentNode) _readerBgOnOpen(bg);
+  }
+  _readerSyncFoldClass();
+  window.addEventListener('resize', onViewportChange);
+  try {
+    var mqFold = window.matchMedia('(min-width: 640px) and (min-height: 560px) and (pointer: coarse)');
+    var mqOrient = window.matchMedia('(orientation: landscape)');
+    var mqSeg = window.matchMedia('(horizontal-viewport-segments: 2)');
+    var bindMq = function(mq) {
+      if (!mq) return;
+      if (mq.addEventListener) mq.addEventListener('change', onViewportChange);
+      else if (mq.addListener) mq.addListener(onViewportChange);
+    };
+    bindMq(mqFold); bindMq(mqOrient); bindMq(mqSeg);
+  } catch (err) {}
 })();
 /*ns-reader-phone-end*/
 
