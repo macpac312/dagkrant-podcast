@@ -1,0 +1,64 @@
+---
+titel: "De VN stemt voor een kaart waarop Afrika zijn ware formaat terugkrijgt"
+url: https://nos.nl/l/2629696
+bron: wereld
+kind: wereld
+gegenereerd: 2026-09-05T03:13:54
+---
+
+Wereld
+
+De VN stemt voor een kaart waarop Afrika zijn ware formaat terugkrijgt
+
+164 landen steunen Togo. Alleen de VS stemt tegen. De Mercator-projectie die Groenland tot een continent maakt, moet plaatsmaken voor Equal Earth.
+
+    -  Historische stemming:  De Algemene Vergadering van de Verenigde Naties heeft met een overweldigende meerderheid van 164 stemmen vóór gekozen om de Equal Earth-projectie te omarmen als officiële wereldkaart.
+
+    -  Afrikaanse dominantie in de diplomatie:  Het initiatief werd geleid door Togo, dat al jaren pleit voor cartografische rechtvaardigheid en correctie van koloniale scheefgroei.
+
+    -  Geopolitiek isolement:  De Verenigde Staten waren het enige land dat tegen de resolutie stemde, daarbij verwijzend naar praktische bezwaren en de enorme kosten van cartografische migratie.
+
+    -  Wiskundige correctie:  Waar de traditionele Mercator-kaart Afrika net zo groot toont als Groenland, herstelt Equal Earth de correcte oppervlakteverhoudingen van continenten rond de evenaar.
+
+Vergelijking landmassas: Mercator vs. Equal Earth
+
+             Groenland (Mercator)
+             Lijkt even groot als heel Afrika (ca. 33 miljoen km²)
+
+             Afrika (Werkelijkheid)
+             Is in werkelijkheid veertien keer zo groot als Groenland (30,3 miljoen km²)
+
+De harde erfenis van 1569
+
+De wereld zoals we die al eeuwenlang in klaslokalen en op schermen zien, is gebaseerd op de projectie die de Vlaamse cartograaf Gerardus Mercator in 1569 ontwierp. Het was nooit de bedoeling van Mercator om een esthetische of geopolitiek neutrale weergave van de aardbol te bieden; zijn kaart was primair bedoeld als navigatie-instrument voor zeelieden. Door de sferische vorm van de aarde plat te slaan op een cilinder, moesten de polen wel worden uitgerekt om rechte kompaslijnen mogelijk te maken. Het gevolg is een hardnekkige optische illusie waarin het Noorden systematisch wordt opgeblazen ten koste van het Zuiden.
+
+Op de Mercator-kaart oogt Europa even groot als Zuid-Amerika, en lijkt Groenland net zo kolossaal als het Afrikaanse continent. In werkelijkheid past Groenland veertien keer in Afrika, en is het Zuid-Amerikaanse continent ruim twee keer zo groot als Europa. Decennialang werd dit door geografen en historici benoemd als een vorm van eurocentrische cartografie, maar pogingen om tot een internationaal gedragen alternatief te komen liepen steevast stuk op de inertie van instituties en onderwijssystemen.
+
+De diplomatieke veldslag geleid door Togo
+
+Dat verandering nu via de Verenigde Naties wordt afgedwongen, is te danken aan een volhardende diplomatieke campagne van Togo. Het West-Afrikaanse land bracht de kwestie opnieuw ter sprake, geholpen door een brede coalitie van landen uit het Global South die betoogden dat kaarten niet neutraal zijn, maar mede vormgeven aan hoe de wereld de waarde van continenten en hun bevolking waarneemt. Een kaart die het Zuiden structureel kleiner afbeeldt dan het Noorden, voedt onbewust ideeën over macht, relevantie en geopolitieke hiërarchie.
+
+De resolutie die deze week in New York werd aangenomen, roept alle VN-organisaties, gespecialiseerde agentschappen en lidstaten op om over te stappen op de Equal Earth-projectie, die in 2018 werd ontwikkeld door Bojan Šavrič, Tom Patterson en Bernhard Jenny. Deze projectie behoudt de juiste oppervlakteverhoudingen tussen continenten, terwijl de vormen van landmassa's zo goed mogelijk worden bewaard. Met 164 stemmen voor, geen enkele onthouding en slechts één tegenstem van de Verenigde Staten, is het politieke mandaat overweldigend te noemen.
+
+Machtsverhoudingen in de Algemene Vergadering
+
+             164
+             Landen vóór
+
+             0
+             Landen onthouden
+
+             1
+             Tegenstem (VS)
+
+Het Amerikaanse isolement en de praktische horde
+
+De opstelling van de Verenigde Staten tijdens de stemmingsronde viel op door haar eenzaamheid. Washington motiveerde de tegenstem vooral vanuit pragmatische en financiële overwegingen. Het aanpassen van alle officiële landkaarten, meteorologische modellen, luchtvaartsystemen en defensiestructuren brengt volgens de Amerikaanse delegatie miljardenkosten met zich mee. Bovendien wees het Amerikaanse ministerie van Buitenlandse Zaken erop dat de VN zich niet zou moeten bezighouden met cartografische normering, aangezien wetenschappelijke instituten en private kaartleveranciers al langere tijd diverse projecties naast elkaar gebruiken.
+
+Kritici binnen de VN werpen daartegenin dat de Amerikaanse weerstand vooral voortkomt uit een hardnekkig verzet tegen symbolische verschuivingen in de mondiale orde. De VS gebruiken al jaren alternatieve projecties in specifieke sectoren, wat bewijst dat technische transitie mogelijk is wanneer de politieke wil er is. Dat juist de VS nu geïsoleerd komt te staan, onderstreept hoe de verhoudingen binnen de Verenigde Naties aan het verschuiven zijn, waarbij Afrikaanse en Latijns-Amerikaanse landen steeds beter in staat zijn om impasses te doorbreken en hun eigen agenda te dicteren.
+
+Conclusie
+
+De goedkeuring van de Equal Earth-projectie door de Verenigde Naties is meer dan een technocratische ingreep in de cartografie; het is een historisch eerherstel voor het Zuiden. Hoewel de omschakeling op scholen, inatlassen en bij overheden jaren zal duren, markeert deze stemming het einde van een tijdperk waarin de wereld onvoorwaardelijk door de bril van Mercator werd bekeken. Afrika krijgt op papier zijn ware omvang terug, en daarmee ook een stukje van de vanzelfsprekendheid die het geografisch altijd al bezat.
+
+ Bronnen: NOS, BBC News, The Guardian, Al Jazeera, NPR
