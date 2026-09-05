@@ -1,0 +1,53 @@
+---
+titel: "Poetin ontvangt Witkoff en Kushner — 72 uur geen aanvallen op de hoofdsteden"
+url: https://nos.nl/l/2629841
+bron: wereld
+kind: wereld
+gegenereerd: 2026-09-05T20:34:29
+---
+
+- Amerikaanse gezanten Steve Witkoff en Jared Kushner zijn in Moskou gearriveerd voor een ontmoeting met de Russische president Vladimir Poetin.
+
+    - Als gebaar van goede wil is een tijdelijk bestand van 72 uur afgekondigd waarin noch Kyiv noch Moskou doelwitten in de respectievelijke hoofdsteden mag bestoken.
+
+    - De diplomatieke missie vormt de meest concrete poging tot nu toe van de Amerikaanse regering-Trump om de vastgelopen vredesonderhandelingen vlot te trekken.
+
+    - Na de besprekingen in het Kremlin reizen de Amerikaanse gezanten zondag door naar de Oekraïense hoofdstad Kyiv om de plannen met president Volodymyr Zelensky te bespreken.
+
+         Diplomatieke Tijdlijn (5-7 september 2026)
+
+            -  Vrijdag 5 september:  Aankomst Witkoff en Kushner in Moskou; start 72-uur durende wapenstilstand rond hoofdsteden.
+
+            -  Zaterdag 6 september:  Gesprekken achter gesloten deuren in het Kremlin tussen Poetin en de Amerikaanse delegatie.
+
+            -  Zondag 7 september:  Doorreis van de gezanten naar Kyiv voor overleg met de Oekraïense leiding.
+
+De terugkeer van de ongekende diplomatie
+
+De aankomst van Steve Witkoff en Jared Kushner in Moskou markeert een opmerkelijke verschuiving in de Amerikaanse diplomatieke strategie ten aanzien van de oorlog in Oekraïne. Waar eerdere pogingen van Westerse bondgenoten strandden in wederzijds wanvertrouwen en harde militaire confrontaties, kiest de Witte Huis-delegatie nu voor een directe, persoonlijke benadering van het Kremlin. Het bezoek, dat al maanden wordt aangekondigd door president Donald Trump, is bedoeld om de contouren af te tasten van een mogelijk akkoord dat een einde moet maken aan het al jaren slepende conflict.
+
+De timing van het bezoek is niet louter symbolisch gekozen. Door de spanningen rond de onderhandelingstafel te flankeren met een strikt lokaal bestand, proberen de betrokken partijen een politieke adempauze te creëren. Het feit dat Moskou en Kyiv akkoord zijn gegaan met een driedaagse rustperiode rond de hoofdsteden duidt erop dat beide kampen gevoelig zijn voor de Amerikaanse druk om in ieder geval de schijn van welwillendheid op te houden. Toch blijft de vraag of deze tijdelijke de-escalatie meer is dan een geraffineerd PR-offensief van het Kremlin om internationale sanctiedruk te pareren.
+
+Het mandaat van Witkoff en Kushner
+
+De samenstelling van de Amerikaanse delegatie is evenuniek als controversieel. Steve Witkoff, de vastgoedmagnaat die door Trump is aangewezen als speciaal gezant, brengt een zakelijke benadering mee naar de onderhandelingstafel die wars is van traditionele diplomatieke protocollen. Aan zijn zijde opereert Jared Kushner, de schoonzoon en voormalig adviseur van de Amerikaanse president, wiens informele kanalen in het Midden-Oosten en daarbuiten vaker zijn ingezet voor complexe achterkamerscenario’s. Hun aanwezigheid onderstreept dat Washington de besluitvorming centraliseert binnen een zeer selecte kring rond de president.
+
+In Moskou ligt er een concreet voorstel op tafel dat door de Amerikaanse diplomaten wordt gepresenteerd als een pragmatische uitweg. Dit plan zou echter ingrijpende concessies vergen van beide strijdende partijen, met name op het gebied van territoriale integriteit en veiligheidsgaranties. Terwijl president Vladimir Poetin zijn vizier richt op het consolideren van de militaire winst op de grond, probeert de Amerikaanse delegatie te peilen of er ruimte is voor een compromis dat de geloofwaardigheid van Washington als vredestichter kan waarborgen zonder direct de NAVO-alliantie te ontwrichten.
+
+De kwetsbaarheid van het bestand
+
+Het 72-uur durende bestand rond Kyiv en Moskou hangt ondanks de diplomatieke drukte met zijden draadjes aan elkaar. Hoewel luchtaanvallen op de regeringscentra tijdelijk zijn opgeschort, woedt de conventionele oorlog aan de frontlijnen in Oost- en Zuid-Oekraïne onverminderd voort. Militaire analisten waarschuwen dat dergelijke lokale en tijdelijke wapenstilstanden vaak dienen om troepen te hergroeperen en voorraden aan te vullen, in plaats van dat ze een opmaat vormen naar duurzame vrede. Het contrast tussen de diplomatieke retenetiek in het Kremlin en de dagelijkse realiteit in de loopgraven kan nauwelijks groter zijn.
+
+Bovendien wacht de Amerikaanse delegatie zondag een uiterst kritische ontvangst in Kyiv. President Volodymyr Zelensky en zijn regering staan onder immense binnenlandse druk om geen vierkante kilometer op te geven aan de Russische agressor. De angst in Oekraïne is groot dat de Verenigde Staten achter de rug van hun bondgenoten om een deal sluiten met Moskou die de langetermijnveiligheid van heel Europa op het spel zet. Het succes van de missie hangt dan ook volledig af van de vraag of Kushner en Witkoff erin slagen de Oekraïense leiding te overtuigen dat het Amerikaanse plan geen dictaat is, maar een haalbaar alternatief voor totale uitputting.
+
+Geopolitieke risico's en verwachtingen
+
+De inzet van deze driedaagse diplomatieke blitz is hoog. Voor president Trump is een diplomatieke doorbraak in Oekraïne het kroonstuk van zijn buitenlandse beleid in diens tweede termijn. Mocht het bezoek van Witkoff en Kushner resulteren in concrete vredesonderhandelingen, dan kan dat de geopolitieke dynamiek in Europa fundamenteel veranderen. Mocht het echter mislukken, dan dreigt een definitieve breuk tussen de trans-Atlantische partners en een verdere escalatie van het conflict nu beide partijen beseffen dat de diplomatieke weg doodloopt.
+
+De komende dagen zullen uitwijzen of de woorden van Poetin aan de onderhandelingstafel overeenkomen met zijn militaire daden in het veld. Terwijl de wereld toekijkt hoe de Amerikaanse gezanten van Moskou naar Kyiv reizen, blijft de harde realiteit van de oorlog onaangetast. De pauze in de hoofdsteden is slechts een momentopname in een langdurig conflict waarin het wederzijdse wantrouwen dieper geworteld zit dan ooit.
+
+Conclusie
+
+Het bezoek van Steve Witkoff en Jared Kushner aan Moskou en het daaropvolgende bestand van 72 uur vormen een gedurfde en onvoorspelbare poging van de Amerikaanse regering om beweging te krijgen in het vastgelopen Oekraïne-conflict. Terwijl de diplomatieke machine op volle toeren draait, blijft de fundamentele kloof tussen de territoriale eisen van het Kremlin en de soevereiniteitseisen van Kyiv onoverbrugd. Of deze missie leidt tot een duurzame vredesroute of slechts een kortstondig intermezzo in een uitzichtloze oorlog blijft, na de besprekingen in Moskou, hoogst onzeker.
+
+ Bronnen: NOS, BBC, The Guardian, Politico EU, Al Jazeera
