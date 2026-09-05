@@ -68,7 +68,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t1);line-he
 
 /* ─── Hero Article ─── */
 .hero-article{margin-bottom:3rem;padding-bottom:2rem;border-bottom:2px solid var(--t1);overflow:hidden}
-.hero-img{border-radius:8px;overflow:hidden;float:left;width:55%;margin:0 2rem 1rem 0;position:relative}
+.hero-img{border-radius:8px;overflow:hidden;float:left;width:50%;margin:0 1.5rem 1rem 0;position:relative}
 .hero-img img{width:100%;height:auto;object-fit:cover;display:block}
 .hero-img .photo-credit{position:absolute;bottom:.5rem;right:.5rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px}
 .hero-text h2{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;line-height:1.15;margin-bottom:1rem}
@@ -490,6 +490,20 @@ body.ns-fold-dual .article-grid,body.ns-fold-dual .ai-grid{
 }
 html.ns-fold-dual .article-body>p,html.ns-fold-dual .ai-card>p,
 body.ns-fold-dual .article-body>p,body.ns-fold-dual .ai-card>p{display:none}
+/* Front-page hero: ~half-width photo, text beside then wrap under.
+   Same 600px as 3-col overview; do not stack at 1024px (Fold inner ~780–934px). */
+@media(min-width:600px){
+.hero-img{float:left;width:50%;margin:0 1.5rem 1rem 0}
+}
+@media(max-width:599px){
+.hero-img{float:none;width:100%;margin:0 0 1.5rem 0}
+}
+@media(horizontal-viewport-segments:2){
+.hero-img{float:left;width:50%;margin:0 1.5rem 1rem 0}
+}
+html.ns-fold-dual .hero-img,body.ns-fold-dual .hero-img{
+  float:left;width:50%;margin:0 1.5rem 1rem 0
+}
 /* Fold dual-pane: article right, achtergrond left. Beats max-width 768/900 fullscreen. */
 html.ns-fold-dual .bg-panel,body.ns-fold-dual .bg-panel,.bg-panel.fold-dual{
   position:fixed;inset:0 0 0 50%;
@@ -646,7 +660,8 @@ body,.masthead,.article-card,.expandable,.widget,.ai-card{transition:background 
 .footer{text-align:center;padding:3rem 2rem 2rem;color:var(--t3);font-size:.75rem;border-top:2px solid var(--t1);margin-top:3rem}
 
 /* ─── Responsive ─── */
-@media(max-width:1024px){.layout-main{grid-template-columns:1fr}.hero-img{float:none;width:100%;margin:0 0 1.5rem 0}}
+@media(max-width:1024px){.layout-main{grid-template-columns:1fr}}
+@media(max-width:599px){.hero-img{float:none;width:100%;margin:0 0 1.5rem 0}}
 @media(max-width:768px){.masthead-nav{display:none}.hero-text h2{font-size:1.6rem}.container{padding:1rem}}
 
 /* ═══ PREMIUM UPGRADE ═══ */
@@ -2003,6 +2018,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
 
 <div class="bg-article" id="bg-ond-automatische-koffiemachines-0-beko-caffeexperto-bean-t">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Beko CaffeExperto Bean To Cup Coffee Machine with Integrated Milk Jug CEG7384X review</p>
@@ -2031,11 +2047,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-automatische-koffiemachines-1-jura-s8-moonlight-silver">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Jura S8 Moonlight Silver Automatic Coffee Machine - 64 oz Tank and 4.3 Touchscreen For Specialty Dri</p>
@@ -2064,11 +2082,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-automatische-koffiemachines-2-koffieliefhebber-dit-zij">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Koffieliefhebber? Dit zijn volgens onze test de beste espressomachines van 2026</p>
@@ -2097,11 +2117,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-automatische-koffiemachines-3-the-philips-baristina-is">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">The Philips Baristina is ‘unlike any other bean-to-cup machine’ we’ve tested — and with 26% off, it’s affordable too</p>
@@ -2130,11 +2152,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-automatische-koffiemachines-4-vader-en-zoon-winnen-kof">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Vader en zoon winnen koffiemachine van 1.150 euro</p>
@@ -2163,11 +2187,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-automatische-koffiemachines-5-missed-out-on-lidls-50-c">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Missed out on Lidl&#39;s £50 coffee machine? Shop Dunelm&#39;s bean-to-cup bargain</p>
@@ -2195,6 +2221,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
           &#128302; Deep dive
         </button>
       </div>
+    </div>
     </div>
   </div>
 </div>
@@ -2260,6 +2287,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
 
 <div class="bg-article" id="bg-ond-huawei-0-review-van-de-huawei-pur">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Review van de Huawei Pura X View: Uniek scherm met een beeldverhouding van 16:9,5, een batterij van 7000 mAh en een slank profiel van 6,68 mm.</p>
@@ -2288,11 +2316,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-huawei-1-een-eerste-kennismaking-">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Een eerste kennismaking met de Pura X View - Huawei&#39;s uniek ontworpen telefoon.</p>
@@ -2321,11 +2351,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-huawei-2-huawei-is-alweer-een-sta">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Huawei is alweer een stap verder met brede smartphone die je niet kunt vouwen</p>
@@ -2353,6 +2385,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
           &#128302; Deep dive
         </button>
       </div>
+    </div>
     </div>
   </div>
 </div>
@@ -2436,6 +2469,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
 
 <div class="bg-article" id="bg-ond-grok-0-xai-lanceert-grok-bot-vo">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">xAI lanceert Grok Bot voor bedrijven, agents die voor jou inloggen op je apps</p>
@@ -2464,11 +2498,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-grok-1-xai-van-musk-verliest-po">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">xAI van Musk verliest poging om Minnesota’s AI-‘nudification’-verbod te blokkeren</p>
@@ -2497,11 +2533,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-grok-2-xai-van-musk-verliest-za">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">xAI van Musk verliest zaak tegen verbod op AI-‘nudification’ in Minnesota</p>
@@ -2530,11 +2568,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-grok-3-een-aantal-ai-chatbots-w">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Een aantal AI-chatbots, waaronder ChatGPT, Claude en Grok, ondervonden vannacht gelijktijdig storingen.</p>
@@ -2562,6 +2602,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
           &#128302; Deep dive
         </button>
       </div>
+    </div>
     </div>
   </div>
 </div>
@@ -2645,6 +2686,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
 
 <div class="bg-article" id="bg-ond-xiaomi-0-dit-nieuwe-sportieve-klo">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Dit nieuwe sportieve klokje van Xiaomi is slanker dan ooit</p>
@@ -2673,11 +2715,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-xiaomi-1-dit-nieuwe-sportieve-klo">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Dit nieuwe sportieve klokje van Xiaomi is slank(er) en kleurrijk</p>
@@ -2706,11 +2750,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-xiaomi-2-xiaomi-maakt-ifa-debuut-">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">Xiaomi maakt IFA-debuut: dit zagen we op de gigantische stand</p>
@@ -2739,11 +2785,13 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
         </button>
       </div>
     </div>
+    </div>
   </div>
 </div>
 
 <div class="bg-article" id="bg-ond-xiaomi-3-de-technologische-doorbr">
   <div class="bg-inner">
+    <div class="bg-content">
     
     <div class="bg-gen-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:12rem;gap:1rem">
       <p style="color:var(--t3);font-size:.9rem">De technologische doorbraak van de Xiaomi 18 Fold: een ultradunne siliciumbatterij van 6000 mAh en een Leica-camera van 200 MP.</p>
@@ -2771,6 +2819,7 @@ Londen na Californië is de Europese poort. Wie hem neemt, neemt de toon." data-
           &#128302; Deep dive
         </button>
       </div>
+    </div>
     </div>
   </div>
 </div>
