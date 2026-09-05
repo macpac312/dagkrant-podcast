@@ -1,0 +1,20 @@
+{
+  "title": "Astra hallucineert minder — en blijft kwetsbaar voor verborgen injecties",
+  "summary": "The Decoder: GPT-6 liegt minder, prompt injections blijven. Simon Willison vergelijkt pelikanen. Tweakers: OpenAI durfde AGI te zeggen.",
+  "sources": [
+    "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections/",
+    "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+    "https://tweakers.net/nieuws/251754/openai-brengt-gpt-6-astra-uit-en-suggereert-dat-het-agi-is.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-05",
+  "slug": "astra-hallucineert-minder-en-blijft-kwetsbaar-voor-verborgen",
+  "tts_slug": "astra-hallucineert-minder-en-blijft-kwetsbaar-voor-verborgen",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-05T07:16:59",
+  "size_kb": 4,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-05/astra-hallucineert-minder-en-blijft-kwetsbaar-voor-verborgen.html",
+  "mode": "default"
+}

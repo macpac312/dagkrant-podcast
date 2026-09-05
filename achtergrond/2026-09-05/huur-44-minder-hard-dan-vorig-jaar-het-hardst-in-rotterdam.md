@@ -1,0 +1,61 @@
+---
+titel: "Huur +4,4% — minder hard dan vorig jaar, het hardst in Rotterdam"
+url: https://nos.nl/l/2629590
+bron: huizenmarkt
+kind: huizenmarkt
+gegenereerd: 2026-09-05T07:14:51
+---
+
+- De gemiddelde huurprijs is in het afgelopen jaar met 4,4 procent gestegen, zo blijkt uit cijfers van het Centraal Bureau voor de Statistiek (CBS).
+
+    - De landelijke stijging vlakt daarmee licht af ten opzichte van voorgaande jaren; in 2025 bedroeg de toename 4,9 procent en in 2024 zelfs 5,4 procent.
+
+    - Rotterdam kent van de grote steden de krachtigste huurstijging, terwijl de dynamiek in de vrije sector sterk onder druk staat door veranderende wetgeving.
+
+    - Woningzoekenden die recent een nieuwe huurwoning betrokken, worden geconfronteerd met een nog forsere prijsstijging dan zittende huurders.
+
+     Ontwikkeling gemiddelde huurstijging (CBS)
+
+        -  2024:  +5,4%
+
+        -  2025:  +4,9%
+
+        -  2026:  +4,4%
+
+Afvlakking van de curve, maar aanhoudende druk
+
+De Nederlandse huurmarkt laat opnieuw een forse stijging zien, hoewel de cijfers van het CBS duiden op een marginale afvlakking van de trend. Met een gemiddelde verhoging van 4,4 procent betalen huurders in vergelijking met vorig jaar beduidend meer voor hun dak boven het hoofd. Hoewel de piek van de huurstijgingen, die in 2024 nog op 5,4 procent lag, achter de rug lijkt, blijft de lastendruk voor huishoudens onverminderd hoog. De inflatie en de krappe woningmarkt vormen een toxische combinatie waarin verhuurders hun prijzen maximaal oprekken, al dan niet gedwongen door stijgende onderhoudskosten en ingrijpende fiscale maatregelen.
+
+De cijfers tonen aan dat de markt in een transitiefase verkeert. Politieke ingrepen, zoals de Wet betaalbare huur, moesten rust brengen in de gereguleerde sector en de excessen in de vrije sector indammen. Toch blijft het aanbod schaars, waardoor de prijzen in het middensegment en de vrije sector onder opwaartse druk blijven staan. Huurders hebben weinig tot geen alternatieven, aangezien de koopmarkt voor velen eveneens onbereikbaar is gebleven door de combinatie van hoge huizenprijzen en de stand van de hypotheekrentes.
+
+Rotterdam koploper onder de grootsteden
+
+Wie de regionale verschillen onder de loep neemt, ziet opvallende uitschieters. Rotterdam voert dit jaar de ranglijst aan van de grote steden met de sterkste huurstijgingen. Waar steden als Amsterdam en Utrecht al langer te maken hadden met extreme prijsniveaus en daardoor wellicht een punt van verzadiging naderen, haalt Rotterdam nu in hoog tempo in. De havenstad trekt al jaren jonge professionals, forenzen en studenten aan, wat de druk op het beschikbare huuraanbod enorm opvoert.
+
+De dynamiek in Rotterdam illustreert een breder stedelijk vraagstuk. Terwijl nieuwbouwprojecten achterblijven bij de vraag, is de bestaande voorraad aan huurwoningen in rap tempo verduurzaamd of geliberaliseerd. Dit laatste zorgt ervoor dat vrijkomende woningen direct tegen de absolute hoofdprijs in de markt worden gezet, wat de gemiddelde prijsstatistieken in de Maasstad extra opstuwt. Het stedelijk beleid staat hiermee voor een complexe uitgave: het beschermen van de kwetsbare huurder zonder dat de investeringsbereidheid in nieuwe huurwoningen volledig instort.
+
+De dubbele straf voor nieuwe bewoners
+
+Een treffende constatering uit de recente CBS- en marktinformatie is de hardnekkigheid van het 'nieuwkomers-effect'. Wie nu noodgedwongen op zoek moet naar een andere huurwoning, merkt dat de gemiddelde stijging van 4,4 procent slechts een gemiddelde is. Bij het wisselen van huurder stijgen de huren in de praktijk aanzienlijk harder. Verhuurders maken bij het betreden van de markt door een nieuwe bewoner maximaal gebruik van de ruimte die de wet- en regelgeving biedt om de prijs te herzien naar het actuele marktniveau.
+
+Dit fenomeen creëert een tweedeling op de huurmarkt. Zittende huurders worden door wetgeving en jaarlijkse maximering enigszins beschermd tegen extreme sprongen, al tikken ook bij hen de verhogingen flink aan. Wie echter door omstandigheden – zoals een scheiding, baanwisseling of de noodzaak om kleiner of groter te gaan wonen – de woning moet verlaten, betaalt de hoofdprijs. Dit belemmert de doorstroming op de toch al vastgelopen woningmarkt fundamenteel, omdat mensen krampachtig blijven vasthouden aan hun huidige huurcontract.
+
+Toekomstperspectief en marktwerking
+
+De vraag is hoe de huurmarkt zich de komende kwartalen zal ontwikkelen. Economen en volkshuisvestingsspecialisten wijzen erop dat de combinatie van strenge regelgeving, hoge financieringskosten voor particuliere verhuurders en een aanhoudend tekort aan woningen een ongemakkelijke cocktail blijft. Particuliere beleggers trekken zich op grote schaal terug uit de sector omdat het rendement onder druk staat. Hierdoor slinkt het aanbod van vrije sectorhuurwoningen, wat de prijzen voor de overgebleven schaarse eenheden juist opstuwt ondanks landelijke matigingspogingen.
+
+De afvlakking van 5,4 naar 4,4 procent is op papier een stap in de goede richting, maar voor de gemiddelde huishoudportemonnee biedt het nauwelijks soelaas. Zolang de bouwproductie van zowel sociale huurwoningen als betaalbare middenhuur achterblijft bij de bevolkingsgroei, blijft de huurmarkt een markt van schaarste waarin de vragers aan het kortste eind trekken.
+
+Conclusie
+
+De huurstijging van 4,4 procent laat zien dat de piek in de prijsontwikkeling achter de rug is, maar van normalisatie is nog geen sprake. Met name in steden als Rotterdam en voor woningzoekenden die recent zijn verhuisd, blijven de lasten disproportioneel hard stijgen. De ingezette politieke koers om de markt te reguleren heeft een rem gezet op de algemene inflatiecorrectie, maar botst direct op de keiharde realiteit van een aanhoudend woningtekort en een opdrogend particulier aanbod.
+
+     Kernpunten huurmarkt 2026
+
+        -  Landelijk gemiddelde:  +4,4% huurstijging
+
+        -  Koploper:  Rotterdam toont de sterkste stijging onder de grote steden
+
+        -  Nieuwkomers:  Wie verhuist, betaalt significant meer dan zittende huurders
+
+ Bronnen: CBS, NOS, Algemeen Dagblad (AD), Financieele Dagblad (FD), NU.nl
