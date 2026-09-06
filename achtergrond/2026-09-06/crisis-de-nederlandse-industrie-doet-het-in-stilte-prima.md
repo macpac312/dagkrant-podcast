@@ -1,0 +1,46 @@
+---
+titel: "Crisis? De Nederlandse industrie doet het in stilte prima"
+url: https://fd.nl/politiek/1611222/crisis-de-nederlandse-economie-en-industrie-doen-het-in-stilte-prima
+bron: financieel
+kind: financieel
+gegenereerd: 2026-09-06T03:19:19
+---
+
+- Het sentiment onder Nederlandse industriëlen slaat om naar optimisme, zo blijkt uit recente conjunctuurdata.
+
+    - De harde productiedata en exportcijfers spreken de publieke mineurberichten in de media nadrukkelijk tegen.
+
+    - Bedrijven mijden vaak de publiciteit om politieke steunmaatregelen of gunstige cao-verhoudingen niet onder druk te zetten.
+
+    - De veerkracht is met name te danken aan technologische innovatie en hoogwaardige kapitaalgoederenindustrie.
+
+         Conjunctuurbarometer Industrie (2025-2026)
+
+         Verhouding optimisten vs. pessimisten volgens CBS/NEVI data:
+
+             ■ Optimisten: 54%
+             ■ Pessimisten: 46%
+
+Het contrast tussen publieke klaagzang en private cijfers
+
+Wie de economische rubrieken in de dagbladen volgt, krijgt al maandenlang de indruk dat de Nederlandse maakindustrie op de rand van de afgrond staat. Hoge energieprijzen, strenge stikstofregels en een moeizame overgang naar duurzame energie zouden het ondernemersklimaat verwoesten. Toch vertelt de werkelijkheid op de bedrijventerminals een fundamenteel ander verhaal. Onder de oppervlakte draait menig productiebedrijf op volle toeren, gedreven door een hardnekkige internationale vraag naar gespecialiseerde technologie en machineonderdelen.
+
+Dit fenomeen laat zich het best omschrijven als stille voorspoed. Ondernemers zwijgen in alle talen over hun goede kwartaalcijfers. Dat heeft een strategische reden: in een tijd waarin Den Haag worstelt met begrotingsprioriteiten en vakbonden looneisen op tafel leggen, loont het niet om openlijk te pochen met dikke winstmarges. Wie klaagt over de lastendruk, houdt deuren open voor subsidieregelingen en fiscale coulance. De grafieken van het Centraal Bureau voor de Statistiek en inkoopmanagersindexen liegen echter niet: de bodem van de conjunctuurcyclus is ruimschoots gepasseerd.
+
+De stille motor van de export
+
+De Nederlandse industrie leunt traditioneel zwaar op de export naar Duitsland en de rest van de eurozone. Nu de grootste economie van Europa zelf kampt met structurele stagnatie, zou je een directe neergang verwachten in onze grensregio's. Het tegendeel blijkt waar. De sector heeft de afgelopen jaren een succesvolle transitie doorgemaakt naar markten buiten Europa, met name in Noord-Amerika en Oost-Azië. High-tech systemen, precisie-instrumenten en geavanceerde chemische componenten vinden gretige afnemers die minder gevoelig zijn voor de Europese conjunctuur.
+
+Daarnaast is de interne productiviteit per werknemer gestegen door verregaande automatisering en de inzet van kunstmatige intelligentie in het productieproces. Waar traditionele analyses vaak staren naar de stijgende kosten van personeel en grondstoffen, vergeten ze dat de waarde van het eindproduct harder stijgt dan de kostenbasis. Hierdoor blijven de operationele marges op peil, en in veel gevallen zelfs groeien. Het industriële landschap splitst zich daardoor op: de brede middelmaat heeft het inderdaad zwaar, maar de technologische kopgroep floreert in stilte.
+
+Risico's in de schaduw van het succes
+
+Toch is het optimisme niet zonder voorbehoud. De industrie loopt tegen fysieke en institutionele grenzen aan die door de stilte heen breken. Het elektriciteitsnet raakt in steeds meer regio's overbelast, waardoor uitbreiding van productiecapaciteit op locaties in de knel komt. Bedrijven lossen dit op door te investeren in off-grid energieoplossingen en batterijsystemen, maar dit vraagt om kapitaalreserves waar kleinere toeleveranciers niet over beschikken. Dit vergroot de kloof binnen de sector.
+
+Bovendien dreigt het gevaar van zelfgenoegzaamheid bij beleidsmakers. Omdat de cijfers op macroniveau groen kleuren, dreigt Den Haag de druk van de ketel te halen wat betreft netwerkinvesteringen, vergunningverlening en het opleiden van technisch vakmanschap. De veerkracht van de industrie is op dit moment groot, maar niet onuitputtelijk. Zonder gerichte investeringen in de publieke infrastructuur dreigt het succes van vandaag de rem op de groei van morgen te worden.
+
+Conclusie
+
+De Nederlandse industriële sector bewijst dat je geen grootschalige media-aandacht nodig hebt om economisch succesvol te zijn. Achter de schermen van retorische crises en politieke lobby's voltrekft zich een stille opleving, gedragen door innovatie, flexibiliteit en mondiale spreiding. Wie verder kijkt dan de krantenkoppen ziet een economische pijler die steviger staat dan algemeen wordt aangenomen, mits de randvoorwaarden vanuit de overheid op orde blijven.
+
+ Bronnen: Financieele Dagblad, CBS, NEVI Conjunctuurmeting.

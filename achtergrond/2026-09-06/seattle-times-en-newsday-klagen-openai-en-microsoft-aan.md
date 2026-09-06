@@ -1,0 +1,47 @@
+---
+titel: "Seattle Times en Newsday klagen OpenAI en Microsoft aan"
+url: https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/
+bron: aitech
+kind: aitech
+gegenereerd: 2026-09-06T03:20:55
+---
+
+- The Seattle Times en Newsday hebben een gezamenlijke auteursrechtzaak aangespannen tegen OpenAI en Microsoft.
+
+    - De uitgevers beschuldigen de techgiganten ervan hun journalistieke content illegaal te hebben gebruikt voor het trainen van AI-modellen.
+
+    - De rechtszaak past in een bredere reeks juridische conflicten waarin traditionele media opkomen voor de waarde van hun archieven.
+
+    - Microsoft en OpenAI worden geconfronteerd met toenemende druk om licentieovereenkomsten te sluiten in plaats van data ongelicentieerd te oogsten.
+
+             Eerdere zaken
+
+New York Times, Chicago Tribune, Daily News en diverse andere kranten gingen de twee titels al voor.
+
+             Huidige eis
+
+Seattle Times en Newsday eisen schadeloosstelling en een verbod op ongeoorloofde datatrainingen.
+
+De juridische frontlinie verschuift naar regionale journalistiek
+
+De beslissing van The Seattle Times en Newsday om OpenAI en Microsoft voor de rechter te slepen, markeert een nieuwe fase in de juridische strijd om de fundamenten van generatieve kunstmatige intelligentie. Waar de eerste golven van auteursrechtzaken vooral werden gedragen door nationale dagbladen en grote mediaconglomeraten, betreden nu ook invloedrijke regionale en sub-nationale nieuwsorganisaties het strijdtoneel. Dit laat zien dat de bezorgdheid over het ongecompenseerd afnemen van journalistieke arbeid breed leeft door het hele medialandschap, ongeacht de omvang van de redactie.
+
+In de kern draait de aanklacht om een fundamenteel economisch en ethisch conflict: de waarde van kwaliteitsjournalistiek als grondstof voor commerciële AI-systemen. OpenAI en Microsoft maken volgens de indieners op grote schaal gebruik van auteursrechtelijk beschermde artikelen, onderzoeken en archieven om hun taalmodellen te trainen. Deze modellen genereren vervolgens antwoorden aan gebruikers, waardoor de noodzaak om de oorspronkelijke bronwebsite te bezoeken afneemt. De uitgevers stellen dat dit businessmodel niet alleen inbreuk maakt op hun intellectueel eigendom, maar ook het verdienmodel van de onafhankelijke pers direct ondermijnt.
+
+De dubbele rol van Microsoft en de strategie van schikkingen
+
+Opmerkelijk in deze casus, net als in veel vergelijkbare zaken, is de nauwe verwevenheid tussen OpenAI en Microsoft. Als hoofdinvesteerder en technologische infrastructurele partner van OpenAI deelt Microsoft in de verantwoordelijkheid voor de manier waarop de AI-modellen worden gevoed en ingezet. Voor traditionele uitgevers voelt dit als een ongelijke strijd tegen twee van de machtigste technologiereuzen ter wereld, die profiteren van decennia aan journalistieke investeringen zonder daarvoor de redactionele kosten te dragen.
+
+Tegelijkertijd ontstaat er in de markt een tweespalt. Terwijl sommige uitgeverijen koers zetten richting een juridisch conflict, kiezen andere media juist voor commerciële samenwerkingen. Bedrijven als OpenAI hebben inmiddels diverse lucratieve licentiedeals gesloten met grote internationale titels om legale toegang tot nieuwscontent te waarborgen. De rechtszaak van The Seattle Times en Newsday suggereert echter dat de voorwaarden die techbedrijven tot nu toe bieden lang niet voor iedereen afdoende of rechtvaardig zijn.
+
+Het precedent voor toekomstige AI-wetgeving
+
+De uitkomst van deze rechtszaak zal verstrekkende gevolgen hebben voor de toekomst van zowel de tech- als de mediasector. Omdat de Amerikaanse wetgeving rondom 'fair use' en datatraining voor AI nog volop in ontwikkeling is, kijken rechters, beleidsmakers en juristen wereldwijd mee naar hoe rechters deze casus interpreteren. Een uitspraak in het nadeel van OpenAI en Microsoft kan de positie van contentmakers aanzienlijk versterken en dwingt de industrie om definitief over te stappen op structurele licentiemodellen.
+
+Naarmate de druk op de technologiereuzen toeneemt, groeit ook de roep om meer transparantie over welke data precies wordt gebruikt voor het trainen van commerciële algoritmen. Vooralsnog weigeren de bedrijven openheid van zaken te geven over hun volledige trainingscorpus, wat de juridische argumenten van de uitgevers alleen maar voedt. De zaak-Seattle Times onderstreept dat de rust rondom generatieve AI en het auteursrecht nog lang niet is teruggekeerd.
+
+Conclusie
+
+De rechtszaak van The Seattle Times en Newsday tegen OpenAI en Microsoft onderstreept dat het conflict tussen de techsector en de journalistiek escaleert in plaats van afneemt. Nu ook regionale media juridische stappen zetten tegen ongeoorloofde datatraining, wordt de druk op techbedrijven om eerlijke licentieovereenkomsten te sluiten groter dan ooit. De rechterlijke beslissingen in deze zaken zullen bepalen of het verdienmodel van de pers behouden blijft in het tijdperk van kunstmatige intelligentie.
+
+ Bronnen: TechCrunch
