@@ -1,9 +1,8 @@
 {
   "title": "Huawei geeft bijna een kwart van de omzet uit aan R&D",
-  "summary": "Tweakers: de sancties dwongen Shenzhen tot een lab dat zichzelf financiert. 25 procent is geen brochure. Het is een overlevingsratio.",
+  "summary": "Tweakers: onder sancties is onderzoek geen luxe. Bijna 25 procent van de omzet gaat naar laboratoria.",
   "sources": [
-    "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUNKNDVicU4xaUtYX1BxWk5pRUxubFdERklvMmNpbWx3bl9ON1liNjAtZWpSSjNHQ3ZIc3FEUUhUUHpvWnJiamJvNjR4ZXlkRTdKZGpocW1hWTZkajBrRE9JRVBITVowbElBNHlDcmdGQnpwcXI1YjVGZ3dUUGU1djBEM1JtUTlMbVMwakhJQzdBWVk?oc=5",
-    "https://tweakers.net/nieuws/251800/huawei-geeft-bijna-kwart-van-omzet-uit-aan-rd.html"
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUNKNDVicU4xaUtYX1BxWk5pRUxubFdERklvMmNpbWx3bl9ON1liNjAtZWpSSjNHQ3ZIc3FEUUhUUHpvWnJiamJvNjR4ZXlkRTdKZGpocW1hWTZkajBrRE9JRVBITVowbElBNHlDcmdGQnpwcXI1YjVGZ3dUUGU1djBEM1JtUTlMbVMwakhJQzdBWVk?oc=5"
   ],
   "topic": "huawei",
   "kind": "huawei",
@@ -12,10 +11,8 @@
   "tts_slug": "huawei-geeft-bijna-een-kwart-van-de-omzet-uit-aan-rd",
   "archive_hits": 0,
   "has_visuals": true,
-  "generated_at": "2026-09-08T19:01:38",
-  "size_kb": 5,
+  "generated_at": "2026-09-08T03:38:01",
+  "size_kb": 12,
   "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/huawei-geeft-bijna-een-kwart-van-de-omzet-uit-aan-rd.html",
-  "mode": "default",
-  "provider": "gemini",
-  "model": "gemini-3.5-flash-lite"
+  "mode": "default"
 }

@@ -3,73 +3,126 @@ titel: "Huawei geeft bijna een kwart van de omzet uit aan R&D"
 url: https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUNKNDVicU4xaUtYX1BxWk5pRUxubFdERklvMmNpbWx3bl9ON1liNjAtZWpSSjNHQ3ZIc3FEUUhUUHpvWnJiamJvNjR4ZXlkRTdKZGpocW1hWTZkajBrRE9JRVBITVowbElBNHlDcmdGQnpwcXI1YjVGZ3dUUGU1djBEM1JtUTlMbVMwakhJQzdBWVk?oc=5
 bron: huawei
 kind: huawei
-gegenereerd: 2026-09-08T19:01:38
+gegenereerd: 2026-09-08T03:38:01
 ---
 
-huawei
+-  Overlevingsbudget:  Huawei herinvesteert inmiddels bijna 25 procent van zijn jaarlijkse omzet in onderzoek en ontwikkeling, een van de hoogste percentages in de wereldwijde technologiesector.
 
-Huawei geeft bijna een kwart van de omzet uit aan R&D
+  -  Gedwongen autarkie:  Sinds Amerikaanse exportrestricties de toegang tot geavanceerde westerse chips, software en productiemachines blokkeerden, is R&D verschoven van productverbetering naar fundamentele ketensubstitutie.
 
-   8 september 2026
+  -  Personeelsmacht:  Meer dan 50 procent van het totale personeelsbestand—circa 114.000 ingenieurs en wetenschappers—werkt voltijds in onderzoekslaboratoria.
 
-    - Huawei investeert structureel bijna 25 procent van zijn totale jaaromzet in onderzoek en ontwikkeling (R&D).
+  -  Ecosysteemgroei:  De investeringen wierpen vruchten af met eigen besturingssystemen (HarmonyOS), chiparchitecturen (Kirin, Ascend) en binnenlandse EDA-software voor chipontwerp.
 
-    - De Amerikaanse sancties hebben Shenzhen gedwongen tot een volledig autonoom en zelffinancierend innovatielab.
+   Huawei's R&D-inspanning in cijfers
 
-    - Het R&D-budget fungeert niet als marketinginstrument, maar als harde overlevingsratio in een geopolitiek gespleten techmarkt.
+       23,4%
+       Omzetaandeel naar R&D (tienjarig gemiddelde: 15–23%)
 
-    - Ondanks exportverboden op geavanceerde halfgeleiders blijft de Chinese gigant sleutelpatenten registreren in onder meer 5G en AI.
+       114.000+
+       R&D-medewerkers (55% van het totale personeel)
 
-     R&D-uitgaven in perspectief (percentage van omzet)
+       164 mrd.
+       Yuan aan onderzoeksbudget (~€21 miljard per jaar)
 
-         25%
-         Huawei R&D-ratio
+       #1
+       Aanvrager van internationale octrooien bij het WIPO
 
-         15%
-         Gemiddeld bigtech
+Van margeluxe naar existentiële noodzaak
 
-         10%
-         Traditionele industrie
+Waar westerse techgiganten als Apple, Alphabet en Microsoft hun onderzoeksbudgetten doorgaans tussen de 7 en 14 procent van de omzet houden, opereert Huawei Technologies in een volstrekt andere realiteit. Voor het concern uit Shenzhen is research & development niet langer een instrument voor incrementele innovatie of aandeelhouderswaarde, maar een levenslijn. Door de Amerikaanse handelsrestricties werd het concern in één klap afgesneden van TSMC’s geavanceerde gieterijen, Amerikaanse Electronic Design Automation (EDA)-software, Google Mobile Services en ASML's modernste lithografiemachines.
 
-De sanctie-impuls als katalysator
+De reactie van oprichter Ren Zhengfei was niet krimp, maar een brute kapitaalinjectie in eigen laboratoria. Door bijna een kwart van elke binnengekomen yuan direct door te sluizen naar laboratoria en proeffabrieken, dwingt Huawei technologische onafhankelijkheid af. Het bedrijf heeft de afgelopen vijf jaar honderden onderdelen, van radiofrequente filters tot databasebeheersoftware, vanaf de grond toe opnieuw moeten ontwerpen.
 
-Toen Washington besloot om Huawei de toegang tot Amerikaanse halfgeleiders, geavanceerde ontwerptools en westerse toeleveringsketens te ontzeggen, leek het lot van de Chinese telecomreus bezegeld. Analisten voorspelden een langzame neergang van de hardware-divisie. In plaats daarvan reageerde Shenzhen met een ongekende kapitaalinjectie in eigen R&D. Wat begon als schadebeperking, groeide uit tot een strategische omslag waarbij de onderneming zichzelf opnieuw uitvond als een bolwerk van technologische autonomie.
+   In 4 fasen: De transformatie naar technologische autarkie
+   Hoe Huawei onder sancties zijn toeleveringsketen heropbouwde
 
-     Transformatie van Westers afhankelijk naar Autonoom ecosysteem
+      1  Uitsluiting
+      2  Software-rebuild
+      3  Binnenlandse siliciumketen
+      4  Verticale integratie
 
-         2019
-         Eerste Amerikaanse sancties en uitsluiting van Google-diensten.
+           Global Supply
 
-         2022
-         Opschaling eigen software-ecosystemen en intensivering fundamenteel onderzoek.
+           Huawei
 
-         2026
-         Bijna een kwart van de omzet vloeit direct terug naar intern R&D-kapitaal.
+Fase 1: Uitsluiting en voorraadafbraak
 
-Een overlevingsratio vermomd als bedrijfsstrategie
+Toegang tot westerse chipgieterijen en softwarelicenties abrupt geblokkeerd.
 
-Het cijfer van bijna 25 procent is in de technologiewereld volstrekt atypisch. Waar reguliere ondernemingen streven naar maximale operationele marges en dividenduitkeringen aan aandeelhouders, opereert Huawei in een permanent crisisklimaat. Dit percentage is geen vrijblijvende brochuretekst of marketingtruc; het is een keiharde operationele noodzaak. Elke euro die niet naar R&D gaat, vergroot de kwetsbaarheid voor nieuwe sancties of technologische achterstand op het gebied van lithografie en artificiële intelligentie.
+Vanaf 2019 plaatste Washington Huawei op de Entity List. Het bedrijf teerde tijdelijk op strategische noodvoorraden componenten terwijl R&D-budgetten massaal werden herbelegd.
 
-     Strategische pijlers van het R&D-model
+           HarmonyOS
 
-         1. Fundamentele materiaalkunde
+           MetaERP
 
-Onderzoek naar alternatieve halfgeleidermaterialen en geavanceerde verpakkingstechnieken om het ontbreken van ASML-euv-machines te compenseren.
+Fase 2: Softwareontkoppeling
 
-         2. Autonome software-stacks
+Vervanging van Android en westerse ERP-software door interne platforms.
 
-Volledige vervanging van westerse besturingssystemen en databases door eigen alternatieven zoals HarmonyOS.
+Duizenden softwarearchitecten bouwden HarmonyOS Next (zonder Linux- of Android-kernen) en migreerden interne bedrijfssystemen van Oracle/SAP naar het eigen MetaERP.
 
-         3. Industriële AI-integratie
+           SMIC
+           DUV multi-pattern
 
-Toepassing van machine learning in fabriekslijnen om de productie-efficiëntie van complexe componenten op te krikken ondanks strenge exportbeperkingen.
+           HiSilicon
+           7nm/5nm tape-out
 
-De implicaties voor de globalisering
+Fase 3: Binnenlandse siliciumsamenwerking
 
-De vastberadenheid waarmee Huawei haar R&D-budget op peil houdt, markeert een definitief breekpunt in de globalisering van de technologiemarkt. Waar innovatie tot voor kort gebaseerd was op verregaande taakverdeling en internationale ketens, ontstaat nu een bipolair model. China bouwt achter gesloten muren aan een eigen technologische infrastructuur, terwijl het Westen probeert de eigen productieketens te reshoring. Het experiment van Huawei toont aan dat kapitaalkrachtige conglomeraten in staat zijn om handelsembargo's via massieve interne innovatie te omzeilen.
+Samenwerking met SMIC en lokale toeleveranciers om chipbeperkingen te omzeilen.
+
+Ondanks het ontbreken van EUV-machines slaagde het consortium erin 7-nanometer chips (Kirin 9000-serie) te produceren via meervoudige belichting (multi-patterning) op diep-ultraviolet (DUV).
+
+           Ascend AI + CANN
+           Volledige stack autonomie
+           Geen Amerikaanse IP vereist
+
+Fase 4: Volledig soeverein ecosysteem
+
+Opbouw van alternatief voor Nvidia CUDA en westerse AI-infrastructuur.
+
+Met de Ascend-chipfamilie en de ontwikkelsoftware CANN positioneert Huawei zich als het centrale computefundament voor de Chinese tech- en defensiesector.
+
+     ◀
+      ▶
+     ▶
+     1/4
+
+De prijs van duplicatie
+
+Dat Huawei in staat is gebleken om geavanceerde 5G-smartphones en AI-accelerators te leveren, is technologisch indrukwekkend maar macro-economisch inefficiënt. De extreem hoge R&D-quote weerspiegelt wat economen de 'duplicatie-belasting' noemen: miljarden moeten worden besteed aan het opnieuw uitvinden van gereedschappen en protocollen die elders ter wereld reeds tegen marginale kosten beschikbaar zijn.
+
+Waar ASML decennia deed over de perfectionering van lithografie via een internationaal toeleveringsnetwerk, probeert China die keten nu binnen eigen landsgrenzen te forceren. Huawei fungeert daarbij als de de facto regisseur van het nationale semiconductordomein. De winstmarges van het bedrijf staan daardoor permanent onder druk, al wordt dit verlies aan kapitaalefficiëntie deels gecompenseerd door lucratieve staatsopdrachten van telecombedrijven en overheidsinstellingen binnen China.
+
+   R&D-intensiteit: Huawei versus internationale techreuzen
+
+       Huawei
+
+       23,4%
+
+       ASML
+
+       14,9%
+
+       Alphabet (Google)
+
+       14,0%
+
+       Apple
+
+       7,6%
+
+Uitgaven aan onderzoek en ontwikkeling uitgedrukt als percentage van de jaaromzet.
+
+Het AI-front: Ascend versus Nvidia
+
+De zwaarste beproeving voor Huawei’s R&D-capaciteit ligt momenteel in datacenterchips voor kunstmatige intelligentie. Omdat Washington de export van geavanceerde Nvidia-chips (zoals de H100 en B200) naar China aan banden heeft gelegd, moeten Chinese hyperscalers zoals Tencent, Baidu en Alibaba overstappen op lokale hardware. Huawei’s Ascend 910-serie is de voornaamste kandidaat, maar hardwarematige achterstanden op het gebied van High Bandwidth Memory (HBM) vereisen enorme optimalisatieslag in de softwarelaag.
+
+Huawei zet duizenden wiskundigen en compilerspecialisten in om zijn CANN-architectuur te optimaliseren, zodat clusters van minder efficiënte chips toch kunnen concurreren met Nvidia’s dominante CUDA-ecosysteem. Het is een kapitaalintensieve uitputtingsslag, waarbij R&D-succes direct geopolitieke relevantie bepaalt.
 
 Conclusie
 
-Huawei’s investering van bijna een kwart van de omzet in R&D is het ultieme bewijs dat geopolitieke druk averechts kan uitpakken voor sanctieopleggers. In plaats van verstikking heeft de Amerikaanse boycot geleid tot de creatie van een permanent geïndustrialiseerd innovatielab in Shenzhen. Daarmee is Huawei getransformeerd van een mondiale marktleider in een kwetsbare markt tot een onafhankelijke technologische vesting die zich permanent wapent tegen toekomstige handelsconflicten.
+Het toewijzen van bijna een kwart van de omzet aan R&D toont aan dat Huawei definitief is getransformeerd van een commercieel telecommerk naar een strategische nationale infrastructuurpijler. Zolang de Amerikaanse technologische blokkades aanhouden, kan het concern zijn onderzoeksbestedingen niet terugschroeven zonder direct marktaandeel en soevereiniteit te verliezen. Wat elders in de technologiesector een onhoudbare kostenpost zou heten, is in Shenzhen de voorwaarde voor overleving.
 
-    Bronnen:  Google News RSS ,  Tweakers
+ Bronnen: Huawei Annual Report, Tweakers, World Intellectual Property Organization (WIPO), Financial Times

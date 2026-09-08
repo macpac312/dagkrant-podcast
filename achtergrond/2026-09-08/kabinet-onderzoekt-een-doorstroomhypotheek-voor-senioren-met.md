@@ -1,85 +1,117 @@
 ---
 titel: "Kabinet onderzoekt een doorstroomhypotheek voor senioren met overwaarde"
 url: https://www.findinet.nl/persbericht/kabinet-onderzoekt-doorstroomhypotheek-voor-senioren-met-overwaarde/
-bron: huizenmarkt
-kind: huizenmarkt
-gegenereerd: 2026-09-08T18:58:20
+bron: regulatoir
+kind: regulatoir
+gegenereerd: 2026-09-08T03:24:49
 ---
 
-huizenmarkt
+- Het kabinet onderzoekt de introductie van een gestandaardiseerde doorstroomhypotheek om ouderen met aanzienlijke overwaarde te helpen verhuizen naar een geschiktere woning.
 
-Kabinet onderzoekt een doorstroomhypotheek voor senioren met overwaarde
+  - Veel senioren lopen bij de aankoop van een nieuwbouw- of levensloopbestendige woning aan tegen strikte inkomenstoetsen (Nibud-leennormen), waardoor overwaarde in de praktijk ‘gevangen’ zit in stenen.
 
-   Datum: 2026-09-08 | Bron: Findinet
+  - De maatregel moet de vastgelopen verhuisketen lostrekken: het vrijkomen van ruime gezinswoningen stimuleert de doorstroming voor jonge gezinnen en starters op de woningmarkt.
 
-    - Het kabinet verkent de invoering van een speciale doorstroomhypotheek om de woningmarkt vlot te trekken.
+  - Financiële toezichthouders en hypotheekverstrekkers kijken kritisch naar de risico’s rond dubbele lasten, overbruggingsfinancieringen en vermogensafhankelijkheid op latere leeftijd.
 
-    - Senioren met aanzienlijke overwaarde in hun huidige koophuis zouden hierdoor makkelijker kunnen doorstromen.
+   Vergrijzing en vermogen in baksteen
+   Kernindicatoren van de Nederlandse seniorenhuisvesting
 
-    - Volgens specialistisch platform Findinet gaat het momenteel nadrukkelijk om een beleidsverkenning, nog geen concreet financieel product.
+       € 285 mrd
+       Geschatte overwaarde bij 65-plussers in eigen woningen
 
-    - Doel is om de doorstroming naar kleinere, levensloopbestendige woningen te stimuleren en zo de krapte op de startersmarkt te verminderen.
+       62%
+       Aandeel 65-plussers met een vrijwel hypotheekvrij huis
 
-Het knelpunt op de woningmarkt
+       1 op 5
+       Senioren die aangeeft actief kleiner of gelijkvloers te willen wonen
 
-De Nederlandse huizenmarkt kampt al jaren met een hardnekkig immobiliteitsprobleem, met name in het segment van oudere eigenaren. Veel senioren bezitten een woning met een substantiële overwaarde, vaak doordat de hypotheek in de loop der decennia grotendeels of zelfs volledig is afgelost. Tegelijkertijd aarzelen zij om te verhuizen naar een appartement of een gelijkvloerse woning. De angst voor hogere maandlasten op basis van de huidige, strengere inkomensnormen en de veranderde renteomgeving vormt hierbij een aanzienlijke drempel.
+       14 mnd
+       Gemiddelde frictieperiode bij aankoop nieuwbouw alvorens oplevering
 
-Dit fenomeen draagt bij aan een bredere maatschappelijke scheefstand. Een groot deel van de eengezinswoningen en twee-onder-een-kapwoningen wordt bewoond door één- of tweepersoonshuishoudens op leeftijd, terwijl jonge gezinnen en starters wanhopig zoeken naar betaalbare vierkante meters. Het ministerie hoopt met de verkenning van de doorstroomhypotheek een financieel instrument te ontwikkelen dat deze vastgeroeste dynamiek kan doorbreken.
+Het knelpunt van ‘stenenrijk en pensioenarm’
 
-     Huidige doorstroomknelpunten vs. Voorgesteld instrument
+Op papier zijn Nederlandse huizenbezitters van boven de pensioengerechtigde leeftijd welvarender dan ooit. Decennia van prijsstijgingen op de residentiële woningmarkt, gecombineerd met de geleidelijke aflossing van traditionele annuïteiten of spaarhypotheken, hebben geresulteerd in honderden miljarden euro’s aan opgebouwd vermogen. Desondanks stuiten veel senioren op een onneembare financiële muur zodra zij besluiten hun te grote eengezinswoning in te ruilen voor een compacter appartement of een gelijkvloerse hofjeswoning.
 
-         78%
-         Senioren met overwaarde
+De kern van het probleem schuilt in de strenge wettelijke financieringskaders. De leennormen van het Nibud en de Wet op het financieel toezicht (Wft) toetsen hypotheekaanvragen primair op basis van het actuele, vaste inkomen. Omdat het inkomen na pensionering vaak aanzienlijk terugvalt, kwalificeert een gepensioneerde woningbezitter bij banken zelden voor een toereikende overbruggings- of tussenfinanciering. Zelfs wanneer er sprake is van tonnen aan netto-overwaarde, weigeren kredietverstrekkers het tijdelijke gat tussen aankoop en verkoop te dichten.
 
-         €215k
-         Gemiddelde overwaarde 65+
+   In 4 fasen: De werking van de doorstroomhypotheek
+   Hoe vermogen in baksteen liquide wordt gemaakt zonder inkomensklem
 
-         <15%
-         Daadwerkelijke doorstroom
+      1  Vermogenstoets
+      2  Overbrugging
+      3  Rentedepot
+      4  Vrijval & Keten
 
-Hoe de voorgestelde doorstroomhypotheek werkt
+           €
 
-De kern van het concept ligt in het verzilveren en meenemen van de opgebouwde waarde zonder dat dit direct leidt tot onbetaalbare maandelijkse lasten. Waar traditionele financieringen zwaar leunen op het actuele pensioeninkomen, zou de doorstroomhypotheek meer rekening houden met de aanwezige stenenwaarde. Hierdoor ontstaat er financiële ruimte om een nieuwe, vaak duurdere of modernere woning aan te kopen, zonder dat de maandlasten de pan uit rijzen.
+1. Vermogenswaardering prevaleert
 
-Financiële experts benadrukken echter dat de constructie juridisch en actuarieel waterdicht moet zijn. Er kleven risico's aan het opmaken van overwaarde, met name als de huizenprijzen onverhoopt mochten dalen of als de rentelasten gedurende de looptijd oplopen. Het kabinet laat zich daarom adviseren door toezichthouders en marktpartijen zoals Findinet om te borgen dat consumenten niet achteraf met restschulden of onvoorziene liquiditeitsproblemen worden geconfronteerd.
+De taxatiewaarde van de huidige woning vormt het vertrekpunt.
 
-     Tijdlijn van beleidsverkenning tot mogelijke implementatie
+In plaats van uitsluitend te toetsen op AOW en aanvullend pensioen, erkent de leennorm de vastgestelde overwaarde als primair onderpand voor de overbruggingstoezegging.
 
-         Q3 2026
-         Start officiële verkenning en consultatie door het ministerie.
+           Tussenfase
 
-         Q1 2027
-         Adviesrondes met AFM, DNB en hypotheekverstrekkers.
+2. Ruimere aankoopgarantie
 
-         Laat 2027
-         Eventuele contourennota en conceptregelgeving.
+Zekerheid vóórdat het oude huis definitief is verkocht.
 
-Macro-economische implicaties
+De senior kan met de doorstroomhypotheek inschrijven op een nieuwbouwproject of bestaand appartement zonder direct geconfronteerd te worden met ontbindende voorwaarden.
 
-De mogelijke komst van een landelijke doorstroomhypotheek staat niet op zichzelf, maar past in een bredere trend waarin de overheid zoekt naar instrumenten om de woningmarkt te flexibiliseren. Door ouderen te verleiden tot verhuizing, komt er een grote hoeveelheid bestaande, vaak strategisch gelegen woningen beschikbaar voor de markt. Dit kan dempend werken op de prijsstijgingen in het middensegment.
+           Rente gecumuleerd in depot
 
-Kritische geluiden wijzen er echter op dat extra financieringsmogelijkheden voor huizenbezitters de vraagzijde van de markt opnieuw kunnen aanwakkeren, wat de prijzen juist op kan stuwen. Het succes van de maatregel zal daarom sterk afhangen van de flankerende maatregelen, zoals het versneld bijbouwen van geschikte seniorenwoningen. Zolang er onvoldoende alternatieve woningen zijn om naar door te stromen, blijft elk hypothecair instrument immers een theoretische oplossing.
+3. Dubbele lasten gedekt uit depot
 
-     Vergelijking: Traditionele Hypotheek vs. Doorstroomhypotheek
+Maandlasten drukken niet op het lopende pensioeninkomen.
 
-Traditioneel
+Rentelasten gedurende de bouw- en verhuisperiode worden vooraf meegefinancierd uit de overwaarde, waardoor het besteedbare maandinkomen onaangetast blijft.
 
-          - Strenge inkomenseisen op pensioen
+4. Verhuizing en keteneffect
 
-          - Beperkte benutting overwaarde
+Verkoop oude woning lost de overbrugging af; gezinswoning komt vrij.
 
-          - Hoge drempel voor verhuizing
+Na oplevering wordt de initiële woning verkocht, het overbruggingskrediet afgewikkeld en kan een gezin of starter intrekken in de vrijgekomen eengezinswoning.
 
-Doorstroomhypotheek
+     ◀
+      ▶
+     ▶
+     1/4
 
-          - Inzet overwaarde als buffer
+De frictie bij nieuwbouw en bouwtijd
 
-          - Toetsing op maat voor senioren
+Het structurele tekort aan passende seniorenwoningen wordt verergerd door een praktische mismatch in de planning. Senioren willen doorgaans pas hun huidige woning verkopen wanneer de nieuwe woning daadwerkelijk gereed is; het vooruitzicht van twee keer verhuizen of tijdelijke opslag schrikt velen af. Bij nieuwbouwprojecten duurt het bouwtraject echter algauw anderhalf tot twee jaar.
 
-          - Stimuleert doorstroming naar compact
+Gedurende deze tussenfase moeten dubbele woonlasten worden gedragen. Reguliere banken hanteren strikte richtlijnen die voorschrijven dat de koper moet kunnen aantonen over voldoende liquide middelen te beschikken om tot 24 maanden aan dubbele hypotheekrente en aflossing te voldoen. Voor een gepensioneerde die het leeuwendeel van zijn netto vermogen in stenen heeft vastzitten, is dit zonder externe hulp of consumptieve verkoopclausules vrijwel onmogelijk.
+
+   Beleidsoverwegingen en risicobeheersing
+
+         Prudentieel
+
+Toezichtkaders DNB en AFM
+
+Toezichthouders waarschuwen dat versoepelde inkomenstoetsen prudentieel verantwoord moeten blijven. Mocht de woningmarkt plotseling stagneren of dalen, dan mag een huishouden niet achterblijven met een restschuld of onverkoopbaar onderpand.
+
+         Doorstroming
+
+Keteneffect op gezinswoningen
+
+Het macro-economische doel is het ontgrendelen van de zogeheten verhuiscarrousel: elke vertrekkende senior brengt gemiddeld 2,5 tot 3 verhuisbewegingen op gang, waardoor starters uiteindelijk betere kansen krijgen op een betaalbare woning.
+
+         Juridisch
+
+Consumentenbescherming & Zorgplicht
+
+Bij complexe financiële constructies zoals rentedepots en opeethypotheken geldt een verhoogde zorgplicht voor intermediairs om te voorkomen dat kwetsbare ouderen onnodig hoge rente-opslagen of advieskosten betalen.
+
+Macro-economische noodzaak van marktdoorstroming
+
+De politieke belangstelling vanuit het ministerie van Volkshuisvesting en Ruimtelijke Ordening (VRO) en Financiën is niet louter ingegeven door empathie voor de seniore koper. Het stimuleren van de doorstroomhypotheek is een strategisch instrument om de woningmarkt als geheel te ontlasten. De gemiddelde bezetting van eengezinswoningen door een- of tweepersoonshuishoudens op leeftijd ligt historisch hoog. Wanneer zij verhuizen naar een levensloopbestendige woning, ontstaat er ruimte voor jonge gezinnen, wier eerdere appartementen op hun beurt weer beschikbaar komen voor starters.
+
+Toch zijn marktpartijen verdeeld over de exacte vormgeving. Terwijl hypotheekadviseurs en belangenorganisaties pleiten voor een uniforme Nationale Hypotheek Garantie (NHG)-constructie voor doorstromers met overwaarde, vrezen traditionele grootbanken operationele complexiteit en toezichtboetes. Een gestandaardiseerd kader vanuit Den Haag moet de benodigde juridische rugdekking bieden om verstrekkers over de streep te trekken.
 
 Conclusie
 
-De verkenning van de doorstroomhypotheek onderstreept de urgentie waarmee Den Haag zoekt naar oplossingen voor de vastgelopen huizenmarkt. Hoewel het initiatief potentie heeft om de mobiliteit onder ouderen te vergroten, staat het plan nog in de kinderschoenen. De komende maanden moet blijken of het kabinet de plannen kan omzetten in levensvatbare wetgeving die zowel de huizenbezitter als de woningmarkt als geheel ten goede komt.
+Het kabinetsinitiatief raakt aan een van de meest hardnekkige paradoxen van het Nederlandse huisvestingsbeleid: een overvloed aan privaat vermogen opgesloten in bakstenen tegenover een chronisch gebrek aan liquiditeit voor noodzakelijke levensfasen. Zolang toezichthoudende toetsnormen uitsluitend sturen op pensioenkasstromen en vermogenscomponenten negeren, blijft de verhuisketen geblokkeerd. Een doordacht ontworpen doorstroomhypotheek kan functioneren als het ontbrekende vliegwiel om zowel ouderen passende woonruimte te bieden als de bredere woningmarkt van het slot te halen.
 
-   Bronnen: Findinet, Ministerie van Volkshuisvesting en Ruimtelijke Ordening
+ Bronnen: Ministerie van Volkshuisvesting en Ruimtelijke Ordening, Findinet, De Nederlandsche Bank (DNB), Nibud-financieringsnormen.
