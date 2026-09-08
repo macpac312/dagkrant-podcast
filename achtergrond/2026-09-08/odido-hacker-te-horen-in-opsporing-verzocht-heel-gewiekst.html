@@ -1,0 +1,147 @@
+<ul class="bg-bullets">
+  <li>In het televisieprogramma <em>Opsporing Verzocht</em> heeft de politie voor het eerst een audiofragment vrijgegeven van de vermoedelijke Odido-hacker, die zich telefonisch voordeed als interne IT-collega.</li>
+  <li>De beller paste gerichte <em>voice phishing</em> (vishing) toe en loodste een nietsvermoedende medewerker naar een nagemaakte inlogomgeving om tweestapsverificatie te omzeilen.</li>
+  <li>Door de inbreuk verkreeg de aanvaller toegang tot systemen met persoonsgegevens van miljoenen Nederlandse telecomklanten, waaronder NAW-gegevens, IBAN-nummers en contractinformatie.</li>
+  <li>De publicatie van het geluidsfragment markeert een zeldzame tactische stap van het Openbaar Ministerie, gericht op herkenning van stem, intonatie en jargon door de directe omgeving.</li>
+</ul>
+
+<div class="ns-viz ns-viz-stats">
+  <div class="ns-stat-card">
+    <span class="ns-stat-num">6,2 mln</span>
+    <span class="ns-stat-lbl">Getroffen dossiers bij het telecomlek</span>
+  </div>
+  <div class="ns-stat-card">
+    <span class="ns-stat-num">1</span>
+    <span class="ns-stat-lbl">Telefoongesprek vereist voor de initiële penetratie</span>
+  </div>
+  <div class="ns-stat-card">
+    <span class="ns-stat-num">MFA</span>
+    <span class="ns-stat-lbl">Omzeild via realtime <em>adversary-in-the-middle</em></span>
+  </div>
+  <div class="ns-stat-card">
+    <span class="ns-stat-num">2026</span>
+    <span class="ns-stat-lbl">Uitzending Opsporing Verzocht met audio-analyse</span>
+  </div>
+</div>
+
+<h5>Social engineering als kwetsbaarste schakel</h5>
+<p>
+De stemopname die de politie deze week openbaar maakte, toont een ontluisterende realiteit van moderne cybercriminaliteit: de meest geavanceerde verdedigingswallen bezwijken vaak niet op softwarefouten, maar op menselijke interactie. De verdachte belt de medewerker van Odido met een natuurlijk klinkende Nederlandse tongval, hanteert overtuigend bedrijfsintern jargon en wekt direct de indruk van een collegiale systeembeheerder die een dringend technisch probleem wil oplossen. Juist door die kalme, zakelijke houding wist de dader achterdocht te smoren.
+</p>
+<p>
+Volgens rechercheurs was de aanvaller buitengewoon goed voorbereid. De beller wist precies welke namen en afdelingen binnen het telecombedrijf genoemd moesten worden om autoriteit uit te stralen. Deze methodiek — in het cyberdomein aangeduid als gerichte <em>vishing</em> (voice phishing) — is de afgelopen jaren geëvolueerd van gebrekkige helpdesk-scams naar minutieus geregisseerde infiltratiepogingen, veelal voorafgegaan door wekenlange verkenning via professionele netwerken en eerdere datadumps.
+</p>
+
+<div class="ns-viz ns-viz-mech" id="vishing-mech">
+  <div class="ns-mech-pills">
+    <button class="ns-mech-pill active" data-step="0">1. Pre-texting</button>
+    <button class="ns-mech-pill" data-step="1">2. Vishing Call</button>
+    <button class="ns-mech-pill" data-step="2">3. AitM-Portaal</button>
+    <button class="ns-mech-pill" data-step="3">4. Exfiltratie</button>
+  </div>
+  <div class="ns-mech-view">
+    <div class="ns-mech-slide active" data-step="0">
+      <svg viewBox="0 0 460 170" width="100%" height="100%">
+        <rect x="20" y="30" width="120" height="90" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="80" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f172a">OSINT & Dossier</text>
+        <text x="80" y="85" text-anchor="middle" font-size="10" fill="#64748b">Organogram & namen</text>
+        <path d="M140 75 L200 75" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arr-blue)" stroke-dasharray="4"/>
+        <rect x="200" y="30" width="120" height="90" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+        <text x="260" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d">Doelwitanalyse</text>
+        <text x="260" y="85" text-anchor="middle" font-size="10" fill="#15803d">Selectie werknemer</text>
+        <defs>
+          <marker id="arr-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0ea5e9"/>
+          </marker>
+        </defs>
+      </svg>
+      <div class="ns-mech-caption">Fase 1: De aanvaller verzamelt via LinkedIn en eerdere lekken context over interne structuren en IT-procedures.</div>
+    </div>
+    <div class="ns-mech-slide" data-step="1">
+      <svg viewBox="0 0 460 170" width="100%" height="100%">
+        <circle cx="90" cy="80" r="40" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="90" y="85" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">Vishing Call</text>
+        <path d="M130 80 L230 80" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-red)"/>
+        <circle cx="270" cy="80" r="40" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+        <text x="270" y="85" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">Medewerker</text>
+        <defs>
+          <marker id="arr-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444"/>
+          </marker>
+        </defs>
+      </svg>
+      <div class="ns-mech-caption">Fase 2: De dader belt onder valse voorwendselen van IT-support en spoort aan direct in te loggen op een remote URL.</div>
+    </div>
+    <div class="ns-mech-slide" data-step="2">
+      <svg viewBox="0 0 460 170" width="100%" height="100%">
+        <rect x="40" y="35" width="100" height="80" rx="6" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+        <text x="90" y="70" text-anchor="middle" font-size="11" fill="#0f172a">Nep-Portaal</text>
+        <text x="90" y="90" text-anchor="middle" font-size="9" fill="#64748b">(Lookalike URL)</text>
+        <path d="M140 75 L200 75" stroke="#f97316" stroke-width="2"/>
+        <rect x="200" y="35" width="110" height="80" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+        <text x="255" y="70" text-anchor="middle" font-size="11" font-weight="bold" fill="#c2410c">Session Hijack</text>
+        <text x="255" y="90" text-anchor="middle" font-size="9" fill="#c2410c">MFA-token relais</text>
+      </svg>
+      <div class="ns-mech-caption">Fase 3: Een zogeheten reverse-proxy spiegelt de inlogpoging en vangt gelijktijdig de MFA-code live af.</div>
+    </div>
+    <div class="ns-mech-slide" data-step="3">
+      <svg viewBox="0 0 460 170" width="100%" height="100%">
+        <rect x="30" y="35" width="120" height="80" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+        <text x="90" y="70" text-anchor="middle" font-size="11" fill="#0f172a">Interne Database</text>
+        <text x="90" y="90" text-anchor="middle" font-size="9" fill="#64748b">Klantgegevens</text>
+        <path d="M150 75 L230 75" stroke="#dc2626" stroke-width="2"/>
+        <rect x="230" y="35" width="120" height="80" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+        <text x="290" y="70" text-anchor="middle" font-size="11" font-weight="bold" fill="#991b1b">Exfiltratie</text>
+        <text x="290" y="90" text-anchor="middle" font-size="9" fill="#991b1b">Miljoenen records</text>
+      </svg>
+      <div class="ns-mech-caption">Fase 4: Met geautoriseerde sessierechten onttrekt de aanvaller massaal klantdata naar externe servers.</div>
+    </div>
+  </div>
+  <div class="ns-mech-ctrls">
+    <button class="ns-mech-btn prev">◀ Vorige</button>
+    <button class="ns-mech-btn play">▶ Play</button>
+    <button class="ns-mech-btn next">Volgende ▶</button>
+  </div>
+</div>
+
+<h5>De techniek achter de AitM-invalshoek</h5>
+<p>
+Cruciaal in het dossier is de vaststelling dat multifactorauthenticatie (MFA) op zichzelf niet volstond om het netwerk af te grendelen. De aanvaller leidde het slachtoffer naar een zorgvuldig gekloonde inlogpagina via een domeinnaam die nauwelijks te onderscheiden was van de legitieme IT-omgeving. Dit type aanval staat bekend als <em>Adversary-in-the-Middle</em> (AitM).
+</p>
+<p>
+Terwijl de medewerker zijn gebruikersnaam, wachtwoord en vervolgens zijn authenticatiecode intikte, stuurde het tussenliggende aanvallersplatform deze gegevens in realtime door naar de officiële inlogserver van Odido. Zodra de telecomprovider de sessie goedkeurde, onderschepte de crimineel het zogeheten sessiecookie. Daarmee kreeg de aanvaller toegang zonder dat daar verdere wachtwoorden voor nodig waren, en kon hij zich ongehinderd door interne systemen bewegen.
+</p>
+
+<div class="ns-viz ns-viz-timeline">
+  <div class="ns-timeline-item">
+    <div class="ns-timeline-date">Inbreuk</div>
+    <div class="ns-timeline-text">Aanvaller ontfutselt inloggegevens via telefonisch contact en dringt binnen in Odido-systemen.</div>
+  </div>
+  <div class="ns-timeline-item">
+    <div class="ns-timeline-date">Detectie & Melding</div>
+    <div class="ns-timeline-text">Ongebruikelijke data-activiteit ontdekt; telecomprovider meldt het lek bij de Autoriteit Persoonsgegevens en start forensisch onderzoek.</div>
+  </div>
+  <div class="ns-timeline-item">
+    <div class="ns-timeline-date">Strafrechtelijk traject</div>
+    <div class="ns-timeline-text">Het Team High Tech Crime analyseert logbestanden, netwerkverbindingen en veiliggestelde opnames van interne telefoonlijnen.</div>
+  </div>
+  <div class="ns-timeline-item">
+    <div class="ns-timeline-date">Uitzending</div>
+    <div class="ns-timeline-text">Justitie toont audiofragment in <em>Opsporing Verzocht</em> in de hoop op een tip over de identiteit van de beller.</div>
+  </div>
+</div>
+
+<h5>Waarom stemherkenning nu het zwaarste middel is</h5>
+<p>
+Het openbaar maken van audio-opnamen geldt in cybercrime-onderzoeken als een paardenmiddel. Digitale sporen — van IP-adressen via geanonimiseerde VPN’s tot betalingen via mixerdiensten — lopen in internationale netwerken immers regelmatig dood op serverfarms buiten de jurisdictie van Europese opsporingsdiensten. Wanneer technische attributie stagneert, verschuift het vizier noodgedwongen naar traditionele recherchemethoden.
+</p>
+<p>
+Volgens rechercheurs beschikt het Openbaar Ministerie over meerdere opnamen waarin de crimineel interacteert met Odido-personeel. De hoop is gevestigd op kennissen, familie of voormalige handlangers die de specifieke dictie, spraakfoutjes of ademhaling herkennen. Tegelijkertijd onderstreept de zaak een structurele les voor het bedrijfsleven: verdediging tegen cyberaanvallen vereist naast sterke cryptografie ook <em>phishing-resistente</em> hardware-sleutels (zoals FIDO2/WebAuthn), waarmee zelfs een gemanipuleerde medewerker zijn credentials niet aan een tussenpartij kan overhandigen.
+</p>
+
+<h5>Conclusie</h5>
+<p>
+De vrijgegeven geluidsopname toont aan dat de grens tussen traditionele oplichting en grootschalige spionage- of afpersingsoperaties definitief is vervaagd. De inbraak bij Odido was geen gevolg van geavanceerde zero-day-exploits, maar van een overtuigend telefoongesprek gecombineerd met gestroomlijnde proxy-architectuur. Zolang organisaties vertrouwen op MFA-methoden die vatbaar zijn voor AitM-onderschepping, blijft de menselijke stem een van de dodelijkste wapens in het cyberarsenaal.
+</p>
+
+<div class="bg-footer">Bronnen: NOS Nieuws, Tweakers, AVROTROS Opsporing Verzocht, Openbaar Ministerie (Team High Tech Crime).</div>

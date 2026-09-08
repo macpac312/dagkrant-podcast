@@ -1,0 +1,95 @@
+<ul class="bg-bullets">
+  <li>President Volodymyr Zelensky heeft met spoed extra overleg aangevraagd binnen de Ukraine Defense Contact Group (UDCG), waarbij ook de Nederlandse minister Dilan Yeşilgöz aanschuift.</li>
+  <li>De intensiteit van Russische luchtaanvallen bereikt nieuwe pieken door grootschalige inzet van gemodificeerde Geran-2 (Shahed-136) drones met optische sensoren en straalmotoren.</li>
+  <li>Oekraïne kampt met een structurele asymmetrie in kosten en munitievoorraden: goedkope drones dwingen het verbruik van schaarse westerse luchtdoelraketten af.</li>
+  <li>Kiev vraagt westerse bondgenoten met klem om extra mobiele vuureenheden, elektronische storingsapparatuur (EW) en gerichte integratie van AI-gestuurde radarnetwerken.</li>
+</ul>
+
+<div class="ns-viz">
+  <ns-geomap region="eastern-europe" countries="UKR,RUS,POL,ROU,BLR" highlight="UKR" title="Oekraïens luchtruim en aanvalsvectoren"></ns-geomap>
+</div>
+
+<div class="ns-viz ns-viz-stats">
+  <div class="ns-stat-card">
+    <div class="ns-stat-val">80+</div>
+    <div class="ns-stat-label">Gemiddeld aantal drones per nachtelijke aanvalsgolf</div>
+  </div>
+  <div class="ns-stat-card">
+    <div class="ns-stat-val">1:15</div>
+    <div class="ns-stat-label">Kostenratio: Shahed-drone ($30k) t.o.v. westerse onderscheppingsraket ($450k+)</div>
+  </div>
+  <div class="ns-stat-card">
+    <div class="ns-stat-val">78%</div>
+    <div class="ns-stat-label">Onderscheppingsgraad mobiele vuurploegen overdag; daalt sterk bij nachtelijke mist</div>
+  </div>
+  <div class="ns-stat-card">
+    <div class="ns-stat-val">50+</div>
+    <div class="ns-stat-label">Deelnemende bondgenoten binnen het Ramstein-overlegformaat (UDCG)</div>
+  </div>
+</div>
+
+<h5>De technologische metamorfose van de Shahed</h5>
+<p>Wat begon als een relatief trage, luidruchtige kruising tussen een modelvliegtuig en een geleid projectiel, is inmiddels uitgegroeid tot een geavanceerd en dodelijk wapenplatform. De Iraanse Shahed-136, die door Rusland in eigen fabrieken in Jelaboega op industriële schaal wordt geassembleerd onder de naam Geran-2, heeft in recente maanden ingrijpende technologische modificaties ondergaan. Waar de eerste generaties afhankelijk waren van eenvoudige commerciële gps-ontvangers die kwetsbaar waren voor Oekraïense elektronische oorlogvoering (EW), beschikken de nieuwste versies over meervoudige Kometa-M satellietnavigatie-antennes met geavanceerde storingsfilters.</p>
+<p>Bovendien signaleren Oekraïense inlichtingendiensten de toenemende inzet van modellen met zwartgespoten carbonrompen om detectie door mobiele zoeklichtteams te bemoeilijken, evenals proefmodellen uitgerust met miniatuur-straalmotoren en thermobarische ladingen. Door deze hogere snelheden en gewijzigde vluchtprofielen wordt het tijdvenster voor mobiele vuurploegen — die opereren met zware machinegeweren vanaf pick-uptrucks — drastisch verkleind van enkele minuten naar luttele seconden.</p>
+
+<div class="ns-viz ns-viz-mech" data-active="0">
+  <div class="ns-mech-nav">
+    <button class="ns-mech-pill active" data-step="0">1. Lancering & Zwermcoördinatie</button>
+    <button class="ns-mech-pill" data-step="1">2. Trajectadaptatie & EW-omzeiling</button>
+    <button class="ns-mech-pill" data-step="2">3. Verzadiging Luchtverdediging</button>
+  </div>
+  <div class="ns-mech-slides">
+    <div class="ns-mech-slide active" data-step="0">
+      <svg viewBox="0 0 400 160" width="100%" height="160">
+        <rect x="20" y="110" width="60" height="30" rx="4" fill="#334155"/>
+        <line x1="80" y1="120" x2="160" y2="70" stroke="#ef4444" stroke-width="2" stroke-dasharray="4"/>
+        <polygon points="160,70 150,67 155,77" fill="#ef4444"/>
+        <circle cx="160" cy="70" r="4" fill="#ef4444"/>
+        <circle cx="180" cy="50" r="4" fill="#ef4444"/>
+        <circle cx="170" cy="90" r="4" fill="#ef4444"/>
+        <text x="30" y="155" fill="#94a3b8" font-size="11">Lanceerplatform</text>
+        <text x="190" y="65" fill="#cbd5e1" font-size="11">Gespreide zwerm (meerdere vectoren)</text>
+      </svg>
+      <p class="ns-mech-desc">Massale lanceringen vanuit Koersk en de Krim in waaiervorm over verschillende corridors om vroegtijdige radarpeiling te bemoeilijken.</p>
+    </div>
+    <div class="ns-mech-slide" data-step="1">
+      <svg viewBox="0 0 400 160" width="100%" height="160">
+        <path d="M 30,120 Q 120,20 220,100 T 360,40" fill="none" stroke="#ef4444" stroke-width="2"/>
+        <circle cx="220" cy="100" r="24" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="2"/>
+        <text x="210" y="95" fill="#3b82f6" font-size="10">EW-zone</text>
+        <polygon points="360,40 348,42 354,50" fill="#ef4444"/>
+        <text x="50" y="145" fill="#94a3b8" font-size="11">Laagvliegend profiel ontwijkt jamming</text>
+      </svg>
+      <p class="ns-mech-desc">Drones wisselen autonoom van hoogte en koers zodra gps-signalen worden verstoord, waarbij ze gebruikmaken van optische herkenning en inertiële navigatie.</p>
+    </div>
+    <div class="ns-mech-slide" data-step="2">
+      <svg viewBox="0 0 400 160" width="100%" height="160">
+        <rect x="300" y="80" width="50" height="60" rx="3" fill="#1e293b"/>
+        <line x1="180" y1="40" x2="300" y2="100" stroke="#ef4444" stroke-width="2"/>
+        <line x1="160" y1="70" x2="300" y2="105" stroke="#ef4444" stroke-width="2"/>
+        <line x1="260" y1="130" x2="280" y2="105" stroke="#10b981" stroke-width="2"/>
+        <text x="290" y="155" fill="#94a3b8" font-size="11">Kritieke infrastructuur</text>
+        <text x="140" y="30" fill="#ef4444" font-size="11">Gecoördineerde inslagpiek</text>
+      </svg>
+      <p class="ns-mech-desc">Gecombineerde aanvallen overbelasten lokale verdedigingsclusters, waardoor raketvoorraden (NASAMS/Iris-T) snel uitgeput raken.</p>
+    </div>
+  </div>
+  <div class="ns-mech-controls">
+    <button class="ns-mech-btn prev" aria-label="Vorige">◀</button>
+    <button class="ns-mech-btn play" aria-label="Pauzeer/Speel af">❚❚</button>
+    <button class="ns-mech-btn next" aria-label="Volgende">▶</button>
+  </div>
+</div>
+
+<h5>De uitputtingsslag om de munitievoorraad</h5>
+<p>De tactische transformatie aan Russische zijde heeft directe strategische gevolgen voor de westerse militaire coalitie. Oekraïne bevindt zich in een mathematische wurggreep: het neerschieten van een drone die circa 20.000 tot 30.000 dollar kost met een geavanceerde luchtdoelraket van een half miljoen dollar is op termijn onhoudbaar. Toch dwingen de zwaardere explosieve ladingen en de precisie van de nieuwe Geran-modellen Kiev ertoe om zijn schaarse westerse systemen, zoals Iris-T, NASAMS en zelfs Patriot, vaker in te zetten wanneer mobiele teams het doel missen.</p>
+<p>Tijdens het aangekondigde UDCG-overleg, waar ook minister van Defensie Dilan Yeşilgöz namens Nederland aan deelneemt, staat de logistieke keten van munitieleveranties bovenaan de agenda. Europese defensieproducenten schroeven hun productiecapaciteit voor artilleriegranaten inmiddels op, maar de productie van hoogwaardige sensoren en luchtdoelraketten loopt structureel achter op het verbruik aan het front. Nederland heeft eerder substantiële bijdragen geleverd met radarapparatuur en F-16-ondersteuning, maar Kiev dringt nu aan op kortetermijnoplossingen: gemotoriseerd luchtafweergeschut (zoals de Gepard en vergelijkbare platforms) en duizenden man-portable air-defense systems (MANPADS).</p>
+
+<h5>De veranderende rol van het westerse bondgenootschap</h5>
+<p>Naast fysieke munitie verschuift het accent van de Oekraïense hulpvragen naar data-integratie en elektronische middelen. Het vermogen om honderden vliegende objecten gelijktijdig te detecteren en classificeren vereist een netwerkcentrische oorlogvoering waarin akoestische sensoren op de grond gekoppeld worden aan satellietdata van de NAVO en mobiele interceptieteams. Zonder deze geïntegreerde radarparaplu dreigt het energienetwerk in de aanloop naar de komende winter opnieuw zwaar ontregeld te raken.</p>
+<p>Binnen de Ramstein-coalitie groeit het besef dat defensieve maatregelen alleen niet volstaan. Oekraïne herhaalt daarom de eis om westerse langeafstandswapens zonder geografische beperkingen te mogen inzetten tegen de vliegbases en assemblagefabrieken diep in de Russische federatie waar deze drones worden gestationeerd. Terwijl enkele bondgenoten vrezen voor verdere escalatie, betogen militaire analisten dat het neutraliseren van de lanceerplatforms de enige financieel en tactisch houdbare reactie is op Moskou's industriële droneproductie.</p>
+
+<h5>Conclusie</h5>
+<p>De Russische dronecampagne is getransformeerd van een sporadisch terreurwapen naar een systematische uitputtingsoorlog die de grondslagen van de westerse defensie-industrie beproeft. Het spoedoverleg van president Zelensky met de UDCG markeert een cruciaal scharniermoment: zonder aanzienlijke uitbreiding van goedkope onderscheppingsmiddelen en vergaande westerse permissie om productielocaties aan te vallen, dreigt Oekraïne zijn meest geavanceerde luchtverdedigingsraketten te verliezen aan een eindeloze stroom goedkope Russische drones.</p>
+
+<div class="bg-footer">Bronnen: NOS Nieuws, Ministerie van Defensie, Ukraine Defense Contact Group (Ramstein), Institute for the Study of War (ISW)</div>
