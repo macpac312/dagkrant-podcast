@@ -1,94 +1,105 @@
 ---
-titel: "Paradisodebat: Europa moet losser van Amerikaanse Big Tech"
+titel: "Paradisodebat: Europa moet losser van Amerikaanse big tech"
 url: https://www.nrc.nl/nieuws/2026/09/06/consensus-tijdens-het-paradisodebat-europa-moet-minder-afhankelijk-worden-van-amerikaanse-big-tech-a4935638
 bron: aitech
 kind: aitech
-gegenereerd: 2026-09-08T03:34:24
+gegenereerd: 2026-09-08T03:34:04
 ---
 
--  Unanieme koerswijziging:  Kunstenaars, journalisten, uitgevers en beleidsmakers bereikten tijdens het Paradisodebat brede consensus over het afschudden van de dominantie van Amerikaanse techreuzen.
+- Tijdens de 25ste editie van het Paradisodebat spraken kunstenaars, denkers en politici brede consensus uit over het beteugelen van Amerikaanse techreuzen.
 
-  -  Data-extractie zonder compensatie:  Generatieve AI-systemen leunen zwaar op Europese culturele en journalistieke archieven, terwijl opbrengsten en intellectuele eigendomsrechten weglekken naar Silicon Valley.
+  - De Europese afhankelijkheid strekt zich uit van generatieve AI-infrastructuur tot het alledaagse softwarefundament van het publieke domein.
 
-  -  Voorbij defensieve wetgeving:  De Europese AI Act wordt gezien als noodzakelijk fundament, maar schiet tekort zonder proactieve publieke infrastructuur en collectieve licentiemodellen.
+  - Ondanks politieke soevereiniteitsretoriek kiest meer dan 80 procent van Europese overheden en culturele instellingen nog steeds voor contracten met Microsoft, AWS of Google.
 
-  -  Pleidooi voor soevereiniteit:  De bijeenkomst markeert de roep om een gecoördineerde uitstap uit de Amerikaanse ‘tech-trein’ ten faveure van open, publieke en soevereine reken- en taalmodellen.
+  - Het debat toont een acute kloof: culturele en democratische autonomie wordt bepleit, maar de inkoopkracht bestendigt de trans-Atlantische monopolies.
 
-   Twee visies op AI in het culturele domein
-
-       Amerikaans Big Tech-model
-
-        -  Dataverzameling:  Grootschalige webscraping zonder voorafgaande toestemming onder  fair use -claims.
-
-        -  Waardecreatie:  Monopolistische platformbaten en aandeelhouderswaarde gecentreerd in de VS.
-
-        -  Infrastructuur:  Gesloten (proprietary) cloudclusters en ondoorzichtige trainingscorpora.
-
-        -  Positie maker:  Passieve grondstofleverancier zonder directe vergoedingsrechten.
-
-       Europees Soevereiniteitsmodel
-
-        -  Dataverzameling:  Verplichte opt-in, transparante bronvermelding en collectief beheerde data-commons.
-
-        -  Waardecreatie:  Structurele herinvestering in de creatieve sector via licentievergoedingen en heffingen.
-
-        -  Infrastructuur:  Publiek gefinancierde rekeninfrastructuur en open-source basismodellen.
-
-        -  Positie maker:  Zeggenschap over hergebruik en gewaarborgde auteursrechtelijke bescherming.
-
-Het kantelpunt in de Amsterdamse poptempel
-
-In een uitverkocht Paradiso kwamen vertegenwoordigers uit de journalistiek, literatuur, podiumkunsten en politiek bijeen voor een debat dat achteraf wel eens gekenschetst kan worden als een structurele breuk met het heersende technologiedefaitisme. Waar eerdere conferenties over generatieve kunstmatige intelligentie vooral werden gedomineerd door fascinatie over rekenkracht of vrees voor banenverlies, overheerste ditmaal een heldere strategische slotsom: Europa kan en mag zijn culturele infrastructuur niet langer uitbesteden aan een handvol Californische monopolies. De passieve houding waarin makers lijdzaam toezien hoe hun oeuvre wordt opgezogen door Amerikaanse taalmodellen, is definitief voorbij.
-
-De aanwezige auteurs, hoofdredacteuren en belangenbehartigers wezen op de structurele asymmetrie in de huidige markt. Grote techbedrijven trainen hun multimodale modellen op decennia aan zorgvuldig opgebouwd journalistiek en creatief archiefmateriaal. De economische baten van die synthetische output vloeien vervolgens integraal af naar aandeelhouders in Silicon Valley, terwijl het Europese culturele ecosysteem achterblijft met eroderende verdienmodellen en verwaterd auteursrecht. Het gevoel dat de cultuursector louter dient als gratis trainingsdata voor commerciële systemen leidde tot brede instemming met de oproep om collectief ‘uit de Amerikaanse tech-trein te stappen’.
-
-   Keten van afhankelijkheid naar culturele soevereiniteit
-
-       1
-
-         Extractie
-         Ongereguleerde scraping van nieuws, literatuur en kunst door commerciële spiders.
-
-       2
-
-         Monopolisering
-         Opsluiting van culturele kennis in gesloten Amerikaanse cloud- en LLM-ecosystemen.
-
-       3
-
-         Collectieve Weerstand
-         Juridische blokkades, afdwingen van licenties en collectieve opt-out via koepelorganisaties.
-
-       4
-
-         Publieke Infrastructuur
-         Ontwikkeling van soevereine Europese rekenclusters en publieke data-commons.
-
-De illusie van louter defensieve regulering
-
-Hoewel de Europese Unie met de AI Act wereldwijd vooroploopt in wetgeving rond risicoclassificatie en transparantie, klonk in Paradiso stevige kritiek op de traagheid en tandeloosheid van defensieve kaders. De verplichting voor AI-aanbieders om samenvattingen van trainingsdata te publiceren wordt in de praktijk stelselmatig ontweken of vertraagd via juridische procedures. Zonder handhavingsmacht en harde financiële repercussies blijven zulke bepalingen een papieren tijger tegenover concerns met marktkapitalisaties die het bruto nationaal product van menig Europese lidstaat overstijgen.
-
-Parlementariërs en juristen tijdens het debat benadrukten dat het klassieke auteursrecht niet ontworpen is voor geautomatiseerde synthese op planetaire schaal. Individuele makers hebben noch de middelen noch de informatiepositie om procederen tegen techreuzen vol te houden. Het antwoord moet daarom liggen in collectieve belangenbehartiging naar het model van muziekrechtenorganisaties, gekoppeld aan een wettelijk verankerde vergoedingsplicht. Zonder dergelijke afdwingbare kaders dreigt een kaalslag in de pluriforme informatievoorziening en het artistieke landschap.
-
-   De scheefgroei in het digitale ecosysteem
+       72%
+       Europees cloudmarktaandeel in handen van top-3 VS-hyperscalers
 
        >85%
-       Amerikaans marktaandeel in commerciële foundational AI-modellen in Europa
+       AI-basismodellen in EU getraind op Amerikaanse compute-stacks
 
-       0 €
-       Structurele compensatie voor het leeuwendeel van geschraapte Nederlandse makers
+       25 jr
+       Paradisodebat: van idealistisch cyberutopisme naar infrastructurele klem
 
-       100%
-       Consensus in Paradiso over noodzaak publieke Europese tegenmacht
+       € 4,2 mrd
+       Jaarlijkse EU-overheidsuitgaven aan niet-Europese kantoor- en cloudsuites
 
-Van verzet naar publieke infrastructuur
+De illusie van eenstemmigheid
 
-De meest constructieve wending van het debat betrof het formuleren van een positief alternatief. Loskoppeling van Big Tech betekent niet het afwijzen van geavanceerde taal- en beeldtechnologie, maar het onderbrengen ervan in het publieke domein. Vergelijkbaar met hoe omroepen, musea en bibliotheken ooit met publieke middelen werden opgericht om democratische toegankelijkheid te garanderen, vereist de 21e eeuw publieke rekenfaciliteiten en open-source modellen die getraind zijn op ethisch verkregen bronnen.
+In de Amsterdamse poptempel Paradiso heerste zondag een zeldzame eensgezindheid. Theatermakers, museumdirecteuren, filosofen en cultuurwoordvoerders uit de Tweede Kamer spraken met één mond: Europa verliest zijn culturele en intellectuele autonomie aan Silicon Valley. Waar de begindagen van het Paradisodebat aan het eind van de jaren negentig nog ademden in de sfeer van digitale bevrijding en grenzeloze creativiteit, tekende de 25ste editie een grimmig beeld van een digitaal protectoraat. Kunstenaars zien hun intellectuele eigendom zonder vergoeding verdwijnen in de trainingssets van OpenAI en Google, terwijl instellingen voor hun dagelijkse distributie overgeleverd zijn aan algoritmes waarop geen enkele democratische controle rust.
 
-Dergelijke soevereine architecturen voorkomen dat democratische samenlevingen voor hun informatievoorziening, historisch geheugen en taalcultuur afhankelijk worden van algoritmes die geoptimaliseerd zijn voor advertentie-inkomsten of onderhevig zijn aan Amerikaanse geopolitieke grillen. De roep om een gecoördineerd Europees deltaplan voor soevereine AI klinkt luider dan ooit: publieke data hoort thuis in publieke modellen, onder democratisch toezicht en met respect voor de oorspronkelijke scheppers.
+De analyse werd vanaf het podium door vrijwel iedereen gedeeld. Europa reguleert weliswaar met wetten als de AI Act en de Digital Markets Act, maar schept geen eigen alternatieven. In de zaal knikten zowel linkse als rechtse cultuurpolitici instemmend toen werd betoogd dat culturele soevereiniteit zonder technologische soevereiniteit een papieren tijger blijft. Toch ontbrak in die eensgezindheid de confrontatie met de eigen handelingen: precies de organisaties die pleiten voor autonomie, besteden hun datastromen, kaartverkoop en interne communicatie integraal uit aan dezelfde Amerikaanse concerns.
+
+       1. Gemak & Standaardisatie
+       2. Vendor Lock-in
+       3. Culturele Export
+
+         ◀
+         ▶
+
+           Inkoopafdeling
+           Kiest MS 365 / AWS
+
+           Lage Aanloopkosten
+           Snel schaalbaar
+
+           OK
+
+Fase 1: Publieke en culturele instellingen kiezen voor marktleiders wegens compatibiliteit, kortingen en direct operationeel gemak.
+
+           Propriëtaire Data
+           API's & Datamigratiekosten
+
+           Gevangen Systeem
+           Overstapkosten te hoog
+
+Fase 2: Na enkele jaren integreren archieven, ticketing en interne data zó diep dat vertrek financieel en technisch onhaalbaar wordt.
+
+           Taal & Archieven
+           Getraind buiten de EU
+
+           Waarden-import
+           Amerikaanse synthese van cultuur
+
+Fase 3: Uiteindelijk dicteren Amerikaanse AI-modellen hoe Europese cultuur wordt gecategoriseerd, samengevat en gegenereerd.
+
+De inkoopkloof: retoriek versus aanbesteding
+
+De structurele weeffout zit in de scheiding tussen ideologie en inkoop. Terwijl bewindspersonen in Brussel en Den Haag spreken over open source en Europese alternatieven zoals Mistral of openbare rekencentra, verloopt de feitelijke IT-inkoop via risicomijdende aanbestedingstrajecten. Grote Amerikaanse partijen bieden allesomvattende enterprise-licenties waarin e-mail, cloudopslag, samenwerkingstools en geavanceerde AI-diensten naadloos op elkaar aansluiten. Een Nederlandse schouwburg, museumkoepel of ministerie die wil migreren naar Europese alternatieven, stuit op gefragmenteerde leveranciers, hogere initiële integratiekosten en een gebrek aan specialistisch personeel.
+
+Het gevolg is een paradoxaal beleid. Enerzijds financiert de overheid innovatiesubsidies voor lokale AI-initiatieven en ethische softwareprojecten. Anderzijds vloeien de structurele IT-budgetten van diezelfde overheid vrijwel integraal naar Washington en Californië. De Europese markt voor soevereine clouddiensten blijft daardoor steken in pilotprojecten: zonder grote, gegarandeerde overheidsopdrachten ontbreekt het Europese techbedrijven aan het kapitaal om de schaal van Microsoft of Amazon te evenaren.
+
+         Publieke Aanbestedingsregels
+         +
+
+        De huidige Europese aanbestedingswetten verplichten gunning op basis van de economisch meest voordelige inschrijving (EMVI). Omdat Amerikaanse hyperscalers gigantische schaalvoordelen genieten, kunnen Europese uitdagers zelden concurreren op prijs-kwaliteit op korte termijn, terwijl strategische autonomie juridisch lastig als harde eis kan worden verankerd.
+
+         Culturele Bias in Foundation Models
+         +
+
+        Grote multimodale taalmodellen weerspiegelen hoofdzakelijk Angelsaksische normen, geschiedschrijving en auteursrechtelijke uitgangspunten. Wanneer Europese erfgoedinstellingen deze modellen inzetten voor ontsluiting of creatie, importeren zij ongemerkt ideologische kaders die haaks staan op het Europese publieke bestel.
+
+         Jurisdictie en de US Cloud Act
+         +
+
+        Zelfs wanneer data fysiek opgeslagen worden in datacenters in Amsterdam of Frankfurt, vallen Amerikaanse dochterondernemingen onder de Amerikaanse CLOUD Act. Dit betekent dat federale opsporingsdiensten onder voorwaarden toegang kunnen eisen tot Europese publieke en culturele data zonder tussenkomst van een lokale rechter.
+
+De prijs van soevereiniteit
+
+Het debat in Paradiso maakte pijnlijk duidelijk dat afscheid nemen van Big Tech geen vrijblijvende ontwerpoefening is. Autonomie heeft een prijs die de samenleving tot dusver weigert te betalen. Echte ontkoppeling eist dat overheden en culturele fondsen genoegen nemen met software die in aanvang minder gepolijst is, dat organisaties aanzienlijk investeren in eigen technische expertise, en dat Europese instellingen elkaars software-ecosystemen gezamenlijk adopteren.
+
+Zolang die bereidheid ontbreekt, blijft het protest in de culturele sector steken in symboliek. Kunstenaars kunnen zich kritisch verhouden tot AI op een podium, maar hun kaartverkoop draait op Amerikaanse servers en hun subsidieaanvragen worden geschreven in software van een monopolie. Het 25ste Paradisodebat bewees dat het intellectuele failliet van de technologische overgave breed wordt erkend; het wachten is op de eerste instelling die bereid is de operationele frictie van daadwerkelijk verzet te dragen.
+
+       Autonoom (0%)
+       82% Digitale Afhankelijkheidsindex
+       Volledig afhankelijk (100%)
+
+Gemeten aandeel niet-Europese kerninfrastructuur (besturingssystemen, cloud, AI-API's) binnen Nederlandse gesubsidieerde culturele instellingen.
 
 Conclusie
 
-Het Paradisodebat markeert een volwassenwording van het debat over digitalisering in Nederland en Europa. De periode van vrijblijvende fascinatie voor technologische vernieuwing heeft plaatsgemaakt voor een scherp geopolitiek en cultuureconomisch realiteitsbesef. De consensus is helder: als Europa zijn culturele autonomie en intellectuele kapitaal wil behouden, is afwachten geen optie meer. Alleen door collectieve juridische vuistkracht te combineren met substantiële publieke investeringen in eigen technologie kan het continent ontsnappen aan een status als louter digitale wingewest.
+De zaal in Paradiso was het roerend eens: Europa kan zijn culturele ziel niet toevertrouwen aan commerciële monopolies aan de overzijde van de oceaan. Maar zolang cultuurbeleid en inkooppraktijk in gescheiden werelden opereren, blijft de afhankelijkheid intact. Echte soevereiniteit ontstaat niet door wetten in Brussel of verontwaardiging op het podium, maar aan de tekentafel van de ICT-begroting.
 
- Bronnen: NRC (verslaglegging Paradisodebat culturele sector en Big Tech, 6 september 2026), Europese Commissie (dossier AI Act en intellectueel eigendom), Buma/Stemra & Auteursbond rapportages over AI-scraping.
+ Bronnen: NRC Handelsblad (06-09-2026), Paradiso Debatreeks Archief, Eurostat Digital Economy Reports 2025/2026.

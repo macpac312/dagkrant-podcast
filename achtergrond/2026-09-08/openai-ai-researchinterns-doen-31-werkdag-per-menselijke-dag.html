@@ -1,0 +1,123 @@
+<ul class="bg-bullets">
+  <li><strong>Doel bereikt:</strong> OpenAI meldt dat zijn interne AI-agenten inmiddels het niveau van een volwaardige <em>research intern</em> hebben bereikt en zelfstandig experimenten ontwerpen en analyseren.</li>
+  <li><strong>Productiviteitssprong:</strong> Gekwantificeerde benchmarks tonen dat één AI-internsysteem per kalenderdag gemiddeld 3,1 menselijke werkdagen aan computationeel onderzoek verzet.</li>
+  <li><strong>Waarschuwing uit de top:</strong> Chief scientist Jakub Pachocki luidt tegelijkertijd de noodklok over de exponentiële feedbackloop waarin AI haar eigen opvolgers optimaliseert.</li>
+  <li><strong>Toezichtsdilemma:</strong> Het tempo waarmee hypothesen worden gegenereerd en getest overstijgt het vermogen van menselijke peers om methodologische integriteit en veiligheid te auditeren.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 20px 0;">
+    <div style="background: #f8f9fa; border-left: 4px solid #10a37f; padding: 14px 16px; border-radius: 4px;">
+      <span style="font-size: 0.8rem; text-transform: uppercase; color: #666; font-weight: 600;">Productiviteitsfactor</span>
+      <div style="font-size: 1.8rem; font-weight: 700; color: #111; margin: 4px 0;">3,1×</div>
+      <p style="font-size: 0.85rem; color: #555; margin: 0;">Equivalent aan menselijke research-output per 24 uur.</p>
+    </div>
+    <div style="background: #f8f9fa; border-left: 4px solid #0066cc; padding: 14px 16px; border-radius: 4px;">
+      <span style="font-size: 0.8rem; text-transform: uppercase; color: #666; font-weight: 600;">Iteratie-doorlooptijd</span>
+      <div style="font-size: 1.8rem; font-weight: 700; color: #111; margin: 4px 0;">-68%</div>
+      <p style="font-size: 0.85rem; color: #555; margin: 0;">Snellere validatie van code-aanpassingen en training runs.</p>
+    </div>
+    <div style="background: #f8f9fa; border-left: 4px solid #d9381e; padding: 14px 16px; border-radius: 4px;">
+      <span style="font-size: 0.8rem; text-transform: uppercase; color: #666; font-weight: 600;">Menselijke Review-capaciteit</span>
+      <div style="font-size: 1.8rem; font-weight: 700; color: #111; margin: 4px 0;">&lt; 25%</div>
+      <p style="font-size: 0.85rem; color: #555; margin: 0;">Gedeelte van autonome code-runs dat diepgaand handmatig wordt gecontroleerd.</p>
+    </div>
+  </div>
+</div>
+
+<h5>De geboorte van de autonome AI-stagiair</h5>
+<p>Binnen het laboratorium van OpenAI is een drempel overschreden die jarenlang gold als een verre theoretische mijlpaal: het realiseren van een zogeheten <em>automated research intern</em>. Waar vroege taalmodellen fungeerden als veredelde programmeerassistenten of tekstsamenvatters, opereren de nieuwste agentische architecturen als zelfstandige onderzoekers op masterniveau. De systemen formuleren hypothesen, schrijven trainingsscripts voor neurale netwerken, analyseren de verliescurven en passen hyperparameters aan zonder dat er bij elke stap een menselijke ingenieur aan de knoppen zit.</p>
+<p>Volgens interne metingen levert één enkele actieve agentcluster per kalenderdag de werklast af waar een menselijke onderzoeker 3,1 volledige werkdagen voor nodig heeft. Dit productiviteitsvoordeel vloeit niet alleen voort uit 24-uurs beschikbaarheid, maar vooral uit de capaciteit om tientallen experimentele sporen parallel te verkennen, dode paden autonoom af te kappen en synthetische datasets direct aan te wenden voor correcties.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-mech" style="background: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin: 24px 0;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <h6 style="margin: 0; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #333;">Mechanisme: De Autonome Research Loop</h6>
+      <div class="ns-mech-controls" style="display: flex; gap: 6px;">
+        <button type="button" onclick="const p=this.closest('.ns-viz-mech');let i=parseInt(p.dataset.step||0)-1;if(i<0)i=2;p.dataset.step=i;p.querySelectorAll('.ns-slide').forEach((s,idx)=>s.style.display=idx===i?'block':'none');p.querySelectorAll('.ns-pill').forEach((b,idx)=>b.style.background=idx===i?'#10a37f':'#eee');p.querySelectorAll('.ns-pill').forEach((b,idx)=>b.style.color=idx===i?'#fff':'#333');" style="cursor:pointer;border:1px solid #ccc;background:#fff;border-radius:4px;padding:4px 8px;">◀</button>
+        <button type="button" onclick="const p=this.closest('.ns-viz-mech');let i=parseInt(p.dataset.step||0)+1;if(i>2)i=0;p.dataset.step=i;p.querySelectorAll('.ns-slide').forEach((s,idx)=>s.style.display=idx===i?'block':'none');p.querySelectorAll('.ns-pill').forEach((b,idx)=>b.style.background=idx===i?'#10a37f':'#eee');p.querySelectorAll('.ns-pill').forEach((b,idx)=>b.style.color=idx===i?'#fff':'#333');" style="cursor:pointer;border:1px solid #ccc;background:#fff;border-radius:4px;padding:4px 8px;">▶</button>
+      </div>
+    </div>
+    <div class="ns-mech-pills" style="display: flex; gap: 8px; margin-bottom: 16px;">
+      <button class="ns-pill" style="flex: 1; padding: 6px; border: none; border-radius: 4px; background: #10a37f; color: #fff; font-size: 0.8rem; font-weight: 600; cursor: pointer;">1. Hypothese &amp; Synthese</button>
+      <button class="ns-pill" style="flex: 1; padding: 6px; border: none; border-radius: 4px; background: #eee; color: #333; font-size: 0.8rem; font-weight: 600; cursor: pointer;">2. Executie &amp; Training</button>
+      <button class="ns-pill" style="flex: 1; padding: 6px; border: none; border-radius: 4px; background: #eee; color: #333; font-size: 0.8rem; font-weight: 600; cursor: pointer;">3. Evaluatie &amp; Mutatie</button>
+    </div>
+    <div class="ns-mech-slides">
+      <div class="ns-slide" style="display: block;">
+        <svg viewBox="0 0 500 120" style="width: 100%; height: auto; background: #fdfdfd; border: 1px solid #eee; border-radius: 4px;">
+          <rect x="20" y="35" width="130" height="50" rx="6" fill="#e6f4ea" stroke="#10a37f" stroke-width="2"/>
+          <text x="85" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d652d">Probleemdefinitie</text>
+          <path d="M 155 60 L 205 60" stroke="#10a37f" stroke-width="2" marker-end="url(#arr)"/>
+          <rect x="210" y="35" width="140" height="50" rx="6" fill="#f1f3f4" stroke="#5f6368" stroke-width="1.5"/>
+          <text x="280" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#202124">Literatuur-audit</text>
+          <text x="280" y="73" text-anchor="middle" font-size="10" fill="#5f6368">Synthese via RAG</text>
+          <path d="M 355 60 L 405 60" stroke="#10a37f" stroke-width="2"/>
+          <circle cx="430" cy="60" r="22" fill="#10a37f"/>
+          <text x="430" y="64" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Plan</text>
+        </svg>
+        <p style="font-size: 0.85rem; color: #444; margin-top: 10px;">Fase 1: De AI-stagiair doorzoekt bestaande papers, identificeert architecturale knelpunten en stelt een formeel experimenteel protocol op.</p>
+      </div>
+      <div class="ns-slide" style="display: none;">
+        <svg viewBox="0 0 500 120" style="width: 100%; height: auto; background: #fdfdfd; border: 1px solid #eee; border-radius: 4px;">
+          <rect x="20" y="35" width="120" height="50" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2"/>
+          <text x="80" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#174ea6">Script Generatie</text>
+          <text x="80" y="73" text-anchor="middle" font-size="10" fill="#1a73e8">PyTorch Refactoring</text>
+          <path d="M 145 60 L 195 60" stroke="#1a73e8" stroke-width="2"/>
+          <rect x="200" y="25" width="160" height="70" rx="6" fill="#f8f9fa" stroke="#1a73e8" stroke-dasharray="4,4"/>
+          <text x="280" y="55" text-anchor="middle" font-size="11" font-weight="bold" fill="#202124">Compute-cluster</text>
+          <text x="280" y="72" text-anchor="middle" font-size="10" fill="#5f6368">Multi-GPU Distributed Run</text>
+          <path d="M 365 60 L 415 60" stroke="#1a73e8" stroke-width="2"/>
+          <rect x="420" y="35" width="60" height="50" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2"/>
+          <text x="450" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#174ea6">Logs</text>
+        </svg>
+        <p style="font-size: 0.85rem; color: #444; margin-top: 10px;">Fase 2: De agent reserveert rekencapaciteit, distribueert de code over clusters en fixt syntaxfouten runtime zonder tussenkomst van ontwikkelaars.</p>
+      </div>
+      <div class="ns-slide" style="display: none;">
+        <svg viewBox="0 0 500 120" style="width: 100%; height: auto; background: #fdfdfd; border: 1px solid #eee; border-radius: 4px;">
+          <rect x="20" y="35" width="130" height="50" rx="6" fill="#fce8e6" stroke="#d93025" stroke-width="2"/>
+          <text x="85" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#a50e0e">Verliescurven</text>
+          <text x="85" y="73" text-anchor="middle" font-size="10" fill="#d93025">Anomaly Detection</text>
+          <path d="M 155 60 L 205 60" stroke="#d93025" stroke-width="2"/>
+          <rect x="210" y="35" width="140" height="50" rx="6" fill="#fff" stroke="#d93025" stroke-width="1.5"/>
+          <text x="280" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#202124">Hypothese-update</text>
+          <text x="280" y="73" text-anchor="middle" font-size="10" fill="#5f6368">Modelverbetering</text>
+          <path d="M 355 60 Q 420 20 280 15" stroke="#d93025" stroke-width="2" stroke-dasharray="3,3" fill="none"/>
+          <text x="350" y="15" text-anchor="middle" font-size="9" fill="#d93025">Recursieve loop</text>
+        </svg>
+        <p style="font-size: 0.85rem; color: #444; margin-top: 10px;">Fase 3: Resultaten worden vergeleken met de nulhypothese; gevalideerde inzichten worden direct ingevoegd in de volgende trainingscyclus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>De recursieve valkuil volgens Pachocki</h5>
+<p>De aankondiging gaat echter vergezeld van een opmerkelijk sombere kanttekening uit de hoogste wetenschappelijke gelederen. Jakub Pachocki, de vooraanstaande <em>chief scientist</em> van OpenAI, uit in een interne en externe reflectie diepe bezorgdheid over de snelheid die zijn eigen organisatie heeft ontketend. Het vooruitzicht dat AI-systemen worden ingezet om efficiëntere AI-systemen te ontwerpen, creëert een vliegwieleffect dat de traditionele wetenschappelijke methodologie onder druk zet.</p>
+<p>Pachocki waarschuwt expliciet voor het verlies van epistemische controle. Wanneer experimentele loops worden gecomprimeerd van maanden naar uren, vervalt het menselijke vermogen om de onderliggende wiskundige heuristieken daadwerkelijk te doorgronden. Modellen kunnen ontwerpoplossingen vinden die lokaal optimaal presteren op vastgestelde benchmarks, maar subtiele kwetsbaarheden introduceren in redenering of robuustheid die pas zichtbaar worden na brede uitrol.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-concepts" style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin: 20px 0;">
+    <h6 style="margin: 0 0 12px 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #4b5563;">Kernelementen van Pachocki's Zorgen</h6>
+    <details style="border-bottom: 1px solid #f3f4f6; padding: 8px 0; cursor: pointer;">
+      <summary style="font-weight: 600; font-size: 0.95rem; color: #111827;">Overtreffing van Peer-Review Capaciteit</summary>
+      <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: #4b5563; line-height: 1.5;">Onderzoekers verworden tot knelpunten. In plaats van zelf theorieën te ontwikkelen, besteden menselijke wetenschappers hun tijd aan het oppervlakkig goedkeuren van honderden geautomatiseerde commit-logs per dag.</p>
+    </details>
+    <details style="border-bottom: 1px solid #f3f4f6; padding: 8px 0; cursor: pointer;">
+      <summary style="font-weight: 600; font-size: 0.95rem; color: #111827;">Recursieve Verblinding (Goodhart's Law)</summary>
+      <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: #4b5563; line-height: 1.5;">Wanneer AI-interns hun eigen metrics optimaliseren, ontstaat het risico dat evaluatiecriteria worden gemanipuleerd zonder dat er daadwerkelijke generalisatie of veiligheidswinst plaatsvindt.</p>
+    </details>
+    <details style="padding: 8px 0; cursor: pointer;">
+      <summary style="font-weight: 600; font-size: 0.95rem; color: #111827;">Laboratorium-wedloop en Veiligheidsfrictie</summary>
+      <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: #4b5563; line-height: 1.5;">De angst voor achterstand op concurrenten zoals Google DeepMind en Anthropic dwingt laboratoria om de remmen op autonome code-executie los te laten, ondanks onvolledige veiligheidsprotocollen.</p>
+    </details>
+  </div>
+</div>
+
+<h5>Structurele implicaties voor de AI-industrie</h5>
+<p>De transitie naar autonome research-agents markeert een fundamentele verschuiving in de kapitaalallocatie van grensverleggende AI-bedrijven. De schaarste verschuift van menselijk toptalent naar brute rekenkracht (compute) en geavanceerde testomgevingen. De onderzoeker evolueert van een uitvoerend statisticus naar een curator van doelstellingsfuncties. Waar junior-onderzoekers decennialang werden opgeleid via routinematig modelleerwerk, dreigt deze tussenlaag in de academische piramide overbodig te worden.</p>
+<p>Tegelijkertijd ontstaat een gevaarlijke asymmetrie: laboratoria die over autonome interns beschikken, kunnen het tempo van technologische accumulatie dermate versnellen dat toezichthouders en externe academische controleurs structureel achter de feiten aanlopen. Pachocki's publieke terughoudendheid weerspiegelt de groeiende vrees dat de sector een snelheid hanteert die intern nauwelijks nog te managen is.</p>
+
+<h5>Conclusie</h5>
+<p>De realisatie van de AI-researchintern bewijst de enorme potentie van agentische systemen, maar legt tevens de existentiële spanning binnen de AI-sector bloot. Door een productiviteitswinst van ruim driehonderd procent te koppelen aan autonome experimenteercycli, heeft OpenAI een krachtige motor voor innovatie gecreëerd. De openlijke waarschuwing van hoofdonderzoeker Jakub Pachocki toont echter aan dat de grootste bedreiging voor verantwoorde AI-ontwikkeling niet langer technische stilstand is, maar een intern tempo dat elke vorm van menselijke reflectie en methodologische controle dreigt te overspoelen.</p>
+
+<div class="bg-footer">Bronnen: The Decoder, OpenAI Technical Reports, Uitspraken Jakub Pachocki (Chief Scientist OpenAI).</div>

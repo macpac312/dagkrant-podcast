@@ -1,0 +1,271 @@
+<ul class="bg-bullets">
+  <li><strong>Renteverschuiving:</strong> Van Bruggen Adviesgroep verwacht dat de tienjaars vaste hypotheekrente met NHG oploopt richting circa 4,5 procent in 2027.</li>
+  <li><strong>Structurele kapitaalkosten:</strong> Aanhoudende overheidstekorten in westerse economieën en defensie-investeringen houden de kapitaalmarktrentes langdurig hoger.</li>
+  <li><strong>Woningmarkteffect:</strong> Een hogere hypotheekrente drukt direct op de maximale leencapaciteit van huishoudens, terwijl woningtekorten de prijsval dempen.</li>
+  <li><strong>Keuzestress bij oversluiters:</strong> Wachten op verdere renteverlagingen van centrale banken blijkt riskant voor langere rentevastperiodes.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-stats">
+    <div class="ns-viz-stat">
+      <div class="ns-viz-stat-value">3,7%</div>
+      <div class="ns-viz-stat-label">Gemiddelde 10 jr NHG nu (2024–2025)</div>
+      <div class="ns-viz-stat-sub">Laagste peil na de inflatiepiek</div>
+    </div>
+    <div class="ns-viz-stat">
+      <div class="ns-viz-stat-value">4,5%</div>
+      <div class="ns-viz-stat-label">Geprojecteerd niveau 2027</div>
+      <div class="ns-viz-stat-sub">+80 basispunten structurele opslag</div>
+    </div>
+    <div class="ns-viz-stat">
+      <div class="ns-viz-stat-value">-7,8%</div>
+      <div class="ns-viz-stat-label">Daling leencapaciteit modaal</div>
+      <div class="ns-viz-stat-sub">Bij stijging van 3,7% naar 4,5%</div>
+    </div>
+    <div class="ns-viz-stat">
+      <div class="ns-viz-stat-value">2,6%</div>
+      <div class="ns-viz-stat-label">Kapitaalmarktrente (10 jr staatslening)</div>
+      <div class="ns-viz-stat-sub">Anker voor bancaire fundingkosten</div>
+    </div>
+  </div>
+</div>
+
+<h5>Het afscheid van het gratis-geld-paradigma</h5>
+<p>
+De aanname dat de hypotheekrentes na de inflationaire schok van 2022–2023 geleidelijk zouden terugkeren naar de historische minima van rond de 1,5 procent, wordt door financieel intermediairs definitief terzijde geschoven. In een recente marktprojectie schetst Van Bruggen Adviesgroep een scenario waarin de rente voor tien jaar vast met Nationale Hypotheek Garantie (NHG) doorgroeit naar 4,5 procent tegen 2027. Waar woningkopers de afgelopen maanden hoopten op verdere versoepelingen door de Europese Centrale Bank, laat de werkelijkheid op de kapitaalmarkten een hardnekkiger evenwicht zien.
+</p>
+<p>
+De rente op de kapitaalmarkt — met name het rendement op tienjarige Nederlandse en Duitse staatsobligaties — vormt het fundament onder de bancaire hypotheekopslagen. Centrale banken verlagen weliswaar de beleidsrente om de economische activiteit te ondersteunen, maar die korte rente stuurt vooral variabele kredieten. Voor de tien- en twintigjaarsrentes kijken institutionele beleggers naar heel andere variabelen: structurele inflatiedruk door deglobalisering, demografische vergrijzing en torenhoge overheidsuitgaven voor verduurzaming en defensie.
+</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-chart" style="height: 280px; position: relative;">
+    <canvas id="hypotheekRenteTrend"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    (function(){
+      const ctx = document.getElementById('hypotheekRenteTrend').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['2021', '2022', '2023', '2024', '2025', '2026 (raming)', '2027 (prognose)'],
+          datasets: [
+            {
+              label: '10 jr vast NHG (gemiddeld %)',
+              data: [1.3, 3.9, 4.2, 3.8, 3.7, 4.1, 4.5],
+              borderColor: '#0f2942',
+              backgroundColor: 'rgba(15, 41, 66, 0.08)',
+              fill: true,
+              tension: 0.3,
+              pointRadius: 4,
+              pointBackgroundColor: '#0f2942'
+            },
+            {
+              label: '10 jr Nederlandse staatsrente (%)',
+              data: [-0.3, 1.8, 2.9, 2.6, 2.5, 2.8, 3.1],
+              borderColor: '#b23b3b',
+              borderDash: [5, 5],
+              tension: 0.3,
+              fill: false,
+              pointRadius: 3
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom' },
+            tooltip: { mode: 'index', intersect: false }
+          },
+          scales: {
+            y: {
+              min: -1,
+              max: 5.5,
+              ticks: { callback: v => v + '%' }
+            }
+          }
+        }
+      });
+    })();
+  </script>
+</div>
+
+<h5>De transmissieketen van kapitaalmarkt naar hypotheekakte</h5>
+<p>
+Een hypotheekakte is geen geïsoleerd consumentenproduct, maar de sluis waardoor internationaal spaargeld via pensioenfondsen en banken de woningmarkt instroomt. Het pad naar 4,5 procent ontstaat doordat de risicopremie op langlopende leningen wereldwijd omhoog is bijgesteld. Wanneer banken hun langlopende leningen herfinancieren via covered bonds of het aantrekken van spaartegoeden, betalen zij een premie bovenop de risicovrije rente.
+</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-mech" id="mechFundingKeten">
+    <div class="ns-viz-mech-nav">
+      <div class="ns-viz-mech-pills">
+        <button class="ns-viz-mech-pill is-active" data-phase="0">1. Staatsleningen</button>
+        <button class="ns-viz-mech-pill" data-phase="1">2. Bancaire Funding</button>
+        <button class="ns-viz-mech-pill" data-phase="2">3. Risico &amp; Marge</button>
+        <button class="ns-viz-mech-pill" data-phase="3">4. Klanttarief</button>
+      </div>
+      <div class="ns-viz-mech-controls">
+        <button class="ns-viz-mech-btn" id="mechPrev" aria-label="Vorige">&#9664;</button>
+        <button class="ns-viz-mech-btn" id="mechPlay" aria-label="Afspelen">&#9654;</button>
+        <button class="ns-viz-mech-btn" id="mechNext" aria-label="Volgende">&#9654;&#9654;</button>
+      </div>
+    </div>
+    <div class="ns-viz-mech-body">
+      <div class="ns-viz-mech-slide is-active" data-phase="0">
+        <svg viewBox="0 0 540 180" style="width:100%;height:auto;display:block;">
+          <rect x="20" y="30" width="150" height="110" rx="6" fill="#eef2f7" stroke="#0f2942" stroke-width="2"/>
+          <text x="95" y="65" text-anchor="middle" font-size="13" font-weight="700" fill="#0f2942">Staatsuitgiftes</text>
+          <text x="95" y="90" text-anchor="middle" font-size="11" fill="#445">Oplopende overheidsschulden</text>
+          <text x="95" y="110" text-anchor="middle" font-size="11" fill="#445">en obligatieveilingen</text>
+          <path d="M 180 85 L 300 85" stroke="#b23b3b" stroke-width="2" marker-end="url(#arrowhead)"/>
+          <circle cx="370" cy="85" r="45" fill="#fff" stroke="#b23b3b" stroke-width="2"/>
+          <text x="370" y="80" text-anchor="middle" font-size="11" fill="#777">Benchmark</text>
+          <text x="370" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#b23b3b">~3,0%</text>
+          <defs>
+            <marker id="arrowhead" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#b23b3b"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-slide" data-phase="1">
+        <svg viewBox="0 0 540 180" style="width:100%;height:auto;display:block;">
+          <rect x="20" y="30" width="160" height="110" rx="6" fill="#f7f7f9" stroke="#555" stroke-width="2"/>
+          <text x="100" y="65" text-anchor="middle" font-size="13" font-weight="700" fill="#111">Covered Bonds</text>
+          <text x="100" y="90" text-anchor="middle" font-size="11" fill="#555">Plafond voor hypotheekobligaties</text>
+          <text x="100" y="110" text-anchor="middle" font-size="11" fill="#555">Opslag +40-60 bps</text>
+          <path d="M 190 85 L 290 85" stroke="#0f2942" stroke-width="2" marker-end="url(#arrowhead2)"/>
+          <rect x="300" y="45" width="180" height="80" rx="6" fill="#eaf2fa" stroke="#0f2942" stroke-width="2"/>
+          <text x="390" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#0f2942">Totale Fundingbasis</text>
+          <text x="390" y="102" text-anchor="middle" font-size="15" font-weight="700" fill="#0f2942">3,50% à 3,60%</text>
+          <defs>
+            <marker id="arrowhead2" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#0f2942"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-slide" data-phase="2">
+        <svg viewBox="0 0 540 180" style="width:100%;height:auto;display:block;">
+          <g transform="translate(40,30)">
+            <rect x="0" y="0" width="130" height="110" rx="6" fill="#fef5e7" stroke="#d68910" stroke-width="2"/>
+            <text x="65" y="45" text-anchor="middle" font-size="12" font-weight="700" fill="#7d4e00">Operationele kosten</text>
+            <text x="65" y="75" text-anchor="middle" font-size="11" fill="#7d4e00">+30 bps</text>
+          </g>
+          <g transform="translate(200,30)">
+            <rect x="0" y="0" width="130" height="110" rx="6" fill="#fef5e7" stroke="#d68910" stroke-width="2"/>
+            <text x="65" y="45" text-anchor="middle" font-size="12" font-weight="700" fill="#7d4e00">Kapitaalbuffer &amp; Risico</text>
+            <text x="65" y="75" text-anchor="middle" font-size="11" fill="#7d4e00">+40 bps</text>
+          </g>
+          <g transform="translate(360,30)">
+            <rect x="0" y="0" width="130" height="110" rx="6" fill="#fef5e7" stroke="#d68910" stroke-width="2"/>
+            <text x="65" y="45" text-anchor="middle" font-size="12" font-weight="700" fill="#7d4e00">Winstmarge verstrekker</text>
+            <text x="65" y="75" text-anchor="middle" font-size="11" fill="#7d4e00">+20 à 30 bps</text>
+          </g>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-slide" data-phase="3">
+        <svg viewBox="0 0 540 180" style="width:100%;height:auto;display:block;">
+          <rect x="60" y="25" width="420" height="125" rx="8" fill="#0f2942" stroke="#0f2942" stroke-width="2"/>
+          <text x="270" y="65" text-anchor="middle" font-size="14" font-weight="600" fill="#bad3eb">Consumententarief 10 Jaar Vast (2027)</text>
+          <text x="270" y="110" text-anchor="middle" font-size="34" font-weight="800" fill="#ffffff">4,50%</text>
+          <text x="270" y="132" text-anchor="middle" font-size="11" fill="#89a9c8">Bij hogere schuld-marktwaardeverhouding (zonder NHG): tot 4,95%</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      const container = document.getElementById('mechFundingKeten');
+      if(!container) return;
+      const pills = container.querySelectorAll('.ns-viz-mech-pill');
+      const slides = container.querySelectorAll('.ns-viz-mech-slide');
+      const prev = document.getElementById('mechPrev');
+      const next = document.getElementById('mechNext');
+      const play = document.getElementById('mechPlay');
+      let cur = 0;
+      let timer = null;
+      function setPhase(i){
+        cur = (i + slides.length) % slides.length;
+        pills.forEach((p, idx) => p.classList.toggle('is-active', idx === cur));
+        slides.forEach((s, idx) => s.classList.toggle('is-active', idx === cur));
+      }
+      pills.forEach(p => p.addEventListener('click', () => { setPhase(parseInt(p.dataset.phase,10)); clearInterval(timer); }));
+      if(prev) prev.addEventListener('click', () => { setPhase(cur - 1); clearInterval(timer); });
+      if(next) next.addEventListener('click', () => { setPhase(cur + 1); clearInterval(timer); });
+      if(play) play.addEventListener('click', () => {
+        if(timer){ clearInterval(timer); timer = null; play.textContent = '▶'; }
+        else {
+          play.textContent = '❚❚';
+          timer = setInterval(() => setPhase(cur + 1), 2400);
+        }
+      });
+    })();
+  </script>
+</div>
+
+<h5>Macro-economische gevolgen voor huizenkoper en doorstromer</h5>
+<p>
+De verschuiving naar 4,5 procent heeft ingrijpende implicaties voor de financierbaarheid van woningen. Volgens de leennormen van het Nibud verlaagt elke procentpunt renteverhoging de leencapaciteit van een modaal tweeverdienershuishouden met zo'n 25.000 tot 30.000 euro. In een evenwichtige markt zou een dergelijke daling leiden tot afkoeling van de huizenprijzen.
+</p>
+<p>
+De Nederlandse situatie wordt echter bemoeilijkt door een hardnekkig aanbodtekort. Omdat de bouwproductie door stikstofbeperkingen, stijgende bouwkosten en trage vergunningverlening achterblijft, leidt een hogere rente niet automatisch tot dalende huizenprijzen, maar veeleer tot grotere onevenwichtigheden. Kopers besteden noodgedwongen een groter deel van hun besteedbaar inkomen aan woonlasten, of worden gedwongen concessies te doen in omvang of verduurzamingspotentieel van hun toekomstige woning.
+</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-concepts" id="conceptsHypotheek">
+    <div class="ns-viz-concept-item is-open">
+      <div class="ns-viz-concept-header">
+        <span>Gevolgen voor de maximale leencapaciteit</span>
+        <span class="ns-viz-concept-toggle">▾</span>
+      </div>
+      <div class="ns-viz-concept-content">
+        Bij een hypotheekrente van 4,5% stijgt het aandeel van rentelasten binnen de annuïteit aanzienlijk. Hierdoor daalt de aflossingscomponent in de eerste jaren, terwijl toetsnormen van geldverstrekkers restrictiever uitpakken voor hetzelfde bruto jaarinkomen.
+      </div>
+    </div>
+    <div class="ns-viz-concept-item">
+      <div class="ns-viz-concept-header">
+        <span>Het einde van de lage rentevaste contracten</span>
+        <span class="ns-viz-concept-toggle">▾</span>
+      </div>
+      <div class="ns-viz-concept-content">
+        Tussen 2026 en 2030 loopt voor honderdduizenden huishoudens hun tienjaars contract af dat in 2016–2018 werd afgesloten rond de 1,7% tot 2,2%. Zij worden geconfronteerd met een maandelijks bruto rente-effect dat oploopt met honderden euro's.
+      </div>
+    </div>
+    <div class="ns-viz-concept-item">
+      <div class="ns-viz-concept-header">
+        <span>Bufferwerking van de NHG-grens</span>
+        <span class="ns-viz-concept-toggle">▾</span>
+      </div>
+      <div class="ns-viz-concept-content">
+        Door de jaarlijkse verhoging van de NHG-kostengrens kunnen meer kopers een beschermingsopslag benutten, maar het verschil tussen toptarief (zonder NHG) en NHG blijft schommelen tussen de 35 en 55 basispunten.
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      const container = document.getElementById('conceptsHypotheek');
+      if(!container) return;
+      const items = container.querySelectorAll('.ns-viz-concept-item');
+      items.forEach(item => {
+        const header = item.querySelector('.ns-viz-concept-header');
+        header.addEventListener('click', () => {
+          const isOpen = item.classList.contains('is-open');
+          items.forEach(i => i.classList.remove('is-open'));
+          if(!isOpen) item.classList.add('is-open');
+        });
+      });
+    })();
+  </script>
+</div>
+
+<h5>Conclusie</h5>
+<p>
+De verwachting van Van Bruggen dat de hypotheekrente in 2027 doorstoot richting 4,5 procent markeert een nuchtere afrekening met de hoop op snelle rentedalingen. Wie nu een hypotheek afsluit of oversluit, tekent niet tegen een tijdelijke oprisping, maar conformeert zich aan een nieuw monetair regime waarin soevereine overheden zwaar concurreren om schaars mondiaal kapitaal. De huizenkoper moet rekening houden met een structureel hogere financieringslast die de komende jaren de norm zal blijven.
+</p>
+
+<div class="bg-footer">
+  Bronnen: Infinance (Van Bruggen Adviesgroep projectie hypotheekrente 2027), DNB rente-statistieken, Nibud financieringsnormen 2024–2026.
+</div>

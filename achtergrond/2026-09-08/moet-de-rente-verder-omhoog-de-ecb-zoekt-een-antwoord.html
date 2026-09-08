@@ -1,0 +1,138 @@
+<ul class="bg-bullets">
+  <li>De Europese Centrale Bank staat voor een complex rentebesluit door aanhoudende inflatiedruk enerzijds en kwetsbare economische groei anderzijds.</li>
+  <li>Geopolitieke spanningen, handelsbelemmeringen onder het beleid van Donald Trump en stijgende energieprijzen bemoeilijken monetair voorspellen.</li>
+  <li>Zware staatsschulden in Zuid-Europese eurolanden beperken de manoeuvreerruimte van Frankfurt om de rente onbeperkt te verhogen.</li>
+  <li>Financiële markten, spaarders en hypotheekbezitters anticiperen op mogelijke verschuivingen in het langetermijnrenteniveau.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-header">
+    <h4>Monetaire thermometer eurozone</h4>
+    <span class="ns-viz-badge">Rente &amp; Doel</span>
+  </div>
+  <div class="ns-viz-body">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;align-items:center;">
+      <div class="ns-viz-gauge" style="text-align:center;">
+        <svg viewBox="0 0 200 120" style="max-width:180px;margin:0 auto;display:block;">
+          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#e2e8f0" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 20 100 A 80 80 0 0 1 145 35" fill="none" stroke="#dc2626" stroke-width="16" stroke-linecap="round"/>
+          <circle cx="100" cy="100" r="6" fill="#1e293b"/>
+          <line x1="100" y1="100" x2="135" y2="45" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+          <text x="100" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">3,25%</text>
+        </svg>
+        <span style="font-size:0.8rem;color:#64748b;display:block;margin-top:4px;">Huidige depositorente ECB</span>
+      </div>
+      <div class="ns-viz-stats" style="display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="background:#f8fafc;padding:0.75rem 1rem;border-left:4px solid #2563eb;border-radius:4px;">
+          <div style="font-size:0.75rem;text-transform:uppercase;color:#64748b;font-weight:600;">Inflatiedoelstelling</div>
+          <div style="font-size:1.25rem;font-weight:700;color:#0f172a;">2,0%</div>
+          <div style="font-size:0.75rem;color:#64748b;">Middellange termijn symmetrisch doel</div>
+        </div>
+        <div style="background:#f8fafc;padding:0.75rem 1rem;border-left:4px solid #f59e0b;border-radius:4px;">
+          <div style="font-size:0.75rem;text-transform:uppercase;color:#64748b;font-weight:600;">Verwachte reële bbp-groei</div>
+          <div style="font-size:1.25rem;font-weight:700;color:#0f172a;">+0,8%</div>
+          <div style="font-size:0.75rem;color:#64748b;">Raming eurozone 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>Het monetaire evenwichtsvraagstuk</h5>
+<p>De Raad van Bestuur van de Europese Centrale Bank in Frankfurt staat voor een van zijn meest precaire vergaderingen van de afgelopen jaren. Na een langdurige cyclus van agressieve renteverhogingen om de post-pandemische inflatiegolf in te tomen, hoopten beleidsmakers op een gecontroleerde landing. De werkelijkheid blijkt echter aanzienlijk weerbarstiger. Terwijl de totale inflatiecijfers op papier dichter bij de doelstelling van twee procent zijn gekomen, blijft de kerninflatie — gecorrigeerd voor volatiele energie- en voedselprijzen — hardnekkig boven het gewenste niveau hangen. Vooral de loonontwikkeling in de dienstensector zorgt voor aanhoudende opwaartse druk op het prijspeil.</p>
+
+<p>De centrale vraag voor president Christine Lagarde en haar collega's is niet langer hoe hoog de rente theoretisch moet zijn, maar wat de reële schade is van elke extra basispunt verhoging. De Europese economie vertoont immers al langere tijd signalen van stagnatie. Belangrijke industriële motoren, met name Duitsland, kampen met structurele concurrentieproblemen en haperende exportvraag. Een verdere verkrapping van de kredietvoorwaarden dreigt investeringen van bedrijven definitief lam te leggen, wat een recessie kan uitlokken die niet louter conjunctureel maar diepgaand structureel van aard is.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-header">
+    <h4>Transmissie: van besluit naar reële economie</h4>
+    <span class="ns-viz-badge">TYPE 17 • Mechanisme</span>
+  </div>
+  <div class="ns-viz-body">
+    <div class="ns-viz-mech" data-active="0">
+      <div style="display:flex;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+        <button class="ns-mech-pill active" onclick="this.closest('.ns-viz-mech').querySelectorAll('.ns-mech-pill').forEach(p=>p.classList.remove('active'));this.classList.add('active');this.closest('.ns-viz-mech').querySelectorAll('.ns-mech-slide').forEach((s,i)=>s.style.display=i===0?'block':'none');" style="padding:4px 10px;font-size:0.75rem;border-radius:12px;border:1px solid #cbd5e1;background:#fff;cursor:pointer;">1. Beleidsrente</button>
+        <button class="ns-mech-pill" onclick="this.closest('.ns-viz-mech').querySelectorAll('.ns-mech-pill').forEach(p=>p.classList.remove('active'));this.classList.add('active');this.closest('.ns-viz-mech').querySelectorAll('.ns-mech-slide').forEach((s,i)=>s.style.display=i===1?'block':'none');" style="padding:4px 10px;font-size:0.75rem;border-radius:12px;border:1px solid #cbd5e1;background:#fff;cursor:pointer;">2. Bancaire sector</button>
+        <button class="ns-mech-pill" onclick="this.closest('.ns-viz-mech').querySelectorAll('.ns-mech-pill').forEach(p=>p.classList.remove('active'));this.classList.add('active');this.closest('.ns-viz-mech').querySelectorAll('.ns-mech-slide').forEach((s,i)=>s.style.display=i===2?'block':'none');" style="padding:4px 10px;font-size:0.75rem;border-radius:12px;border:1px solid #cbd5e1;background:#fff;cursor:pointer;">3. Huishoudens &amp; Markt</button>
+      </div>
+
+      <div class="ns-mech-slide" style="display:block;">
+        <svg viewBox="0 0 500 120" style="width:100%;height:auto;background:#f8fafc;border-radius:6px;padding:8px;">
+          <rect x="20" y="30" width="130" height="60" rx="6" fill="#1e293b"/>
+          <text x="85" y="65" fill="#fff" font-size="12" font-weight="600" text-anchor="middle">ECB Tarief</text>
+          <path d="M 160 60 L 220 60" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+          <rect x="230" y="30" width="130" height="60" rx="6" fill="#e2e8f0"/>
+          <text x="295" y="65" fill="#334155" font-size="11" text-anchor="middle">Interbancaire markt</text>
+          <path d="M 370 60 L 430 60" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4"/>
+          <rect x="440" y="30" width="40" height="60" rx="4" fill="#cbd5e1"/>
+        </svg>
+        <p style="font-size:0.8rem;color:#475569;margin-top:6px;">Fase 1: Verhoging van de herfinancierings- en depositorentes beïnvloedt direct de tarieven waartegen commerciële banken bij de centrale bank stallen en lenen.</p>
+      </div>
+
+      <div class="ns-mech-slide" style="display:none;">
+        <svg viewBox="0 0 500 120" style="width:100%;height:auto;background:#f8fafc;border-radius:6px;padding:8px;">
+          <rect x="20" y="30" width="130" height="60" rx="6" fill="#e2e8f0"/>
+          <text x="85" y="65" fill="#334155" font-size="11" text-anchor="middle">Liquiditeit</text>
+          <path d="M 160 60 L 220 60" stroke="#0284c7" stroke-width="2"/>
+          <rect x="230" y="30" width="130" height="60" rx="6" fill="#0284c7"/>
+          <text x="295" y="60" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">Kredietacceptatie</text>
+          <text x="295" y="75" fill="#e0f2fe" font-size="9" text-anchor="middle">Strengere toetsing</text>
+          <path d="M 370 60 L 430 60" stroke="#0284c7" stroke-width="2"/>
+          <rect x="440" y="30" width="40" height="60" rx="4" fill="#cbd5e1"/>
+        </svg>
+        <p style="font-size:0.8rem;color:#475569;margin-top:6px;">Fase 2: Banken rekenen de hogere kapitaalkosten door aan zakelijke klanten en verscherpen de kredietvoorwaarden om wanbetalingsrisico's te beperken.</p>
+      </div>
+
+      <div class="ns-mech-slide" style="display:none;">
+        <svg viewBox="0 0 500 120" style="width:100%;height:auto;background:#f8fafc;border-radius:6px;padding:8px;">
+          <rect x="20" y="30" width="130" height="60" rx="6" fill="#cbd5e1"/>
+          <path d="M 160 60 L 220 60" stroke="#0284c7" stroke-width="2"/>
+          <rect x="230" y="30" width="130" height="60" rx="6" fill="#e2e8f0"/>
+          <text x="295" y="65" fill="#334155" font-size="11" text-anchor="middle">Daling consumptie</text>
+          <path d="M 370 60 L 430 60" stroke="#dc2626" stroke-width="2"/>
+          <rect x="440" y="30" width="40" height="60" rx="4" fill="#dc2626"/>
+          <text x="460" y="65" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">Afkoeling</text>
+        </svg>
+        <p style="font-size:0.8rem;color:#475569;margin-top:6px;">Fase 3: Consumenten stellen grote aankopen uit, hypotheekvolumes dalen, spaarrentes stabiliseren en de totale vraag remt af, wat de inflatiedruk moet breken.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>De geopolitieke en begrotingsmatige complicaties</h5>
+<p>Het monetaire beleid kan al lang niet meer in een geïsoleerd vacuüm worden bekeken. De politieke dynamiek in de Verenigde Staten, ingegeven door de handelsretoriek en mogelijke importtarieven onder het presidentschap van Donald Trump, hangt als een zwaard van Damocles boven de Europese exporteurs. Protectionistische maatregelen kunnen leiden tot een forse verstoring van toeleveringsketens en een opwaartse druk op ingevoerde goederen, wat centrale bankiers met een klassiek dilemma confronteert: vertragende handel gecombineerd met geïmporteerde inflatie.</p>
+
+<p>Tegelijkertijd kijkt de ECB angstvallig naar de staatsobligatiemarkten binnen de muntunie zelf. Landen als Frankrijk en Italië torsen torenhoge schuldquotes en hebben te maken met strenger Europees begrotingstoezicht. Wanneer Frankfurt de rente verder opschroeft, stijgen de rentelasten op nieuwe staatsschuld vrijwel direct. Dit vergroot het risico op fragmentatie binnen de eurozone: het uiteenlopen van de leenkosten tussen kapitaalkrachtige noordelijke lidstaten en kwetsbaardere zuidelijke economieën. Het zogeheten Transmission Protection Instrument (TPI) kan in theorie worden ingezet, maar de drempel voor politieke activatie blijft torenhoog.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-header">
+    <h4>Belanghebbenden &amp; Dilemma's</h4>
+    <span class="ns-viz-badge">TYPE 6 • Concepten</span>
+  </div>
+  <div class="ns-viz-body">
+    <div class="ns-viz-concepts" style="display:flex;flex-direction:column;gap:0.5rem;">
+      <details style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+        <summary style="font-weight:600;font-size:0.9rem;cursor:pointer;color:#0f172a;">Hypotheekmarkt en Woningbezitters</summary>
+        <p style="font-size:0.8rem;color:#475569;margin-top:0.5rem;line-height:1.4;">Lange kapitaalmarktrentes reageren direct op ECB-verwachtingen. Een aanhoudend streng beleid houdt hypotheekrentes hoog, wat de leencapaciteit van starters beperkt en de doorstroming op de woningmarkt afremt.</p>
+      </details>
+      <details style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+        <summary style="font-weight:600;font-size:0.9rem;cursor:pointer;color:#0f172a;">Spaarders en Vermogensopbouw</summary>
+        <p style="font-size:0.8rem;color:#475569;margin-top:0.5rem;line-height:1.4;">Hoewel hogere depositorentes op papier gunstig zijn voor particuliere spaarders, blijft het reële rendement na aftrek van inflatie en belastingdruk marginaal. Banken aarzelen bovendien om renteverhogingen integraal door te geven.</p>
+      </details>
+      <details style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+        <summary style="font-weight:600;font-size:0.9rem;cursor:pointer;color:#0f172a;">Staatsobligaties en Spreads</summary>
+        <p style="font-size:0.8rem;color:#475569;margin-top:0.5rem;line-height:1.4;">Hogere financieringskosten treffen overheden die herfinancieringen moeten doorvoeren. Het verschil (spread) tussen de Duitse 'Bund' en Zuid-Europese leningen is de ultieme graadmeter voor de financiële stabiliteit van de eurozone.</p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<h5>Impact op spaar- en hypotheektarieven</h5>
+<p>Voor de gewone burger en ondernemer vertaalt de institutionele strijd zich tastbaar in de portemonnee. Op de hypotheekmarkt hebben geldverstrekkers de afgelopen maanden al rekening gehouden met een regime waarin de geldmarktrente structureel hoger blijft dan in het afgelopen decennium. De tijd van spotgoedkope tienjaarsrentes van rond de één procent is definitief verleden tijd. Huishoudens worden geconfronteerd met hogere maandlasten bij oversluiten of aankoop, wat het besteedbaar inkomen drukt.</p>
+
+<p>Spaarders profiteren daarentegen van spaartarieven die rond de twee tot drie procent schommelen, maar de impuls om te sparen weegt nauwelijks op tegen de eerdere koopkrachtverliezen door de cumulatieve inflatie. De ECB bevindt zich zodoende in een smalle corridor: te snel verlagen wakkert inflatieverwachtingen opnieuw aan, terwijl doordrukken met verhogingen de consumptieve bestedingen die de economie overeind houden, volledig kan versmachten.</p>
+
+<h5>Conclusie</h5>
+<p>Het monetaire beleid van de ECB is verworden tot een ingewikkelde balanceeract tussen prijsstabiliteit en financiële houdbaarheid. Met geopolitieke handelsschokken en zware staatsschulden als complicerende factoren, is het klassieke monetaire instrumentarium botter geworden. Verdere renteverhogingen lijken economisch riskant, maar een overhaaste versoepeling kan de inflatieverwachtingen ontankeren. Frankfurt zal daarom kiezen voor maximale voorzichtigheid, waarbij iedere rentestap afhankelijk blijft van wisselvallige data in plaats van een vastomlijnde koers.</p>
+
+<div class="bg-footer">Bronnen: NRC Handelsblad, Europese Centrale Bank (ECB) monetaire beleidsverklaringen, Eurostat</div>
