@@ -1,0 +1,21 @@
+{
+  "title": "Rusland hervat de aanvallen op Kyiv zodra Witkoff en Kushner weg zijn",
+  "summary": "NOS: ballistische raketten op de hoofdstad, uren nadat de Amerikaanse gezanten vertrokken. Zondag heette het gesprek ‘meaningful’. Dinsdag is het weer een luchtalarm.",
+  "sources": [
+    "https://nos.nl/l/2630145",
+    "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war"
+  ],
+  "topic": "wereld",
+  "kind": "wereld",
+  "datum_iso": "2026-09-08",
+  "slug": "rusland-hervat-de-aanvallen-op-kyiv-zodra-witkoff-en-kushner",
+  "tts_slug": "rusland-hervat-de-aanvallen-op-kyiv-zodra-witkoff-en-kushner",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:52:57",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/rusland-hervat-de-aanvallen-op-kyiv-zodra-witkoff-en-kushner.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

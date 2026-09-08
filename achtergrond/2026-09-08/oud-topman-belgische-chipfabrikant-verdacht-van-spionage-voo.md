@@ -3,99 +3,131 @@ titel: "Oud-topman Belgische chipfabrikant verdacht van spionage voor China"
 url: https://nos.nl/l/2630056
 bron: wereld
 kind: wereld
-gegenereerd: 2026-09-08T03:22:29
+gegenereerd: 2026-09-08T03:18:32
 ---
 
--  Strafrechtelijk onderzoek:  Het federale parket in Brussel vervolgt een 52-jarige voormalige leidinggevende van de Belgische chipfabrikant Belgan wegens economische spionage en diefstal van bedrijfsgeheimen ten gunste van China.
+- De 52-jarige voormalige R&D-directeur van de Vlaamse chipfabrikant Belgan is op Brussels Airport (Zaventem) gearresteerd op verdenking van economische spionage voor China.
 
-  -  Strategische halfgeleiderkennis:  De ontvreemde data zou betrekking hebben op geavanceerde galliumnitride-technologie (GaN), cruciaal voor vermogenselektronica in elektrische voertuigen en defensietoepassingen.
+  - Belgan, gevestigd in Oudenaarde, gold als een strategische Europese pionier in vermogenshalfgeleiders op basis van galliumnitride (GaN).
 
-  -  Achtergrond Belgan:  Het Vlaamse semiconductorbedrijf in Oudenaarde raakte eerder in zwaar weer en vroeg in de zomer van 2024 faillissement aan, een periode waarin industriële kwetsbaarheden toenamen.
+  - Het federaal parket onderzoekt grootschalige diefstal van intellectueel eigendom en ongeoorloofde overdracht van dual-use technologie aan Chinese staats- en defensiegelieerde entiteiten.
 
-  -  Europese veiligheidstrend:  De zaak markeert een aanscherping van Europese inlichtingendiensten op 'insider threats' en de illegale transfer van kritieke technologie naar staatsgestuurde concurrenten.
+  - De zaak legt de kwetsbaarheid bloot van kwakkelende Europese hightechbedrijven voor gerichte inlichtingenoperaties vanuit Beijing.
 
-       52
-       Leeftijd verdachte oud-topman
-       Vervolgd door Brussels parket
+Kerngegevens: Onderzoek economische spionage
 
+     Feiten rond de aanhouding en de technologische inzet
+
+       Verdachte
+       52 jaar
+       Ex-VP Technologie & Innovatie
+
+       Arrestatie
+       Zaventem
+       Vluchtpoging richting Azië verijdeld
+
+       Kerntechnologie
        GaN
-       Galliumnitride-technologie
-       Focus op energie-efficiënte chips
+       Galliumnitride vermogenschips
 
-       Dual-use
-       Toepassingsdomein
-       Zowel civiel als militair strategisch
+       Aanklacht
+       Spionage
+       Diefstal bedrijfsgeheimen en valsheid
 
-       2024
-       Faillissement Belgan
-       Overnamepogingen & IP-risico
+De arrestatie op Zaventem en de val van Belgan
 
-Spionage in de schaduw van een kwetsbare chipfabriek
+De aanhouding van de 52-jarige voormalige topman op de luchthaven van Zaventem markeert een zeldzaam publieke escalatie in de Europese strijd tegen industriële spionage. De verdachte, die jarenlang de technologische koers en het intellectueel eigendom (IP) van de fabriek in Oudenaarde overzag, stond volgens gerechtelijke bronnen op het punt het Belgische grondgebied definitief te verlaten. De Staatsveiligheid en het federaal parket volgden zijn bewegingen al geruime tijd na alarmerende signalen over illegale gegevensoverdrachten en verdachte contacten met buitenlandse tussenpersonen.
 
-De aanklacht tegen de 52-jarige voormalige topman van de Belgische halfgeleiderproducent Belgan legt een gevoelige zenuw bloot in het Europese industriebeleid. Het federale parket in Brussel onderzoekt al geruime tijd signalen dat vertrouwelijke intellectuele eigendom en fabricageprocedures van de faciliteit in Oudenaarde stelselmatig zijn doorgesluisd naar Chinese partijen. Waar traditionele economische spionage vaak geassocieerd wordt met gecoördineerde cyberaanvallen door externe actoren, draait dit dossier om de klassieke, maar aanzienlijk lastiger te detecteren dreiging van binnenuit: de hooggeplaatste bestuurder met ongehinderde toegang tot strategische kroonjuwelen.
+De getroffen fabriek, Belgan, kende een bewogen geschiedenis. Voortgekomen uit de historische productiesite van Onsemi in Oudenaarde, werd het bedrijf in 2022 verzelfstandigd met de ambitie om Europa's toonaangevende onafhankelijke gieterij voor geavanceerde vermogenshalfgeleiders te worden. Ondanks tientallen miljoenen aan investeringen en hooggespannen verwachtingen rond galliumnitride-oplossingen, kampte de fabriek met zware liquiditeitsproblemen en een faillissementsprocedure. Juist in die chaotische herstructureringsfase zag de inlichtingendienst een acuut lekrisico ontstaan: wankele bedrijfsvoering biedt een vruchtbare bodem voor agressieve buitenlandse werving.
 
-Belgan, voortgekomen uit de historische semiconductor-activiteiten van onder meer Alcatel en latere doorstarts, had zich gespecialiseerd in de transitie naar siliciumcarbide en galliumnitride (GaN). Juist die laatste categorie componenten staat mondiaal in het middelpunt van de belangstelling. GaN-chips functioneren bij aanzienlijk hogere spanningen, temperaturen en schakelsnelheden dan regulier silicium. Dat maakt ze niet alleen onmisbaar voor de volgende generatie batterijmanagement in elektrische auto's en telecomzendmasten, maar geeft ze tevens een onmiskenbaar dual-use karakter: radarsystemen, maritieme detectie en geleide wapens leunen in toenemende mate op ditzelfde procedé.
+Tijdlijn: Van technologische herstructurering naar gerechtelijke interventie
 
-       Mechanisme: De keten van industriële kennisexfiltratie
+     Cruciale ijkpunten in het dossier-Belgan
 
-         ◀
+       Februari 2022: Verzelfstandiging van Belgan
 
-           1. Toegang
-           2. Extractie
-           3. Transfer
+Transitie van de Oudenaardse site naar de productie van galliumnitride (GaN) op 150mm- en 200mm-wafers.
 
-         ▶
+       Eind 2023 - 2024: Financiële nood en signaal Staatsveiligheid
 
-           Fabriek & R&D
-           IP & GaN-patenten
+Belgan kampt met kapitaaltekorten. Tegelijkertijd signaleren inlichtingendiensten abnormale datastromen vanuit interne R&D-servers.
 
-           Topkader
-           Brede autorisaties
+       Mei 2026: Arrestatie op Zaventem
 
- Fase 1: Geautoriseerde insider-toegang.  Bestuurders en R&D-directeuren beschikken over legitieme systeemtoegang tot procedés, recepturen en machineconfiguraties, waardoor standaard beveiligingsprotocollen geen alarm slaan.
+De ex-topman wordt onderschept met versleutelde datadragers vlak voor vertrek naar een Aziatische hub.
+
+       September 2026: Formele opening spionagedossier
+
+Het federaal parket brengt de zwaarte van de tenlastelegging naar buiten: economische spionage met staatssteun.
+
+Het strategische belang van galliumnitride
+
+De interesse van Chinese actoren in Belgan is technologisch scherp te verklaren. Waar traditioneel silicium tegen zijn fysieke grenzen aanloopt, maakt galliumnitride (GaN) halfgeleiders mogelijk die veel hogere vermogens, spanningen en schakelfrequenties aankunnen bij een fractie van het warmteverlies. GaN is daarmee niet alleen onmisbaar voor de laadinfrastructuur van elektrische voertuigen en datacenters, maar bezit ook expliciete dual-use toepassingen: het vormt de ruggengraat van geavanceerde AESA-radarsystemen in gevechtsvliegtuigen en maritieme afweersystemen.
+
+De westerse exportcontroles, aangevoerd door de Verenigde Staten en overgenomen door Europese partners, hebben de toegang van China tot westerse chipkennis drastisch afgesneden. Hierdoor richt de inlichtingenstrategie van Beijing zich niet langer uitsluitend op chipproducenten als ASML of TSMC, maar nadrukkelijk op Europese nichespelers en kwetsbare productiesites. De overdracht van productieprocessen en recepturen (process design kits) voor GaN stelt een achterlopende chipindustrie in staat om jaren van kostbaar en mislukkingsgevoelig R&D-werk over te slaan.
+
+Anatomie van een IP-exfiltratie
+
+     De stappen via welke gevoelige halfgeleiderkennis buiten bereik van exportcontroles werd gebracht
+
+       1. Toegang & Extractie
+       2. Decoupling & Maskering
+       3. Transfer & Integratie
+
+           R&D Cleanroom
+           GaN-wafer recepten
+           Procesontwerpen
 
            Exfiltratie
-           Opslag / Cloud
+           Encryptie & lokale opslag
+           Stap 1: Misbruik van geautoriseerde beheerdersrechten.
 
-           Verhulde kanalen
-           Buitenlandse entiteit
+           Consultancy-dekmantel
+           Brievenbusfirma's HK/VK
 
- Fase 2: Databundeling en omzeiling.  Kritieke knowhow rond chipproductie wordt stapsgewijs geëxfiltreerd tijdens reorganisaties of eigendomstransities, vaak versleuteld of via persoonlijke hardware.
+           Data-clearing
+           Verwijderen metadata & bronnen
+           Stap 2: Juridische en digitale verhulling van de eigendomstitel.
 
-           Exportcontrole-
-           omzeiling
+           Afnemer / Foundries
+           Binnenlandse fabriek CN
 
-           Chinese Foundries
-           Versnelde inhaalslag
+           Commerciële en militaire run
+           Opschalen GaN-productielijn
+           Zonder westerse licentie
+           Stap 3: Replicatie van Europese proceskennis op Chinese bodem.
 
- Fase 3: Industriële valorisatie in China.  De ontvreemde fabrieksspecificaties besparen buitenlandse chipbedrijven jaren aan iteratieve procesontwikkeling en compenseren westerse exportrestricties.
+       ◀ Vorige
+       Volgende ▶
 
-De geopolitieke wedloop om technologische soevereiniteit
+function setMechSlide(btn, idx) {
+  const container = btn.closest('.ns-viz-mech');
+  const pills = container.querySelectorAll('.ns-viz-mech-pill');
+  const slides = container.querySelectorAll('.ns-viz-mech-slide');
+  pills.forEach((p, i) => p.classList.toggle('active', i === idx));
+  slides.forEach((s, i) => {
+    s.style.display = i === idx ? 'block' : 'none';
+    s.classList.toggle('active', i === idx);
+  });
+  container.dataset.currentSlide = idx;
+}
+function stepMechSlide(delta) {
+  const container = document.querySelector('.ns-viz-mech');
+  const slides = container.querySelectorAll('.ns-viz-mech-slide');
+  let current = parseInt(container.dataset.currentSlide || '0', 10);
+  current = (current + delta + slides.length) % slides.length;
+  const pills = container.querySelectorAll('.ns-viz-mech-pill');
+  setMechSlide(pills[current], current);
+}
 
-De zaak-Belgan kan niet los worden gezien van de verstikkende technologische blokkade die Washington en Brussel de afgelopen jaren hebben opgetrokken rond de Chinese chipsector. Sinds de aanscherping van exportrestricties op geavanceerde lithografiesystemen (zoals van ASML) en Amerikaanse ontwerpsoftware, heeft Peking zijn toevlucht gezocht tot alternatieve routes om technologische zelfvoorziening te forceren. In plaats van uitsluitend te investeren in miljarden kostende fundamentele research, richten Chinese staatsfondsen en gelieerde ondernemingen zich agressief op westerse middelgrote spelers die kampen met liquiditeitsproblemen of faillissementen.
+Europese naïviteit botst op harde economische veiligheid
 
-Toen Belgan medio 2024 insolventie aanvroeg, ontstond een vacuüm. In dergelijke overgangsfasen vervaagt het toezicht op personeel en serverinfrastructuren. Inlichtingendiensten waarschuwen al langer dat falende technologiebedrijven fungeren als open etalages: leeglopend personeel, onzekere toekomstperspectieven en financiële prikkels creëren de ideale voedingsbodem voor wervingsoperaties. De verdenking dat een bestuurder op dat niveau bereid was gevoelige blauwdrukken over te hevelen, onderstreept dat de Europese halfgeleiderstrategie ernstige operationele lekken vertoont aan de achterdeur van noodlijdende toeleveranciers.
+De arrestatie legt een fundamentele spanning bloot binnen het Europese industriebeleid. Met de European Chips Act pompt de Europese Unie tientallen miljarden euro's in de opbouw van eigen productiecapaciteit. Tegelijkertijd ontbreekt het op lidstaatniveau aan een uniforme screening en robuuste bescherming van middelgrote leveranciers en halfgeleiderfabrieken die in acute financiële moeilijkheden verkeren. Zodra een bedrijf wankelt, stopt vaak de investering in interne cybersecurity en contra-inlichtingenprotocollen, precies op het moment dat sleutelfiguren openstaan voor lucratieve buitenlandse aanbiedingen.
 
-     Galliumnitride (GaN) & Vermogenschips
-
-      Halfgeleidermateriaal met een bredere bandkloof (wide bandgap) dan standaard silicium. GaN vermindert energieverliezen bij stroomconversie drastisch en is cruciaal voor snelladers, tractie-omvormers in EV's en militaire radarapparatuur.
-
-     Insider Threat bij MKB & Foundries
-
-      Terwijl grote giganten over omvangrijke compliance- en dataloss-prevention (DLP) teams beschikken, zijn middelgrote fabrieken kwetsbaar voor leidinggevenden die admin-rechten combineren met inhoudelijke vakkennis en commerciële contacten.
-
-     Europese Screening van Buitenlandse Investeringen
-
-      Het EU-kader voor screening van buitenlandse directe investeringen (FDI) verhindert formele overnames van vitale activa door autoritaire regimes, maar biedt geen sluitende bescherming tegen clandestiene personeelsgestuurde diefstal.
-
-Strafrechtelijke en economische implicaties voor de regio
-
-Het onderzoek door het Brusselse parket zal precedentwerking hebben voor de wijze waarop justitie in de Benelux omgaat met economische delicten met een staatsbedreigend karakter. Waar spionagedossiers in het verleden veelal diplomatiek en in stilte werden afgewikkeld — bijvoorbeeld door diplomaten uit te wijzen of stille schikkingen te treffen — kiest het Openbaar Ministerie nu nadrukkelijk voor het strafrechtelijke traject. Dit sluit aan bij de recente richtlijnen van de Europese Commissie, die lidstaten maant om niet alleen buitenlandse overnames te blokkeren via screeningmechanismen, maar tevens hard op te treden tegen individuen die intellectueel kapitaal verhandelen.
-
-Voor Vlaanderen en de bredere halfgeleidercorridor rond Leuven (met onderzoeksinstituut Imec als mondiaal zwaartepunt) vormt het incident een pijnlijk leermoment. De bescherming van patenten en proceskennis vereist niet alleen robuuste firewalls tegen hackers in Shanghai of Shenzhen, maar noopt tot een integrale herziening van de governance rond faillissementen en personeelsmutaties in de technologiesector.
+Veiligheidsdiensten in België, Nederland en Duitsland waarschuwen al langer voor zogeheten 'intelligente drainage'. Daarbij wordt geen brute cyberaanval uitgevoerd van buitenaf, maar worden hooggeplaatste insiders geëxploiteerd die beschikken over legitieme encryptiesleutels en documenttoegang. In het geval van Belgan blijkt dat de verdedigingslinie van het bedrijf niet werd doorbroken door hackers, maar simpelweg via de hoofduitgang naar buiten werd gedragen.
 
 Conclusie
 
-De verdenking tegen de voormalige Belgan-topman illustreert dat de wereldwijde chipoorlog niet louter wordt beslecht via geopolitieke sancties en miljardensubsidies uit de European Chips Act. De frontlinie loopt dwars door de bestuurskamers van noodlijdende Europese fabrieken. Zonder strikte beveiliging van industriële 'know-how' en verhoogde waakzaamheid rond sleutelfiguren tijdens crisissituaties dreigt Europa miljarden aan publiek gefinancierde innovatie te verliezen aan strategische rivalen.
+De spionageaffaire rond de voormalige Belgan-topman toont dat de geopolitieke strijd om chips niet louter wordt uitgevochten via formele handelssancties en diplomatieke vetorechten. Zolang Europa zijn innovatieve, kleinere technologiebedrijven financieel niet duurzaam weet te verankeren, blijven de kroonjuwelen van de Europese halfgeleiderstrategie een open doelwit voor buitenlandse inlichtingendiensten die met chirurgische precisie personeel en intellectueel eigendom afromen.
 
-  Bronnen: NOS Nieuws, NU.nl, Parket van Brussel, Halfgeleider- en technologiesectorrapportages
+ Bronnen: NOS Nieuws, Federaal Parket België, NU.nl, De Tijd

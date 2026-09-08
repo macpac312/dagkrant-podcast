@@ -1,6 +1,6 @@
 {
   "title": "ChatGPT terug naar 55,5% van het chatbot-webverkeer",
-  "summary": "Similarweb via The Decoder: de voorsprong kromp jaar-op-jaar van 73,3%. Gemini verdubbelde, Claude groeide bijna vijf keer.",
+  "summary": "The Decoder: Geminis korte comeback ebde weg. OpenAI herovert het merendeel van de publieke chat. Het is geen modeloorlog. Het is een gewoonte.",
   "sources": [
     "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades/"
   ],
@@ -11,8 +11,10 @@
   "tts_slug": "chatgpt-terug-naar-555-van-het-chatbot-webverkeer",
   "archive_hits": 0,
   "has_visuals": true,
-  "generated_at": "2026-09-08T03:30:59",
-  "size_kb": 10,
+  "generated_at": "2026-09-08T19:00:16",
+  "size_kb": 6,
   "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/chatgpt-terug-naar-555-van-het-chatbot-webverkeer.html",
-  "mode": "default"
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
 }

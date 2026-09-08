@@ -3,88 +3,62 @@ titel: "ChatGPT terug naar 55,5% van het chatbot-webverkeer"
 url: https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades/
 bron: aitech
 kind: aitech
-gegenereerd: 2026-09-08T03:30:59
+gegenereerd: 2026-09-08T19:00:16
 ---
 
--  Marktaandeel consolideert:  OpenAI's ChatGPT claimt volgens data van Similarweb 55,5% van het wereldwijde chatbot-webverkeer, een licht herstel na eerdere verliezen.
+aitech
 
-  -  Structurele krimp:  Op jaarbasis leverde de pionier fors in; twaalf maanden geleden bedroeg het marktaandeel van ChatGPT nog 73,3%.
+ChatGPT terug naar 55,5% van het chatbot-webverkeer
 
-  -  Gemini stabiliseert op afstand:  Google Gemini zag zijn aandeel op jaarbasis ruwweg verdubbelen, maar het momentum van een eerdere inhaalslag vlakt in de browser af.
+Datum: 2026-09-08
 
-  -  Claude maakt sprong:  Uitdager Anthropic noteert met Claude een bijna vervijfvoudiging van het webvolume, vooral gedreven door zakelijke en programmeertoepassingen.
+    - ChatGPT heroverde in de zomer van 2026 de marktpositie en beslaat inmiddels 55,5% van het totale webverkeer naar generatieve consumentenchatbots.
 
-     Verdeling chatbot-webverkeer (Similarweb)
-     Vergelijking marktaandeel en relatieve groei op jaarbasis
+    - De opmars van Google Gemini, dat begin dit jaar tijdelijk profiteerde van agressieve bundeling en modelupdates, is daarmee afgezwakt.
 
-       ChatGPT aandeel
-       55,5%
-       -17,8% j-o-j
+    - Analisten benadrukken dat het verschijnsel geen zuivere modeloorlog meer is, maar een kwestie van ingesleten consumentengewoonten.
 
-       ChatGPT piek (2023)
-       73,3%
-       Historisch niveau
+    - De concurrentiestrijd verschuift definitief van pure benchmarkscores naar distributiekracht en ecosysteem-integratie.
 
-       Google Gemini
-       ~2x
-       Verdubbeling j-o-j
+Marktaandelen consumentenchatbots (Webverkeer)
 
-       Anthropic Claude
-       ~4,8x
-       Bijna vervijfvoudigd
+             OpenAI (ChatGPT)
+             55,5%
 
-OpenAI veert op na hevige concurrentieslag
+             Google (Gemini)
+             22,1%
 
-De mondiale markt voor consumentgerichte generatieve AI betreedt een fase van volwassenheid waarin marktaandelen niet langer vanzelfsprekend zijn. Uit recente verkeersmetingen van analysebureau Similarweb, gerapporteerd door technologiesite The Decoder, blijkt dat OpenAI’s ChatGPT zijn greep op het webdomein deels heeft hersteld. Na een periode van aanhoudende erosie wist het platform weer op te klimmen naar 55,5% van het totale chatbot-verkeer via desktop- en mobiele browsers.
+             Overige AI-platforms
+             22,4%
 
-Hoewel deze opleving aantoont dat de merkbekendheid van ChatGPT vooralsnog fungeert als een effectieve defensieve gracht (de zogeheten  brand moat ), vertelt het historische perspectief een genuanceerder verhaal. Exact een jaar geleden controleerde OpenAI nog 73,3% van alle browsergebaseerde chatsessies. Het verlies van bijna achttien procentpunt onderstreept dat alternatieven niet louter experimenteel zijn gebleken, maar structureel voet aan de grond hebben gekregen in de dagelijkse routine van miljoenen eindgebruikers.
+De illusie van de modeloorlog
 
-     Marktaandeel chatbot-webverkeer
-     Verhoudingen tussen marktleiders (schatting Similarweb)
+De dominantie van generatieve AI werd lang afgemeten aan technologische mijlpalen. Zodra een concurrerend model op een openbare benchmark een fractie beter scoorde dan OpenAI's vlaggenschip, voorspelden marktkenners een exodus van gebruikers. De recente cijfers tonen echter aan dat de praktijk weerbarstiger is. Hoewel Google met Gemini indruk maakte door diepe integratie binnen het Android-ecosysteem en indrukwekkende contextvensters, bleek de technologische voorsprong onvoldoende om een definitieve ommezwaai te bewerkstelligen. De consument kiest zelden voor de marginale winst in capaciteit als dat ten koste gaat van een vertrouwde interface.
 
-          OpenAI ChatGPT  (huidig)
-         55,5%
+Evolutie van de adoptiecyclus
 
-          OpenAI ChatGPT  (12 maanden geleden)
-         73,3%
+          Fase 1: Innovatie & Novelty
+ ChatGPT verovert de markt als unieke pionier.
+             2022–2023
 
-          Google Gemini
-         ~22,0%
+          Fase 2: Uitdaging & Fragmentatie
+ Concurrenten snoepen tijdelijk marktaandeel af via agressieve distributie.
+             2024–2025
 
-          Anthropic Claude & overigen  (Perplexity, Copilot, etc.)
-         ~22,5%
+          Fase 3: Habitualisering
+ De markt stabiliseert rond gevestigde gebruikersroutines.
+             Huidig (2026)
 
-Gemini stagneert na integratie-offensief
+De kracht van routine en psychologische inertie
 
-De meest prominente uitdager van OpenAI blijft Google met Gemini. Geholpen door een ongeëvenaarde distributiekracht en de gefaseerde integratie in Android en Chrome, verdubbelde Alphabet het webverkeer naar zijn dialooginterface op jaarbasis. Desondanks tekent zich een plafond af. De eerdere verwachting dat Google met zijn modelupdates ChatGPT snel naar de kroon zou steken, is vooralsnog niet uitgekomen; het verkeersaandeel stagneerde gedurende de afgelopen maanden.
+Wat we in 2026 waarnemen is het klassieke fenomeen van 'sticky habits'. Mensen gebruiken chatbots op een vergelijkbare manier als zoekmachines of sociale media: de drempel om te migreren is hoog zolang het huidige instrument aan de basale verwachtingen voldoet. ChatGPT fungeert voor miljoenen mensen inmiddels als de primaire digitale werkplek. Het opslaan van instructies, aangepaste instructies (custom instructions), geschiedenis en gedeelde threads creëert een hoge 'switching cost'. Zelfs wanneer een alternatief model technisch superieur is op een specifiek subdomein, weegt dat niet op tegen het verlies van persoonlijke workflow-historie.
 
-Analisten wijzen erop dat Google’s belangrijkste AI-interacties steeds vaker plaatsvinden via zogenaamde ‘AI Overviews’ direct binnen de zoekresultaten, in plaats van op een losstaand chatbot-domein. Dit kannibaliseert paradoxaal genoeg de traffic-statistieken van het op zichzelf staande Gemini-platform. Niettemin wijst het afvlakken van de curve erop dat het overtuigen van de actieve ChatGPT-gebruiker meer vergt dan enkel pariteit in benchmarks.
+De strategische verschuiving naar distributie
 
-Claude profileert zich als de kwaliteitsspecialist
-
-Terwijl de titanenstrijd tussen Alphabet en Microsoft/OpenAI zich hoofdzakelijk afspeelt op massabereik en consumentenretentie, voltrekt zich bij Anthropic een kwalitatieve verschuiving. Het verkeer naar Claude groeide met een factor 4,8. Deze toename valt samen met de introductie van Claude 3.5 Sonnet, dat brede lof oogstte onder softwareontwikkelaars en data-analisten voor zijn superieure redeneervermogen en codeerprestaties.
-
-De opmars van Claude illustreert de toenemende fragmentatie van het AI-landschap. Waar ChatGPT fungeert als het generieke 'Zwitserse zakmes' voor huis-tuin-en-keukenvragen, kiest een veeleisende bovenlaag van programmeurs, academici en analisten bewust voor platforms die uitblinken in complexe logica en langere contextvensters.
-
-     Dynamiek van het chatbot-ecosysteem
-     Drie assen waarop de strijd om de gebruiker wordt beslecht
-
-       1. Consumenteninertie en merkentrouw
-
-        ChatGPT heeft de status verworven van synoniem voor de technologie, vergelijkbaar met 'googelen'. Deze merkwaarde beschermt het basisvolume tegen concurrenten met vergelijkbare technische prestaties.
-
-       2. Browserverkeer versus API- en native distributie
-
-        Webverkeer vertelt slechts een deel van het verhaal. Mobiele applicaties, integraties in besturingssystemen (zoals Apple Intelligence) en zakelijk API-gebruik onttrekken zich grotendeels aan browser-meetinstrumenten.
-
-       3. Specialisatie versus generalisme
-
-        Modellen differentiëren zich steeds sterker: Claude richt zich op programmeurs en analisten, Perplexity op zoek- en bronverwijzingen, terwijl OpenAI en Google inzetten op multimodale consumententoepassingen.
+Nu de technologische kloof tussen de grote aanbieders kleiner wordt, concentreert de strijd zich op de infrastructuur rondom de gebruiker. Bedrijven investeren minder in het opvijzelen van parameters en meer in diepe integratie met kantoorsystemen, smart home-apparaten en besturingssystemen. Wie erin slaagt om de onzichtbare standaard te worden op elk scherm, hoeft niet meer te concurreren op losse webbezoeken. Dat OpenAI er desondanks in slaagt om via het directe webkanaal op 55,5% te blijven stijgen, bewijst dat de merknaam synoniem is geworden met de categorie zelf – een luxepositie die traditionele techreuzen miljarden kost om te doorbreken.
 
 Conclusie
 
-De Similarweb-statistieken tonen een duidelijke transitie: de absolute monopoliefase van OpenAI is definitief voorbij, maar de gevreesde vrije val blijft uit. Met 55,5% van het browserverkeer behoudt ChatGPT een comfortabele meerderheid, zelfs in een omgeving waar de concurrentie gigantische kapitaalinvesteringen doet.
+De terugkeer van ChatGPT naar een meerderheidsandeel van het webverkeer onderstreept dat de generatieve AI-markt volwassen wordt. Het tijdperk waarin een simpele modelupdate volstond om de hegemonie te breken, ligt achter ons. De komende jaren zal de strijd niet gewonnen worden op het laboratorium, maar in de dagelijkse routine van de eindgebruiker.
 
-Tegelijkertijd moeten deze webcijfers met zorg worden gewogen. Naarmate AI dieper integreert in native besturingssystemen, kantoorsoftware en mobiele assistenten, verliest het traditionele chatvenster in de browser zijn rol als exclusieve graadmeter voor macht in de AI-economie. De strijd verschuift naar de achterliggende API-infrastructuur en systeemintegraties.
-
- Bronnen: Similarweb via The Decoder; interne analyse databronnen AI-traffic september 2026.
+ Bronnen: The Decoder, webverkeeranalyses AI-consumentenmarkt 2026

@@ -1,0 +1,21 @@
+{
+  "title": "Middelbare school in Almere dicht om ‘onveilige, risicovolle situatie’",
+  "summary": "NOS en RTL: leerlingen van speciaal onderwijs kregen gisteravond te horen dat ze thuis moesten blijven. Bestuur Eduvier houdt de school de hele dag dicht.",
+  "sources": [
+    "https://nos.nl/l/2630164",
+    "https://www.rtl.nl/nieuws/binnenland/artikel/5649344/school-almere-tijdelijk-dicht-onveilige-situatie"
+  ],
+  "topic": "nederland",
+  "kind": "nederland",
+  "datum_iso": "2026-09-08",
+  "slug": "middelbare-school-in-almere-dicht-om-onveilige-risicovolle-s",
+  "tts_slug": "middelbare-school-in-almere-dicht-om-onveilige-risicovolle-s",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:54:43",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/middelbare-school-in-almere-dicht-om-onveilige-risicovolle-s.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

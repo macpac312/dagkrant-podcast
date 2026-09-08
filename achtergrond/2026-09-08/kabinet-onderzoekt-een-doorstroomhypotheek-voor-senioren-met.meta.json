@@ -1,18 +1,20 @@
 {
   "title": "Kabinet onderzoekt een doorstroomhypotheek voor senioren met overwaarde",
-  "summary": "Findinet: Den Haag kijkt hoe ouderen met veel baksteen makkelijker een volgende woning financieren.",
+  "summary": "Findinet: ouderen zouden makkelijker kunnen doorstromen zonder hun overwaarde vast te zetten. Het is een verkenning, geen product.",
   "sources": [
     "https://www.findinet.nl/persbericht/kabinet-onderzoekt-doorstroomhypotheek-voor-senioren-met-overwaarde/"
   ],
-  "topic": "regulatoir",
-  "kind": "regulatoir",
+  "topic": "huizenmarkt",
+  "kind": "huizenmarkt",
   "datum_iso": "2026-09-08",
   "slug": "kabinet-onderzoekt-een-doorstroomhypotheek-voor-senioren-met",
   "tts_slug": "kabinet-onderzoekt-een-doorstroomhypotheek-voor-senioren-met",
   "archive_hits": 0,
   "has_visuals": true,
-  "generated_at": "2026-09-08T03:24:49",
-  "size_kb": 12,
+  "generated_at": "2026-09-08T18:58:20",
+  "size_kb": 6,
   "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/kabinet-onderzoekt-een-doorstroomhypotheek-voor-senioren-met.html",
-  "mode": "default"
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
 }

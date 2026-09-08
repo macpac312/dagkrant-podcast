@@ -1,0 +1,21 @@
+{
+  "title": "PISA: bijna 40 procent van de tieners haalt het basisniveau lezen niet",
+  "summary": "NOS en FD: de leesprestaties dalen opnieuw. Bibliotheken, geld en campagnes veranderden de curve niet. NOS noemt het een veelkoppig monster.",
+  "sources": [
+    "https://nos.nl/l/2630216",
+    "https://fd.nl/samenleving/1611429/leesprestaties-scholieren-opnieuw-gedaald-bijna-40-haalt-basisniveau-niet"
+  ],
+  "topic": "nederland",
+  "kind": "nederland",
+  "datum_iso": "2026-09-08",
+  "slug": "pisa-bijna-40-procent-van-de-tieners-haalt-het-basisniveau-l",
+  "tts_slug": "pisa-bijna-40-procent-van-de-tieners-haalt-het-basisniveau-l",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:54:31",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/pisa-bijna-40-procent-van-de-tieners-haalt-het-basisniveau-l.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Musk vangt bot: de rechter handhaaft het verbod op AI-naaktbeelden",
+  "summary": "BNR en Welingelichte Kringen: xAI verliest de poging om Minnesota’s ‘nudification’-ban te blokkeren. Het verbod blijft staan.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQWlWemFDYVVDRnZkRVo2TVI0a2s1REt6bzZYd1JlVFNwV0FKVm1WV2tHWk9vTUJWbWRpa29JZ0lUdUJxa0FTNHlCR3hXbkVCdUZvZzRXQm5CYTRya0t4a3pqVkNtT1o1dU5rdnNSMHl1UjVVaThvZU5qS2NEWWhaVl9kNndrY2RpZWZLMXZFMG42N3RvcVd2Q01rWDloMFo5RzBaWWtROU5KSXhPQlE?oc=5",
+    "https://www.bnr.nl/nieuws/technologie/10563575/musk-vangt-bot-rechter-handhaaft-verbod-op-uitkleedapps-xai"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-08",
+  "slug": "musk-vangt-bot-de-rechter-handhaaft-het-verbod-op-ai-naaktbe",
+  "tts_slug": "musk-vangt-bot-de-rechter-handhaaft-het-verbod-op-ai-naaktbe",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T19:02:11",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/musk-vangt-bot-de-rechter-handhaaft-het-verbod-op-ai-naaktbe.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

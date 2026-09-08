@@ -1,6 +1,6 @@
 {
   "title": "Brussel wil af van aanbesteding op de laagste prijs",
-  "summary": "FD: eenvoudiger regels, het EU-budget moet vergroening, innovatie en minder China-afhankelijkheid kopen. Niet alleen de goedkoopste offerte.",
+  "summary": "FD en AD: nieuwe EU-regels moeten het aanbestedingsbudget sturen naar vergroening, innovatie en minder afhankelijkheid van China.",
   "sources": [
     "https://fd.nl/economie/1611313/brussel-wil-af-van-aanbesteding-op-laagste-prijs",
     "https://www.ad.nl/economie/fd-brussel-wil-af-van-aanbesteding-op-laagste-prijs-vergroening-en-innovatie-krijgen-meer-gewicht~aaffdc29/"
@@ -12,8 +12,10 @@
   "tts_slug": "brussel-wil-af-van-aanbesteding-op-de-laagste-prijs",
   "archive_hits": 0,
   "has_visuals": true,
-  "generated_at": "2026-09-08T03:23:06",
-  "size_kb": 11,
+  "generated_at": "2026-09-08T18:55:48",
+  "size_kb": 5,
   "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/brussel-wil-af-van-aanbesteding-op-de-laagste-prijs.html",
-  "mode": "default"
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
 }

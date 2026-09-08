@@ -1,0 +1,20 @@
+{
+  "title": "Amerikaanse sancties jagen de Europese internetsector angst aan",
+  "summary": "NRC: providers zien terrorisme-sancties als nieuw middel om sites uit de lucht te halen. De VS gebruiken dat instrument sinds kort agressiever.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/08/amerikaanse-sanctiebeleid-jaagt-europese-internetsector-angst-aan-a4936144"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-08",
+  "slug": "amerikaanse-sancties-jagen-de-europese-internetsector-angst-",
+  "tts_slug": "amerikaanse-sancties-jagen-de-europese-internetsector-angst-",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T19:00:55",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/amerikaanse-sancties-jagen-de-europese-internetsector-angst-.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

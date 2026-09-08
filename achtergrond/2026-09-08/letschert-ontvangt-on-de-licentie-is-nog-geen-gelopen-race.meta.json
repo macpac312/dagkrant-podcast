@@ -1,0 +1,21 @@
+{
+  "title": "Letschert ontvangt ON!: de licentie is nog geen gelopen race",
+  "summary": "NRC: Kamer en NPO willen Ongehoord Nederland weg. Hoogleraar Hins verwacht dinsdag nog geen definitief besluit. Een schorsing moet juridisch zuiver zijn.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/06/minister-letschert-staat-sterker-als-ook-de-npo-om-intrekking-van-de-licentie-van-ongehoord-nederland-vraagt-a4936001",
+    "https://www.nrc.nl/nieuws/2026/09/08/ongehoord-nederland-is-de-schandvlek-van-het-publieke-bestel-maar-een-besluit-tot-schorsing-moet-zuiver-zijn-a4936171"
+  ],
+  "topic": "regulatoir",
+  "kind": "regulatoir",
+  "datum_iso": "2026-09-08",
+  "slug": "letschert-ontvangt-on-de-licentie-is-nog-geen-gelopen-race",
+  "tts_slug": "letschert-ontvangt-on-de-licentie-is-nog-geen-gelopen-race",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:56:57",
+  "size_kb": 9,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/letschert-ontvangt-on-de-licentie-is-nog-geen-gelopen-race.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

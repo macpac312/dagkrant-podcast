@@ -1,0 +1,22 @@
+{
+  "title": "ASML begint de campus in Eindhoven: 20.000 mensen, en alles moet wijken",
+  "summary": "NRC en Tweakers: de bouw start. De gemeente sleept de laatste hindernissen weg. NU.nl: twintigduizend medewerkers.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/07/asml-start-met-de-bouw-van-nieuwe-campus-in-eindhoven-en-alles-moet-ervoor-wijken-a4936078",
+    "https://tweakers.net/nieuws/251904/asml-bouwt-nieuwe-campus-in-eindhoven-voor-20000-medewerkers.html",
+    "https://www.nu.nl/economie/6409039/asml-begint-bouw-nieuwe-campus-voor-twintigduizend-mensen.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-08",
+  "slug": "asml-begint-de-campus-in-eindhoven-20000-mensen-en-alles-moe",
+  "tts_slug": "asml-begint-de-campus-in-eindhoven-20000-mensen-en-alles-moe",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T19:01:15",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/asml-begint-de-campus-in-eindhoven-20000-mensen-en-alles-moe.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

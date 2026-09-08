@@ -1,0 +1,23 @@
+{
+  "title": "TSMC, Samsung en Intel sluiten zich aan bij ASML’s High-NA — Huawei probeert eruit te breken",
+  "summary": "NRC en FD: ASML smeedt een coalitie om de nieuwste EUV-machine te upgraden. The Decoder: Huawei racet om de greep te breken. Doel: snellere AI-chips.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/08/asml-gaat-samenwerken-met-taiwanese-chipgigant-tsmc-om-zijn-nieuwste-chipmachines-te-upgraden-a4936073",
+    "https://fd.nl/bedrijfsleven/1611407/tsmc-schaart-zich-achter-nieuwste-technologie-van-asml",
+    "https://the-decoder.com/asml-locks-in-tsmc-samsung-and-intel-while-huawei-races-to-break-its-grip/",
+    "https://www.cnbc.com/2026/09/08/tsmc-samsung-asml-high-na-euv-machine-ai-chips.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-08",
+  "slug": "tsmc-samsung-en-intel-sluiten-zich-aan-bij-asmls-high-na-hua",
+  "tts_slug": "tsmc-samsung-en-intel-sluiten-zich-aan-bij-asmls-high-na-hua",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:54:10",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/tsmc-samsung-en-intel-sluiten-zich-aan-bij-asmls-high-na-hua.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "xAI lanceert Grok Bot: agents die voor je inloggen op je apps",
+  "summary": "Grok Bot belooft bedrijfsagents die sessies overnemen. Een gratis proefperiode is de haak. Het risico zit in de inlog, niet in de chat.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNejF3enV2aTNBdzQyQ2NIREliMHljbldrU3VyeVBoYlZOWnhvZ2hRZ2JsSXo3Q1hoVEZtU1hlcloyYS1odVUxTzRtdjhlRVJBNlFJT0gxZk1aeUVFU1M5VmRXVHVQSmNGRWlxLWJhbVNvbENWaVZkTm1EWEJlSTlIYmVLZFdOWGhPRnc?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-08",
+  "slug": "xai-lanceert-grok-bot-agents-die-voor-je-inloggen-op-je-apps",
+  "tts_slug": "xai-lanceert-grok-bot-agents-die-voor-je-inloggen-op-je-apps",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T19:02:32",
+  "size_kb": 9,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/xai-lanceert-grok-bot-agents-die-voor-je-inloggen-op-je-apps.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

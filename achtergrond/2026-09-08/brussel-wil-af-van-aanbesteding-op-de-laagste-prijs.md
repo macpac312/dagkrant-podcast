@@ -3,73 +3,81 @@ titel: "Brussel wil af van aanbesteding op de laagste prijs"
 url: https://fd.nl/economie/1611313/brussel-wil-af-van-aanbesteding-op-laagste-prijs
 bron: financieel
 kind: financieel
-gegenereerd: 2026-09-08T03:23:06
+gegenereerd: 2026-09-08T18:55:48
 ---
 
-- Jaarlijks besteden Europese overheden ruim 2.000 miljard euro via aanbestedingen, goed voor circa 14 procent van het bruto binnenlands product van de Europese Unie.
+financieel
 
-  - Ruim de helft van alle openbare tenders wordt momenteel louter gegund op basis van de laagste initiële inschrijvingsprijs, ondanks bestaande speelruimte voor kwalitatieve criteria.
+Brussel wil af van aanbesteding op de laagste prijs
 
-  - De Europese Commissie herziet het aanbestedingskader om publiek kapitaal in te zetten als hefboom voor vergroening, innovatie en het terugdringen van strategische afhankelijkheden van China.
+   8 september 2026
 
-  - Lagere overheden vrezen hogere uitvoeringskosten en juridische procedures, terwijl de Europese industrie al jaren pleit voor een gelijk speelveld tegen staatsgesubsidieerde buitenlandse partijen.
+    - Europese Commissie presenteert herziening van de aanbestedingsregels.
 
-       14%
-       EU-bbp uitgegeven via publieke tenders
+    - Focus verschuift van pure kostenbesparing naar vergroening en strategische autonomie.
 
-       €2.200 mrd
-       Jaarlijks inkoopvolume binnen EU-lidstaten
+    - Minder afhankelijkheid van Chinese leveranciers in cruciale sectoren.
 
-       55%
-       Gegund puur op laagste aanschafprijs
+    - Innovatie en kwaliteit krijgen zwaarder gewicht in gunningscriteria.
 
-       0%
-       Huidige verplichte weging op strategische autonomie
+     Het oude versus het nieuwe aanbestedingsmodel
 
-Van defensieve zuinigheid naar strategische koopkracht
+Oude Systematiek
 
-Decennialang was het dogma van het Europese aanbestedingsrecht helder: de belastingbetaler verdient de scherpste deal en concurrentie op de interne markt moet gevrijwaard blijven van protectionistische reflexen. Dat leidde er in de praktijk toe dat inkopers bij gemeenten, ziekenhuizen, spoorbedrijven en ministeries kozen voor de juridisch veiligste weg. Wie op de cent gunt, loopt immers het minste risico op bezwaarprocedures van gepasseerde aannemers. Het gevolg laat zich raden: grootschalige projecten voor zonneparken, medische hulpmiddelen, havenkranen en telecomnetwerken verdwenen naar buitenlandse partijen — vaak zwaar gesubsidieerd door overheden buiten de Unie, met name in Peking.
+          - Prijs als absoluut doorslaggevend criterium (vaak 80-100% weging).
 
-In Brussel is het tij nu definitief gekeerd. Gedreven door de conclusies uit het rapport van Mario Draghi over het Europese concurrentievermogen en de lessen uit de recente energiecrisis, wil de Europese Commissie het stelsel fundamenteel ombouwen. Overheidsbudgetten mogen niet langer uitsluitend fungeren als kasboekcontroleur, maar moeten actief dienen als strategisch instrument voor industriebeleid, energietransitie en geopolitieke weerbaarheid.
+          - Korte-termijnkostenbesparingen voor overheden.
 
-     Transitie in het gunningsmechanisme
+          - Kans op onderaanneming en lage lonen buiten de EU.
 
-       1. Traditioneel: Prijsfocus
-       2. Filter: Strategische zeef
-       3. Nieuw: Meervoudige waarde
+          - Weinig ruimte voor circulaire materialen of lokale productie.
 
-         Klassieke gunning:  De aanbesteder formuleert basisspecificaties. Iedere partij die formeel voldoet, concurreert op initiële kosten. Staatssteun of ketenafhankelijkheden worden zelden meegewogen. Dit begunstigt systematisch fabrikanten uit lagelonenlanden en gesubsidieerde staatsbedrijven.
+Nieuwe EU-Kaders (2026+)
 
-         Uitsluiting en voorselectie:  Toepassing van de verordening buitenlandse subsidies (FSR) en de Net Zero Industry Act. Bieders met oneerlijke staatssteun of leveranciers die kritieke infrastructuur afhankelijk maken van één enkel dominant derde land kunnen al vóór de prijsvergelijking worden gediskwalificeerd.
+          - Multicriteria-analyse: CO2-voetafdruk en circulariteit verplicht meewegen.
 
-         Integrale waardeberekening:  Gunningsbesluit op basis van Total Cost of Ownership (TCO), verifieerbare CO2-reductie over de gehele levenscyclus, cyberveiligheid en gegarandeerde toeleveringszekerheid binnen Europa. Prijs vormt nog slechts een onderdeel van een breder strategisch gewicht.
+          - Europese productiecapaciteit en strategische autonomie als zwaar punt.
 
-De verborgen prijs van de allergoedkoopste offerte
+          - Strengere controle op staatssteun en oneerlijke concurrentie uit derde landen.
 
-De eenzijdige focus op de laagste aanschafprijs heeft de afgelopen vijftien jaar substantiële structurele schade aangericht. Terwijl Europese producenten moesten voldoen aan strenge milieunormen, cao-afspraken en hoge energiekosten, konden partijen uit landen met soepelere regels en omvangrijke staatssteun moeiteloos onder de marktprijs duiken. Hierdoor verdween niet alleen de Europese productiecapaciteit van zonnecellen en windturbinecomponenten, maar ontstond ook in de medische sector en bij IT-infrastructuur een gevaarlijke kwetsbaarheid.
+          - Stimulering van regionale innovatie en technologische veerkracht.
 
-Bovendien blijkt de 'laagste prijs' in de praktijk geregeld een illusie. Projecten die voor bodemprijzen werden binnengehaald, kampten regelmatig met vertragingen, meerwerkclaims en vroegtijdige vervanging. Door de introductie van verplichte criteria rondom de levenscycluskosten en duurzaamheid moeten aanbestedende diensten gaan rekenen met de werkelijke rekening op lange termijn: van grondstofwinning en onderhoud tot aan ontmanteling en CO2-belasting.
+Einde van de race to the bottom
 
-       1. Strategische autonomie en herkomsttoets
+Jarenlang vormde de laagste prijs het onwrikbare uitgangspunt voor Europese aanbestedingen. Overheden waren vanuit budgettaire discipline vaak verplicht om de goedkoopste inschrijving te selecteren, ongeacht de herkomst van de grondstoffen of de ecologische voetafdruk. Volgens ingewijden in Brussel heeft deze 'race to the bottom' echter geleid tot een gevaarlijke economische kwetsbaarheid, met name door een blinde vlek voor goedkope import uit landen met andere standaarden, zoals China.
 
-        Aanbesteders krijgen wettelijke instrumenten om inschrijvers uit te sluiten wanneer meer dan 50 procent van de technologie of grondstoffen afkomstig is uit landen zonder wederkerig handelsverdrag met de EU. Dit voorkomt afhankelijkheid in vitale sectoren zoals energie en defensie.
+     Kerncijfers Europese Aanbestedingsmarkt
 
-       2. Levenscyclus- en duurzaamheidscriteria
+         14%
+         van het EU-bbp gemoeid met overheidsopdrachten
 
-        Niet alleen de directe aanschafprijs telt, maar de integrale ecologische voetafdruk gedurende de hele exploitatieperiode. Dit waardeert fabrikanten die hernieuwbare energie inzetten, recyclebare materialen gebruiken en lage transportemissies hebben.
+         >2
+         biljoen euro jaarlijkse marktwaarde in de Unie
 
-       3. Administratieve vereenvoudiging voor innovatief mkb
+         3
+         pijlers: groen, innovatief en geopolitiek
 
-        Om te voorkomen dat de nieuwe criteria verzanden in een papieren doolhof, moeten drempelbedragen worden aangepast en formulieren gestandaardiseerd. Zo behouden kleinere Europese innovators toegang tot opdrachten zonder torenhoge advieskosten.
+Strategische autonomie als nieuw kompas
 
-De spanning tussen vereenvoudiging en handhaving
+De geopolitieke spanningen van de afgelopen jaren hebben de Europese besluitvorming fundamenteel veranderd. Infrastructuurprojecten, defensie-gerelateerde opdrachten en grootschalige ICT-systemen kunnen niet langer uitsluitend op economische gronden worden gegund. De Europese Commissie wil dat aanbestedende diensten voortaan actief toetsen op leveringszekerheid. Wie te afhankelijk is van productketens buiten Europa, vist straks achter het net.
 
-Het Brusselse voornemen botst echter op een netelige paradox. Enerzijds belooft de Commissie minder administratieve lasten en eenvoudigere regels, zeker voor het midden- en kleinbedrijf dat nu al afhaakt door de bureaucratische formulierenbrij. Anderzijds vereist het beoordelen van geopolitieke risico's, toeleveringsketens en CO2-berekeningen juist gespecialiseerde kennis die bij veel decentrale overheden ontbreekt.
+     Tijdlijn van de hervorming
 
-Gemeentelijke inkopers en waterschappen waarschuwen dat kwalitatieve gunningscriteria vatbaarder zijn voor juridische betwisting dan een eenduidig prijscijfer. Als Brussel de criteria niet uiterst helder afbakent, dreigt een toename van slepende rechtszaken, waardoor noodzakelijke investeringen in infrastructuur en utiliteitsbouw juist vertraging oplopen. Desondanks is de politieke consensus in Berlijn, Parijs en Brussel hecht: doorgaan op de huidige voet betekent het subsidiëren van de industriële uitholling van het eigen continent.
+         Q1 2025
+         Eerste consultatieronde met marktexperts en lidstaten over knelpunten huidige richtlijn.
+
+         Najaar 2026
+         Officiële presentatie herziene EU-aanbestedingsrichtlijn door de Commissie.
+
+         2027-2028
+         Implementatietraject en omzetting naar nationale wetgeving in de lidstaten.
+
+Weerstand en uitdagingen bij implementatie
+
+Hoewel de doelstellingen op brede steun kunnen rekenen, waarschuwen inkooporganisaties en gemeenten voor verhoogde administratieve lasten. Het objectief beoordelen van duurzaamheidscriteria, innovatiekracht en geopolitieke risico's is immers complexer dan simpelweg het prijskaartje onderaan de streep vergelijken. Bovendien vrezen critici dat kleinere ondernemingen moeite zullen hebben om te voldoen aan de zwaardere documentatie-eisen rondom hun productieketens.
 
 Conclusie
 
-De hervorming van de Europese aanbestedingsregels markeert het einde van een naïeve vrijhandelsperiode waarin overheidsinkoop louter een boekhoudkundige bezuinigingsoefening was. Met ruim 2.000 miljard euro per jaar heeft de publieke sector een formidabel economisch wapen in handen. Als de Europese Commissie erin slaagt om de regels slagvaardig en juridisch houdbaar te vereenvoudigen, kan overheidsinkoop transformeren van een kwetsbaarheid naar de motor van Europese innovatie en strategische zelfredzaamheid.
+Met de voorgestelde koerswijziging laat Brussel het neoliberale dogma van de laagste prijs definitief los. Overheidsgeld wordt voortaan ingezet als strategisch instrument om de Europese economie te vergroenen en te beschermen tegen externe schokken. De komende jaren zal moeten blijken of lidstaten in staat zijn deze ambitieuze doelen te verwezenlijken zonder dat de bureaucratie de markt verlamt.
 
- Bronnen: Het Financieele Dagblad, Europese Commissie (DG GROW), rapport-Draghi (The Future of European Competitiveness), Algemene Rekenkamer.
+   Bronnen: FD (fd.nl/economie/1611313/brussel-wil-af-van-aanbesteding-op-laagste-prijs), AD (ad.nl)

@@ -1,0 +1,22 @@
+{
+  "title": "OpenAI claimt een wiskundedoorbraak — academici schreeuwen foul",
+  "summary": "TechCrunch, Wired en The Decoder: een NYU-wiskundige zegt dat een OpenAI-onderzoeker hem onder druk zette om een Anthropic-co-auteur te schrappen.",
+  "sources": [
+    "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+    "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
+    "https://the-decoder.com/openai-researcher-allegedly-pressured-mathematician-to-drop-anthropic-co-author-from-math-breakthrough-paper/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-08",
+  "slug": "openai-claimt-een-wiskundedoorbraak-academici-schreeuwen-fou",
+  "tts_slug": "openai-claimt-een-wiskundedoorbraak-academici-schreeuwen-fou",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:59:34",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/openai-claimt-een-wiskundedoorbraak-academici-schreeuwen-fou.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

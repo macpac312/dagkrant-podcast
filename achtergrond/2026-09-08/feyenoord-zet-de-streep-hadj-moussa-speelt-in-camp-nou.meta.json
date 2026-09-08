@@ -1,0 +1,25 @@
+{
+  "title": "Feyenoord zet de streep: Hadj Moussa speelt in Camp Nou",
+  "summary": "NU.nl, RTL en VI: Anis Hadj Moussa begint woensdag tegen Barcelona. Van Bronckhorst: de rijen zijn gesloten. De transfersoap naar Al-Ittihad is voorbij.",
+  "sources": [
+    "https://www.nu.nl/voetbal/6409090/feyenoord-begint-met-hadj-moussa-tegen-fc-barcelona-streep-onder-gezet.html",
+    "https://www.rtl.nl/nieuws/sport/artikel/5649487/feyenoord-begint-met-hadj-moussa-tegen-fc-barcelona",
+    "https://www.vi.nl/nieuws/hadj-moussa-reist-mee-naar-barcelona-samen-met-debuutheld-schaken",
+    "https://www.rtl.nl/nieuws/sport/artikel/5649472/aanvaller-hadj-moussa-met-feyenoord-barcelona",
+    "https://www.vi.nl/video/feyenoord-bereidt-zich-met-hadj-moussa-voor-op-cl-kraker-tegen-barcelona",
+    "https://nos.nl/l/2630223"
+  ],
+  "topic": "sport",
+  "kind": "sport",
+  "datum_iso": "2026-09-08",
+  "slug": "feyenoord-zet-de-streep-hadj-moussa-speelt-in-camp-nou",
+  "tts_slug": "feyenoord-zet-de-streep-hadj-moussa-speelt-in-camp-nou",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T18:53:25",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/feyenoord-zet-de-streep-hadj-moussa-speelt-in-camp-nou.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}

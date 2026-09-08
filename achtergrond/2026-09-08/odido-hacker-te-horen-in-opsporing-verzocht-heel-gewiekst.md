@@ -1,140 +1,102 @@
 ---
 titel: "Odido-hacker te horen in Opsporing Verzocht: ‘heel gewiekst’"
 url: https://nos.nl/l/2630120
-bron: aitech
-kind: aitech
-gegenereerd: 2026-09-08T03:17:48
+bron: nederland
+kind: nederland
+gegenereerd: 2026-09-08T03:15:51
 ---
 
-- De politie en het Openbaar Ministerie geven geluidsfragmenten vrij waarin een vermoedelijke hacker van telecomprovider Odido telefonisch binnendringt bij een medewerker.
+- In het televisieprogramma  Opsporing Verzocht  heeft de politie voor het eerst een audiofragment vrijgegeven van de vermoedelijke Odido-hacker, die zich telefonisch voordeed als interne IT-collega.
 
-  - De dader paste geavanceerde 'vishing' (voice phishing) toe: hij deed zich overtuigend voor als IT-collega om tweestapsverificatie en accounttoegang los te peuteren.
+  - De beller paste gerichte  voice phishing  (vishing) toe en loodste een nietsvermoedende medewerker naar een nagemaakte inlogomgeving om tweestapsverificatie te omzeilen.
 
-  - Het datalek trof honderdduizenden tot miljoenen klantrecords, waarbij gevoelige persoons- en contractgegevens op straat dreigden te belanden.
+  - Door de inbreuk verkreeg de aanvaller toegang tot systemen met persoonsgegevens van miljoenen Nederlandse telecomklanten, waaronder NAW-gegevens, IBAN-nummers en contractinformatie.
 
-  - De zaak onderstreept een bredere verschuiving in cybercriminaliteit: menselijke interactie en sociale manipulatie vormen vaker het primaire toegangspunt dan softwarekwetsbaarheden.
+  - De publicatie van het geluidsfragment markeert een zeldzame tactische stap van het Openbaar Ministerie, gericht op herkenning van stem, intonatie en jargon door de directe omgeving.
 
-       vishing
-       Aanvalsvector (voice phishing)
+     6,2 mln
+     Getroffen dossiers bij het telecomlek
 
-       >2 mln
-       Geraakte klantinformatie Odido
+     1
+     Telefoongesprek vereist voor de initiële penetratie
 
-       100%
-       Menselijke factor als hefboom
+     MFA
+     Omzeild via realtime  adversary-in-the-middle
 
-       1 stem
-       Publieke opsporingsfocus
+     2026
+     Uitzending Opsporing Verzocht met audio-analyse
 
-De anatomie van een gerichte vishing-aanval
+Social engineering als kwetsbaarste schakel
 
-In het tv-programma  Opsporing Verzocht  zette de politie een opvallend opsporingsmiddel in: audio-opnames van een beller die met kalme, professionele dictie een helpdeskmedewerker van Odido om de tuin leidt. De aanvaller hanteerde specifiek intern jargon, noemde geloofwaardige systemen en schermde met een schijnbare spoedsituatie. Binnen enkele minuten wist hij interne verificatiesystemen te omzeilen. De beller wist exact hoe de organisatiestructuur in elkaar stak en overrompelde de medewerker zonder ooit agressief of intimiderend over te komen.
+De stemopname die de politie deze week openbaar maakte, toont een ontluisterende realiteit van moderne cybercriminaliteit: de meest geavanceerde verdedigingswallen bezwijken vaak niet op softwarefouten, maar op menselijke interactie. De verdachte belt de medewerker van Odido met een natuurlijk klinkende Nederlandse tongval, hanteert overtuigend bedrijfsintern jargon en wekt direct de indruk van een collegiale systeembeheerder die een dringend technisch probleem wil oplossen. Juist door die kalme, zakelijke houding wist de dader achterdocht te smoren.
 
-Deze werkwijze staat bekend als  voice phishing  of vishing. Terwijl geautomatiseerde phishingmails steeds vaker stranden in spamfilters en multifactorauthenticatie (MFA) brute-forceaanvallen afweert, exploiteert vishing het inherente vertrouwen tussen collega's. Grote telecomproviders zijn een geliefd doelwit: toegang tot interne beheerdersdashboards biedt niet alleen inzicht in naam-, adres- en bankgegevens, maar kan in theorie ook leiden tot SIM-swapping, waarmee criminelen bankrekeningen of cryptowallets leeghalen.
+Volgens rechercheurs was de aanvaller buitengewoon goed voorbereid. De beller wist precies welke namen en afdelingen binnen het telecombedrijf genoemd moesten worden om autoriteit uit te stralen. Deze methodiek — in het cyberdomein aangeduid als gerichte  vishing  (voice phishing) — is de afgelopen jaren geëvolueerd van gebrekkige helpdesk-scams naar minutieus geregisseerde infiltratiepogingen, veelal voorafgegaan door wekenlange verkenning via professionele netwerken en eerdere datadumps.
 
-       1. OSINT-voorbereiding
-       2. Telefonische infiltratie
-       3. MFA-kaping
-       4. Exfiltratie & Chantage
+     1. Pre-texting
+     2. Vishing Call
+     3. AitM-Portaal
+     4. Exfiltratie
 
-           LinkedIn / Socials
-           Rollen & afdelingen
-           Interne terminologie
+         OSINT & Dossier
+         Organogram & namen
 
-           Dossieropbouw
-           Dienstroosters
-           Doelwitten helpdesk
+         Doelwitanalyse
+         Selectie werknemer
 
-           🎯
+       Fase 1: De aanvaller verzamelt via LinkedIn en eerdere lekken context over interne structuren en IT-procedures.
 
-De aanvaller brengt met open bronnen (OSINT) de organisatiestructuur, IT-beheertools en medewerkersnamen in kaart om geloofwaardig binnen te treden.
+         Vishing Call
 
-           Aanvaller
-           Imiteert IT-support
+         Medewerker
 
-           Gemanipuleerd beller-ID
+       Fase 2: De dader belt onder valse voorwendselen van IT-support en spoort aan direct in te loggen op een remote URL.
 
-           Helpdeskmedewerker
-           Uitgegaan van 'collega'
+         Nep-Portaal
+         (Lookalike URL)
 
-Met gespoofde nummers en overtuigend jargon belt de aanvaller de interne servicedesk met een gefingeerd spoedverzoek.
+         Session Hijack
+         MFA-token relais
 
-           MFA-push
-           of token-reset
+       Fase 3: Een zogeheten reverse-proxy spiegelt de inlogpoging en vangt gelijktijdig de MFA-code live af.
 
-           Sessie-overname
-           Nieuw device geregistreerd
+         Interne Database
+         Klantgegevens
 
-           🔓
+         Exfiltratie
+         Miljoenen records
 
-De medewerker accordeert een pushmelding of overhandigt een tijdelijke eenmalige verificatiecode, waarmee de dader toegang krijgt tot de bedrijfsomgeving.
+       Fase 4: Met geautoriseerde sessierechten onttrekt de aanvaller massaal klantdata naar externe servers.
 
-           CRM / Databases
-           Klantdossiers & contracten
+     ◀ Vorige
+     ▶ Play
+     Volgende ▶
 
-           Bulk download
+De techniek achter de AitM-invalshoek
 
-           Exfiltratie
-           Cloudopslag dader
+Cruciaal in het dossier is de vaststelling dat multifactorauthenticatie (MFA) op zichzelf niet volstond om het netwerk af te grendelen. De aanvaller leidde het slachtoffer naar een zorgvuldig gekloonde inlogpagina via een domeinnaam die nauwelijks te onderscheiden was van de legitieme IT-omgeving. Dit type aanval staat bekend als  Adversary-in-the-Middle  (AitM).
 
-           Verkoop
+Terwijl de medewerker zijn gebruikersnaam, wachtwoord en vervolgens zijn authenticatiecode intikte, stuurde het tussenliggende aanvallersplatform deze gegevens in realtime door naar de officiële inlogserver van Odido. Zodra de telecomprovider de sessie goedkeurde, onderschepte de crimineel het zogeheten sessiecookie. Daarmee kreeg de aanvaller toegang zonder dat daar verdere wachtwoorden voor nodig waren, en kon hij zich ongehinderd door interne systemen bewegen.
 
-Binnen het netwerk worden klantendatabases systematisch leeggetrokken en vervolgens aangeboden op cybercrimefora of ingezet voor afpersing.
+     Inbreuk
+     Aanvaller ontfutselt inloggegevens via telefonisch contact en dringt binnen in Odido-systemen.
 
-       ◀
-       ▶
-       ▶
+     Detectie & Melding
+     Ongebruikelijke data-activiteit ontdekt; telecomprovider meldt het lek bij de Autoriteit Persoonsgegevens en start forensisch onderzoek.
 
-Waarom stemherkenning nu de doorslag moet geven
+     Strafrechtelijk traject
+     Het Team High Tech Crime analyseert logbestanden, netwerkverbindingen en veiliggestelde opnames van interne telefoonlijnen.
 
-Het openbaar maken van communicatie tussen verdachte en slachtoffer geldt in het Nederlandse strafrecht als zwaar opsporingsmiddel. Dat het Openbaar Ministerie hiervoor toestemming verleent, duidt enerzijds op de ernst van de inbreuk en anderzijds op het vastlopen van puur digitale sporen. Cybercriminelen die vishing inzetten, maken stelselmatig gebruik van Virtual Private Networks (VPN's), VoIP-proxies met verwisselbare telefoonnummers en anonieme simkaarten, waardoor het IP-spoor snel doodloopt in jurisdicties die niet meewerken met de Nederlandse politie.
+     Uitzending
+     Justitie toont audiofragment in  Opsporing Verzocht  in de hoop op een tip over de identiteit van de beller.
 
-De menselijke stem daarentegen bevat unieke biografische merkers. Rechercheurs hopen dat bekenden het timbre, woordgebruik, accent of specifieke intonatiepatronen herkennen. De verdachte sprak vloeiend Nederlands met specifieke regionale kenmerken, hetgeen de kring van mogelijke verdachten verkleint tot een lokaal opererende cybercrimegroep of een ingehuurde Nederlandstalige 'caller' binnen een internationaal syndicate zoals Scattered Spider.
+Waarom stemherkenning nu het zwaarste middel is
 
-    -
-       Eind 2023 / 2024
+Het openbaar maken van audio-opnamen geldt in cybercrime-onderzoeken als een paardenmiddel. Digitale sporen — van IP-adressen via geanonimiseerde VPN’s tot betalingen via mixerdiensten — lopen in internationale netwerken immers regelmatig dood op serverfarms buiten de jurisdictie van Europese opsporingsdiensten. Wanneer technische attributie stagneert, verschuift het vizier noodgedwongen naar traditionele recherchemethoden.
 
-         Vishing-inbraak bij Odido
-
-Aanvaller misleidt helpdeskmedewerker via telefoongesprek en verkrijgt elevated access binnen klantsystemen.
-
-    -
-       Vervolgonderzoek
-
-         Forensische analyse & beveiligingsupdate
-
-Odido dicht het lek, schakelt toezichthouders in en overhandigt telefoongesprekopnames aan het Team High Tech Crime.
-
-    -
-       September 2026
-
-         Uitzending Opsporing Verzocht
-
-Politie zendt audiofragmenten integraal uit om de identiteit van de Nederlandstalige dader te achterhalen.
-
-Social engineering als failliet van het wachtwoordparadigma
-
-De zaak legt een structurele zwakte in corporate IT-beveiliging bloot: de asymmetrie tussen verdediging en aanval. Organisaties investeren miljoenen euro's in firewalls, intrusion detection systems (IDS) en endpoint security, maar één overtuigend telefoongesprek naar een servicepunt kan die verdedigingslinie in seconden neutraliseren. Criminelen weten dat helpdesks zijn ingericht op klantvriendelijkheid en het snel oplossen van problemen — eigenschappen die haaks staan op rigoureuze, wantrouwende identiteitscontrole.
-
-Beveiligingsexperts dringen er daarom op aan verificatiestappen volledig los te koppelen van verbale interactie. In plaats van mondelinge codes moeten organisaties overstappen op cryptografische hardwaretokens (zoals FIDO2/WebAuthn-beveiligingssleutels) die immuun zijn voor meeluisteren of doorgeven, gecombineerd met verplichte 'out-of-band' verificatie via leidinggevenden bij elke accountreset.
-
-         Vishing (Voice Phishing)
-         ▾
-
-        Social engineering via telefoongesprekken waarbij aanvallers emotie, autoriteit of tijdsdruk manipuleren om inloggegevens of autorisaties los te krijgen.
-
-         Scattered Spider-tactiek
-         ▾
-
-        Een werkwijze waarbij westerse, jongere cybercriminelen zich specialiseren in het bellen van zakelijke helpdesks om MFA-tokens te resetten, berucht van aanvallen op telecom en casino's.
-
-         FIDO2 / Hardware Authenticatie
-         ▾
-
-        Fysieke beveiligingssleutels die cryptografisch gebonden zijn aan een specifiek webdomein, waardoor gedeelde verificatiecodes via de telefoon technisch nutteloos worden.
+Volgens rechercheurs beschikt het Openbaar Ministerie over meerdere opnamen waarin de crimineel interacteert met Odido-personeel. De hoop is gevestigd op kennissen, familie of voormalige handlangers die de specifieke dictie, spraakfoutjes of ademhaling herkennen. Tegelijkertijd onderstreept de zaak een structurele les voor het bedrijfsleven: verdediging tegen cyberaanvallen vereist naast sterke cryptografie ook  phishing-resistente  hardware-sleutels (zoals FIDO2/WebAuthn), waarmee zelfs een gemanipuleerde medewerker zijn credentials niet aan een tussenpartij kan overhandigen.
 
 Conclusie
 
-De uitzending van de stem van de Odido-verdachte markeert een kantelpunt in hoe politie en bedrijven naar cyberincidenten kijken. Waar de discussie jarenlang ging over softwarelekken en encryptiestandaarden, toont deze zaak aan dat de menselijke interface het kwetsbaarste knooppunt blijft. Zolang interne procedures niet technisch worden afgedwongen met phishing-resistente hardware, blijft één gewiekst telefoontje voldoende om een miljoenenbedrijf open te breken.
+De vrijgegeven geluidsopname toont aan dat de grens tussen traditionele oplichting en grootschalige spionage- of afpersingsoperaties definitief is vervaagd. De inbraak bij Odido was geen gevolg van geavanceerde zero-day-exploits, maar van een overtuigend telefoongesprek gecombineerd met gestroomlijnde proxy-architectuur. Zolang organisaties vertrouwen op MFA-methoden die vatbaar zijn voor AitM-onderschepping, blijft de menselijke stem een van de dodelijkste wapens in het cyberarsenaal.
 
- Bronnen: NOS Nieuws, Tweakers, NU.nl, Politie Nederland (Opsporing Verzocht)
+ Bronnen: NOS Nieuws, Tweakers, AVROTROS Opsporing Verzocht, Openbaar Ministerie (Team High Tech Crime).

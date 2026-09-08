@@ -1,0 +1,20 @@
+{
+  "title": "Nederlandse stichting start een massaclaim tegen Snapchat om verslaving",
+  "summary": "NRC: voor de tweede keer in korte tijd een collectieve actie tegen het platform. De inzet is bescherming van gebruikers, niet een enkel incident.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/07/nederlandse-stichting-begint-massaclaim-tegen-snapchat-om-gebruikers-te-beschermen-tegen-verslaving-a4936046"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-08",
+  "slug": "nederlandse-stichting-start-een-massaclaim-tegen-snapchat-om",
+  "tts_slug": "nederlandse-stichting-start-een-massaclaim-tegen-snapchat-om",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-08T19:01:01",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-08/nederlandse-stichting-start-een-massaclaim-tegen-snapchat-om.html",
+  "mode": "default",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite"
+}
