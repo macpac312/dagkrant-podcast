@@ -496,7 +496,7 @@ body.ns-fold-dual .article-grid,body.ns-fold-dual .ai-grid{
 html.ns-fold-dual .article-body>p,html.ns-fold-dual .ai-card>p,
 body.ns-fold-dual .article-body>p,body.ns-fold-dual .ai-card>p{display:none}
 /* Front-page + reader photos: ~⅓-width, text beside then wrap under.
-   Same 600px as 3-col overview; do not stack at 1024px (Fold inner ~780–934px). */
+   Desktop/Fold and phone: same beside layout (do not stack full-width on ≤599px). */
 @media(min-width:600px){
 .hero-img{float:left;width:33%;margin:0 1.25rem 1rem 0}
 .reader-article-body .reader-hero{float:left;width:33%;margin:0 1.25rem 1rem 0}
@@ -506,11 +506,15 @@ body.ns-fold-dual .article-body>p,body.ns-fold-dual .ai-card>p{display:none}
 .article-card .article-body{flex:1;min-width:0}
 }
 @media(max-width:599px){
-.hero-img{float:none;width:100%;margin:0 0 1.5rem 0}
-.reader-article-body .reader-hero{float:none;width:100%;margin:0 0 1.25rem 0}
-.reader-article-body .reader-hero img{max-height:min(40vh,18rem)}
-.article-card{display:block}
-.article-card .article-img{flex:none;width:100%;max-width:none;aspect-ratio:16/9}
+.hero-img{float:left;width:33%;margin:0 .75rem .6rem 0}
+.hero-img img{min-height:6.5rem;height:6.5rem;object-fit:cover}
+.hero-article .hero-text h2{font-size:clamp(1.2rem,5.4vw,1.6rem);line-height:1.2}
+.reader-article-body .reader-hero{float:left;width:33%;margin:0 .75rem .75rem 0;min-height:6.5rem}
+.reader-article-body .reader-hero img{max-height:none;min-height:6.5rem;height:6.5rem;object-fit:cover}
+.article-card{display:flex;flex-direction:row;align-items:stretch;gap:.55rem}
+.article-card .article-img{flex:0 0 33%;width:33%;max-width:33%;aspect-ratio:auto;align-self:stretch;min-height:6rem}
+.article-card .article-body{flex:1;min-width:0;padding:.8rem .85rem}
+.article-card .article-body h3{font-size:clamp(.92rem,3.9vw,1.08rem)}
 }
 @media(horizontal-viewport-segments:2){
 .hero-img{float:left;width:33%;margin:0 1.25rem 1rem 0}
@@ -692,7 +696,7 @@ body,.masthead,.article-card,.expandable,.widget,.ai-card{transition:background 
 
 /* ─── Responsive ─── */
 @media(max-width:1024px){.layout-main{grid-template-columns:1fr}}
-@media(max-width:599px){.hero-img{float:none;width:100%;margin:0 0 1.5rem 0}}
+@media(max-width:599px){.hero-img{float:left;width:33%;margin:0 .75rem .6rem 0}}
 @media(max-width:768px){.masthead-nav{display:none}.hero-text h2{font-size:1.6rem}.container{padding:1rem}}
 
 /* ═══ PREMIUM UPGRADE ═══ */
