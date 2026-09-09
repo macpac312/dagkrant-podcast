@@ -1,0 +1,153 @@
+<ul class="bg-bullets">
+  <li>Een omvangrijke systeemstoring bij de Britse luchtverkeersleiding NATS legde de automatische verwerking van vluchtplannen urenlang plat.</li>
+  <li>In het Verenigd Koninkrijk en Ierland werden meer dan duizend vluchten geschrapt; Schiphol zag zeker 58 rechtstreekse verbindingen vervallen.</li>
+  <li>Luchtverkeersleiders moesten noodgedwongen overschakelen op handmatige invoer, waardoor de capaciteit van het luchtruim drastisch werd ingeperkt.</li>
+  <li>Door strakke vloot- en bemanningsrotaties werkten de vertragingen en uitval nog dagenlang door in het gehele Europese netwerk.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-stats">
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">1.000+</span>
+      <span class="ns-stat-label">Geannuleerde vluchten VK &amp; Ierland</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">58</span>
+      <span class="ns-stat-label">Geschrapte vluchten op Schiphol</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">~80%</span>
+      <span class="ns-stat-label">Capaciteitsverlies piekuren NATS</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">48-72u</span>
+      <span class="ns-stat-label">Verwachte doorlooptijd vlootconsolidatie</span>
+    </div>
+  </div>
+</div>
+
+<h5>Kwetsbare knooppunten in het Europese luchtruim</h5>
+<p>
+De acute verstoring bij de Britse luchtverkeersleidingsdienst NATS (National Air Traffic Services) legt opnieuw de structurele kwetsbaarheid bloot van de Europese luchtvaartketen. Wat begon als een technisch falen in het geautomatiseerde subsysteem voor vliegplanverwerking in het controlecentrum in Swanwick, mondde binnen enkele uren uit in een logistieke blokkade van continentaal formaat. Omdat het systeem weigerde binnenkomende vliegplannen digitaal te verifiëren en toe te wijzen aan de vliegcorridors, schakelde NATS uit veiligheidsoverwegingen over op handmatige invoer. 
+</p>
+<p>
+Waar een geautomatiseerd netwerk duizenden parameters per seconde berekent om veilige afstanden te waarborgen, kan een verkeersleider bij handmatige registratie slechts een fractie van dat volume verwerken. De capaciteit van het Britse luchtruim werd daardoor terstond met naar schatting tachtig procent teruggeschroefd. Voor een hub als Schiphol, waar dagelijks tientallen vluchten vertrekken naar Londen Heathrow, Gatwick, Manchester en regionale Britse luchthavens, betekende dit onmiddellijke restricties van Eurocontrol. Maatschappijen als KLM, British Airways en easyJet zagen zich genoodzaakt direct het mes te zetten in hun dienstregeling.
+</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-mech" data-active="0">
+    <div class="ns-mech-tabs">
+      <button class="ns-mech-tab is-active" data-step="0">1. Normale Ingest</button>
+      <button class="ns-mech-tab" data-step="1">2. Fout &amp; Fallback</button>
+      <button class="ns-mech-tab" data-step="2">3. Slotrestricties</button>
+    </div>
+    <div class="ns-mech-viewport">
+      <div class="ns-mech-slide is-active" data-step="0">
+        <svg viewBox="0 0 600 200" width="100%" height="180">
+          <rect x="40" y="70" width="120" height="60" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+          <text x="100" y="105" text-anchor="middle" font-size="12" fill="#1e293b" font-weight="bold">Eurocontrol</text>
+          <path d="M 160 100 L 250 100" stroke="#0284c7" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="6,4"/>
+          <rect x="250" y="50" width="140" height="100" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+          <text x="320" y="95" text-anchor="middle" font-size="12" fill="#166534" font-weight="bold">NATS FPRS</text>
+          <text x="320" y="115" text-anchor="middle" font-size="10" fill="#166534">Auto-validatie</text>
+          <path d="M 390 100 L 470 100" stroke="#16a34a" stroke-width="3"/>
+          <rect x="470" y="70" width="100" height="60" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+          <text x="520" y="105" text-anchor="middle" font-size="12" fill="#1e293b" font-weight="bold">Radar / ATC</text>
+        </svg>
+        <p class="ns-mech-desc">Normale status: Eurocontrol voedt duizenden vliegplannen digitaal; het Flight Plan Reception System (FPRS) valideert routes automatisch zonder tussenkomst van operators.</p>
+      </div>
+      <div class="ns-mech-slide" data-step="1">
+        <svg viewBox="0 0 600 200" width="100%" height="180">
+          <rect x="40" y="70" width="120" height="60" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+          <text x="100" y="105" text-anchor="middle" font-size="12" fill="#1e293b" font-weight="bold">Eurocontrol</text>
+          <path d="M 160 100 L 250 100" stroke="#dc2626" stroke-width="3"/>
+          <rect x="250" y="50" width="140" height="100" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+          <text x="320" y="90" text-anchor="middle" font-size="12" fill="#991b1b" font-weight="bold">Crash / Fout</text>
+          <text x="320" y="110" text-anchor="middle" font-size="10" fill="#991b1b">Fail-safe protocol</text>
+          <path d="M 390 100 L 470 100" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4"/>
+          <rect x="470" y="70" width="100" height="60" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+          <text x="520" y="95" text-anchor="middle" font-size="11" fill="#92400e" font-weight="bold">Handmatige</text>
+          <text x="520" y="115" text-anchor="middle" font-size="11" fill="#92400e">Invoer</text>
+        </svg>
+        <p class="ns-mech-desc">Storing: Een corrupt of afwijkend vliegplan dwingt het systeem in fail-safe. Automatische verwerking stopt direct om botsende data te voorkomen.</p>
+      </div>
+      <div class="ns-mech-slide" data-step="2">
+        <svg viewBox="0 0 600 200" width="100%" height="180">
+          <rect x="40" y="70" width="140" height="60" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+          <text x="110" y="95" text-anchor="middle" font-size="12" fill="#7f1d1d" font-weight="bold">Sector Cap: -80%</text>
+          <text x="110" y="115" text-anchor="middle" font-size="10" fill="#7f1d1d">Flow Management</text>
+          <path d="M 180 100 L 260 100" stroke="#475569" stroke-width="2"/>
+          <rect x="260" y="70" width="140" height="60" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+          <text x="330" y="95" text-anchor="middle" font-size="12" fill="#334155" font-weight="bold">Schiphol Slots</text>
+          <text x="330" y="115" text-anchor="middle" font-size="10" fill="#334155">Ground stops / vertraging</text>
+          <path d="M 400 100 L 470 100" stroke="#475569" stroke-width="2"/>
+          <circle cx="505" cy="100" r="25" fill="#dc2626"/>
+          <text x="505" y="105" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">58✖</text>
+        </svg>
+        <p class="ns-mech-desc">Consequentie: Eurocontrol activeert capaciteitsbeperkingen (ground delay programs). Aankomende en vertrekkende slots worden massaal ingetrokken.</p>
+      </div>
+    </div>
+    <div class="ns-mech-controls">
+      <button class="ns-mech-btn" data-dir="prev" aria-label="Vorige">◀</button>
+      <button class="ns-mech-btn" data-dir="next" aria-label="Volgende">▶</button>
+    </div>
+  </div>
+</div>
+
+<h5>De cascade van ontregelde vlootrotaties</h5>
+<p>
+De directe schrapping van 58 vluchten op Amsterdam Airport Schiphol vertelt slechts een deel van het verhaal. De moderne netwerkluchtvaart opereert volgens hypergeoptimaliseerde rotatieschema's: een toestel van KLM of easyJet vliegt op één dag doorgaans vier tot zes sectoren. Wanneer een Boeing 737 strandt op Londen City of Manchester door een ontbrekend vertrekslot, mist het toestel vervolgens zijn retourvlucht naar Amsterdam, maar ook de daaropvolgende rotatie naar bijvoorbeeld Kopenhagen of Berlijn.
+</p>
+<p>
+Hierdoor ontstaat een vicieuze cirkel die operationeel lastiger te bezweren is dan het initiële IT-probleem. Bemanningen lopen tegen hun strikte wettelijke diensttijdlimieten (Flight Time Limitations) aan doordat zij urenlang in de cockpit wachten op een vertrekvrijgave. Zodra een cockpit- of cabineteam 'uit de uren' loopt, mag het vliegtuig juridisch gezien niet vertrekken, zelfs wanneer het luchtruim weer wordt vrijgegeven. Dit verklaart waarom de overlast voor passagiers vaak nog 48 tot 72 uur aanhoudt nadat de technische fout bij NATS zelf is verholpen.
+</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-timeline">
+    <div class="ns-timeline-item">
+      <div class="ns-timeline-time">08:30 GMT</div>
+      <div class="ns-timeline-content">
+        <strong>Foutdetectie bij NATS</strong>
+        <p>Centrale vliegplansystemen lopen vast; automatische routeringsberichten worden niet meer verwerkt.</p>
+      </div>
+    </div>
+    <div class="ns-timeline-item">
+      <div class="ns-timeline-time">10:15 GMT</div>
+      <div class="ns-timeline-content">
+        <strong>Capaciteitsklem geactiveerd</strong>
+        <p>Eurocontrol dwingt stringente stroombeperkingen af boven het VK. Inkomende vluchten worden aan de grond gehouden.</p>
+      </div>
+    </div>
+    <div class="ns-timeline-item">
+      <div class="ns-timeline-time">12:45 GMT</div>
+      <div class="ns-timeline-content">
+        <strong>Schiphol cancelt massaal</strong>
+        <p>Aantal annuleringen op Schiphol loopt op naar 58. Luchtvaartmaatschappijen starten consolidatie van passagiers.</p>
+      </div>
+    </div>
+    <div class="ns-timeline-item">
+      <div class="ns-timeline-time">17:00+ GMT</div>
+      <div class="ns-timeline-content">
+        <strong>Herstel IT, begin bemanningscrisis</strong>
+        <p>Systeem hersteld, maar honderden crews staan wereldwijd gedisloceerd. Dienstregeling blijft gefragmenteerd.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>Systemische kwetsbaarheid en marktimpact</h5>
+<p>
+De financiële en infrastructurele rekening van dergelijke uitvalbeurten is aanzienlijk. Hoewel luchtvaartmaatschappijen zich bij dergelijke grootschalige ATC-storingen doorgaans kunnen beroepen op 'buitengewone omstandigheden' onder Europese passagiersrechtenverordening EU261—waardoor zij geen forfaitaire compensatie van 250 euro per ticket hoeven uit te keren—zijn zij wel onverkort verantwoordelijk voor de zorgplicht. Kosten voor hotelovernachtingen, maaltijden en herboekingen lopen in de tientallen miljoenen euro's.
+</p>
+<p>
+Bovendien roept het herhaaldelijk falen van luchtverkeersleidingsinfrastructuren vragen op over de verouderde IT-architectuur binnen Europese vluchtleidingscentra. Terwijl het luchtruim steeds intensiever wordt benut, leunen veel nationale instanties op hybride systemen waarin hypermoderne interfaces gekoppeld zijn aan decennia-oude kernmodules. Een enkele uitzonderingsfout in een geüpload vluchtplanbestand kan daardoor een cascade teweegbrengen die de economische aorta tussen het Verenigd Koninkrijk en het vasteland volledig afknijpt.
+</p>
+
+<h5>Conclusie</h5>
+<p>
+De uitval van ruim duizend vluchten in het Verenigd Koninkrijk en de annulering van 58 vluchten op Schiphol tonen aan hoe flinterdun de marges zijn in de hedendaagse luchtvaart. Zolang nationale luchtverkeersleidingen kwetsbaar blijven voor softwarematige single-points-of-failure, blijft één haperend subsysteem in staat om binnen enkele uren honderdduizenden reizigers te strandden en de Europese hub-logistiek te ontregelen.
+</p>
+
+<div class="bg-footer">
+  Bronnen: NOS Nieuws, NU.nl, Eurocontrol Network Manager, National Air Traffic Services (NATS).
+</div>

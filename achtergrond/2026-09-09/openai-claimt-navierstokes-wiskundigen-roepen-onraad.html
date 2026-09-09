@@ -1,0 +1,152 @@
+<ul class="bg-bullets">
+  <li>OpenAI claimt met een intern geredeneerd AI-model een doorbraak te hebben geforceerd rond het Navier–Stokes-existentieprobleem, een van de zeven befaamde Millennium Prize Problems.</li>
+  <li>Gerenommeerde wiskundigen uiten felle twijfel: het gepresenteerde bewijs vertoont gaten rond singulariteiten en is niet formeel geverifieerd in systemen als Lean of Isabelle.</li>
+  <li>Achter de schermen ontstond ophef toen bleek dat een voormalig medeauteur van OpenAI de naam van een naar Anthropic overgestapte onderzoeker uit het concept-paper probeerde te weren.</li>
+  <li>De controverse legt een fundamentele kloof bloot tussen de 'move fast'-publicatiedruk van commerciële AI-labs en de rigoureuze bewijsstandaarden van de academische wiskunde.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-stat-grid">
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">$1M</span>
+      <span class="ns-stat-lbl">Prijzengeld Clay Mathematics Institute per Millennium Problem</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">1845</span>
+      <span class="ns-stat-lbl">Jaar waarin de Navier–Stokes-vergelijkingen werden voltooid</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">0</span>
+      <span class="ns-stat-lbl">Formeel geverifieerde regels code in Lean bij de OpenAI-claim</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">1 v 7</span>
+      <span class="ns-stat-lbl">Millenniumproblemen tot nu toe opgelost (Poincaré-vermoeden, 2003)</span>
+    </div>
+  </div>
+</div>
+
+<h5>De lokroep van het onoplosbare</h5>
+<p>Het Navier–Stokes-existentie- en gladheidsprobleem tart wiskundigen en fysici al bijna twee eeuwen. De vergelijkingen modelleren hoe vloeistoffen en gassen bewegen — van de werveling in een theekop tot turbulentie rond vliegtuigvleugels. Hoewel ingenieurs de formules dagelijks numeriek benaderen, ontbreekt het fundamentele wiskundige bewijs: garanderen de vergelijkingen in drie dimensies altijd een gladde, oneindig differentieerbare oplossing zonder dat energie explodeert naar een oneindige dichtheid (een zogeheten ‘blow-up’)?</p>
+
+<p>Toen OpenAI begin deze week een voorlopig paper en een ronkende blogpost de wereld in stuurde waarin werd geclaimd dat een gespecialiseerd redeneermodel de existentie van gladde oplossingen over willekeurige tijdspannes had bewezen, sloeg de academische wereld direct aan het rekenen. Het Clay Mathematics Institute looft een miljoen dollar uit voor een sluitend bewijs. Maar waar eerdere mijlpalen in AI-wiskunde, zoals AlphaGeometry van DeepMind, mikten op toetsbare wiskundeolympiade-opgaven, grijpt OpenAI nu direct naar de absolute kroonjuwelen van de theoretische fysica.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-mech" id="navier-mech">
+    <div class="ns-mech-header">
+      <div class="ns-mech-pills">
+        <button class="ns-mech-pill active" data-step="0">1. Heuristisch Bewijs</button>
+        <button class="ns-mech-pill" data-step="1">2. De Singulariteitsval</button>
+        <button class="ns-mech-pill" data-step="2">3. Formele Validatie</button>
+      </div>
+      <div class="ns-mech-controls">
+        <button class="ns-mech-ctrl-btn" data-dir="prev" aria-label="Vorige">◀</button>
+        <button class="ns-mech-ctrl-btn" data-dir="next" aria-label="Volgende">▶</button>
+      </div>
+    </div>
+    <div class="ns-mech-body">
+      <div class="ns-mech-stage">
+        <div class="ns-mech-slide active" data-step="0">
+          <svg viewBox="0 0 540 200" width="100%" height="200">
+            <rect x="20" y="30" width="140" height="140" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+            <text x="90" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a">LLM-Redeneerketen</text>
+            <text x="90" y="95" text-anchor="middle" font-size="11" fill="#64748b">Generatie van lemmata</text>
+            <text x="90" y="115" text-anchor="middle" font-size="11" fill="#64748b">&amp; Sobolev-schattingen</text>
+            <path d="M 160 100 L 220 100" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="4"/>
+            <rect x="230" y="30" width="140" height="140" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+            <text x="300" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#0369a1">Concept-Paper</text>
+            <text x="300" y="95" text-anchor="middle" font-size="11" fill="#0369a1">Synthese in LaTeX</text>
+            <text x="300" y="115" text-anchor="middle" font-size="11" fill="#0369a1">Schijnbare convergentie</text>
+            <path d="M 370 100 L 430 100" stroke="#94a3b8" stroke-width="2"/>
+            <rect x="440" y="55" width="80" height="90" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="480" y="100" text-anchor="middle" font-size="12" fill="#475569">Publicatie</text>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-fit">
+                <path d="M 0 1 L 8 5 L 0 9 z" fill="#0ea5e9"/>
+              </marker>
+            </defs>
+          </svg>
+          <div class="ns-mech-caption">Fase 1: Het taalmodel combineert geavanceerde differentiaalvergelijkingen tot een wiskundig betoog dat oppervlakkig consistent oogt.</div>
+        </div>
+        <div class="ns-mech-slide" data-step="1">
+          <svg viewBox="0 0 540 200" width="100%" height="200">
+            <rect x="30" y="30" width="150" height="140" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="2"/>
+            <text x="105" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#991b1b">Kritieke Overgang</text>
+            <text x="105" y="95" text-anchor="middle" font-size="11" fill="#b91c1c">Energie-ongelijkheid</text>
+            <text x="105" y="115" text-anchor="middle" font-size="11" fill="#b91c1c">in 3D-turbulentie</text>
+            <path d="M 180 100 L 250 100" stroke="#dc2626" stroke-width="3"/>
+            <circle cx="290" cy="100" r="28" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+            <text x="290" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#b91c1c">✕</text>
+            <rect x="350" y="30" width="160" height="140" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+            <text x="430" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">Verborgen Aanname</text>
+            <text x="430" y="95" text-anchor="middle" font-size="11" fill="#64748b">Cirkelredenering:</text>
+            <text x="430" y="115" text-anchor="middle" font-size="11" fill="#64748b">veronderstelt gladheid</text>
+            <text x="430" y="135" text-anchor="middle" font-size="11" fill="#64748b">om gladheid te bewijzen</text>
+          </svg>
+          <div class="ns-mech-caption">Fase 2: Analytici ontdekken dat het model bij stap 4.2 een aanname smokkelt die gelijkstaat aan het te bewijzen vermoeden.</div>
+        </div>
+        <div class="ns-mech-slide" data-step="2">
+          <svg viewBox="0 0 540 200" width="100%" height="200">
+            <rect x="30" y="30" width="140" height="140" rx="8" fill="#f0fdf4" stroke="#4ade80" stroke-width="2"/>
+            <text x="100" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#166534">Lean / Isabelle</text>
+            <text x="100" y="95" text-anchor="middle" font-size="11" fill="#15803d">Formele bewijsassistent</text>
+            <text x="100" y="125" text-anchor="middle" font-size="11" fill="#15803d">Codeerbare logica</text>
+            <path d="M 170 100 L 250 100" stroke="#16a34a" stroke-width="3"/>
+            <rect x="250" y="45" width="260" height="110" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+            <text x="380" y="80" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a">De Academische Eis</text>
+            <text x="380" y="105" text-anchor="middle" font-size="12" fill="#475569">Geen marketing-preprint, maar</text>
+            <text x="380" y="125" text-anchor="middle" font-size="12" fill="#475569">machine-geverifieerde zekerheid</text>
+          </svg>
+          <div class="ns-mech-caption">Fase 3: Pas wanneer een interactieve stellingbewijzer de stappen accepteert, kan er sprake zijn van een legitieme oplossing.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>De fatale stap in Sobolev-ruimte H¹</h5>
+<p>Binnen 48 uur na verschijning van het conceptdocument begonnen wiskundigen op platforms als MathOverflow en X de logica te ontleden. Onder leiding van vooraanstaande veldanalyse-experts werd de vinger op de zere plek gelegd: lemma 4.2 in het manuscript. Daar gebruikt het AI-systeem een klassieke schatting van niet-lineaire convectietermen, maar past een grenswaarde toe die uitsluitend geldt wanneer a priori al vaststaat dat er geen singulariteit optreedt.</p>
+
+<p>Het is een klassieke valkuil in de niet-lineaire partiële differentiaalvergelijkingen: cirkelredeneringen die zo subtiel verpakt zijn dat ze bij een eerste lezing overtuigen. Terwijl een menselijke wiskundige jarenlang stilstaat bij zo'n knelpunt, produceert een generatief netwerk een vloeiend klinkend betoog dat het hiaat camoufleert met overtuigende wiskundige terminologie. Zolang OpenAI het model niet live laat draaien in een formele bewijsomgeving zoals Lean 4 — waarin elke afleiding stap voor stap logisch wordt afgedwongen — blijft het document steken in de categorie plausibele sciencefiction.</p>
+
+<h5>Academische intriges en de Anthropic-vete</h5>
+<p>Naast de wetenschappelijke tekortkomingen werd het incident overschaduwd door een gênante bestuurlijke rel. Volgens ingewijden was het bewijskader deels ontwikkeld door een onderzoeker die begin dit jaar OpenAI verruilde voor aartsrivaal Anthropic. Uit uitgelekte correspondentie bleek dat leidinggevenden binnen OpenAI hadden geprobeerd de naam van deze wetenschapper te schrappen van het conceptpaper, zogenaamd wegens 'verbroken vertrouwelijkheid'.</p>
+
+<p>Pas na dreiging met juridische stappen en protest van mede-auteurs werd de naam in allerijl teruggeplaatst. De kwestie illustreert hoezeer de jacht op wetenschappelijk prestige verstrengeld is geraakt met zakelijke rivaliteit. Labs concurreren niet langer alleen op benchmarks voor codeer-assistenten of consumenten-chatbots, maar proberen elkaar te overvleugelen met doorbraken in de fundamentele wetenschap om investeerders te overtuigen van de naderende AGI (algemene kunstmatige intelligentie).</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-concepts">
+    <div class="ns-concept-item">
+      <button class="ns-concept-trigger" aria-expanded="false">
+        <span>Wat maakt Navier–Stokes zo uniek complex?</span>
+        <span class="ns-concept-icon">+</span>
+      </button>
+      <div class="ns-concept-content">
+        <p>De vergelijkingen beschrijven stromingen via niet-lineaire termen. In twee dimensies is al bewezen dat oplossingen glad blijven, maar in drie dimensies kan werveling (‘vorticity’) theoretisch oneindig snel toenemen. Dit kan leiden tot een punt waar de vloeistofsnelheid oneindig wordt: een fysisch onmogelijke singulariteit die aantoont dat het wiskundige model faalt.</p>
+      </div>
+    </div>
+    <div class="ns-concept-item">
+      <button class="ns-concept-trigger" aria-expanded="false">
+        <span>Het verschil tussen neurale intuïtie en formeel bewijs</span>
+        <span class="ns-concept-icon">+</span>
+      </button>
+      <div class="ns-concept-content">
+        <p>Grote taalmodellen voorspellen waarschijnlijke reeksen van wiskundige symbolen op basis van trainingsdata. Formele stellingbewijzers zoals Lean werken daarentegen deterministisch via typetheorie. Zonder formele verificatie kan een neuraal netwerk honderden correcte pagina's produceren die rusten op één niet-bestaande logische sprong.</p>
+      </div>
+    </div>
+    <div class="ns-concept-item">
+      <button class="ns-concept-trigger" aria-expanded="false">
+        <span>De precedenten: van Poincaré tot Kepler</span>
+        <span class="ns-concept-icon">+</span>
+      </button>
+      <div class="ns-concept-content">
+        <p>Grigori Perelman loste het Poincaré-vermoeden op in 2003 na jarenlange eenzame arbeid en weigerde het prijzengeld. Het Kepler-vermoeden vereiste computerberekeningen, maar werd pas algemeen aanvaard na een twintigjarig project (Flyspeck) dat het bewijs volledig formaliseerde in code. De wiskundige lat voor computationele bewijzen ligt historisch torenhoog.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>De claim van OpenAI markeert een gevaarlijk scharniermoment in de relatie tussen commerciële AI-reuzen en de academische wereld. Door een rammelend manuscript via persberichten naar buiten te brengen voordat vakgenoten en formele verificatiesystemen hun oordeel hebben kunnen vellen, degradeert het instituut baanbrekend wiskundig onderzoek tot marketingmateriaal. Voor echte vooruitgang in de zuivere wiskunde telt niet de retorische overtuigingskracht van een redeneermodel, maar de onverbiddelijke strengheid van het formele bewijs.</p>
+
+<div class="bg-footer">Bronnen: The Verge, Wired, Simon Willison's Weblog, Clay Mathematics Institute</div>

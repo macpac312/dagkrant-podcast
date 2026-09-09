@@ -1,0 +1,76 @@
+<div class="dagkrant-article">
+  <div class="dagkrant-tag">aitech</div>
+  <h2>Hackers stelen Claude-tokens van abonnees</h2>
+  <div class="dagkrant-meta">Datum: 2026-09-09</div>
+
+  <ul class="bg-bullets">
+    <li>Abonssee merkten onverklaarbaar tokenverbruik op zonder zelf actieve prompts in te voeren.</li>
+    <li>Anthropic bevestigt dat actieve sessietokens doelgericht worden gekaapt via gespecialiseerde malware.</li>
+    <li>De aanvallen richten zich met name op ontwikkelaars en intensieve zakelijke gebruikers met hoge quota.</li>
+    <li>Experts adviseren direct om actieve API-sleutels en browsersessies te revoken en te vernieuwen.</li>
+  </ul>
+
+  <h5>De anatomie van een digitale roof</h5>
+  <p>Wat aanvankelijk leek op een administratieve fout of een softwarebug bij Anthropic, blijkt een gerichte aanvalgolf te zijn op de digitale portemonnee van AI-gebruikers. Abonnees van de populaire AI-assistent Claude zagen de afgelopen week plotseling hun maandelijkse tokenlimieten verdwijnen, terwijl hun eigen dashboards leeg bleven. Uit analyse van beveiligingsonderzoekers blijkt dat kwaadwillenden erin geslaagd zijn om actieve authenticatietokens te onderscheppen. Hiermee krijgen zij ongeautoriseerd toegang tot de rekenkracht van betalende accounts, om zo op kosten van een ander grootschalige AI-modellen te trainen of te bevragen.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Impact op Claude-abonnees</div>
+    <div class="ns-viz-stats" style="display: flex; gap: 1rem; justify-content: space-around; text-align: center; padding: 1rem; background: var(--bg-alt, #f4f4f5); border-radius: 8px;">
+      <div>
+        <div style="font-size: 2rem; font-weight: bold; color: #d97706;">100%</div>
+        <div style="font-size: 0.85rem; color: var(--text-muted);">Gestolen quotum per gekaapt account</div>
+      </div>
+      <div>
+        <div style="font-size: 2rem; font-weight: bold; color: #dc2626;">24/7</div>
+        <div style="font-size: 0.85rem; color: var(--text-muted);">Continue ongemerkte uitbuiting</div>
+      </div>
+      <div>
+        <div style="font-size: 2rem; font-weight: bold; color: #2563eb;">API</div>
+        <div style="font-size: 0.85rem; color: var(--text-muted);">Primair doelwit van aanvallers</div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Hoe de sessiekaping in zijn werk gaat</h5>
+  <p>De aanval maakt geen gebruik van complexe kwetsbaarheden in de core-architectuur van Claude zelf, maar richt zich op de client-zijde. Aanvallers verspreiden infostealer-malware vermomd als legitieme software of browserextensies. Zodra deze malware op het systeem van een slachtoffer actief is, leest deze de lokale browseropslag uit waar de sessie-cookies en OAuth-tokens versleuteld staan. Omdat deze tokens geldig blijven zolang de sessie niet expliciet wordt verbroken, kunnen de hackers ze externaliseren en nabootsen op externe machines. Hierdoor herkent het systeem van Anthropic de indringer niet als schadelijk; het verzoek komt immers van een legitieme, geauthenticeerde gebruiker.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Tijdlijn van het lek</div>
+    <div class="ns-viz-timeline" style="border-left: 2px solid #2563eb; padding-left: 1rem; margin: 1rem 0;">
+      <div style="margin-bottom: 1rem;">
+        <strong>Fase 1: Infectie</strong>
+        <p style="margin: 0.2rem 0 0 0; font-size: 0.9rem;">Installatie van infostealer via malafide downloads of besmette extensies.</p>
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <strong>Fase 2: Extractie</strong>
+        <p style="margin: 0.2rem 0 0 0; font-size: 0.9rem;">Lokale tokens en sessie-cookies worden gekopieerd en doorgesluisd naar C2-servers.</p>
+      </div>
+      <div>
+        <strong>Fase 3: Misbruik</strong>
+        <p style="margin: 0.2rem 0 0 0; font-size: 0.9rem;">Hackers voeren geautomatiseerde API-calls uit om data te scrapen of modellen te voeden.</p>
+      </div>
+    </div>
+  </div>
+
+  <h5>Anthropic onderneemt actie en verscherpt beveiliging</h5>
+  <p>In een reactie laat Anthropic weten de situatie hoog op te nemen. Het bedrijf is gestart met het automatisch ongeldig maken van verdachte sessies en roept gebruikers op om hun wachtwoorden te wijzigen en tweefactorauthenticatie (2FA) te controleren. Desondanks benadrukken experts dat de verantwoordelijkheid bij SaaS- en AI-dienstverleners groter moet worden. Omdat tokens een steeds hoger economische waarde vertegenwoordigen — vergelijkbaar met cryptowallets — volstaat een standaard sessiebeheer niet meer. Strengere bind-adressen, kortere token-lifespans en IP-validatie zijn volgens security-analisten hard nodig om dit soort praktijken in de toekomst effectief te weren.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Veelgestelde vragen over tokenveiligheid</div>
+    <div class="ns-viz-concepts" style="border: 1px solid var(--border-color, #e5e7eb); border-radius: 8px; overflow: hidden;">
+      <details style="border-bottom: 1px solid var(--border-color, #e5e7eb); padding: 0.75rem;">
+        <summary style="font-weight: bold; cursor: pointer;">Hoe merk ik of mijn tokens gestolen zijn?</summary>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Controleer je dashboard op ongebruikelijke activiteit, plotseling lege limieten of logs met onbekende IP-adressen.</p>
+      </details>
+      <details style="padding: 0.75rem;">
+        <summary style="font-weight: bold; cursor: pointer;">Wat moet ik direct doen?</summary>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Log uit op alle apparaten, genereer een nieuwe API-key, scan je computer op malware en activeer 2FA.</p>
+      </details>
+    </div>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>De roof van Claude-tokens markeert een nieuwe fase in de cybercriminaliteit rond kunstmatige intelligentie. Nu AI-functionaliteit steeds dieper verweven raakt met zakelijke en persoonlijke workflows, transformeren inloggegevens en tokens in waardevolle assets die actieve bescherming vereisen. Zowel gebruikers als platforms zullen hun beveiligingsbewustzijn moeten opschroeven om te voorkomen dat de virtuele sleutels van de digitale toekomst te grabbel worden gegooid.</p>
+
+  <div class="bg-footer">Bronnen: https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/</div>
+</div>
