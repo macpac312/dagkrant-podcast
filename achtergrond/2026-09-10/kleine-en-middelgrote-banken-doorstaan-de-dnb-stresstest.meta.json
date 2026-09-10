@@ -1,0 +1,21 @@
+{
+  "title": "Kleine en middelgrote banken doorstaan de DNB-stresstest",
+  "summary": "CET1 daalt in het zware scenario van 25 naar een nog steeds ruime buffer. Infinance: de sector houdt kapitaal over. Telegraaf bevestigt de weerbaarheid.",
+  "sources": [
+    "https://infinance.nl/branche/kleine-en-middelgrote-banken-doorstaan-stresstest-dnb/",
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSmlubkpQbUU2YVlDRDNQX3ZRekV6b2VHNXdvT3puRG9CT1BxWDlDeVFKVVJKMUR4Rjg2eXBxX3Nnb3BSXzBkVzJVYkc3SmljdWNYX205aFJmUzliNXRSNlhDOUR0VVJXa19zTDFyQ21VODJHXzEzbWxaWm9ia1dPeXU1NjR1Y1BoRUsw?oc=5"
+  ],
+  "topic": "regulatoir",
+  "kind": "regulatoir",
+  "datum_iso": "2026-09-10",
+  "slug": "kleine-en-middelgrote-banken-doorstaan-de-dnb-stresstest",
+  "tts_slug": "kleine-en-middelgrote-banken-doorstaan-de-dnb-stresstest",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:43:49",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/kleine-en-middelgrote-banken-doorstaan-de-dnb-stresstest.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

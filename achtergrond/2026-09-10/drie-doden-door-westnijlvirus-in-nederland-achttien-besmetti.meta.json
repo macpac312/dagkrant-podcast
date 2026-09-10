@@ -1,0 +1,20 @@
+{
+  "title": "Drie doden door westnijlvirus in Nederland, achttien besmettingen",
+  "summary": "NRC: de meeste mensen merken niets. De doden kwamen in beeld nadat patiënten in het ziekenhuis lagen.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/10/drie-doden-door-westnijlvirus-in-nederland-aantal-besmettingen-opgelopen-naar-achttien-a4936321"
+  ],
+  "topic": "nederland",
+  "kind": "nederland",
+  "datum_iso": "2026-09-10",
+  "slug": "drie-doden-door-westnijlvirus-in-nederland-achttien-besmetti",
+  "tts_slug": "drie-doden-door-westnijlvirus-in-nederland-achttien-besmetti",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:34:22",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/drie-doden-door-westnijlvirus-in-nederland-achttien-besmetti.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

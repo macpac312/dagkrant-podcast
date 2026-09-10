@@ -1,0 +1,22 @@
+{
+  "title": "OpenAI claimt Navier–Stokes in 88 uur — de wiskunde eist het bewijs",
+  "summary": "NRC: tienduizend agents op een millenniumprobleem. Simon Willison noemt het indrukwekkend. The Verge vraagt waar de trainingsdata vandaan komen.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/10/opwinding-in-de-wiskunde-openai-lost-miljoendollarprobleem-op-in-88-uur-a4936274",
+    "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+    "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "openai-claimt-navierstokes-in-88-uur-de-wiskunde-eist-het-be",
+  "tts_slug": "openai-claimt-navierstokes-in-88-uur-de-wiskunde-eist-het-be",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:33:05",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/openai-claimt-navierstokes-in-88-uur-de-wiskunde-eist-het-be.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

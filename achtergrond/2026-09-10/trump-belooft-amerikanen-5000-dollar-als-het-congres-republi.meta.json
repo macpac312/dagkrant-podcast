@@ -1,0 +1,22 @@
+{
+  "title": "Trump belooft Amerikanen 5000 dollar als het Congres Republikeins blijft",
+  "summary": "Op de eerste Republikeinse midtermconventie belooft hij elke volwassene een ‘dividend’. FD en NOS vangen dezelfde zin. Vance spreekt donderdagavond.",
+  "sources": [
+    "https://nos.nl/l/2630396",
+    "https://fd.nl/politiek/1611945/trump-belooft-amerikanen-5-000-dividend-bij-verkiezingsoverwinning-republikeinen",
+    "https://www.nrc.nl/nieuws/2026/09/10/trump-beloofde-amerikanen-een-dividend-van-5-000-dollar-als-republikeinen-midterm-verkiezingen-winnen"
+  ],
+  "topic": "wereld",
+  "kind": "wereld",
+  "datum_iso": "2026-09-10",
+  "slug": "trump-belooft-amerikanen-5000-dollar-als-het-congres-republi",
+  "tts_slug": "trump-belooft-amerikanen-5000-dollar-als-het-congres-republi",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:32:37",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/trump-belooft-amerikanen-5000-dollar-als-het-congres-republi.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

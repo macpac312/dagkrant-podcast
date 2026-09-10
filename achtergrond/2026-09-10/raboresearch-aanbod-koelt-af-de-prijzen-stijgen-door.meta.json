@@ -1,0 +1,20 @@
+{
+  "title": "RaboResearch: aanbod koelt af, de prijzen stijgen door",
+  "summary": "Findinet citeert de economen: de koopwoningmarkt blijft opvallend robuust door schaarste.",
+  "sources": [
+    "https://www.findinet.nl/artikel/op-huizenmarkt-koelt-aanbod-af-prijzen-blijven-doorstijgen/"
+  ],
+  "topic": "huizenmarkt",
+  "kind": "huizenmarkt",
+  "datum_iso": "2026-09-10",
+  "slug": "raboresearch-aanbod-koelt-af-de-prijzen-stijgen-door",
+  "tts_slug": "raboresearch-aanbod-koelt-af-de-prijzen-stijgen-door",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:57:04",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/raboresearch-aanbod-koelt-af-de-prijzen-stijgen-door.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

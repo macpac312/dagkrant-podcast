@@ -1,0 +1,20 @@
+{
+  "title": "DeepSeek stuurde prompts door naar Claude — klanten wisten het niet",
+  "summary": "Tweakers: Chinese labs, waaronder DeepSeek en Moonshot, lieten prompts beantwoorden door Claude via proxy-accounts.",
+  "sources": [
+    "https://tweakers.net/nieuws/252032/deepseek-stuurde-prompts-door-naar-claude-zonder-dat-klanten-dat-wisten.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "deepseek-stuurde-prompts-door-naar-claude-klanten-wisten-het",
+  "tts_slug": "deepseek-stuurde-prompts-door-naar-claude-klanten-wisten-het",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:02:50",
+  "size_kb": 9,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/deepseek-stuurde-prompts-door-naar-claude-klanten-wisten-het.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

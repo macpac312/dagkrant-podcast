@@ -1,0 +1,21 @@
+{
+  "title": "Elderson in een fireside chat: het SSM-verhaal na de zomer",
+  "summary": "De ECB-toezichthouder spreekt in een gesprek dat SSM en ECB allebei publiceren. Geen nieuwe guidance, wel de toon van het najaar.",
+  "sources": [
+    "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp260908~f0dd8b1456.en.html",
+    "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html"
+  ],
+  "topic": "regulatoir",
+  "kind": "regulatoir",
+  "datum_iso": "2026-09-10",
+  "slug": "elderson-in-een-fireside-chat-het-ssm-verhaal-na-de-zomer",
+  "tts_slug": "elderson-in-een-fireside-chat-het-ssm-verhaal-na-de-zomer",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:51:12",
+  "size_kb": 10,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/elderson-in-een-fireside-chat-het-ssm-verhaal-na-de-zomer.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Kabinet onderzoekt een doorstroomhypotheek voor senioren met overwaarde",
+  "summary": "Findinet: overwaarde zwaarder laten meewegen, rente tijdelijk bij de lening. Dat raakt acceptatie én de LTV-toets.",
+  "sources": [
+    "https://www.findinet.nl/persbericht/kabinet-onderzoekt-doorstroomhypotheek-voor-senioren-met-overwaarde/"
+  ],
+  "topic": "regulatoir",
+  "kind": "regulatoir",
+  "datum_iso": "2026-09-10",
+  "slug": "kabinet-onderzoekt-een-doorstroomhypotheek-voor-senioren-met",
+  "tts_slug": "kabinet-onderzoekt-een-doorstroomhypotheek-voor-senioren-met",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:55:28",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/kabinet-onderzoekt-een-doorstroomhypotheek-voor-senioren-met.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

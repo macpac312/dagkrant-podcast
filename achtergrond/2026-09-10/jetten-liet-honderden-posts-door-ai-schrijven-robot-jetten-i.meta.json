@@ -1,0 +1,23 @@
+{
+  "title": "Jetten liet honderden posts door AI schrijven — ‘Robot Jetten’ is terug",
+  "summary": "De Volkskrant vond AI-teksten van de premier en D66. Jetten: altijd ook mensenwerk. NRC vraagt hoe schadelijk dat is voor het ambt.",
+  "sources": [
+    "https://nos.nl/l/2630471",
+    "https://www.nrc.nl/nieuws/2026/09/10/hoe-schadelijk-is-het-dat-een-premier-ai-gebruikt-voor-berichten-op-sociale-media-jetten-reageert-l",
+    "https://tweakers.net/nieuws/251998/volkskrant-ai-schreef-socialemediaberichten-voor-premier-jetten.html",
+    "https://www.rtl.nl/nieuws/politiek/artikel/5650193/rob-jetten-ai-gebruik-reactie"
+  ],
+  "topic": "nederland",
+  "kind": "nederland",
+  "datum_iso": "2026-09-10",
+  "slug": "jetten-liet-honderden-posts-door-ai-schrijven-robot-jetten-i",
+  "tts_slug": "jetten-liet-honderden-posts-door-ai-schrijven-robot-jetten-i",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:33:50",
+  "size_kb": 11,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/jetten-liet-honderden-posts-door-ai-schrijven-robot-jetten-i.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

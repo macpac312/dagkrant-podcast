@@ -1,10 +1,10 @@
 {
-  "title": "Anthropic-onderzoeker stapt op: zelfverbeterende AI kan ‘ons allemaal doden’",
-  "summary": "Jacob Coxon waarschuwt voor uitsterven dit decennium. OpenAI haalt ondertussen een prominente AI-doomer in de board.",
+  "title": "Anthropic-onderzoeker stapt op: zelfverbeterende AI kan ons allen doden",
+  "summary": "Jacob Coxon op CNN en bij Ars. TechCrunch: ‘gokken met ons leven’. Safety-onderzoekers bij Anthropic en OpenAI delen de angst.",
   "sources": [
-    "https://www.theguardian.com/technology/2026/sep/09/anthropic-researchers-ai-human-extinction",
-    "https://www.wired.com/story/anthropic-researcher-quits-jacob-coxon-ai-fears-humanity/",
-    "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/"
+    "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
+    "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/",
+    "https://the-decoder.com/ai-safety-panic-goes-mainstream-after-anthropic-researchers-warnings-land-on-cnn-and-fox-news/"
   ],
   "topic": "aitech",
   "kind": "aitech",
@@ -13,8 +13,10 @@
   "tts_slug": "anthropic-onderzoeker-stapt-op-zelfverbeterende-ai-kan-ons-a",
   "archive_hits": 0,
   "has_visuals": true,
-  "generated_at": "2026-09-10T03:22:56",
-  "size_kb": 5,
+  "generated_at": "2026-09-10T20:07:06",
+  "size_kb": 10,
   "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/anthropic-onderzoeker-stapt-op-zelfverbeterende-ai-kan-ons-a.html",
-  "mode": "default"
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
 }

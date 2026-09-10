@@ -1,0 +1,89 @@
+<div class="dagkrant-article" data-tag="aitech" data-date="2026-09-10">
+  <div class="bg-header">
+    <span class="bg-tag">AITECH</span>
+    <h1>DeepSeek V4.1-Flash: minder geheugen, V4-Pro verdwijnt</h1>
+    <p class="bg-subtitle">De Chinese AI-pionier gooit de catalogus om: met 552 miljard parameters en een radicaal ingekrompen KV-cache moet de V4.1-Flash de standaard worden voor autonoom agent-gebruik, terwijl de zwaardere Pro-variant direct naar de achtergrond verdwijnt.</p>
+  </div>
+
+  <ul class="bg-bullets">
+    <li>DeepSeek lanceert V4.1-Flash met 552 miljard totale parameters als nieuwe vlaggenschipmodel.</li>
+    <li>De KV-cache (Key-Value cache) is met 75 procent verkleind, wat de geheugenvoetafdruk op GPUs drastisch verlaagt.</li>
+    <li>De zwaardere V4-Pro variant wordt per direct uitgefaseerd en is niet meer beschikbaar voor API-gebruikers.</li>
+    <li>De focus verschuift hiermee volledig van brute kracht naar efficiëntie voor langlopende AI-agents.</li>
+  </ul>
+
+  <div class="ns-viz">
+    <h4>Model-evolutie en Geheugenallocatie (2025–2026)</h4>
+    <ns-viz-stats>
+      <div class="stat-item">
+        <span class="stat-value">552B</span>
+        <span class="stat-label">Parameters V4.1-Flash</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">25%</span>
+        <span class="stat-label">KV-Cache footprint v.o.h.</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Beschikbaarheid V4-Pro</span>
+      </div>
+    </ns-viz-stats>
+  </div>
+
+  <h5>De stille dood van het Pro-segment</h5>
+  <p>De aankondiging van DeepSeek V4.1-Flash komt niet geheel onverwacht, maar de impact op het technologielandschap is aanzienlijk. Waar AI-labs tot voor kort elkaar overtroffen met steeds grotere en duurdere modellen die hele serverclusters dedizeren aan inferentie, kiest DeepSeek resoluut voor een andere route. Wie tot voor kort rekende op de rekenkracht van de V4-Pro voor complexe, enterprise-brede toepassingen, grijpt voortaan mis. Het Pro-model verdwijnt per direct uit de catalogus, een teken aan de wand dat de economische realiteit van zware AI-inferentie zelfs voor de meest geoptimaliseerde spelers begint te wringen.</p>
+  <p>In plaats van een geleidelijke uitfasering kiest het Chinese bedrijf voor een harde knip. De redenering erachter is even pragmatisch als meedogenloos: de operationele kosten van het Pro-model wogen niet langer op tegen de marginale winst in nauwkeurigheid ten opzichte van de nieuwe generatie geoptimaliseerde architecturen. Dit dwingt ontwikkelaars en enterprise-klanten om hun workloads direct te heroverwegen en te migreren naar de Flash-infrastructuur.</p>
+
+  <div class="ns-viz">
+    <h4>Tijdlijn: Verschuiving in DeepSeek's Strategie</h4>
+    <ns-viz-timeline>
+      <div class="timeline-item">
+        <span class="timeline-date">Eind 2025</span>
+        <div class="timeline-content">Introductie van de zware DeepSeek V4-Pro focus op brute kracht en maximale parameters.</div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Zomer 2026</span>
+        <div class="timeline-content">Oplopende geheugenknelpunten bij autonoom agent-gebruik en langdurige contextvensters.</div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">10 Sep 2026</span>
+        <div class="timeline-content">Lancering V4.1-Flash (552B), drastische reductie KV-cache en direct schrappen van V4-Pro.</div>
+      </div>
+    </ns-viz-timeline>
+  </div>
+
+  <h5>Architectonische ingreep: De KV-cache op een kwart</h5>
+  <p>De kerninnovatie van de V4.1-Flash zit niet in het brute aantal parameters — hoewel 552 miljard nog steeds tot de verbeelding spreekt — maar in de manier waarop met het werkgeheugen wordt omgesprongen. Bij grote taalmodellen is de zogenaamde Key-Value (KV) cache vaak de grootste bottleneck tijdens inferentie, met name wanneer gebruikers lange documenten invoeren of wanneer AI-agents gedurende tientallen stappen met elkaar communiceren. DeepSeek heeft deze cache weten terug te brengen tot slechts een kwart van de oorspronkelijke omvang.</p>
+  <p>Deze ingreep heeft directe gevolgen voor de hardware-economie van datacenters. Doordat de geheugenvoetafdruk per actieve sessie met driekwart afneemt, kunnen cloudproviders beduidend meer gelijktijdige streams op dezelfde GPU-cluster hosten. Dit drukt de operationele kosten per token tot een niveau waar westerse concurrenten met traditionele architectures nauwelijks mee kunnen concurreren. Het maakt geavanceerde agent-workflows opeens economisch haalbaar voor toepassingen die tot voor werkelijk onbetaalbaar waren.</p>
+
+  <div class="ns-viz">
+    <h4>Kernconcepten van de V4.1-Architectuur</h4>
+    <ns-viz-concepts>
+      <details>
+        <summary>KV-Cache Compressie</summary>
+        <p>Door redundante berekeningen in de aandachtslagen (attention layers) te minimaliseren, wordt de geheugenconsumptie tijdens langlopende sessies met 75% teruggebracht.</p>
+      </details>
+      <details>
+        <summary>Agent-Geoptimaliseerde Inferentie</summary>
+        <p>Het model is specifiek getuned voor multi-turn interacties en autonoom handelen, waarbij de latentie tussen opeenvolgende stappen minimaal blijft.</p>
+      </details>
+      <details>
+        <summary>Parameter-Efficiëntie (552B)</summary>
+        <p>Een hybride structuur waarin de totale capaciteit groot blijft, maar de actieve parameters per token slim worden geselecteerd om stroom en geheugen te besparen.</p>
+      </details>
+    </ns-viz-concepts>
+  </div>
+
+  <h5>Gevolgen voor de markt en de concurrentie</h5>
+  <p>De stap van DeepSeek laat zien dat de AI-industrie in een nieuwe fase beland is. Waar de afgelopen jaren in het teken stonden van de "bigger is better"-doctrine, dicteert de praktijk inmiddels dat efficiëntie en betrouwbaarheid voor agents doorslaggevend zijn. Autonome AI-agents die zelfstandig taken uitvoeren, hebben geen baat bij een model dat na tien stappen uit zijn geheugen loopt of onbetaalbaar duur is in het onderhoud. Met de V4.1-Flash levert DeepSeek een gereedschap dat precies op die markt inspeelt.</p>
+  <p>Voor westerse spelers zoals OpenAI, Anthropic en Google werpt dit fundamentele vragen op over hun eigen prijs- en modelstrategie. Als DeepSeek erin slaagt om met aanzienlijk minder hardware-eisen vergelijkbare of superieure agent-prestaties neer te zetten, komt de marge van westerse cloud- en AI-aanbieders zwaar onder druk te staan. De consument en de zakelijke gebruiker spinnen er hoe dan ook garen bij: AI wordt niet alleen slimmer, maar vooral structureel goedkoper en sneller inzetbaar.</p>
+
+  <h5>Conclusie</h5>
+  <p>DeepSeek bewijst met de V4.1-Flash en de abrupte eliminatie van de V4-Pro dat het de vinger aan de pols heeft van de werkelijke AI-praktijk. Door de KV-cache te reduceren tot een kwart en in te zetten op slanke, agent-gerichte parameters, zet het bedrijf een nieuwe norm voor model-efficiëntie. De markt moet zich opmaken voor een tijdperk waarin niet de grootte van het model telt, maar de zuinigheid waarmee het opereert.</p>
+
+  <div class="bg-footer">
+    Bronnen: 
+    <a href="https://tweakers.net/nieuws/252018/deepseek-lanceert-v41-flash-en-stopt-met-v4-pro.html" target="_blank" rel="noopener">Tweakers</a>, 
+    <a href="https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents/" target="_blank" rel="noopener">The Decoder</a>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "title": "Oekraïense drones raken de Russische ‘gashoofdstad’, 2800 kilometer verder",
+  "summary": "Novy Urengoy: de eerste Oekraïense droneaanval zo diep in Rusland. RTL en NU bevestigen gasinstallaties. Rusland viel een winkelcentrum aan.",
+  "sources": [
+    "https://nos.nl/l/2630370",
+    "https://www.rtl.nl/nieuws/buitenland/artikel/5649959/oekraine-valt-russisch-gasgebied-aan-met-drones",
+    "https://www.nu.nl/spanningen-oekraine/6409233/oekraine-raakt-gasinstallaties-in-siberie-rusland-valt-winkelcentrum-aan.h"
+  ],
+  "topic": "wereld",
+  "kind": "wereld",
+  "datum_iso": "2026-09-10",
+  "slug": "oekraïense-drones-raken-de-russische-gashoofdstad-2800-kilom",
+  "tts_slug": "oekraïense-drones-raken-de-russische-gashoofdstad-2800-kilom",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:35:48",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/oekraïense-drones-raken-de-russische-gashoofdstad-2800-kilom.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

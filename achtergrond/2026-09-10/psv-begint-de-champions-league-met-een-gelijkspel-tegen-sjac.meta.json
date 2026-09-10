@@ -1,0 +1,21 @@
+{
+  "title": "PSV begint de Champions League met een gelijkspel tegen Sjachtar",
+  "summary": "In het Philips Stadion moest Eindhoven genoegen nemen met een punt. NU noemt het teleurstellend. De poulefase is begonnen.",
+  "sources": [
+    "https://nos.nl/l/2630493",
+    "https://www.nu.nl/voetbal/6409344/psv-begint-champions-league-met-teleurstellend-gelijkspel-tegen-shakhtar.html"
+  ],
+  "topic": "sport",
+  "kind": "sport",
+  "datum_iso": "2026-09-10",
+  "slug": "psv-begint-de-champions-league-met-een-gelijkspel-tegen-sjac",
+  "tts_slug": "psv-begint-de-champions-league-met-een-gelijkspel-tegen-sjac",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:32:27",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/psv-begint-de-champions-league-met-een-gelijkspel-tegen-sjac.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

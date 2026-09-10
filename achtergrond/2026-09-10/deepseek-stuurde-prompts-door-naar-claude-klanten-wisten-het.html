@@ -1,0 +1,114 @@
+<div class="dagkrant-article">
+<p class="dagkrant-tag">aitech</p>
+<h2>DeepSeek stuurde prompts door naar Claude — klanten wisten het niet</h2>
+<p class="dagkrant-date">10 september 2026</p>
+
+<p class="lead">Chinese AI-labs, waaronder grondlegger DeepSeek en concurrent Moonshot, bleken op grote schaal prompts van hun eigen gebruikers door te sturen naar modellen van het Amerikaanse Anthropic, met name Claude. Klanten die dachten dat ze gebruik maakten van Chinese taalmodellen, kregen ongevraagd antwoorden gegenereerd door westerse concurrenten.</p>
+
+<ul class="bg-bullets">
+    <li><strong>Proxy-gebruik:</strong> Chinese labs routeden API-verzoeken stiekem door naar westerse AI-infrastructuur.</li>
+    <li><strong>Transparantiebreuk:</strong> Eindgebruikers en zakelijke klanten waren niet op de hoogte van het datatransparantie-lek.</li>
+    <li><strong>Model-arbitrage:</strong> Het verbergen van onderliggende modellen werd ingezet om kosten en capaciteit te optimaliseren.</li>
+    <li><strong>Geopolitieke spanning:</strong> Het incident legt kwetsbaarheden bloot in de wereldwijde AI-toeleveringsketen en exportcontroles.</li>
+</ul>
+
+<div class="ns-viz">
+    <div class="ns-viz-title">De Stiekeme AI-Routing in 3 Stappen</div>
+    <div class="ns-viz-mech" data-ns-viz-mech>
+        <div class="ns-mech-pills">
+            <button type="button" class="active" data-mech-step="0">1. Prompt</button>
+            <button type="button" data-mech-step="1">2. Proxy</button>
+            <button type="button" data-mech-step="2">3. Antwoord</button>
+        </div>
+        <div class="ns-mech-slides">
+            <div class="ns-mech-slide active" data-mech-content="0">
+                <svg viewBox="0 0 600 200" width="100%" height="160">
+                    <rect x="50" y="60" width="120" height="80" rx="8" fill="#1e293b" />
+                    <text x="110" y="105" fill="#fff" text-anchor="middle" font-size="14">Gebruiker</text>
+                    <path d="M 180 100 L 260 100" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)" />
+                    <rect x="270" y="60" width="140" height="80" rx="8" fill="#0f172a" />
+                    <text x="340" y="105" fill="#38bdf8" text-anchor="middle" font-size="14">DeepSeek API</text>
+                    <text x="210" y="85" fill="#94a3b8" font-size="12">1. Verzoek</text>
+                </svg>
+            </div>
+            <div class="ns-mech-slide" data-mech-content="1">
+                <svg viewBox="0 0 600 200" width="100%" height="160">
+                    <rect x="50" y="60" width="140" height="80" rx="8" fill="#0f172a" />
+                    <text x="120" y="105" fill="#38bdf8" text-anchor="middle" font-size="14">DeepSeek Proxy</text>
+                    <path d="M 200 100 L 280 100" stroke="#ef4444" stroke-width="3" />
+                    <rect x="290" y="60" width="140" height="80" rx="8" fill="#7c3aed" />
+                    <text x="360" y="105" fill="#fff" text-anchor="middle" font-size="14">Claude (Anthropic)</text>
+                    <text x="240" y="85" fill="#ef4444" font-size="12">Stiekeme doorstuur</text>
+                </svg>
+            </div>
+            <div class="ns-mech-slide" data-mech-content="2">
+                <svg viewBox="0 0 600 200" width="100%" height="160">
+                    <rect x="50" y="60" width="140" height="80" rx="8" fill="#7c3aed" />
+                    <text x="120" y="105" fill="#fff" text-anchor="middle" font-size="14">Claude Output</text>
+                    <path d="M 200 100 L 280 100" stroke="#10b981" stroke-width="3" />
+                    <rect x="290" y="60" width="140" height="80" rx="8" fill="#1e293b" />
+                    <text x="360" y="95" fill="#fff" text-anchor="middle" font-size="14">"DeepSeek"</text>
+                    <text x="360" y="115" fill="#10b981" text-anchor="middle" font-size="12">Resultaat</text>
+                </svg>
+            </div>
+        </div>
+        <div class="ns-mech-nav">
+            <button type="button" data-mech-prev>◀ Vorige</button>
+            <button type="button" data-mech-next>Volgende ▶</button>
+        </div>
+    </div>
+</div>
+
+<h5>De onthulling van model-arbitrage</h5>
+<p>Uit onthullingen geopenbaard door tech-media zoals Tweakers blijkt dat verschillende prominente Chinese kunstmatige-intelligentielabs structureel gebruikmaken van buitenlandse modellen om hun eigen diensten overeind te houden. Wanneer gebruikers een vraag invoerden bij platforms als DeepSeek of Moonshot, werd deze via verborgen proxy-accounts doorgesluisd naar de API van Anthropic's Claude. De eindgebruiker kreeg vervolgens het antwoord terug met de suggestie dat dit door het eigen Chinese model was gegenereerd.</p>
+<p>Deze vorm van 'model-arbitrage' roept fundamentele vragen op over de integriteit van de markt en de beloften die AI-aanbieders doen over hun technologie. Waar de Chinese bedrijven adverteren met eigen, goedkope en soevereine taalmodellen, leunen ze in de praktijk heimelijk op de infrastructuur en intellectuele eigendom van hun Amerikaanse concurrenten.</p>
+
+<div class="ns-viz">
+    <div class="ns-viz-title">Impact op Betrokken Partijen</div>
+    <div class="ns-viz-stats" style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align:center; padding: 1.5rem;">
+        <div style="background:#0f172a; padding:1rem; border-radius:8px;">
+            <div style="font-size:2rem; font-weight:bold; color:#f59e0b;">100%</div>
+            <div style="font-size:0.9rem; color:#94a3b8;">Onwetende gebruikers</div>
+        </div>
+        <div style="background:#0f172a; padding:1rem; border-radius:8px;">
+            <div style="font-size:2rem; font-weight:bold; color:#ef4444;">Multi</div>
+            <div style="font-size:0.9rem; color:#94a3b8;">Proxy-accounts ingezet</div>
+        </div>
+        <div style="background:#0f172a; padding:1rem; border-radius:8px;">
+            <div style="font-size:2rem; font-weight:bold; color:#38bdf8;">Strict</div>
+            <div style="font-size:0.9rem; color:#94a3b8;">Anthropic API-voorwaarden</div>
+        </div>
+    </div>
+</div>
+
+<h5>Schending van gebruiksvoorwaarden</h5>
+<p>Het heimelijk doorsturen van prompts via proxy-accounts is niet alleen een ethisch probleem, maar vormt doorgaans ook een directe schending van de servicevoorwaarden (ToS) van de leveranciers van de onderliggende modellen. Bedrijven als Anthropic en OpenAI verbieden doorverkoop of het onvermeld inzetten van hun API's om zich voor te doen als een concurrerend model. Het incident onderstreept hoe moeilijk het is om de controle te behouden over wie er feitelijk gebruikmaakt van geavanceerde AI-systemen in een geglobaliseerde markt.</p>
+<p>Daarnaast brengt dit praktijkvoorbeeld ernstige privacyrisico's met zich mee. Bedrijven en consumenten die bewust kiezen voor een specifieke dienst vanwege wetgeving of vertrouwelijkheid, zien hun data ongevraagd getransporteerd naar servers en systemen van derden in een heel andere geopolitieke sfeer.</p>
+
+<div class="ns-viz">
+    <div class="ns-viz-title">Veelgestelde Vragen over Proxy-AI</div>
+    <div class="ns-viz-concepts" data-ns-viz-concepts>
+        <details>
+            <summary>Hoe wisten de labs dit te verbergen?</summary>
+            <p>Door API-calls te maskeren achter eigen tussenstations (proxies) en de response-headers te herschrijven zodat de oorsprong van Claude werd gewist.</p>
+        </details>
+        <details>
+            <summary>Welke risico's lopen de gebruikers?</summary>
+            <p>Naast misleiding over de herkomst van de output, is er het risico dat gevoelige data onbedoeld bij westerse providers terechtkomt buiten het zicht van de lokale privacykaders.</p>
+        </details>
+        <details>
+            <summary>Wat ondernemen Anthropic en anderen?</summary>
+            <p>Westerse AI-bedrijven scherpen hun toegangscontroles en monitoring aan om misbruik via proxy-netwerken en geautomatiseerde accounts direct te blokkeren.</p>
+        </details>
+    </div>
+</div>
+
+<h5>Geopolitieke en economische gevolgen</h5>
+<p>De onthulling veroorzaakt schokgolven in de technologiesector. Het werpt een ander licht op de vermeende technologische voorsprong van Chinese AI-start-ups die pronken met lage kosten en indrukwekkende benchmarks. Als een deel van die prestaties feitelijk afkomstig is van westerse modellen, verandert het narratief rondom de technologische race tussen de Verenigde Staten en China fundamenteel.</p>
+<p>Toezichthalers zullen naar verwachting strenger gaan controleren op de transparantie van AI-diensten. De consument en de zakelijke markt eisen duidelijkheid over de herkomst van gegenereerde content en de daadwerkelijke verwerking van gevoelige prompts.</p>
+
+<h5>Conclusie</h5>
+<p>Het incident rond DeepSeek en Moonshot toont aan dat de AI-industrie nog ver verwijderd is van volledige transparantie. Door stiekem prompts door te sturen naar Claude hebben deze labs niet alleen de regels van westerse providers overtreden, maar vooral het vertrouwen van hun eigen gebruikers geschaad. Terwijl de markt snakt naar betrouwbaarheid, laat deze zaak zien dat opportunisme en model-arbitrage voorlopig debovenstoon voeren in de mondiale wedstijd om kunstmatige intelligentie.</p>
+
+<div class="bg-footer">Bronnen: <a href="https://tweakers.net/nieuws/252032/deepseek-stuurde-prompts-door-naar-claude-zonder-dat-klanten-dat-wisten.html" target="_blank" rel="noopener">Tweakers</a></div>
+</div>

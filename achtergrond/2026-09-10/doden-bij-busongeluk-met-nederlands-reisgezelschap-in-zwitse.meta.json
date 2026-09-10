@@ -1,0 +1,21 @@
+{
+  "title": "Doden bij busongeluk met Nederlands reisgezelschap in Zwitserland",
+  "summary": "Een Nederlandse touringcar verongelukt in Graubünden. De lokale politie meldt doden en gewonden. Namen volgen later.",
+  "sources": [
+    "https://nos.nl/l/2630492",
+    "https://www.rtl.nl/nieuws/artikel/5650325/meerdere-doden-ongeluk-met-nederlandse-reisorganisatie-zwi"
+  ],
+  "topic": "nederland",
+  "kind": "nederland",
+  "datum_iso": "2026-09-10",
+  "slug": "doden-bij-busongeluk-met-nederlands-reisgezelschap-in-zwitse",
+  "tts_slug": "doden-bij-busongeluk-met-nederlands-reisgezelschap-in-zwitse",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:31:31",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/doden-bij-busongeluk-met-nederlands-reisgezelschap-in-zwitse.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

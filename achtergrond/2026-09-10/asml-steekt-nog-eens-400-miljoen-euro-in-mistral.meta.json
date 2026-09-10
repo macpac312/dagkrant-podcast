@@ -1,0 +1,20 @@
+{
+  "title": "ASML steekt nog eens 400 miljoen euro in Mistral",
+  "summary": "De chipmachinemaker verdubbelt zijn Europese AI-inzet. Vorig jaar al 11 procent van de aandelen.",
+  "sources": [
+    "https://tweakers.net/nieuws/251986/asml-steekt-nog-eens-400-miljoen-euro-in-europese-ai-maker-mistral.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "asml-steekt-nog-eens-400-miljoen-euro-in-mistral",
+  "tts_slug": "asml-steekt-nog-eens-400-miljoen-euro-in-mistral",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:03:51",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/asml-steekt-nog-eens-400-miljoen-euro-in-mistral.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "OpenAI zet GPT-Live-1 in een API: praten en luisteren tegelijk",
+  "summary": "The Decoder: full-duplex, 80,1 procent interactivity, 5 cent per minuut. Niet goedkoop, wél een product.",
+  "sources": [
+    "https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "openai-zet-gpt-live-1-in-een-api-praten-en-luisteren-tegelij",
+  "tts_slug": "openai-zet-gpt-live-1-in-een-api-praten-en-luisteren-tegelij",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:08:44",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/openai-zet-gpt-live-1-in-een-api-praten-en-luisteren-tegelij.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

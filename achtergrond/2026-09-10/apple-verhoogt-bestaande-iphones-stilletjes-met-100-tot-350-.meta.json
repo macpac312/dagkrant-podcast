@@ -1,0 +1,21 @@
+{
+  "title": "Apple verhoogt bestaande iPhones stilletjes met 100 tot 350 euro",
+  "summary": "Naast de Duo werden Air, 17, 17e en 16 duurder. AD noemt het peperduur. Tweakers telde de delta.",
+  "sources": [
+    "https://tweakers.net/nieuws/251976/apple-verhoogt-prijzen-bestaande-iphones-stilletjes-met-100-tot-350-euro.html",
+    "https://www.ad.nl/tech/peperduur-apple-verhoogt-de-prijzen-van-oudere-iphone-modellen-stilletjes-met-100-tot-350-euro"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "apple-verhoogt-bestaande-iphones-stilletjes-met-100-tot-350-",
+  "tts_slug": "apple-verhoogt-bestaande-iphones-stilletjes-met-100-tot-350-",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:05:57",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/apple-verhoogt-bestaande-iphones-stilletjes-met-100-tot-350-.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

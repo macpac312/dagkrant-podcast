@@ -1,0 +1,75 @@
+<div class="dagkrant-article">
+  <div class="meta-tag">aitech</div>
+  <h2>OpenAI zet GPT-Live-1 in een API: praten en luisteren tegelijk</h2>
+  <p class="lead">The Decoder: full-duplex, 80,1 procent interactivity, 5 cent per minuut. Niet goedkoop, wél een product.</p>
+
+  <ul class="bg-bullets">
+    <li>GPT-Live-1 is per direct beschikbaar gesteld via een dedicated API voor ontwikkelaars.</li>
+    <li>Het systeem werkt volledig full-duplex, wat betekent dat spreken en luisteren gelijktijdig plaatsvindt.</li>
+    <li>De interactiviteitsscore van de voice-engine bereikt een indrukwekkende 80,1 procent.</li>
+    <li>Het gebruik kent een vast tarief van 5 cent per minuut, wat zakelijke implementaties direct calculeerbaar maakt.</li>
+  </ul>
+
+  <div class="ns-viz">
+    <ns-viz-stats title="GPT-Live-1 API: Kernstatistieken">
+      <div data-stat="80,1%" data-label="Interactiviteitsscore"></div>
+      <div data-stat="€0,05" data-label="Kosten per minuut"></div>
+      <div data-stat="Full-duplex" data-label="Audio-architectuur"></div>
+    </ns-viz-stats>
+  </div>
+
+  <h5>Een nieuwe standaard voor spraakgestuurde AI</h5>
+  <p>De introductie van de GPT-Live-1 API markeert een fundamentele verschuiving in hoe software met mensen communiceert. Waar eerdere generaties spraakmodellen via een omslachtige keten van spraak-naar-tekst, taalmodel en tekst-naar-spraak werkten — met merkbare vertragingen tot gevolg — biedt deze nieuwe API een directe, naadloze audio-ervaring. Ontwikkelaars kunnen nu applicaties bouwen die reageren op de fractie van een seconde, pauzes herkennen en zelfs door de gebruiker onderbroken kunnen worden midden in een zin.</p>
+
+  <div class="ns-viz">
+    <ns-viz-timeline title="Evolutie van AI-spraakmodellen">
+      <div data-year="2023" data-title="Getrapte Systemen">Cascade van STT, LLM en TTS met trage responstijden.</div>
+      <div data-year="2024" data-title="Vroege Multimodale Audio">Native audio-modellen, maar nog overwegend half-duplex.</div>
+      <div data-year="2026" data-title="GPT-Live-1 API">Volledig full-duplex, 80% interactiviteit en direct beschikbaar voor enterprise-bouwers.</div>
+    </ns-viz-timeline>
+  </div>
+
+  <h5>Technische werking van full-duplex interactie</h5>
+  <p>Het mechanisme achter GPT-Live-1 verschilt drastisch van traditionele chatbots. Het model verwerkt audiostreams rechtstreeks, zonder tussenstappen in tekstvorm. Hierdoor gaan intonatie, emotie en timing niet verloren. Dit vraagt echter wel om specifieke aanpassingen in de achterliggende infrastructuur van ontwikkelaars, die nu moeten omgaan met real-time streaming data en lage latentie-eisen.</p>
+
+  <div class="ns-viz">
+    <ns-viz-mech title="De GPT-Live-1 Pipeline" active="0">
+      <div data-title="Audio Input" data-desc="De microfoon streamt continue raw audio naar de API.">
+        <svg viewBox="0 0 400 160" width="100%" height="100%"><rect width="400" height="160" fill="#121212"/><circle cx="200" cy="80" r="40" fill="#3b82f6" opacity="0.8"/><text x="200" y="85" fill="#fff" text-anchor="middle" font-size="14">Raw Audio Stream</text></svg>
+      </div>
+      <div data-title="Full-Duplex Verwerking" data-desc="Het model verwerkt invoer en genereert uitvoer tegelijkertijd.">
+        <svg viewBox="0 0 400 160" width="100%" height="100%"><rect width="400" height="160" fill="#121212"/><rect x="100" y="50" width="200" height="60" rx="8" fill="#10b981" opacity="0.8"/><text x="200" y="85" fill="#fff" text-anchor="middle" font-size="14">Parallelle Inferentie</text></svg>
+      </div>
+      <div data-title="Real-time Audio Output" data-desc="Directe synthese van natuurlijke stemgeluiden met interruptie-ondersteuning.">
+        <svg viewBox="0 0 400 160" width="100%" height="100%"><rect width="400" height="160" fill="#121212"/><circle cx="200" cy="80" r="40" fill="#f59e0b" opacity="0.8"/><text x="200" y="85" fill="#fff" text-anchor="middle" font-size="14">Direct Voice Out</text></svg>
+      </div>
+    </ns-viz-mech>
+  </div>
+
+  <h5>Commerciële implicaties en de markt voor voice-agents</h5>
+  <p>Met een prijskaartje van 5 cent per minuut positioneert OpenAI de dienst duidelijk in het middensegment tot hoger zakelijk segment. Voor simpele klantenservicelijnen kan dit aan de hoge kant zijn, maar voor complexe toepassingen — zoals medische consulten, taalcoaches of geavanceerde interactieve assistenten — biedt de ongekende interactiviteit van 80,1 procent een duidelijke meerwaarde die de kosten rechtvaardigt.</p>
+
+  <div class="ns-viz">
+    <ns-viz-compare title="Klassiek vs. GPT-Live-1">
+      <div data-label="Klassieke API (STT + LLM + TTS)">
+        <ul>
+          <li>Trage respons (1-3 seconden)</li>
+          <li>Verlies van emotie en timing</li>
+          <li>Geen echte onderbrekingen mogelijk</li>
+        </ul>
+      </div>
+      <div data-label="GPT-Live-1 API">
+        <ul>
+          <li>Directe responstijd (sub-second)</li>
+          <li>Native audio met intonatie en emotie</li>
+          <li>Volledig full-duplex (praten én luisteren)</li>
+        </ul>
+      </div>
+    </ns-viz-compare>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>OpenAI zet met de GPT-Live-1 API een grote stap richting natuurlijk mens-machinecontact. De combinatie van full-duplex audio, hoge interactiviteit en een scherpe, voorspelbare prijs per minuut maakt dat softwareontwikkelaars eindelijk de tools in handen hebben om geloofwaardige, real-time stemtoepassingen te commercialiseren.</p>
+
+  <div class="bg-footer">Bronnen: https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time/</div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "title": "Xiaomi 18 Fold: de Duo-lookalike met één groot voordeel",
+  "summary": "Mashable zet het Chinese vouwtoestel naast de iPhone Duo. De prijs is het voordeel dat Cupertino niet heeft.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMia0FVX3lxTFBScHk5VDhPYWxsQXJDWkpYcW1Db0VuZ3g3T0U5UFNsSG5IbUo5TE0tUzkzLXpfUXk5RnlKYmVIcjNFbDFmTDhpdTJocTlGTlpRVGZ6THNEblpPZnVJQnhDZHdjVjNhUjNKTnZv?oc=5"
+  ],
+  "topic": "xiaomi",
+  "kind": "xiaomi",
+  "datum_iso": "2026-09-10",
+  "slug": "xiaomi-18-fold-de-duo-lookalike-met-één-groot-voordeel",
+  "tts_slug": "xiaomi-18-fold-de-duo-lookalike-met-één-groot-voordeel",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:12:51",
+  "size_kb": 4,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/xiaomi-18-fold-de-duo-lookalike-met-één-groot-voordeel.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

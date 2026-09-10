@@ -1,0 +1,20 @@
+{
+  "title": "Energierekening stijgt de komende jaren, vooral voor de warmtepomp",
+  "summary": "Gemiddeld plus tien procent in vijf jaar. Huishoudens met een warmtepomp betalen de steilste rekening, blijkt uit een concept-brief.",
+  "sources": [
+    "https://nos.nl/l/2630491"
+  ],
+  "topic": "nederland",
+  "kind": "nederland",
+  "datum_iso": "2026-09-10",
+  "slug": "energierekening-stijgt-de-komende-jaren-vooral-voor-de-warmt",
+  "tts_slug": "energierekening-stijgt-de-komende-jaren-vooral-voor-de-warmt",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:31:55",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/energierekening-stijgt-de-komende-jaren-vooral-voor-de-warmt.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

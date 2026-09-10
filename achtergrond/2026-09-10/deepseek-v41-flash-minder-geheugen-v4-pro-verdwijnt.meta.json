@@ -1,0 +1,21 @@
+{
+  "title": "DeepSeek V4.1-Flash: minder geheugen, V4-Pro verdwijnt",
+  "summary": "The Decoder: 552 miljard parameters, KV-cache naar een kwart. Tweakers: wie V4-Pro wilde, krijgt Flash.",
+  "sources": [
+    "https://tweakers.net/nieuws/252018/deepseek-lanceert-v41-flash-en-stopt-met-v4-pro.html",
+    "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "deepseek-v41-flash-minder-geheugen-v4-pro-verdwijnt",
+  "tts_slug": "deepseek-v41-flash-minder-geheugen-v4-pro-verdwijnt",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:09:48",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/deepseek-v41-flash-minder-geheugen-v4-pro-verdwijnt.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

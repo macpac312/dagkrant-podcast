@@ -1,0 +1,20 @@
+{
+  "title": "Huurprijzen +4,4 procent — minder hard dan de twee jaren daarvoor",
+  "summary": "CBS via Findinet: juli 2026 versus juli 2025. In 2025 was het +4,9, in 2024 +5,4.",
+  "sources": [
+    "https://www.findinet.nl/artikel/prijzen-huurwoningen-stijgen-gemiddeld-met-44-procent/"
+  ],
+  "topic": "huizenmarkt",
+  "kind": "huizenmarkt",
+  "datum_iso": "2026-09-10",
+  "slug": "huurprijzen-44-procent-minder-hard-dan-de-twee-jaren-daarvoo",
+  "tts_slug": "huurprijzen-44-procent-minder-hard-dan-de-twee-jaren-daarvoo",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:58:39",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/huurprijzen-44-procent-minder-hard-dan-de-twee-jaren-daarvoo.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

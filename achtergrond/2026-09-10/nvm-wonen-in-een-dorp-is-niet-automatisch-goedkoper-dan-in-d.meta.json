@@ -1,0 +1,21 @@
+{
+  "title": "NVM: wonen in een dorp is niet automatisch goedkoper dan in de stad",
+  "summary": "Afstand tot de stad bepaalt de prijs. Betaalbare kansen zitten vooral in afgelegen kernen. NU bevestigt de rekensom.",
+  "sources": [
+    "https://www.nvm.nl/nieuws/2026/nvm-wonen-in-een-dorp-niet-automatisch-goedkoper-dan-in-de-stad/",
+    "https://www.nu.nl/economie/6409291/van-stad-naar-dorp-verhuizen-betekent-niet-automatisch-goedkoper-wonen.html"
+  ],
+  "topic": "huizenmarkt",
+  "kind": "huizenmarkt",
+  "datum_iso": "2026-09-10",
+  "slug": "nvm-wonen-in-een-dorp-is-niet-automatisch-goedkoper-dan-in-d",
+  "tts_slug": "nvm-wonen-in-een-dorp-is-niet-automatisch-goedkoper-dan-in-d",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T19:56:02",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/nvm-wonen-in-een-dorp-is-niet-automatisch-goedkoper-dan-in-d.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

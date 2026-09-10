@@ -1,0 +1,20 @@
+{
+  "title": "Clearview test een AI die voor de politie je hele online leven opgraaft",
+  "summary": "Wired: een tool die je digitale spoor in één keer bovenhaalt. Elders: een Grok-powered profiling-proef.",
+  "sources": [
+    "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-10",
+  "slug": "clearview-test-een-ai-die-voor-de-politie-je-hele-online-lev",
+  "tts_slug": "clearview-test-een-ai-die-voor-de-politie-je-hele-online-lev",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T20:08:14",
+  "size_kb": 11,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/clearview-test-een-ai-die-voor-de-politie-je-hele-online-lev.html",
+  "mode": "default",
+  "model": "gemini-flash-lite-latest",
+  "provider": "gemini"
+}

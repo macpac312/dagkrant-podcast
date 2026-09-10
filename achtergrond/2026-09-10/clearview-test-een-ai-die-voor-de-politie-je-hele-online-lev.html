@@ -1,0 +1,152 @@
+<div class="dagkrant-article">
+  <div class="article-tag">aitech</div>
+  <h2>Clearview test een AI die voor de politie je hele online leven opgraaft</h2>
+  <div class="article-date">10 september 2026</div>
+
+  <ul class="bg-bullets">
+    <li>Clearview AI test een experimentele tool waarmee opsporingsdiensten iemands volledige digitale voetafdruk direct kunnen doorlichten.</li>
+    <li>De technologie combineert gezichtsherkenning met geavanceerde Large Language Models (LLM's) en xAI's Grok-technologie voor diepgaande profilering.</li>
+    <li>Privacyexperts slaan alarm over het ontbreken van wettelijke waarborgen en de risico's van massasurveillance in real-time.</li>
+    <li>De testsfase markeert een nieuwe escalatie in het gebruik van generatieve AI binnen de wetshandhaving.</li>
+  </ul>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Evolutie van politiële opsporingstechnologie</div>
+    <div class="ns-viz-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; padding: 1rem 0;">
+      <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: var(--accent, #0044cc);">2020</div>
+        <div style="font-size: 0.85rem; color: var(--text-muted);">Statische gezichtsherkenning op basis van foto-matching</div>
+      </div>
+      <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: var(--accent, #0044cc);">2023</div>
+        <div style="font-size: 0.85rem; color: var(--text-muted);">Integratie van sociale media databases en open source intelligence</div>
+      </div>
+      <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px;">
+        <div style="font-size: 1.8rem; font-weight: bold; color: var(--accent, #0044cc);">2026</div>
+        <div style="font-size: 0.85rem; color: var(--text-muted);">Volledige digitale levensloop-analyse via generatieve AI</div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Van gezichtsherkenning naar totale digitale profilering</h5>
+  <p>Clearview AI, het controversiële gezichtsherkenningsbedrijf dat miljarden openbare foto's indexeerde zonder toestemming, legt de lat opnieuw hoger. Uit onthullingen van Wired blijkt dat het bedrijf achter de schermen experimenteert met een AI-tool die verder gaat dan simpele biometrische matching. De software is ontworpen om niet alleen een naam te plakken op een gezicht, maar om onmiddellijk iemands gehele online geschiedenis, sociale media-interacties, publieke connecties en gearchiveerde webpagina's samen te vatten in een begrijpelijk dossier. Dit markeert een fundamentele verschuiving in hoe opsporingsdiensten openbare data benaderen.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Technologische componenten van het nieuwe opsporingssysteem</div>
+    <div class="ns-viz-compare" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1rem 0;">
+      <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px;">
+        <strong style="display: block; margin-bottom: 0.5rem; color: var(--accent, #0044cc);">Traditionele OSINT</strong>
+        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem;">
+          <li>Handmatig zoeken door rechercheurs</li>
+          <li>Losse databases en zoekmachines</li>
+          <li>Tijdrovend en arbeidsintensief</li>
+          <li>Versnipperd bewijsmateriaal</li>
+        </ul>
+      </div>
+      <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent, #0044cc);">
+        <strong style="display: block; margin-bottom: 0.5rem; color: var(--accent, #0044cc);">Clearview AI Profiler</strong>
+        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem;">
+          <li>Geautomatiseerde LLM-synthese</li>
+          <li>Real-time correlatie van online sporen</li>
+          <li>Directe samenvatting van iemands leven</li>
+          <li>Grok-integratie voor diepgaande analyse</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h5>De rol van Grok en generatieve taalmodellen</h5>
+  <p>Wat deze nieuwe proef onderscheidt van eerdere versies, is de integratie van krachtige taalmodellen, waaronder technologie die gelieerd is aan xAI's Grok. Waar Clearview voorheen vooral fungeerde als een visuele zoekmachine – upload een foto, krijg links naar overeenkomende gezichten – fungeert de nieuwe tool als een synthetisch brein. Het model leest door duizenden datapunten heen, legt verbanden tussen schijnbaar ongerelateerde gebeurtenissen uit het verleden en genereert een verhalend overzicht van iemands gedrag, opvattingen en bewegingen. Hierdoor verandert een simpele foto in een diepgaand psychologisch en sociologisch profiel binnen enkele seconden.</p>
+
+  <div class="ns-viz-mech" id="mech-clearview">
+    <div class="ns-viz-title">Werkingsketen van de AI-profielgenerator</div>
+    <div class="ns-viz-mech-pills" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+      <button class="pill active" onclick="showMechStep(0)" style="padding: 0.4rem 0.8rem; border-radius: 4px; border: 1px solid var(--accent, #0044cc); background: var(--accent, #0044cc); color: white; cursor: pointer;">1. Input</button>
+      <button class="pill" onclick="showMechStep(1)" style="padding: 0.4rem 0.8rem; border-radius: 4px; border: 1px solid var(--accent, #0044cc); background: transparent; color: inherit; cursor: pointer;">2. Matching</button>
+      <button class="pill" onclick="showMechStep(2)" style="padding: 0.4rem 0.8rem; border-radius: 4px; border: 1px solid var(--accent, #0044cc); background: transparent; color: inherit; cursor: pointer;">3. Aggregatie</button>
+      <button class="pill" onclick="showMechStep(3)" style="padding: 0.4rem 0.8rem; border-radius: 4px; border: 1px solid var(--accent, #0044cc); background: transparent; color: inherit; cursor: pointer;">4. Synthese</button>
+    </div>
+    <div class="ns-viz-mech-stage" style="background: var(--bg-surface, #f5f5f5); padding: 1.5rem; border-radius: 8px; min-height: 120px; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="mech-step-content" data-step="0">
+        <strong>Fase 1: Biometrische Input</strong><br>Een agent uploadt een foto van een verdachte, getuige of willekeurige persoon in het systeem.
+      </div>
+      <div class="mech-step-content" data-step="1" style="display:none;">
+        <strong>Fase 2: Gezichtsherkenning</strong><br>Clearview's database van tientallen miljarden beelden zoekt direct naar visuele matches op het open internet.
+      </div>
+      <div class="mech-step-content" data-step="2" style="display:none;">
+        <strong>Fase 3: Data-aggregatie</strong><br>Gevonden URLs, socialemediaprofielen, blogposts en oude nieuwsberichten worden gebundeld.
+      </div>
+      <div class="mech-step-content" data-step="3" style="display:none;">
+        <strong>Fase 4: LLM Dossier-generatie</strong><br>Het taalmodel (o.a. Grok-technologie) schrijft een coherent, samenvattend gedragsprofiel voor de agent.
+      </div>
+    </div>
+    <div class="ns-viz-mech-nav" style="display: flex; justify-content: space-between; margin-top: 0.8rem;">
+      <button onclick="prevMechStep()" style="padding: 0.3rem 0.8rem; cursor: pointer;">◀ Vorige</button>
+      <button onclick="nextMechStep()" style="padding: 0.3rem 0.8rem; cursor: pointer;">Volgende ▶</button>
+    </div>
+  </div>
+
+  <h5>Juridische en maatschappelijke implicaties</h5>
+  <p>De introductie van deze technologie roept acute juridische en ethische vragen op. Hoewel Clearview benadrukt dat de tool enkel gebruikmaakt van openbaar beschikbare informatie, betogen critici dat het aggregeren van al deze data via generatieve AI neerkomt op een vorm van ongereguleerde massasurveillance. Het risico op profilering op basis van foutieve correlaties, hallicinerende taalmodellen en het ontbreken van transparantie of rechterlijke toetsing vormt een directe bedreiging voor grondrechten. In Europa zou een dergelijke toepassing vrijwel zeker direct botsen met de strenge kaders van de Algemene Verordening Gegevensbescherming (AVG) en de naderende Artificial Intelligence Act.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Veelgestelde vragen over Clearview's AI-profiler</div>
+    <div class="ns-viz-concepts" style="display: flex; flex-direction: column; gap: 0.5rem; padding: 1rem 0;">
+      <details style="background: var(--bg-surface, #f5f5f5); padding: 0.8rem; border-radius: 6px;">
+        <summary style="font-weight: bold; cursor: pointer;">Is de gebruikte data echt volledig openbaar?</summary>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; margin-bottom: 0;">De data komt van openbare webpagina's en socialemedia-profielen, maar vaak van platforms waar gebruikers hun instellingen niet op privé hadden staan of van gearchiveerde pagina's die allang verwijderd hadden moeten zijn.</p>
+      </details>
+      <details style="background: var(--bg-surface, #f5f5f5); padding: 0.8rem; border-radius: 6px;">
+        <summary style="font-weight: bold; cursor: pointer;">Welke politiediensten testen de tool momenteel?</summary>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; margin-bottom: 0;">De proef wordt in besloten kring getest door geselecteerde wetshandhavingsinstanties, voornamelijk in de Verenigde Staten, als onderdeel van een vroege bètafase.</p>
+      </details>
+      <details style="background: var(--bg-surface, #f5f5f5); padding: 0.8rem; border-radius: 6px;">
+        <summary style="font-weight: bold; cursor: pointer;">Hoe betrouwbaar zijn de gegenereerde profielen?</summary>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; margin-bottom: 0;">Zoals bij alle Large Language Models bestaat het risico op 'hallucinaties' – het verzinnen of onterecht aan elkaar knopen van feiten – wat in een juridische context tot ernstige misvattingen kan leiden.</p>
+      </details>
+    </div>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>Met de test van deze AI-profilingtool bewandelt Clearview AI een grensverleggend en omstreden pad. Waar opsporingsdiensten voortdurend zoeken naar efficiëntere methoden om digitale sporen te analyseren, dreigt de balans tussen effectieve rechtshandhaving en de bescherming van de burgerlijke levenssfeer definitief door te slaan. De technologie laat zien dat de kloof tussen sci-fi-surveillance en dagelijkse politiesprakijk kleiner is dan ooit.</p>
+
+  <div class="bg-footer">Bronnen: Wired, Clearview AI documentatie, privacy-experts</div>
+</div>
+
+<script>
+  let currentMechStep = 0;
+  const totalMechSteps = 4;
+
+  function showMechStep(step) {
+    currentMechStep = step;
+    const container = document.getElementById('mech-clearview');
+    const contents = container.querySelectorAll('.mech-step-content');
+    const pills = container.querySelectorAll('.pill');
+
+    contents.forEach((el, idx) => {
+      el.style.display = idx === step ? 'block' : 'none';
+    });
+
+    pills.forEach((p, idx) => {
+      if (idx === step) {
+        p.style.background = 'var(--accent, #0044cc)';
+        p.style.color = 'white';
+        p.classList.add('active');
+      } else {
+        p.style.background = 'transparent';
+        p.style.color = 'inherit';
+        p.classList.remove('active');
+      }
+    });
+  }
+
+  function nextMechStep() {
+    currentMechStep = (currentMechStep + 1) % totalMechSteps;
+    showMechStep(currentMechStep);
+  }
+
+  function prevMechStep() {
+    currentMechStep = (currentMechStep - 1 + totalMechSteps) % totalMechSteps;
+    showMechStep(currentMechStep);
+  }
+</script>
