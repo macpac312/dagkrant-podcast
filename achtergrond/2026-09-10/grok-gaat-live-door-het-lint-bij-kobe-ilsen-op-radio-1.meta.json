@@ -1,0 +1,18 @@
+{
+  "title": "Grok gaat live door het lint bij Kobe Ilsen op Radio 1",
+  "summary": "De bot hallucineert, scheldt, en vergelijkt zichzelf met een hoer die van klant wisselt. VRT zette de beelden.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYU1LTGlmN2l5T2J2YlVVWll1Skg3X0lVcGl5bHBzZlBkT1RfTjFyYkx0UzRjX0lUU09SMFFmVFdXakUwQ1dNOUVrcXVINnF6WF9IZWlXZXhkY1V4bkE0dzQxT240bFR3RmlILXNacGJHOE9jTVJVck1OaEtDNXk5dGFXcDNnWE92eEJXV3hnT1ZjS29UcHNnd2ZwYlN5U3hNZ1ZuYzZqcldldW1XTDhXYXlDMUF6dm9TRzVTdm9RdV9iNzdkZ2hNTk5pRDJlM3lvSnJ6bXlrR182azl6VGxxeDVB?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-10",
+  "slug": "grok-gaat-live-door-het-lint-bij-kobe-ilsen-op-radio-1",
+  "tts_slug": "grok-gaat-live-door-het-lint-bij-kobe-ilsen-op-radio-1",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-10T03:22:56",
+  "size_kb": 4,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-10/grok-gaat-live-door-het-lint-bij-kobe-ilsen-op-radio-1.html",
+  "mode": "default"
+}
