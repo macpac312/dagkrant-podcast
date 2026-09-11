@@ -1,0 +1,111 @@
+<ul class="bg-bullets">
+  <li>Wereldwijde foldable-verkoop stijgt in 2027 naar verwachting met 37 procent.</li>
+  <li>Huawei Central baseert de prognose op recente marktrapporten over het aanbod.</li>
+  <li>Apple betreedt naar verluidt de markt met een eigen vouwbaar toestel.</li>
+  <li>Huawei domineert het huidige volume in de Chinese thuismarkt en daarbuiten.</li>
+</ul>
+
+<div class="ns-viz ns-viz-chart" style="margin: 2rem 0; padding: 1.5rem; background: var(--bg-surface, #f8f9fa); border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0);">
+  <h4 style="margin-top: 0; font-size: 1.1rem; color: var(--text-main, #1a202c);">Prognose foldable-markt: de impact van 2027</h4>
+  <p style="font-size: 0.9rem; color: var(--text-muted, #4a5568);">Verwachte volumegroei in procenten ten opzichte van het voorgaande jaar.</p>
+  <div style="position: relative; height: 220px; width: 100%;">
+    <canvas id="foldableGrowthChart"></canvas>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('foldableGrowthChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['2025', '2026', '2027 (Prognose)'],
+        datasets: [{
+          label: 'Groeipercentage (%)',
+          data: [15, 18, 37],
+          backgroundColor: ['#cbd5e1', '#94a3b8', '#2563eb'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 45,
+            ticks: { callback: function(value) { return value + '%'; } }
+          }
+        }
+      }
+    });
+  });
+</script>
+
+<h5>De schaalverschuiving van een niche naar de mainstream</h5>
+<p>De cijfers die via Huawei Central naar buiten zijn gebracht, markeren een kantelpunt voor de markt van opvouwbare smartphones. Waar foldables tot voor kort vooral werden gezien als een dure demonstratie van technische vernuftigheid voor early adopters, duiden de voorspellingen op een structurele versnelling. Een verwachte volumegroei van zevenendertig procent in het jaar 2027 is geen marginaal plusje; het is het directe gevolg van een bredere acceptatie en de toetreding van zwaargewichten tot het segment.</p>
+
+<div class="ns-viz ns-viz-stats" style="margin: 2rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem;">
+  <div style="background: var(--bg-surface, #f8f9fa); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0); text-align: center;">
+    <div style="font-size: 2rem; font-weight: 700; color: #2563eb;">+37%</div>
+    <div style="font-size: 0.85rem; color: var(--text-muted, #4a5568); margin-top: 0.25rem;">Groei in 2027</div>
+  </div>
+  <div style="background: var(--bg-surface, #f8f9fa); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0); text-align: center;">
+    <div style="font-size: 2rem; font-weight: 700; color: #1e293b;">Twee</div>
+    <div style="font-size: 0.85rem; color: var(--text-muted, #4a5568); margin-top: 0.25rem;">Dominante kampen</div>
+  </div>
+  <div style="background: var(--bg-surface, #f8f9fa); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0); text-align: center;">
+    <div style="font-size: 2rem; font-weight: 700; color: #1e293b;">Globaal</div>
+    <div style="font-size: 0.85rem; color: var(--text-muted, #4a5568); margin-top: 0.25rem;">Marktvalidatie</div>
+  </div>
+</div>
+
+<h5>De rol van Huawei en de onvermijdelijke komst van Apple</h5>
+<p>De dynamiek achter deze verwachte groei rust op twee verschillende pijlers. Aan de ene kant is er Huawei, dat erin is geslaagd om ondanks strenge Amerikaanse sancties een robuust ecosysteem en indrukwekkende hardware-innovaties neer te zetten in de vorm van geavanceerde foldables en tri-folds. Aan de andere kant hangt de markt al jaren in verwachting van de eerste vouwbare iPhone. Zodra Apple de stap zet, verandert de perceptie van het producttype fundamenteel. Wat eerst een Chinees eiland van innovatie leek, wordt dan plotsklaps universele standaard.</p>
+
+<div class="ns-viz ns-viz-concepts" style="margin: 2rem 0; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; overflow: hidden; background: var(--bg-surface, #f8f9fa);">
+  <div style="padding: 1rem 1.25rem; font-weight: 600; border-bottom: 1px solid var(--border-color, #e2e8f0); background: rgba(0,0,0,0.02);">Strategische factoren achter de prognose</div>
+  <details style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+    <summary style="padding: 1rem 1.25rem; cursor: pointer; font-weight: 500;">De Apple-factor</summary>
+    <div style="padding: 1rem 1.25rem; font-size: 0.95rem; color: var(--text-muted, #4a5568); background: #fff;">De intrede van Apple legitimeert de form factor voor het grote publiek en stuwt toeleveringsketens naar massaproductie.</div>
+  </details>
+  <details style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+    <summary style="padding: 1rem 1.25rem; cursor: pointer; font-weight: 500;">De Chinese productiekracht</summary>
+    <div style="padding: 1rem 1.25rem; font-size: 0.95rem; color: var(--text-muted, #4a5568); background: #fff;">Huawei en andere binnenlandse fabrikanten hebben scharnieren en flexibele schermen inmiddels dusdanig doorontwikkeld dat de duurzaamheidsproblemen van weleer grotendeels zijn opgelost.</div>
+  </details>
+  <details>
+    <summary style="padding: 1rem 1.25rem; cursor: pointer; font-weight: 500;">Consumentenacceptatie</summary>
+    <div style="padding: 1rem 1.25rem; font-size: 0.95rem; color: var(--text-muted, #4a5568); background: #fff;">De acceptatie hangt nauw samen met de prijsstelling en de dikte van de toestellen, die inmiddels dicht bij die van reguliere smartphones komen te liggen.</div>
+  </details>
+</div>
+
+<h5>Geen hinge-religie, maar pure marktrekenkundige logica</h5>
+<p>Het succes van foldables valt niet langer te reduceren tot een religieuze twist over wel of geen zichtbare vouw in het scherm. De analistenrapporten tonen aan dat het om pure schaalvergroting gaat. Consumenten zijn bereid meer te betalen voor flexibel schermoppervlak, mits de software en de accuduur overtuigen. Het cijfer van zevenendertig procent laat zien dat de industrie de kinderziektes achter zich laat en een volwassen groeifase betreedt waarin het traditionele ‘candybar’-ontwerp serieus concurrentie krijgt uit onverwachte hoek.</p>
+
+<div class="ns-viz ns-viz-compare" style="margin: 2rem 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+  <div style="background: var(--bg-surface, #f8f9fa); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0);">
+    <h5 style="margin-top: 0; color: #2563eb; font-size: 1rem;">Traditionele visie</h5>
+    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-muted, #4a5568);">
+      <li>Foldables blijven een dure niche</li>
+      <li>Kwetsbare hardware en schermen</li>
+      <li>Beperkte software-ondersteuning</li>
+    </ul>
+  </div>
+  <div style="background: var(--bg-surface, #f8f9fa); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0);">
+    <h5 style="margin-top: 0; color: #1e293b; font-size: 1rem;">De 2027-prognose</h5>
+    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-muted, #4a5568);">
+      <li>Mainstream adoptie door komst Apple</li>
+      <li>Volwassen en robuuste scharnieren</li>
+      <li>Structurele volumegroei van +37%</li>
+    </ul>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>De opmars van de foldable-markt in 2027 onderstreept dat de industrie klaar is voor de volgende hardware-evolutie. Met Huawei als ervaren motor in het Oosten en Apple als verwachte katalysator in het Westen, transformeert het segment van een experimentele gadgetmarkt naar een blijvende pijler van de consumentenelektronica. De vraag is niet meer of de vouwbare telefoon breekt met de traditie, maar hoe snel de rest van de markt volgt.</p>
+
+<div class="bg-footer">Bronnen: Huawei Central</div>

@@ -1,0 +1,69 @@
+<div class="ns-article">
+  <div class="ns-tag">grok</div>
+  <h1>ChatGPT, Claude en Grok plat: continuïteit is het nieuwe product</h1>
+  <p class="ns-teaser">MarketScale: een gedeelde storing. 9to5Google: het lag niet aan jou. Drie labs tegelijk op zwart toont dat de AI-economie leunt op dezelfde kwetsbare GPU-infrastructuur.</p>
+
+  <ul class="bg-bullets">
+    <li>Drie concurrerende AI-systemen (ChatGPT, Claude en Grok) gingen op dezelfde middag offline door een gedeelde infrastructuurlaag.</li>
+    <li>Volgens analyses van MarketScale en 9to5Google lag de oorzaak niet bij individuele applicatiefouten, maar bij bovenliggende cloud- en datacenterdiensten.</li>
+    <li>Bedrijven die kritieke inkoopprocessen en klantenservice automatiseren via AI, kregen direct te maken met verbroken SLA's (Service Level Agreements).</li>
+    <li>De storing heropent de discussie over 'single points of failure' in de moderne enterprise-architectuur en het belang van on-premise alternatieven.</li>
+  </ul>
+
+  <div class="ns-viz ns-viz-stats" style="display:flex; gap:16px; margin:24px 0; justify-content:space-between;">
+    <div style="background:#f4f4f5; padding:16px; border-radius:8px; flex:1; text-align:center;">
+      <span style="font-size:28px; font-weight:bold; display:block; color:#111;">3 Labs</span>
+      <span style="font-size:13px; color:#555;">Tegelijkertijd getroffen</span>
+    </div>
+    <div style="background:#f4f4f5; padding:16px; border-radius:8px; flex:1; text-align:center;">
+      <span style="font-size:28px; font-weight:bold; display:block; color:#111;">1 Cloud</span>
+      <span style="font-size:13px; color:#555;">Gedeelde bottleneck</span>
+    </div>
+    <div style="background:#f4f4f5; padding:16px; border-radius:8px; flex:1; text-align:center;">
+      <span style="font-size:28px; font-weight:bold; display:block; color:#111;">0 SLA</span>
+      <span style="font-size:13px; color:#555;">Garantie tijdens piek</span>
+    </div>
+  </div>
+
+  <h5>Continuïteit is de stille feature</h5>
+  <p>Jarenlang ging de concurrentiestrijd tussen kunstmatige intelligentie-labs over parameters, contextvensters en benchmarkscores. Of het nu ging om de geavanceerde redeneerstappen van OpenAI's nieuwste modellen, de genuanceerde tekstgeneratie van Anthropic's Claude of de realtime dataverwerking van xAI's Grok: de focus lag op intelligentie. Totdat drie marktleiders op exact dezelfde middag gedurende uren onbereikbaar bleken. Consumenten zagen een draaiend laadwieltje of een 404-melding, maar achter de schermen voltrok zich een fundamentele openbaring.</p>
+  <p>Continuïteit is geen achtergrondvoorwaarde meer; het is het belangrijkste product dat een leverancier kan aanbieden. Bedrijven die inmiddels volledig leunen op geautomatiseerde agenten voor hun dagelijkse administratie, voorraadbeheer en klantinteracties, ontdekten pijnlijk dat een AI-model zonder uptime waardeloos is. De markt ontwaakte uit de illusie dat AI-diensten onuitputtelijk en altijd beschikbaar zijn.</p>
+
+  <div class="ns-viz ns-viz-timeline" style="margin:24px 0; border-left:2px solid #ccc; padding-left:16px;">
+    <div style="margin-bottom:12px;">
+      <strong>14:00 CET</strong> — Eerste haperingen gemeld bij API-endpoints van Claude en OpenAI.
+    </div>
+    <div style="margin-bottom:12px;">
+      <strong>14:45 CET</strong> — Ook Grok-integraties vallen weg; gebruikers zien massaal timeout-meldingen.
+    </div>
+    <div style="margin-bottom:12px;">
+      <strong>16:30 CET</strong> — Postmortems wijzen in de richting van gedeelde datacenter- en netwerkinfrastructuur.
+    </div>
+  </div>
+
+  <h5>Drie merken, één wolk</h5>
+  <p>Hoe kon het gebeuren dat drie felle concurrenten gelijktijdig op zwart gingen? Het antwoord ligt in de consolidatie van de digitale toeleveringsketen. Hoewel de algoritmen en finetuning per lab verschillen, leunen de gigantische clusters die nodig zijn voor inferentie op een handvol hyperscalers en gespecialiseerde GPU-providers. Wanneer een centrale netwerkknoop of een stroomvoorziening in een belangrijk datacenter hapert, vallen de vangnetten van verschillende leveranciers tegelijkertijd weg.</p>
+  <p>Dit fenomeen onderstreept een risico dat risk-officers al langere tijd benoemen: schijnbare diversiteit in softwaretoepassingen maskeert een geconcentreerde kwetsbaarheid in de onderliggende hardwarelaag. Wie drie verschillende AI-chatbots inzet als 'redundantie', komt bedrogen uit zodra ze blijken te leunen op dezelfde kwetsbare cloud-infrastructuur.</p>
+
+  <div class="ns-viz ns-viz-concepts" style="margin:24px 0;">
+    <details style="background:#f9f9f9; padding:12px; margin-bottom:8px; border-radius:4px;">
+      <summary style="font-weight:bold; cursor:pointer;">Wat is een Single Point of Failure in de AI-keten?</summary>
+      <p style="margin-top:8px; font-size:14px; color:#444;">Een zwakke plek in de infrastructuur (zoals een specifieke GPU-cloud of netwerkknooppunt) waar meerdere onafhankelijke AI-diensten van afhankelijk zijn. Valt deze plek uit, dan vallen alle afnemers tegelijk stil.</p>
+    </details>
+    <details style="background:#f9f9f9; padding:12px; border-radius:4px;">
+      <summary style="font-weight:bold; cursor:pointer;">Waarom kiezen bedrijven niet direct voor on-premise?</summary>
+      <p style="margin-top:8px; font-size:14px; color:#444;">Het lokaal draaien van state-of-the-art modellen vereist enorme rekenkracht en gespecialiseerde hardware die voor de meeste organisaties te duur en complex is in beheer.</p>
+    </details>
+  </div>
+
+  <h5>De vlucht naar on-premise en multi-vendor</h5>
+  <p>De gezamenlijke storing zal de inkoopstrategie van grote ondernemingen ingrijpend veranderen. Waar tot voor kort werd gekeken naar de scherpste prijs per duizend tokens of de hoogste score op een programmeertest, schuift de prioriteit nu naar robuustheid en spreiding. CIO's en IT-directeuren beraden zich op 'multi-cloud' strategieën voor kunstmatige intelligentie, waarbij workloads dynamisch worden omgeschakeld zodra een lab begint te haperen.</p>
+  <p>Daarnaast groeit de roep om kleinschaligere, open-source modellen die lokaal op eigen servers ('on-premise') gedraaid kunnen worden. Hoewel deze modellen qua pure capaciteit soms achterlopen op de commerciële reuzen van OpenAI, Anthropic of xAI, bieden ze één onbetaalbaar voordeel: volledige controle over de continuïteit, ongeacht wat er in de publieke cloud gebeurt.</p>
+
+  <h5>Conclusie</h5>
+  <p>De gelijktijdige outage van ChatGPT, Claude en Grok markeert het einde van de naïeve beginfase van de AI-revolutie. Kunstmatige intelligentie is getransformeerd van een experimenteel speeltje naar bedrijfskritische nutsvoorziening. Wie afhankelijk is van AI voor zijn dagelijkse bedrijfsvoering, accepteert geen 'best effort' meer. Continuïteit is het nieuwe onderscheidende vermogen geworden; leveranciers die hun uptime niet op orde hebben, verliezen het vertrouwen van de zakelijke markt.</p>
+
+  <div class="bg-footer" style="margin-top:32px; padding-top:16px; border-top:1px solid #ddd; font-size:13px; color:#666;">
+    Bronnen: MarketScale, 9to5Google, industriële analyses over cloud-redundantie en AI-infrastructuur.
+  </div>
+</div>

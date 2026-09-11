@@ -6,7 +6,7 @@
     <atom:link href="https://macpac312.github.io/dagkrant-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Ochtendpodcast bij De Dagkrant (Marit en Max).</description>
     <language>nl-nl</language>
-    <lastBuildDate>Fri, 11 Sep 2026 03:48:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 11:47:41 +0000</lastBuildDate>
     <itunes:category text="News"/>
     <itunes:author>De Dagkrant</itunes:author>
     <itunes:explicit>false</itunes:explicit>
@@ -14,7 +14,7 @@
       <title>De Dagkrant — 2026-09-11</title>
       <guid isPermaLink="false">2026-09-11_01.mp3</guid>
       <pubDate>Fri, 11 Sep 2026 07:00:00 +0000</pubDate>
-      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-11_01.mp3" length="6953362" type="audio/mpeg"/>
+      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-11_01.mp3" length="15055714" type="audio/mpeg"/>
     </item>
     <item>
       <title>De Dagkrant — 2026-09-10</title>
