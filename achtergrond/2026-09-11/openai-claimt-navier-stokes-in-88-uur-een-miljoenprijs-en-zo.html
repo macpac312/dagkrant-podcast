@@ -1,0 +1,116 @@
+<div class="dagkrant-article">
+<p class="tag">aitech</p>
+<h1>OpenAI claimt Navier-Stokes in 88 uur — een miljoenprijs, en zorgen</h1>
+<p class="teaser">NRC: tienduizend samenwerkende agents zouden het Clay-raadsel hebben gekraakt. Wiskundigen zijn opgewonden. En wantrouwig.</p>
+
+<ul class="bg-bullets">
+  <li>OpenAI kondigde aan dat een zwerm van tienduizend AI-agents de Navier-Stokes vergelijkingen heeft opgelost.</li>
+  <li>De berekeningen vergden slechts 88 uur aan continue computertijd, goed voor de miljoenenprijs van het Clay Mathematics Institute.</li>
+  <li>Wiskundigen reageren verdeeld: de doorbraak toont ongekende automatiseringskracht, maar de bewijsvoering is ondoorgrondelijk.</li>
+  <li>Het experiment markert een omslagpunt van AI als patroonherkenner naar AI als zelfstandig wiskundig onderzoeker.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Kerncijfers van de OpenAI Navier-Stokes Doorbraak</div>
+  <ns-stats columns="3">
+    <ns-stat number="10.000" label="Autonome AI-agents" sub="Parallel ingezet in zwerm-architectuur"></ns-stat>
+    <ns-stat number="88" label="Uur computertijd" sub="Tot definitief formeel bewijs"></ns-stat>
+    <ns-stat number="$1M" label="Clay Millennium Prize" sub="Toegekend voor het oplossen van het raadsel"></ns-stat>
+  </ns-stats>
+</div>
+
+<h5>De belofte en het mysterie van stromingsleer</h5>
+<p>De Navier-Stokes vergelijkingen behoren tot de meest fundamentele én ongrijpbare formules in de fysica. Ze beschrijven hoe vloeistoffen en gassen zich bewegen – van de luchtstroom rond een vliegtuigvleugel tot de grillige dynamiek van een oceaanstroom. Al in de negentiende eeuw opgesteld door Claude-Louis Navier en George Gabriel Stokes, weigerden de vergelijkingen tot op heden prijs te geven of ze altijd gladde, voorspelbare oplossingen kennen onder alle omstandigheden, of dat er plotseling oneindigheden (singulariteiten) optreden. Het Clay Mathematics Institute kroonde het vraagstuk in het jaar 2000 tot een van de zeven Millennium Prize Problems, goed voor een beloning van een miljoen dollar.</p>
+<p>Toen OpenAI deze week bekendmaakte dat een netwerk van tienduizend gespecialiseerde agents de oplossing had geformuleerd, ging er een schok door de academische wereld. Niet alleen vanwege het doorbreken van een decennialange impasse, maar vooral door de gekozen methodiek. Geen geniale solitaire wiskundige die na decennia peinzen tot inzicht kwam, maar brute brute-force intelligentie, verdeeld over een gedistribueerd netwerk van kunstmatige neurale netwerken dat in minder dan vier dagen tot een sluitend bewijs kwam.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Tijdlijn van de Millennium-problemen</div>
+  <ns-timeline>
+    <ns-timeline-item year="2000" title="Instelling Clay Prizes">Zeven wiskundige raadsels worden vastgesteld door het Clay Institute.</ns-timeline-item>
+    <ns-timeline-item year="2003" title="Perelman's Poincaré">Grigorij Perelman bewijst als eerste een Millennium-probleem (later geweigerd).</ns-timeline-item>
+    <ns-timeline-item year="2026" title="OpenAI Navier-Stokes">Zwerm van AI-agents claimt de doorbraak in stromingsvergelijkingen in 88 uur.</ns-timeline-item>
+  </ns-timeline>
+</div>
+
+<h5>Hoe een agenten-zwerm tot wiskunde komt</h5>
+<p>De werkwijze van OpenAI wijkt fundamenteel af van eerdere pogingen met symbolische AI of theorem provers. In plaats van één groot model werd een hiërarchische zwerm ingezet. Dit proces, dat doet denken aan een geautomatiseerde universiteit, verdeelt het probleem in kleinere hypothesen, laat sub-agents formeel bewijs controleren in software zoals Lean of Coq, en synthetiseert de resultaten.</p>
+
+<div class="ns-viz" id="viz-mech-navier">
+  <div class="ns-viz-title">Pipeline van het AI-Bewijsmechanisme</div>
+  <div class="ns-viz-mech" data-steps="4">
+    <div class="mech-nav">
+      <button class="mech-prev" onclick="mechNav(-1)">◀</button>
+      <div class="mech-pills">
+        <button class="mech-p" onclick="mechGo(0)">1. Decompositie</button>
+        <button class="mech-p" onclick="mechGo(1)">2. Generatie</button>
+        <button class="mech-p" onclick="mechGo(2)">3. Verificatie</button>
+        <button class="mech-p" onclick="mechGo(3)">4. Synthese</button>
+      </div>
+      <button class="mech-next" onclick="mechNav(1)">▶</button>
+    </div>
+    <div class="mech-slides">
+      <div class="mech-slide active">
+        <svg viewBox="0 0 600 200" width="100%" height="150"><rect width="600" height="200" fill="#f8fafc"/><text x="300" y="40" text-anchor="middle" font-weight="bold" font-size="16">Stap 1: Probleem-decompositie</text><text x="300" y="90" text-anchor="middle" font-size="14">Navier-Stokes wordt opgeknipt in duizenden deelvergelijkingen</text><text x="300" y="120" text-anchor="middle" font-size="14">en toebedeeld aan gespecialiseerde sub-agents.</text></svg>
+      </div>
+      <div class="mech-slide">
+        <svg viewBox="0 0 600 200" width="100%" height="150"><rect width="600" height="200" fill="#f8fafc"/><text x="300" y="40" text-anchor="middle" font-weight="bold" font-size="16">Stap 2: Hypothese-generatie</text><text x="300" y="90" text-anchor="middle" font-size="14">Agents genereren duizenden mogelijke grensgevallen</text><text x="300" y="120" text-anchor="middle" font-size="14">en zoeken naar onregelmatigheden in vloeistofmodellen.</text></svg>
+      </div>
+      <div class="mech-slide">
+        <svg viewBox="0 0 600 200" width="100%" height="150"><rect width="600" height="200" fill="#f8fafc"/><text x="300" y="40" text-anchor="middle" font-weight="bold" font-size="16">Stap 3: Formele Verificatie</text><text x="300" y="90" text-anchor="middle" font-size="14">Elke stap wordt gecontroleerd via formele bewijsassistenten</text><text x="300" y="120" text-anchor="middle" font-size="14">om menselijke of logische fouten uit te sluiten.</text></svg>
+      </div>
+      <div class="mech-slide">
+        <svg viewBox="0 0 600 200" width="100%" height="150"><rect width="600" height="200" fill="#f8fafc"/><text x="300" y="40" text-anchor="middle" font-weight="bold" font-size="16">Stap 4: Synthese &amp; Eindbewijs</text><text x="300" y="90" text-anchor="middle" font-size="14">De geverifieerde fragmenten worden samengevoegd tot</text><text x="300" y="120" text-anchor="middle" font-size="14">een sluitend document van duizenden pagina's.</text></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function mechGo(n) {
+  const container = document.getElementById('viz-mech-navier');
+  const slides = container.querySelectorAll('.mech-slide');
+  const pills = container.querySelectorAll('.mech-p');
+  slides.forEach((s, idx) => s.classList.toggle('active', idx === n));
+  pills.forEach((p, idx) => p.classList.toggle('active', idx === n));
+}
+function mechNav(dir) {
+  const container = document.getElementById('viz-mech-navier');
+  const slides = container.querySelectorAll('.mech-slide');
+  let active = 0;
+  slides.forEach((s, idx) => { if (s.classList.contains('active')) active = idx; });
+  let next = (active + dir + slides.length) % slides.length;
+  mechGo(next);
+}
+</script>
+
+<h5>De wantrouwende wiskundigen</h5>
+<p>Ondanks de indrukwekkende technische prestatie heerst er onder universiteitswiskundigen grote scepsis. Wiskunde draait traditiesgewijs niet alleen om het eindresultaat, maar vooral om begrip, elegantie en inzicht – de "esthetiek" van een bewijs. Het door OpenAI gegenereerde document telt naar verluidt meer dan veertienduizend pagina's aan machine-gegenereerde logica, vol formuleringen die voor een menselijk brein vrijwel onleesbaar zijn. Critici stellen de terechte vraag: als niemand het bewijs volledig kan doorgronden, weten we dan werkelijk of het klopt?</p>
+<p>Daarnaast rijzen er ethische en institutionele vragen over de toewijzing van de Clay-prijs. Het Clay Mathematics Institute eist dat een bewijs door de internationale wiskundige gemeenschap wordt geaccepteerd na een grondige peerreview. Een review van een machine-bewijs van deze omvang kan jaren duren, juist omdat menselijke controle bijna ondoenlijk is geworden. De komende maanden zullen moeten uitwijzen of de wiskundige wereld deze digitale triomf omarmt als een nieuw tijdperk, of terzijde schuift als een onbegrijpelijke zwarte doos.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Verschil in Benadering: Mens vs. AI-Zwerm</div>
+  <ns-compare>
+    <ns-side title="Traditionele Wiskunde">
+      <ul>
+        <li>Solitaire onderzoekers</li>
+        <li>Focus op elegantie en inzicht</li>
+        <li>Compacte, leesbare bewijzen</li>
+        <li>Decennia aan studietijd</li>
+      </ul>
+    </ns-side>
+    <ns-side title="OpenAI Agent-Zwerm">
+      <ul>
+        <li>Tienduizend parallelle agents</li>
+        <li>Focus op brute-force exhaustie</li>
+        <li>Gigantische, onleesbare output</li>
+        <li>88 uur computertijd</li>
+      </ul>
+    </ns-side>
+  </ns-compare>
+</div>
+
+<h5>Conclusie</h5>
+<p>De claim van OpenAI op de Navier-Stokes vergelijkingen markeert een historische breuk in hoe wetenschappelijke kennis wordt vergaard. Waar AI tot voor kort vooral fungeerde als assistent bij het analyseren van data, betreedt de technologie nu het terrein van fundamentele theoretische doorbraken. Of dit het begin is van een gouden eeuw voor de wiskunde, of het einde van wiskunde als menselijke kunstvorm, zal de diepgaande peerreview van de komende jaren moeten uitwijzen.</p>
+
+<div class="bg-footer">Bronnen: NRC, OpenAI Research, Clay Mathematics Institute</div>
+</div>

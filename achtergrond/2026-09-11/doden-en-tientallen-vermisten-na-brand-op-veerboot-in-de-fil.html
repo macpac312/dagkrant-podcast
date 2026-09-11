@@ -1,0 +1,388 @@
+<style>
+  .bg-bullets {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    list-style-type: square;
+  }
+  .bg-bullets li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #1e293b;
+  }
+  .ns-viz-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  .ns-stat-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .ns-stat-card.highlight {
+    border-color: #ef4444;
+    background: #fef2f2;
+  }
+  .ns-stat-val {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.2;
+  }
+  .ns-stat-card.highlight .ns-stat-val {
+    color: #b91c1c;
+  }
+  .ns-stat-lbl {
+    display: block;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+  .ns-viz-timeline {
+    border-left: 3px solid #3b82f6;
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+  }
+  .ns-timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .ns-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.95rem;
+    top: 0.25rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3b82f6;
+    border: 2px solid #fff;
+  }
+  .ns-time {
+    font-weight: 700;
+    color: #3b82f6;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .ns-timeline-content strong {
+    display: block;
+    font-size: 1rem;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+  }
+  .ns-timeline-content p {
+    font-size: 0.9rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .ns-viz-mech {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  .ns-mech-nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+    overflow-x: auto;
+  }
+  .ns-mech-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .ns-mech-btn.active {
+    background: #3b82f6;
+    color: #fff;
+  }
+  .ns-mech-slides {
+    position: relative;
+    min-height: 240px;
+  }
+  .ns-mech-slide {
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 640px) {
+    .ns-mech-slide {
+      grid-template-columns: 1.2fr 1.8fr;
+    }
+  }
+  .ns-mech-slide.active {
+    display: grid;
+  }
+  .ns-mech-graphic {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 150px;
+  }
+  .ns-mech-text h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+    font-size: 1.1rem;
+  }
+  .ns-mech-text p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .ns-mech-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+  }
+  .ns-mech-ctrl-btn {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #475569;
+    transition: all 0.2s;
+  }
+  .ns-mech-ctrl-btn:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+  }
+  .bg-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+</style>
+
+<ul class="bg-bullets">
+  <li><strong>Dodental bevestigd:</strong> Zeker vijf opvarenden zijn omgekomen bij de plotselinge brand op de veerboot.</li>
+  <li><strong>Omvangrijke vermissing:</strong> De Filipijnse kustwacht houdt formeel rekening met 86 vermiste personen.</li>
+  <li><strong>Infrastructuur onder druk:</strong> Veerboten vormen de cruciale levensader tussen de duizenden eilanden van de archipel.</li>
+  <li><strong>Reddingsoperatie actief:</strong> Lokale vissers, patrouilleschepen en helikopters kammen het rampgebied systematisch af.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-stats">
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">5</span>
+      <span class="ns-stat-lbl">Bevestigde doden</span>
+    </div>
+    <div class="ns-stat-card highlight">
+      <span class="ns-stat-val">86</span>
+      <span class="ns-stat-lbl">Geregistreerde vermisten</span>
+    </div>
+    <div class="ns-stat-card">
+      <span class="ns-stat-val">1</span>
+      <span class="ns-stat-lbl">Getroffen veerboot</span>
+    </div>
+  </div>
+</div>
+
+<h5>Een fatale oversteek in de archipel</h5>
+<p>De Filipijnse archipel, bestaande uit meer dan zevenduizend eilanden, is voor haar interne logistiek en personenvervoer fundamenteel afhankelijk van maritieme verbindingen. Veerboten vormen hier de ruggengraat van de economie en de samenleving. Wanneer een dergelijk schip vlam vat, is dat niet louter een lokaal incident, maar een directe breuk in de nationale infrastructuur. De brand die gisteren uitbrak, heeft inmiddels aan zeker vijf mensen het leven gekost. De schaal van de tragedie tekent zich echter pas echt af bij de omvang van de vermissingen: de kustwacht houdt momenteel rekening met 86 personen die nog niet zijn teruggevonden.</p>
+
+<h5>De logistieke nachtmerrie van passagierslijsten</h5>
+<p>Een van de grootste uitdagingen bij maritieme rampen in deze regio is de betrouwbaarheid van de passagierslijsten. Vaak wijken de officiële manifesten af van het werkelijke aantal opvarenden aan boord. Dit bemoeilijkt de reddingsoperatie aanzienlijk. De kustwacht hanteert de 86 vermisten momenteel als een 'werkgetal', wat impliceert dat de werkelijke omvang van de ramp pas in de loop van de komende dagen duidelijk zal worden. Het identificeren van overlevenden en het matchen van hun namen met de geregistreerde passagiers is een monnikenwerk dat onder hoge tijdsdruk in de lokale havens wordt uitgevoerd.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-timeline">
+    <div class="ns-timeline-item">
+      <span class="ns-time">02:30</span>
+      <div class="ns-timeline-content">
+        <strong>Brand breekt uit</strong>
+        <p>In de vroege ochtenduren ontstaat er brand in het machinecompartiment van de veerboot.</p>
+      </div>
+    </div>
+    <div class="ns-timeline-item">
+      <span class="ns-time">03:15</span>
+      <div class="ns-timeline-content">
+        <strong>Eerste noodoproep</strong>
+        <p>De kustwacht ontvangt het noodsignaal en mobiliseert direct nabijgelegen patrouilleschepen.</p>
+      </div>
+    </div>
+    <div class="ns-timeline-item">
+      <span class="ns-time">06:00</span>
+      <div class="ns-timeline-content">
+        <strong>Eerste bergingen</strong>
+        <p>Vijf lichamen worden geborgen; tientallen overlevenden worden door vissersboten uit het water gehaald.</p>
+      </div>
+    </div>
+    <div class="ns-timeline-item">
+      <span class="ns-time">12:00</span>
+      <div class="ns-timeline-content">
+        <strong>Zoekgebied uitgebreid</strong>
+        <p>Stromingsmodellen worden ingezet om het zoekgebied voor de 86 vermisten te vergroten.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>Veiligheidsnormen en toezicht onder de loep</h5>
+<p>Deze ramp legt opnieuw de structurele kwetsbaarheid bloot van de maritieme sector in Zuidoost-Azië. Verouderde vlootcapaciteit, gebrekkig onderhoud van machinekamers en een chronisch tekort aan handhaving op het gebied van veiligheidsvoorschriften zijn terugkerende thema's bij dit soort incidenten. Hoewel de exacte oorzaak van deze specifieke brand nog moet worden vastgesteld, wijzen vroege rapporten in de richting van een technisch mankement in het motorcompartiment. Zonder stringente hervormingen en strenger toezicht op de naleving van internationale maritieme standaarden blijft de archipel kwetsbaar voor dergelijke catastrofes.</p>
+
+<div class="ns-viz-mech" id="sar-mech">
+  <div class="ns-mech-nav">
+    <button class="ns-mech-btn active" data-step="0">1. Lokalisatie</button>
+    <button class="ns-mech-btn" data-step="1">2. Rasterzoektocht</button>
+    <button class="ns-mech-btn" data-step="2">3. Identificatie</button>
+  </div>
+  
+  <div class="ns-mech-slides">
+    <div class="ns-mech-slide active">
+      <div class="ns-mech-graphic">
+        <svg viewBox="0 0 200 120" width="100%" height="100%">
+          <rect width="200" height="120" fill="#e0f2fe" rx="6"/>
+          <path d="M40,80 L160,80 L140,100 L60,100 Z" fill="#475569"/>
+          <path d="M80,80 L80,60 L120,60 L120,80" fill="none" stroke="#475569" stroke-width="4"/>
+          <path d="M90,55 Q95,40 90,30 T100,15" fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="100" cy="60" r="30" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+      <div class="ns-mech-text">
+        <h4>Fase 1: Alarm & Lokalisatie</h4>
+        <p>Direct na de noodoproep bepalen satellieten en kuststations de exacte coördinaten. Stromingsmodellen berekenen de drift van eventuele reddingsvlotten en drenkelingen.</p>
+      </div>
+    </div>
+
+    <div class="ns-mech-slide">
+      <div class="ns-mech-graphic">
+        <svg viewBox="0 0 200 120" width="100%" height="100%">
+          <rect width="200" height="120" fill="#e0f2fe" rx="6"/>
+          <line x1="20" y1="20" x2="180" y2="20" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 2"/>
+          <line x1="20" y1="50" x2="180" y2="50" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 2"/>
+          <line x1="20" y1="80" x2="180" y2="80" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 2"/>
+          <line x1="20" y1="110" x2="180" y2="110" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 2"/>
+          <path d="M20,20 L100,20 L100,50 L20,50 L20,80 L100,80" fill="none" stroke="#ef4444" stroke-width="2"/>
+          <circle cx="100" cy="80" r="4" fill="#ef4444"/>
+        </svg>
+      </div>
+      <div class="ns-mech-text">
+        <h4>Fase 2: Sector- en Rasterzoektocht</h4>
+        <p>Schepen en helikopters kammen de zee systematisch af volgens een 'expanding square'- of 'parallel track'-patroon om de kans op visuele detectie te maximaliseren.</p>
+      </div>
+    </div>
+
+    <div class="ns-mech-slide">
+      <div class="ns-mech-graphic">
+        <svg viewBox="0 0 200 120" width="100%" height="100%">
+          <rect width="200" height="120" fill="#e0f2fe" rx="6"/>
+          <rect x="0" y="80" width="200" height="40" fill="#94a3b8"/>
+          <polygon points="60,80 100,40 140,80" fill="#3b82f6"/>
+          <rect x="90" y="60" width="20" height="20" fill="#ffffff"/>
+          <rect x="10" y="60" width="30" height="20" fill="#ef4444" rx="2"/>
+        </svg>
+      </div>
+      <div class="ns-mech-text">
+        <h4>Fase 3: Berging en Registratie</h4>
+        <p>Geredde passagiers worden naar opvangcentra gebracht voor medische triage. De passagierslijst wordt handmatig vergeleken met de overlevenden om de exacte status van vermisten te bepalen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ns-mech-controls">
+    <button class="ns-mech-ctrl-btn" id="mech-prev">◀</button>
+    <button class="ns-mech-ctrl-btn" id="mech-play">Play</button>
+    <button class="ns-mech-ctrl-btn" id="mech-next">▶</button>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>De brand op de veerboot onderstreept de precaire balans tussen mobiliteit en veiligheid in een eilandnatie. Terwijl de zoek- en reddingsactie op zee onverminderd doorgaat, groeit de vrees dat het dodental de komende dagen drastisch zal stijgen. De Filipijnse autoriteiten staan voor de taak om niet alleen de vermisten op te sporen, maar ook om de structurele weeffouten in hun maritieme toezicht definitief aan te pakken.</p>
+
+<div class="bg-footer">
+  Bronnen: <a href="https://nos.nl/l/2630401" target="_blank" rel="noopener noreferrer">NOS</a>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const steps = document.querySelectorAll('#sar-mech .ns-mech-btn');
+    const slides = document.querySelectorAll('#sar-mech .ns-mech-slide');
+    const prevBtn = document.getElementById('mech-prev');
+    const nextBtn = document.getElementById('mech-next');
+    const playBtn = document.getElementById('mech-play');
+    let currentStep = 0;
+    let interval = null;
+
+    function showStep(index) {
+      steps.forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+      currentStep = index;
+    }
+
+    steps.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        showStep(index);
+        clearInterval(interval);
+        interval = null;
+        playBtn.textContent = 'Play';
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      let index = currentStep - 1;
+      if (index < 0) index = steps.length - 1;
+      showStep(index);
+      clearInterval(interval);
+      interval = null;
+      playBtn.textContent = 'Play';
+    });
+
+    nextBtn.addEventListener('click', () => {
+      let index = (currentStep + 1) % steps.length;
+      showStep(index);
+      clearInterval(interval);
+      interval = null;
+      playBtn.textContent = 'Play';
+    });
+
+    playBtn.addEventListener('click', () => {
+      if (interval) {
+        clearInterval(interval);
+        interval = null;
+        playBtn.textContent = 'Play';
+      } else {
+        playBtn.textContent = 'Pause';
+        interval = setInterval(() => {
+          let index = (currentStep + 1) % steps.length;
+          showStep(index);
+        }, 3000);
+      }
+    });
+  });
+</script>

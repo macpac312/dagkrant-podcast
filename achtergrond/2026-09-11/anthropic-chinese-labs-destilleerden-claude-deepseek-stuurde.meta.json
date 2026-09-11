@@ -1,0 +1,21 @@
+{
+  "title": "Anthropic: Chinese labs destilleerden Claude — DeepSeek stuurde prompts door",
+  "summary": "Alibaba, Moonshot en DeepSeek zouden Claude hebben gebruikt om eigen modellen te trainen. Tweakers: klanten wisten van niks.",
+  "sources": [
+    "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+    "https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html",
+    "https://tweakers.net/nieuws/252032/deepseek-stuurde-prompts-door-naar-claude-zonder-dat-klanten-dat-wisten.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-11",
+  "slug": "anthropic-chinese-labs-destilleerden-claude-deepseek-stuurde",
+  "tts_slug": "anthropic-chinese-labs-destilleerden-claude-deepseek-stuurde",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-11T03:46:03",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-11/anthropic-chinese-labs-destilleerden-claude-deepseek-stuurde.html",
+  "mode": "default",
+  "from_plan": true
+}

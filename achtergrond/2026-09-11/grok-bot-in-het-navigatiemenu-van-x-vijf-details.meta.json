@@ -1,0 +1,20 @@
+{
+  "title": "Grok Bot in het navigatiemenu van X — vijf details",
+  "summary": "De knop zit waar de timeline zat. De bot is geen tabblad meer, hij is de weg.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOWl5TTN5dWFnLWl1UnRHMklYdGh4N1hJNjVVZnotLWZBTzM4RmV4dnRXTjhWUTRBNmFuV3dfeDQwOUdaQVhUU2pReTlGbDloUU02U1c4eFlncW9reDI0TU5FaXJ4NEZNZjdfV250X2t6NGdvZnU1M084YzhBZ1JCdkxqbGl6dGs?oc=5",
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLTNCWVltS2pvbm1zaGFha3dBeXZHcTFodzZRUHlHeE9VUEtvd2Y0NjE5aC0yU05odnBZem9JRk5xUGd3NmhGTDFBVEZkdG5LZlpQcXpQcUFuZi04WThSZ204YVBnTW45SmFaQzBBdHcyeHlEZkV5ZG0wTGtEX2JVNTFXaldTM2FxdDRwdnktYjdhVERz?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-11",
+  "slug": "grok-bot-in-het-navigatiemenu-van-x-vijf-details",
+  "tts_slug": "grok-bot-in-het-navigatiemenu-van-x-vijf-details",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-11T03:46:03",
+  "size_kb": 1,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-11/grok-bot-in-het-navigatiemenu-van-x-vijf-details.html",
+  "mode": "default",
+  "from_plan": true
+}

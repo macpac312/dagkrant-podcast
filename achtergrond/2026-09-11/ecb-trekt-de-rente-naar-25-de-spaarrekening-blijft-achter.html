@@ -1,0 +1,149 @@
+<ul class="bg-bullets">
+  <li><strong>Beleidsrente naar 2,5%:</strong> De ECB verhoogt het depositotarief met 25 basispunten om de hardnekkige inflatie te beteugelen.</li>
+  <li><strong>Olieprijs als aanjager:</strong> De aanhoudend hoge Brent-olieprijs (rond de $108 per vat) voedt de inflatie en dwingt Frankfurt tot actie.</li>
+  <li><strong>Duurder lenen:</strong> Hypotheekrentes en commerciële leentarieven stijgen direct mee met de verhoging van de centrale bank.</li>
+  <li><strong>Achterblijvende spaarrente:</strong> Grootbanken verhogen de spaarrentes slechts mondjesmaat, wat leidt tot grotere rentemarges voor banken.</li>
+</ul>
+
+<div class="ns-viz ns-viz-gauge">
+  <div class="ns-viz-title">ECB Depositorente</div>
+  <div class="ns-viz-gauge-container" style="max-width: 240px; margin: 0 auto; text-align: center; padding: 15px 0;">
+    <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+      <path d="M20,100 A80,80 0 0,1 180,100" fill="none" stroke="#e5e7eb" stroke-width="16" stroke-linecap="round"/>
+      <path d="M20,100 A80,80 0 0,1 100,20" fill="none" stroke="#0284c7" stroke-width="16" stroke-linecap="round"/>
+      <line x1="100" y1="100" x2="100" y2="25" stroke="#0f172a" stroke-width="4" stroke-linecap="round" />
+      <circle cx="100" cy="100" r="8" fill="#0f172a"/>
+      <text x="100" y="90" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#0f172a">2,50%</text>
+      <text x="100" y="110" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6b7280">Doelbereik max 5,0%</text>
+    </svg>
+  </div>
+</div>
+
+<div class="ns-viz ns-viz-compare">
+  <div class="ns-viz-title">De Rente-Kloof</div>
+  <div class="ns-viz-compare-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 15px 0;">
+    <div class="ns-viz-compare-card" style="background: #f0f9ff; border: 1px solid #bae6fd; padding: 15px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 12px; text-transform: uppercase; color: #0369a1; font-weight: bold; margin-bottom: 8px;">ECB Depositorente</div>
+      <div style="font-size: 32px; font-weight: bold; color: #0369a1;">2,50%</div>
+      <div style="font-size: 11px; color: #0c4a6e; margin-top: 8px;">Het tarief dat banken ontvangen bij de ECB.</div>
+    </div>
+    <div class="ns-viz-compare-card" style="background: #fef2f2; border: 1px solid #fecaca; padding: 15px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 12px; text-transform: uppercase; color: #b91c1c; font-weight: bold; margin-bottom: 8px;">Gem. Spaarrente</div>
+      <div style="font-size: 32px; font-weight: bold; color: #b91c1c;">1,25%</div>
+      <div style="font-size: 11px; color: #7f1d1d; margin-top: 8px;">Het gemiddelde tarief voor consumenten.</div>
+    </div>
+  </div>
+</div>
+
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+  <div class="ns-viz-title">Het Transmissiemechanisme</div>
+  <div class="ns-viz-mech-subtitle">Hoe de renteverhoging doorwerkt in de economie</div>
+  
+  <div class="ns-viz-mech-pills" style="display: flex; gap: 8px; margin-bottom: 15px; overflow-x: auto; padding-bottom: 5px;">
+    <button class="ns-viz-mech-pill active" data-fase="0" style="flex: 1; padding: 8px; border: 1px solid #e2e8f0; background: #fff; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: bold;"><span class="num" style="display:block; font-size: 10px; color: #64748b;">1</span><span class="label">ECB Besluit</span></button>
+    <button class="ns-viz-mech-pill" data-fase="1" style="flex: 1; padding: 8px; border: 1px solid #e2e8f0; background: #fff; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: bold;"><span class="num" style="display:block; font-size: 10px; color: #64748b;">2</span><span class="label">Geldmarkt</span></button>
+    <button class="ns-viz-mech-pill" data-fase="2" style="flex: 1; padding: 8px; border: 1px solid #e2e8f0; background: #fff; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: bold;"><span class="num" style="display:block; font-size: 10px; color: #64748b;">3</span><span class="label">Leningen</span></button>
+    <button class="ns-viz-mech-pill" data-fase="3" style="flex: 1; padding: 8px; border: 1px solid #e2e8f0; background: #fff; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: bold;"><span class="num" style="display:block; font-size: 10px; color: #64748b;">4</span><span class="label">Spaarders</span></button>
+  </div>
+
+  <div class="ns-viz-mech-stages">
+    <div class="ns-viz-mech-fase active" data-fase="0">
+      <div class="ns-viz-mech-illu" style="text-align: center; margin-bottom: 10px;">
+        <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; background: #f8fafc; border-radius: 8px;">
+          <rect width="320" height="160" fill="#f8fafc"/>
+          <path d="M40,120 L160,40 L280,120 Z" fill="#cbd5e1" />
+          <rect x="130" y="60" width="60" height="60" fill="#0284c7" />
+          <text x="160" y="95" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">ECB</text>
+          <text x="160" y="140" text-anchor="middle" fill="#0f172a" font-family="sans-serif" font-size="12" font-weight="bold">Renteverhoging naar 2,5%</text>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-info">
+        <h6 style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">Fase 1: ECB Besluit</h6>
+        <p class="korte" style="margin: 0 0 5px 0; font-size: 12px; font-weight: bold; color: #475569;">De centrale bank verhoogt het depositotarief.</p>
+        <p class="uitleg" style="margin: 0; font-size: 12px; color: #64748b;">Om de inflatie te bestrijden verhoogt de ECB de rente die commerciële banken ontvangen op hun reserves in Frankfurt.</p>
+      </div>
+    </div>
+
+    <div class="ns-viz-mech-fase" data-fase="1" style="display: none;">
+      <div class="ns-viz-mech-illu" style="text-align: center; margin-bottom: 10px;">
+        <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; background: #f8fafc; border-radius: 8px;">
+          <rect width="320" height="160" fill="#f8fafc"/>
+          <circle cx="80" cy="80" r="30" fill="#94a3b8" />
+          <circle cx="240" cy="80" r="30" fill="#94a3b8" />
+          <path d="M120,70 L200,70" stroke="#0284c7" stroke-width="4" />
+          <path d="M200,90 L120,90" stroke="#0284c7" stroke-width="4" />
+          <text x="80" y="84" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="11" font-weight="bold">Bank A</text>
+          <text x="240" y="84" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="11" font-weight="bold">Bank B</text>
+          <text x="160" y="50" text-anchor="middle" fill="#0f172a" font-family="sans-serif" font-size="12" font-weight="bold">Geldmarktrente stijgt</text>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-info">
+        <h6 style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">Fase 2: Geldmarktreactie</h6>
+        <p class="korte" style="margin: 0 0 5px 0; font-size: 12px; font-weight: bold; color: #475569;">Tarieven tussen banken stijgen onmiddellijk.</p>
+        <p class="uitleg" style="margin: 0; font-size: 12px; color: #64748b;">De Euribor-tarieven passen zich direct aan de nieuwe ECB-rente aan, wat de basis vormt voor alle commerciële leningen.</p>
+      </div>
+    </div>
+
+    <div class="ns-viz-mech-fase" data-fase="2" style="display: none;">
+      <div class="ns-viz-mech-illu" style="text-align: center; margin-bottom: 10px;">
+        <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; background: #f8fafc; border-radius: 8px;">
+          <rect width="320" height="160" fill="#f8fafc"/>
+          <rect x="40" y="40" width="100" height="80" rx="6" fill="#fee2e2" stroke="#fca5a5" stroke-width="2" />
+          <rect x="180" y="40" width="100" height="80" rx="6" fill="#fee2e2" stroke="#fca5a5" stroke-width="2" />
+          <text x="90" y="75" text-anchor="middle" fill="#991b1b" font-family="sans-serif" font-size="12" font-weight="bold">Hypotheek</text>
+          <text x="90" y="100" text-anchor="middle" fill="#991b1b" font-family="sans-serif" font-size="16" font-weight="bold">↑ Duurder</text>
+          <text x="230" y="75" text-anchor="middle" fill="#991b1b" font-family="sans-serif" font-size="12" font-weight="bold">Bedrijfslening</text>
+          <text x="230" y="100" text-anchor="middle" fill="#991b1b" font-family="sans-serif" font-size="16" font-weight="bold">↑ Duurder</text>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-info">
+        <h6 style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">Fase 3: Leningen &amp; Hypotheken</h6>
+        <p class="korte" style="margin: 0 0 5px 0; font-size: 12px; font-weight: bold; color: #475569;">Kredietverlening wordt direct kostbaarder.</p>
+        <p class="uitleg" style="margin: 0; font-size: 12px; color: #64748b;">Banken berekenen de hogere marktrente direct door aan consumenten en bedrijven die geld willen lenen.</p>
+      </div>
+    </div>
+
+    <div class="ns-viz-mech-fase" data-fase="3" style="display: none;">
+      <div class="ns-viz-mech-illu" style="text-align: center; margin-bottom: 10px;">
+        <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; background: #f8fafc; border-radius: 8px;">
+          <rect width="320" height="160" fill="#f8fafc"/>
+          <rect x="60" y="40" width="200" height="80" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="2" />
+          <text x="160" y="75" text-anchor="middle" fill="#92400e" font-family="sans-serif" font-size="12" font-weight="bold">Spaarrekening</text>
+          <text x="160" y="100" text-anchor="middle" fill="#92400e" font-family="sans-serif" font-size="16" font-weight="bold">→ Blijft achter</text>
+        </svg>
+      </div>
+      <div class="ns-viz-mech-info">
+        <h6 style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">Fase 4: Spaarders Wachten</h6>
+        <p class="korte" style="margin: 0 0 5px 0; font-size: 12px; font-weight: bold; color: #475569;">De spaarrente stijgt vertraagd en beperkt.</p>
+        <p class="uitleg" style="margin: 0; font-size: 12px; color: #64748b;">Door een overvloed aan spaargeld hebben banken weinig prikkels om de spaarrente snel te verhogen, wat hun marges vergroot.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ns-viz-mech-controls" style="display: flex; align-items: center; justify-content: space-between; margin-top: 15px; background: #f1f5f9; padding: 8px 12px; border-radius: 6px;">
+    <button class="ns-viz-mech-prev" title="Vorige fase" style="background: none; border: none; cursor: pointer; font-size: 16px;">◀</button>
+    <button class="ns-viz-mech-play" title="Auto-play" style="background: none; border: none; cursor: pointer; font-size: 16px;"><span class="play-icon">▶</span></button>
+    <button class="ns-viz-mech-next" title="Volgende fase" style="background: none; border: none; cursor: pointer; font-size: 16px;">▶</button>
+    <span class="ns-viz-mech-progress" style="font-size: 12px; font-weight: bold; color: #475569;">1/4</span>
+  </div>
+</div>
+
+<h5>De jacht op de inflatiegeest</h5>
+<p>De Europese Centrale Bank (ECB) zet haar verkrappingscampagne onverminderd voort. Met een verhoging van het depositotarief naar 2,5 procent geeft Frankfurt een krachtig signaal af. Deze stap, de tweede verhoging in 2026, is geen voorzichtige fijnregeling meer te noemen. De directe aanleiding ligt in de hardnekkige inflatiedruk, mede aangewakkerd door de olieprijs die hardnekkig rond de 108 dollar per vat Brent schommelt. President Christine Lagarde benadrukte tijdens de persconferentie dat de centrale bank vastberaden blijft om de inflatie terug te brengen naar de doelstelling van twee procent. Zolang de energieprijzen de pan uit rijzen, heeft de ECB weinig andere keuzes dan de monetaire teugels strakker aan te trekken.</p>
+
+<h5>De asymmetrische transmissie</h5>
+<p>De transmissie van het monetaire beleid verloopt echter asymmetrisch, en dat is voelbaar aan de keukentafel. Wie de inflatie met de rente beantwoordt, beantwoordt onvermijdelijk ook de hypotheekrente. Geldverstrekkers hebben de tarieven voor langlopende leningen en hypotheken de afgelopen maanden al anticiperend opgeschroefd. Voor huizenkopers betekent dit direct hogere maandlasten en een lagere leencapaciteit. Aan de andere kant van de balans blijft de spaarder echter in de kou staan. De rente op reguliere spaarrekeningen stijgt slechts mondjesmaat. Commerciële banken verhogen hun spaartarieven niet in hetzelfde tempo als de ECB-tarieven, waardoor de zogenaamde rentemarge — het verschil tussen wat banken ontvangen en wat zij uitkeren — aanzienlijk groeit.</p>
+
+<h5>Spaarders subsidiëren de verkrapping</h5>
+<p>Dit achterblijven van de spaarrente is geen toeval, maar een structureel fenomeen. Banken beschikken over een overvloed aan liquiditeit en voelen weinig concurrentieprikkels om agressief om spaargeld te strijden. De spaarder die niet overstapt naar alternatieve producten of buitenlandse banken, subsidieert in feite de monetaire verkrapping. Terwijl de ECB probeert de vraag in de economie af te remmen door lenen duurder te maken, zorgt de achterblijvende spaarrente ervoor dat de koopkracht van spaargeld door de inflatie verder uitholt. Dit creëert een dubbele klem voor de consument: het leven wordt duurder, lenen kostbaarder, en het spaargeld rendeert nauwelijks extra.</p>
+
+<h5>Conclusie</h5>
+<p>De verhoging naar 2,5 procent markeert een nieuwe fase in het Europese monetaire beleid. De ECB kiest resoluut voor inflatiebestrijding, zelfs als dat de economische groei afremt. Voor de burger is de realiteit tweeslachtig: de kosten voor schulden stijgen direct, terwijl de vruchten van een hogere rente op de spaarrekening voorlopig uitblijven. De kloof tussen de ECB-beleidsrente en de spaarrente blijft voorlopig een winstgevende buffer voor de bankensector.</p>
+
+<div class="bg-footer">Bronnen:
+  <ul>
+    <li><a href="https://nos.nl/l/2630449" target="_blank">NOS Nieuws</a></li>
+    <li><a href="https://fd.nl/financiele-markten/1611948/ecb-trekt-rente-verder-op-om-inflatie-in-te-dammen" target="_blank">Het Financieele Dagblad</a></li>
+    <li><a href="https://www.ad.nl/economie/ecb-verhoogt-rente-opnieuw-hypotheek-en-spaarrentes-zullen-verder-stijgen~a79fbe74/" target="_blank">Algemeen Dagblad</a></li>
+  </ul>
+</div>

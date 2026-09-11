@@ -1,0 +1,120 @@
+<ul class="bg-bullets">
+  <li><strong>AEX onder druk:</strong> De Amsterdamse hoofdgraadmeter leverde 1,8 procent in en sloot op een stand van 1093 punten.</li>
+  <li><strong>Olieprijs als katalysator:</strong> Een olieprijs van $108 per vat wakkert de vrees aan voor hardnekkige inflatie en een langdurig hoge rente.</li>
+  <li><strong>Techsector in het rood:</strong> Stijgende kapitaalmarktrentes zetten de waarderingen van groei- en cloudaandelen stevig onder druk.</li>
+  <li><strong>Apple als baken:</strong> Tegen de rode trend in wist het aandeel Apple winst te boeken, waarmee het zich ontpopte als de uitzondering op de markt.</li>
+</ul>
+
+<div class="ns-viz">
+  <!-- TYPE 9: Gauge voor Olieprijs -->
+  <div class="ns-viz-gauge" data-value="108" data-min="60" data-max="130" data-title="Olieprijs (Brent per vat)" data-unit="$" data-threshold="100">
+    <div class="gauge-container" style="text-align: center; padding: 15px; background: #f8fafc; border-radius: 8px; margin-bottom: 15px;">
+      <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; display: block; margin-bottom: 5px; font-weight: bold;">Marktdruk: Brent Crude</span>
+      <svg viewBox="0 0 100 50" style="width: 160px; margin: 0 auto; display: block;">
+        <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+        <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round" stroke-dasharray="125.6" stroke-dashoffset="35"/>
+        <line x1="50" y1="50" x2="20" y2="22" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+        <circle cx="50" cy="50" r="4" fill="#1e293b" />
+      </svg>
+      <div style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-top: 5px;">$108</div>
+      <div style="font-size: 0.75rem; color: #ef4444; font-weight: 600;">Kritieke grens ($100) overschreden</div>
+    </div>
+  </div>
+
+  <!-- TYPE 3: Compare -->
+  <div class="ns-viz-compare" style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+    <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; font-weight: bold; margin-bottom: 10px;">Marktvergelijking: Tech vs. Apple</div>
+    <div style="display: flex; gap: 15px;">
+      <div style="flex: 1; padding: 10px; background: #fff; border-radius: 6px; border-left: 4px solid #ef4444;">
+        <span style="font-size: 0.75rem; color: #64748b; display: block;">Brede Techsector</span>
+        <span style="font-size: 1.4rem; font-weight: 700; color: #ef4444;">-2,4%</span>
+        <p style="font-size: 0.75rem; color: #334155; margin: 5px 0 0 0; line-height: 1.3;">Hogere discontovoet raakt toekomstige kasstromen van cloudbedrijven hard.</p>
+      </div>
+      <div style="flex: 1; padding: 10px; background: #fff; border-radius: 6px; border-left: 4px solid #10b981;">
+        <span style="font-size: 0.75rem; color: #64748b; display: block;">Apple Inc. (AAPL)</span>
+        <span style="font-size: 1.4rem; font-weight: 700; color: #10b981;">+1,2%</span>
+        <p style="font-size: 0.75rem; color: #334155; margin: 5px 0 0 0; line-height: 1.3;">Sterke kaspositie en defensief karakter bieden veilige haven.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ns-viz">
+  <!-- TYPE 4: Chart.js -->
+  <div class="ns-viz-chart" style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+    <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; font-weight: bold; margin-bottom: 10px;">Koersverloop Index vs. Apple (Basis = 100)</div>
+    <div style="height: 180px; position: relative;">
+      <canvas id="marketChart"></canvas>
+    </div>
+    <script>
+      (function() {
+        const checkChartJS = setInterval(() => {
+          if (typeof Chart !== 'undefined') {
+            clearInterval(checkChartJS);
+            const ctx = document.getElementById('marketChart').getContext('2d');
+            new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: ['09:00', '11:00', '13:00', '15:00', '17:30'],
+                datasets: [
+                  {
+                    label: 'Apple (+1,2%)',
+                    data: [100, 100.5, 101.1, 100.8, 101.2],
+                    borderColor: '#10b981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.05)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.2
+                  },
+                  {
+                    label: 'AEX Index (-1,8%)',
+                    data: [100, 99.2, 98.5, 98.1, 98.2],
+                    borderColor: '#ef4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.05)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.2
+                  }
+                ]
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                  y: {
+                    min: 97,
+                    max: 103,
+                    ticks: { callback: value => value + '%' }
+                  }
+                },
+                plugins: {
+                  legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } }
+                }
+              }
+            });
+          }
+        }, 100);
+      })();
+    </script>
+  </div>
+</div>
+
+<h5>De wet van de discontovoet en de cloud</h5>
+<p>De Amsterdamse effectenbeurs beleefde een gitzwarte handelsdag, waarbij de AEX-index met 1,8 procent terugviel tot een slotstand van 1093 punten. Deze daling is geen incidentele correctie in de marge, maar het directe gevolg van een fundamentele verschuiving in de macro-economische parameters. De drijvende kracht achter deze verkoopgolf is de hernieuwde stijging van de olieprijs, die inmiddels de grens van $108 per vat heeft bereikt. In de financiële wereld is rentevrees inmiddels de tweede naam van $108 geworden. Zodra de energiekosten stijgen, wakkert dit de inflatieverwachtingen aan, wat centrale banken dwingt om de rentetarieven langer hoog te houden.</p>
+
+<p>Voor de technologiesector is deze dynamiek destructief. Wie de olie in de discontovoet stopt, stopt hem immers direct in de waardering van de cloud. De waardering van snelgroeiende techbedrijven rust grotendeels op winsten die ver in de toekomst liggen. Wanneer de rekenrente stijgt, daalt de contante waarde van die toekomstige kasstromen drastisch. Het gevolg was een brede uitverkoop onder tech-aandelen, waarbij met name software- en cloud-gerelateerde fondsen diep in het rood doken.</p>
+
+<h5>Waarom Apple de dans ontspringt</h5>
+<p>In dit overwegend rode beurslandschap viel één partij op door een positieve koersontwikkeling: Apple. Dat Apple wél stijgt, is de uitzondering die de regel tekent. Tech die rood kleurt terwijl Apple groen blijft, is geen kwestie van wispelturig marktsentiment; het is een bewuste, rationele selectie door institutionele beleggers. Apple beschikt over een unieke marktpositie die het bedrijf gedeeltelijk immuun maakt voor de klassieke rentegevoeligheid van de techsector.</p>
+
+<p>Met een gigantische kasreserve en een ongeëvenaard prijszettingsvermogen functioneert Apple in tijden van inflatie bijna als een defensief waardeaandeel. Consumenten blijven loyaal aan het ecosysteem, waardoor de marges beschermd blijven, zelfs als de operationele kosten stijgen. Bovendien zorgt de constante stroom van terugkoopprogramma's van eigen aandelen voor een stevige bodem onder de koers. Waar andere techreuzen moeten vechten tegen de zwaartekracht van de stijgende kapitaalmarktrente, fungeert Apple als een veilige haven.</p>
+
+<h5>De bredere implicaties voor de AEX</h5>
+<p>De daling van de AEX naar 1093 punten legt de kwetsbaarheid van de Nederlandse hoofdindex bloot. De index is zwaar gewogen in tech- en halfgeleiderwaarden zoals ASML, ASMI en Besi. Deze fondsen zijn uiterst gevoelig voor mondiale kapitaalstromen en renteschommelingen. Wanneer het sentiment rondom de techsector verslechtert door de stijgende olieprijzen, reageert de Amsterdamse beurs dan ook bovengemiddeld heftig.</p>
+
+<p>Analisten waarschuwen dat de correlatie tussen de olieprijs en de aandelenwaarderingen de komende tijd dominant zal blijven. Zolang de geopolitieke spanningen en aanbodbeperkingen de olieprijs rond de $108 houden, blijft de druk op de obligatierente onverminderd hoog. Dit dwingt beleggers tot een kritische herbeoordeling van hun portefeuilles, waarbij de voorkeur verschuift van speculatieve groei naar bewezen winstgevendheid en sterke balansen.</p>
+
+<h5>Conclusie</h5>
+<p>De recente koersval laat zien dat de markt geen genoegen meer neemt met louter groeibeloften in een klimaat van dure olie en hardnekkige rentevrees. Terwijl de brede techsector corrigeert onder druk van de stijgende discontovoet, bewijst Apple dat kwaliteit en pricing power de ultieme schilden zijn tegen macro-economische tegenwind. De markt selecteert scherper dan ooit: het kaf wordt onverbiddelijk van het koren gescheiden.</p>
+
+<div class="bg-footer">Bronnen: https://fd.nl/financiele-markten/1611840/koersdalingen-door-dure-olie-en-vrees-rentestijging</div>

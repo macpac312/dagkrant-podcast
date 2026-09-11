@@ -1,0 +1,110 @@
+<div class="dagkrant-artikel">
+  <div class="dagkrant-meta">
+    <span class="dagkrant-tag">nederland</span>
+    <span class="dagkrant-date">11 september 2026</span>
+  </div>
+  
+  <h2>Drie doden door westnijlvirus in Nederland, achttien besmettingen</h2>
+  <p class="dagkrant-teaser">NRC: de meeste mensen merken niets. De doden zaten in het ziekenhuis.</p>
+
+  <ul class="bg-bullets">
+    <li>Drie patiënten overleden na besmetting met het westnijlvirus in Nederland.</li>
+    <li>Het total aantal vastgestelde humane besmettingen is opgelopen tot achttien.</li>
+    <li>De virusoverdracht vindt lokaal plaats via steekmuggen, gedreven door warme zomers.</li>
+    <li>De meeste geïnfecteerden ervaren geen tot milde klachten; risicogroepen lopen ernstig gevaar.</li>
+  </ul>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Huidige epidemiologische status in Nederland</div>
+    <ns-stats columns="3">
+      <ns-stat label="Bevestigde besmettingen" value="18" sub="nationaal totaal"></ns-stat>
+      <ns-stat label="Overleden patiënten" value="3" sub="in ziekenhuis opgenomen"></ns-stat>
+      <ns-stat label="Asymptomatische dragers" value="~80%" sub="merken geen klachten"></ns-stat>
+    </ns-stats>
+  </div>
+
+  <h5>Een oprukkend arbovirus in gematigde streken</h5>
+  <p>Het westnijlvirus heeft zich definitief genesteld in de Nederlandse volksgezondheidsstatistieken. Waar de ziekte lange tijd werd gezien als een exotische aandoening uit subtropische regio's, tonen de recente cijfers aan dat lokale transmissie inmiddels realiteit is. Het RIVM en virologische instituten volgen de opmars nauwgezet, nu het aantal bevestigde infecties is gestegen tot achttien, met drie fatale aflopen tot gevolg.</p>
+  <p>De sterfgevallen betroffen allen kwetsbare patiënten die reeds vanwege andere aandoeningen in het ziekenhuis verbleven. Dit bevestigt het klinische beeld dat het virus met name gevaarlijk is voor ouderen en mensen met een verzwakt immuunsysteem, bij wie de infectie kan doorbreken naar het centrale zenuwstelsel en neuro-invasieve ziektebeelden zoals hersenontsteking kan veroorzaken.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Transmissiecyclus van het westnijlvirus</div>
+    <div class="ns-viz-mech" data-active="0">
+      <div class="ns-viz-mech-pills">
+        <button class="active" onclick="this.closest('.ns-viz-mech').dataset.active=0">1. Reservoir</button>
+        <button onclick="this.closest('.ns-viz-mech').dataset.active=1">2. Vektor</button>
+        <button onclick="this.closest('.ns-viz-mech').dataset.active=2">3. Overdracht</button>
+        <button onclick="this.closest('.ns-viz-mech').dataset.active=3">4. Patiënt</button>
+      </div>
+      <div class="ns-viz-mech-stages">
+        <div class="ns-viz-mech-stage">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f4f6f8" rx="8"/>
+            <circle cx="200" cy="80" r="45" fill="#3b82f6" opacity="0.2"/>
+            <text x="200" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Vogels (Reservoir)</text>
+            <text x="200" y="95" text-anchor="middle" font-size="12" fill="#64748b">Virus circuleert onder vogelpopulaties</text>
+          </svg>
+        </div>
+        <div class="ns-viz-mech-stage">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f4f6f8" rx="8"/>
+            <circle cx="200" cy="80" r="45" fill="#10b981" opacity="0.2"/>
+            <text x="200" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Steekmug (Vector)</text>
+            <text x="200" y="95" text-anchor="middle" font-size="12" fill="#64748b">Culex-mug voedt zich met besmette vogel</text>
+          </svg>
+        </div>
+        <div class="ns-viz-mech-stage">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f4f6f8" rx="8"/>
+            <circle cx="200" cy="80" r="45" fill="#f59e0b" opacity="0.2"/>
+            <text x="200" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Steekincident</text>
+            <text x="200" y="95" text-anchor="middle" font-size="12" fill="#64748b">Mug draagt virus over bij menselijke steek</text>
+          </svg>
+        </div>
+        <div class="ns-viz-mech-stage">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f4f6f8" rx="8"/>
+            <circle cx="200" cy="80" r="45" fill="#ef4444" opacity="0.2"/>
+            <text x="200" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Mens (Eindwirt)</text>
+            <text x="200" y="95" text-anchor="middle" font-size="12" fill="#64748b">Milde klachten of ernstige ziekenhuisopname</text>
+          </svg>
+        </div>
+      </div>
+      <div class="ns-viz-mech-nav">
+        <button onclick="var m=this.closest('.ns-viz-mech'),a=parseInt(m.dataset.active);m.dataset.active=(a-1+4)%4">◀ Vorige</button>
+        <button onclick="var m=this.closest('.ns-viz-mech'),a=parseInt(m.dataset.active);m.dataset.active=(a+1)%4">Volgende ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <h5>Klimaatverandering en de rol van de Culex-mug</h5>
+  <p>De verspreiding van het virus hangt nauw samen met ecologische factoren. De belangrijkste vector, de huismug (*Culex pipiens*), gedijt optimaal bij langdurige warme periodes en milde winters. Door de stijgende gemiddelde temperaturen in West-Europa kan het virus zich sneller vermenigvuldigen in het lichaam van de mug, waardoor de transmissieperiode gedurende het jaar verlengt.</p>
+  <p>Vogels fungeren als primair reservoir; zij dragen het virus zonder er noodzakelijkerwijs zelf aan te bezwijken. Wanneer lokale steekmuggen deze vogels steken en vervolgens mensen als gastheer kiezen, ontstaat de keten van besmettingen die nu in Nederland wordt gedocumenteerd.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Klinische impact en symptomen</div>
+    <ns-concepts>
+      <details>
+        <summary>Asymptomatisch (ca. 80%)</summary>
+        <p>De grote meerderheid van de geïnfecteerden merkt helemaal niets van de besmetting en ontwikkelt geen enkele klacht of immuunrespons die opvalt.</p>
+      </details>
+      <details>
+        <summary>Lichte koortsverschijnselen (ca. 20%)</summary>
+        <p>Een kleinere groep krijgt griepachtige symptomen zoals koorts, hoofdpijn, spierpijn, vermoeidheid en soms huiduitslag. Dit verdwijnt vanzelf binnen enkele dagen.</p>
+      </details>
+      <details>
+        <summary>Neuro-invasieve ziekte (< 1%)</summary>
+        <p>Bij een kleine minderheid, met name ouderen en immuungecompromitteerden, dringt het virus door tot het zenuwstelsel. Dit kan leiden tot hersenontsteking (encefalitis) of meningitis, wat ziekenhuisopname en intensieve zorg vereist.</p>
+      </details>
+    </ns-concepts>
+  </div>
+
+  <h5>Preventie en de respons van de volksgezondheid</h5>
+  <p>Omdat er voor mensen geen specifiek antiviraal medicijn of op grote schaal beschikbaar vaccin is geregistreerd, richt de aanpak zich primair op preventie en voorlichting. Burgers wordt geadviseerd om zich te beschermen tegen muggenbeten door middel van insectenwerende middelen met DEET, het dragen van bedekkende kleding en het plaatsen van muggenhorren.</p>
+  <p>Daarnaast scherpt de Nederlandse bloedvoorziening de controles aan. Donaties uit risicogebieden worden gescreend om te voorkomen dat het virus via bloedtransfusies wordt overgedragen op kwetsbare ziekenhuispatiënten, een cruciaal element in de beheersing van de huidige uitbraak.</p>
+
+  <h5>Conclusie</h5>
+  <p>De vaststelling van achttien besmettingen en drie sterfgevallen markeert een nieuwe fase in de Nederlandse gezondheidszorg, waarin vectoroverdraagbare ziekten door klimaatverandering een structurele dreiging vormen. Hoewel de overgrote meerderheid van de besmettingen mild verloopt of onopgemerkt blijft, onderstreept de fatale afloop bij ziekenhuispatiënten de noodzaak van continue surveillance, strenge bloedscreening en gerichte preventieve maatregelen tijdens warme zomers.</p>
+
+  <div class="bg-footer">Bronnen: NRC (10 september 2026), RIVM</div>
+</div>
