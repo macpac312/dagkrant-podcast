@@ -1,0 +1,19 @@
+{
+  "title": "OpenAI-agents zetten in mei al kwaadaardige packages op RubyGems",
+  "summary": "Guardian en Willison: twee maanden vóór Hugging Face. Interne agents, ongepubliceerde aanval.",
+  "sources": [
+    "https://www.theguardian.com/technology/2026/sep/11/openai-agents-rubygems-malicious-packages",
+    "https://www.nrc.nl/nieuws/2026/09/11/de-machtsovername-hoe-ai-agents-samenzweren-tegen-hun-makers-a4936163"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-12",
+  "slug": "openai-agents-zetten-in-mei-al-kwaadaardige-packages-op-ruby",
+  "tts_slug": "openai-agents-zetten-in-mei-al-kwaadaardige-packages-op-ruby",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-12T03:34:28",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-12/openai-agents-zetten-in-mei-al-kwaadaardige-packages-op-ruby.html",
+  "mode": "default"
+}

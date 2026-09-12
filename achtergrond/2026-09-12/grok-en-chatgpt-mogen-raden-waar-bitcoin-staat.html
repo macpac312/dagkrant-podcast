@@ -1,0 +1,115 @@
+<ul class="bg-bullets">
+  <li>AI-chatbot Grok van xAI en OpenAI's ChatGPT worden steeds vaker ingezet om koersvoorspellingen voor bitcoin te genereren.</li>
+  <li>Cryptonieuwssites en financiële blogs publiceren speculatieve scenario's, variërend van $200.000 in 2027 tot abrupte correcties in september.</li>
+  <li>Analisten waarschuwen dat taalmodellen geen rekening houden met fundamentele marktdynamiek, maar puur statistische patronen uit historische data extrapoleren.</li>
+  <li>De populariteit van AI-voorspellingen vergroot de volatiliteit doordat retailbeleggers blindvaren op algoritmische speculatie.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-stats">
+    <div class="ns-stat">
+      <span class="ns-stat-val">$200K</span>
+      <span class="ns-stat-label">Voorspelde piek (2027)</span>
+    </div>
+    <div class="ns-stat">
+      <span class="ns-stat-val">sept</span>
+      <span class="ns-stat-label">Onzekerheidsmaand</span>
+    </div>
+    <div class="ns-stat">
+      <span class="ns-stat-val">0%</span>
+      <span class="ns-stat-label">Fundamentele onderbouwing</span>
+    </div>
+  </div>
+</div>
+
+<h5>De opkomst van de orakel-bots</h5>
+<p>De financiële pers en platforms zoals Yahoo Finance en Cryptonews worden overspoeld met artikelen waarin grote taalmodellen worden bevraagd over de toekomstige waarde van bitcoin. Waar beleggers vroeger leunden op technische analyse, macro-economische rapporten of on-chain metrieken, verschuift de aandacht nu naar de output van AI-systemen zoals Grok en ChatGPT. Deze chatbots worden gevraagd om de koers van de grootste cryptomunt te voorspellen, alsof het om een objectief wetenschappelijk feit gaat in plaats van een gok op basis van internetdata.</p>
+<p>Het fenomeen toont een interessante paradox. Enerzijds erkennen gebruikers dat AI hallucineert en geen glazen bol bezit; anderzijds worden juist de meest extreme en optimistische voorspellingen gretig gedeeld op social media. Dit creëert een gesloten feedbackloop waarin chatbots gevoed worden met hun eigen eerdere speculaties, wat de illusie van consensus versterkt.</p>
+
+<div class="ns-viz">
+  <div class="ns-compare">
+    <div class="ns-col ns-bad">
+      <strong>Grok / ChatGPT</strong>
+      <ul>
+        <li>Extrapoleert historische social media hype</li>
+        <li>Geen begrip van liquiditeit of orderboeken</li>
+        <li>Gevoelig voor prompt-bias en echo-kamers</li>
+      </ul>
+    </div>
+    <div class="ns-col ns-good">
+      <strong>Fundamentele Analyse</strong>
+      <ul>
+        <li>Analyseert rentebesluiten en inflatiecijfers</li>
+        <li>Meet on-chain activiteit en wallet-groei</li>
+        <li>Evalueert macro-economisch sentiment</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h5>Hoe een AI-koersvoorspelling tot stand komt</h5>
+<p>Wie kijkt naar de technische keten achter deze voorspellingen, ziet al snel dat er geen diepgaande economische modellen aan te pas komen. Een gebruiker typt een sturende vraag ("Wat als bitcoin door het dak gaat?"), waarna het model een waarschijnlijkheidssom loslaat op alle digitale teksten die het tijdens de training heeft ingesloden. Het resultaat is een gewogen gemiddelde van wat internetfora en optimistische blogs de afgelopen jaren hebben geschreven.</p>
+
+<div class="ns-viz" data-mech-active="0">
+  <div class="ns-mech-pills">
+    <button class="ns-pill active" onclick="this.closest('.ns-viz').style.setProperty('--step','0')">1. Prompt</button>
+    <button class="ns-pill" onclick="this.closest('.ns-viz').style.setProperty('--step','1')">2. Scan</button>
+    <button class="ns-pill" onclick="this.closest('.ns-viz').style.setProperty('--step','2')">3. Output</button>
+  </div>
+  <div class="ns-mech-slides">
+    <div class="ns-slide" style="display:block">
+      <svg viewBox="0 0 400 120" width="100%" height="120">
+        <rect width="400" height="120" fill="#f8fafc" rx="8"/>
+        <text x="200" y="45" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Stap 1: De speculatieve vraagstelling</text>
+        <text x="200" y="75" text-anchor="middle" font-size="12" fill="#475569">Gebruiker vraagt naar koersdoelen van $200.000 of naderende crashes.</text>
+      </svg>
+    </div>
+    <div class="ns-slide" style="display:none">
+      <svg viewBox="0 0 400 120" width="100%" height="120">
+        <rect width="400" height="120" fill="#f8fafc" rx="8"/>
+        <text x="200" y="45" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Stap 2: Analyse van internetcorpus</text>
+        <text x="200" y="75" text-anchor="middle" font-size="12" fill="#475569">Chatbot doorzoekt miljoenen forumposts, nieuwsberichten en tweets.</text>
+      </svg>
+    </div>
+    <div class="ns-slide" style="display:none">
+      <svg viewBox="0 0 400 120" width="100%" height="120">
+        <rect width="400" height="120" fill="#f8fafc" rx="8"/>
+        <text x="200" y="45" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Stap 3: Statistische generatie</text>
+        <text x="200" y="75" text-anchor="middle" font-size="12" fill="#475569">Het model genereert een plausibel klinkend, maar fundamenteel hol rapport.</text>
+      </svg>
+    </div>
+  </div>
+  <div class="ns-mech-nav">
+    <button onclick="let v=this.closest('.ns-viz'), s=(parseInt(v.style.getPropertyValue('--step'))||0)-1; if(s<0)s=2; v.style.setProperty('--step',s); updateMech(v);">◀</button>
+    <button onclick="let v=this.closest('.ns-viz'), s=(parseInt(v.style.getPropertyValue('--step'))||0)+1; if(s>2)s=0; v.style.setProperty('--step',s); updateMech(v);">▶</button>
+  </div>
+</div>
+<script>
+function updateMech(v) {
+  let s = parseInt(v.style.getPropertyValue('--step')) || 0;
+  v.querySelectorAll('.ns-pill').forEach((p,i) => p.classList.toggle('active', i===s));
+  v.querySelectorAll('.ns-slide').forEach((sl,i) => sl.style.display = i===s ? 'block' : 'none');
+}
+</script>
+
+<h5>De gevaren van algoritmische hypes</h5>
+<p>Het gevaar van deze trend schuilt in de autoriteit die kunstmatige intelligentie uitstraalt. Beleggers die minder thuis zijn in de materie, interpreteren de stellige taal van een chatbot al snel als een feitelijke analyse. Wanneer Grok of ChatGPT stelt dat september een maand van grote bewegingen wordt of dat de grens van tweehonderdduizend dollar in zicht is, kan dat direct invloed hebben op het koop- en verkoopgedrag van particuliere handelaren.</p>
+<p>Daarnaast veranderen mediaplatforms zelf in megafoons voor deze AI-fantasieën. Door de uitspraken klakkeloos over te nemen als nieuws, ontstaat een synthetische werkelijkheid waarin algoritmen elkaars voorspellingen voeden en valse verwachtingen in de markt prijzen.</p>
+
+<div class="ns-viz">
+  <div class="ns-concepts">
+    <details class="ns-concept-card">
+      <summary>Waarom voorspelt AI specifiek $200.000?</summary>
+      <p>Dit getal duikt veel op in bullish crypto-literatuur op het web. Omdat LLM's getraind zijn op deze teksten, nemen ze dit soort ronde, optimistische bedragen over als statistisch waarschijnlijke uitkomsten.</p>
+    </details>
+    <details class="ns-concept-card">
+      <summary>Wat is het verschil met traditionele handelssystemen?</summary>
+      <p>Kwantitatieve handelssystemen op Wall Street werken met strakke wiskundige modellen en risicobeheer. Chatbots genereren daarentegen puur op tekstniveau wat taalkundig logisch klinkt.</p>
+    </details>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>Dat Grok en ChatGPT worden ingezet om de bitcoin-koers te raden, zegt minder over de toekomst van cryptomunten en alles over de honger naar duiding in een volatiele markt. Het opmeten van marktsentiment via taalmodellen is legitiem, maar het omzetten van die output in harde prijsdoelen is niet meer dan moderne astrologie in een softwarejasje. Beleggers die blindvaren op de getallen van een chatbot, riskeren een pijnlijke confrontatie met de harde werkelijkheid van de daadwerkelijke markt.</p>
+
+<div class="bg-footer">Bronnen: Yahoo Finance, Cryptonews, xAI/OpenAI documentatie-analyse en marktonderzoek naar generatieve AI-speculatie.</div>

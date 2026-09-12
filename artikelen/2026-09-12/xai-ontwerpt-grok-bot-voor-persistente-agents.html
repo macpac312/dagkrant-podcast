@@ -1,0 +1,37 @@
+<figure class="reader-hero"><img src="https://x.ai/images/news/designing-grok-bot-og.png" alt="Designing Grok Bot for a world of persistent agents" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>Designing Grok Bot for a world of persistent agents</h1>
+<p>How we designed Grok Bot for agents that persist beyond a single session — from a chat history to a Bot roster, presence, a computer of the Bot’s own, and work that starts without a prompt.</p>
+<p>When we started designing Grok Bot, one of the central questions was how the interface should shape the relationship between user and agent. Most AI interfaces are organized around a chat session the user operates. Each session begins with setup, unfolds as the user looks on, and ends when the conversation stops.</p>
+<p>We wanted to design for an agent that persists beyond any one session and can carry responsibility on its own. That meant reconsidering some of the basic objects and signals of the interface, including what belongs in the sidebar, how an agent shows progress, and when its work should become visible.</p>
+<p>Need your yes on the Friday all-hands deck.</p>
+<p>8 intros drafted — sitting in the CRM till you send.</p>
+<p>John: checkout&#x27;s clean on staging, 3 bugs closed.</p>
+<p>Repro&#x27;d the checkout crash. Write-up&#x27;s in the ticket.</p>
+<p>Acme&#x27;s wobbling. Drafted a Thursday check-in.</p>
+<p>14 receipts in. Still missing your Uber from Tuesday.</p>
+<p>Launch post is live. First 200 impressions.</p>
+<p>3 places in SoMa. The Folsom 2bed is the one.</p>
+<p>Sourced 3. Skipped one already in your ATS.</p>
+<h2>Rethinking the primitives</h2>
+<p>AI products have accumulated a large vocabulary in a short time. Chats, sessions, models, context windows, memories, system prompts, projects, skills, connectors, agents, tools, sandboxes, permissions, and automations all describe real parts of these systems.</p>
+<p>But exposing each one as a separate product concept asks users to understand more than they need to. We started by asking which concepts a person actually needs in order to work with an agent.</p>
+<p>Everything else could remain beneath the interface until the user had a reason to care about it. The next question was which of these five objects should organize the product.</p>
+<h2>From chat history to a Bot roster</h2>
+<p>Chats are disposable. We start a conversation to solve a problem. It gets pushed down the sidebar. A week later, we start another one. You rarely go back beyond the most recent five.</p>
+<p>That behavior is perfectly reasonable when the unit of interaction is a question. It becomes strange when the thing on the other side of the interaction is supposed to know you, remember previous work, and take responsibility over time.</p>
+<p>So the main objects in Grok Bot are Bots, not conversations. A Bot has a name. It has an avatar and a title. It remembers its conversations with you. It has its own computer and tools. When you come back tomorrow, you are coming back to the same Bot.</p>
+<p>What should I ask in the security review?</p>
+<h2>Presence as interface</h2>
+<p>Once a Bot was something you maintain over time rather than a session you start, the way Bots appear in the product had to answer three questions at once:</p>
+<h2>Who is this</h2>
+<p>A roster only works if it can be scanned quickly. As the roster grows, we did not want people to have to read every name each time they opened the product. They should be able to recognize a Bot from its avatar almost peripherally.</p>
+<p>At the same time, we wanted to keep the avatars consistent enough to read as one system. We studied character systems across illustration, animation, games, and interface design, exploring everything from initials and emojis to pixel art, watercolor, claymorphism, Noritake-style line art, silhouettes, and identicons.</p>
+<p>Most approaches solved one side of the problem better than the other. Watercolor and clay gave individual Bots plenty of character but carried too much detail at sidebar scale. Simpler systems sat more naturally in the interface, but often left the Bots looking interchangeable.</p>
+<p>The system we landed on keeps the basic construction consistent, using simple shapes and expressive eyes, then introduces distinction through controlled variations and accessories. Each Bot remains recognizable at a glance without appearing to come from a different visual world.</p>
+<h2>What are they doing</h2>
+<p>Once the avatar became the Bot’s identity, it was also the natural place to show state. A Bot may be idle, thinking, working, waiting, blocked, or done. We could have represented each state with a separate indicator, but that would have added another layer of UI for the user to interpret.</p>
+<p>Instead, we explored how much of the lifecycle the avatar itself could carry.</p>
+<p>At rest, the Bot is calm and slightly curious. When work arrives, it acknowledges the task. As work begins, it kicks into gear. Its motion changes again when it is waiting or needs help, then settles once the work is done. The avatar now shows what the Bot is doing as well as which Bot it is.</p>
+<h2>How much do I need to know</h2>
+<p>A related design question was how much of the Bot’s execution to show. One approach would have been the standard “three animated dots” but that would have been too little information, making it hard for users to tell whether the Bot was working or stuck.</p>
+<p class="bg-footer">Bron: <a href="https://x.ai/news/designing-grok-bot" target="_blank" rel="noopener">x.ai</a></p>

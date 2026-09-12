@@ -1,0 +1,81 @@
+<div class="dagkrant-article">
+  <div class="meta-tag">grok</div>
+  <h2>GLM 5.3 vs Grok 4.6: acht keer het contextvenster</h2>
+  <p class="lead">Tech-insider zet de context gap op 8x. Venice AI zit in dezelfde tabel. Brochures, geen bench.</p>
+
+  <ul class="bg-bullets">
+    <li><strong>Contextverschil:</strong> De vergelijking toont een factor acht in effectief contextvenster tussen concurrerende modellen.</li>
+    <li><strong>Venice AI:</strong> Positioneert zich in dezelfde vergelijkende tabellen met alternatieve privacy-uitgangspunten.</li>
+    <li><strong>Benchmark-realiteit:</strong> De gepresenteerde cijfers komen uit marketingbrochures en vergen onafhankelijke verificatie.</li>
+    <li><strong>Architectonische druk:</strong> Langere contexten vereisen fundamentele aanpassingen in geheugenbeheer en inferentietijd.</li>
+  </ul>
+
+  <div class="ns-viz" data-type="stats">
+    <div class="stat-box">
+      <span class="stat-number">8x</span>
+      <span class="stat-label">Verschil in contextvenster</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">2 v/d</span>
+      <span class="stat-label">Marktspelers in focus (GLM/Grok)</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Focus op brochure-claims</span>
+    </div>
+  </div>
+
+  <h5>De kloof in geheugen</h5>
+  <p>De recente publicatie van vergelijkende data over grote taalmodellen brengt een opvallende discrepantie aan het licht. Waar het model van xAI, Grok 4.6, in bepaalde configuraties opereert binnen een vastgesteld geheugenbereik, claimt de concurrentie met GLM 5.3 een achtvoudige capaciteit. Dit soort sprongen roept direct vragen op over de onderliggende architectuur en de manier waarop aandachtshandmechanismen (attention mechanisms) worden opgeschaald zonder dat de inferentiekosten volledig exploderen.</p>
+
+  <p>In de praktijk betekent een groter contextvenster niet automatisch dat een model ook effectief gebruikmaakt van al die informatie. Onderzoek naar 'needle in a haystack'-tests toont al langere tijd aan dat modellen met gigantische vensters halverwege de tekst geregeld steekjes laten vallen. De vraag is dan ook of de cijfers uit de tabellen betrekking hebben op theoretische limieten of op daadwerkelijk geteste prestaties onder zware belasting.</p>
+
+  <div class="ns-viz" data-type="compare">
+    <div class="compare-col">
+      <h6>Grok 4.6</h6>
+      <ul>
+        <li>Focus op snelheid en realtime data</li>
+        <li>Standaard vensterconfiguratie</li>
+        <li>Diepe xAI-ecosysteemintegratie</li>
+      </ul>
+    </div>
+    <div class="compare-col">
+      <h6>GLM 5.3</h6>
+      <ul>
+        <li>Extreem theoretisch contextbereik</li>
+        <li>Open-weight filosofie elementen</li>
+        <li>Gericht op documentanalyse</li>
+      </ul>
+    </div>
+  </div>
+
+  <h5>De rol van alternatieve spelers</h5>
+  <p>Naast de gevestigde namen duikt ook Venice AI op in dezelfde analyses. Dit platform kiest een fundamenteel andere invalshoek door privacy en oncensuratie als primaire verkoopargumenten te gebruiken, los van de pure brute kracht van de contextlengte. Het laat zien dat de markt zich opsplitst: aan de ene kant is er de race om het grootste geheugen en de meeste parameters, aan de andere kant groeit de vraag naar gespecialiseerde, privacy-vriendelijke alternatieven die minder afhankelijk zijn van gecentraliseerde cloudreuzen.</p>
+
+  <p>Toch blijft het opletten geblazen met de getallen die via social media en vroege release-documenten worden gedeeld. Veel van de getoonde tabellen zijn afkomstig uit promotiemateriaal van de makers zelf. Onafhankelijke benchmarks laten vaak een ander beeld zien zodra de modellen losgelaten worden op rommelige, niet-geoptimaliseerde bedrijfsdata.</p>
+
+  <div class="ns-viz" data-type="concepts">
+    <div class="concept-item">
+      <button class="concept-toggle">Wat is een contextvenster?</button>
+      <div class="concept-content">
+        <p>Het maximale aantal tokens (woorden of stukjes woorden) dat een model tegelijkertijd kan 'onthouden' en verwerken in een enkele prompt.</p>
+      </div>
+    </div>
+    <div class="concept-item">
+      <button class="concept-toggle">Waarom zijn brochure-claims lastig?</button>
+      <div class="concept-content">
+        <p>Fabrikanten testen onder ideale omstandigheden met schone data. In de praktijk treedt bij lange teksten al snelinformatieverlies op.</p>
+      </div>
+    </div>
+  </div>
+
+  <h5>Architectonische uitdagingen</h5>
+  <p>Het vergroten van het contextvenster is geen kwestie van simpelweg een schuifje omhoog zetten. Het vereist fundamentele aanpassingen in hoe de Attention-matrix wordt berekend. Standaard Transformers schalen kwadratisch met de lengte van de tekst, wat betekent dat een verdubbeling van het venster zorgt voor een viervoudige belasting van het geheugen en de rekenkracht. Om dit te omzeilen maken onderzoekers gebruik van sparse attention, state space models of slimme caching-strategieën.</p>
+
+  <p>De komende maanden zal moeten blijken in hoeverre de cijfers van GLM 5.3 standhouden in dagelijks gebruik door developers. Tot die tijd blijven de tabellen vooral een oefening in marketing en positionering binnen een markt die hongerig is naar elke vorm van technische dominantie.</p>
+
+  <h5>Conclusie</h5>
+  <p>De strijd om het grootste contextvenster tussen Grok 4.6 en GLM 5.3 onderstreept hoe snel de AI-industrie innoveert, maar toont tegelijk de beperkingen van pure marketingcijfers. Wie door de tabellen heen prikt, ziet dat stabiliteit, werkelijke retentie en efficiëntie minstens zo belangrijk zijn als een theoretische factor acht op papier.</p>
+
+  <div class="bg-footer">Bronnen: news.google.com (RSS analyse), xAI documentatie, marktomstandigheden september 2026.</div>
+</div>

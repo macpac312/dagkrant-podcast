@@ -1,0 +1,135 @@
+<div class="dagkrant-article">
+  <div class="article-tag">grok</div>
+  <h2>xAI bouwde stil een enorme batterij bij de Memphis-hub</h2>
+  <div class="article-meta">12 september 2026 | Door De Dagkrant Redactie</div>
+
+  <ul class="bg-bullets">
+    <li>xAI plaatste in stilte een grootschalig batterijsysteem bij de supercomputer-hub in Memphis (Tennessee).</li>
+    <li>De installatie werd niet via een persbericht aangekondigd, maar kwam aan het licht via energie- en milieuanalyse van Canary Media.</li>
+    <li>Het datacenter, dat draait op duizenden Nvidia-GPU's voor Grok, legt een immense druk op het lokale elektriciteitsnet.</li>
+    <li>Stroomvoorziening en netstabilisatie dreigen de voornaamste flessenhals te worden voor de expansie van AI-infrastructuur.</li>
+  </ul>
+
+  <!-- Visual 1: Stats -->
+  <div class="ns-viz" data-type="stats">
+    <div class="viz-header">Memphis Datacenter Energieprofiel</div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-val">100+</span>
+        <span class="stat-lbl">Megawatt piekbehoefte</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">100k</span>
+        <span class="stat-lbl">Nvidia H100/H200 cluster</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">24/7</span>
+        <span class="stat-lbl">Ononderbroken stroomvraag</span>
+      </div>
+    </div>
+  </div>
+
+  <h5>Stilte rondom megawatt-infrastructuur</h5>
+  <p>De techwereld is gewend aan ronkende persberichten over nieuwe doorbraken in kunstmatige intelligentie, maar Elon Musk’s AI-onderneming xAI koos voor een opvallend stille strategie in Memphis. Uit onafhankelijk onderzoek van vakblad Canary Media blijkt dat er pal naast de gigantische datacenter-hub een omvangrijk batterij-energieopslagsysteem (BESS) is verrezen. Geen officiële onthulling, geen optimistische tweets over duurzaamheid, enkel de feitelijke installatie van zware industriële accu's.</p>
+
+  <p>Dit gebrek aan openbaarheid is kenmerkend voor de manier waarop xAI te werk gaat bij het opschalen van zijn hardware. Om de maisvelden en loodsen in Tennessee te voorzien van de benodigde rekenkracht voor het trainen van de Grok-modellen, is een hoeveelheid stroom nodig die vergelijkbaar is met die van een middelgrote stad. Lokale nutsbedrijven en netbeheerders worden daarbij vaak voor voldongen feiten geplaatst.</p>
+
+  <!-- Visual 2: Mechanisme (TYPE 17 ns-viz-mech) -->
+  <div class="ns-viz" data-type="mech" id="mech-bess">
+    <div class="viz-header">Hoe de BESS-batterij het net stabiliseert</div>
+    <div class="mech-pills">
+      <button class="pill active" onclick="showMechSlide(0)">1. Netbelasting</button>
+      <button class="pill" onclick="showMechSlide(1)">2. Bufferwerking</button>
+      <button class="pill" onclick="showMechSlide(2)">3. Piekafvlakking</button>
+    </div>
+    <div class="mech-slide active" data-slide="0">
+      <svg viewBox="0 0 400 160" width="100%" height="140">
+        <rect width="400" height="160" fill="#f8fafc" rx="8"/>
+        <text x="30" y="40" font-weight="bold" font-size="14" fill="#0f172a">Fase 1: Continue trainingsbelasting</text>
+        <rect x="30" y="60" width="100" height="60" fill="#3b82f6" rx="4"/>
+        <text x="80" y="95" fill="white" font-size="12" text-anchor="middle">Stroomnet</text>
+        <line x1="130" y1="90" x2="250" y2="90" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+        <rect x="250" y="60" width="120" height="60" fill="#0f172a" rx="4"/>
+        <text x="310" y="95" fill="white" font-size="12" text-anchor="middle">xAI Datacenter</text>
+      </svg>
+    </div>
+    <div class="mech-slide" data-slide="1" style="display:none;">
+      <svg viewBox="0 0 400 160" width="100%" height="140">
+        <rect width="400" height="160" fill="#f8fafc" rx="8"/>
+        <text x="30" y="40" font-weight="bold" font-size="14" fill="#0f172a">Fase 2: Batterijabsorptie tijdens daluren</text>
+        <rect x="30" y="60" width="80" height="60" fill="#3b82f6" rx="4"/>
+        <text x="70" y="95" fill="white" font-size="12" text-anchor="middle">Net</text>
+        <line x1="110" y1="90" x2="160" y2="90" stroke="#64748b" stroke-width="3"/>
+        <rect x="160" y="60" width="80" height="60" fill="#10b981" rx="4"/>
+        <text x="200" y="95" fill="white" font-size="12" text-anchor="middle">BESS Accu</text>
+        <line x1="240" y1="90" x2="290" y2="90" stroke="#64748b" stroke-width="3"/>
+        <rect x="290" y="60" width="80" height="60" fill="#0f172a" rx="4"/>
+        <text x="330" y="95" fill="white" font-size="12" text-anchor="middle">Cluster</text>
+      </svg>
+    </div>
+    <div class="mech-slide" data-slide="2" style="display:none;">
+      <svg viewBox="0 0 400 160" width="100%" height="140">
+        <rect width="400" height="160" fill="#f8fafc" rx="8"/>
+        <text x="30" y="40" font-weight="bold" font-size="14" fill="#0f172a">Fase 3: Directe levering bij piekvraag</text>
+        <rect x="160" y="60" width="80" height="60" fill="#10b981" rx="4"/>
+        <text x="200" y="95" fill="white" font-size="12" text-anchor="middle">BESS Accu</text>
+        <line x1="240" y1="90" x2="290" y2="90" stroke="#10b981" stroke-width="3"/>
+        <rect x="290" y="60" width="80" height="60" fill="#0f172a" rx="4"/>
+        <text x="330" y="95" fill="white" font-size="12" text-anchor="middle">Cluster</text>
+      </svg>
+    </div>
+    <div class="mech-controls">
+      <button onclick="prevMechSlide()">◀ Vorige</button>
+      <button onclick="nextMechSlide()">Volgende ▶</button>
+    </div>
+  </div>
+
+  <h5>De harde grenzen van het elektriciteitsnet</h5>
+  <p>De keuze van xAI om eigen opslagcapaciteit toe te voegen onderstreept een breder probleem binnen de technologiesector. Het Amerikaanse strostromennetwerk piept en kraakt onder de explosieve groei van generatieve AI. Traditionele energiecentrales kunnen de vraag niet snel genoeg bijbenen, en het verzwaren van hoogspanningsverbindingen neemt jaren in beslag. Datacenter-operators worden hierdoor gedwongen zelf creatieve en rigoureuze oplossingen te implementeren om stroomuitval of netoverbelasting te voorkomen.</p>
+
+  <p>In het geval van Memphis fungeert de batterij niet alleen als reserveopslag bij stroomstoringen, maar vermoedelijk ook als piekblusser. Wanneer duizenden processors tegelijkertijd intensieve berekeningen uitvoeren, ontstaan er scherpe transiënte belastingen op het net. De batterij kan die scherpe randjes eraf halen, waardoor xAI operationeel blijft zonder dat het lokale nutsbedrijf direct hoeft in te grijpen of de stekker eruit trekt.</p>
+
+  <!-- Visual 3: Concept Cards / FAQ (TYPE 6) -->
+  <div class="ns-viz" data-type="concepts">
+    <div class="viz-header">Veelgestelde Vragen over de xAI Batterij-integratie</div>
+    <div class="concept-card">
+      <div class="concept-title">Waarom kiest xAI voor batterijen in plaats van extra generatoren?</div>
+      <div class="concept-body">Dieselaangedreven noodstroomgeneratoren zijn niet geschikt voor continue netstabilisatie en stoten te veel emissies uit. Batterijen reageren binnen milliseconden op schommelingen in de stroomvraag.</div>
+    </div>
+    <div class="concept-card">
+      <div class="concept-title">Is dit uniek voor xAI?</div>
+      <div class="concept-body">Nee, ook concurrenten zoals Microsoft, Google en Amazon experimenteren volop met eigen energieopslag en rechtstreekse deals met kerncentrales en zonneparken om hun AI-ambities te voeden.</div>
+    </div>
+  </div>
+
+  <h5>Stroom als ultieme valuta in de AI-race</h5>
+  <p>Waar de vroege jaren van de AI-revolutie werden gedefinieerd door de beschikbaarheid van halfgeleiders en geavanceerde GPU's, verschuift het strijdtoneel in 2026 definitief naar energie. Wie de megawatts bezit, bepaalt hoe snel modellen als Grok kunnen groeien en concurreren met OpenAI en Google. De ongevraagde komst van het batterijsysteem in Memphis laat zien dat xAI bereid is om fysieke infrastructuur in eigen hand te nemen om de operationele continuïteit te waarborgen.</p>
+
+  <h5>Conclusie</h5>
+  <p>De stille bouw van een enorm batterijsysteem bij de Memphis-hub door xAI toont aan dat de fysieke beperkingen van het elektriciteitsnet de grootste remmend factor vormen voor de AI-industrie. Terwijl de publieke focus uitgaat naar software en modelprestaties, dicteert de beschikbaarheid van megawatts in de praktijk de ware snelheid van de technologische vooruitgang.</p>
+
+  <div class="bg-footer">Bronnen: Canary Media, interne netwerkanalyse, openbare registers elektriciteitsvoorziening Tennessee.</div>
+</div>
+
+<script>
+  let currentMechSlide = 0;
+  const totalMechSlides = 3;
+
+  function showMechSlide(n) {
+    currentMechSlide = (n + totalMechSlides) % totalMechSlides;
+    document.querySelectorAll('#mech-bess .mech-slide').forEach((el, idx) => {
+      el.style.display = idx === currentMechSlide ? 'block' : 'none';
+    });
+    document.querySelectorAll('#mech-bess .pill').forEach((el, idx) => {
+      el.classList.toggle('active', idx === currentMechSlide);
+    });
+  }
+
+  function nextMechSlide() {
+    showMechSlide(currentMechSlide + 1);
+  }
+
+  function prevMechSlide() {
+    showMechSlide(currentMechSlide - 1);
+  }
+</script>
