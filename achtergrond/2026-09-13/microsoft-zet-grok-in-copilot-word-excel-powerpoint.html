@@ -1,0 +1,95 @@
+<ul class="bg-bullets">
+  <li><strong>Strategische koerswijziging:</strong> Microsoft integreert xAI’s Grok-modellen rechtstreeks in Copilot voor Microsoft 365 (Word, Excel en PowerPoint), naast bestaande OpenAI-modellen.</li>
+  <li><strong>Enorm distributiekanaal:</strong> Met meer dan 400 miljoen zakelijke Office 365-licenties krijgt Grok in één klap de breedste enterprise-voetafdruk in zijn bestaan.</li>
+  <li><strong>Multimodel-architectuur:</strong> Copilot functioneert niet langer als exclusief doorgeefluik voor OpenAI, maar als een dynamische orkestrator die taken toewijst op basis van latency, data-analyse en kosten.</li>
+  <li><strong>Zakelijke garanties:</strong> Om enterprise-klanten gerust te stellen belooft Microsoft dat bedrijfsdata niet worden gebruikt om xAI’s basismodellen te trainen en binnen Azure-veiligheidsgrenzen blijven.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Vergelijking: Modelprofielen binnen Microsoft Copilot 365</div>
+  <table style="width:100%; border-collapse: collapse; font-size: 0.88rem; margin-top: 8px;">
+    <thead>
+      <tr style="border-bottom: 2px solid var(--border-color, #e0e0e0); text-align: left;">
+        <th style="padding: 8px 6px;">Modelpartner</th>
+        <th style="padding: 8px 6px;">Primaire Office-rol</th>
+        <th style="padding: 8px 6px;">Sterke punten</th>
+        <th style="padding: 8px 6px;">Compliance-kader</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--border-color, #eee);">
+        <td style="padding: 8px 6px; font-weight: 600;">OpenAI (GPT-4o/o-serie)</td>
+        <td style="padding: 8px 6px;">Word, Outlook, Teams</td>
+        <td style="padding: 8px 6px;">Complexe synthese, redactie, meertalige formulering</td>
+        <td style="padding: 8px 6px;">Azure OpenAI Service, HIPAA, SOC 2 Type II</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border-color, #eee);">
+        <td style="padding: 8px 6px; font-weight: 600;">xAI (Grok Enterprise)</td>
+        <td style="padding: 8px 6px;">Excel, PowerPoint, Search</td>
+        <td style="padding: 8px 6px;">Wiskundig redeneren, code-generatie, actuele data-synthese</td>
+        <td style="padding: 8px 6px;">Azure Grok Isolation, geen trainingsretentie</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 6px; font-weight: 600;">Microsoft (Phi & In-house)</td>
+        <td style="padding: 8px 6px;">Lokale taken, autocomplete</td>
+        <td style="padding: 8px 6px;">Zeer lage latency, lage inferentiekosten, randapparatuur</td>
+        <td style="padding: 8px 6px;">Ingebouwde Windows Copilot Runtime</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h5>De ontkoppeling van de OpenAI-monocultuur</h5>
+<p>De aankondiging van Microsoft-topman Satya Nadella markeert een definitieve breuk met de vroege fase van de generatieve AI-hype, waarin Redmond vrijwel exclusief leunde op OpenAI. Waar Copilot aanvankelijk synoniem was met GPT-4, transformeert Microsoft zijn paradepaardje nu tot een open inferentieplatform. Door Grok — het model van Elon Musks xAI — toe te laten tot Word, Excel en PowerPoint, diversifyceert Microsoft doelbewust zijn afhankelijkheid van één enkele toeleverancier. Voor OpenAI betekent het een gevoelig verlies aan exclusiviteit; voor zakelijke gebruikers betekent het dat de onderliggende intelligentie fluïde wordt.</p>
+
+<p>De keuze voor xAI is pragmatisch en strategisch tegelijk. In benchmarkingtests op het gebied van code-executie, data-analyse en wiskundig redeneren heeft de recentste Grok-generatie bewezen zich te kunnen meten met de top van de markt. Vooral in Excel, waar gebruikers afhankelijk zijn van foutloze formules, complexe draaitabellen en Python-scripts, biedt Grok een rekenkracht die Microsofts enterprise-propositie versterkt.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Mechanisme: Routering van een Copilot-aanvraag in Office</div>
+  <div class="ns-viz-mech" data-active="0">
+    <div class="ns-viz-mech-nav">
+      <button class="ns-viz-mech-pill active" data-step="0">1. Prompt &amp; Graph</button>
+      <button class="ns-viz-mech-pill" data-step="1">2. Dynamic Routing</button>
+      <button class="ns-viz-mech-pill" data-step="2">3. Grok Inferentie</button>
+      <button class="ns-viz-mech-pill" data-step="3">4. Enterprise Output</button>
+    </div>
+    <div class="ns-viz-mech-display" style="padding: 14px; background: var(--bg-card, #fafafa); border-radius: 6px; min-height: 120px;">
+      <div class="ns-viz-mech-content active" data-step="0">
+        <strong style="display:block; margin-bottom:4px;">Fase 1: Contextopbouw via Microsoft Graph</strong>
+        <p style="margin:0; font-size:0.86rem;">De gebruiker geeft een opdracht in Word of Excel. Copilot combineert de prompt met relevante bedrijfsdocumenten, e-mails en machtigingen via Microsoft Graph binnen de afgesloten Azure-tenant.</p>
+      </div>
+      <div class="ns-viz-mech-content" data-step="1" style="display:none;">
+        <strong style="display:block; margin-bottom:4px;">Fase 2: Semantische Modelroutering</strong>
+        <p style="margin:0; font-size:0.86rem;">Een interne router analyseert de intentie. Wiskundige modellering, datatransformaties en actuele query's worden toegekend aan xAI's Grok; synthese en verhalende rapporten gaan naar GPT-4o.</p>
+      </div>
+      <div class="ns-viz-mech-content" data-step="2" style="display:none;">
+        <strong style="display:block; margin-bottom:4px;">Fase 3: Geïsoleerde Uitvoering</strong>
+        <p style="margin:0; font-size:0.86rem;">Grok verwerkt de opdracht in een zero-data-retention sandbox op Azure-infrastructuur. De ruwe gegevens verlaten de enterprise-boundary van de klant niet en trainen xAI-modellen niet.</p>
+      </div>
+      <div class="ns-viz-mech-content" data-step="3" style="display:none;">
+        <strong style="display:block; margin-bottom:4px;">Fase 4: Inbedding in het Office-document</strong>
+        <p style="margin:0; font-size:0.86rem;">De gegenereerde data, grafiek of diapresentatie wordt voorzien van bronverwijzingen en direct ingepast in het Office-bestand, klaar voor review door de eindgebruiker.</p>
+      </div>
+    </div>
+    <div class="ns-viz-mech-controls" style="margin-top: 8px; display: flex; gap: 8px;">
+      <button class="ns-viz-btn prev-btn">◀ Vorige</button>
+      <button class="ns-viz-btn play-btn">▶ Afspelen</button>
+      <button class="ns-viz-btn next-btn">Volgende ▶</button>
+    </div>
+  </div>
+</div>
+
+<h5>De zakelijke noodzaak van xAI: van nis naar werkplek</h5>
+<p>Voor xAI markeert deze stap de transformatie van een controversiële, aan sociaal netwerk X gekoppelde chatbot naar een serieuze leverancier van bedrijfskritische software. Tot dusver had Grok moeite om door te dringen tot conservatieve IT-afdelingen van Fortune 500-concerns. Zorgen over datalekken, Musk's openlijke politieke stellingnames en de ongeremde stijl van de publieke Grok-versie weerhielden enterprise-inkopers ervan contracten te tekenen.</p>
+
+<p>Microsoft lost dat distributieprobleem in één klap op. Door Grok onder te brengen in Azure-containers met enterprise-sla's, SOC-certificeringen en strikte 'no-training'-clausules, fungeert Nadella als een institutionele garantsteller. Voor xAI betekent dit een explosieve toename van het aantal verwerkte tokens, betaald door Microsofts zakelijke Copilot-abonnementen van dertig dollar per gebruiker per maand.</p>
+
+<h5>De geopolitieke en commerciële balans in Big Tech</h5>
+<p>De zet toont tevens hoe pragmatisch Microsoft opereert te midden van de spanningen tussen tech-titanen. Terwijl Musk OpenAI en CEO Sam Altman voor de rechter sleept wegens vermeende schending van de oprichtingsdoelstellingen, behoudt Microsoft nauwe banden met beide kampen. Nadella vermijdt partijdigheid en kiest voor een positie als de universele beurshandel voor rekenkracht en modellen.</p>
+
+<p>Tegelijkertijd zet de integratie druk op OpenAI. Het dwingt Altman om competitief te blijven in prijsstelling en betrouwbaarheid nu Microsoft demonstreert dat het zijn Copilot-architectuur modulair heeft ingericht. Mocht OpenAI vertraging oplopen bij toekomstige releases, dan kan Microsoft de kraan naar xAI, Mistral of zijn eigen Phi-modellen simpelweg verder opendraaien.</p>
+
+<h5>Conclusie</h5>
+<p>De toevoeging van Grok aan Word, Excel en PowerPoint is meer dan een productupdate: het bezegelt het einde van de exclusieve AI-allianties. Microsoft institutionaliseert xAI binnen het hart van het wereldwijde bedrijfsleven, terwijl het zijn eigen risico's spreidt. In de zakelijke productiviteitsstrijd telt niet langer wie het enige model levert, maar wie de router beheert die bepaalt welke intelligentie op welk beeldscherm verschijnt.</p>
+
+<div class="bg-footer">Bronnen: Microsoft Corporate Communications, xAI Developer Announcements, Financial Times Tech Desk, Reuters Business.</div>

@@ -1,0 +1,15 @@
+{
+  "title": "Tesla voegt Grok-sms toe — de auto als chatvenster",
+  "summary": "Not a Tesla App: tekstberichten via Grok. De wagen wordt een inbox.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxOY3g5c2hNT1E5b0d1RWZ2emxlbXFEcThsMU5rQ0Z5S1F0amxyQzFMNEs2ODJReHVxRnVSMnp5dmlpcXhVTzc4TkpJRGJ3TzFhd2hoRnR0M3pwOEpiUHpGOHN4b2d6SHpjS08tcWE4Wi1iRjNENEVNRXM5X2tVVmRmbmZpZjZqdXg5VHhiczBlMW9IZnFZX3FKNk9pQQ?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-13",
+  "slug": "tesla-voegt-grok-sms-toe-de-auto-als-chatvenster",
+  "tts_slug": "tesla-voegt-grok-sms-toe-de-auto-als-chatvenster",
+  "has_visuals": false,
+  "fallback": true,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-13/tesla-voegt-grok-sms-toe-de-auto-als-chatvenster.html"
+}
