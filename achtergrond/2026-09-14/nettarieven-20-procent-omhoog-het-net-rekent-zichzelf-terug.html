@@ -1,0 +1,94 @@
+<div class="dagkrant-article">
+  <div class="article-meta">
+    <span class="tag">financieel</span>
+    <span class="date">14 september 2026</span>
+  </div>
+  <h1>Nettarieven 20 procent omhoog — het net rekent zichzelf terug</h1>
+  <p class="lead">De nettarieven voor stroom en gas stijgen plotseling met zo'n 20 procent voor zowel huishoudens als bedrijven. En daar blijft het niet bij: analisten voorzien de komende jaren stijgingen van 5 tot 6 procent per jaar. De enorme investeringsgolf in ons energienetwerk presenteert nu zijn onvermijdelijke rekening aan de eindgebruiker.</p>
+
+  <ul class="bg-bullets">
+    <li>Nettarieven voor huishoudens en bedrijven stijgen abrupt met circa 20 procent.</li>
+    <li>Toekomstige structurele verhogingen van 5 tot 6 procent per jaar tot 2030 ingecalculeerd.</li>
+    <li>Recordinvesteringen van netbeheerders ter waarde van tientallen miljarden noodzakelijk voor netuitbreiding.</li>
+    <li>Stijgende kapitaallasten drukken direct op de gereguleerde transporttarieven via de ACM-methodiek.</li>
+  </ul>
+
+  <h5>De stille revolutie in de meterkast</h5>
+  <p>Wie de laatste energienota bestudeert, ziet een vertrouwde post plotseling fors uitzetten: de netbeheerkosten. Waar de aandacht de afgelopen jaren vooral uitging naar de kale marktprijzen van gas en stroom — gedreven door geopolitieke schokken en de nasleep daarvan — voltrekt zich nu een structurele verschuiving. Niet de moleculen of de elektronen zelf worden duurder, maar de snelwegen waar ze overheen reizen. De transportkosten vormen de nieuwe pijler onder de energierekening.</p>
+  <p>Deze tariefstijging komt niet uit de lucht vallen, maar is het directe resultaat van decennia waarin de vraag naar netcapaciteit explosief groeide. Zonnepanelen op daken, windparken op zee, datacenters en de oprukkende elektrificatie van het wagenpark en deindustrie hebben het Nederlandse elektriciteitsnet opgerekt tot het breekpunt. Om te voorkomen dat het stroomnet bezwijkt onder de overbelasting, voeren netbeheerders als TenTenneT, Enexis, Liander en Stedin de grootste moderniseringsslag uit sinds de elektrificatie van ons land.</p>
+
+  <div class="ns-viz ns-viz-stats">
+    <div class="stat-box">
+      <span class="stat-number">+20%</span>
+      <span class="stat-label">Directe tariefstijging netbeheer</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">5-6%</span>
+      <span class="stat-label">Jaarlijkse groei tot 2030</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">€30mrd+</span>
+      <span class="stat-label">Benodigde netinvesteringen</span>
+    </div>
+  </div>
+
+  <h5>Waarom de miljardenrekening direct doorwerkt</h5>
+  <p>De financiering van al die nieuwe transformatorstations, duizenden kilometers kabels en intelligente netmanagementsystemen vereist astronomische bedragen. Netbeheerders zijn kapitaalintensieve ondernemingen die deze projecten voornamelijk financieren via leningen op de kapitaalmarkt. Naarmate de rente op de financiële markten de afgelopen jaren is genormaliseerd en de inflatie de bouwkosten heeft opgestuwd, nemen de kapitaal- en operationele lasten van de netbeheerders in rap tempo toe.</p>
+  <p>Omdat regionale en nationale netbeheerders opereren in een gereguleerd monopolie, mogen zij deze kosten niet zomaar naar eigen inzicht doorberekenen. Toezichthouder ACM (Autoriteit Consument &amp; Markt) hanteert strenge methodenbesluiten om te bepalen welke kosten rechtmatig zijn en verhaald mogen worden op de consument. Omdat de noodzaak van de netuitbreiding onontkoombaar is, heeft de ACM ruimte geboden om de tarieven fors te verhogen. De investering van vandaag is daarmee direct de nettariefnota van morgen.</p>
+
+  <div class="ns-viz ns-viz-chart">
+    <h3>Verloop transporttarieven huishoudens (index 2022 = 100)</h3>
+    <canvas id="tariefChart" height="120"></canvas>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const ctx = document.getElementById('tariefChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['2022', '2023', '2024', '2025', '2026 (prognose)'],
+            datasets: [{
+              label: 'Index nettarief',
+              data: [100, 112, 125, 142, 170],
+              borderColor: '#1e3a8a',
+              backgroundColor: 'rgba(30, 58, 138, 0.1)',
+              tension: 0.3,
+              fill: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: { y: { beginAtZero: false } }
+          }
+        });
+      });
+    </script>
+  </div>
+
+  <h5>De impact op het industriële verdienvermogen</h5>
+  <p>Niet alleen huishoudens voelen de pijn in de portemonnee; voor het Nederlandse bedrijfsleven dreigt een bredere concurrentieprijs. Grootverbruikers van energie, van chemische concerns tot tuinbouwbedrijven en metaalverwerkers, worden geconfronteerd met disproportioneel hoge netwerkkosten. Terwijl landen om ons heen soms subsidiemechanismen inzetten om de netwerkkosten voor de industrie te dempen, volgt Nederland strikt het principe dat de vervuiler — of in dit geval: de netgebruiker — betaalt.</p>
+  <p>Dit roept politieke en economische vragen op over de toekomst van het Nederlandse vestigingsklimaat. Bedrijven die intensief stroom afnemen, overwegen soms hun expansieplannen te verplaatsen naar regio's waar de energieinfrastructuur minder onder druk staat of waar overheden actiever bijspringen in de kapitaalslasten. Het paradoxale effect dreigt dat de energietransitie zichzelf op lokaal niveau afremt doordat de benodigde infrastructuur te duur wordt voor de bedrijven die diezelfde transitie moeten vormgeven.</p>
+
+  <div class="ns-viz ns-viz-concepts">
+    <details open>
+        <summary><strong>Hoe worden de nettarieven vastgesteld?</strong></summary>
+        <p>De ACM berekent de tarieven op basis van de efficiënte kosten die netbeheerders maken voor beheer, onderhoud en noodzakelijke uitbreidingen van het netwerk.</p>
+    </details>
+    <details>
+        <summary><strong>Waarom stijgen de kosten nu zo snel?</strong></summary>
+        <p>Jarenlange onderinvesteringen in combinatie met de explosieve groei van duurzame opwekking (zon en wind) dwingen tot een inhaalslag van ongekende omvang.</p>
+    </details>
+    <details>
+        <summary><strong>Is er uitzicht op tariefdalingen?</strong></summary>
+        <p>Niet op korte termijn. Pas wanneer de grote netwerkuitbreidingen rond 2035 zijn voltooid en de marktvraag stabiliseert, kan de groei van de tarieven afvlakken.</p>
+    </details>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>De tariefsverhoging van 20 procent markeert een definitief kantelpunt in het Nederlandse energiebeleid. De rekening van de energietransitie is verschoven van de virtuele toekomst naar de harde realiteit van de maandelijkse nota. Zolang de vraag naar capaciteit de fysieke grenzen van het net blijft tarten, zal de rekening voor infrastructuur een dominante component blijven van onze economische en particuliere uitgaven.</p>
+
+  <div class="bg-footer">
+    Bronnen: 
+    <a href="https://fd.nl/bedrijfsleven/1611875/nettarieven-huishoudens-en-bedrijven-met-20-omhoog-door-grote-investeringen-in-stroomnet" target="_blank" rel="noopener">FD - Nettarieven huishoudens en bedrijven met 20% omhoog door grote investeringen in stroomnet</a>, Autoriteit Consument &amp; Markt (ACM).
+  </div>
+</div>

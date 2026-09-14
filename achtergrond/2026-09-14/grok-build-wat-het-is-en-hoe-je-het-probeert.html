@@ -1,0 +1,133 @@
+<p class="tag">grok</p>
+<h2>Grok Build: wat het is en hoe je het probeert</h2>
+<p class="meta">14 september 2026</p>
+
+<ul class="bg-bullets">
+  <li>Grok Build introduceert direct bouwen binnen de chatinterface van xAI.</li>
+  <li>De functionaliteit verschuift de focus van passieve tekstgeneratie naar actieve applicatieontwikkeling.</li>
+  <li>Gebruikers kunnen prototypes genereren, testen en bijsturen via natuurlijke taal.</li>
+  <li>De tool concurreert direct met vergelijkbare programmeerfuncties van concurrenten zoals OpenAI en Anthropic.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Kernstatistieken van Grok Build</div>
+  <div class="ns-viz-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; padding: 1rem 0;">
+    <div style="background: var(--bg-alt, #f4f4f5); padding: 1rem; border-radius: 8px;">
+      <div style="font-size: 1.8rem; font-weight: bold; color: var(--accent, #2563eb);">1 Chat</div>
+      <div style="font-size: 0.9rem; color: var(--text-muted, #52525b);">Interface voor zowel prompt als code</div>
+    </div>
+    <div style="background: var(--bg-alt, #f4f4f5); padding: 1rem; border-radius: 8px;">
+      <div style="font-size: 1.8rem; font-weight: bold; color: var(--accent, #2563eb);">Realtime</div>
+      <div style="font-size: 0.9rem; color: var(--text-muted, #52525b);">Preview en iteratie van prototypes</div>
+    </div>
+    <div style="background: var(--bg-alt, #f4f4f5); padding: 1rem; border-radius: 8px;">
+      <div style="font-size: 1.8rem; font-weight: bold; color: var(--accent, #2563eb);">xAI</div>
+      <div style="font-size: 0.9rem; color: var(--text-muted, #52525b);">Infrastructuur en taalmodel</div>
+    </div>
+  </div>
+</div>
+
+<h5>De opkomst van chat-gedreven ontwikkeling</h5>
+<p>De manier waarop we software ontwerpen verandert in rap tempo. Waar AI-modellen tot voor kort vooral werden ingezet voor het schrijven van losse coderegels of het beantwoorden van technische vragen, integreren platforms nu volledige ontwikkelomgevingen direct in de conversatie. Met de komst van Grok Build zet xAI een volgende stap in deze evolutie. Het idee is simpel maar krachtig: in plaats van code exporteren naar een externe IDE, bouwt en test de gebruiker direct binnen de chatomgeving.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Evolutie van AI-programmeerhulp</div>
+  <div class="ns-viz-timeline" style="border-left: 2px solid var(--accent, #2563eb); margin: 1rem 0 1rem 1rem; padding-left: 1rem;">
+    <div style="margin-bottom: 1rem;">
+      <strong>Fase 1: Autocomplete</strong><br>
+      <span style="color: var(--text-muted, #52525b);">AI vult regels code aan in externe editors (zoals Copilot).</span>
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <strong>Fase 2: Chat-assistentie</strong><br>
+      <span style="color: var(--text-muted, #52525b);">Vragen stellen en codefragmenten kopiëren vanuit een aparte chat.</span>
+    </div>
+    <div>
+      <strong>Fase 3: Geïntegreerd Bouwen (Grok Build)</strong><br>
+      <span style="color: var(--text-muted, #52525b);">Directe creatie, preview en iteratie van volledige applicaties binnen de chat.</span>
+    </div>
+  </div>
+</div>
+
+<h5>Hoe Grok Build werkt in de praktijk</h5>
+<p>Wie aan de slag wil met de nieuwe functionaliteit, merkt al snel dat de drempel laag is gehouden. Het proces is ontworpen om van een abstract idee via natuurlijke taal te komen tot een werkend prototype. Hieronder staat de operationele keten van concept tot uitvoerbare applicatie binnen het platform.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">De Bouwketen binnen Grok Build</div>
+  <div class="ns-viz-mech" data-steps="3">
+    <div class="mech-nav" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+      <button class="mech-btn active" onclick="showMechStep(0)" style="padding: 0.25rem 0.75rem; border: 1px solid var(--border, #ccc); background: var(--bg-alt, #eee); border-radius: 4px; cursor: pointer;">1. Prompt</button>
+      <button class="mech-btn" onclick="showMechStep(1)" style="padding: 0.25rem 0.75rem; border: 1px solid var(--border, #ccc); background: var(--bg-alt, #eee); border-radius: 4px; cursor: pointer;">2. Generatie</button>
+      <button class="mech-btn" onclick="showMechStep(2)" style="padding: 0.25rem 0.75rem; border: 1px solid var(--border, #ccc); background: var(--bg-alt, #eee); border-radius: 4px; cursor: pointer;">3. Iteratie</button>
+    </div>
+    <div class="mech-content">
+      <div class="mech-step" style="display: block; background: var(--bg-alt, #f4f4f5); padding: 1rem; border-radius: 8px; text-align: center;">
+        <svg viewBox="0 0 400 120" width="100%" height="100">
+          <rect x="50" y="30" width="300" height="60" rx="8" fill="var(--accent, #2563eb)" opacity="0.1"/>
+          <text x="200" y="65" text-anchor="middle" fill="var(--text, #000)" font-size="14">Gebruiker beschrijft de gewenste app in taal</text>
+        </svg>
+      </div>
+      <div class="mech-step" style="display: none; background: var(--bg-alt, #f4f4f5); padding: 1rem; border-radius: 8px; text-align: center;">
+        <svg viewBox="0 0 400 120" width="100%" height="100">
+          <rect x="50" y="30" width="300" height="60" rx="8" fill="var(--accent, #2563eb)" opacity="0.2"/>
+          <text x="200" y="65" text-anchor="middle" fill="var(--text, #000)" font-size="14">Grok genereert structuur, logica en interface</text>
+        </svg>
+      </div>
+      <div class="mech-step" style="display: none; background: var(--bg-alt, #f4f4f5); padding: 1rem; border-radius: 8px; text-align: center;">
+        <svg viewBox="0 0 400 120" width="100%" height="100">
+          <rect x="50" y="30" width="300" height="60" rx="8" fill="var(--accent, #2563eb)" opacity="0.3"/>
+          <text x="200" y="65" text-anchor="middle" fill="var(--text, #000)" font-size="14">Bijsturen via feedback en direct testen in preview</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5>Strategische implicaties voor de markt</h5>
+<p>De introductie van dergelijke tools laat zien dat de strijd om de AI-gebruiker zich verplaatst van louter tekstgeneratie naar productiviteit en creatie. Waar systemen elkaar aanvankelijk beconcurreerden op parameters en snelheid, telt nu vooral de gebruikservaring en de mate waarin complexe handelingen worden vereenvoudigd. Analisten wijzen erop dat xAI hiermee probeert een vinger in de pap te krijgen bij zowel beginnende makers als professionele ontwikkelaars die snel een concept willen uittesten.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Veelgestelde vragen over Grok Build</div>
+  <div class="ns-viz-concepts" style="border: 1px solid var(--border, #e4e4e7); border-radius: 8px; overflow: hidden; margin: 1rem 0;">
+    <details style="border-bottom: 1px solid var(--border, #e4e4e7); padding: 1rem;">
+      <summary style="font-weight: bold; cursor: pointer;">Is Grok Build gratis te proberen?</summary>
+      <p style="margin-top: 0.5rem; color: var(--text-muted, #52525b);">Toegang hangt af van het gekozen xAI-abonnement en de actuele uitrolfase van het platform.</p>
+    </details>
+    <details style="border-bottom: 1px solid var(--border, #e4e4e7); padding: 1rem;">
+      <summary style="font-weight: bold; cursor: pointer;">Welke programmeertalen worden ondersteund?</summary>
+      <p style="margin-top: 0.5rem; color: var(--text-muted, #52525b);">De focus ligt primair op web-standaarden zoals HTML, JavaScript en gerelateerde frameworks voor snelle prototypes.</p>
+    </details>
+    <details style="padding: 1rem;">
+      <summary style="font-weight: bold; cursor: pointer;">Kan ik de code exporteren?</summary>
+      <p style="margin-top: 0.5rem; color: var(--text-muted, #52525b);">Ja, gegenereerde code kan doorgaans worden gekopieerd of gedownload voor verdere verwerking in lokale projecten.</p>
+    </details>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>Grok Build onderstreept de trend waarin AI-chatbots steeds meer functioneren als complete werkruimten. Door het genereren en testen van code samen te brengen in één enkele conversatie, verlaagt xAI de drempel voor applicatie-ontwikkeling aanzienlijk. Het success op lange termijn zal echter afhangen van de betrouwbaarheid van de gegenereerde code en hoe goed het systeem complexe, schaalbare projecten aankan.</p>
+
+<div class="bg-footer">Bronnen: https://news.google.com/rss/articles/CBMijAFBVV95cUxPYVpTdUJRYUJwLWJwTmZPSk1HZGZLcmk3d1NObkptOGc2RzQ2VUs2RTdPc2F3bDBzRDlBVGQ3WklpQVdSRmpFWDdrSXZ5U1BUUVpFQmNzRXVyU19heUptVVdhenhuYktHX2RnU190MlE0UU5mTWtZYVVxQXdxeHpkWXFKcThQdFEyWURfMg?oc=5</div>
+
+<script>
+function showMechStep(index) {
+  const container = document.currentScript ? document.currentScript.parentElement : document.querySelector('.ns-viz-mech');
+  // Fallback query if needed
+  const mech = document.querySelector('.ns-viz-mech');
+  if (!mech) return;
+  const steps = mech.querySelectorAll('.mech-step');
+  const buttons = mech.querySelectorAll('.mech-btn');
+  
+  steps.forEach((step, i) => {
+    step.style.display = i === index ? 'block' : 'none';
+  });
+  buttons.forEach((btn, i) => {
+    if (i === index) {
+      btn.style.background = 'var(--accent, #2563eb)';
+      btn.style.color = '#fff';
+    } else {
+      btn.style.background = 'var(--bg-alt, #eee)';
+      btn.style.color = 'inherit';
+    }
+  });
+}
+</script>
