@@ -1,0 +1,57 @@
+---
+titel: "Huang tegen Trump: die AI-pauze laten we niet gebeuren"
+url: https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/
+bron: aitech
+kind: aitech
+gegenereerd: 2026-09-15T03:17:01
+---
+
+- Nvidia-CEO Jensen Huang verzet zich openlijk tegen plannen van Washington en Beijing om de ontwikkeling van kunstmatige intelligentie te vertragen.
+
+  - AI-kopstukken van OpenAI, Anthropic en Google DeepMind pleitten eerder voor een 'veiligheidspauze' vanwege exponentiële risico's.
+
+  - Zowel Donald Trump als Xi Jinping wuiven deze ethische waarschuwingen weg als ongegronde bangmakerij en geopolitieke zwakte.
+
+  - Beleggers reageren nerveus op de botsing, wat direct drukt op de koersen van chipreuzen en toeleveranciers zoals ASML.
+
+     5.000+
+     Teraflops per chip
+
+     $3T
+     Marktwaarde Nvidia
+
+     0
+     Rustpauzen geaccepteerd
+
+De paradox van de rem
+
+De discussie over een eventuele afremming van kunstmatige intelligentie leek lange tijd een exclusief domein van filosofen en ethici, maar is inmiddels getransformeerd tot een keiharde geopolitieke machtsstrijd. Toen de leidinggevenden achter OpenAI, Anthropic, xAI en Google DeepMind onlangs de noodklok luidden en aandrongen op een gecoördineerde adempauze, deden zij dat vanuit de premisse dat de veiligheidsprotocollen gelijke tred moeten houden met de rekencapaciteit. Volgens de grondleggers van de moderne AI dreigt het moment te naderen waarop systemen autonoom en onvoorzien gedrag gaan vertonen dat niet meer door mensen is bij te sturen. Wat begon als een oproep tot voorzichtigheid, werd door kritische marktkenners echter al snel gedefinieerd als een heimelijk kartelmechanisme: gevestigde orde die de ladder dichttimmert voor opkomende concurrenten.
+
+Die verdenking van marktmanipulatie bleef ook in de politieke hoofdstedelijke centra niet onopgemerkt. Zowel in Washington als in Beijing werd de oproep tot zelfbeheersing onthaald met hoongelach en scepsis. Waar de Democratische en Republikeinse kampen het in de Verenigde Staten zelden ergens over eens zijn, vonden ze elkaar in de overtuiging dat elke vertraging in de AI-race een cadeau is aan de strategische rivaal. Donald Trump noemde de ethische bezwaren 'zwak' en 'on-Amerikaans', terwijl Xi Jinping vanuit Beijing liet weten dat China juist versnelt in plaats van inhoudt. In dit explosieve veld weigerde één man om in het defensief te gedragen: Jensen Huang.
+
+     Fase 1
+      De Waarschuwing AI-topmannen vragen om een wereldwijde pauze uit angst voor ongecontroleerde risico's.
+
+     Fase 2
+      Politieke Reactie Trump en Xi verwerpen de oproep; dominantie en snelheid prevaleren boven ethiek.
+
+     Fase 3
+      Huangs Ingreep Nvidia stelt dat stilstaan geen optie is en garandeert onveranderde chipleveringen.
+
+De ongeautoriseerde lobby van Silicon Valley
+
+Tijdens een spoedoverleg met investeerders en regeringsfunctionarissen maakte de Nvidia-topman glashelder dat zijn bedrijf niet van plan is om gehoor te geven aan remmende maatregelen. Nvidia, uitgegroeid tot de onbetwiste spil van de wereldwijde technologiemarkt, verdient miljarden aan de honger naar geavanceerde grafische processoren. Voor Huang is een 'pauze' niet alleen economisch destructief, maar ook technologisch absurd. Volgens de topman is de hardware-infrastructuur juist de motor die de productiviteit van de komende decennia moet garanderen. Wie nu de stekker eruit trekt, zadelt de westerse economie op met een structurele achterstand die nooit meer in te halen valt.
+
+De harde opstelling van Nvidia legt een diepe kloof bloot binnen de techsector. Aan de ene kant staan de modelbouwers die worstelen met de ondoorgrondelijkheid van hun eigen creaties en vrezen voor catastrofale misstanden. Aan de andere kant staat de hardware-industrie, aangevoerd door Huang, die gedreven wordt door wetten van schaalvergroting en pure marktvraag. Deze spanning werkt als een schokgolf door op de wereldwijde beurzen. Berichten over mogelijke regulering of vrijwillige afspraken jagen beleggers direct stuiptruipen op het lijf, wat onmiddellijk resulteert in forse koersdalingen bij niet alleen Nvidia zelf, maar ook bij cruciale Europese toeleveranciers zoals het Nederlandse ASML.
+
+De markt als arbiter
+
+Het dilemma laat zien hoe weinig grip overheden momenteel hebben op de dynamiek van de digitale revolutie. Tradities van wetgeving en internationale verdragen bewegen zich in een slakkentempo dat verbleekt bij de exponentiële groei van datacenters en algoritmes. Wanneer techbaronnen zelf om regels vragen, is dat volgens critici vaak een teken dat ze de markt willen reguleren op een manier die hun eigen monopolie beschermt. Dat Huang daar dwars doorheen fietst, dwingt de politiek terug in een reactieve rol.
+
+De confrontatie tussen de remmers en de versnellers zal de komende jaren bepalen of kunstmatige intelligentie wordt gekanaliseerd via strenge multilaterale verdragen of dat de markt volledig op eigen houtje door dendert. Vooralsnog lijkt de economische zwaartekracht te winnen van de ethische bezwaren. Zolang de vraag naar rekenkracht ongebroken blijft stijgen, zal geen enkele chipfabrikant vrijwillig een stap terugzetten.
+
+Conclusie
+
+De botsing rond de zogenaamde AI-pauze onderstreept dat de echte macht over de toekomst van de technologie niet ligt bij commissies of ethische raden, maar bij de makers van de hardware. Jensen Huang heeft met zijn publieke optreden definitief afgerekend met de illusie dat Silicon Valley zichzelf kan temmen. Nu de politiek kiest voor geopolitieke dominantie boven voorzorg, blijft de AI-trein onverminderd doorrazen op volle snelheid.
+
+ Bronnen: TechCrunch, NOS, The Verge, Financieele Dagblad

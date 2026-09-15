@@ -1,0 +1,66 @@
+---
+titel: "Goeloe reed niet op een gestolen fiets. Hij overleed bij de aanhouding"
+url: https://www.nrc.nl/nieuws/2026/09/14/de-politie-zag-alfredo-51-ten-onrechte-aan-voor-een-fietsendief-hij-overleed-bij-zijn-arrestatie-a4936597
+bron: nederland
+kind: nederland
+gegenereerd: 2026-09-15T03:17:50
+---
+
+Goeloe reed niet op een gestolen fiets. Hij overleed bij de aanhouding
+
+NRC: de politie zat ernaast. Honderden liepen een stille tocht. Daarna werd het bureau bekogeld.
+
+    - Alfredo 'Goeloe' (51) werd door de politie ten onrechte aangezien voor een fietsendief.
+
+    - Tijdens de daaropvolgende gewelddadige aanhouding kwam hij om het leven.
+
+    - Na een waardige stille tocht met honderden deelnemers sloeg de sfeer om; het politiebureau werd bekogeld.
+
+    - NRC-onderzoek toont aan dat de gronden voor de staandehouding feitelijk onjuist bleken te zijn.
+
+       51
+       jaar oud
+
+       0
+       stolen fietsen (eigen eigendom)
+
+       100+
+       deelnemers stille tocht
+
+Een noodlottige persoonsverwisseling
+
+De tragische gebeurtenis begon met een routinematige verdenking die in alle opzichten onjuist bleek te zijn. De 51-jarige Alfredo, in de buurt bekend als Goeloe, fietste door de stad toen agenten hem staande hielden op vermoeden van fietsdiefstal. Al snel bleek uit alles dat het zijn eigen rijwiel betrof, maar de situatie was op dat moment al dusdanig geëscaleerd dat de communicatie tussen de betrokken partijen volledig stroeve vormen aannam. Wat begon als een misverstand over een verlichting of een verdacht signalement, veranderde in een fatale confrontatie.
+
+       Fase 1
+       Staandehouding op basis van vermeende fietsdiefstal.
+
+       Fase 2
+       Escalatie tijdens de aanhouding en fysiek ingrijpen door agenten.
+
+       Fase 3
+       Overlijden van Alfredo; eerste landelijke berichtgeving volgt.
+
+       Fase 4
+       Stille tocht en latere ongeregeldheden bij het politiebureau.
+
+Disproportioneel geweld en de nasleep
+
+Tijdens de aanhouding werd fysiek geweld gebruikt dat achteraf door critici en nabestaanden als buitensporig wordt beschouwd. Getuigen spraken van een hardhandige inzet die bij een simpele verdenking van een overtreding disproportioneel oogde. Het overlijden van Alfredo tijdens deze operatie stelde het korps wederom voor pijnlijke vragen over proportionaliteit, de-escalerend optreden en de institutionele omgang met minderheden en kwetsbare burgers in stedelijke gebieden. De maatschappelijke verontwaardiging liet zich direct voelen in de wijk waar hij geliefd was.
+
+       Waarom werd Goeloe staande gehouden?
+
+Agenten meenden dat de fiets van diefstal afkomstig was, een aanname die achteraf onjuist bleek te zijn. De fiets was zijn rechtmatige eigendom.
+
+       Hoe verliep de stille tocht?
+
+Honderden mensen kwamen bijeen om vreedzaam te herdenken en gerechtigheid te eisen. Later op de avond sloeg de sfeer om en werd het bureau bekogeld.
+
+Van vreedzame herdenking naar rellen
+
+De woede en het verdriet kregen aanvankelijk een waardige uitlaatklep in een stille tocht. Honderden betogers liepen door de straten om steun te betuigen aan de nabestaanden en opheldering te eisen van het openbaar ministerie en de hoofdofficier van justitie. Echter, naarmate de avond vorderde, liep de spanning onder een deel van de aanwezigen hoog op. Een groep koos ervoor om op te trekken richting het plaatselijke politiebureau, waar ruiten werden ingegooid en bekogelingen plaatsvonden. De Mobiele Eenheid moest ingrijpen om de orde te herstellen, wat de kloof tussen de buurt en de lokale wetshandhavers tijdelijk alleen maar vergrootte.
+
+Conclusie
+
+Het overlijden van Alfredo 'Goeloe' legt pijnlijk bloot hoe een kleine administratieve of visuele vergissing in een fractie van een seconde kan escaleren tot een onomkeerbaar drama. Terwijl het strafrechtelijk onderzoek naar het handelen van de agenten nog in volle gang is, blijft een rouwende gemeenschap achter met open wonden en een diepgevoeld wantrouwen in het optreden van de politie.
+
+   Bronnen: NRC, NOS, NU.nl

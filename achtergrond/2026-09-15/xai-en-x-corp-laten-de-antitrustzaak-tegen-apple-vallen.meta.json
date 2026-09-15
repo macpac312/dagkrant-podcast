@@ -1,0 +1,20 @@
+{
+  "title": "xAI en X Corp laten de antitrustzaak tegen Apple vallen",
+  "summary": "Al Jazeera, CNBC, Engadget. De klacht: Apple bevoordeelde ChatGPT. De vrede is een beweging, geen vonnis.",
+  "sources": [
+    "https://www.aljazeera.com/news/2026/9/14/elon-musks-x-corp-and-spacexai-drop-antitrust-lawsuit-against-apple?traffic_source=rss",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbUxkMkZSRFpacXhTYVFTa0oxbmp0cWdZcm8xSk5fN1RuLUt1dTQtczN1RHFXd3FodlQ2aVZMZG9rbzh0NVR6UWQxS0R4djVaa2xNeXB2cEFsTU02YnlQY0FfTzRRNE1COVRGVncycGNaVWdmUHpVSXk2dW5UUnRvNUQyaC1DdFk1cGF4TV9MVk93M3pTNGx5dW1UZTNSMXVRbVNoNk1LT0hGbTdxQThmTnRwTQ?oc=5",
+    "https://www.cnbc.com/2026/09/14/musks-x-corp-spacexai-resolve-antitrust-lawsuit-against-apple.html"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-15",
+  "slug": "xai-en-x-corp-laten-de-antitrustzaak-tegen-apple-vallen",
+  "tts_slug": "xai-en-x-corp-laten-de-antitrustzaak-tegen-apple-vallen",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-15T03:39:41",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-15/xai-en-x-corp-laten-de-antitrustzaak-tegen-apple-vallen.html",
+  "mode": "default"
+}

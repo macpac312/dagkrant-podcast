@@ -1,0 +1,70 @@
+<ul class="bg-bullets">
+    <li>Een Russische drone-aanval trof begin september 2026 kritieke spoorweginfrastructuur in Oekraïne, vlakbij de Poolse grens.</li>
+    <li>De aanslag vond plaats luttele minuten nadat een reguliere passagierstrein met onder andere Volt-politicus Reinier van Lanschot was vertrokken.</li>
+    <li>De NAVO en de Europese Unie reageren verontwaardigd op het incident, dat de kwetsbaarheid van grensoverschrijdende verbindingen blootlegt.</li>
+    <li>Polen en andere oostelijke bondgenoten voeren de druk op om de luchtverdediging langs de oostflank van de alliantie acuut te versterken.</li>
+</ul>
+
+<div class="ns-viz">
+    <ns-geomap region="europe" countries="POL,UKR" highlight="UKR" title="Grensgebied Oekraïne en Polen: Locatie drone-incident"></ns-geomap>
+</div>
+
+<div class="ns-viz">
+    <div class="ns-viz-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; padding: 1rem; background: var(--surface-subtle, #f5f5f7); border-radius: 8px;">
+        <div>
+            <div style="font-size: 2rem; font-weight: bold; color: var(--primary, #d9381e);">15 sep</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Datum van het incident</div>
+        </div>
+        <div>
+            <div style="font-size: 2rem; font-weight: bold; color: var(--primary, #d9381e);">Minuten</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Marge tussen trein en inslag</div>
+        </div>
+        <div>
+            <div style="font-size: 2rem; font-weight: bold; color: var(--primary, #d9381e);">Oostflank</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Focusgebied NAVO-verdediging</div>
+        </div>
+    </div>
+</div>
+
+<h5>Een haveloze marge van luttele minuten</h5>
+<p>Het is een angstscenario dat tot voor kort vooral tot de verbeelding sprak van militaire strategen, maar dat nu pijnlijk realiteit is geworden. Een trein met prominente Europese politici, onder wie de Nederlandse Europarlementariër Reinier van Lanschot, wist op het laatste moment aan de ramp te ontkomen. Vlak nadat het internationale spoorcompositie het station verliet en koers zette richting de Poolse grens, sloeg een Russische aanvalsdrone in op de railinfrastructuur. De timing laat weinig ruimte voor interpretatie: de marge tussen een diplomatieke crisis van ongekende omvang en het huidige scenario bedroeg slechts enkele minuten.</p>
+<p>De aanval onderstreept hoe poreus de veiligheidsarchitectuur in West-Oekraïne inmiddels is. Hoewel de regio ver van de frontlinie in het oosten en zuiden ligt, zijn Russische lange-afstandsdrones en kruisraketten in staat om diep in het hinterland doelen te bereiken. Dat nu specifiek infrastructuur wordt geraakt die intensief wordt gebruikt door westerse diplomaten, journalisten en politici, voedt de speculatie over gerichte intimidatie vanuit Moskou. De vraag is niet langer óf de oorlog kan overslaan naar transportaders van vitaal Europees belang, maar hoe lang deze vitale lijnen nog open kunnen blijven zonder directe NAVO-bescherming.</p>
+
+<h5>Geopolitieke schokgolf in Brussel en Warschau</h5>
+<p>Binnen de Europese Unie en het hoofdkwartier van de NAVO in Brussel is de reactie op het incident fel en eensgezind. Diplomaten spreken achter de schermen over een gevaarlijke escalatie. Het vervoer per spoor geldt als de levensader van Oekraïne sinds het luchtruim voor civiele vluchten hermetisch is gesloten. Nu Moskou lijkt te experimenteren met het verstoren van deze spoorcorridors, staat de veiligheid van internationale vertegenwoordigers direct op het spel. De Europese Commissie buigt zich inmiddels over verscherpte veiligheidsprotocollen, al blijft de vraag hoe een spoorwegtraject van honderden kilometers effectief kan worden gevrijwaard van sluipende drone-aanvallen.</p>
+<p>In Warschau is de spanning eveneens te snijden. Polen fungeert al jaren als de belangrijkste logistieke hub voor zowel humanitaire steun als militaire leveringen aan Oekraïne. Poolse autoriteiten hebben herhaaldelijk gewaarschuwd dat de oorlog zich vroeg of laat onvermijdelijk zou manifesteren in grensincidenten of gerichte sabotageacties op Pools grondgebied. De recente inslag net over de grens met Oekraïne wordt in Warschau dan ook gezien als een directe waarschuwing. Het land trekt opnieuw aan de alarmbel bij de NAVO-bondgenoten om de luchtverdediging direct aan de oostgrens massaal op te schalen.</p>
+
+<div class="ns-viz">
+    <div class="ns-viz-mech">
+        <div class="ns-viz-mech-nav" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <button class="active" onclick="switchMech(0)" style="padding: 0.4rem 0.8rem; border-radius: 20px; border: 1px solid #ccc; background: #fff; cursor: pointer;">1. Vertrek</button>
+            <button onclick="switchMech(1)" style="padding: 0.4rem 0.8rem; border-radius: 20px; border: 1px solid #ccc; background: #fff; cursor: pointer;">2. Doorreis</button>
+            <button onclick="switchMech(2)" style="padding: 0.4rem 0.8rem; border-radius: 20px; border: 1px solid #ccc; background: #fff; cursor: pointer;">3. Inslag</button>
+        </div>
+        <div class="ns-viz-mech-screen" style="border: 1px solid #e0e0e0; padding: 1.5rem; border-radius: 8px; background: #fafafa; text-align: center;">
+            <div class="mech-slide" style="display: block;">
+                <strong>Fase 1: Vertrek EU-delegatie</strong><br>
+                Trein met o.a. Reinier van Lanschot vertrekt volgens schema van het station in West-Oekraïne.
+            </div>
+            <div class="mech-slide" style="display: none;">
+                <strong>Fase 2: Kruising grensregio</strong><br>
+                Het koningsoverleg over logistieke steun loopt parallel aan de treinreis door het kwetsbare grensgebied.
+            </div>
+            <div class="mech-slide" style="display: none;">
+                <strong>Fase 3: Drone-impact</strong><br>
+                Minuten na passage slaat de explosieve lading in op de spoorbaan, waardoor de route direct onbruikbaar wordt.
+            </div>
+        </div>
+    </div>
+</div>
+
+<h5>De kwetsbaarheid van het diplomatieke netwerk</h5>
+<p>Het incident werpt een schril licht op de risico's die politici en diplomaten bewust of onbewust nemen om steunbetuigingen aan Kiev kracht bij te zetten. Sinds de Russische inval reizen regeringsleiders, Europarlementariërs en ministers regelmatig per trein naar de Oekraïnse hoofdstad om solidariteit te tonen. Deze reizen zijn uitgegroeid tot een vast onderdeel van de Europese diplomatie, maar verliezen hun veilige karakter naarmate de Russische militaire doctrine verhardt en precisiewapens vaker worden ingezet op civiele infrastructuur. Beveiligingsdiensten staan voor een duivels dillemma: reizen per trein onmogelijk maken betekent dat diplomatieke banden dreigen te verwateren, terwijl continuering van de reizen levensgevaarlijk blijft.</p>
+<p>Bovendien roept de aanval vragen op over de effectiviteit van de inlichtingendiensten in het signaleren van op handen zijnde aanvallen op specifieke transportlijnen. Dat de drone precies kon toeslaan op een moment dat de spoorcorridor zo hoogwaardig bezet was, wijst op ofwel ernstige pech, ofwel op gerichte observatie door pro-Russische informanten of geavanceerde satellietreconnaissance. Het incident zal in Brussel ongetwijfeld leiden tot een herijking van het reizen per spoor, waarbij openbaarheid van reisschema's vermoedelijk nog strenger aan banden zal worden gelegd.</p>
+
+<h5>Conclusie</h5>
+<p>De drone-aanval nabij de Poolse grens is meer dan een lokaal spoorincident; het is een harde confrontatie met de kwetsbaarheid van de Europese diplomatie in tijden van oorlog. Nu de grens tussen het veilige West-Europa en het door oorlog geteisterde Oekraïne fysiek onder druk komt te staan door Russische explosieven, moeten NAVO en EU noodgedwongen hun strategie herzien. De roep om een robuustere luchtverdediging langs de oostflank klinkt luider dan ooit, en de tijd waarin politici onbezorgd per trein naar Kiev konden afreizen lijkt definitief voorbij.</p>
+
+<div class="bg-footer">
+    Bronnen: NOS (l/2630975, l/2631014), FD (politiek/1612221)
+</div>
