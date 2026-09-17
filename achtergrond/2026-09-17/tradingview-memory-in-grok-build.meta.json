@@ -1,0 +1,19 @@
+{
+  "title": "TradingView: memory in Grok Build",
+  "summary": "De beurs-terminal als techblog. De feature is serieus. De plaatsing zegt waar xAI wordt verhandeld: in de feed van traders.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdjBlVWdmM280X1RDU2pEVThCTC05WjNSSHI4U1VITjVEMFVjMG1YdGx4T0VNVjdmY2pBenhleFlubWpfLVVKbFBaSHpPRUl0N2F4T2dtMUhRcVNoY2hKeHVCeHZzWl9DaGNJM200Ym1yMzBBTEplU2piYUlLTjFTcnNoVmVSQVF4SjJHSkJvZWFzWTFXSW5nUXdNc0VoVzZpVEFjRUhpSGl1bzVRbEdVTzFtVFJ4dkthZ2c?oc=5",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaC1KZkpfZ2RRd2pLWVJ0X0x2YjE3dVhLYXpQSWtheDRHamkyeHZCZFEyVlA4YUFaa2FreGtGQmMyOTdyTFVhVk5mQlZtV0RXX281REVCUjAwcVl0d3RITlRpb1JYODJFMUFjVllWaGV1QzFCcy1YVVk1VzNveGE4bk5IY1BRVGJQaWtUTXN1enY?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-17",
+  "slug": "tradingview-memory-in-grok-build",
+  "tts_slug": "tradingview-memory-in-grok-build",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-17T03:58:43",
+  "size_kb": 9,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-17/tradingview-memory-in-grok-build.html",
+  "mode": "default"
+}

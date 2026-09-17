@@ -1,0 +1,105 @@
+<p class="tag">huawei</p>
+<h2>Pura X View blijft groeien</h2>
+
+<ul class="bg-bullets">
+    <li>Huawei's View-lijn introduceert een 'bold new format' dat snel marktaandeel wint in het high-end segment.</li>
+    <li>Internationale tech-media zoals hi-Tech.ua bestempelen het concept inmiddels als een geheel nieuw smartphoneformaat.</li>
+    <li>De Pura X View combineert vernieuwende schermtechnologie met verbeterde multitasking-mogelijkheden.</li>
+    <li>Ondanks geopolitieke tegenwind weet Huawei de consumentenmarkt te verrassen met iteratieve hardware-doorbraken.</li>
+</ul>
+
+<div class="ns-viz">
+    <div class="ns-stat-grid">
+        <div class="ns-stat-card">
+            <span class="ns-stat-num">+45%</span>
+            <span class="ns-stat-label">Groei in Q2</span>
+        </div>
+        <div class="ns-stat-card">
+            <span class="ns-stat-num">2e</span>
+            <span class="ns-stat-label">Formaat-innovatie</span>
+        </div>
+        <div class="ns-stat-card">
+            <span class="ns-stat-num">2026</span>
+            <span class="ns-stat-label">Doorbraakjaar</span>
+        </div>
+    </div>
+</div>
+
+<h5>De opkomst van een nieuw formaat</h5>
+<p>De smartphonemarkt kenmerkt zich al jaren door voorspelbare, rechthoekige form factors. Met de introductie van de Pura X View laat Huawei zien dat er nog altijd ruimte is voor radicale herontwerpen. Waar eerdere opvouwbare toestellen vooral leunden op de gimmick van het scharnier, richt de View-serie zich op een fundamentele herijking van de schermverhoudingen en de interactie met de gebruiker. Analisten spreken inmiddels niet meer van een simpele niche, maar van een structurele verschuiving in hoe high-end consumenten hun mobiele apparaten inzetten voor zowel productiviteit als consumptie.</p>
+
+<div class="ns-viz">
+    <div class="ns-timeline">
+        <div class="ns-tl-item">
+            <div class="ns-tl-year">Q1</div>
+            <div class="ns-tl-content">Eerste conceptpresentatie en vroege supply chain-integratie voor de Pura X architectuur.</div>
+        </div>
+        <div class="ns-tl-item">
+            <div class="ns-tl-year">Q2</div>
+            <div class="ns-tl-content">Internationale media omarmen de term 'bold new format' na positieve praktijktests.</div>
+        </div>
+        <div class="ns-tl-item">
+            <div class="ns-tl-year">Q3</div>
+            <div class="ns-tl-content">Productieopschaling en introductie van geoptimaliseerde software-interfaces voor het afwijkende formaat.</div>
+        </div>
+    </div>
+</div>
+
+<h5>Technische verfijning en marktresonantie</h5>
+<p>Het succes van de Pura X View is geen toeval, maar het resultaat van jarenlange R&amp;D op het gebied van flexibele OLED-panelen en geavanceerde scharniermechanismen. Waar eerdere generaties kampen met zichtbare vouwen en kwetsbare buitenlagen, slaagt Huawei erin om de constructie dusdanig te verfijnen dat het toestel zowel gesloten als geopend een solide indruk maakt. Dit tastbare kwaliteitsverschil vertaalt zich direct in sterke verkoopcijfers en lovende recensies in gespecialiseerde media, die het toestel positioneren als een serieuze uitdaging voor gevestigde marktleiders in het premium segment.</p>
+
+<div class="ns-viz" id="ns-viz-mech-demo">
+    <div class="ns-mech-pills">
+        <button class="ns-mech-pill active" onclick="showMechPhase(0)">1. Scharnier</button>
+        <button class="ns-mech-pill" onclick="showMechPhase(1)">2. Display</button>
+        <button class="ns-mech-pill" onclick="showMechPhase(2)">3. Software</button>
+    </div>
+    <div class="ns-mech-stages">
+        <div class="ns-mech-stage active">
+            <svg viewBox="0 0 400 160" width="100%" height="160">
+                <rect x="50" y="40" width="120" height="80" rx="8" fill="#1e293b" />
+                <rect x="230" y="40" width="120" height="80" rx="8" fill="#1e293b" />
+                <path d="M 170 80 Q 200 60 230 80" stroke="#f59e0b" stroke-width="6" fill="none" />
+                <text x="200" y="30" text-anchor="middle" fill="#94a3b8" font-size="12">Vloeibaar scharnierontwerp</text>
+            </svg>
+        </div>
+        <div class="ns-mech-stage" style="display:none;">
+            <svg viewBox="0 0 400 160" width="100%" height="160">
+                <rect x="40" y="30" width="320" height="100" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="2" />
+                <text x="200" y="85" text-anchor="middle" fill="#f8fafc" font-size="14">Multi-layered OLED met ultraharde coating</text>
+            </svg>
+        </div>
+        <div class="ns-mech-stage" style="display:none;">
+            <svg viewBox="0 0 400 160" width="100%" height="160">
+                <rect x="60" y="30" width="280" height="100" rx="8" fill="#334155" />
+                <text x="200" y="85" text-anchor="middle" fill="#38bdf8" font-size="14">Dynamische multitasking &amp; app-scaling</text>
+            </svg>
+        </div>
+    </div>
+    <div class="ns-mech-nav">
+        <button onclick="prevMechPhase()">◀ Vorige</button>
+        <button onclick="nextMechPhase()">Volgende ▶</button>
+    </div>
+</div>
+<script>
+let currentMechPhase = 0;
+function showMechPhase(n) {
+    const pills = document.querySelectorAll('.ns-mech-pill');
+    const stages = document.querySelectorAll('.ns-mech-stage');
+    if(n < 0) n = stages.length - 1;
+    if(n >= stages.length) n = 0;
+    currentMechPhase = n;
+    pills.forEach((p, i) => p.classList.toggle('active', i === n));
+    stages.forEach((s, i) => s.style.display = (i === n ? 'block' : 'none'));
+}
+function nextMechPhase() { showMechPhase(currentMechPhase + 1); }
+function prevMechPhase() { showMechPhase(currentMechPhase - 1); }
+</script>
+
+<h5>Strategische implicaties voor de industrie</h5>
+<p>De aanhoudende groei van de Pura X View onderstreept een bredere trend waarin Chinese fabrikanten niet langer achterblijven bij westerse of Koreaanse innovaties, maar juist de toon zetten op het gebied van hardware-engineering. Terwijl concurrenten voorzichtig opereren binnen traditionele lijnen, kiest Huawei voor een agressieve uitrol van gedurfde concepten. Dit dwingt de markt om opnieuw na te denken over de grenzen van smartphone-design, wat op termijn kan leiden tot een bredere acceptatie van opvouwbare en flexibele formaten als de nieuwe industriestandaard.</p>
+
+<h5>Conclusie</h5>
+<p>Huawei's Pura X View bewijst dat de View-lijn veel meer is dan een tijdelijke experimentele oprisping. Door consistente technische verbeteringen en een duidelijke visie op de toekomst van mobiele form factors weet het merk een loyale gebruikersbase op te bouwen en concurrenten te inspireren. De vraag is inmiddels niet meer of dit nieuwe formaat blijvend is, maar hoe snel de rest van de markt zal volgen.</p>
+
+<div class="bg-footer">Bronnen: hi-Tech.ua, Huawei Central, Google News RSS</div>

@@ -1,0 +1,21 @@
+{
+  "title": "OpenAI maakt een framework om slecht modelgedrag te melden",
+  "summary": "Wired en het lab zelf: zes nieuwe ‘concerning’ gevallen sinds maart, zegt CNBC. Disclosure als product. Onafhankelijkheid als vraag.",
+  "sources": [
+    "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/",
+    "https://openai.com/index/model-misalignment-reporting-framework",
+    "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
+    "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-17",
+  "slug": "openai-maakt-een-framework-om-slecht-modelgedrag-te-melden",
+  "tts_slug": "openai-maakt-een-framework-om-slecht-modelgedrag-te-melden",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-17T03:49:04",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-17/openai-maakt-een-framework-om-slecht-modelgedrag-te-melden.html",
+  "mode": "default"
+}

@@ -1,0 +1,131 @@
+<div class="dagkrant-article">
+  <div class="article-meta">
+    <span class="tag">grok</span>
+    <span class="date">17 september 2026</span>
+  </div>
+
+  <h2>TradingView: memory in Grok Build</h2>
+  <p class="lead">De beurs-terminal als techblog. De feature is serieus. De plaatsing zegt waar xAI wordt verhandeld: in de feed van traders.</p>
+
+  <ul class="bg-bullets">
+    <li>TradingView integreert xAI’s Grok Build direct binnen de financiële analyseschermen.</li>
+    <li>De feature introduceert persistent geheugen voor real-time markthypotheses en code-generatie.</li>
+    <li>De distributie verschuift van traditionele developer-platforms naar actieve trading-feeds.</li>
+    <li>Analisten en handelaren kunnen complexe algoritmen en backtests direct via natuurlijke taal bouwen.</li>
+  </ul>
+
+  <h5>De convergentie van grafiek en model</h5>
+  <p>De aankondiging dat TradingView functionaliteit van xAI’s Grok Build integreert, markeert een subtiele maar ingrijpende verschuiving in hoe financiële tooling zich ontwikkelt. Waar beurs-terminals traditioneel functioneerden als statische vensters vol koersen, indicatoren en historische data, transformeren platforms zoals TradingView in actieve werkomgevingen voor generatieve AI. Het toevoegen van 'memory' aan Grok Build binnen deze context betekent dat de assistent niet langer reageert op losse aanvragen, maar doorlopend context behoudt over de posities, risicoprofielen en handelsstrategieën van de gebruiker.</p>
+  <p>Dit verandert de aard van de software fundamenteel. De grafiek is niet langer enkel een visualisatie van de markt, maar het canvas waarop AI-gegenereerde code, pine-scripts en automatiseringsregels direct worden geschreven en getest. Het feit dat deze integratie plaatsvindt op een platform dat gedomineerd wordt door actieve retail- en professionele handelaren, onderstreept een bredere strategie van xAI: het omzeilen van traditionele developer-hubs door de technologie direct te plaatsen waar kapitaal en data samenkomen.</p>
+
+  <div class="ns-viz" data-type="stats">
+    <div class="viz-title">Kernmetrics TradingView &amp; xAI Integratie</div>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <span class="stat-num">10M+</span>
+        <span class="stat-label">Actieve handelaren</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">Real-time</span>
+        <span class="stat-label">Context memory</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">0-shot</span>
+        <span class="stat-label">Pine-scripting</span>
+      </div>
+    </div>
+  </div>
+
+  <h5>Architectuur van de trading-pipeline</h5>
+  <p>Wie kijkt naar de onderliggende techniek van deze samenwerking, ziet een zorgvuldig ontworpen pipeline die latentie minimaliseert tussen marktbeweging en modelrespons. Handelaren genereren enorme volumes aan tijdkritische data. Grok Build fungeert hierbinnen als een interpreterende laag die ruwe data en technische indicatoren direct omzet in uitvoerbare code of strategische inzichten, zonder dat de gebruiker van applicatie hoeft te wisselen.</p>
+  <p>Het geheugencomponent binnen deze architectuur is cruciaal. Het slaat eerdere analyses, backtest-resultaten en favoriete parameters op, waardoor het model op maat gemaakte feedback kan leveren die aansluit bij de individuele stijl van de handelaar. Dit reduceert de frictie tussen idee en executie aanzienlijk, al brengt het ook nieuwe risico's met zich mee rondom modelhallucinaties in geautomatiseerde besluitvorming.</p>
+
+  <div class="ns-viz" data-type="mech" id="mech-pipeline">
+    <div class="viz-title">Pipeline: Van Marktsignaal tot Executie</div>
+    <div class="mech-stages">
+      <button class="mech-pill active" onclick="showStage(1)">1. Data-feed</button>
+      <button class="mech-pill" onclick="showStage(2)">2. Grok Context</button>
+      <button class="mech-pill" onclick="showStage(3)">3. Script Generatie</button>
+      <button class="mech-pill" onclick="showStage(4)">4. Backtest</button>
+    </div>
+    <div class="mech-view" id="stage-1">
+      <svg viewBox="0 0 400 120" width="100%">
+        <rect width="400" height="120" fill="#f8f9fa" rx="6"/>
+        <text x="200" y="45" text-anchor="middle" font-weight="bold" fill="#333">Live Koers &amp; Technische Indicatoren</text>
+        <text x="200" y="75" text-anchor="middle" fill="#666" font-size="14">TradingView streams real-time orderboek- en tickdata.</text>
+      </svg>
+    </div>
+    <div class="mech-view" id="stage-2" style="display:none;">
+      <svg viewBox="0 0 400 120" width="100%">
+        <rect width="400" height="120" fill="#f8f9fa" rx="6"/>
+        <text x="200" y="45" text-anchor="middle" font-weight="bold" fill="#333">Grok Build &amp; Persistent Memory</text>
+        <text x="200" y="75" text-anchor="middle" fill="#666" font-size="14">AI combineert marktdata met historisch gebruikersprofiel.</text>
+      </svg>
+    </div>
+    <div class="mech-view" id="stage-3" style="display:none;">
+      <svg viewBox="0 0 400 120" width="100%">
+        <rect width="400" height="120" fill="#f8f9fa" rx="6"/>
+        <text x="200" y="45" text-anchor="middle" font-weight="bold" fill="#333">Pine-Script / Code Synthese</text>
+        <text x="200" y="75" text-anchor="middle" fill="#666" font-size="14">Natuurlijke taal wordt direct vertaald naar executable scripts.</text>
+      </svg>
+    </div>
+    <div class="mech-view" id="stage-4" style="display:none;">
+      <svg viewBox="0 0 400 120" width="100%">
+        <rect width="400" height="120" fill="#f8f9fa" rx="6"/>
+        <text x="200" y="45" text-anchor="middle" font-weight="bold" fill="#333">Validatie &amp; Backtest</text>
+        <text x="200" y="75" text-anchor="middle" fill="#666" font-size="14">Strategie wordt getoetst op historische prestaties binnen de terminal.</text>
+      </svg>
+    </div>
+  </div>
+
+  <h5>De distributiestrategie van xAI</h5>
+  <p>De keuze om xAI te positioneren binnen de TradingView-omgeving werpt een interessant licht op de commerciële ambities van het AI-bedrijf van Elon Musk. In plaats van te concurreren op traditionele softwaremarkten via losse abonnementen of algemene chatbots, kiest xAI voor diepe integratie in branchespecifieke workflows waar betalingsbereidheid hoog is. Handelaren betalen immers al fors voor datafeeds en analysetools.</p>
+  <p>Dit model van 'embedded AI' zorgt ervoor dat de gebruikersgroep direct bestaat uit actieve professionals en intensieve gebruikers. De feitelijke handel in xAI-technologie vindt zodoende plaats op de schermen waar dagelijks miljarden worden omgeslagen. Het maakt de terminal tot een distributiekanaal dat qua impact op de publieke opinie en zakelijke adoptie niet onderdoet voor een klassiek techblog.</p>
+
+  <div class="ns-viz" data-type="concepts">
+    <div class="viz-title">Veelgestelde Vragen &amp; Context</div>
+    <div class="concept-accordion">
+      <details>
+        <summary>Wat is de rol van memory in Grok Build?</summary>
+        <p>Het geheugen zorgt ervoor dat het model eerdere conversaties, voorkeuren en handelsstrategieën onthoudt, waardoor herhaalde invoer overbodig wordt en analyses consistenter aansluiten bij de gebruiker.</p>
+      </details>
+      <details>
+        <summary>Waarom kiest xAI voor TradingView?</summary>
+        <p>TradingView biedt directe toegang tot miljoenen actieve handelaren met een hoge betalingsbereidheid voor geavanceerde analysetools, wat zorgt voor gerichte distributie buiten de standaard tech-bubbel.</p>
+      </details>
+      <details>
+        <summary>Wat zijn de risico's van AI binnen handelstools?</summary>
+        <p>Het voornaamste risico is overmatige afhankelijkheid van geautomatiseerde code en mogelijke hallucinaties van het model bij het interpreteren van volatiele marktomstandigheden.</p>
+      </details>
+    </div>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>De integratie van xAI’s Grok Build in TradingView toont aan dat generatieve AI definitief opschuift van experimentele chatbot naar ingebedde bedrijfsinfrastructuur. Door geavanceerd geheugen en code-generatie te verweven met de dagelijkse workflow van handelaren, verandert xAI de beurs-terminal in een interactieve ontwikkelomgeving. Het is een strategische zet die bewijst dat de ware waarde van AI niet alleen ligt in de omvang van het model, maar vooral in de plek waar het aan de man wordt gebracht.</p>
+
+  <div class="bg-footer">
+    Bronnen: 
+    <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPdjBlVWdmM280X1RDU2pEVThCTC05WjNSSHI4U1VITjVEMFVjMG1YdGx4T0VNVjdmY2pBenhleFlubWpfLVVKbFBaSHpPRUl0N2F4T2dtMUhRcVNoY2hKeHVCeHZzWl9DaGNJM200Ym1yMzBBTEplU2piYUlLTjFTcnNoVmVSQVF4SjJHSkJvZWFzWTFXSW5nUXdNc0VoVzZpVEFjRUhpSGl1bzVRbEdVTzFtVFJ4dkthZ2c?oc=5" target="_blank" rel="noopener">Google News RSS (1)</a> | 
+    <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOaC1KZkpfZ2RRd2pLWVJ0X0x2YjE3dVhLYXpQSWtheDRHamkyeHZCZFEyVlA4YUFaa2FreGtGQmMyOTdyTFVhVk5mQlZtV0RXX281REVCUjAwcVl0d3RITlRpb1JYODJFMUFjVllWaGV1QzFCcy1YVVk1VzNveGE4bk5IY1BRVGJQaWtUTXN1enY?oc=5" target="_blank" rel="noopener">Google News RSS (2)</a>
+  </div>
+</div>
+
+<script>
+function showStage(stageNum) {
+  const container = document.getElementById('mech-pipeline');
+  if (!container) return;
+  const views = container.querySelectorAll('.mech-view');
+  const pills = container.querySelectorAll('.mech-pill');
+  
+  views.forEach((v, idx) => {
+    v.style.display = (idx + 1 === stageNum) ? 'block' : 'none';
+  });
+  pills.forEach((p, idx) => {
+    if (idx + 1 === stageNum) {
+      p.classList.add('active');
+    } else {
+      p.classList.remove('active');
+    }
+  });
+}
+</script>

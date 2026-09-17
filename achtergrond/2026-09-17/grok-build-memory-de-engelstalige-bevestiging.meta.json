@@ -1,0 +1,18 @@
+{
+  "title": "Grok Build memory: de Engelstalige bevestiging",
+  "summary": "Unite.AI Engels: dezelfde feature, dezelfde agent. De cluster is één productnieuws, twee talen.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcnFCaXFIN094UVQzYTFiejRkX1JQRVJFYW5SWHpjNlZQYnJ4RElHQThyaHJYX3htOHFpZ09DYXhVM2g5SVMxeFZtSmg2RHdPUFFyRXAydEw0VmpaX1lNVXd6NmotMVVWTXh2Qld6UUFXLTZhN1JhVExEUDRxcm9mMlgxdTc?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-17",
+  "slug": "grok-build-memory-de-engelstalige-bevestiging",
+  "tts_slug": "grok-build-memory-de-engelstalige-bevestiging",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-17T03:58:07",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-17/grok-build-memory-de-engelstalige-bevestiging.html",
+  "mode": "default"
+}
