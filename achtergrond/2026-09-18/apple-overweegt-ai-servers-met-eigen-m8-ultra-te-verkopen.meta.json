@@ -1,0 +1,19 @@
+{
+  "title": "Apple overweegt AI-servers met eigen M8 Ultra te verkopen",
+  "summary": "The Information via Tweakers: terug naar de servermarkt, mogelijk met Nvidia NVLink. Cupertino wil niet alleen inferentie in de telefoon.",
+  "sources": [
+    "https://tweakers.net/nieuws/252304/apple-overweegt-ai-servers-met-m8-ultra-chips-te-verkopen.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-18",
+  "slug": "apple-overweegt-ai-servers-met-eigen-m8-ultra-te-verkopen",
+  "tts_slug": "apple-overweegt-ai-servers-met-eigen-m8-ultra-te-verkopen",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-18T03:54:45",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-18/apple-overweegt-ai-servers-met-eigen-m8-ultra-te-verkopen.html",
+  "mode": "default",
+  "fallback": "plan-copy"
+}

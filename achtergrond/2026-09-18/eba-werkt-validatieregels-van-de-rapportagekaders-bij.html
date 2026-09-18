@@ -1,0 +1,82 @@
+<div class="ns-meta" data-title="EBA werkt validatieregels van de rapportagekaders bij" data-tag="regulatoir" data-date="2026-09-18" data-mode="default"></div>
+
+<ul class="bg-bullets">
+  <li>De Europese Bankenautoriteit (EBA) heeft haar regelmatige kwartaalupdate gepubliceerd voor de validatieregels in de COREP- en FINREP-rapportagekaders.</li>
+  <li>Meerdere regels zijn expliciet gedeactiveerd vanwege inconsistenties, technische onnauwkeurigheden of conflicterende onderliggende taxonomieën.</li>
+  <li>Banken en financiële instellingen moeten hun interne IT-systemen en validatiemotoren direct aanpassen om te voldoen aan de herziene specificaties.</li>
+  <li>De update onderstreept dat prudentiële rapportage geen statische administratieve oefening is, maar een dynamisch en continu evoluerend datamodel.</li>
+</ul>
+
+<div class="ns-viz" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:20px; margin:24px 0;">
+  <div style="font-weight:700; font-size:1.1rem; color:#1e293b; margin-bottom:4px;">De impact van de EBA-kwartaalupdate</div>
+  <div style="font-size:0.9rem; color:#64748b; margin-bottom:16px;">Mutaties in het validatiebestand voor banktoezicht</div>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap:12px;">
+    <div style="background:#fff; padding:16px; border-radius:6px; border:1px solid #cbd5e1; text-align:center;">
+      <div style="font-size:1.8rem; font-weight:800; color:#0284c7;">COREP</div>
+      <div style="font-size:0.85rem; color:#475569; margin-top:4px;">Solvabiliteit &amp; Risico</div>
+    </div>
+    <div style="background:#fff; padding:16px; border-radius:6px; border:1px solid #cbd5e1; text-align:center;">
+      <div style="font-size:1.8rem; font-weight:800; color:#0d9488;">FINREP</div>
+      <div style="font-size:0.85rem; color:#475569; margin-top:4px;">Financiële Rapporten</div>
+    </div>
+    <div style="background:#fff; padding:16px; border-radius:6px; border:1px solid #cbd5e1; text-align:center;">
+      <div style="font-size:1.8rem; font-weight:800; color:#ea580c;">IT-Fit</div>
+      <div style="font-size:0.85rem; color:#475569; margin-top:4px;">Automaten-check</div>
+    </div>
+  </div>
+</div>
+
+<h5>De techniek achter prudentieel toezicht</h5>
+<p>Wie denkt dat bankentoezicht uitsluitend bestaat uit het lezen van dikke beleidsnota's en het voeren van gesprekken in bestuurskamers, onderschat de rol van de techniek fundamenteel. Het Europese prudentiële regime leunt zwaar op gestandaardiseerde digitale rapportages. Via kaders als COREP (Common Reporting) voor kapitaaladequatieramingen en FINREP (Financial Reporting) voor financiële overzichten leveren banken per kwartaal miljoenen datapunten aan bij toezichthouders zoals de EBA en de nationale centrale banken.</p>
+
+<p>Om te zorgen dat deze datastromen consistent en betrouwbaar zijn, hanteert de EBA tienduizenden automatische validatieregels. Deze regels fungeren als een digitale poortwachter: ze controleren of de balans optelt, of de risicogewogen activa correct zijn berekend en of de verschillende tabellen onderling geen contradicties bevatten. Als een rapportage niet door deze digitale keuring komt, wijzen de systemen van de toezichthouder de dataset resoluut af.</p>
+
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">In 4 slides</div>
+<div class="ns-viz-mech-subtitle">Hoe de EBA-validatiemotor werkt, fase voor fase</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Ontwerp</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Review</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Deactivering</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Implementatie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><circle cx="160" cy="100" r="40" fill="#0284c7"/><text x="160" y="106" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Regel</text></svg></div>
+<div class="ns-viz-mech-info"><h6>1. Ontwerp</h6><p class="korte">Nieuwe taxonomieën en validatieregels worden opgesteld.</p><p class="uitleg">De EBA formuleert wiskundige en logische formules op basis van Europese richtlijnen en verordeningen (CRR/CRD).</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><rect x="120" y="60" width="80" height="80" rx="8" fill="#0d9488"/><text x="160" y="105" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Test</text></svg></div>
+<div class="ns-viz-mech-info"><h6>2. Review</h6><p class="korte">Signalen uit de praktijk worden getoetst.</p><p class="uitleg">Banken en softwareleveranciers melden onnauwkeurigheden, technische conflicten of dubbelzinnige interpretaties in de regels.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><line x1="100" y1="60" x2="220" y2="140" stroke="#ea580c" stroke-width="12" stroke-linecap="round"/><line x1="220" y1="60" x2="100" y2="140" stroke="#ea580c" stroke-width="12" stroke-linecap="round"/></svg></div>
+<div class="ns-viz-mech-info"><h6>3. Deactivering</h6><p class="korte">Foutieve of conflicterende regels worden uitgezet.</p><p class="uitleg">Om onterechte afkeuringen te voorkomen, deactiveert de EBA tijdelijk of definitief de regels die niet correct functioneren.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><polygon points="130,60 210,100 130,140" fill="#4f46e5"/></svg></div>
+<div class="ns-viz-mech-info"><h6>4. Implementatie</h6><p class="korte">Financiële instellingen verwerken de update.</p><p class="uitleg">Banken passen hun interne rapportagesystemen aan en voeren de gewijzigde validatieset door in de productiefase.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+
+<h5>Dynamisch onderhoud en de kwartaalrealiteit</h5>
+<p>Het actuele besluit van de EBA om de validatielijst te herzien toont aan dat de praktijk weerbarstiger is dan de theorie achter het bureau in Parijs. Regelmatig ontdekken financiële instellingen en softwareleveranciers dat een bepaalde validatieregel onbedoeld blokkerend werkt op legendarische of complexe bedrijfsstructuren. Soms is een regel gebaseerd op een verouderde definitie, of bijt deze met nieuwe richtlijnen die gelijktijdig zijn geïntroduceerd.</p>
+
+<p>Wanneer de EBA zo'n regel deactiveert, ontstaat er direct een administratieve uitdaging voor de afdelingen Regulatory Reporting van banken. Enerzijds willen instellingen voorkomen dat ze onnodig tijd verliezen aan het oplossen van valse meldingen; anderzijds moeten ze hun IT-infrastructuur continu synchroon laten lopen met de meest recente instructies van de toezichthouder. Een achterstand in het verwerken van een dergelijke kwartaalupdate kan leiden tot foutieve dataleveringen en formele waarschuwingen.</p>
+
+<h5>De opkomst van RegTech en de toekomst van datakwaliteit</h5>
+<p>De frequentie en complexiteit van dit soort updates hebben geleid tot een ingrijpende transformatie binnen de financiële sector. Traditionele handmatige controleprocessen schieten al lang tekort. Banken investeren massaal in gespecialiseerde Regulatory Technology (RegTech) om de automatiseringsslag bij te benen. Deze systemen zijn erop ingericht om wijzigingen in de EBA-taxonomie automatisch te absorberen en door te vertalen naar de interne databronnen.</p>
+
+<p>Toch blijft het balanceren op een dun koord. De continue stroom van wijzigingen, correcties en heractivaties laat zien dat het Europese toezichtsframework nog altijd volop in beweging is. Zolang de regelgeving groeit in omvang en diepgang, zal ook de validatiemotor van de EBA kwartaal na kwartaal bijgesteld moeten worden.</p>
+
+<h5>Conclusie</h5>
+<p>De jongste update van de EBA-validatieregels is veel meer dan een administratieve correctie; het is een noodzakelijke afstelling van het Europese toezichtsmechanisme. Het laat zien dat de dialoog tussen toezichthouder en banken via bits en bytes verloopt, waarbij elke aanpassing direct ingrijpt in de core-systemen van financiële instellingen. Voor banken blijft het parool: wendbaarheid in de IT en een strakke grip op de datakwaliteit zijn onmisbaar om compliant te blijven.</p>
+
+<div class="bg-footer">Bronnen: EBA Press Release &amp; Regulatory Reporting Frameworks Update (September 2026)</div>

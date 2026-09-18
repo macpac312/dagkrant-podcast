@@ -1,0 +1,20 @@
+{
+  "title": "Claude Code: Projects voor meerdere agents in de cloud",
+  "summary": "Gedeeld geheugen, doelen en bestanden. Threads parallel, een coordinator erboven. Anthropic duwt autonome code nog een stap.",
+  "sources": [
+    "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+    "https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-18",
+  "slug": "claude-code-projects-voor-meerdere-agents-in-de-cloud",
+  "tts_slug": "claude-code-projects-voor-meerdere-agents-in-de-cloud",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-18T03:54:45",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-18/claude-code-projects-voor-meerdere-agents-in-de-cloud.html",
+  "mode": "default",
+  "fallback": "plan-copy"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "ECB: toezichtsstatistieken significante instellingen Q2 2026",
+  "summary": "Kwartaalcijfers over kapitaal, NPL’s en winstgevendheid van de grote banken onder SSM. De aggregaten zijn de benchmark voor elk intern dashboard.",
+  "sources": [
+    "https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/ssm.pr260915~7917ca1416.en.html"
+  ],
+  "topic": "regulatoir",
+  "kind": "regulatoir",
+  "datum_iso": "2026-09-18",
+  "slug": "ecb-toezichtsstatistieken-significante-instellingen-q2-2026",
+  "tts_slug": "ecb-toezichtsstatistieken-significante-instellingen-q2-2026",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-18T03:43:16",
+  "size_kb": 10,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-18/ecb-toezichtsstatistieken-significante-instellingen-q2-2026.html",
+  "mode": "default"
+}

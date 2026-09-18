@@ -1,0 +1,19 @@
+{
+  "title": "Grok Voice Realtime: xAI’s audio-naar-audio-model",
+  "summary": "HackerNoon legt uit hoe Grok realtime spraak inzet. Geen tekstpipeline als tussenlaag: audio in, audio uit.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMDc3TmlnRWZkSEI3SUlHS1dLMHZkRWJ3SkxIUkE1bGl2RjA0SWh3dEtCV0ptbWlrQ0dJV2cwUUpvQ0xuMTN2TC1zTm9waVdyeUV6REV1eXBhZVpCOWwySm9iRFJ1Z2dEVm90RXJIUnpUWW1HV2Q0OTREaWJEX0xicjBiOWw?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-18",
+  "slug": "grok-voice-realtime-xais-audio-naar-audio-model",
+  "tts_slug": "grok-voice-realtime-xais-audio-naar-audio-model",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-18T03:54:45",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-18/grok-voice-realtime-xais-audio-naar-audio-model.html",
+  "mode": "default",
+  "fallback": "plan-copy"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Washington Post: kan Washington ja accepteren van de AI-giganten?",
+  "summary": "De labs zeggen in te stemmen met regels. De vraag is of het Congres een ja vertrouwt.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYy01TUVkQi1ySGtYYy03WjJJWVpTbGowR3RzX1Y1cDZwTzdsQlFCeVpZZVFFbTFndll5dzZldFVyZHFnQzFTTHdxay1zNml3dlRlVlJnMWlnR1VrWlNyQmVwcVVoM3prRHVKS2Y4bkRBZmVkVG1GNENQWkJnUU5ZVUQ4VzRzbUExX3ZhYmZPR3lNTUNUSXltbG1md1VVRGUxaWxjWEx5UkxOMGFuVEMtdjNoWQ?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-18",
+  "slug": "washington-post-kan-washington-ja-accepteren-van-de-ai-gigan",
+  "tts_slug": "washington-post-kan-washington-ja-accepteren-van-de-ai-gigan",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-18T03:54:45",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-18/washington-post-kan-washington-ja-accepteren-van-de-ai-gigan.html",
+  "mode": "default",
+  "fallback": "plan-copy"
+}
