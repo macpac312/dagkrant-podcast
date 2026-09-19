@@ -1,0 +1,20 @@
+{
+  "title": "OpenAI en Microsoft wisten dat ze een doom loop voor het web startten",
+  "summary": "Ontsegelde stukken in de New York Times-zaak: intern ‘astonishing theft’. NRC: het bedrijf besefte dat kranten hun voortbestaan zouden verliezen.",
+  "sources": [
+    "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+    "https://www.nrc.nl/nieuws/2026/09/18/openai-besefte-dat-gebruik-krantenstukken-voor-ai-training-het-voortbestaan-van-nieuwsuitgevers-zou-bedreigen-a4937027",
+    "https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-19",
+  "slug": "openai-en-microsoft-wisten-dat-ze-een-doom-loop-voor-het-web",
+  "tts_slug": "openai-en-microsoft-wisten-dat-ze-een-doom-loop-voor-het-web",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-19T03:39:19",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-19/openai-en-microsoft-wisten-dat-ze-een-doom-loop-voor-het-web.html",
+  "mode": "default"
+}

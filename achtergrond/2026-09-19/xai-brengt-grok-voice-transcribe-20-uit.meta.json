@@ -1,0 +1,19 @@
+{
+  "title": "xAI brengt Grok Voice Transcribe 2.0 uit",
+  "summary": "Unite.AI en Investing.com: spraak-naar-tekst met hogere nauwkeurigheid. De stem was al een product. Nu is het een transcript dat je kunt doorzoeken.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMijAFBVV95cUxNa2JxTkpIYWxJajNJSnJvbzB3RUwtNnJnbk45Qm1wVU9HODJHUWZwVnVMTFVOd0FLakJUNE40QlBqQV8ycUZpSm5PLWtKXzhERUVLYUd2anRMYmJPS0w5SUNMSlBtTUJTdmhFanNBSzRrem82NmFod2FTN0hLSmEwRzJGODVQeE43UFlZcA",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lZWRVcElUVVNQOE9Pc0NOMVI2SUVSTmVwMFUwS1dGdXdKZnl3d2RlSHljZFp3blk3Tmx3TXpvSHRFQ1RFYTcxdFpCRE5SZVZVdlRB"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-19",
+  "slug": "xai-brengt-grok-voice-transcribe-20-uit",
+  "tts_slug": "xai-brengt-grok-voice-transcribe-20-uit",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-19T03:40:58",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-19/xai-brengt-grok-voice-transcribe-20-uit.html",
+  "mode": "default"
+}

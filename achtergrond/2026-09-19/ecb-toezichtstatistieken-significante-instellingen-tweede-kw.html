@@ -1,0 +1,86 @@
+<div class="dagkrant-artikel">
+<div class="tag">regulatoir</div>
+<h2>ECB: toezichtstatistieken significante instellingen tweede kwartaal 2026</h2>
+<p class="meta">19 september 2026</p>
+
+<p class="lead">Kwartaalcijfers van de SSM. De aggregaten — kapitaal, NPL, RWA — zijn de spiegel waarin elke AIRB-bank zichzelf zoekt.</p>
+
+<ul class="bg-bullets">
+<li><strong>Solvabiliteit stabiel:</strong> De CET1-ratio van significante instellingen blijft in het tweede kwartaal van 2026 ruimschoots boven de wettelijke minima.</li>
+<li><strong>Asset Quality:</strong> De omvang van non-performing loans (NPLs) vertoont geen systemische verslechtering ondanks macro-economische tegenwind.</li>
+<li><strong>RWA-dynamiek:</strong> Risicogewogen activa (RWA) reflecteren aanhoudende voorzichtigheid in kredietverlening en modellering door grote banken.</li>
+<li><strong>SSM-mandaat:</strong> De publicatie biedt marktpartijen en toezichthouders gedetailleerde vergelijkingsdata per jurisdictie binnen de eurozone.</li>
+</ul>
+
+<div class="ns-viz ns-viz-chart">
+<div class="ns-viz-title">Kernratio's Significante Instellingen (Q2 2026)</div>
+<canvas id="ssmStatsChart" width="600" height="250"></canvas>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('ssmStatsChart');
+    if(ctx && window.Chart) {
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['CET1-ratio', 'Tier 1 Ratio', 'Total Capital', 'NPL-ratio'],
+                datasets: [{
+                    label: 'Percentage (%)',
+                    data: [15.6, 17.1, 19.8, 1.8],
+                    backgroundColor: ['#1e3a8a', '#3b82f6', '#60a5fa', '#f59e0b']
+                }]
+            },
+            options: { responsive: true, plugins: { legend: { display: false } } }
+        });
+    }
+});
+</script>
+</div>
+
+<h5>De spiegel van de SSM-aggregaten</h5>
+<p>De publicatie van de toezichtstatistieken door de Europese Centrale Bank (ECB) over het tweede kwartaal van 2026 biedt meer dan een loutere optelsom van balansen. Voor banken die werken onder het Internal Ratings-Based (AIRB) systeem fungeren deze geaggregeerde data als een onmisbare spiegel. Ze tonen hoe individuele instellingen presteren ten opzichte van het Europese gemiddelde wat betreft kapitaaltoereikendheid en risicoprofiel.</p>
+<p>In een tijd waarin de Europese bancaire unie te maken heeft met trage grensoverschrijdende consolidatie en uiteenlopende nationale economische dynamieken, bewijzen deze kwartaalcijfers hun waarde als macro-prudentieel instrument. Het toezicht van de Single Supervisory Mechanism (SSM) legt de nadruk op consistentie in de berekening van risicogewogen activa, om zo regulatory arbitrage tussen lidstaten tegen te gaan.</p>
+
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">De Cijfercyclus van de SSM</div>
+<div class="ns-viz-mech-subtitle">Van bankbalans tot openbare toezichtstatistiek</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Rapportage</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Validatie</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Aggregatie</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Publicatie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><rect x="60" y="50" width="200" height="100" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/><text x="160" y="95" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">COREP / FINREP Aanlevering</text><text x="160" y="120" text-anchor="middle" fill="#64748b" font-size="12">Significante banken leveren data</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Rapportage</h6><p class="korte">Banken leveren gedetailleerde kwartaalstaten aan.</p><p class="uitleg">Significante instellingen dienen via gestandaardiseerde templates (COREP en FINREP) hun balansen en risicoparameters in bij de nationale toezichthouder.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><circle cx="160" cy="100" r="50" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="160" y="95" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Kwaliteitscontrole</text><text x="160" y="120" text-anchor="middle" fill="#3b82f6" font-size="12">SSM &amp; NCAs verifiëren data</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Validatie</h6><p class="korte">Grondige controle op consistentie en volledigheid.</p><p class="uitleg">Zowel de nationale centrale banken als de ECB controleren de aangeleverde gegevens op plausibiliteit en naleving van de CRR/CRD-regelgeving.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><rect x="80" y="60" width="160" height="80" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/><text x="160" y="95" text-anchor="middle" fill="#3730a3" font-weight="bold" font-size="14">Data-Aggregatie</text><text x="160" y="120" text-anchor="middle" fill="#6366f1" font-size="12">Samenvoegen tot eurozone-totalen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Aggregatie</h6><p class="korte">Samenstelling van Europese totalen.</p><p class="uitleg">Individuele bankdata worden geaggregeerd op landenniveau en op het niveau van de gehele eurozone om trends zichtbaar te maken zonder bedrijfsgeheimen te schenden.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f8fafc"/><path d="M120 70 L200 70 L200 130 L120 130 Z" fill="#d1fae5" stroke="#10b981" stroke-width="2"/><text x="160" y="95" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="14">Openbaarmaking</text><text x="160" y="120" text-anchor="middle" fill="#059669" font-size="12">Publicatie op ECB website</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Publicatie</h6><p class="korte">Vrijgave van statistieken en persbericht.</p><p class="uitleg">De ECB publiceert het kwartaalrapport met gedetailleerde tabellen en grafieken, toegankelijk voor markten, analisten en onderzoekers.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+
+<h5>Kapitaalstructuur en risicogewogen activa</h5>
+<p>Een opvallende constatering in de cijfers over het tweede kwartaal is de stabiliteit van de Tier 1-kapitaalratio's. Banken behouden robuuste buffers ondanks aanhoudende kredietvraag en geopolitieke onzekerheden. De risicogewogen activa (RWA) laten een gecontroleerde groei zien. Dit wijst erop dat banken selectief te werk gaan bij het verstrekken van nieuwe leningen en strengere interne modellen hanteren voor kredietrisico.</p>
+<p>De NPL-ratio blijft historisch gezien op een laag niveau hangen, hoewel vroege waarschuwingssignalen in bepaalde sectoren zoals commercieel vastgoed nauwlettend worden gevolgd door de toezichthouder. Het SSM onderstreept dat banken voldoende voorzieningen moeten aanhouden voor potentiële tegenvallers in hun leningportefeuilles.</p>
+
+<h5>Conclusie</h5>
+<p>De toezichtstatistieken over het tweede kwartaal van 2026 bevestigen dat de significante instellingen binnen de eurozone over het algemeen solide en goed gekapitaliseerd de tweede helft van het jaar ingaan. De transparantie die de ECB via deze maandelijkse en kwartaalreeksen biedt, is cruciaal voor het behoud van het vertrouwen in het Europese banksysteem. Tegelijkertijd blijft waakzaamheid geboden gezien de complexe macro-economische en geopolitieke omgeving.</p>
+
+<div class="bg-footer">Bronnen: ECB Banking Supervision — Supervisory statistics second quarter 2026.</div>
+</div>
