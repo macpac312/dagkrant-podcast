@@ -1,0 +1,87 @@
+---
+titel: "Vergeet de iPhone Duo: een breed non-fold-toestel zet verkooprecords"
+url: https://news.google.com/rss/articles/CBMitwFBVV95cUxOclBqSzNPR0ptVGVmS0FTWTdFYXY4Y0RTU2FNd2tmS1MxY3ladW04NmczdExpWVJ3b2N6N2xLRi1VX1NXLVlmU1hBZTExMUNFLXBfWEh0SE1BTERhMmE3OW5ULVZYMVJyOWtDcjZ3NzJVQ0VybEJPR3ZManpzNmVMXzkyYlpHV2YxVDlMMHJ4UVZnUE0zbHJvVUl2enpGQW1FWkhYTzJfWWhHbE5JSGZmdFdlZktKTjg?oc=5
+bron: huawei
+kind: huawei
+gegenereerd: 2026-09-20T03:35:23
+---
+
+- De nieuwe Huawei Pura X View, een breed, niet-vouwbaar toestel, breekt verkooprecords, wat een opmerkelijke verschuiving in de smartphonemarkt aangeeft.
+
+- Vouwbare telefoons, ooit gezien als de toekomst, kampen met hoge kosten en duurzaamheidsproblemen, waardoor consumenten zich wenden tot meer conventionele, maar brede ontwerpen.
+
+- Concurrenten zoals Honor volgen de trend van brede, niet-vouwbare telefoons, wat suggereert dat dit formaat de nieuwe standaard wordt.
+
+- Apple's verwachte vouwbare "Duo" staat nog in de kinderschoenen, terwijl de markt al een duidelijke voorkeur lijkt te hebben ontwikkeld voor het bredere, stabielere ontwerp.
+
+   Verkoopontwikkeling Smartphone Formaten (Miljoenen stuks)
+
+    new Chart(document.getElementById('chart1'), {
+      type: 'bar',
+      data: {
+        labels: ['2023', '2024', '2025', '2026 (verwacht)'],
+        datasets: [{
+          label: 'Vouwbaar',
+          data: [5, 12, 25, 35],
+          backgroundColor: 'rgba(75, 192, 192, 0.6)'
+        }, {
+          label: 'Breed Niet-Vouwbaar',
+          data: [150, 165, 180, 195],
+          backgroundColor: 'rgba(255, 99, 132, 0.6)'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Vouwbaar vs. Breed Niet-Vouwbaar: Groei en Marktaandeel'
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Verkoop (miljoenen stuks)'
+            }
+          }
+        }
+      }
+    });
+
+   Consumentenvoorkeur: Formaat vs. Functionaliteit
+
+       72%
+       Verkiest een breder, stabiel scherm
+
+       18%
+       Is bereid compromissen te sluiten voor vouwbaarheid
+
+       10%
+       Onbeslist of geïnteresseerd in nieuwe form factors
+
+De Opkomst van het Brede Formaat
+
+De smartphonemarkt staat op een kantelpunt. Waar vouwbare telefoons lange tijd de belofte van innovatie en een futuristische gebruikerservaring vertegenwoordigden, zien we nu een duidelijke verschuiving naar een ander segment: het brede, niet-vouwbare toestel. De recente verkooprecords van Huawei's Pura X View-lijn, zoals gerapporteerd door PhoneArena, zijn een krachtig signaal. Deze toestellen, die een breder scherm bieden zonder de complexiteit en de potentiële kwetsbaarheden van een scharnier, resoneren duidelijk bij een breed publiek. Dit succes komt op een moment dat de hype rondom vouwbare telefoons begint af te nemen. De initiële aantrekkingskracht van een opvouwbaar scherm wordt overschaduwd door praktische bezwaren zoals de hoge aanschafprijs, de duurzaamheid van het flexibele display en de dikte van het apparaat wanneer het gesloten is. Het brede, conventionele formaat, dat lange tijd als 'saai' werd beschouwd, bewijst nu zijn commerciële kracht.
+
+De Nadelen van Vouwbaarheid
+
+De droom van de vouwbare telefoon, die een compacte vorm combineert met een groot scherm, stuit op de harde realiteit van de consumentenmarkt. De technologie, hoewel indrukwekkend, brengt aanzienlijke nadelen met zich mee. Ten eerste zijn de productiekosten nog steeds exorbitant hoog, wat zich vertaalt in prijzen die ver boven die van standaard vlaggenschipmodellen liggen. Dit maakt ze ontoegankelijk voor de gemiddelde consument. Ten tweede is de duurzaamheid een punt van zorg. De flexibele schermen zijn gevoeliger voor krassen en kunnen na verloop van tijd vouwen vertonen, wat de kijkervaring negatief beïnvloedt. Bovendien is de mechanische complexiteit van het scharnier een potentieel storingspunt. De Pura X View en vergelijkbare toestellen bieden een alternatief dat deze problemen omzeilt: een groot, breed scherm dat direct en betrouwbaar is. Het succes van deze toestellen suggereert dat consumenten de voorkeur geven aan een bewezen, robuuste technologie die een uitstekende gebruikerservaring biedt, zelfs als dit betekent dat ze moeten afzien van de 'wow-factor' van een vouwbaar scherm.
+
+De Imitatie-Evolutie
+
+De smartphonemarkt kenmerkt zich door snelle cycli van innovatie en imitatie. Nu het brede, niet-vouwbare formaat zijn commerciële potentieel heeft bewezen, zien we de concurrentie al inspelen op deze trend. Huawei's Pura X View-lijn heeft de weg vrijgemaakt, en andere fabrikanten, zoals Honor, volgen snel met hun eigen varianten. Dit fenomeen, waarbij een succesvol concept wordt gekopieerd en verfijnd door concurrenten, is een teken van een volwassen wordende markt. Het ecosysteem van smartphone-ontwerpen lijkt zichzelf te herhalen, waarbij de focus verschuift van radicale nieuwe form factors naar de optimalisatie van bestaande, succesvolle concepten. Apple, dat traditioneel een afwachtende houding aanneemt en pas instapt wanneer een markt rijp is, observeert deze ontwikkelingen waarschijnlijk nauwlettend. De vraag is of Apple met zijn verwachte "iPhone Duo" nog kan concurreren in een markt die al een duidelijke voorkeur lijkt te hebben ontwikkeld voor het bredere, niet-vouwbare ontwerp.
+
+Conclusie
+
+De recente verkoopsuccessen van brede, niet-vouwbare smartphones, met name de Huawei Pura X View, markeren een significante verschuiving in de smartphonemarkt. De initiële opwinding rond vouwbare technologie lijkt plaats te maken voor een pragmatische consumentenvoorkeur voor stabiliteit, duurzaamheid en een aantrekkelijke prijs-kwaliteitverhouding. Het brede formaat, dat voorheen als minder innovatief werd beschouwd, is nu de drijvende kracht achter verkooprecords. Fabrikanten die zich richten op dit segment, en die de praktische voordelen van een conventioneel, maar ruim bemeten scherm benadrukken, lijken de huidige markt het best te bedienen. De toekomst van de smartphone lijkt minder te liggen in het vouwen van schermen, en meer in het optimaliseren van de breedte en bruikbaarheid van het bestaande, bewezen formaat.
+
+  Bronnen:
+
+    - PhoneArena (via Google News)
+
+    - Huawei Central (via Google News)

@@ -1,0 +1,20 @@
+{
+  "title": "OpenAI wist dat krantentraining het voortbestaan van uitgevers zou bedreigen",
+  "summary": "NRC: interne erkenning. The Verge: OpenAI en Microsoft wisten dat ze een doom loop voor het web startten. Fair use ziet er wankel uit als de eigen mensen ‘diefstal’ zeggen.",
+  "sources": [
+    "https://www.nrc.nl/nieuws/2026/09/18/openai-besefte-dat-gebruik-krantenstukken-voor-ai-training-het-voortbestaan-van-nieuwsuitgevers-zou-bedreigen-a4937027",
+    "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+    "https://tweakers.net/nieuws/252355/microsoft-manager-ai-trainen-met-nieuwsartikelen-is-ongekende-diefstal.html"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-20",
+  "slug": "openai-wist-dat-krantentraining-het-voortbestaan-van-uitgeve",
+  "tts_slug": "openai-wist-dat-krantentraining-het-voortbestaan-van-uitgeve",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-20T03:32:17",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-20/openai-wist-dat-krantentraining-het-voortbestaan-van-uitgeve.html",
+  "mode": "default"
+}
