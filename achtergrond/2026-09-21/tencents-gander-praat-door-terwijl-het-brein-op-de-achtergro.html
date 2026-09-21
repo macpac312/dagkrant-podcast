@@ -1,0 +1,82 @@
+<p class="tag">aitech</p>
+<h2>Tencents Gander praat door terwijl het brein op de achtergrond werkt</h2>
+<p class="meta">21 september 2026</p>
+
+<ul class="bg-bullets">
+  <li>Tencent introduceert Gander, een architectuur waarin conversatie en achtergrondberekening zijn ontkoppeld.</li>
+  <li>Een lichtgewicht 'cerebellum' houdt de dialoog gaande zonder merkbare pauzes.</li>
+  <li>Een zwaarder, modulair 'brein' voert ondertussen taken uit zoals coderen, zoeken en onderbreken.</li>
+  <li>Benchmarks suggereren een significante verbetering in vloeiend multitasken ten opzichte van traditionele LLM's.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;text-align:center;padding:1.5rem;background:var(--bg-card,#f4f4f5);border-radius:8px;margin:1.5rem 0;">
+    <div>
+      <div style="font-size:2rem;font-weight:bold;color:var(--primary,#2563eb);">0 ms</div>
+      <div style="font-size:0.875rem;color:var(--text-muted,#6b7280);">Spreekpauze bij taakwissel</div>
+    </div>
+    <div>
+      <div style="font-size:2rem;font-weight:bold;color:var(--primary,#2563eb);">2-delig</div>
+      <div style="font-size:0.875rem;color:var(--text-muted,#6b7280);">Cerebellum + Brein architectuur</div>
+    </div>
+    <div>
+      <div style="font-size:2rem;font-weight:bold;color:var(--primary,#2563eb);">Modulair</div>
+      <div style="font-size:0.875rem;color:var(--text-muted,#6b7280);">Verwisselbare achtergrondmodellen</div>
+    </div>
+  </div>
+</div>
+
+<h5>De noodzaak van vloeiende interactie</h5>
+<p>In de huidige generatie kunstmatige intelligentie lopen conversatie en zware verwerking vaak via dezelfde monoliete pijplijn. Wanneer een gebruiker een complex vraagstuk neerlegt, zoals het schrijven van een omvangrijk script of het doorzoeken van gigantische datasets, valt er onvermijdelijk een stilte. Het model is immers volledig geabsorbeerd door de token-generatie van de achtergrondtaak. Tencent probeert dit fundamentele pijnpunt te verhelpen met Gander, een systeem dat de illusie van een ononderbroken gesprek handhaaft terwijl de onderliggende logica op volle toeren draait.</p>
+
+<div class="ns-viz" id="mech-viz">
+  <div class="ns-viz-mech" style="background:var(--bg-card,#f4f4f5);border-radius:8px;padding:1.5rem;margin:1.5rem 0;">
+    <div style="font-weight:bold;margin-bottom:1rem;text-align:center;">Gander Pipeline: Hoe het werkt</div>
+    <div class="mech-pills" style="display:flex;justify-content:center;gap:0.5rem;margin-bottom:1rem;">
+      <button class="mech-pill active" onclick="showMechPhase(0)" style="padding:0.5rem 1rem;border:none;border-radius:20px;background:var(--primary,#2563eb);color:#fff;cursor:pointer;">1. Input</button>
+      <button class="mech-pill" onclick="showMechPhase(1)" style="padding:0.5rem 1rem;border:none;border-radius:20px;background:#e5e7eb;color:#374151;cursor:pointer;">2. Cerebellum</button>
+      <button class="mech-pill" onclick="showMechPhase(2)" style="padding:0.5rem 1rem;border:none;border-radius:20px;background:#e5e7eb;color:#374151;cursor:pointer;">3. Achtergrond</button>
+      <button class="mech-pill" onclick="showMechPhase(3)" style="padding:0.5rem 1rem;border:none;border-radius:20px;background:#e5e7eb;color:#374151;cursor:pointer;">4. Synthese</button>
+    </div>
+    <div class="mech-content" style="background:#fff;padding:1rem;border-radius:6px;min-height:80px;display:flex;align-items:center;justify-content:center;text-align:center;">
+      <div class="mech-slide" data-index="0">Gebruiker formuleert een complexe instructie gecombineerd met een praatverzoek.</div>
+      <div class="mech-slide" data-index="1" style="display:none;">Het snelle 'cerebellum' houdt de conversatie direct gaande en reageert met filler-zinnen en bevestigingen.</div>
+      <div class="mech-slide" data-index="2" style="display:none;">Het verwisselbare zware 'brein' start intussen met coderen, zoeken of diepe analyse op de achtergrond.</div>
+      <div class="mech-slide" data-index="3" style="display:none;">Zodra de achtergrondtaak klaar is, voegt Gander het resultaat naadloos in het actieve gesprek in.</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:1rem;">
+      <button onclick="prevMech()" style="background:none;border:1px solid #ccc;padding:0.25rem 0.75s;border-radius:4px;cursor:pointer;">◀ Vorige</button>
+      <button onclick="nextMech()" style="background:none;border:1px solid #ccc;padding:0.25rem 0.75s;border-radius:4px;cursor:pointer;">Volgende ▶</button>
+    </div>
+  </div>
+  <script>
+    let currentMech = 0;
+    const totalMech = 4;
+    function showMechPhase(n) {
+      currentMech = n;
+      document.querySelectorAll('.mech-slide').forEach((el, idx) => {
+        el.style.display = idx === n ? 'block' : 'none';
+      });
+      document.querySelectorAll('.mech-pill').forEach((el, idx) => {
+        el.style.background = idx === n ? 'var(--primary, #2563eb)' : '#e5e7eb';
+        el.style.color = idx === n ? '#fff' : '#374151';
+      });
+    }
+    function nextMech() { showMechPhase((currentMech + 1) % totalMech); }
+    function prevMech() { showMechPhase((currentMech - 1 + totalMech) % totalMech); }
+  </script>
+</div>
+
+<h5>Het cerebellum als schild tegen wachttijd</h5>
+<p>De kern van Tencents vondst zit in de taakverdeling. Waar reguliere taalmodellen lineair opereren, bootst Gander biologische systemen na. Het 'cerebellum' is een geoptimaliseerd, compact model dat getraind is op sociale responsiviteit en real-time timing. Dit onderdeel verbruikt minimale resources en zorgt ervoor dat de gebruiker nooit het gevoel heeft tegen een muur te praten. Zodra er een inhoudelijke stilte dreigt te vallen door een zware berekening, springt het cerebellum in de breuk met relevante opmerkingen of statusupdates.</p>
+
+<h5>Modulaire flexibiliteit in de praktijk</h5>
+<p>Onder de motorkap is het zwaardere brein volledig modulair opgebouwd. Dit betekent dat ontwikkelaars niet vast zitten aan één specifiek model voor alle taken. Afhankelijk van de use-case kan Tencent — of een externe partij — het achtergrondbrein wisselen tussen een coderingsspecialist, een retrieval-augmented generation (RAG) zoekmachine of een logische redeneermodule. Deze flexibiliteit maakt Gander bijzonder aantrekkelijk voor enterprise-omgevingen waarin snelheid en specialisatie hand in hand moeten gaan.</p>
+
+<h5>De grenzen van gesplitste intelligentie</h5>
+<p>Toch brengt deze architectuur ook uitdagingen met zich mee. Het synchroniseren van de context tussen het snelle cerebellum en het diepgaande achtergrondbrein vereist nauwkeurige orchestratie. Als het cerebellum te weinig begrijpt van wat het brein aan het berekenen is, dreigen de tussentijdse opmerkingen hol of zelfs incorrect te zijn. Benchmarks tonen aan dat Tencent de foutmarges knap kleiner heeft gemaakt, maar in dynamische scenario's blijft het balanceren op een dun koord tussen vlotte babbels en feitelijke juistheid.</p>
+
+<h5>Conclusie</h5>
+<p>Met Gander laat Tencent zien dat de toekomst van AI-interactie verder gaat dan enkel grotere en slimmere modellen. Door de gebruikerservaring los te koppelen van de zware rekenkracht via een tweedeling tussen cerebellum en brein, zet het bedrijf een effectieve stap richting natuurlijke, menselijke multitasking in softwarevorm.</p>
+
+<div class="bg-footer">Bronnen: The Decoder (https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background/)</div>
