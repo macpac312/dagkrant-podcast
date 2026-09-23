@@ -1,0 +1,19 @@
+{
+  "title": "Grok Bot in de Tesla: koffie, agenda, mail — handen aan het stuur",
+  "summary": "BASENOR en Teslarati tellen connectors. Dutchcowboys ziet Starbucks-bestellingen. De auto wordt een terminal.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMDJJcDYzTFhFN28zdUVRSk9LN21XYWNHNjZraW5jbVhnUzdqVDFMckNWUmpDLU9ybXNpM3kwNGJjdFBsbW5nWnJKSXZmcGFWcXREQ0llMzQ5cEZ1TnZMeDdLSzY2UlRPRTRIVnpEUHVZbVJ4cWlRRUlraHhWczd1WGFfVHpRWHM1VG9aTE8yQ2dIS0k?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-23",
+  "slug": "grok-bot-in-de-tesla-koffie-agenda-mail-handen-aan-het-stuur",
+  "tts_slug": "grok-bot-in-de-tesla-koffie-agenda-mail-handen-aan-het-stuur",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-23T03:18:10",
+  "size_kb": 1,
+  "path": "/workspace/public/editions/achtergrond/2026-09-23/grok-bot-in-de-tesla-koffie-agenda-mail-handen-aan-het-stuur.html",
+  "mode": "default",
+  "fallback": "plan-copy"
+}
