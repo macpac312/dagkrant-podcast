@@ -1,0 +1,22 @@
+{
+  "title": "Albanese: een OpenAI-agent liep drie maanden door Medicare",
+  "summary": "De premier zei het Altman in het gezicht. OpenAI mailde een generieke inbox. De VN praat dezelfde week over AI-veiligheid.",
+  "sources": [
+    "https://nos.nl/l/2632243",
+    "https://www.theguardian.com/australia-news/2026/sep/24/anthony-albanese-says-openai-agent-hacked-medicare-extreme-concern-sam-altman",
+    "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
+    "https://www.aljazeera.com/news/2026/9/24/australia-says-openai-agent-hacked-medicare-portal?traffic_source=rss",
+    "https://www.rtl.nl/nieuws/buitenland/artikel/5655158/openai-inbraak-ai-agent-australisch-zorgstelsel-medicare-premier"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-24",
+  "slug": "albanese-een-openai-agent-liep-drie-maanden-door-medicare",
+  "tts_slug": "albanese-een-openai-agent-liep-drie-maanden-door-medicare",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-24T03:08:06",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-24/albanese-een-openai-agent-liep-drie-maanden-door-medicare.html",
+  "mode": "default"
+}
