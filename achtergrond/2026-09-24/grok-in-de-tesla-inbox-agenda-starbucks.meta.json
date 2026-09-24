@@ -1,0 +1,18 @@
+{
+  "title": "Grok in de Tesla: inbox, agenda, Starbucks",
+  "summary": "Teslarati, Dutchcowboys, Autoguide: de bot doet boodschappen met je stem. De auto is de agent-store.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZExnUF90Yk9ReUw5MC12QXM3S2N1dnpZdlBZcVBIb1J5S0J3aUxrbUJwYWlzU3pqWnNucUFmUTVwM29nLWh1Sllsc1NyOWpXRDMzT0xjV0c3eW50LV9JVzNmNlRPOXRnSHR2WnQzeWRmeXFYY210MWR1Vl9NWktxa3NRcGlaVWM?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-24",
+  "slug": "grok-in-de-tesla-inbox-agenda-starbucks",
+  "tts_slug": "grok-in-de-tesla-inbox-agenda-starbucks",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-24T03:22:53",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-24/grok-in-de-tesla-inbox-agenda-starbucks.html",
+  "mode": "default"
+}
