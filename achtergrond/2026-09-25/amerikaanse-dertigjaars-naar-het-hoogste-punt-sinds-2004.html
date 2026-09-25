@@ -1,0 +1,93 @@
+<div class="dagkrant-article">
+  <div class="tag">financieel</div>
+  <h2>Amerikaanse dertigjaars naar het hoogste punt sinds 2004</h2>
+  <div class="meta">Datum: 25 september 2026</div>
+
+  <ul class="bg-bullets">
+    <li>De Amerikaanse dertigjaars hypotheekrente en kapitaalmarktrente tikken het hoogste niveau aan sinds 2004.</li>
+    <li>Krachtige economische groei in de Verenigde Staten wakkert hardnekkige inflatiezorgen aan.</li>
+    <li>Beleggers prijzen opnieuw renteverhogingen door de Federal Reserve in, wat wereldwijd doorwerkt.</li>
+    <li>De Nederlandse hypotheekmarkt voelt de directe druk van deze oplopende internationale kapitaalmarktrentes.</li>
+  </ul>
+
+  <div class="ns-viz ns-viz-gauge" style="margin: 2rem 0; padding: 1.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <h4 style="margin-top:0; font-size:1.1rem; color:#1e293b;">Ontwikkeling 30-jaars rente VS</h4>
+    <div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+      <div style="text-align: center;">
+        <span style="font-size: 2.5rem; font-weight: bold; color: #0f172a;">2004</span>
+        <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #64748b;">Vorige piek</p>
+      </div>
+      <div style="font-size: 1.5rem; color: #94a3b8;">➔</div>
+      <div style="text-align: center;">
+        <span style="font-size: 2.5rem; font-weight: bold; color: #b91c1c;">Heden</span>
+        <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #64748b;">Hoogste punt in 22 jaar</p>
+      </div>
+    </div>
+  </div>
+
+  <h5>Een onverzadigbare economie en herleving van de inflatie</h5>
+  <p>De financiële markten worden opgeschrikt door een ontwikkeling die velen voor onmogelijk hielden na de periode van nulrentes: de Amerikaanse dertigjaarsrente nadert niveaus die voor het laatst in 2004 werden genoteerd. Waar economen begin dit jaar nog rekenden op spoedige renteverlagingen door de centrale banken, dwingt de realiteit van een taai Amerikaanse conjunctuur tot een radicale omslag in het denken. De Amerikaanse economie blijft maar doorgroeien, aangedreven door stimulerend fiscaal beleid en robuuste consumentenbestedingen. Deze krachtige expansie heeft echter een keerzijde: de inflatie laat zich niet zomaar temmen en blijft hardnekkig boven de doelstelling van de Federal Reserve hangen.</p>
+  <p>Beleggers reageren hierop door hun verwachtingen ingrijpend bij te stellen. Niet langer wordt gediscussieerd over het moment van verlagen, maar over de vraag of de Federal Reserve de beleidsrente opnieuw moet verhogen om de oververhitte economie af te koelen. Dit sentiment werkt direct door in de kapitaalmarkten, waar de rente op Amerikaanse staatsleningen – de benchmark voor de mondiale financieringskosten – over de hele linie oploopt.</p>
+
+  <div class="ns-viz ns-viz-mech" id="rente-transmissie" style="margin: 2rem 0; padding: 1.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <h4 style="margin-top:0; font-size:1.1rem; color:#1e293b;">Transmissieketen van Amerikaanse rente naar Nederlandse markt</h4>
+    <div class="mech-stages" style="margin: 1rem 0; min-height: 120px;">
+      <div class="mech-stage" data-step="1" style="display: block;">
+        <strong>Fase 1: Amerikaanse Economie</strong>
+        <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Sterke bbp-groei en hardnekkige inflatie in de VS noodzaken de Fed tot een strengere monetaire koers.</p>
+      </div>
+      <div class="mech-stage" data-step="2" style="display:none;">
+        <strong>Fase 2: Wereldwijde Kapitaalmarkt</strong>
+        <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Beleggers eisen hogere rendementen op Amerikaanse staatsobligaties, wat de mondiale rentestand meetrekt.</p>
+      </div>
+      <div class="mech-stage" data-step="3" style="display:none;">
+        <strong>Fase 3: Europese Doorwerking</strong>
+        <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Europese en Nederlandse kapitaalmarkten reageren op de mondiale rentestijging en stijgende financieringskosten.</p>
+      </div>
+      <div class="mech-stage" data-step="4" style="display:none;">
+        <strong>Fase 4: Nederlandse Hypotheekmarkt</strong>
+        <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Hypotheekverstrekkers berekenen dehogere intekenkosten direct door aan woningzoekenden en overstappers.</p>
+      </div>
+    </div>
+    <div style="display: flex; gap: 0.5rem; justify-content: center; align-items: center; margin-top: 1rem;">
+      <button onclick="changeMechStep(-1)" style="padding: 0.25rem 0.75rem; cursor: pointer;">◀ Vorige</button>
+      <span id="mech-indicator" style="font-size: 0.9rem; font-weight: bold; color: #475569;">1 / 4</span>
+      <button onclick="changeMechStep(1)" style="padding: 0.25rem 0.75rem; cursor: pointer;">Volgende ▶</button>
+    </div>
+    <script>
+      let currentStep = 1;
+      function changeMechStep(direction) {
+        const stages = document.querySelectorAll('#rente-transmissie .mech-stage');
+        stages[currentStep - 1].style.display = 'none';
+        currentStep += direction;
+        if (currentStep > stages.length) currentStep = 1;
+        if (currentStep < 1) currentStep = stages.length;
+        stages[currentStep - 1].style.display = 'block';
+        document.getElementById('mech-indicator').innerText = currentStep + ' / ' + stages.length;
+      }
+    </script>
+  </div>
+
+  <h5>Wereldwijde schokken raken ook de Nederlandse huizenmarkt</h5>
+  <p>Wat in Washington begint, blijft zelden beperkt tot de Verenigde Staten. Kapitaalstromen zijn mondiaal verweven en institutionele beleggers verschuiven hun vermogen naar waar het meeste rendement te behalen valt. Nu Amerikaanse staatsleningen een historisch hoge vergoeding bieden, trekken kapitaalmarkten wereldwijd aan. Dit fenomeen laat zich direct voelen in Europa, waar de rente op kapitaalmarktobligaties eveneens onder druk staat omhoog te bewegen.</p>
+  <p>Voor de Nederlandse huizenmarkt betekent deze mondiale dynamiek een abrupt einde aan de relatieve rust van de afgelopen kwartalen. Hypotheekverstrekkers financieren hun leningen grotendeels via de kapitaalmarkt. Zodra de inkoopkosten van geld stijgen, worden banken gedwongen om de hypotheekrente voor consumenten te verhogen. Huizenkopers worden daardoor geconfronteerd met strengere leennormen en hogere maandlasten, wat onvermijdelijk zijn weerslag zal hebben op de dynamiek en prijsontwikkeling binnen de Nederlandse vastgoedsector.</p>
+
+  <div class="ns-viz ns-viz-concepts" style="margin: 2rem 0; padding: 1.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <h4 style="margin-top:0; font-size:1.1rem; color:#1e293b;">Kernbegrippen uitgelicht</h4>
+    <details style="margin-top: 0.75rem; padding: 0.5rem; background: #fff; border: 1px solid #cbd5e1; border-radius: 4px;">
+      <summary style="cursor: pointer; font-weight: 600; color: #334155;">Wat is de kapitaalmarktrente?</summary>
+      <p style="margin: 0.5rem 0 0; font-size: 0.95rem; color: #475569;">De rente waartegen overheden en grote ondernemingen zich lenen op de langere termijn (bijvoorbeeld via staatsleningen van tien of dertig jaar). Deze vormt de basis voor de hypotheekrente.</p>
+    </details>
+    <details style="margin-top: 0.5rem; padding: 0.5rem; background: #fff; border: 1px solid #cbd5e1; border-radius: 4px;">
+      <summary style="cursor: pointer; font-weight: 600; color: #334155;">Waarom reageert de hypotheekrente zo direct?</summary>
+      <p style="margin: 0.5rem 0 0; font-size: 0.95rem; color: #475569;">Banken dekken hun risico's af door langlopende hypotheken direct te koppelen aan de actuele kapitaalmarktrente. Stijgt de rente daar, dan stijgt vrijwel gelijktijdig het tarief voor de consument.</p>
+    </details>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>De piek in de Amerikaanse dertigjaarsrente onderstreept hoe kwetsbaar de mondiale economie blijft voor hardnekkige inflatiedruk en oververhitte conjuncturele cycli. Wat aanvankelijk leek op een lokaal Amerikaans vraagstuk over economische groei, ontpopt zich via internationale kapitaalmarkten tot een renteschok die direct doorwerkt in de portemonnee van de Europese en Nederlandse consument. Nu financieringskosten naar de niveaus van 2004 terugkeren, moeten huizenkopers en beleidmakers zich opmaken voor een langere periode van duurder kapitaal.</p>
+
+  <div class="bg-footer" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #cbd5e1; font-size: 0.85rem; color: #64748b;">
+    Bronnen: <a href="https://fd.nl/financiele-markten/1612974/dertigjaarsrente-vs-naar-hoogste-punt-sinds-2004" target="_blank" rel="noopener">FD - Dertigjaarsrente VS naar hoogste punt sinds 2004</a>
+  </div>
+</div>

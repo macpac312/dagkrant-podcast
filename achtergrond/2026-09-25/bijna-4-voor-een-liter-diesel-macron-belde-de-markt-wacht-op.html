@@ -1,0 +1,110 @@
+<p class="tag">Financieel</p>
+<h1>Bijna €4 voor een liter diesel — Macron belde, de markt wacht op Trump</h1>
+<p class="meta">25 september 2026</p>
+
+<ul class="bg-bullets">
+  <li>De dieselprijs aan de Nederlandse pomp nadert de historische grens van €4 per liter na harde marktreacties.</li>
+  <li>Een dreigend Amerikaans exportverbod op geraffineerde brandstoffen jaagt de Europese inflatie en energieangst aan.</li>
+  <li>Frans president Emmanuel Macron voerde telefonisch crisisoverleg met Donald Trump om de exportstop te blokkeren.</li>
+  <li>Brent-olie noteert een plotselinge stijging van 14,6% door de geopolitieke spanningen rond brandstofstromen.</li>
+</ul>
+
+<div class="ns-viz">
+  <h3>Marktreactie na het Witte Huissignaal</h3>
+  <div style="display: flex; gap: 1rem; justify-content: space-around; text-align: center; margin: 1rem 0;">
+    <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px; flex: 1;">
+      <div style="font-size: 2rem; font-weight: bold; color: #d9381e;">+14,6%</div>
+      <div style="font-size: 0.9rem; color: var(--text-muted);">Brent-olie futures</div>
+    </div>
+    <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px; flex: 1;">
+      <div style="font-size: 2rem; font-weight: bold; color: #d9381e;">€3,95</div>
+      <div style="font-size: 0.9rem; color: var(--text-muted);">Verwachte literprijs diesel</div>
+    </div>
+    <div style="background: var(--bg-surface, #f5f5f5); padding: 1rem; border-radius: 8px; flex: 1;">
+      <div style="font-size: 2rem; font-weight: bold; color: #10b981;">1</div>
+      <div style="font-size: 0.9rem; color: var(--text-muted);">Telefoontje van Macron</div>
+    </div>
+  </div>
+</div>
+
+<h5>De angst voor een Amerikaans exportverbod</h5>
+<p>De Europese energiemarkt is in rep en roer door berichten uit Washington dat de Amerikaanse regering overweegt om de export van diesel en andere geraffineerde aardolieproducten naar het buitenland aan banden te leggen. Omdat Europa na het wegvallen van de Russische import zwaar leunt op Amerikaanse en Midden-Oosten leveringen, sloeg het nieuws in als een bom. Analisten van het Financieele Dagblad en RTL waarschuwen dat een dergelijke maatregel de Europese dieselvoorraden direct uitbrandt, met torenhoge prijzen aan de pomp tot gevolg. Tankstations naderen in hoog tempo de psychologische grens van vier euro per liter, een scenario dat de transportsector en de bredere economie diep in de problemen kan brengen.</p>
+
+<div class="ns-viz ns-viz-mech" id="diesel-keten">
+  <h3>Keten van het brandstoftekort</h3>
+  <div class="ns-viz-mech-pills" style="display:flex; gap:0.5rem; margin-bottom:1rem;">
+    <button class="active" onclick="switchMech(0)" style="padding:0.4rem 0.8rem; border:1px solid #ccc; background:#fff; cursor:pointer; border-radius:4px;">1. Washington</button>
+    <button onclick="switchMech(1)" style="padding:0.4rem 0.8rem; border:1px solid #ccc; background:#fff; cursor:pointer; border-radius:4px;">2. Marktreactie</button>
+    <button onclick="switchMech(2)" style="padding:0.4rem 0.8rem; border:1px solid #ccc; background:#fff; cursor:pointer; border-radius:4px;">3. Europa</button>
+  </div>
+  <div class="ns-viz-mech-stage" style="border:1px solid #e5e7eb; padding:1.5rem; border-radius:8px; background:var(--bg-surface,#fafafa);">
+    <div class="mech-slide" style="display:block;">
+      <strong>Stap 1: Amerikaans beleid</strong>
+      <p style="margin:0.5rem 0 0 0;">Het Witte Huis onderzoekt een exportverbod om binnenlandse brandstofprijzen te drukken en strategische reserves aan te vullen ten koste van bondgenoten.</p>
+    </div>
+    <div class="mech-slide" style="display:none;">
+      <strong>Stap 2: Financiële markten</strong>
+      <p style="margin:0.5rem 0 0 0;">Futures op Brent-olie schieten direct omhoog (+14,6%) door de dreigende schaarste op de internationale termijnmarkten.</p>
+    </div>
+    <div class="mech-slide" style="display:none;">
+      <strong>Stap 3: De Europese pomp</strong>
+      <p style="margin:0.5rem 0 0 0;">Raffinaderijen en distributeurs berekenen de hogere inkoopkosten direct door, waardoor de literprijs richting €4 kruipt.</p>
+    </div>
+  </div>
+  <div style="display:flex; justify-content:space-between; margin-top:0.75rem;">
+    <button onclick="prevMech()" style="padding:0.3rem 0.8rem; cursor:pointer;">◀ Vorige</button>
+    <button onclick="nextMech()" style="padding:0.3rem 0.8rem; cursor:pointer;">Volgende ▶</button>
+  </div>
+  <script>
+    let currentMech = 0;
+    const slides = document.querySelectorAll('#diesel-keten .mech-slide');
+    const pills = document.querySelectorAll('#diesel-keten .ns-viz-mech-pills button');
+    function showMech(idx) {
+      slides.forEach((s, i) => s.style.display = i === idx ? 'block' : 'none');
+      pills.forEach((p, i) => p.style.background = i === idx ? '#3b82f6' : '#fff');
+      pills.forEach((p, i) => p.style.color = i === idx ? '#fff' : '#000');
+      currentMech = idx;
+    }
+    function switchMech(idx) { showMech(idx); }
+    function nextMech() { showMech((currentMech + 1) % slides.length); }
+    function prevMech() { showMech((currentMech - 1 + slides.length) % slides.length); }
+  </script>
+</div>
+
+<h5>Diplomatiek offensief uit Parijs</h5>
+<p>Volgens diplomatieke bronnen aan Politico greep de Franse president Emmanuel Macron direct in na de eerste geruchten. Hij voerde een telefoongesprek met Donald Trump om te pleiten tegen het invoeren van het exportverbod. Macron benadrukte dat een dergelijkezijdige Amerikaanse maatregel de economische banden binnen de westerse alliantie zwaar onder druk zet en inflatiegolven veroorzaakt die moeilijk te controleren zijn. Toch blijft het ongewis of de Amerikaanse president gevoelig is voor de Franse smeekbede; zijn 'America First'-agenda laat weinig ruimte voor concessies als de binnenlandse Amerikaanse kiezer klaagt over dure brandstoffen.</p>
+
+<h5>De kwetsbaarheid van de Europese dieselmarkt</h5>
+<p>De situatie legt een structureel zwak punt bloot in de Europese energiearchitectuur. Sinds de boycot op Russische olie en brandstoffen is Europa extreem afhankelijk geworden van overzeese aanvoerlijnen. Diesel neemt hierin een unieke positie in, omdat het Europese wagenpark en de logistieke sector voor een belangrijk deel op deze brandstof draaien. Wanneer de Verenigde Staten de kraan dichtdraaien, is er op korte termijn geen alternatief voorhanden dat de enorme volumes kan opvangen. Dit drijft de prijzen op tot niveaus die in eerdere energiecrisissen onmogelijk werden geacht.</p>
+
+<div class="ns-viz">
+  <h3>Kernvragen over de brandstofcrisis</h3>
+  <details style="margin-bottom: 0.5rem; border: 1px solid #e5e7eb; padding: 0.75rem; border-radius: 6px;">
+    <summary style="font-weight: bold; cursor: pointer;">Waarom raakt dit diesel harder dan benzine?</summary>
+    <p style="margin-top: 0.5rem; font-size: 0.95rem;">Europa produceert zelf te weinig diesel en importeert traditioneel grote volumes uit Rusland en later de VS. Benzine is minder schaars op de wereldmarkt.</p>
+  </details>
+  <details style="margin-bottom: 0.5rem; border: 1px solid #e5e7eb; padding: 0.75rem; border-radius: 6px;">
+    <summary style="font-weight: bold; cursor: pointer;">Kan de Nederlandse overheid ingrijpen via accijnzen?</summary>
+    <p style="margin-top: 0.5rem; font-size: 0.95rem;">Hoewel tijdelijke accijnsverlagingen mogelijk zijn, drukt dit zwaar op de begroting en lost het het onderliggende fysieke tekort op de wereldmarkt niet op.</p>
+  </details>
+  <details style="border: 1px solid #e5e7eb; padding: 0.75rem; border-radius: 6px;">
+    <summary style="font-weight: bold; cursor: pointer;">Hoe reageert de oliecryptomarkt?</summary>
+    <p style="margin-top: 0.5rem; font-size: 0.95rem;">Termijnmarkten voor Brent en gasolie reageren direct nerveus, wat speculanten aantrekt en de volatiliteit verder aanwakkert.</p>
+  </details>
+</div>
+
+<div class="ns-viz ns-viz-gauge">
+  <h3>Marktspanning Indicator</h3>
+  <div style="text-align: center; padding: 1.5rem; background: var(--bg-surface, #f9fafb); border-radius: 8px;">
+    <div style="font-size: 3rem; font-weight: bold; color: #dc2626;">94 / 100</div>
+    <div style="font-size: 1rem; font-weight: 500; margin-top: 0.5rem;">Extreem Hoog Risico op Brandstofschaarste</div>
+    <div style="width: 100%; background: #e5e7eb; height: 12px; border-radius: 6px; margin-top: 1rem; overflow: hidden;">
+      <div style="width: 94%; background: #dc2626; height: 100%;"></div>
+    </div>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>De dreigende grens van €4 per liter diesel markeert een nieuw dieptepunt in de kwetsbaarheid van de Europese energievoorziening. Terwijl Macron in Washington lobbyt voor clementie, houdt de markt haar adem in voor de definitieve besluitvorming van het Witte Huis. Duidelijk is inmiddels wel dat Europa op economisch vlak opnieuw aan een zijden draadje hangt.</p>
+
+<div class="bg-footer">Bronnen: FD, AD, Politico, RTL Nieuws</div>
