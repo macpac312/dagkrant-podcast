@@ -1,0 +1,19 @@
+{
+  "title": "Grok-agent boven de 400.000 gebruikers, terwijl Muse de vergelijking trekt",
+  "summary": "TradingView koppelt de gebruikersstand van de Grok-agent aan de populariteit van Meta's Muse. CNBC zet Muse naast ChatGPT, Grok en Claude. De downloadgrafiek is het slagveld.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUUpETGh5TE16N2xHdTZFenktTkcyWGVXcnFjTDM0b296NjVkbHhRTlR5cl8tajdQcXhLekNiM0ZlcUJQN2UycTFhcUFSQU16X2F4OVhVTmhUcEEzXzNna2NaTTg2T0RhSldEU3FENHRQUm9XbDIxdWlWZ1NWdG82WllmVEpZcS1YTnN5YUdHSXRkRGU3aWxBR3hTVjRYRGViMWctSUhCbm1vai00aENhMEszNThKNXBqYlFENDlMMEZ2UTVSTzF2Ul9PZFVZUXFvMWoxNlBtZ3R1Zm9Pb2VleF9JcGJ4cVU?oc=5",
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2MWNvQml5ZUQzbFhpU1lMenVhSHNTN2pPWDd3cHhSdTZ0enFlaXdEWThSODNpX0RlUno4TFJXSXlYVmwyX3J5bFN"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-26",
+  "slug": "grok-agent-boven-de-400000-gebruikers-terwijl-muse-de-vergel",
+  "tts_slug": "grok-agent-boven-de-400000-gebruikers-terwijl-muse-de-vergel",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-26T05:36:07",
+  "size_kb": 3,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-26/grok-agent-boven-de-400000-gebruikers-terwijl-muse-de-vergel.html",
+  "mode": "default"
+}

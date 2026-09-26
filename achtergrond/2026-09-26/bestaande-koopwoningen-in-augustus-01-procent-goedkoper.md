@@ -3,47 +3,65 @@ titel: "Bestaande koopwoningen in augustus 0,1 procent goedkoper"
 url: https://www.ad.nl/economie/bestaande-koopwoningen-in-augustus-iets-goedkoper-prijsstijging-vlakt-verder-af~a0c048ee/
 bron: huizenmarkt
 kind: huizenmarkt
-gegenereerd: 2026-09-26T03:26:55
+gegenereerd: 2026-09-26T05:23:07
 ---
 
 huizenmarkt
 
 Bestaande koopwoningen in augustus 0,1 procent goedkoper
 
-De prijsdaling ten opzichte van juli is klein. De stijging vlakt verder af.
+26 september 2026 — Een analyse door De Dagkrant
 
-    - Bestaande koopwoningen waren in augustus 0,1 procent goedkoper dan in juli.
+  - Prijs van bestaande koopwoningen daalde in augustus met 0,1 procent ten opzichte van juli.
 
-    - De maand-op-maand prijsstijging van de afgelopen periode vlakt hiermee verder af.
+  - Jaarstijging van de huizenprijzen zwakt verder af na eerdere piekperiodes.
 
-    - Verkopers die vasthouden aan vraagprijzen uit eerdere piekmaanden komen bedrogen uit.
+  - Aantal woningtransacties laat een daling zien in vergelijking met voorgaande maanden.
 
-    - Lokaal kunnen de transactieprijzen per regio sterk afwijken van het landelijke gemiddelde.
+  - Hypotheekrente blijft op een verhoogd niveau en drukt op de leencapaciteit van kopers.
 
-     Maandmutatie koopwoningen augustus
+     -0,1%
+     Prijsontwikkeling (augustus vs. juli)
 
-Het einde van de automatische plus
+     Stijgend
+     Hypotheekrentestand
 
-Een daling van een tiende procent is geen marktcrisis of een abrupte huizenkrach, maar het markeert wel een symbolisch en feitelijk keerpunt in de Nederlandse huizenmarkt. Maandenlang leek de prijsstijging van bestaande koopwoningen een vanzelfsprekendheid, waarbij iedere maand op de voorafgaande werd geplusd. Die onvermoeibare opwaartse druk maakt nu plaats voor nuchterheid. De cijfers tonen aan dat de markt de adem inhoudt en dat de absolute piek van de maandelijkse waardevermeerdering achter ons ligt.
+     Lager
+     Aantal passanten bij notaris
 
-     Transactiedynamiek en Prijsvorming
+De dynamiek van een haperende markt
 
-Vraag en aanbod op ramkoers
+De Nederlandse woningmarkt vertoont na maanden van vrijwel onafgebroken prijsstijgingen de eerste tekenen van afkoeling. Uit gezamenlijke cijfers van het Centraal Bureau voor de Statistiek (CBS) en het Kadaster blijkt dat bestaande koopwoningen in augustus 0,1 procent in prijs zijn gedaald ten opzichte van de maand juli. Hoewel een minwaarde van een tiende procent op zichzelf bescheiden oogt, markeert het een psychologische kentering in een markt die al lange tijd gedomineerd werd door overbiedingen en recordprijzen.
 
-De kleine min van augustus brengt een fundamentele spanning aan het licht tussen de verwachtingen van de verkoper en de realiteit in de portemonnee van de koper. Wie zijn woning nu te koop zet met in het achterhoofd de astronomische sprongen van vorig jaar, rekent zich rijk met een markt die de cijfers simpelweg niet meer ondersteunt. Huizenkopers hebben te maken met aangescherpte leennormen en een kritischere blik op de bouwkundige en energetische staat van de woning, waardoor overbieden geen automatisme meer is.
+Analisten wijzen erop dat deze maandelijkse dip niet op zichzelf staat, maar het gevolg is van een bredere macro-economische verschuiving. De inflatie en het aanhoudende monetaire beleid van de Europese Centrale Bank werpen hun schaduw vooruit over de vastgoedmarkt. Huizenkopers worden geconfronteerd met grenzen in hun financierbaarheid, wat direct zijn weerslag heeft op de getaxeerde waarde en de bereidheid om de hoofdprijs te betalen voor een woning.
 
-Afvlakking als stabiele factor
+     Begin 2026
+     Forse prijsstijgingen en hevige concurrentie op de woningmarkt door schaarste.
 
-In economische termen is afvlakking geen synoniem voor neergang, maar het duidt op een welkome gewenningsfase. Waar de markt eerder oververhit raakte door schaarste en rentespiegelingen, beweegt de conjunctuur nu naar een evenwicht. Dit betekent niet dat huizen op grote schaal onverkoopbaar worden, wel dat de periode van ongebreidelde prijsgroei plaatsmaakt voor een meer volwassen vastgoedmarkt waarin reële waardebepaling weer centraal staat.
+     Zomer 2026
+     De stijging vlakt merkbaar af; het aantal transacties stabiliseert.
 
-     Marktstabilisatie Factoren
+     Augustus 2026
+     Eerste maandkrim van 0,1% en afnemend aantal verkochte huizen.
 
-Lokale verschillen domineren
+Transactievolumes onder druk
 
-Wie de landelijke cijfers bestudeert, loopt het risico voorbij te gaan aan de microscopische realiteit van de baksteen. De transactie van één enkele woning blijft immers een lokaal gebeuren. Waar de statistieken voor augustus landelijk een streepje naar beneden laten zien, kan een gewilde buurt in een middelgrote gemeente door krapte nog altijd te maken hebben met stijgende koopsommen. De tiende procent is dan ook geen wet van Meden en Perzen voor iedere individuele straat, maar vooral een teken aan de wand dat de algemene wind is gedraaid.
+Niet alleen de prijzen bewogen in negatieve richting; ook het aantal woningtransacties liet een terugval zien. Het Kadaster noteerde minder overdrachten dan in de voorgaande periode. Dit wijst erop dat verkopers en kopers vaker tegenover elkaar komen te staan qua verwachtingen. Verkopers die gewend waren aan een snelle verkoop en hoge opbrengsten, moeten hun vraagprijs soms heroverwegen, terwijl kopers langer aarzelen voordat ze een bod uitbrengen.
+
+Deze voorzichtigheid is verklaarbaar. De markt reageert vertraagd op de veranderde financieringsvoorwaarden. Waar de rente in eerdere jaren historisch laag stond en het lenen van ruime sommen geld eenvoudig maakte, zorgt het huidige renteniveau voor een fundamentele herijking. Het maximale hypotheekbedrag dat een doorsnee huishouden kan krijgen, is door de hogere rente gekrompen, wat de markt als het ware van onderop afremt.
+
+   Rentedruk op de huizenmarkt
+
+    Matig  Hoog  Kritisch
+
+De rente als bepalende factor
+
+De kern van de afvlakking ligt onmiskenbaar bij de hypotheekrente. Terwijl de huizenprijzen in augustus een minieme daling lieten zien, bleef de rente op vastrentende periodehoogten hangen. Huizenzoekers bevinden zich daardoor in een spagaat: aan de ene kant is de noodzaak om te verhuizen groot vanwege de aanhoudende woningnood, aan de andere kant verhindert de maandelijkse hypotheeklast de stap naar aankoop.
+
+De vraag voor de komende kwartalen is of deze maandelijkse daling een incident betreft of het begin van een langduriger plateau. Demografische druk en de structurele tekorten aan nieuwbouwwoningen blijven immers bestaan. Zolang er onvoldoende huizen worden bijgebouwd, blijft de onderliggende schaarste een prijsverlagende correctie in de weg staan.
 
 Conclusie
 
-De lichte daling van bestaande koopwoningen in augustus met 0,1 procent onderstreept dat de huizenmarkt in een nieuwe fase van afvlakking is beland. Verkopers moeten hun verwachtingen bijstellen nu de automatische prijsstijging tot stilstand is gekomen, al blijft de dynamiek per regio sterk verschillen.
+De lichte daling van de huizenprijzen in augustus en het dalende aantal transacties onderstrepen dat de Nederlandse koopwoningmarkt in een nieuwe fase is beland. De periode van ongebreidelde prijsknallen maakt plaats voor een realistischer, maar ook complexer krachtenveld waarin de rente de boventoon voert.
 
- Bronnen: AD (https://www.ad.nl/economie/bestaande-koopwoningen-in-augustus-iets-goedkoper-prijsstijging-vlakt-verder-af~a0c048ee/)
+ Bronnen: CBS, Kadaster, ANP

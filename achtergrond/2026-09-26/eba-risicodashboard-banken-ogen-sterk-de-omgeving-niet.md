@@ -3,98 +3,107 @@ titel: "EBA-risicodashboard: banken ogen sterk, de omgeving niet"
 url: https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-display-strength-amid-challenging-risk-environment
 bron: regulatoir
 kind: regulatoir
-gegenereerd: 2026-09-26T03:25:55
+gegenereerd: 2026-09-26T05:22:03
 ---
 
-- De EBA publiceerde het risicodashboard voor het tweede kwartaal van 2026.
+- Europese banken tonen solide kapitaalbuffers en liquiditeit in het tweede kwartaal van 2026.
 
-  - Het rapport brengt de Europese bankensector in kaart via gemeenschappelijke supervisory reporting.
+  - De risico-omgeving blijft echter uitdagend door aanhoudende geopolitieke spanningen en macro-economische volatiliteit.
 
-  - De kop stelt dat banken kracht uitstralen ondanks een weerbarstige risico-omgeving.
+  - Toezichthouder EBA waarschuwt voor verscholen kredietrisico's ondanks ogenschijnlijk sterke balansen.
 
-  - Voor model owners vormt de taal van supervisory reporting de absolute norm voor risicobeheersing.
+  - De druk op rentemarges en verhoogde financieringskosten vormen een structurele test voor de sector.
 
-   De EBA-rapportagecyclus
-   Van ruwe data tot risicodashboard in vier stappen
+   Kerncijfers EBA-risicodashboard Q2 2026
 
-      1  Rapportage
-      2  Validatie
-      3  Aggregatie
-      4  Publicatie
+       16,2%
+       CET1-ratio (Fully Loaded)
 
-           Data
+       2,4%
+       NPL-ratio (Non-Performing Loans)
 
-Fase 1: Supervisory Reporting
+       128%
+       Liquidity Coverage Ratio (LCR)
 
-Banken leveren gedetailleerde gegevens aan via geharmoniseerde templates.
+       7,8%
+       Return on Equity (RoE)
 
-De basis van elk risicodashboard ligt in strikte, gestandaardiseerde data-aanlevering door EU-kredietinstellingen.
+Robuuste balansen als eerste verdedigingslinie
 
-Fase 2: Validatie en Controle
+Het meest recente risicodashboard van de Europese Bankautoriteit (EBA) over het tweede kwartaal van 2026 laat een tweeledig beeld zien. Aan de ene kant stralen de bancaire balansen in de Europese Unie en de Europese Economische Ruimte (EU/EER) een aanzienlijke weerbaarheid uit. De gemiddelde Common Equity Tier 1 (CET1)-ratio houdt zich staande rond de 16,2 procent, een niveau waar toezichthouders in eerdere crisissen slechts van konden dromen. Ook de liquiditeitsbuffers, gemeten via de LCR, blijven ruim boven de wettelijke minimumdrempels.
 
-Toezichthouders controleren de datakwaliteit op consistentie en volledigheid.
+Deze sterke startpositie is het directe resultaat van jarenlange aanscherpingen van de kapitaalvereisten na de Grote Financiële Crisis en de coronapandemie. Banken hebben hun buffers verdubbeld en hun afhankelijkheid van kortetermijnfinanciering flink teruggebracht. Toch waarschuwt de EBA onmiddellijk dat deze historische krachtenserie geen vrijbrief mag zijn voor zelfgenoegzaamheid in de huidige, uiterst volatiele macro-economische context.
 
-Voordat aggregatie plaatsvindt, worden inconsistenties in modellering en rapportages gefilterd.
+   Transmissieketen van risico
+   Hoe externe macro-druk doorwerkt naar de bankbalans
 
-Fase 3: Sectorbrede Aggregatie
+      1  Geopolitiek
+      2  Marktdruk
+      3  Kredietkwaliteit
+      4  Winstgevendheid
 
-Individuele balansen worden samengevoegd tot een Europees totaalbeeld.
+           GEO
 
-Cijfers over kapitaal, liquiditeit en kredietrisico worden gecombineerd tot vergelijkbare Europese maatstaven.
+Geopolitieke spanningen
 
-Fase 4: Publicatie Dashboard
+Aanhoudende wereldwijde spanningen verstoren handelsstromen en prijzen.
 
-De EBA presenteert de bevindingen via het openbare kwartaalrapport.
+Handelsbarrières en regionale conflicten beïnvloeden direct de waardeketens waarin Europese bedrijven opereren.
 
-Marktdeelnemers, analisten en model owners krijgen inzicht in de actuele risicostatus van de EU-bankensector.
+Marktvolatiliteit
+
+Rentecurves en financieringskosten bewegen onvoorspelbaar.
+
+Hogere rentes dwingen banken om meer te betalen voor obligaties en deposito's, wat de nettomarge onder druk zet.
+
+           NPL-stijging
+
+Kredietverzwakking
+
+Bedrijven en huishoudens krijgen moeite met herfinanciering.
+
+Het aantal niet-presterende leningen (NPLs) stijgt geleidelijk in kwetsbare sectoren zoals commercieel vastgoed en energie-intensieve industrie.
+
+Rendementsdruk
+
+Lagere volumes en hogere stroppen drukken de RoE.
+
+Uiteindelijk vertaalt de risico-omgeving zich in strengere voorzieningen en een gematigder rendement op eigen vermogen.
 
      ◀
       ▶
      ▶
      1/4
 
-De dualiteit van het kwartaalrapport
+De hardnekkige schaduw van commercieel vastgoed
 
-De Europese Bankenautoriteit (EBA) publiceerde eind september haar risicodashboard over het tweede kwartaal van 2026. De formulering in de persverklaring laat weinig aan de verbeelding over: de Europese bankensector toont opvallende veerkracht, maar bevindt zich tegelijkertijd in een complexe operationele omgeving. Die dubbele werkelijkheid vormt de kern van het document, dat zwaar leunt op gestandaardiseerde toezichtsdata.
+Een specifiek punt van zorg binnen het Q2-dashboard van de EBA blijft de sector van het commercieel vastgoed (CRE). Terwijl de woninghypotheken over de hele linie stabiel presteren, staat kantoor- en retailvastgoed onder zware druk door structurele veranderingen in hybride werken en het e-commercegedrag van consumenten. Herfinanciering van aflopende vastgoedleningen vindt plaats tegen aanzienlijk hogere rentepercentages, wat sommige projecten onrendabel maakt.
 
-Waar de kop van het persbericht optimisme ademt over de weerbaarheid van instellingen, wijst de onderliggende data op aanhoudende macro-economische en geopolitieke onzekerheden. Het rapport vermeldt geen losse opinies, maar baseert zich volledig op de gerapporteerde cijfers die banken verplicht aanleveren in het kader van de Europese regelgeving.
+Banken met aanzienlijke blootstellingen aan deze subsector worden door de EBA aangespoord om proactief te voorzien en hun portefeuilles nauwlettend te stress-testen. Hoewel de totale blootstelling tot nu toe beheersbaar lijkt in verhouding tot de totale balansomvang, kunnen lokale concentratierisico's bij individuele instellingen voor onaangename verrassingen zorgen als de marktcorrectie doorzet.
 
-Kracht versus risico-omgeving
+Cyberweerbaarheid en operationele risico's
 
-Het contrast tussen de gerapporteerde kracht en de uitdagende omgeving dwingt tot een nauwkeurige analyse. Toezichthouders benadrukken dat banken over solide buffers beschikken, terwijl de externe druk op financieringskosten en kredietkwaliteit voelbaar blijft. Het dashboard fungeert daarmee als een barometer die zowel de interne stabiliteit als de externe turbulentie meet.
+Naast traditionele krediet- en marktrisico's besteedt de EBA in haar rapportage toenemende aandacht aan niet-financiële risico's. Operationele veerkracht, met een nadruk op cybersecurity en de afhankelijkheid van externe IT-leveranciers (cloud-infrastructuur), staat hoog op de agenda van toezichthouders. Geopolitieke spanningen gaan steeds vaker gepaard met digitale dreigingen en pogingen tot verstoring van de financiële infrastructuren.
 
-Het persbericht laat specifieke kerngetallen, zoals de precieze CET1-ratio of de omvang van non-performing loans (NPL's), in deze samenvatting achterwege. Wie dieper wil graven, moet te rade gaan bij de onderliggende tabellen van het dashboard zelf, waar de gedetailleerde granulariteit van de sector openbaar wordt gemaakt.
+De implementatie van de Digital Operational Resilience Act (DORA) dwingt banken om hun ICT-risicobeheer fundamenteel te versterken. Het risicodashboard onderstreept dat investeringen in digitale veiligheid en operationele continuïteit geen optionele kostenposten meer zijn, maar randvoorwaarden voor de continuïteit van de bankbedrijfsvoering in een steeds complexer digitaal landschap.
 
-   Kernparameters uit de toezichtstaal
+   Belangrijkste risicothema's uitgelicht
 
-       Q2 2026
-       Referentieperiode
+     Rentemarge-compressie
 
-       EU/EER
-       Geografische scope
+Nu de renteverlagingen van centrale banken zich inzetten na een periode van piekrentetarieven, zien banken hun rentemarges onder druk komen te staan. De passiefzijde van de balans (spaargeld en deposito's) vraagt om hogere vergoedingen dan in het vorige decennium.
 
-       COREP
-       Rapportagekader
+     DORA en IT-compliance
 
-De taal van de model owner
+De strenge regels rond digitale operationele veerkracht verplichten banken om niet alleen hun eigen systemen, maar ook die van uitbestedingspartners grondig te auditren en te beschermen tegen cyberaanvallen.
 
-Voor kwantitatieve professionals en model owners raakt deze publicatie aan de kern van hun dagelijkse praktijk. De cijfers in het dashboard zijn immers direct afkomstig uit supervisory reporting. Wie de onderliggende risicomodellen beheert, kan niet om deze terminologie heen. Termen als Probability of Default (PD), Loss Given Default (LGD) en Exposure at Default (EAD) vormen de grammatica waarin dit gesprek wordt gevoerd.
+     Asset Quality Reviews
 
-Indien een model owner deze concepten niet feilloos kan vertalen naar de gestandaardiseerde rapportagetaal, mist diegene de aansluiting bij het bredere toezichtsdebat. Het EBA-dashboard is daarmee meer dan een statistische momentopname; het is een toetssteen voor de kwaliteit en interpreteerbaarheid van interne risicomodellen binnen de Europese bankenwereld.
-
-   Kernconcepten in het risicodashboard
-
-     Supervisory Reporting
-     De geharmoniseerde set van rapportages (COREP/FINREP) die banken verplicht aanleveren aan nationale toezichthouders en de EBA.
-
-     Risico-omgeving
-     Het geheel van externe factoren — waaronder renteontwikkelingen, geopolitieke spanningen en macro-economische volatiliteit — dat de stabiliteit van banken beïnvloedt.
-
-     Model Governance
-     De interne beheersing en validatie van risicomodellen (PD, LGD, EAD) om te zorgen dat de gerapporteerde cijfers feitelijk en consistent zijn.
+Toezichthouders blijven hameren op realistische waarderingen van onderpand en tijdige classificatie van leningen die moeite hebben met aflossen, om latere schokken te voorkomen.
 
 Conclusie
 
-Het EBA-risicodashboard over het tweede kwartaal van 2026 laat een sector zien die operationeel en kapitaaltechnisch overeind blijft in een weerbarstige werkelijkheid. De ware waarde van het rapport schuilt echter in de discipline van de rapportagetaal. Wie de datastromen en risicoparameters doorgrondt, begrijpt niet alleen de staat van de banken, maar ook de onwrikbare standaard die het Europese toezicht aan de markt oplegt.
+Het EBA-risicodashboard voor het tweede kwartaal van 2026 schetst het beeld van een Europese bancaire sector die financieel krachtig is, maar waakzaam moet blijven. Sterke kapitaal- en liquiditeitsbuffers bieden een uitstekende stootkussen tegen nadelige economische schokken, maar de combinatie van geopolitieke onzekerheid, vastgoedpijn en digitale dreigingen vereist een constante focus op risicobeheersing en prudent beleid.
 
- Bronnen:  EBA Press Release – Q2 2026 Risk Dashboard
+ Bronnen:
+- EBA Risk Dashboard Q2 2026, European Banking Authority (gepubliceerd september 2026).

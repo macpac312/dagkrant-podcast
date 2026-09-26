@@ -1,6 +1,6 @@
 {
   "title": "Bestaande koopwoningen in augustus 0,1 procent goedkoper",
-  "summary": "De prijsdaling ten opzichte van juli is klein. De stijging vlakt verder af.\n\nBekende feiten uit de bronnen (niet verzinnen daarbuiten):\nBestaande koopwoningen waren in augustus **0,1 procent** goedkoper dan in juli, meldt het AD. De prijsstijging vlakt verder af.\n\nEen tiende procent is geen crash. Het is het einde van de vanzelfsprekende plusmaand. Verkopers die hun vraagprijs op de stijging van v",
+  "summary": "CBS en Kadaster: de prijs daalde licht ten opzichte van juli en er werden minder huizen verkocht. De jaarstijging vlakt af. De rente doet dat niet.",
   "sources": [
     "https://www.ad.nl/economie/bestaande-koopwoningen-in-augustus-iets-goedkoper-prijsstijging-vlakt-verder-af~a0c048ee/"
   ],
@@ -11,7 +11,7 @@
   "tts_slug": "bestaande-koopwoningen-in-augustus-01-procent-goedkoper",
   "archive_hits": 0,
   "has_visuals": true,
-  "generated_at": "2026-09-26T03:26:55",
+  "generated_at": "2026-09-26T05:23:07",
   "size_kb": 4,
   "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-26/bestaande-koopwoningen-in-augustus-01-procent-goedkoper.html",
   "mode": "default"

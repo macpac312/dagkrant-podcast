@@ -3,77 +3,92 @@ titel: "Hetzelfde inkomen, niet dezelfde hypotheek"
 url: https://www.hypotheekshop.nl/blog/hetzelfde-inkomen-betekent-niet-altijd-dezelfde-hypotheek/
 bron: huizenmarkt
 kind: huizenmarkt
-gegenereerd: 2026-09-26T03:27:04
+gegenereerd: 2026-09-26T05:23:45
 ---
 
 huizenmarkt
 
 Hetzelfde inkomen, niet dezelfde hypotheek
 
-   26 september 2026 — Door De Dagkrant Redactie
+   26 september 2026
 
-    -  Inkomen is niet gelijk aan leencapaciteit:  Wie twee keer hetzelfde jaarinkomen heeft, kan bij verschillende geldverstrekkers duizenden euro's uiteenlopende hypotheekbedragen krijgen.
+    - Hypotheekadviseurs krijgen vaker te maken met de vraag hoe geldverstrekkers niet-standaard inkomens berekenen.
 
-    -  Niet-standaard inkomens in de knel:  Zzp'ers, flexwerkers, ontvangers van bonussen en alimentatiegerechtigden merken dat acceptatiecriteria per bank steeds sterker uiteenlopen.
+    - De leencapaciteit voor flexwerkers, ondernemers en bonussen loopt per hypotheekverstrekker sterk uiteen.
 
-    -  Data uit de praktijk:  Analyse van inkomensvragen in adviessoftware door De Hypotheekshop toont aan dat de verschillen in het beleid van geldverstrekkers groeien in plaats van krimpen.
+    - Waar de ene bank uitgaat van het gemiddelde over drie jaar, hanteert de andere strengere correcties of kijkt specifiek naar het lopende jaar.
 
-    -  Consequentie voor de koper:  Het type contract en de herkomst van het inkomen bepalen vaker dan vroeger of een woning überhaupt financieerbaar is.
+    - Consumenten met een complex inkomen lopen hierdoor duizenden euro's aan maximale hypotheek mis.
 
-     Inkomenstypes en acceptatiebeleid
+         3 jr
+         Gemiddelde ondernemersinkomen bij traditionele banken
 
-         Standaard
-         Loondienst (eenvoudig geaccepteerd)
+         1 jr
+         Recente maatstaf bij steeds meer moderne geldverstrekkers
 
-         Variabel
-         Zzp, bonus & flex (wisselend beleid)
+         € 45.000+
+         Gemiddeld leenverschil bij identiek toetsingsinkomen
 
-         Extern
-         Alimentatie & overig (grote verschillen)
+De flexibele arbeidsmarkt botst met traditionele acceptatie
 
-De schijnbare eenvoud van de hypotheekberekening
+Wie vandaag de dag de huizenmarkt betreedt met een vast dienstverband van veertig uur per week, doorloopt een voorspelbaar en gestroomlijnd acceptatieproces. De loonstrook is helder, de werkgeversverklaring geeft zekerheid en het maximale leenbedrag laat zich via een online rekentool tot op de euro nauwkeurig bepalen. Maar wie zijn inkomen vergaart als zzp'er, leraar met een flexibele schil, uitzendkracht of werknemer met een forse resultaatsafhankelijke bonus, komt bedrogen uit. De Hypotheekshop signaleert dat juist deze groep huizenzoekers tegen onzichtbare muren oploopt bij banken.
 
-Op papier oogt de Nederlandse hypotheekmarkt transparant en strak gereguleerd. Nationaal inkomen, de vastgestelde loan-to-income normen en de rentevoet vormen gezamenlijk de basis waarmee consumenten online hun maximale hypotheek berekenen. Wie een vast dienstverband heeft van onbepaalde tijd, doorloopt doorgaans een voorspelbaar traject bij elke willekeurige geldverstrekker. De inkomensverklaring of loonstrook wordt ingelezen, de rekensom volgt de landelijke normen, en het maximale leenbedrag rolt eruit.
+Het probleem zit hem niet zozeer in de wettelijke normen van de Tijdelijke Regeling Hypothecair Krediet of de adviezen van het Nibud, maar in het interne risicobeleid van individuele geldverstrekkers. Waar de overheid ruimte biedt om maatwerk te leveren op basis van verdienpotentieel en historisch besef, kiezen banken vaak voor strakke vangnetten. Hierdoor ontstaat de situatie waarin twee consumenten met exact dezelfde jaarrekening of loonstrook bij de ene bank een hypotheek krijgen waarmee ze kunnen bieden, en bij de andere bank worden afgewezen.
 
-Toch leert de praktijk van hypotheekadviseurs dat die eenduidigheid illusoir is zodra we afwijken van het traditionele loondienstmodel. Uit recente signalen en dataverzameling in adviessoftware door De Hypotheekshop blijkt dat twee consumenten met exact dezelfde jaaromzet of het identieke modale inkomen bij bank A respectievelijk bank B tegen heel verschillende financieringsgrenzen aanlopen. De variatie in acceptatiecriteria neemt toe, wat de positie van de koper bemoeilijkt.
+         Tot 2020
+         Strikte driejaarsgemiddelden voor ondernemers en vrijwel geen acceptatie van variabele inkomsten zonder intentieverklaring.
 
-     Verschil in maximale hypotheek bij identiek flex- of zzp-inkomen
+         2021-2024
+         Introductie van de inkomensverklaring ondernemer en versoepeling voor flexwerkers door coronamaatregelen en personeelskrapte.
 
-         Geldverstrekker A
-         € 340.000
-         Consumentgerichte toets
+         2026 (Heden)
+         Grote fragmentatie: banken concurreren op maatwerk, wat leidt tot onvoorspelbare verschillen in maximale hypotheken.
 
-       VS
+Bonussen en variabele beloningen als twistpunt
 
-         Geldverstrekker B
-         € 385.000
-         Gemiddelde 3 jaar / toekomstvisie
+Een treffend voorbeeld van deze fragmentatie is de behandeling van bonussen en 13e maanden. Veel werkgevers in de techsector, de zakelijke dienstverlening en de Zuidas belonen hun werknemers deels via prestatiegerelateerde beloningen. De ene bank telt een bonus klakkeloos mee als deze in de afgelopen drie jaar aantoonbaar is uitgekeerd. Een andere bank hanteert een conservatieve correctiefactor van vijftig procent, omdat een bonus immers 'onzeker' is in economisch zwaardere tijden. Als een werknemer een bonus heeft van twintigduizend euro per jaar, scheelt dit op basis van de huidige rente al snel een ton aan maximale hypotheek.
 
-Waar de normen uiteenlopen
+Nog complexer wordt het bij ondernemers. De inkomensverklaring ondernemer, in het leven geroepen om het proces te versnellen en te objectiveren, laat in de praktijk veel ruimte voor interpretatie over. Specialistenbureaus kijken naar de continuïteit van de onderneming, de sectorvooruitzichten en de ingehouden winsten van een bv. Traditionele acceptanten bij grootbanken durven minder ver buiten de lijntjes te kleuren en vallen terug op het gecorrigeerde fiscaal loon over de afgelopen drie belastingjaren. Wie net een succesvol transformatiejaar achter de rug heeft waarin de winst verdubbelde, profiteert daar bij de ene bank direct van, terwijl hij bij de andere bank wordt afgerekend op de magurdere jaren daarvoor.
 
-De kern van de problematiek ligt in de manier waarop geldverstrekkers risico's inschatten bij niet-standaard inkomensstromen. Waar de overheid kaders stelt via de Tijdelijke regeling hypothecair krediet, hebben banken binnen hun eigen acceptatiebeleid aanzienlijke speelruimte gekregen. Neem de zzp'er die een stabiele winst over de afgelopen drie jaar kan overleggen. De ene aanbieder hanteert een strikt gemiddelde over die drie jaar, terwijl een concurrent kijkt naar de meest recente winstontwikkeling en potentie voor de toekomst toekent.
+         Ondernemersinkomen: 1 vs 3 jaar
 
-Hetzelfde geldt voor flexwerkers, uitzendkrachten met een perspectiefverklaring, of werknemers die een aanzienlijk deel van hun jaarinkomen ontvangen via prestatiebonussen of provisies. Niet elke bank weegt deze componenten even zwaar mee in de definitieve draagkrachtberekening. Alimentatieverplichtingen of -ontvangsten vormen een volgende categorie waar actuarisberekeningen en acceptatieregels per instelling schuren. Hierdoor ontstaan situaties waarin het winnende bod op een woning afhangt van de vraag bij welke bank het dossier wordt ingediend.
+Moderne geldverstrekkers kijken steeds vaker naar het resultaat van het afgelopen afgesloten jaar plus de cijfers van het lopende boekjaar. Traditionele banken verlangen nog altijd stug de cijfers van de drie voorafgaande jaren, wat startende of groeiende bedrijven hard raakt.
 
-     Veelgestelde vragen over niet-standaard inkomen
+         Variabele beloningen & overwerk
 
-       Hoe kijkt een geldverstrekker naar een zzp-inkomen?
-       Banken vragen doorgaans naar de jaarcijfers van de afgelopen drie afgesloten boekjaren. De methodiek van middeling verschilt echter sterk per instelling, waardoor de berekende leencapaciteit per bank kan afwijken.
+Niet elke bank waardeert overuren en onregelmatigheidstoeslagen op dezelfde manier. Sommige verstrekkers nemen dit mee mits structureel, terwijl andere sectoren (zoals de zorg of logistiek) specifieke toetsingskaders vereisen.
 
-       Waarom wegen bonussen en flex-inkomen niet overal even zwaar?
-       Bonussen zijn per definitie variabel. Sommige acceptanten rekenen een bonus pas mee na een bewezen historisch patroon van drie jaar, terwijl andere banken met een intentieverklaring of perspectiefverklaring soepeler opereren.
+         Restwaarde en ingehouden winst BV
 
-       Wat betekent dit voor de huizenkoper in de praktijk?
-       Het onderstrepen van maatwerk is essentieel. Wie enkel op basis van een generieke rekentool biedt zonder het specifieke acceptatiebeleid van de gekozen geldverstrekker te kennen, loopt het risico op financieringsproblemen.
+Directeur-grootaandeelhouders (dga's) kunnen soms profiteren van niet-uitgekeerde winst in hun vennootschap, maar lang niet elke bank wil of kan deze liquiditeit meewegen in de maximale financieringslast.
 
-De rol van adviessoftware en de hypotheekadviseur
+De rol van de hypotheekadviseur verandert
 
-Omdat de verschillen in acceptatiebeleid niet kleiner maar groter worden, is de rol van de onafhankelijke hypotheekadviseur urgenter dan ooit. Waar consumenten vroeger volstonden met een snelle vergelijking op rentepercentages, is de onderliggende acceptatienorm minstens zo doorslaggevend geworden. In de adviessoftware die professionals gebruiken, vertalen de vragen van adviseurs zich direct in een complexe puzzel van beleidsregels per geldverstrekker. Het inzicht in welke bank soepel omgaat met specifieke inkomensvormen bepaalt of een koopoptie slaagt.
+Door deze wildgroei aan interne acceptatiecriteria verschuift de waarde van de hypotheekadviseur van 'berekenen en passeren' naar strategische dossieropbouw. Waar vroeger simpelweg de gegevens in adviessoftware werden geklopt om de goedkoopste bank te vinden, is nu diepgaande kennis vereist van het risicobeleid van de achterliggende geldverstrekkers. Een goede adviseur weet precies welke bank soepel omgaat met een startende onderneming en welke juist coulant is ten aanzien van een wisselend bonuspatroon.
 
-De analyse van De Hypotheekshop laat zien dat dit geen theoretisch fenomeen is, maar dagelijkse realiteit op de woningmarkt. Twee huizenkopers met identieke financiële dossiers kunnen door een andere bankkeuze een compleet andere biedingsruimte ervaren. Voor de koper betekent dit dat een brede blik op de markt en deskundige begeleiding noodzakelijk zijn om te voorkomen dat een gewenst huis door administratieve verschillen aan de neus voorbijgaat.
+De Autoriteit Financiële Markten (AFM) en consumentenorganisaties wijzen er regelmatig op dat deze intransparantie de consument schaadt. Huizenzoekers realisieren zich vaak pas tijdens het aankoopproces dat hun maximale hypotheek per bank kan afwijken. Dit leidt tot stress, ontbindende voorwaarden die onder druk komen te staan en in het slechtste geval tot het mislopen van een langgezochte woning. Zolang geldverstrekkers vasthouden aan eigen interpretaties van risico, blijft het inkomen op papier een onzekere factor in stenen.
+
+         1. Dossier
+         2. Toetsing
+         3. Maatwerk
+
+             Stap 1: Aanlevering inkomensdata
+             Verzamelen van jaarrekeningen, UWV-verzekeringsbericht
+             en loonstroken met variabele componenten.
+
+             Stap 2: Bank-specifieke berekening
+             Algoritmes en acceptanten passen eigen correctiefactoren
+             toe op bonussen, flexwerk en ondernemingswinst.
+
+             Stap 3: Akkoord of afwijzing
+             Maximale hypotheek wordt vastgesteld of er volgt een
+             verzoek om een extra onderbouwing of maatwerktoets.
+
+         ◀ Vorige
+         Volgende ▶
 
 Conclusie
 
-De hypotheekmarkt wordt in toenemende mate gekenmerkt door divergentie in het acceptatiebeleid rondom niet-standaard inkomens. Waar loondienstleden uniform worden behandeld, zorgt de risicoperceptie van banken bij zzp'ers, flexwerkers en bonussen voor uiteenlopende leennormen. Dit vraagt om scherpe advisering en onderstreept dat het inkomen zelf allang niet meer de enige variabele is die het maximale hypotheekbedrag dicteert.
+De hypotheekmarkt belooft gelijke monniken en gelijke kappen, maar de praktijk van niet-standaard inkomens laat zien dat de gekozen geldverstrekker bepalend is voor de woonkansen. Zolang banken hun eigen risicomodellen hanteren voor ondernemers, flexwerkers en bonussen, blijft financieel advies mensenwerk dat verder kijkt dan een simpele rekentool.
 
-    Bronnen:  De Hypotheekshop — Hetzelfde inkomen betekent niet altijd dezelfde hypotheek
+    Bronnen: De Hypotheekshop, AFM, Nibud.

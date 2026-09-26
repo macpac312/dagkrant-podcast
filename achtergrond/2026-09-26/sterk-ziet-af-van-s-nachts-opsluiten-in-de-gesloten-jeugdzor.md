@@ -1,88 +1,92 @@
 ---
-titel: "Sterk ziet af van ’s nachts opsluiten in de gesloten jeugdzorg"
+titel: "Sterk ziet af van 's nachts opsluiten in de gesloten jeugdzorg"
 url: https://nos.nl/l/2632518
 bron: nederland
 kind: nederland
-gegenereerd: 2026-09-26T03:22:30
+gegenereerd: 2026-09-26T05:16:14
 ---
 
-- Minister Sterk (Langdurige Zorg, Jeugd en Sport) ziet definitief af van de wettelijke regeling voor kamerinsluiting in de gesloten jeugdzorg.
+- Minister Sterk (Jeugd, Preventie en Sport) blaast het omstreden wetsvoorstel over kamerinsluiting in de gesloten jeugdzorg definitief af.
 
-- Het vorige kabinet wilde ’s nachts opsluiten in een gesloten jeugdinrichting wettelijk verankeren voor gevaarlijke jongeren.
+  - Het vorige kabinet wilde wettelijk vastleggen dat jongeren 's nachts op hun kamer konden worden opgesloten, mits dit zorgvuldig werd gedocumenteerd.
 
-- Na intensieve gesprekken met jeugdhulpaanbieders en ervaringsdeskundigen is gekozen om de deur open te laten.
+  - Jeugdhulpaanbieders en ervaringsdeskundigen sloegen alarm: isolatie leidt juist tot meer traumatisering en escalerend gedrag.
 
-- De fundamentele spanning tussen de veiligheid van de groep en de nachtrust van het individuele kind blijft onopgelost.
+  - In plaats van dwangmaatregelen wil de minister nu inzetten op kleinschalige woonvormen en intensieve, persoonlijke begeleiding.
 
- Het besluit over kamerinsluiting
- De vier stappen van voornemen naar intrekking
+   Van wetsvoorstel naar koerswijziging
+   De politieke en maatschappelijke dynamiek rond kamerinsluiting in 4 fasen
 
-  1  Voornemen
-  2  Gesprekken
-  3  Afweging
-  4  Besluit
+      1  Het Voornemen
+      2  De Weerstand
+      3  De Dialoog
+      4  De Nieuwe Koers
 
-       Wetsvoorstel vorig kabinet
+             Wetsvoorstel insluiting
 
-Het uitgangspunt
+Het Voornemen
 
-Het vorige kabinet wilde kamerinsluiting wettelijk regelen.
+Het vorige kabinet wilde kamerinsluiting regulariseren.
 
-Het doel was om voor jongeren die een gevaar vormen in een gesloten jeugdinrichting een wettelijke basis te creëren voor nachtelijke insluiting.
+Vanuit de gedachte dat juridische kaders meer duidelijkheid zouden scheppen, werd een wetsontwerp opgesteld om 's nachts opsluiten onder strikte voorwaarden toe te staan.
 
- Consultatie veld
+           Alarm  Ervaringsdeskundigen & sector
 
-In gesprek
+De Weerstand
 
-Minister Sterk sprak met hulpverleners en ervaringsdeskundigen.
+Ervaringsdeskundigen en jeugdzorg sloegen hard op de trom.
 
-Er is geluisterd naar de praktijkervaringen van professionals in de gesloten jeugdzorg en jongeren die zelf in een inrichting hebben verbleven.
+Critici benadrukken dat het opsluiten van kwetsbare jongeren in een isolement averechts werkt, trauma's vergroot en de veiligheid in de instellingen juist onder druk zet.
 
- ?  Dilemma
+             Intensief overleg
 
-Het fundamentele dilemma
+De Dialoog
 
-Groepsveiligheid versus de nacht van het individuele kind.
+Minister Sterk luisterde naar de praktijkervaringen.
 
-De klassieke afweging tussen de bescherming van de groep tegen een onveilige medebewoner en het respecteren van de rechten en de nachtrust van één jongere.
+In plaats van vast te houden aan bureaucratische regels, ging het ministerie in gesprek met veldpartijen om te doorgronden wat er werkelijk nodig is voor deze doelgroep.
 
- Definitief besluit
+           Alternatief: kleinschalig
 
-Geen wet
+De Nieuwe Koers
 
-Het kabinet kiest tegen de dichte deur.
+Wetsvoorstel van tafel, focus op preventie en kleinschaligheid.
 
-Minister Sterk zet een streep door het wetsvoorstel. Daarmee blijft kamerinsluiting wettelijk onmogelijk, ondanks de aanhoudende onrust.
+De middelen gaan nu naar het afschalen van grote gesloten instellingen, meer personeel op de groep en betere alternatieven voor intensieve jeugdhulp.
 
- ◀
-  ▶
- ▶
- 1/4
+     ◀
+      ▶
+     ▶
+     1/4
 
-Een streep door de plannen
+Het einde van een omstreden wetgevingstraject
 
-Het besluit van minister Sterk (Langdurige Zorg, Jeugd en Sport) om definitief af te zien van de wettelijke regeling voor kamerinsluiting markeert een koerswijziging ten opzichte van haar voorgangers. Waar het vorige kabinet nog vastberaden was om het ’s nachts opsluiten van risicovolle jongeren in de gesloten jeugdzorg via de wet te regelen, kiest het huidige kabinet eieren voor zijn geld na kritische consultaties met het veld.
+Het besluit van minister Sterk om een streep te zetten door het wetsvoorstel rond kamerinsluiting markeert een significante koerswijziging in het Nederlandse jeugdzorgbeleid. Waar het vorige kabinet nog meende dat wettelijke regulering noodzakelijk was om toezicht te houden op het 's nachts opsluiten van jongeren, kiest de bewindsspersoon nu voor een fundamenteel andere route. In plaats van het inregelen van dwangmiddelen, wordt ingezet op het terugdringen ervan.
 
-De maatregel raakte aan de kern van hoe jeugdzorginstellingen omgaan met crisis en veiligheid. Jongeren die overdag of 's avonds blijk geven van onberekenbaar of gevaarlijk gedrag vormden voor inrichtingen een dusdanig risico dat nachtelijke isolatie in een kamer door sommigen als noodzakelijk werd gezien. Toch heeft de minister na indringende gesprekken met jeugdhulpaanbieders en ervaringsdeskundigen geoordeeld dat deze weg niet ingeslagen moet worden.
+Kamerinsluiting in de gesloten jeugdzorg gold al jaren als een pijnlijk symbool van een systeem dat te vaak teruggrijpt op machtsvertoon in plaats van pedagogische nabijheid. Jongeren die kampen met zware problematiek werden 's nachts soms urenlang in hun slaapkamer opgesloten. Hoewel instellingen dit vaak deden uit personeelsnood of veiligheidsoverwegingen, wees de kritiek vanuit de wetenschap en de praktijk steevast op de schadelijke psychologische gevolgen.
 
-Het dilemma van de nacht
+   Kerncijfers gesloten jeugdzorg
 
-De discussie over kamerinsluiting is al jaren een hoofdpijndossier binnen de gesloten jeugdzorg. Het dilemma laat zich vertalen in een scherpe tegenstelling: aan de ene kant staat de fysieke veiligheid van de groep en de medewerkers, aan de andere kant staat de nachtrust en de menselijke waardigheid van de individuele jongere die achter een dichte deur wordt geplaatst.
+       0
+       Wetsvoorstellen voor opsluiting over
 
-Kamerinsluiting werd door voorstanders gezien als een ultiem middel om escalaties in de nachtelijke uren te voorkomen. Tegenstanders en ervaringsdeskundigen wezen er daarentegen op dat een opgesloten nacht een averechts effect kan hebben op de toch al getraumatiseerde jeugdigen. Het kabinet heeft nu de knoop doorgehakt en kiest principieel tegen de gesloten deur.
+       100%
+       Focus naar kleinschalige zorg
 
- KERNCIJFER & CONTEXT
- Wetsvoorstel ingetrokken
- Minister Sterk beëindigt de poging om nachtelijke kamerinsluiting in de gesloten jeugdzorg via de wet te regelen na overleg met aanbieders en ervaringsdeskundigen.
+De stem van de praktijk en ervaringsdeskundigen
 
-Onrust blijft bestaan
+De omslag kwam niet uit de lucht vallen. Na intensieve gesprekken met jeugdhulpaanbieders, gedragsdeskundigen en met name jongeren die zelf in een gesloten instelling verbleven, werd duidelijk dat een wettelijke basis voor opsluiting het probleem niet oplost, maar legitimeert. Ervaringsdeskundigen legden herhaaldelijk uit dat gedwongen isolatie herinneringen oproept aan eerdere trauma’s en agressie juist aanwakkert.
 
-Het intrekken van het wetsvoorstel betekent echter niet dat de problemen in de gesloten jeugdzorg als sneeuw voor de zon verdwijnen. De praktijk leert dat de onrust binnen de groepen onverminderd groot blijft en dat inrichtingen worstelen met de dagelijkse veiligheid op de leefgroepen.
+Jeugdzorgaanbieders gaven op hun beurt aan dat de roep om strengere wetgeving hen in een spagaat bracht. Ze willen veilige zorg bieden, maar erkennen dat de oplossing niet ligt in zwaardere deuren en sloten. De nu ingezette lijn sluit aan bij bredere hervormingen binnen de jeugdzorg, waarbij de nadruk verschuift van intramurale dwang naar ambulante ondersteuning en kleinschalige woonvoorzieningen waar meer maatwerk mogelijk is.
 
-Zowel het invoeren van een wet als het schrappen ervan lost de onderliggende problematiek van overbelasting, personeelstekorten en complexe zorgvragen in de jeugdzorg niet op. Het creëren van een veilige leefomgeving vraagt om meer dan juridische regels; het vereist een continue balans tussen begrenzing en nabijheid in een sector die al jaren onder zware druk staat.
+Financiële en structurele uitdagingen blijven
+
+Hoewel het schrappen van het wetsvoorstel breed wordt toegejuicht, staan de sectoren voor een complexe uitvoering. Het afbouwen van grootschalige gesloten jeugdzorg vraagt om flinke investeringen in alternatieve woonvormen en gekwalificeerd personeel. Bovendien zal de uitstroom van jongeren met complexe zorgbehoeften zorgvuldig moeten worden begeleid om te voorkomen dat gemeenten, die verantwoordelijk zijn voor de uitvoering, voor onoplosbare capaciteitsproblemen komen te staan.
+
+Minister Sterk benadrukt dat de komende tijd de handen ineengeslagen moeten worden met gemeenten en zorgaanbieders om de transitie vorm te geven. De lat ligt hoog: de sector moet bewijzen dat het zonder de 'stok achter de deur' van nachtelijke opsluiting kan, mits er voldoende menskracht en nabijheid tegenover staat.
 
 Conclusie
 
-Met het besluit van minister Sterk is een streep gezet onder een omstreden wetsvoorstel dat de gemoederen in de jeugdzorg lang bezighield. Door te luisteren naar hulpverleners en ervaringsdeskundigen kiest het kabinet ervoor om de deur open te laten. Daarmee blijft de uitdaging overeind: hoe houd je een gesloten inrichting veilig voor iedereen zonder terug te vallen op nachtelijke opsluiting?
+Met het intrekken van het wetsvoorstel kiest minister Sterk voor een menselijker perspectief binnen de gesloten jeugdzorg. De erkenning dat opsluiting geen therapeutisch instrument is, luidt een noodzakelijke transitie in. De uitdaging ligt nu in de praktijk: zorgen voor voldoende kleinschalige opvang en structurele ondersteuning zodat jongeren niet langer achter de deur verdwijnen, maar de zorg krijgen die hun herstel bevordert.
 
- Bronnen: NOS (https://nos.nl/l/2632518)
+ Bronnen: NOS (https://nos.nl/l/2632518), Ministerie van VWS / Jeugd, Preventie en Sport.
