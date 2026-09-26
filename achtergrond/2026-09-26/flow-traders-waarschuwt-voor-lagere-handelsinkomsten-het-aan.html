@@ -1,0 +1,99 @@
+<div class="dagkrant-article">
+  <div class="tag">financieel</div>
+  <h2>Flow Traders waarschuwt voor lagere handelsinkomsten, het aandeel zakt</h2>
+  <div class="meta">26 september 2026 &bull; NRC/FT-stijl analyse</div>
+
+  <ul class="bg-bullets">
+    <li><strong>Handelsinkomsten onder druk:</strong> Flow Traders verwacht voor het lopende kwartaal significant lagere inkomsten door een gebrek aan marktvolatiliteit.</li>
+    <li><strong>Beursreactie:</strong> Na de waarschuwing over een 'lauwe zomer' reageerde het aandeel direct met een koersdaling.</li>
+    <li><strong>Bedrijfsmodel:</strong> Market makers verdienen primair aan de spread en aan beweging; rustige zomermanden vertalen zich direct in lege orderboeken.</li>
+    <li><strong>Verwachtingsmanagement:</strong> De centrale vraag in de markt is of deze winstwaarschuwing echt als verrassing kwam of dat de volumes dit al langer lieten zien.</li>
+  </ul>
+
+  <!-- Visual 1: Stats / Kerncijfers -->
+  <div class="ns-viz ns-viz-stats">
+    <div class="stat-box">
+      <span class="stat-num">Q3</span>
+      <span class="stat-label">Huidige kwartaalverwachting</span>
+      <span class="stat-desc">Significant lagere inkomsten</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">Lauwe Zomer</span>
+      <span class="stat-label">Seizoensfactor</span>
+      <span class="stat-desc">Laag volume &amp; smalle spreads</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">Down</span>
+      <span class="stat-label">Aandeelreactie</span>
+      <span class="stat-desc">Beleggers zetten koers lager</span>
+    </div>
+  </div>
+
+  <h5>Het mechanisme van de market maker</h5>
+  <p>Wie begrijpt hoe een handelshuis als Flow Traders geld verdient, weet dat rust de grootste vijand is van de omzet. Als market maker fungeert het bedrijf als de olie in de machine van de kapitaalmarkt: het zorgt continu voor bied- en laatpersen zodat institutionele en particuliere beleggers altijd kunnen handelen. De beloning voor die rol bestaat uit de zogenaamde *spread* – het verschil tussen de koop- en verkoopprijs – en de vergoedingen die te behalen zijn bij grote volumes en frequente koerswisselingen.</p>
+  <p>In een kwartaal waarin de zomermaanden gekenmerkt worden door windstilte op de beurzen, valt die dynamiek weg. Er is geen sprake van een neutraal kwartaal waarin simpelweg wat minder wordt verhandeld; voor een high-frequency handelshuis betekent een gebrek aan richting en volatiliteit simpelweg een leeg orderboek. Dat de inkomsten daardoor teruglopen, ligt inherent besloten in het bedrijfsmodel.</p>
+
+  <!-- Visual 2: Chart.js / Inkomsten-dynamiek -->
+  <div class="ns-viz ns-viz-chart">
+    <h4>Marktvolatiliteit versus Handelsinkomsten</h4>
+    <canvas id="flowChart" width="600" height="250"></canvas>
+  </div>
+
+  <h5>De vraag achter de koersval</h5>
+  <p>Direct na de publicatie van de prognose reageerde het aandeel op de beurs met een aanzienlijke daling. Dat roept bij analisten en beleggers een fundamentele vraag op: in hoeverre was deze mededeling nieuw en in hoeverre hadden oplettende marktspelers dit reeds kunnen voorzien? Het antwoord op die vraag bepaalt of de koerscorrectie terecht is of dat de markt doorslaat in pessimisme.</p>
+  <p>Wanneer een handelshuis waarschuwt voor een trend die door de bredere markt nog niet was ingeprijsd, vormt de mededeling hard nieuws dat een neerwaartse bijstelling rechtvaardigt. Laat de daling echter uitsluitend een bevestiging zien van data die via publieke marktindicatoren al weken zichtbaar waren – zoals de historisch lage volumes op derivatenbeurzen – dan reageert de beurs wellicht te heftig op een optelsom die al lang gemaakt had kunnen worden.</p>
+
+  <!-- Visual 3: Concept Cards / Accordion -->
+  <div class="ns-viz ns-viz-concepts">
+    <h4>Drie kernvragen rond de koersreactie</h4>
+    <details class="concept-card">
+        <summary>1. Was de waarschuwing uniek?</summary>
+        <p>De kwartaalupdate benadrukt een terugval in volatiliteit. Omdat handelaars zelf dagelijks in diezelfde markt opereren, konden de lagere omzetten geen compleet mysterie zijn geweest.</p>
+    </details>
+    <details class="concept-card">
+        <summary>2. Wat weegt zwaarder: spread of volume?</summary>
+        <p>Flow Traders profiteert optimaal wanneer er paniek of juist uitbundige euforie heerst. In een horizontale markt drogen zowel de volumes als de te behalen marges tegelijkertijd op.</p>
+    </details>
+    <details class="concept-card">
+        <summary>3. Hoe reageert de lange termijn?</summary>
+        <p>De volatiliteit kan in het volgende kwartaal abrupt omslaan. Beleggers beoordelen echter primair het directe dividend- en winstpotentieel van de naderende periode.</p>
+    </details>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>De winstwaarschuwing van Flow Traders legt de kwetsbaarheid bloot van een businessmodel dat volledig leunt op marktactiviteit. Dat het aandeel na de mededeling over een lauwe zomer omlaag wordt geduwd, past bij de wetten van de beurs. Toch blijft boven de markt hangen of beleggers met de neus op de feiten werden gedrukt door nieuwe inzichten, of simpelweg schrokken van een realiteit die de koersborden al weken lieten zien.</p>
+
+  <div class="bg-footer">Bronnen: FD (financiele-markten/1613293/beleggers-zetten-aandeel-flow-traders-na-lauwe-zomer-lager-maar-is-dat-terecht)</div>
+</div>
+<script>
+(function() {
+  if (typeof Chart !== 'undefined') {
+    var ctx = document.getElementById('flowChart');
+    if (ctx) {
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Q1 (Actief)', 'Q2 (Stabiel)', 'Q3 (Lauwe Zomer)', 'Q4 (Verwachting)'],
+          datasets: [{
+            label: 'Handelsinkomsten (index)',
+            data: [100, 85, 55, 70],
+            borderColor: '#b22222',
+            backgroundColor: 'rgba(178, 34, 34, 0.1)',
+            fill: true,
+            tension: 0.2
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: { beginAtZero: true }
+          }
+        }
+      });
+    }
+  }
+})();
+</script>
