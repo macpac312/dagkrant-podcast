@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Signal Podcast</title>
+    <link>https://macpac312.github.io/dagkrant-podcast/signal/</link>
+    <atom:link href="https://macpac312.github.io/dagkrant-podcast/signal/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>AI-nieuws, maar dan in gewone taal Twee hosts, op basis van Signal.</description>
+    <language>nl-nl</language>
+    <lastBuildDate>Sat, 26 Sep 2026 09:56:37 +0000</lastBuildDate>
+    <itunes:category text="Technology"/>
+    <itunes:author>Signal</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="https://macpac312.github.io/dagkrant-podcast/signal/cover.jpg"/>
+    <image><url>https://macpac312.github.io/dagkrant-podcast/signal/cover.jpg</url><title>Signal Podcast</title><link>https://macpac312.github.io/dagkrant-podcast/signal/</link></image>
+    <item>
+      <title>Signal Podcast — Tientallen sites, drieënvijftig plaatjes</title>
+      <description>Tientallen sites, drieënvijftig plaatjes. Linde en Cas praten over de Signal-stukken van de afgelopen dag: OpenAI-agents, het Witte Huis en de Britse testers, GrapheneOS op de Motorola Signature 27, en een korte ronde over horloge, Android en Muse.</description>
+      <guid isPermaLink="false">2026-09-26_01.mp3</guid>
+      <pubDate>Sat, 26 Sep 2026 08:00:00 +0000</pubDate>
+      <enclosure url="https://macpac312.github.io/dagkrant-podcast/signal/audio/2026-09-26_01.mp3" length="24847448" type="audio/mpeg"/>
+      <itunes:image href="https://macpac312.github.io/dagkrant-podcast/signal/cover.jpg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
