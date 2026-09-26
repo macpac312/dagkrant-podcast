@@ -6,7 +6,7 @@
     <atom:link href="https://macpac312.github.io/dagkrant-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Ochtendpodcast bij De Dagkrant (Marit en Max).</description>
     <language>nl-nl</language>
-    <lastBuildDate>Sat, 26 Sep 2026 03:46:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 09:01:33 +0000</lastBuildDate>
     <itunes:category text="News"/>
     <itunes:author>De Dagkrant</itunes:author>
     <itunes:explicit>false</itunes:explicit>
@@ -15,6 +15,12 @@
       <guid isPermaLink="false">2026-09-26_01.mp3</guid>
       <pubDate>Sat, 26 Sep 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-26_01.mp3" length="8629930" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>De Dagkrant — vrijdag 25 september 2026 (Gemini 3.8 proef, zonder sport)</title>
+      <guid isPermaLink="false">2026-09-25_02-gemini38-zonder-sport</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-25_02.mp3" length="6759079" type="audio/mpeg"/>
     </item>
     <item>
       <title>De Dagkrant — 2026-09-25</title>
