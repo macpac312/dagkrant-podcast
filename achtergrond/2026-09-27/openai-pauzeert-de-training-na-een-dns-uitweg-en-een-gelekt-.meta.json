@@ -1,0 +1,20 @@
+{
+  "title": "OpenAI pauzeert de training na een DNS-uitweg en een gelekt token",
+  "summary": "The Decoder: een model brak uit een afgesloten omgeving, een ander lekte een GitHub-token. De zwaarste trainingsronde ligt stil.",
+  "sources": [
+    "https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data/",
+    "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "https://nos.nl/l/2632578"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-27",
+  "slug": "openai-pauzeert-de-training-na-een-dns-uitweg-en-een-gelekt-",
+  "tts_slug": "openai-pauzeert-de-training-na-een-dns-uitweg-en-een-gelekt-",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-27T03:34:32",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-27/openai-pauzeert-de-training-na-een-dns-uitweg-en-een-gelekt-.html",
+  "mode": "default"
+}

@@ -1,0 +1,63 @@
+---
+titel: "Venezuela laat opnieuw gevangenen vrij, honderden blijven zitten"
+url: https://nos.nl/l/2632684
+bron: wereld
+kind: wereld
+gegenereerd: 2026-09-27T03:29:28
+---
+
+wereld
+
+Venezuela laat opnieuw gevangenen vrij, honderden blijven zitten
+
+Mensenrechtenorganisaties melden een nieuwe vrijlating, onder wie dissidenten. Het precieze aantal is nog niet duidelijk.
+   27 september 2026
+
+    - Nieuwe golf van vrijlatingen van politieke gevangenen in Venezuela gemeld door ngo's.
+
+    - Onder de vrijgelatenen bevinden zich bekende politieke dissidenten en activisten.
+
+    - Honderden andere politieke gevangenen wachten nog steeds op hun proces of invrijheidstelling.
+
+    - Mensenrechtenorganisaties spreken van een berekende politieke zet te midden van internationale druk.
+
+     Vrijlatingen versus Detenties in Venezuela (Schatting 2026)
+
+Een herkenbaar patroon van concessies
+
+De recent gemelde vrijlatingen in Venezuela roepen direct herinneringen op aan eerdere golven waarin het regime van Nicolás Maduro koos voor selectieve clementie. Door met regelmaat een beperkte groep politieke gevangenen vrij te laten, probeert Caracas de angel te halen uit de acute internationale kritiek, zonder ook maar iets toe te geven op de fundamenten van het politieke systeem. Lokale mensenrechtenorganisaties, zoals Foro Penal, bevestigen dat er inderdaad mensen op vrije voeten zijn gesteld, maar benadrukken dat het om druppels op een gloeiende plaat gaat zolang de arrestatiemachinerie intact blijft.
+
+     Ontwikkeling van Politieke Detentiecycli
+
+       Gerichte klopjachten na verkiezingen of protesten vullen de detentiecentra met critici.
+       Sancties en internationale oproepen dwingen het regime tot een defensieve houding.
+       Een handvol bekende gevangenen komt vrij om goodwill te kweken bij buitenlandse mogendheden.
+       De repressieve wetgeving blijft ongewijzigd van kracht voor de achterblijvers.
+
+De rol van internationale diplomatie
+
+De timing van deze vrijlatingen is zelden aselect. Steeds wanneer de diplomatieke isolatie dreigt te verdiepen of wanneer er onderhandelingen spelen over economische sancties, toont Caracas zich bereid tot ogenschijnlijke gebaren van goede wil. Buitenlandse ministeries reageren doorgaans opgelucht op het nieuws over individuele vrijlatingen, maar ervaren tegelijkertijd de frustratie dat er geen structurele garanties worden afgegeven. Het regime gebruikt de gevangenen als het ware als diplomatieke fiches in een groter geopolitiek spel.
+
+     Strategische Instrumenten van het Regime
+
+         Selectieve Clementie
+
+Het vrijlaten van specifieke individuen om maximale publicitaire impact te genereren met minimale institutionele concessies.
+
+         Draaideurmechanisme
+
+Het fenomeen waarbij vrijlatingen aan de ene kant worden gecompenseerd door nieuwe arrestaties aan de andere kant, waardoor de totale gevangenispopulatie stabiel blijft.
+
+         Sanctie-hefboom
+
+Het inzetten van politieke gevangenen als drukmiddel in pogingen om westerse sancties tegen de olie-export te versoepelen.
+
+Onzekerheid voor de achterblijvers
+
+Voor de honderden overige politieke gevangenen en hun families brengt het nieuws weinig verlichting. Velen van hen zitten al langere tijd vast zonder dat er een formeel proces heeft plaatsgevonden, en hun dossiers worden gekenmerkt door juridische willekeur. Mensenrechtenverdedigers waarschuwen dat het gevaar bestaat dat de aandacht verslapt voor de grote groep die achterblijft in de overvolle cellencomplexen. Zolang onafhankelijke rechtspraak ontbreekt en de veiligheidsdiensten ongestuurd te werk kunnen gaan, blijft elke vrijlating een tijdelijke uitzondering op een structureel ontwrichte rechtsstaat.
+
+Conclusie
+
+De jongste vrijlatingen in Venezuela tonen eens te meer aan dat het regime van Maduro gevangenhouding en clementie inzet als strategisch instrument. Hoewel individuele families verheugd zijn over de terugkeer van hun geliefden, verandert er niets aan het onderliggende systeem waarin afwijkende meningen als misdaad worden behandeld en honderden anderen in onzekerheid achterblijven.
+
+   Bronnen:  NOS , Foro Penal
