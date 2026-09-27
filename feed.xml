@@ -6,10 +6,16 @@
     <atom:link href="https://macpac312.github.io/dagkrant-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Ochtendpodcast bij De Dagkrant (Marit en Max).</description>
     <language>nl-nl</language>
-    <lastBuildDate>Sat, 26 Sep 2026 09:01:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 03:17:12 +0000</lastBuildDate>
     <itunes:category text="News"/>
     <itunes:author>De Dagkrant</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>De Dagkrant — 2026-09-27</title>
+      <guid isPermaLink="false">2026-09-27_01.mp3</guid>
+      <pubDate>Sun, 27 Sep 2026 07:00:00 +0000</pubDate>
+      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-27_01.mp3" length="6824554" type="audio/mpeg"/>
+    </item>
     <item>
       <title>De Dagkrant — 2026-09-26</title>
       <guid isPermaLink="false">2026-09-26_01.mp3</guid>
@@ -17,9 +23,9 @@
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-26_01.mp3" length="8629930" type="audio/mpeg"/>
     </item>
     <item>
-      <title>De Dagkrant — vrijdag 25 september 2026 (Gemini 3.8 proef, zonder sport)</title>
-      <guid isPermaLink="false">2026-09-25_02-gemini38-zonder-sport</guid>
-      <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
+      <title>De Dagkrant — 2026-09-25</title>
+      <guid isPermaLink="false">2026-09-25_02.mp3</guid>
+      <pubDate>Fri, 25 Sep 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-25_02.mp3" length="6759079" type="audio/mpeg"/>
     </item>
     <item>
@@ -99,12 +105,6 @@
       <guid isPermaLink="false">2026-09-13_01.mp3</guid>
       <pubDate>Sun, 13 Sep 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-13_01.mp3" length="9376954" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>De Dagkrant — 2026-09-12</title>
-      <guid isPermaLink="false">2026-09-12_01.mp3</guid>
-      <pubDate>Sat, 12 Sep 2026 07:00:00 +0000</pubDate>
-      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-12_01.mp3" length="14864890" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>
