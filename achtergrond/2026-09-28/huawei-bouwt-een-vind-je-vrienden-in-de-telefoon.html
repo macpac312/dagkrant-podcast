@@ -1,0 +1,154 @@
+<div class="dagkrant-article">
+  <div class="meta-tag">huawei</div>
+  <h2>Huawei bouwt een ‘vind je vrienden’ in de telefoon</h2>
+  <p class="lead">Huawei Central meldt dat er een 'Find Friends'-functionaliteit naar de smartphones van het Chinese merk komt. Waar Apple en Google al jaren locatiedeling aanbieden als ecosysteemvoorziening, introduceert Huawei dit op een moment dat het geopolitieke en privacyvertrouwen in Chinese hard- en software onder een vergrootglas ligt.</p>
+
+  <ul class="bg-bullets">
+    <li><strong>Ecosysteem-inhaalrace:</strong> Huawei breidt zijn eigen HarmonyOS-diensten uit met locatiedeling, vergelijkbaar met Apple’s Find My.</li>
+    <li><strong>Geopolitieke context:</strong> Voortdurende westerse zorgen over dataminimalisatie en mogelijke achterdeurtjes in apparatuur uit China.</li>
+    <li><strong>Privacy-architectuur:</strong> De technische implementatie bepaalt of locatiegegevens lokaal versleuteld blijven of via externe servers lopen.</li>
+    <li><strong>Concurrentiestrijd:</strong> Huawei probeert gebruikers binnen het eigen software-universum te binden nu de westerse markt grotendeels gesloten blijft.</li>
+  </ul>
+
+  <h5>Van hardware-boycott naar software-soevereiniteit</h5>
+  <p>Sinds de Amerikaanse handelsbeperkingen Huawei dwongen om afscheid te nemen van de reguliere Google Mobile Services, werkt het concern koortsachtig aan een volwaardig alternatief: HarmonyOS. Waar de eerste jaren in het teken stonden van overleven en het ontwerpen van eigen chips, ligt de focus nu op de fijnmazigheid van het ecosysteem. De toevoeging van een 'Find Friends'-functie past in die strategie. Het is een typische 'pluim' op een modern besturingssysteem; consumenten verwachten dat hun smartphone naadloos kan communiceren met de locatie van familieleden en vrienden. Toch komt deze stap op een uiterst gevoelig moment.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Evolutie van Huawei's Softwarestrategie</div>
+    <div class="ns-viz-timeline">
+      <div class="ns-viz-tstep">
+        <div class="ns-viz-tyear">2019</div>
+        <div class="ns-viz-tdesc">Amerikaanse sancties forceren breuk met Google; start van eigen HarmonyOS-ontwikkeling.</div>
+      </div>
+      <div class="ns-viz-tstep">
+        <div class="ns-viz-tyear">2021</div>
+        <div class="ns-viz-tdesc">Focus op basisfunctionaliteiten, appstore (AppGallery) en onafhankelijke app-bouwers.</div>
+      </div>
+      <div class="ns-viz-tstep">
+        <div class="ns-viz-tyear">2024</div>
+        <div class="ns-viz-tyear">Introductie HarmonyOS NEXT (zonder Android-kern) voor maximale zelfstandigheid.</div>
+      </div>
+      <div class="ns-viz-tstep">
+        <div class="ns-viz-tyear">2026</div>
+        <div class="ns-viz-tdesc">Functies zoals 'Find Friends' moeten de dagelijkse gebruikservaring evenaren aan westerse equivalenten.</div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Het vertrouwensdilemma rond continue locatiedeling</h5>
+  <p>Locatiedeling is technologisch gezien geen hogere wiskunde, maar sociaal en juridisch des te gevoeliger. Het vereist dat telefoons continu hun coördinaten doorsturen naar een centrale server of via peer-to-peer protocollen uitwisselen. Voor westerse consumenten roept dit fundamentele vragen op over dataminimalisatie. Wie heeft er toegang tot deze gegevens? Vallen de servers waar deze telemetrie landt onder strenge privacywetgeving zoals de Europese AVG, of zijn ze onderworpen aan de verregaande inlichtingenwetgeving in de Volksrepubliek China? Huawei zal met ijzersterke end-to-end-encryptie moeten komen om aan te tonen dat zelfs het moederbedrijf of de Chinese staat geen inzicht heeft in wie zich waar bevindt.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Kernwaarden van Locatiedeling: Westers vs. Chinees Ecosysteem</div>
+    <div class="ns-viz-stats">
+      <div class="ns-viz-stat">
+        <div class="ns-viz-snum">100%</div>
+        <div class="ns-viz-slbl">Versleuteling vereist voor Europees marktherstel</div>
+      </div>
+      <div class="ns-viz-stat">
+        <div class="ns-viz-snum">24/7</div>
+        <div class="ns-viz-slbl">Achtergrondsynchronisatie van GPS-data</div>
+      </div>
+      <div class="ns-viz-stat">
+        <div class="ns-viz-snum">0</div>
+        <div class="ns-viz-slbl">Tolerantie voor onduidelijke datastromen in de EU</div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Hoe de technische keten van 'Find Friends' werkt</h5>
+  <p>De werking van een moderne locatiedienst hangt af van een delicate samenwerking tussen satellietsystemen, lokale radioprotocollen en cloudservers. Wanneer een gebruiker zijn locatie deelt, berekent de smartphone de exacte coördinaten via GPS, Galileo of GLONASS. Vervolgens worden deze gegevens versleuteld en via een beveiligde kanaal naar een cloudinfrastructuur gestuurd, waar autorisaties van vrienden worden geverifieerd voordat de kaartvisualisatie op het andere scherm verschijnt.</p>
+
+  <div class="ns-viz" id="mech-viz">
+    <div class="ns-viz-title">Werking van Locatie-uitwisseling in HarmonyOS</div>
+    <div class="ns-viz-mech" data-active="0">
+      <div class="ns-viz-mech-pills">
+        <button class="ns-viz-pill active" onclick="switchMech(0)">1. Coördinaten</button>
+        <button class="ns-viz-pill" onclick="switchMech(1)">2. Versleuteling</button>
+        <button class="ns-viz-pill" onclick="switchMech(2)">3. Server-routing</button>
+        <button class="ns-viz-pill" onclick="switchMech(3)">4. Weergave</button>
+      </div>
+      <div class="ns-viz-mech-slides">
+        <div class="ns-viz-mslide active">
+          <svg viewBox="0 0 400 140" width="100%" height="100%">
+            <rect width="400" height="140" fill="#f8fafc" rx="8"/>
+            <circle cx="80" cy="70" r="30" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+            <text x="80" y="75" font-size="12" text-anchor="middle" fill="#334155">GPS / Galileo</text>
+            <path d="M 120 70 L 260 70" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"/>
+            <rect x="270" y="45" width="90" height="50" rx="6" fill="#0f172a"/>
+            <text x="315" y="75" font-size="12" text-anchor="middle" fill="#ffffff">Telefoon</text>
+          </svg>
+          <p class="ns-viz-msub">Stap 1: De smartphone ontvangt satellietdata en bepaalt de geografische positie.</p>
+        </div>
+        <div class="ns-viz-mslide">
+          <svg viewBox="0 0 400 140" width="100%" height="100%">
+            <rect width="400" height="140" fill="#f8fafc" rx="8"/>
+            <rect x="40" y="45" width="90" height="50" rx="6" fill="#0f172a"/>
+            <text x="85" y="75" font-size="12" text-anchor="middle" fill="#ffffff">Ruwe Data</text>
+            <path d="M 140 70 L 230 70" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"/>
+            <rect x="240" y="45" width="120" height="50" rx="6" fill="#3b82f6"/>
+            <text x="300" y="75" font-size="12" text-anchor="middle" fill="#ffffff">AES-256 Key</text>
+          </svg>
+          <p class="ns-viz-msub">Stap 2: De coördinaten worden lokaal versleuteld voordat ze worden verzonden.</p>
+        </div>
+        <div class="ns-viz-mslide">
+          <svg viewBox="0 0 400 140" width="100%" height="100%">
+            <rect width="400" height="140" fill="#f8fafc" rx="8"/>
+            <circle cx="100" cy="70" r="30" fill="#cbd5e1"/>
+            <text x="100" y="75" font-size="12" text-anchor="middle" fill="#334155">Client A</text>
+            <path d="M 140 60 L 260 60" stroke="#0f172a" stroke-width="2"/>
+            <path d="M 260 80 L 140 80" stroke="#0f172a" stroke-width="2"/>
+            <rect x="170" y="35" width="60" height="30" rx="4" fill="#0f172a"/>
+            <text x="200" y="54" font-size="10" text-anchor="middle" fill="#fff">Cloud</text>
+            <circle cx="300" cy="70" r="30" fill="#cbd5e1"/>
+            <text x="300" y="75" font-size="12" text-anchor="middle" fill="#334155">Client B</text>
+          </svg>
+          <p class="ns-viz-msub">Stap 3: De versleutelde pakketjes passeren de cloudservers van Huawei.</p>
+        </div>
+        <div class="ns-viz-mslide">
+          <svg viewBox="0 0 400 140" width="100%" height="100%">
+            <rect width="400" height="140" fill="#f8fafc" rx="8"/>
+            <rect x="130" y="35" width="140" height="70" rx="8" fill="#10b981"/>
+            <text x="200" y="75" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">Kaart Weergave</text>
+          </svg>
+          <p class="ns-viz-msub">Stap 4: De ontvanger ontsleutelt de data en toont de positie op de digitale kaart.</p>
+        </div>
+      </div>
+      <div class="ns-viz-mech-controls">
+        <button onclick="prevMech()">◀ Vorige</button>
+        <button onclick="nextMech()">Volgende ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <h5>Strategische implicaties voor de smartphonemarkt</h5>
+  <p>De introductie van deze functionaliteit onderstreept dat Huawei niet langer probeert om simpelweg aan te haken bij de oude Android-standaarden, maar een eigen, onafhankelijke digitale leefomgeving optuigt. Binnen de thuismarkt in China zal deze 'Find Friends'-dienst ongetwijfeld op warme belangstelling rekenen, aangezien dergelijke ecosysteemfuncties daar gemeengoed zijn. Buiten China zal de ontvangst echter lauw blijven zolang de argwaan over datasecurity en overheidsbemoeienis regeert. Het laat zien dat software-innovatie anno 2026 niet alleen een technische uitdaging is, maar vooral een oefening in geopolitiek diplomatiek balanceren.</p>
+
+  <h5>Conclusie</h5>
+  <p>Met de integratie van een eigen 'Find Friends'-functie zet Huawei een logische stap in de volwassenwording van HarmonyOS. Het bewijst dat het Chinese technologieconcern technologisch in staat is om de gevestigde orde van Apple en Google te evenaren. Toch zal het succes van deze feature in het Westen niet afhangen van de gebruikersinterface of de nauwkeurigheid van de gps-schil, maar van de onwrikbare transparantie van de onderliggende privacy-architectuur. Zonder keiharde garanties over databescherming blijft deze digitale vriendschapsdienst voor Europese consumenten vooral een bron van argwaan.</p>
+
+  <div class="bg-footer">Bronnen: Huawei Central, analyse van HarmonyOS-architectuur en openbare technologierapporten over mobiele locatiedeling (september 2026).</div>
+</div>
+
+<script>
+function switchMech(idx) {
+  const container = document.querySelector('#mech-viz .ns-viz-mech');
+  const pills = container.querySelectorAll('.ns-viz-pill');
+  const slides = container.querySelectorAll('.ns-viz-mslide');
+  pills.forEach((p, i) => p.classList.toggle('active', i === idx));
+  slides.forEach((s, i) => s.classList.toggle('active', i === idx));
+  container.dataset.active = idx;
+}
+function nextMech() {
+  const container = document.querySelector('#mech-viz .ns-viz-mech');
+  let current = parseInt(container.dataset.active || 0);
+  current = (current + 1) % 4;
+  switchMech(current);
+}
+function prevMech() {
+  const container = document.querySelector('#mech-viz .ns-viz-mech');
+  let current = parseInt(container.dataset.active || 0);
+  current = (current - 1 + 4) % 4;
+  switchMech(current);
+}
+</script>

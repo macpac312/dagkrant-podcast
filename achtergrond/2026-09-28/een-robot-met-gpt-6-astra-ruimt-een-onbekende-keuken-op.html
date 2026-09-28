@@ -1,0 +1,133 @@
+<div class="dagkrant-article">
+  <div class="meta-tag">aitech</div>
+  <h2>Een robot met GPT-6 Astra ruimt een onbekende keuken op</h2>
+  <p class="subtitle">Stanford en Caltech tonen met 'HomeBody' aan dat generatieve AI direct fysieke actuatoren kan aansturen zonder traditionele middleware, wat een paradigmaverschuiving inluidt in de robotica.</p>
+
+  <ul class="bg-bullets">
+    <li>Onderzoekers van Stanford en Caltech hebben GPT-6 Astra rechtstreeks gekoppeld aan de actuatoren van een humanoïde robot.</li>
+    <li>De robot genaamd 'HomeBody' ruimde een volstrekt onbekende, rommelige keuken op zonder vooraf ingeprogrammeerde bewegingsscripts.</li>
+    <li>Traditionele besturingslagen en middleware werden overgeslagen doordat het taalmodel visuele data direct omzet in motorische commando's.</li>
+    <li>Het experiment markeert een doorbraak in de integratie van fundamentele AI-modellen met fysieke belichaming (embodied AI).</li>
+  </ul>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Traditionele robotica versus End-to-End GPT-6 Astra</div>
+    <div class="ns-viz-compare">
+      <div class="compare-col">
+        <div class="compare-header">Traditioneel Model (Middleware)</div>
+        <ul>
+          <li>Visuele perceptie via losse computer vision-pijplijnen</li>
+          <li>Planning via symbolische AI en gedragsboompjes</li>
+          <li>Kinematische planning en inverse kinematica</li>
+          <li>Handmatige kalibratie per onbekend object</li>
+        </ul>
+      </div>
+      <div class="compare-col highlight">
+        <div class="compare-header">HomeBody (GPT-6 Astra)</div>
+        <ul>
+          <li>Directe multimodale waarneming (video + tekst)</li>
+          <li>Intrinsieke commonsense redenering over objecten</li>
+          <li>End-to-end generatie van gewrichtscoördinaten</li>
+          <li>Adaptief gedrag in onbekende omgevingen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h5>Het einde van de traditionele robotica-stack</h5>
+  <p>Decennialang was robotica synoniem aan complexe, gelaagde softwarearchitecturen. Om een robot een kopje te laten verplaatsen, moesten programmeurs afzonderlijke modules schrijven voor objectherkenning, driedimensionale mapping, padplanning en motorsturing. Elke onvoorziene variabele – een afwijkende lichtinval, een merkwaardig gevormd glas of een verkeerd geplaatst bestek – kon de hele keten doen falen. Onderzoekers van Stanford en Caltech hebben nu bewezen dat deze rigide benadering overbodig kan worden door geavanceerde multimodale modellen rechtstreeks op de hardware aan te sluiten.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Kernstatistieken van het HomeBody-experiment</div>
+    <div class="ns-viz-stats">
+      <div class="stat-card">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Handmatige bewegingsscripts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Autonome taakexecutie</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">&lt; 200ms</div>
+        <div class="stat-label">Latencies in multimodale feedback</div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Hoe GPT-6 Astra fysieke handelingen aanstuurt</h5>
+  <p>Het geheim achter de robot genaamd HomeBody zit in de capaciteit van GPT-6 Astra om visuele frames uit de camerasystemen van de robot te interpreteren als een doorlopende stroom van ruimtelijke context. Waar eerdere taalmodellen teksten produceerden, vertaalt Astra de visuele chaos van een rommelige keuken onmiddellijk naar intentionele handelingen. Het model 'begrijpt' dat een lege mok in de vaatwasser hoort, dat etensresten in de prullenbak moeten en dat breekbaar servies extra voorzichtig behandeld moet worden. Dit gebeurt niet via starre regels, maar op basis van de enorme hoeveelheid wereldkennis die in het model besloten ligt.</p>
+
+  <div class="ns-viz" id="ns-viz-mech-demo">
+    <div class="ns-viz-title">De Perceptie-Actie Cyclus van HomeBody</div>
+    <div class="ns-viz-mech" data-active="0">
+      <div class="mech-pills">
+        <button class="pill active" onclick="setMech(0)">1. Visuele Input</button>
+        <button class="pill" onclick="setMech(1)">2. Redenering</button>
+        <button class="pill" onclick="setMech(2)">3. Actuatie</button>
+      </div>
+      <div class="mech-stages">
+        <div class="mech-stage active">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f8fafc" rx="8"/>
+            <circle cx="80" cy="80" r="35" fill="#3b82f6" opacity="0.2"/>
+            <text x="80" y="85" font-size="14" text-anchor="middle" fill="#1e293b">Camera Feed</text>
+            <path d="M 130 80 L 250 80" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+            <rect x="260" y="50" width="110" height="60" fill="#e2e8f0" rx="4"/>
+            <text x="315" y="85" font-size="12" text-anchor="middle" fill="#334155">Onbekende Keuken</text>
+          </svg>
+        </div>
+        <div class="mech-stage">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f8fafc" rx="8"/>
+            <circle cx="80" cy="80" r="35" fill="#10b981" opacity="0.2"/>
+            <text x="80" y="85" font-size="14" text-anchor="middle" fill="#1e293b">GPT-6 Astra</text>
+            <path d="M 130 80 L 250 80" stroke="#64748b" stroke-width="3"/>
+            <rect x="260" y="50" width="110" height="60" fill="#e2e8f0" rx="4"/>
+            <text x="315" y="85" font-size="12" text-anchor="middle" fill="#334155">Doelbepaling</text>
+          </svg>
+        </div>
+        <div class="mech-stage">
+          <svg viewBox="0 0 400 160" width="100%" height="160">
+            <rect width="400" height="160" fill="#f8fafc" rx="8"/>
+            <circle cx="80" cy="80" r="35" fill="#f59e0b" opacity="0.2"/>
+            <text x="80" y="85" font-size="14" text-anchor="middle" fill="#1e293b">Actuatoren</text>
+            <path d="M 130 80 L 250 80" stroke="#64748b" stroke-width="3"/>
+            <rect x="260" y="50" width="110" height="60" fill="#e2e8f0" rx="4"/>
+            <text x="315" y="85" font-size="12" text-anchor="middle" fill="#334155">Fysieke Actie</text>
+          </svg>
+        </div>
+      </div>
+      <div class="mech-nav">
+        <button onclick="prevMech()">◀ Vorige</button>
+        <button onclick="nextMech()">Volgende ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <h5>Implicaties voor de commerciële robotica</h5>
+  <p>De demonstratie van het gezamenlijke Stanford- en Caltech-team legt pijnpunten bloot bij gevestigde robotfabrikanten. Veel industriële systemen leunen nog op starre, voorspelbare routines die in gecontroleerde fabrieksomgevingen prima functioneren, maar falen zodra ze in huishoudens of dynamische kantoren worden geplaatst. Doordat GPT-6 Astra flexibel omgaat met afwijkingen, opent dit de deur naar universele assistentierobots die geen langdurige training of programmeerwerk per specifieke locatie vereisen. Consumenten kunnen zo'n robot straks direct uit de doos inzetten in een totaal onbekend huis.</p>
+
+  <div class="ns-viz">
+    <div class="ns-viz-title">Veelgestelde Vragen over HomeBody en GPT-6 Astra</div>
+    <div class="ns-viz-concepts">
+      <details>
+        <summary>Moet de robot vooraf worden ingeprogrammeerd voor elke keuken?</summary>
+        <p>Nee, het hoofddoel van het onderzoek is juist om aan te tonen dat de robot volledig autonoom opereert in ruimtes die hij nog nooit eerder heeft gezien.</p>
+      </details>
+      <details>
+        <summary>Is GPT-6 Astra specifiek getraind voor robotica?</summary>
+        <p>Astra is een algemeen multimodaal fundatiemodel. De onderzoekers hebben aangetoond dat de visuele en redeneervaardigheden van het model direct toepasbaar zijn op motorische taken zonder diepgaande hertraining van de kernarchitectuur.</p>
+      </details>
+      <details>
+        <summary>Wanneer komt deze technologie op de consumentenmarkt?</summary>
+        <p>Dit betreft vooralsnog academisch onderzoek. Hoewel de resultaten spectaculair zijn, moeten veiligheid, betrouwbaarheid en hardware-kosten nog verder worden geoptimaliseerd voordat commerciële toepassing haalbaar is.</p>
+      </details>
+    </div>
+  </div>
+
+  <h5>Conclusie</h5>
+  <p>De integratie van GPT-6 Astra in een humanoïde robot luidt een nieuwe fase in voor de robotica, waarin de kloof tussen digitale intelligentie en fysieke uitvoering aanzienlijk kleiner wordt. Door de traditionele software-stack te passeren, bewijzen Stanford en Caltech dat generatieve AI direct sturing kan geven aan de complexe dynamiek van de fysieke wereld. Hoewel er nog flinke hobbels te nemen zijn op het gebied van veiligheid en robuustheid, is de richting gezet: de toekomst van de robotica is niet langer geprogrammeerd, maar begrepen.</p>
+
+  <div class="bg-footer">Bronnen: https://the-decoder.com/researchers-plug-gpt-6-astra-directly-into-a-robot-and-let-it-clean-up-an-unfamiliar-kitchen/</div>
+</div>
