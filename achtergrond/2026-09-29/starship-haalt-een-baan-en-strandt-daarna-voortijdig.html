@@ -1,0 +1,126 @@
+<div class="tag">wereld</div>
+<h3>Starship haalt een baan, en strandt daarna voortijdig</h3>
+<div class="date">29 september 2026</div>
+
+<p>De jongste testvlucht van SpaceX’ megaraket Starship heeft een langverwachte mijlpaal bereikt: voor het eerst is een baan om de aarde bereikt. Waar eerdere pogingen na een suborbitale paraboolvlucht voortijdig in de oceaan eindigden, wist de combinatie van Super Heavy en Starship nu de orbitale drempel te slechten. Toch liep de missie wederom uit op een voortijdig einde tijdens de afdaling.</p>
+
+<ul class="bg-bullets">
+  <li>Starship heeft voor het eerst in de geschiedenis van het programma een volledige baan om de aarde voltooid.</li>
+  <li>Eerdere testvluchten waren strikt suborbitaal en braken na ongeveer een uur af zonder orbitale snelheid te benaderen.</li>
+  <li>Een defecte motor gooide roet in het eten tijdens de gecontroleerde terugkeer en vurige splashdown.</li>
+  <li>Zowel NOS, NRC als CNBC bevestigen dat de technische drempel van orbitale vlucht hiermee officieel is gepasseerd.</li>
+</ul>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Vluchtverloop: van suborbitaal naar orbitale test</div>
+  <div class="ns-viz-timeline">
+    <div class="ns-t-item">
+      <div class="ns-t-marker">Vlucht 1-3</div>
+      <div class="ns-t-content"><strong>Suborbitale parabolen</strong><br>Geen orbitale snelheid; raket viel na ca. 60 minuten ongecontroleerd terug.</div>
+    </div>
+    <div class="ns-t-item">
+      <div class="ns-t-marker">Vlucht 4-5</div>
+      <div class="ns-t-content"><strong>Verbeterde sturing</strong><br>Eerste succesvolle 'splashdown' van de Super Heavy booster op zee.</div>
+    </div>
+    <div class="ns-t-item ns-active">
+      <div class="ns-t-marker">Huidige test</div>
+      <div class="ns-t-content"><strong>Eerste baan om de aarde</strong><br>Orbitale snelheid bereikt, maar motorfalen verstoort de finale landing.</div>
+    </div>
+  </div>
+</div>
+
+<h5>De betekenis van een echte baan</h5>
+<p>Het verschil tussen een suborbitale sprong en een werkelijke baan om de aarde is fundamenteel voor de ambities van SpaceX. Om vracht en later mensen naar de maan of Mars te transporteren, moet een vaartuig niet alleen de atmosfeer doorbreken, maar ook de horizontale snelheid behouden die nodig is om in vrije val rond de planeet te blijven cirkelen. Dat lukte tijdens deze test overtuigend, waarmee de ingenieurs waardevolle telemetrie binnenharkten over het gedrag van de raket in de ruimte.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Kernparameters van de testvlucht</div>
+  <div class="ns-viz-stats">
+    <div class="ns-stat-box">
+      <span class="ns-stat-num">1e</span>
+      <span class="ns-stat-label">Keer in orbit</span>
+    </div>
+    <div class="ns-stat-box">
+      <span class="ns-stat-num">2</span>
+      <span class="ns-stat-label">Fasen (Booster + Ship)</span>
+    </div>
+    <div class="ns-stat-box">
+      <span class="ns-stat-num">Vurig</span>
+      <span class="ns-stat-label">Einde door motorfalen</span>
+    </div>
+  </div>
+</div>
+
+<h5>Het mechanisme van de terugkeer</h5>
+<p>Het testen van een herbruikbare raket van deze schaal brengt extreme fysieke krachten met zich mee. Bij de herinvoer in de dampkring krijgt het hitteschild van Starship te maken met temperaturen van duizenden graden Celsius. De warmteafvoer en de aerodynamische remming moeten naadloos samenwerken met de herstart van de Raptor-motoren voor de uiteindelijke remraket. Toen een van die motoren weigerde dienst te weigeren, sloeg de stabiliteit om, wat leidde tot de voortijdige beëindiging.</p>
+
+<div class="ns-viz ns-viz-mech" id="mech-starship">
+  <div class="ns-viz-title">Keten van de orbitale missie</div>
+  <div class="ns-mech-pills">
+    <button class="ns-pill ns-active" onclick="showMechSlide(0)">1. Lancering</button>
+    <button class="ns-pill" onclick="showMechSlide(1)">2. Baan bereikt</button>
+    <button class="ns-pill" onclick="showMechSlide(2)">3. Terugkeer</button>
+    <button class="ns-pill" onclick="showMechSlide(3)">4. Motorfalen</button>
+  </div>
+  <div class="ns-mech-slides">
+    <div class="ns-mech-slide ns-active">
+      <svg viewBox="0 0 400 120" width="100%" height="100%"><rect width="400" height="120" fill="#111"/><text x="200" y="65" fill="#fff" text-anchor="middle" font-size="14">Super Heavy ontsteekt; verticale lift-off</text></svg>
+    </div>
+    <div class="ns-mech-slide">
+      <svg viewBox="0 0 400 120" width="100%" height="100%"><rect width="400" height="120" fill="#111"/><text x="200" y="65" fill="#fff" text-anchor="middle" font-size="14">Starship bereikt horizontale snelheid en orbitale baan</text></svg>
+    </div>
+    <div class="ns-mech-slide">
+      <svg viewBox="0 0 400 120" width="100%" height="100%"><rect width="400" height="120" fill="#111"/><text x="200" y="65" fill="#fff" text-anchor="middle" font-size="14">Dampkringinvoer en thermische piek op hitteschild</text></svg>
+    </div>
+    <div class="ns-mech-slide">
+      <svg viewBox="0 0 400 120" width="100%" height="100%"><rect width="400" height="120" fill="#111"/><text x="200" y="65" fill="#fff" text-anchor="middle" font-size="14">Vurige splashdown na onvoorziene motorstoring</text></svg>
+    </div>
+  </div>
+  <div class="ns-mech-nav">
+    <button onclick="prevMechSlide()">◀ Vorige</button>
+    <button onclick="nextMechSlide()">Volgende ▶</button>
+  </div>
+</div>
+
+<h5>Naar een volwaardig testsysteem</h5>
+<p>Ondanks het voortijdige einde overheerst optimisme in de ruimtevaartwereld. Waar traditionele raketten na één mislukte vlucht maanden stil liggen, hanteert SpaceX een iteratieve methode waarbij falen data oplevert. De verworven inzichten over het handhaven van een baan om de aarde zijn cruciaal voor de volgende generatie vluchten, waarin ook vangpogingen met de lanceertoren verder geperfectioneerd moeten worden.</p>
+
+<div class="ns-viz">
+  <div class="ns-viz-title">Veelgestelde vragen over de test</div>
+  <div class="ns-viz-concepts">
+    <details class="ns-concept-card">
+      <summary>Was deze vlucht nu wel of niet succesvol?</summary>
+      <p>Vanuit het perspectief van SpaceX wel: het hoofddoel (een baan bereiken) is gehaald. Het verlies van de raket tijdens de afdaling past binnen hun risicoprofiel voor tests.</p>
+    </details>
+    <details class="ns-concept-card">
+      <summary>Waarom is een orbitale vlucht zo belangrijk?</summary>
+      <p>Omdat alleen zo de daadwerkelijke reistijd en systemen in de ruimte kunnen worden getest die nodig zijn voor interplanetaire missies.</p>
+    </details>
+  </div>
+</div>
+
+<h5>Conclusie</h5>
+<p>Starship heeft aangetoond dat het de fysieke barrière naar een baan om aarde kan slechten. Dat de landing nog niet vlekkeloos verliep, onderstreept dat het ontwikkelingsprogramma in volle gang is, maar verandert niets aan de fundamentele stap voorwaarts die deze test markeert.</p>
+
+<div class="bg-footer">Bronnen: NOS, NRC, BBC, CNBC</div>
+
+<script>
+let currentMech = 0;
+function showMechSlide(index) {
+  const slides = document.querySelectorAll('#mech-starship .ns-mech-slide');
+  const pills = document.querySelectorAll('#mech-starship .ns-pill');
+  if(index < 0 || index >= slides.length) return;
+  slides[currentMech].classList.remove('ns-active');
+  pills[currentMech].classList.remove('ns-active');
+  currentMech = index;
+  slides[currentMech].classList.add('ns-active');
+  pills[currentMech].classList.add('ns-active');
+}
+function nextMechSlide() {
+  const slides = document.querySelectorAll('#mech-starship .ns-mech-slide');
+  showMechSlide((currentMech + 1) % slides.length);
+}
+function prevMechSlide() {
+  const slides = document.querySelectorAll('#mech-starship .ns-mech-slide');
+  showMechSlide((currentMech - 1 + slides.length) % slides.length);
+}
+</script>

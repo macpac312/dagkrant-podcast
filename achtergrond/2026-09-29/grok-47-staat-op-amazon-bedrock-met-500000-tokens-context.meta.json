@@ -1,0 +1,18 @@
+{
+  "title": "Grok 4.7 staat op Amazon Bedrock, met 500.000 tokens context",
+  "summary": "AWS voegt het xAI-model toe. Unite.ai noemt het contextvenster. De beschikbaarheid is het nieuws, niet een benchmark.\n\nAWS heeft xAI’s Grok 4.7 toegevoegd aan Amazon Bedrock, met een contextvenster van 500.000 tokens, schrijft Unite.ai. Een Engelstalige versie van hetzelfde bericht circuleert in de feed. De rubriek houdt het bij één feit: het model is via Bedrock af te nemen, en het venster is een",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxOLUROMmlWQTB6cXlzU1lOSGx0dG1nSWdESGgtd2VsWm5kclluY1paWFhpUDRadG9vOFdOZHdjdTAtTi1pczRidTNSNml2QTdFbWtzSzdwdlQtV1dkZEZ4LVBBaWZVb2s1RjJMbFNtNnRUQ0Q1R3V2OUk1R1NEc2Qyc0I3QlFjZEhZMnZRekJGNXJzTS1a?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-29",
+  "slug": "grok-47-staat-op-amazon-bedrock-met-500000-tokens-context",
+  "tts_slug": "grok-47-staat-op-amazon-bedrock-met-500000-tokens-context",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-29T05:47:15",
+  "size_kb": 5,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-29/grok-47-staat-op-amazon-bedrock-met-500000-tokens-context.html",
+  "mode": "default"
+}
