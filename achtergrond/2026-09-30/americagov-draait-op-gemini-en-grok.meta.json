@@ -1,0 +1,18 @@
+{
+  "title": "America.gov draait op Gemini en Grok",
+  "summary": "Trump noemt de site een herstel van de belofte van Amerika. CNBC citeert ambtenaar Gebbia. Mashable: gebouwd door oud-DOGE, de chatbot is Grok.",
+  "sources": [
+    "https://www.cnbc.com/2026/09/29/trump-ai-gemini-grok.html"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-09-30",
+  "slug": "americagov-draait-op-gemini-en-grok",
+  "tts_slug": "americagov-draait-op-gemini-en-grok",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-30T04:24:35",
+  "size_kb": 3,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-30/americagov-draait-op-gemini-en-grok.html",
+  "mode": "default"
+}

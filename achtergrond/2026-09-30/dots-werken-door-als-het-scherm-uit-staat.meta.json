@@ -1,0 +1,21 @@
+{
+  "title": "Dots werken door als het scherm uit staat",
+  "summary": "OpenAI’s always-on agents draaien op een eigen cloudcomputer, gekoppeld aan Slack en Teams. Meta’s Muse is de vergelijking die Wired maakt.",
+  "sources": [
+    "https://openai.com/index/introducing-dots",
+    "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/",
+    "https://the-decoder.com/openai-launches-always-on-dots-agents-to-rival-metas-muse/",
+    "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-09-30",
+  "slug": "dots-werken-door-als-het-scherm-uit-staat",
+  "tts_slug": "dots-werken-door-als-het-scherm-uit-staat",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-09-30T04:24:35",
+  "size_kb": 2,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-09-30/dots-werken-door-als-het-scherm-uit-staat.html",
+  "mode": "default"
+}
