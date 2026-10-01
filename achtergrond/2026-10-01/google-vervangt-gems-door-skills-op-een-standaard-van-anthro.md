@@ -1,0 +1,23 @@
+---
+titel: "Google vervangt Gems door Skills, op een standaard van Anthropic"
+url: https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats/
+bron: aitech
+kind: aitech
+gegenereerd: 2026-10-01T04:29:13
+---
+
+Google vervangt Gems door Skills, op een standaard van Anthropic
+
+Herbruikbare prompts, aan te roepen met een schuine streep of automatisch. Gems verdwijnen vanaf november.
+
+Google vervangt Gems in Gemini-chat door Skills, schrijft The Decoder. Skills zijn uitgewerkte, herbruikbare prompts. De gebruiker roept ze aan met een schuine streep, of Gemini draait ze zelf. Het formaat volgt een open standaard van Anthropic. Bestaande Gems worden vanaf november uitgefaseerd.
+
+Een prompt die een naam krijgt en door drie labs wordt herkend, is geen model. Het is een verpakking van werkwijze. Google, OpenAI en Anthropic schuiven dezelfde kant op, zegt The Decoder: agent-klare formats in plaats van een losse edelsteen in de zijbalk.
+
+November is de deadline die in de samenvatting staat. Wat er met een Gem gebeurt die niet wordt omgezet, staat er niet bij.
+
+Standaarden winnen als de grootste achterblijver ze overneemt. Anthropic zette Skills neer. Google schaft zijn eigen naam af en stapt over. Dat is een nederlaag voor Gems als merk en een overwinning voor het idee dat een agent een bestand met instructies nodig heeft, niet alleen een chatvenster.
+
+Voor gebruikers is november een migratie. Herbruikbare prompts zijn werk, en werk dat in een Gem zat, moet mee of sterft. Voor bedrijven die Gemini hebben uitgerold, is het een beheersvraag: wie mag een Skill publiceren, en draait Gemini hem automatisch op momenten dat niemand „slash” typt. Automatisch is het woord met de gevolgen. Een prompt die uit zichzelf start, is een proces. Processen horen een eigenaar te hebben.
+
+De open standaard maakt overstappen denkbaar. Denkbaar is niet gebeurd. De Decoder meldt de aansluiting, niet een werkende export.

@@ -1,0 +1,23 @@
+---
+titel: "EBA: werkprogramma 2027, en een next-generation toezichthouder"
+url: https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-2027-work-programme
+bron: regulatoir
+kind: regulatoir
+gegenereerd: 2026-10-01T04:29:13
+---
+
+EBA: werkprogramma 2027, en een next-generation toezichthouder
+
+De autoriteit noemt drie rollen: regulator van de volgende generatie, toezicht aan nieuwe grenzen, en diensten voor toezicht en resolutie.
+
+De European Banking Authority heeft haar werkprogramma voor 2027 gepubliceerd. Het programma zet de prioriteiten en de op te leveren stukken voor dat jaar. Het is ook, schrijft de EBA, de eerste stap naar een middellangetermijnstrategie. Daarin positioneert de autoriteit zich als next-generation regulator, als instantie die toezicht ontwikkelt aan nieuwe grenzen, en als leverancier van diensten aan de gemeenschap van toezichthouders en resolutieautoriteiten.
+
+Welke concrete deliverables er voor 2027 op de lijst staan, welke guidelines worden herzien, en of IRB, modelrisico of stresstesten er met naam in voorkomen, zegt het persbericht in de feed niet. De drie rollen zijn de strategiezin. Het werkprogramma is de verpakking.
+
+Voor een model owner is de middelste rol de interessantste, en de vaagste. „Nieuwe grenzen” kan crypto zijn, kan ICT zijn, kan kunstmatige intelligentie in de kredietketen zijn. Het bericht kiest niet.
+
+Een werkprogramma is een begroting van aandacht. Wie bovenaan staat, krijgt guidelines, Q&A’s en data-verzoeken. Wie er niet op staat, krijgt een jaar rust. Zonder de lijst is niet te zien waar de EBA haar schaarse mensen in 2027 neerzet. De strategiezin compenseert dat slechts ten dele. Drie rollen is een organogram, geen kalender.
+
+Next-generation regulator is een claim naar de banksystemen toe: de EBA wil niet alleen teksten schrijven, maar de praktijk van het toezicht voeden. „Diensten aan de gemeenschap” wijst op data, training, gemeenschappelijke tools. Dat raakt banken indirect, via hun toezichthouder. Het raakt een model owner pas als die tools de benchmark worden waartegen zijn PD, LGD of challenger-model wordt gelegd.
+
+Tot de bijlage er is, blijft 2027 een richting. De richting is wel expliciet: de EBA wil meer zijn dan een schrijftafel voor de verordening.
