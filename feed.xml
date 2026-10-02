@@ -6,10 +6,16 @@
     <atom:link href="https://macpac312.github.io/dagkrant-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Ochtendpodcast bij De Dagkrant (Marit en Max).</description>
     <language>nl-nl</language>
-    <lastBuildDate>Thu, 01 Oct 2026 04:37:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 04:48:55 +0000</lastBuildDate>
     <itunes:category text="News"/>
     <itunes:author>De Dagkrant</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>De Dagkrant — 2026-10-02</title>
+      <guid isPermaLink="false">2026-10-02_01.mp3</guid>
+      <pubDate>Fri, 02 Oct 2026 07:00:00 +0000</pubDate>
+      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-10-02_01.mp3" length="6714226" type="audio/mpeg"/>
+    </item>
     <item>
       <title>De Dagkrant — 2026-10-01</title>
       <guid isPermaLink="false">2026-10-01_01.mp3</guid>
@@ -99,12 +105,6 @@
       <guid isPermaLink="false">2026-09-18_01.mp3</guid>
       <pubDate>Fri, 18 Sep 2026 07:00:00 +0000</pubDate>
       <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-18_01.mp3" length="8684194" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>De Dagkrant — 2026-09-17</title>
-      <guid isPermaLink="false">2026-09-17_01.mp3</guid>
-      <pubDate>Thu, 17 Sep 2026 07:00:00 +0000</pubDate>
-      <enclosure url="https://macpac312.github.io/dagkrant-podcast/audio/2026-09-17_01.mp3" length="11433778" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>

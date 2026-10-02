@@ -1,0 +1,73 @@
+---
+titel: "Rechter Mehta seponeert de zaken tegen Google’s AI Overviews"
+url: https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed
+bron: aitech
+kind: aitech
+gegenereerd: 2026-10-02T04:39:43
+---
+
+aitech
+
+Rechter Mehta seponeert de zaken tegen Google’s AI Overviews
+
+Chegg en Penske Media, het moederbedrijf van Rolling Stone, verweten Google dat AI-antwoorden hun verkeer wegnemen. The Verge: de rechter gaat mee met Google.
+
+    - Federale rechter Amit Mehta heeft de antitrust- en auteursrechtzaken tegen Google's AI Overviews van de hand gewezen.
+
+    - Uitgevers zoals Penske Media en educatieve platforms als Chegg stelden dat AI-samenvattingen hun webverkeer en advertentie-inkomsten decimeerden.
+
+    - Volgens de rechtbank valt het direct beantwoorden van vragen binnen de grenzen van legitieme productinnovatie en fair use.
+
+    - De uitspraak zet een streep door de juridische pogingen van contentmakers om generatieve zoekfuncties via de rechter te blokkeren.
+
+       2024
+       Lancering AI Overviews
+
+       0
+       Toegewezen claims tegen Google
+
+       100%
+       Focus op rechtbankvrijspraak
+
+Een precedentwerking voor generatieve zoektechnologie
+
+De uitspraak van districtsrechter Amit Mehta markeert een definitief keerpunt in de juridische strijd tussen traditionele uitgevers, educatieve platforms en big tech. Waar antitrust-experts aanvankelijk betoogden dat Google zijn marktmacht misbruikte door gebruikers direct op de resultatenpagina van antwoorden te voorzien, oordeelde de rechtbank anders. Het tonen van AI Overviews is volgens Mehta geen illegale praktijk van marktafscherming, maar een natuurlijke evolutie van de zoekmachine die primair is gericht op gebruikersgemak.
+
+       Mei 2024
+       Google rolt AI Overviews op grote schaal uit in de Verenigde Staten.
+
+       Eind 2024
+       Chegg en Penske Media spannen rechtszaken aan wegens misgelopen verkeer en copyright-inbreuk.
+
+       Oktober 2026
+       Rechter Mehta seponeert de zaken volledig en stelt Google in het gelijk.
+
+De kwetsbaarheid van het webverkeermodel
+
+De klagers, waaronder Chegg (bekend van huiswerkbegeleiding) en Penske Media (uitgever van onder meer Rolling Stone en Variety), zagen hun bedrijfsmodellen onder druk vallen doordat zoekopdrachten in toenemende mate werden afgedaan met een gegenereerde alinea bovenaan de pagina. Gebruikers hoeven immers minder vaak door te klikken naar onderliggende bronnen. Uitgevers en contentmakers betoogden dat dit neerkomt op oneerlijke concurrentie en vrijwel neerkomt op het ‘leegroven’ van hun intellectuele eigendom ten behoeve van Google's eigen advertentiemachine.
+
+Argumenten Eiser (Chegg / Penske)
+
+        - Verlies van organisch verkeer door directe antwoorden.
+
+        - Ongev.", uitbuiting van auteursrechtelijk beschermde content.
+
+        - Misbruik van dominante marktmacht in search.
+
+Oordeel Rechter Mehta
+
+        - AI-samenvattingen vallen onder legitieme productverbetering.
+
+        - Geen sprake van onrechtmatige toe-eigening van content.
+
+        - Consumentenvoordeel en innovatie wegen zwaarder dan verkeersderving.
+
+Wat dit betekent voor de toekomst van digital publishing
+
+Met het vonnis van Mehta lijkt de Amerikaanse rechterspraak voorlopig de deur dicht te houden voor schadeclaims over het verdwijnen van klikgedrag door generatieve AI. Hoewel uitgevers kunnen blijven lobbyen voor strengere wetgeving of bilaterale licentiedeals proberen af te dwingen via de persvrijheid, staat vast dat het monopolie op de presentatie van informatie onaangetast blijft. Google hoeft zijn algoritme niet aan te passen, wat de druk op redacties en online platforms om alternatieve inkomstenstromen te vinden alleen maar vergroot.
+
+Conclusie
+
+De seponering van de rechtszaken rond AI Overviews bevestigt dat big tech vooralsnog de wind mee heeft in de rechtbank wanneer het gaat om productvernieuwing. Contentmakers zullen zich moeten neerleggen bij een veranderend medialandschap waarin de klassieke blauwe link steeds meer naar de achtergrond verdwijnt ten gunste van door kunstmatige intelligentie gegenereerde antwoorden.
+
+   Bronnen: https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed
