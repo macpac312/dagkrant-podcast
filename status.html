@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Dagkrant: voortgang</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#2b2b2b;--mute:#6f6c66;--line:#e6e3dc;--acc:#3f6f8f;--ok:#3d7a52;--err:#a2453b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,"Times New Roman",serif}
+main{max-width:640px;margin:0 auto;padding:28px 18px 48px}
+h1{font-size:1.7rem;margin:0 0 4px;font-weight:normal;letter-spacing:.01em}
+.sub{color:var(--mute);margin:0 0 22px;font-family:system-ui,sans-serif;font-size:.9rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;font-family:system-ui,sans-serif}
+.state{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.85rem;background:#eef2f5;color:var(--acc)}
+.state.done{background:#e9f3ec;color:var(--ok)}.state.error{background:#f7e9e7;color:var(--err)}.state.idle{background:#f0efeb;color:var(--mute)}
+.bar{height:12px;background:#eeece6;border-radius:999px;overflow:hidden;margin:16px 0 6px}
+.bar>div{height:100%;width:0;background:var(--acc);transition:width .6s ease}
+.done .bar>div{background:var(--ok)}
+.pct{font-size:.9rem;color:var(--mute)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:18px 0 0}
+dt{color:var(--mute)}dd{margin:0}
+ol{padding-left:1.3rem;margin:18px 0 0}
+li{margin:3px 0;color:var(--mute)}li.cur{color:var(--ink);font-weight:600}li.ok{color:var(--ok)}
+.msg{margin-top:16px;padding:12px;border-radius:8px}
+.msg.done{background:#e9f3ec}.msg.error{background:#f7e9e7;color:var(--err);white-space:pre-wrap}
+a{color:var(--acc)}
+.foot{margin-top:18px;color:var(--mute);font-size:.8rem;font-family:system-ui,sans-serif}
+@media (min-width:700px){main{padding-top:56px}.card{padding:28px}}
+</style>
+</head>
+<body>
+<main>
+<h1>De Dagkrant van Marcel</h1>
+<p class="sub">Voortgang van de dagelijkse run. Ververst vanzelf.</p>
+<section class="card" id="card">
+  <span class="state idle" id="state">Laden</span>
+  <div class="bar"><div id="fill"></div></div>
+  <div class="pct" id="pct"></div>
+  <dl>
+    <dt>Datum</dt><dd id="date">-</dd>
+    <dt>Route</dt><dd id="route">-</dd>
+    <dt>Huidige stap</dt><dd id="step">-</dd>
+    <dt>Gestart</dt><dd id="start">-</dd>
+    <dt>Verstreken</dt><dd id="elapsed">-</dd>
+    <dt>Nog te gaan</dt><dd id="eta">-</dd>
+  </dl>
+  <ol id="steps"></ol>
+  <div id="msg"></div>
+</section>
+<p class="foot" id="foot"></p>
+</main>
+<script>
+const STEPS=["nieuws verzamelen","artikelen schrijven","krant opbouwen","podcast inspreken","publiceren"];
+const DEF=45*60;let S=null,lastOk=null;
+const $=id=>document.getElementById(id);
+function dur(s){if(s==null||isNaN(s))return "-";s=Math.max(0,Math.round(s));const h=Math.floor(s/3600),m=Math.floor(s%3600/60);return h?`${h} u ${m} min`:m?`${m} min`:`${s} s`}
+function tijd(t){if(!t)return "-";const d=new Date(t);return isNaN(d)?"-":d.toLocaleString("nl-NL",{timeZone:"Europe/Amsterdam",weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}
+function datum(d){if(!d)return "-";const x=new Date(d+"T12:00:00");return isNaN(x)?d:x.toLocaleDateString("nl-NL",{weekday:"long",day:"numeric",month:"long",year:"numeric"})}
+function typical(s){const h=(s.history||[]).map(x=>x.duration_s).filter(x=>x>0).slice(-7);if(!h.length)return s.default_duration_s||DEF;h.sort((a,b)=>a-b);return h[Math.floor(h.length/2)]}
+function esc(t){return String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function render(){
+  if(!S)return;const s=S,st=s.status||"idle",steps=s.steps||STEPS;
+  const lbl={idle:"Geen run bezig",running:"Bezig",done:"Klaar",error:"Fout"}[st]||st;
+  $("state").className="state "+st;$("state").textContent=lbl;$("card").className="card "+st;
+  const now=Date.now(),start=s.started_at?Date.parse(s.started_at):null,end=s.finished_at?Date.parse(s.finished_at):null;
+  const el=start?((end&&st!=="running"?end:now)-start)/1000:null,tot=typical(s);
+  let pct=s.progress||0;
+  if(st==="running"&&el!=null){const stepEnd=((s.step_index||0)+1)*100/steps.length;pct=Math.max(pct,Math.min(stepEnd-1,el/tot*100))}
+  if(st==="done")pct=100;if(st==="idle")pct=0;
+  $("fill").style.width=pct.toFixed(0)+"%";$("pct").textContent=pct.toFixed(0)+"%";
+  $("date").textContent=datum(s.date);$("route").textContent=s.route_label||(s.route==="grok"?"Grok Bot":s.route?"Cursor / Dagkrant-bot":"-");
+  $("step").textContent=st==="done"?"klaar":(s.step||"-");$("start").textContent=tijd(s.started_at);
+  $("elapsed").textContent=dur(el);
+  $("eta").textContent=st==="running"?(el!=null&&el<tot?"ongeveer "+dur(tot-el):"bijna klaar, duurt langer dan gewoonlijk"):"-";
+  const ci=st==="done"?steps.length:(s.step_index==null?-1:s.step_index);
+  $("steps").innerHTML=steps.map((n,i)=>`<li class="${i<ci?"ok":i===ci&&st!=="idle"?"cur":""}">${i<ci?"✓ ":""}${esc(n)}</li>`).join("");
+  let m="";
+  if(st==="done"){const k=s.krant_url||(s.date?s.date+".html":"laatste.html");m=`<div class="msg done">De krant van vandaag staat klaar. <a href="${esc(k)}">Open de krant</a> of <a href="laatste.html">laatste.html</a>.</div>`}
+  else if(st==="error")m=`<div class="msg error">${esc(s.error||"Onbekende fout")}</div>`;
+  else if(st==="idle")m=`<div class="msg">Er draait nu geen run. <a href="laatste.html">Lees de laatste krant</a>.</div>`;
+  $("msg").innerHTML=m;
+  $("foot").textContent=(lastOk?"Laatst opgehaald "+lastOk.toLocaleTimeString("nl-NL",{timeZone:"Europe/Amsterdam"}):"")+(s.updated_at?". Status bijgewerkt "+tijd(s.updated_at):"");
+}
+async function load(){
+  try{const r=await fetch("status.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);S=await r.json();lastOk=new Date();render()}
+  catch(e){$("foot").textContent="Status kon niet worden opgehaald, nieuwe poging over 15 seconden."}
+}
+load();setInterval(load,15000);setInterval(render,1000);
+</script>
+</body>
+</html>
