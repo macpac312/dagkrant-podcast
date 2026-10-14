@@ -6,6 +6,7 @@
 # Published GitHub Pages HTML (edition + redirect)
 !index.html
 !laatste.html
+!status.html
 !2026-*.html
 !achtergrond/**/*.html
 !artikelen/**/*.html

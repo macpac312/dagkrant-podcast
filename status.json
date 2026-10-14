@@ -1,0 +1,17 @@
+{
+  "status": "idle",
+  "note": "Er draait nu geen run. Dit bestand wordt door src/report_status.py in nieuwsstationGrok bijgewerkt.",
+  "date": null,
+  "route": null,
+  "route_label": null,
+  "step": null,
+  "step_index": null,
+  "progress": 0,
+  "steps": ["nieuws verzamelen", "artikelen schrijven", "krant opbouwen", "podcast inspreken", "publiceren"],
+  "started_at": null,
+  "finished_at": null,
+  "updated_at": null,
+  "error": null,
+  "history": [],
+  "default_duration_s": 2700
+}
