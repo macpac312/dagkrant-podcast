@@ -1,0 +1,107 @@
+<div class="ns-header">
+  <span class="ns-tag">HUAWEI</span>
+  <h2>Een breedbeeldtelefoon met twee camera’s van 200 megapixel</h2>
+  <p class="ns-lead">Android Authority beschrijft een aankomend toestel, PhoneArena spreekt over 400 megapixel en de iPhone Duo. De feed heeft alleen de koppen, maar de richting van de geruchten is helder.</p>
+</div>
+
+<ul class="bg-bullets">
+  <li>Android Authority meldt de komst van een breedbeeldtoestel met dubbele 200-megapixelcamera's.</li>
+  <li>PhoneArena telt de sensors op tot een marketinggetal van 400 megapixel en introduceert de iPhone Duo als vergelijking.</li>
+  <li>De exacte specificaties en de definitieve merknaam ontbreken in de eerste randspecificaties van de RSS-feeds.</li>
+  <li>De marktwaardering concentreert zich op sensorformaat en beeldverhouding in plaats van uitsluitend megapixels.</li>
+</ul>
+
+<div class="ns-viz ns-viz-stats">
+  <div class="ns-stat-box">
+    <span class="ns-number">200 MP</span>
+    <span class="ns-label">Individuele sensorcapaciteit (2x)</span>
+  </div>
+  <div class="ns-stat-box">
+    <span class="ns-number">400 MP</span>
+    <span class="ns-label">Geaggregeerde kop in PhoneArena</span>
+  </div>
+  <div class="ns-stat-box">
+    <span class="ns-number">2</span>
+    <span class="ns-label">Aantal hoofdcamera's in gerucht</span>
+  </div>
+</div>
+
+<h5>De anatomie van een gerucht</h5>
+<p>Wie de technologiefeds scant op de vroege ochtend van 14 oktober 2026, stuit op een merkwaardige dynamiek. Waar Android Authority spreekt over een weloverwogen hardwarekeuze – twee afzonderlijke sensors van elk tweehonderd megapixel – kiest PhoneArena voor de grote getallen. Door de capaciteiten simpel bij elkaar op te tellen ontstaat een koppenwaardig totaal van vierhonderd megapixel. Dit soort cijferaritmetica zegt minder over de daadwerkelijke optische prestaties dan over de strijd om de aandacht in de algoritmen van Google News.</p>
+
+<div class="ns-viz ns-viz-timeline">
+  <div class="ns-tl-item">
+    <span class="ns-tl-time">Stap 1</span>
+    <div class="ns-tl-content"><strong>Eerste lek:</strong> Android Authority publiceert details over een breedbeeldtoestel met dubbele 200MP-module.</div>
+  </div>
+  <div class="ns-tl-item">
+    <span class="ns-tl-time">Stap 2</span>
+    <div class="ns-tl-content"><strong>Sensationele duiding:</strong> PhoneArena telt de getallen op tot 400 megapixel en betrekt de hypothetische iPhone Duo in de vergelijking.</div>
+  </div>
+  <div class="ns-tl-item">
+    <span class="ns-tl-time">Stap 3</span>
+    <div class="ns-tl-content"><strong>Feed-distributie:</strong> De koppen domineren de RSS-stromen; de onderliggende technische documentatie blijft achterwege.</div>
+  </div>
+</div>
+
+<h5>Megapixels als marketingvaluta</h5>
+<p>Het optellen van megapixelgetallen is een beproefde tactiek in de mobiele industrie. Sensorproducenten en fabrikanten weten dat consumenten gevoelig zijn voor kwantitatieve superioriteit. Toch leidt een hogere resolutie op een kleine smartphone-sensor niet automatisch tot betere beelden. Fysische wetten dicteren dat meer pixels op dezelfde oppervlakte piepkleine pixels opleveren die minder licht vangen, tenzij er geavanceerde pixel-binningstechnologie wordt toegepast. De vraag is dan ook of deze dubbele opstelling dient voor optische zoom, stereoscopische fotografie of een ultrabreed beeldveld.</p>
+
+<div class="ns-viz ns-viz-mech" id="mechViz">
+  <div class="ns-mech-pills">
+    <button class="ns-pill active" onclick="showMech(0)">1. Sensor-input</button>
+    <button class="ns-pill" onclick="showMech(1)">2. Pixel Binning</button>
+    <button class="ns-pill" onclick="showMech(2)">3. Beeldfusie</button>
+  </div>
+  <div class="ns-mech-screen" id="mechScreen">
+    <svg viewBox="0 0 400 120" width="100%" height="120">
+      <rect width="400" height="120" fill="#f8f9fa" rx="8"/>
+      <text x="200" y="65" text-anchor="middle" font-size="14" fill="#333">Twee onafhankelijke 200MP sensors vangen ruwe lichtdata op.</text>
+    </svg>
+  </div>
+  <div class="ns-mech-controls">
+    <button onclick="prevMech()">◀ Vorige</button>
+    <button onclick="nextMech()">Volgende ▶</button>
+  </div>
+</div>
+
+<script>
+  const mechSteps = [
+    '<svg viewBox="0 0 400 120" width="100%" height="120"><rect width="400" height="120" fill="#f8f9fa" rx="8"/><text x="200" y="65" text-anchor="middle" font-size="14" fill="#333">Twee onafhankelijke 200MP sensors vangen ruwe lichtdata op.</text></svg>',
+    '<svg viewBox="0 0 400 120" width="100%" height="120"><rect width="400" height="120" fill="#f8f9fa" rx="8"/><text x="200" y="65" text-anchor="middle" font-size="14" fill="#333">Processor combineert pixels (16-in-1) voor optimale lichtgevoeligheid.</text></svg>',
+    '<svg viewBox="0 0 400 120" width="100%" height="120"><rect width="400" height="120" fill="#f8f9fa" rx="8"/><text x="200" y="65" text-anchor="middle" font-size="14" fill="#333">Algoritmes voegen het breedbeeld en de dubbele input samen tot één eindframe.</text></svg>'
+  ];
+  let currentMech = 0;
+  function showMech(idx) {
+    currentMech = idx;
+    document.getElementById('mechScreen').innerHTML = mechSteps[idx];
+    document.querySelectorAll('.ns-mech-pills .ns-pill').forEach((p, i) => {
+      p.classList.toggle('active', i === idx);
+    });
+  }
+  function nextMech() { currentMech = (currentMech + 1) % 3; showMech(currentMech); }
+  function prevMech() { currentMech = (currentMech - 1 + 3) % 3; showMech(currentMech); }
+</script>
+
+<h5>De schaduw van de concurrentie</h5>
+<p>Dat PhoneArena in dezelfde adem de 'iPhone Duo' aanhaalt, verraadt de journalistieke context. Apple en Huawei bevechten elkaar om de innovatiekop in het hoogste segment, al opereert Huawei door handelsrestricties op een eigen speelveld met HarmonyOS en inheemse componenten. De vermelding van een concurrerend model dat niet eens bestaat, illustreert hoe gerutesites anticiperen op toekomstige productcycli. Het creëert een virtuele arena waarin specificaties belangrijker zijn dan beschikbaarheid in de winkel.</p>
+
+<div class="ns-viz ns-viz-concepts">
+  <details>
+    <summary>Wat is Pixel Binning precies?</summary>
+    <p>Een techniek waarbij aangrenzende pixels op een sensor worden samengevoegd tot één grotere 'superpixel', wat resulteert in minder ruis bij weinig licht.</p>
+  </details>
+  <details>
+    <summary>Waarom brede beeldformaten op telefoons?</summary>
+    <p>Breedbeeldcamera's sluiten aan bij de opkomst van foldable schermen en cinematografische videoformaten, waarin traditionele 4:3-sensors tekortschieten.</p>
+  </details>
+</div>
+
+<h5>Conclusie</h5>
+<p>Zolang de volledige artikelen achter de krantenkoppen gesloten blijven of simpelweg niet worden meegeleverd in de feed, blijft het koffiedik kijken. Of de dubbele tweehonderd-megapixelcamera werkelijk gestalte krijgt in een nieuw Huawei-toestel, hangt af van de productierijpheid van de sensoren. Tot die tijd fungeert de kop van vierhonderd megapixel vooral als een monument voor de marketinglogica van de moderne smartphonemarkt.</p>
+
+<div class="bg-footer">
+  Bronnen: 
+  <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPTmVubDA0WmRRVEV4SXhraEEyWG16Zzh6T0F3OWIwR0puNnZnWl84U0l4ZHBSN3pVZVNsajRPSVEyOTBiV1JjNkRBMzJ0QUxNV2dXUUdZdGNEdkhhaEZYN2ZQNkZINWZwOU9faW5nb1JxNWdTbUt1bUhHeFBTZDJyeGtTUzZsT3VwNFhJOWZhMVpxUQ?oc=5" target="_blank" rel="noopener">Android Authority via Google News</a>, 
+  <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRHNYUXIwV0xxSkd6RXpMTW9QY1JpUGsyY3Z1Z2pNRm9ET2hVaGJ0ZUVNWXduUzEtRGhhRVlyVGN2OVFwd1dCV3lTSFFsblFJTzZtYWtaaGRaalc1OHlOTDFNbmNBeEx6TGNlZHFyejRJMWloS25IZk9TNk5oeWtLR0FLd3RZQmYtV2hsMk1scFNfc05HTXk4X19Zdk0tZnE2bW12bHJnbjdvd0NGNUZMendUWm0wSVVqOWpxdG1lY210Zw?oc=5" target="_blank" rel="noopener">PhoneArena via Google News</a>
+</div>

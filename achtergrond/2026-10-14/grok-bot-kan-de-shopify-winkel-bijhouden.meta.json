@@ -1,0 +1,18 @@
+{
+  "title": "Grok Bot kan de Shopify-winkel bijhouden",
+  "summary": "Orders, voorraad en productregels, na één koppeling. De feed is een aankondiging op X, geen handleiding.\n\nGrok Bot kan worden gekoppeld aan een Shopify-winkel en daarna orders bekijken, de voorraad volgen, productvermeldingen bijwerken en routinematig winkelwerk doen zonder dat de eigenaar in het dashboard zit, meldt een bericht dat via Google Nieuws uit X komt. De koppeling is eenmalig. De tekst ",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvVTZCckJSZnJIT3Y1alJJTE5hWGtZVGlhd3B0Z2Y5a1VXMGxNYUxJTEFQVG0yVmZwU0tFQ0gteXd1ZHlVWnl0X3FvUVRsZFFrN0VvaFdnbDYzdlRMUnBSTzgzakFnVzVTel9sVg?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-14",
+  "slug": "grok-bot-kan-de-shopify-winkel-bijhouden",
+  "tts_slug": "grok-bot-kan-de-shopify-winkel-bijhouden",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-14T10:25:58",
+  "size_kb": 6,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-10-14/grok-bot-kan-de-shopify-winkel-bijhouden.html",
+  "mode": "default"
+}
