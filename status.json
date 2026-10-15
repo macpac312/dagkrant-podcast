@@ -1,17 +1,22 @@
 {
-  "status": "idle",
-  "note": "Er draait nu geen run. Dit bestand wordt door src/report_status.py in nieuwsstationGrok bijgewerkt.",
-  "date": null,
-  "route": null,
-  "route_label": null,
-  "step": null,
-  "step_index": null,
-  "progress": 0,
-  "steps": ["nieuws verzamelen", "artikelen schrijven", "krant opbouwen", "podcast inspreken", "publiceren"],
-  "started_at": null,
-  "finished_at": null,
-  "updated_at": null,
-  "error": null,
+  "steps": [
+    "nieuws verzamelen",
+    "artikelen schrijven",
+    "krant opbouwen",
+    "podcast inspreken",
+    "publiceren"
+  ],
+  "route": "cursor",
+  "route_label": "Cursor / Dagkrant-bot",
+  "updated_at": "2026-10-15T05:02:48+00:00",
   "history": [],
-  "default_duration_s": 2700
+  "default_duration_s": 2700,
+  "status": "running",
+  "date": "2026-10-15",
+  "step": "nieuws verzamelen",
+  "step_index": 0,
+  "progress": 0,
+  "started_at": "2026-10-15T05:02:48+00:00",
+  "finished_at": null,
+  "error": null
 }
