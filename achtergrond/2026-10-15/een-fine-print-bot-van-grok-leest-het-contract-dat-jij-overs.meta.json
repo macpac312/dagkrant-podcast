@@ -1,0 +1,18 @@
+{
+  "title": "Een Fine Print-bot van Grok leest het contract dat jij overslaat",
+  "summary": "De kop belooft dat de bot de kleine lettertjes leest. De bron is een accessoireshop. De feed heeft geen demo.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZTVwZmdTM1N4dTdEUWVFV2p2M2Qyc0tqbnMtXzUyNHNwTFZxdG9GNWFueTNNNzJTUEowNEMwbHRoMW5GRnR3RGx3RjRaZmZTWUF6MEQwa0dqZUZDN1JVUXZ1al9INVJfM2dPRDVzTERBYUVUSDUyQnVwOGM1R1FJaW1mMU9OVjZVak9kMVFPVnFfWm5DNUE?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-15",
+  "slug": "een-fine-print-bot-van-grok-leest-het-contract-dat-jij-overs",
+  "tts_slug": "een-fine-print-bot-van-grok-leest-het-contract-dat-jij-overs",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-15T05:50:56",
+  "size_kb": 7,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-10-15/een-fine-print-bot-van-grok-leest-het-contract-dat-jij-overs.html",
+  "mode": "default"
+}

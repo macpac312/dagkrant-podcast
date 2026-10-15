@@ -1,0 +1,20 @@
+{
+  "title": "Grok Voice 3.0 zou OpenAI en Google verslaan op spraak",
+  "summary": "SpaceXSI claimt de koppositie op een speech-to-speech-index. Eén kop zegt dat het model 70 procent van de Starlink-klantvragen zelf afhandelt. De scores staan niet in de feed.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdC1PbklJOGZuSmJDN25sWnJaWlBDYzgwb0JrRjRvbVlZMndTZTE1c1FMOXhSUE1nSmJYNFFVWnNPbkYyUk9NN2pvV0xvZmNPaHItSGhQTE94N0pCOEM0NDZMdDVpZ2hpMmk4UExWb2V5dUQxbHFhNTVmRllGelRWVTdKVUhSTHpYaXlDam5Ia1NFVzU2c2FscVF2Um10RDh1UTVrN2t5dzM2UTFmc25tbEgtQkpTb3JRTzNZ?oc=5",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQXYtdTVEaGNybzJxTm1iZkVxY1N6aWp2RlZTelR6NHRKTFU1d2NvVjRIZm1mUGxDT1Q5bzJnMml0eUNOMnBjcUlETGFxTXB2WE56eDNyZjAwSHNxTjVRMnl6V0x0RmhaWVR4QS1JbHdnTEVCeUNaSzdKLVJLQW1jM1M1TmFRUV9falpxUkQ0aUc?oc=5",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSTRvRlA1MGNUVEtJOTVmZW00S2xFYzN2Q0F1S282Qkp5UlhhYkNsVHYtY3kyeWRzcTJsdVF1cmNJSzJobW9KUnh6dWFMNXVGbXJOSHcyVHpQdnp2VXVFTm8xS1JfR0F0b0dLdXVIcE1OQjRkZ09vUjVicjIzTnRiTURBY29Hb1RKbE8zYTU3bDY1bzR2U0hKSQ?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-15",
+  "slug": "grok-voice-30-zou-openai-en-google-verslaan-op-spraak",
+  "tts_slug": "grok-voice-30-zou-openai-en-google-verslaan-op-spraak",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-15T05:50:48",
+  "size_kb": 8,
+  "path": "/agent/repos/nieuwsstationGrok/public/editions/achtergrond/2026-10-15/grok-voice-30-zou-openai-en-google-verslaan-op-spraak.html",
+  "mode": "default"
+}
