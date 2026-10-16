@@ -8,22 +8,31 @@
   ],
   "route": "cursor",
   "route_label": "Cursor / Dagkrant-bot",
-  "updated_at": "2026-10-16T04:35:01+00:00",
+  "updated_at": "2026-10-16T04:35:17+00:00",
   "history": [
     {
       "date": "2026-10-15",
       "route": "cursor",
       "duration_s": 3513,
       "finished_at": "2026-10-15T06:01:21+00:00"
+    },
+    {
+      "date": "2026-10-16",
+      "route": "cursor",
+      "duration_s": 1670,
+      "finished_at": "2026-10-16T04:35:17+00:00"
     }
   ],
   "default_duration_s": 2700,
-  "status": "running",
+  "status": "done",
   "date": "2026-10-16",
-  "step": "publiceren",
-  "step_index": 4,
-  "progress": 80,
+  "step": "klaar",
+  "step_index": 5,
+  "progress": 100,
   "started_at": "2026-10-16T04:07:27+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-10-16T04:35:17+00:00",
+  "duration_s": 1670,
+  "error": null,
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-10-16.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
