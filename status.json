@@ -8,7 +8,7 @@
   ],
   "route": "cursor",
   "route_label": "Cursor / Dagkrant-bot",
-  "updated_at": "2026-10-16T04:09:05+00:00",
+  "updated_at": "2026-10-16T04:15:09+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -20,9 +20,9 @@
   "default_duration_s": 2700,
   "status": "running",
   "date": "2026-10-16",
-  "step": "artikelen schrijven",
-  "step_index": 1,
-  "progress": 20,
+  "step": "krant opbouwen",
+  "step_index": 2,
+  "progress": 40,
   "started_at": "2026-10-16T04:07:27+00:00",
   "finished_at": null,
   "error": null
