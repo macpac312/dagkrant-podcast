@@ -8,7 +8,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-17T09:28:51+00:00",
+  "updated_at": "2026-10-17T09:29:15+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -27,15 +27,24 @@
       "route": "cursor",
       "duration_s": 2646,
       "finished_at": "2026-10-17T06:31:07+00:00"
+    },
+    {
+      "date": "2026-10-17",
+      "route": "claude",
+      "duration_s": 979,
+      "finished_at": "2026-10-17T09:29:15+00:00"
     }
   ],
   "default_duration_s": 2700,
-  "status": "running",
+  "status": "done",
   "date": "2026-10-17",
-  "step": "publiceren",
-  "step_index": 4,
-  "progress": 80,
+  "step": "klaar",
+  "step_index": 5,
+  "progress": 100,
   "started_at": "2026-10-17T09:12:56+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-10-17T09:29:15+00:00",
+  "duration_s": 979,
+  "error": null,
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-10-17.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
