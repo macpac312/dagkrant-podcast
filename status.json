@@ -6,9 +6,9 @@
     "podcast inspreken",
     "publiceren"
   ],
-  "route": "cursor",
-  "route_label": "Cursor / Dagkrant-bot",
-  "updated_at": "2026-10-17T06:31:07+00:00",
+  "route": "claude",
+  "route_label": "Claude (geplande taak)",
+  "updated_at": "2026-10-17T09:12:56+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -30,15 +30,12 @@
     }
   ],
   "default_duration_s": 2700,
-  "status": "done",
+  "status": "running",
   "date": "2026-10-17",
-  "step": "klaar",
-  "step_index": 5,
-  "progress": 100,
-  "started_at": "2026-10-17T05:47:01+00:00",
-  "finished_at": "2026-10-17T06:31:07+00:00",
-  "duration_s": 2646,
-  "error": null,
-  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-10-17.html",
-  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
+  "step": "nieuws verzamelen",
+  "step_index": 0,
+  "progress": 0,
+  "started_at": "2026-10-17T09:12:56+00:00",
+  "finished_at": null,
+  "error": null
 }
