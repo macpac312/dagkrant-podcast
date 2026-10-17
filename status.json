@@ -8,7 +8,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-17T09:12:56+00:00",
+  "updated_at": "2026-10-17T09:21:38+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -32,9 +32,9 @@
   "default_duration_s": 2700,
   "status": "running",
   "date": "2026-10-17",
-  "step": "nieuws verzamelen",
-  "step_index": 0,
-  "progress": 0,
+  "step": "artikelen schrijven",
+  "step_index": 1,
+  "progress": 20,
   "started_at": "2026-10-17T09:12:56+00:00",
   "finished_at": null,
   "error": null
