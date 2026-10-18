@@ -1,0 +1,67 @@
+<ul class="bg-bullets">
+<li>Tech-Insider vindt tot een factor dertien prijsverschil per taak tussen Grok 4.7, Claude en DeepSeek.</li>
+<li>Prijs per taak hangt niet alleen af van tarief per token, maar ook van tokenverbruik.</li>
+<li>Goedkope modellen zetten druk op de marges van xAI en Anthropic.</li>
+<li>Voor gebruikers telt de kost per geslaagde taak, niet de lijstprijs.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📏 De kloof in één getal</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:232"/>
+  </svg>
+  <div class="ns-viz-gauge-val">1/13</div>
+  <div class="ns-viz-gauge-label">Goedkoopste taak als fractie van de duurste (maximaal verschil)</div>
+</div></div>
+<h5>Wat er vergeleken is</h5>
+<p>Tech-Insider zette Grok 4.7 van xAI naast Claude van Anthropic en DeepSeek, en vond een prijsverschil per taak dat kan oplopen tot een factor dertien. Welke taken zijn gebruikt en welk model precies het goedkoopst en het duurst uitviel, valt uit de beschikbare samenvatting niet op te maken; deze analyse richt zich daarom op wat zo'n verschil verklaart. Dat DeepSeek doorgaans aan de onderkant van de prijsschaal zit, is sinds de Chinese doorbraak begin 2025 bekend: het bedrijf toonde toen dat sterke modellen voor een fractie van de westerse tarieven konden worden aangeboden. xAI en Anthropic positioneren zich hoger, met de nadruk op prestaties en, in Anthropics geval, op betrouwbaarheid voor zakelijke en programmeertaken.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de prijs per taak ontstaat</div>
+<div class="ns-viz-mech-subtitle">Van tarief per token naar de rekening voor één geslaagde taak</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Tarief</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Denktokens</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Pogingen</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Rekening</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="90" y="50" width="140" height="100" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="85" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Prijslijst</text><line x1="110" y1="105" x2="210" y2="105" stroke="#a78bfa" stroke-width="3"/><line x1="110" y1="125" x2="190" y2="125" stroke="#a78bfa" stroke-width="3"/></svg></div>
+<div class="ns-viz-mech-info"><h6>Tarief</h6><p class="korte">Elk model rekent een prijs per miljoen input- en outputtokens.</p><p class="uitleg">Dit is het getal dat aanbieders publiceren. Outputtokens zijn doorgaans duurder dan inputtokens, en de verschillen tussen aanbieders zijn al fors.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><ellipse cx="160" cy="95" rx="70" ry="50" fill="#7c3aed" opacity=".85"/><g fill="#fff"><circle cx="135" cy="90" r="5"/><circle cx="160" cy="80" r="5"/><circle cx="185" cy="95" r="5"/><circle cx="150" cy="110" r="5"/></g><g fill="#a78bfa"><rect x="240" y="60" width="16" height="16"/><rect x="260" y="80" width="16" height="16"/><rect x="240" y="100" width="16" height="16"/><rect x="260" y="120" width="16" height="16"/></g></svg></div>
+<div class="ns-viz-mech-info"><h6>Denktokens</h6><p class="korte">Redenerende modellen genereren veel tussentokens die ook worden afgerekend.</p><p class="uitleg">Een model met een lager tarief kan duurder uitvallen als het veel langer 'nadenkt'. Tokenverbruik per taak verschilt daarom sterk tussen modellen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><path d="M160 50 A50 50 0 1 1 112 85" stroke="#7c3aed" stroke-width="6" fill="none"/><path d="M100 70 L114 88 L124 66" fill="#7c3aed"/><text x="160" y="106" text-anchor="middle" font-size="20" font-weight="700" fill="#7c3aed">×n</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Pogingen</h6><p class="korte">Mislukte antwoorden moeten opnieuw, en dat kost opnieuw tokens.</p><p class="uitleg">Een goedkoper model dat vaker faalt, verliest zijn prijsvoordeel deels. Daarom is de kost per geslaagde taak de eerlijkste maatstaf.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><path d="M110 40 L210 40 L210 160 L195 150 L180 160 L165 150 L150 160 L135 150 L120 160 L110 150 Z" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="100" text-anchor="middle" font-size="22" font-weight="700" fill="#7c3aed">tot 13×</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Rekening</h6><p class="korte">Tarief maal verbruik maal pogingen geeft de werkelijke prijs per taak.</p><p class="uitleg">Zo ontstaat het verschil tot een factor dertien dat Tech-Insider vond: een optelsom van prijsbeleid en modelgedrag.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom de prijs per taak telt</h5>
+<p>Prijsvergelijkingen tussen taalmodellen gaan vaak mis omdat ze lijstprijzen per token naast elkaar zetten. Wat een gebruiker betaalt, is het product van drie factoren: het tarief, het aantal tokens dat een model voor een taak nodig heeft, en het aantal pogingen tot een bruikbaar antwoord. Redenerende modellen die lang 'nadenken' kunnen per taak duur uitvallen, ook als hun tarief bescheiden is. Daarom is een vergelijking per taak, zoals Tech-Insider maakte, informatiever dan een tarievenlijst, mits ook de kwaliteit van het resultaat wordt meegewogen. Een model dat dertien keer goedkoper is maar vaker faalt of meer nacontrole vergt, is in de praktijk niet dertien keer goedkoper.</p>
+<blockquote>Niet de prijs per token, maar de prijs per geslaagde taak bepaalt wat een AI-model werkelijk kost.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Drie strategieën</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Grok (xAI)</h6>
+    <ul><li>Geïntegreerd in X en abonnementen</li><li>Duwt richting agentisch winkelen en betalen</li><li>Musk: 'Grok betaalt zichzelf terug'</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Claude (Anthropic)</h6>
+    <ul><li>Positionering op zakelijk gebruik en code</li><li>Nadruk op betrouwbaarheid en veiligheid</li><li>Weigerde in Guardian-test hoofddoek te verwijderen</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>DeepSeek</h6>
+    <ul><li>Chinese uitdager met lage prijzen</li><li>Open gewichten voor eerdere modellen</li><li>Zet marges van westerse aanbieders onder druk</li></ul></div>
+</div></div>
+<h5>Gevolgen</h5>
+<p>Voor bedrijven die AI op schaal inzetten, maakt een factor dertien het verschil tussen een rendabele en een verliesgevende toepassing. Dat verklaart waarom veel organisaties meerdere modellen combineren: een goedkoop model voor routinewerk, een duurder voor taken waar fouten kostbaar zijn. Voor xAI is de vergelijking extra relevant nu Musk belooft dat Grok zijn abonnement terugverdient en de assistent gaat winkelen en betalen. Die belofte staat of valt met de kosten per taak én met vertrouwen; de Guardian-test waarin Grok een hoofddoek van een foto verwijderde, terwijl Claude weigerde, laat zien dat prijs niet de enige maatstaf is. Europese gebruikers wegen daarnaast de herkomst van een Chinees model als DeepSeek mee.</p>
+<h5>Conclusie</h5>
+<p>Een prijsverschil van dertien keer is een waarschuwing aan de duurdere aanbieders: hun premie moet zich vertalen in aantoonbaar betere of betrouwbaardere resultaten. Tegelijk is het geen vrijbrief voor de goedkoopste keuze. De markt gaat richting een model-mix, en de winnaars zijn de aanbieders die per geslaagde taak het beste rendement leveren, niet die met de laagste tarieven.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=e18D99ChAIo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/e18D99ChAIo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Grok 4.7 tegen Claude en DeepSeek: dertien keer prijsverschil 2026</div></div></a></div>

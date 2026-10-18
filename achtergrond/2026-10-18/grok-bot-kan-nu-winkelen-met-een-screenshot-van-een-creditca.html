@@ -1,0 +1,70 @@
+<ul class="bg-bullets">
+<li>Volgens Basenor kan Grok Bot aankopen doen op basis van een creditcard-screenshot.</li>
+<li>Kaartgegevens worden zo als beeld door een AI-model gelezen en gebruikt.</li>
+<li>Kaartnetwerken bouwen juist aan getokeniseerde betaalroutes voor AI-agenten.</li>
+<li>Details over beveiliging en beschikbaarheid zijn nog onbekend.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een screenshot-aankoop zou werken</div>
+<div class="ns-viz-mech-subtitle">Van foto van een kaart tot afgeronde bestelling</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Screenshot</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Uitlezen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Afrekenen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Verificatie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="90" y="30" width="140" height="140" rx="14" fill="#e7e5e4" stroke="#a78bfa" stroke-width="2"/><rect x="110" y="70" width="100" height="60" rx="6" fill="#7c3aed"/><rect x="120" y="82" width="18" height="12" rx="2" fill="#fbbf24"/><text x="160" y="115" text-anchor="middle" font-size="9" fill="#fff" font-family="monospace">•••• •••• •••• 1234</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Screenshot</h6><p class="korte">De gebruiker deelt een afbeelding van zijn creditcard met de chatbot.</p><p class="uitleg">In plaats van een betaalformulier of gekoppelde wallet is een gewone afbeelding de bron van de kaartgegevens. Hoe Grok die opslaat, is niet bekendgemaakt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="90" height="56" rx="6" fill="#7c3aed"/><line x1="125" y1="98" x2="175" y2="98" stroke="#7c3aed" stroke-width="2.5"/><circle cx="215" cy="98" r="36" fill="#a78bfa"/><text x="215" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Grok</text><circle class="ns-viz-mech-hotspot" cx="150" cy="98" r="7" data-tip="kaartnummer, vervaldatum, CVC"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Uitlezen</h6><p class="korte">Het model leest nummer, vervaldatum en mogelijk beveiligingscode uit het beeld.</p><p class="uitleg">Daarmee belanden volledige kaartgegevens in de context van een taalmodel. Bij gewone betaalprocessen worden die juist zo snel mogelijk vervangen door een token.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="80" cy="100" r="30" fill="#a78bfa"/><text x="80" y="105" text-anchor="middle" font-size="11" fill="#fff">agent</text><line x1="112" y1="100" x2="190" y2="100" stroke="#7c3aed" stroke-width="2.5"/><rect x="195" y="65" width="90" height="70" rx="8" fill="#7c3aed"/><path d="M215 85 h50 l-8 30 h-34 z" fill="none" stroke="#fff" stroke-width="2"/><text x="240" y="150" text-anchor="middle" font-size="10" fill="#44403c">webwinkel</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Afrekenen</h6><p class="korte">De agent vult de gegevens in bij een webwinkel en plaatst de bestelling.</p><p class="uitleg">Voor de winkel ziet dit eruit als een gewone online kaartbetaling. Dat de koper een AI-agent is, is voor de verkoper niet per se zichtbaar.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="120" y="40" width="80" height="120" rx="12" fill="#e7e5e4" stroke="#7c3aed" stroke-width="2"/><path d="M145 100 l12 12 l22 -26" stroke="#7c3aed" stroke-width="5" fill="none"/><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">bank vraagt bevestiging</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Verificatie</h6><p class="korte">In Europa vraagt de bank vaak nog een bevestiging in de bankapp.</p><p class="uitleg">De PSD2-regels voor sterke klantauthenticatie vereisen voor veel online betalingen twee factoren. Een screenshot alleen is dan niet genoeg; buiten Europa ligt dat anders.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Een korte melding met grote vragen</h5>
+<p>Volgens Basenor kan Grok Bot, de assistent van Elon Musks xAI, nu aankopen doen op basis van een screenshot van een creditcard. Meer dan die ene zin is er op het moment van schrijven niet beschikbaar: geen officiële aankondiging van xAI, geen details over beveiliging, landen of limieten. Dit stuk zet de melding daarom vooral in context. Agentisch betalen, waarbij een AI-assistent zelfstandig afrekent, is sinds 2025 een speerpunt van de hele sector. Mastercard en Visa presenteerden dat jaar eigen programma's voor betalende AI-agenten, OpenAI introduceerde Instant Checkout in ChatGPT en Google lanceerde een protocol voor agent-betalingen. Gemeenschappelijk aan die initiatieven: de agent krijgt nooit het echte kaartnummer, maar een beperkt en intrekbaar token.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Agentisch betalen in vogelvlucht</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">apr 2025</div><div>Mastercard en Visa kondigen betaalprogramma's voor AI-agenten aan</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">sep 2025</div><div>OpenAI start Instant Checkout in ChatGPT; Google presenteert agent-betaalprotocol</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>Basenor: Grok Bot winkelt op basis van een kaart-screenshot</div></div>
+</div></div>
+<h5>Waarom de screenshot-route schuurt</h5>
+<p>Juist daarin wijkt de gemelde Grok-route af. Een screenshot van een creditcard bevat alles wat een fraudeur nodig heeft. De betaalsector heeft twintig jaar gebouwd aan regels om zulke gegevens af te schermen, met de PCI DSS-standaard en tokenisatie als fundament. Een afbeelding die in een chatgeschiedenis belandt, draait dat om. Bovendien zijn taalmodellen vatbaar voor manipulatie via zogeheten promptinjectie: een kwaadwillende webpagina kan proberen een agent iets anders te laten kopen of gegevens te laten lekken. Dat dit geen theoretisch risico is, blijkt elders in deze krant: in een test van zes AI-agenten die treinrestitutie moesten regelen, lekten modellen medische gegevens. In Europa vangt de PSD2-eis van sterke klantauthenticatie een deel van het risico op, omdat de bank vaak alsnog een bevestiging vraagt.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 De veiligheidsdrempels</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2" data-suffix=" factoren">2 factoren</div><div class="ns-viz-stat-label">Vereist onder PSD2 voor sterke klantauthenticatie</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="12">12</div><div class="ns-viz-stat-label">Hoofdeisen in de PCI DSS-standaard</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="13" data-suffix="×">13×</div><div class="ns-viz-stat-label">Prijsverschil per taak Grok 4.7 vs. concurrenten</div></div>
+</div></div>
+<blockquote>Waar de betaalsector agenten alleen tokens toevertrouwt, geeft een screenshot het hele kaartnummer weg.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Agentisch betalen</summary>
+    <div class="ns-viz-concept-body">Een AI-assistent die niet alleen adviseert, maar zelfstandig producten kiest en afrekent namens de gebruiker.</div></details>
+  <details class="ns-viz-concept"><summary>Tokenisatie</summary>
+    <div class="ns-viz-concept-body">Het echte kaartnummer wordt vervangen door een vervangende code die alleen voor een bepaalde winkel, bedrag of periode geldt en kan worden ingetrokken.</div></details>
+  <details class="ns-viz-concept"><summary>PSD2 / sterke klantauthenticatie</summary>
+    <div class="ns-viz-concept-body">Europese betaalregels die voor veel online betalingen twee van drie factoren vereisen: iets wat je weet, hebt of bent.</div></details>
+  <details class="ns-viz-concept"><summary>Promptinjectie</summary>
+    <div class="ns-viz-concept-body">Verborgen instructies in webpagina's of documenten die een AI-agent proberen te laten afwijken van wat de gebruiker wil.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Past de melding van Basenor, dan kiest xAI voor gemak boven de veiligheidsarchitectuur die de rest van de sector zorgvuldig optuigt. Dat sluit aan bij Musks belofte dat Grok zijn abonnement terugverdient: hoe meer de assistent zelf kan, hoe groter de waarde. Maar een betaalfunctie die steunt op een foto van een kaart, verschuift het risico naar de gebruiker. Zolang xAI niet uitlegt hoe gegevens worden beschermd, is voorzichtigheid geboden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=SQYCjU_illc" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/SQYCjU_illc/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Elon Musk schreef op X dat Grok Bot kan winkelen met een</div></div></a></div>

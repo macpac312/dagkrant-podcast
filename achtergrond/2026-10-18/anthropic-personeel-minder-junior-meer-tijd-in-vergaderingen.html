@@ -1,0 +1,101 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?resize=1200,798" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© techcrunch.com</div></div><ul class="bg-bullets">
+<li>Aandeel junioren in technische teams bij Anthropic daalde van 21% naar 14%.</li>
+<li>Bij nieuwe technische aanwervingen zakte het aandeel junioren van 27% naar 9%.</li>
+<li>Vergadertijd per medewerker steeg met 20%: menselijke aandacht wordt de bottleneck.</li>
+<li>Anthropic presenteert zichzelf als voorbode van hoe AI werk elders gaat veranderen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Personeelsmix: begin 2025 tegenover nu</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-0176403f"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-0176403f'),{
+    type:'bar',
+    data:{
+      labels:['Junioren in technische teams','Junioren onder nieuwe technische hires','Technische teams in totaal personeel'],
+      datasets:[
+        {label:'Begin 2025',data:[21,27,61],backgroundColor:'rgba(167,139,250,.6)',borderColor:'#a78bfa',borderWidth:1.5},
+        {label:'Nu',data:[14,9,56],backgroundColor:'rgba(124,58,237,.75)',borderColor:'#7c3aed',borderWidth:1.5}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y+'%';}}}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Een bedrijf als proeftuin</h5>
+<p>Anthropic publiceerde vrijdag een rapport over de eigen organisatie, met de stelling dat zijn werkplektrends een voorbode kunnen zijn van hoe AI werkorganisatie, werving en de vraag naar arbeid in de hele economie verandert. Het bedrijf heeft zijn werkprocessen volgens eigen zeggen grondig rond AI ingericht. De cijfers zijn opvallend. Sinds begin 2025 daalde het aandeel junioren in technische afdelingen van 21% naar 14%, en onder nieuwe technische aanwervingen nog veel sterker: van 27% naar 9%. Technische teams vormen bovendien een kleiner deel van het geheel, 56% tegen 61%. Anthropic schrijft dat toe aan de natuurlijke groei van bedrijfsfuncties en aan codeertools waarmee niet-technische medewerkers zelf software maken. Het is geen onafhankelijk onderzoek, maar zelfrapportage van een bedrijf dat AI verkoopt; dat vraagt om enige voorzichtigheid.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 110" width="220" height="110" aria-label="Aandeel junioren onder technische hires">
+  <g font-size="9" fill="#78716c"><text x="20" y="104">Begin 2025</text><text x="130" y="104">Nu</text></g>
+  <rect x="20" y="16" width="60" height="76" fill="#a78bfa"/>
+  <rect x="120" y="67" width="60" height="25" fill="#7c3aed"/>
+  <g font-size="11" fill="#44403c" text-anchor="middle"><text x="50" y="12">27%</text><text x="150" y="62">9%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Junioren onder nieuwe technische hires, Anthropic.</p>
+</div>
+<h5>Van doen naar managen</h5>
+<p>Het interessantste deel van het rapport gaat niet over aantallen, maar over de aard van het werk. In een enquête van april 2026 zei 27% van de medewerkers productiever te zijn geworden door Claude, en 20% dat hun werk was verschoven 'van het werk zelf doen naar Claudes managen'. Een engineer vergeleek dat met oppassen: elk kind vraagt met dezelfde urgentie om aandacht. Het rapport concludeert dat menselijke aandacht en oordeel de bottleneck worden, omdat Claude een stortvloed aan tekst produceert die gelezen en geordend moet worden. Tegelijk steeg de vergadertijd per medewerker met 20% ten opzichte van een jaar eerder, en met 16% voor technische medewerkers. Anthropic verklaart dat uit het belang van menselijk vertrouwen en verantwoordelijkheid. Meer code per persoon betekent volgens het bedrijf zelf niet per se betere code, al ziet het geen aanwijzingen dat de kwaliteit daalt.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Indicator</th><th style="text-align:right;padding:.3rem .5rem">Waarde</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Productiever door Claude</td><td style="text-align:right">27%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Werk verschoven naar 'Claudes managen'</td><td style="text-align:right">20%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Vergadertijd, alle medewerkers</td><td style="text-align:right">+20%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Vergadertijd, technisch</td><td style="text-align:right">+16%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Enquête april 2026 en agendadata, Anthropic.</p>
+</div>
+<blockquote>Menselijke aandacht en oordeel worden de bottleneck, niet de productie van code of tekst.</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 De nieuwe werkverdeling</div>
+<div class="ns-viz-mech-subtitle">Van zelf uitvoeren naar beoordelen en afstemmen</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Uitbesteden</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Stortvloed</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Beoordelen</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Afstemmen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><circle cx="70" cy="85" r="20" fill="#44403c"/><rect x="50" y="108" width="40" height="46" rx="10" fill="#44403c"/><g fill="#7c3aed"><rect x="170" y="40" width="50" height="34" rx="6"/><rect x="230" y="40" width="50" height="34" rx="6"/><rect x="170" y="90" width="50" height="34" rx="6"/><rect x="230" y="90" width="50" height="34" rx="6"/><rect x="200" y="140" width="50" height="34" rx="6"/></g><path d="M100 110 L160 80 M100 110 L160 110 M100 110 L190 150" stroke="#a78bfa" stroke-width="2"/></svg></div>
+<div class="ns-viz-mech-info"><h6>Uitbesteden</h6><p class="korte">Medewerkers zetten meerdere Claude-instanties tegelijk aan het werk.</p><p class="uitleg">Taken die vroeger bij junioren lagen, zoals routinecode of eerste versies, gaan naar AI. Dat verklaart deels de daling van junioren onder nieuwe technische hires.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><g fill="#fff" stroke="#7c3aed" stroke-width="2"><rect x="60" y="50" width="70" height="90" rx="4"/><rect x="80" y="40" width="70" height="90" rx="4"/><rect x="100" y="30" width="70" height="90" rx="4"/><rect x="170" y="60" width="70" height="90" rx="4"/><rect x="190" y="70" width="70" height="90" rx="4"/></g><g stroke="#a78bfa" stroke-width="3"><line x1="112" y1="50" x2="158" y2="50"/><line x1="112" y1="62" x2="150" y2="62"/><line x1="202" y1="90" x2="248" y2="90"/></g></svg></div>
+<div class="ns-viz-mech-info"><h6>Stortvloed</h6><p class="korte">Claude produceert een stortvloed aan tekst en code.</p><p class="uitleg">Meer code per persoon, meer afgesloten deals per verkoper en meer verwerkte contracten, aldus het rapport. Maar meer output is niet automatisch betere output.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><circle cx="140" cy="95" r="40" fill="none" stroke="#7c3aed" stroke-width="6"/><line x1="170" y1="125" x2="215" y2="170" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/><path d="M122 95 L136 109 L160 82" stroke="#a78bfa" stroke-width="5" fill="none"/></svg></div>
+<div class="ns-viz-mech-info"><h6>Beoordelen</h6><p class="korte">Menselijke aandacht en oordeel worden de bottleneck.</p><p class="uitleg">20% van de medewerkers zegt dat hun werk is verschoven naar het managen van Claudes; een engineer vergelijkt het met oppassen op kinderen die allemaal tegelijk aandacht vragen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><ellipse cx="160" cy="120" rx="90" ry="30" fill="#a78bfa" opacity=".5"/><g fill="#7c3aed"><circle cx="90" cy="80" r="14"/><circle cx="140" cy="68" r="14"/><circle cx="190" cy="68" r="14"/><circle cx="235" cy="80" r="14"/></g><text x="160" y="125" text-anchor="middle" font-size="13" font-weight="700" fill="#44403c">+20% vergadertijd</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Afstemmen</h6><p class="korte">Vergadertijd stijgt 20%: vertrouwen en verantwoordelijkheid vragen menselijk overleg.</p><p class="uitleg">Voor technische medewerkers is de stijging 16%. Coördinatie wordt het werk dat AI niet overneemt.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Wat dit betekent voor de arbeidsmarkt</h5>
+<p>Als Anthropic een voorbode is, dan is de eerste rekening voor starters. Wie geen junioren meer aanneemt, leidt ook geen nieuwe senioren op; de vraag waar de ervaren engineers van 2035 vandaan moeten komen, blijft in het rapport onbeantwoord. Tegelijk wijst het rapport op een verschuiving in vaardigheden: beoordelen, prioriteren en afstemmen worden belangrijker dan zelf uitvoeren. Andere berichten uit deze krant onderstrepen waarom dat oordeel nodig blijft. AI-modellen laten soms negatieve resultaten weg uit hun eigen rapporten, en agenten maken strategische fouten. Voor Nederlandse werkgevers, die met krapte kampen, is de verleiding groot om junioren te vervangen door AI, maar dat ruilt een kortetermijnwinst in voor een structureel opleidingsgat.</p>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">Er is bij Anthropic een eeuwige druk om zo snel mogelijk te gaan en Claude voor alles te gebruiken.</p>
+  <p class="ns-viz-quote-attr">— Medewerker van Anthropic, geciteerd in het rapport (vertaald)</p>
+</div>
+<h5>Conclusie</h5>
+<p>Het rapport is eerlijker dan een marketingbrochure, maar blijft het verhaal van een bedrijf dat belang heeft bij de boodschap dat AI het werk verandert. De nuttigste les zit niet in de productiviteitsclaims, maar in de bijwerkingen: minder instroom en meer vergaderen. AI maakt het werk niet lichter, maar verplaatst het naar beoordelen en coördineren. Organisaties die dat niet inzien, krijgen meer output en minder grip.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=s4SbgacNsuI" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/s4SbgacNsuI/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Veranderingen in het personeelsbestand van Anthropic: minder junioren, meer vergaderingen 📊</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a></div>

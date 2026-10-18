@@ -1,0 +1,16 @@
+{
+  "title": "Claude ontrafelt in een half uur 25 jaar oude NSA-cryptografiepuzzel",
+  "summary": "De onverklaarde seeds achter de NIST-curves voedden decennia vermoedens van een achterdeur.\n\nAnthropics Claude heeft een 25 jaar oude cryptografiepuzzel opgelost. De seeds achter de NIST-standaardcurves voor digitale handtekeningen kwamen zonder uitleg van de NSA, wat jarenlang vermoedens van ingebouwde achterdeuren voedde. Claude achterhaalde in minder dan dertig minuten hoe de seeds waren afgeleid.",
+  "sources": [
+    "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-18",
+  "slug": "claude-ontrafelt-in-een-half-uur-25-jaar-oude-nsa-cryptograf",
+  "tts_slug": "claude-ontrafelt-in-een-half-uur-25-jaar-oude-nsa-cryptograf",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-18T09:30:25",
+  "size_kb": 13
+}

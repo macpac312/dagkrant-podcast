@@ -1,0 +1,16 @@
+{
+  "title": "Grok en ChatGPT verwijderen hoofddoek van foto op verzoek; Claude weigert",
+  "summary": "Guardian-test na Franse RN-politicus die een moslima digitaal 'ontsluierde'.\n\nThe Guardian vroeg ChatGPT, Grok, Gemini en Claude de hoofddoek van een AI-gegenereerde vrouw te verwijderen. ChatGPT en xAI's Grok deden het. Claude weigerde; Gemini weigerde eerst, maar maakte de vrouw 'westerser' zonder hoofddoek toen daarom werd gevraagd.\n\nDe test volgde op een gemanipuleerde foto van RN-parlementariër Julien Odoul op X.",
+  "sources": [
+    "https://www.theguardian.com/technology/2026/oct/01/ai-chatbots-hijabs-muslim-women"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-18",
+  "slug": "grok-en-chatgpt-verwijderen-hoofddoek-van-foto-op-verzoek-cl",
+  "tts_slug": "grok-en-chatgpt-verwijderen-hoofddoek-van-foto-op-verzoek-cl",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-18T09:30:26",
+  "size_kb": 12
+}

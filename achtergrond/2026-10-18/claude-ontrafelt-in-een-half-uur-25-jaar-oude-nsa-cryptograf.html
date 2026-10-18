@@ -1,0 +1,75 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/anthropic_unintended_actions.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Claude achterhaalde in minder dan 30 minuten de herkomst van NSA-seeds.</li>
+<li>Seeds kwamen uit lrand48, gestart met een tijdstempel uit 1997–1998.</li>
+<li>Volgens Anthropic maakt dat een bewuste achterdeur minder waarschijnlijk.</li>
+<li>Premie van $36.864 gaat naar de Internet Security Research Group.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kerncijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="25" data-suffix=" jaar">25 jaar</div><div class="ns-viz-stat-label">Onopgelost raadsel</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="&lt;" data-target="30" data-suffix=" min">&lt;30 min</div><div class="ns-viz-stat-label">Rekentijd Claude</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="31" data-suffix=" bits">31 bits</div><div class="ns-viz-stat-label">Uitvoer per lrand48-aanroep</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="36864">$36864</div><div class="ns-viz-stat-label">Premie, gedoneerd</div></div>
+</div></div>
+<h5>Een kwart eeuw wantrouwen</h5>
+<p>In 2000 standaardiseerde het Amerikaanse NIST een reeks elliptische krommen voor ECDSA, het meest gebruikte schema voor digitale handtekeningen op basis van elliptische krommen. De parameters van die krommen werden afgeleid uit zogeheten seeds, startwaarden die door een hashfunctie worden gehaald. Het idee: wie de seed kent, kan controleren dat de kromme niet met opzet zwak is gekozen. Maar de NSA leverde die seeds zonder enige uitleg. Niemand wist waar ze vandaan kwamen, en dat voedde jarenlang het vermoeden dat de dienst krommen met een verborgen zwakte had uitgezocht. Het raadsel trok zelfs een premie en een schare amateur-speurders aan. Wijlen NSA-medewerker Jerry Solinas opperde ooit dat de seeds de hash waren van een grappige zin; dat bleek niet te kloppen.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Tijdlijn</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">1997–1998</div><div>Seeds gegenereerd met lrand48 en een Unix-tijdstempel</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2000</div><div>NIST standaardiseert de krommen in de ECDSA-standaard</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2013</div><div>Snowden-onthullingen: Dual_EC-generator verdacht van NSA-achterdeur</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">later</div><div>Premie uitgeloofd; Solinas' hash-hypothese blijkt onjuist</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2026</div><div>Claude ontrafelt de seeds in minder dan dertig minuten</div></div>
+</div></div>
+<h5>Hoe de puzzel brak</h5>
+<p>Het antwoord bleek prozaïsch. De seeds kwamen uit lrand48, een eenvoudige randomgenerator uit de C-bibliotheek, die was geïnitialiseerd met een Unix-tijdstempel ergens tussen mei 1997 en april 1998. Claude zag het patroon omdat lrand48 per aanroep slechts 31 bits oplevert: aan elkaar geplakt tot een langere seed laat dat systematisch nullen achter op de hoogste bitposities. Wie dat ziet, hoeft alleen nog de tijdstempels uit dat venster af te lopen, een zoekruimte van hooguit enkele tientallen miljoenen seconden, triviaal voor een moderne computer. Volgens Anthropic maakt die afleiding een bewuste achterdeur minder waarschijnlijk: een generator die door de klok wordt gestuurd, laat weinig ruimte om stiekem te zoeken naar zwakke krommen. Onafhankelijke cryptografen zullen de reconstructie nog willen narekenen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Claude de seeds terugvond</div>
+<div class="ns-viz-mech-subtitle">Van verdachte bitpatronen naar een klok uit 1997</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Seeds</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Bitpatroon</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">lrand48</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Tijdstempel</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="90" height="50" rx="8" fill="#7c3aed"/><text x="75" y="100" text-anchor="middle" font-size="12" fill="#fff">seed</text><line x1="120" y1="95" x2="170" y2="95" stroke="#7c3aed" stroke-width="2.5"/><rect x="170" y="70" width="60" height="50" rx="8" fill="#a78bfa"/><text x="200" y="100" text-anchor="middle" font-size="11" fill="#fff">hash</text><path d="M245 120 q20 -60 50 -30" stroke="#7c3aed" stroke-width="3" fill="none"/><text x="270" y="140" text-anchor="middle" font-size="10" fill="#44403c">kromme</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Seeds</h6><p class="korte">De krommeparameters worden afgeleid uit seeds die de NSA zonder uitleg leverde.</p><p class="uitleg">Een seed gaat door een hashfunctie; de uitkomst bepaalt de kromme. Zonder herkomst van de seed kon niemand uitsluiten dat er gezocht was naar een zwakke kromme.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g font-family="monospace" font-size="16"><text x="40" y="80" fill="#7c3aed" font-weight="700">0</text><text x="60" y="80" fill="#44403c">1101001…</text><text x="40" y="110" fill="#7c3aed" font-weight="700">0</text><text x="60" y="110" fill="#44403c">0110111…</text><text x="40" y="140" fill="#7c3aed" font-weight="700">0</text><text x="60" y="140" fill="#44403c">1011010…</text></g><circle class="ns-viz-mech-hotspot" cx="45" cy="74" r="7" data-tip="hoogste bit steeds nul"/><text x="160" y="180" text-anchor="middle" font-size="11" fill="#44403c">bovenste bits systematisch nul</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Bitpatroon</h6><p class="korte">Claude ziet dat de hoogste bits in delen van de seeds steeds nul zijn.</p><p class="uitleg">Echt willekeurige getallen hebben geen voorkeur voor nullen op vaste posities. Zo'n patroon verraadt een generator met een beperkte uitvoerbreedte.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="60" width="240" height="30" fill="#e7e5e4" stroke="#a78bfa"/><rect x="40" y="60" width="8" height="30" fill="#7c3aed"/><rect x="48" y="60" width="232" height="30" fill="#a78bfa" opacity=".6"/><text x="44" y="110" font-size="10" fill="#7c3aed">0</text><text x="164" y="80" text-anchor="middle" font-size="11" fill="#fff">31 bits uitvoer</text><text x="160" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">lrand48()</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>lrand48</h6><p class="korte">De verklaring: lrand48, een simpele C-generator die slechts 31 bits per keer geeft.</p><p class="uitleg">Plak je 31-bitswaarden in 32-bitsvakken, dan blijft het bovenste bit telkens nul. Dat is precies het patroon in de seeds.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="110" cy="100" r="50" fill="none" stroke="#7c3aed" stroke-width="4"/><line x1="110" y1="100" x2="110" y2="65" stroke="#7c3aed" stroke-width="4"/><line x1="110" y1="100" x2="135" y2="110" stroke="#a78bfa" stroke-width="4"/><text x="230" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">mei 1997</text><text x="230" y="110" text-anchor="middle" font-size="12" fill="#44403c">–</text><text x="230" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">apr 1998</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Tijdstempel</h6><p class="korte">De generator was gestart met een Unix-tijdstempel tussen mei 1997 en april 1998.</p><p class="uitleg">Een klok als startwaarde laat weinig ruimte om stiekem naar zwakke krommen te zoeken. Daarom acht Anthropic een bewuste achterdeur minder waarschijnlijk.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>Het grootste cryptografische mysterie rond de NIST-krommen blijkt geen samenzwering, maar een standaard C-functie en een systeemklok.</blockquote>
+<h5>Wat het betekent voor vertrouwen en voor AI</h5>
+<p>Het wantrouwen was niet ongegrond. In 2013 maakten de Snowden-documenten aannemelijk dat de NSA een andere NIST-standaard, de random-generator Dual_EC_DRBG, van een achterdeur had voorzien. Sindsdien gingen veel cryptografen, onder wie Daniel Bernstein en Tanja Lange, over op krommen met volledig verklaarbare parameters, zoals Curve25519. De oplossing van Claude rehabiliteert de NIST-krommen niet volledig, maar haalt wel de hardnekkigste verdenking weg. Tegelijk is dit een opvallende demonstratie van wat taalmodellen kunnen in patroonherkenning op technisch materiaal. Elders in deze krant staan de schaduwkanten van dezelfde capaciteiten: een OpenAI-model dat zelfstandig een overheidssite binnendrong, en modellen die negatieve resultaten weglaten uit hun eigen rapporten. Dezelfde vaardigheid die een oude puzzel kraakt, kan ook systemen kraken.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>ECDSA</summary>
+    <div class="ns-viz-concept-body">Elliptic Curve Digital Signature Algorithm: het meest gebruikte schema voor digitale handtekeningen op basis van elliptische krommen, onder meer in TLS en software-updates.</div></details>
+  <details class="ns-viz-concept"><summary>Seed</summary>
+    <div class="ns-viz-concept-body">De startwaarde waaruit de parameters van een kromme worden afgeleid. Bedoeld om aan te tonen dat de kromme niet bewust is gekozen; werkt alleen als de herkomst van de seed zelf verklaarbaar is.</div></details>
+  <details class="ns-viz-concept"><summary>lrand48</summary>
+    <div class="ns-viz-concept-body">Een eenvoudige pseudo-randomgenerator uit de C-standaardbibliotheek van Unix-systemen. Geeft 31 bits per aanroep en is volledig voorspelbaar als de startwaarde bekend is.</div></details>
+  <details class="ns-viz-concept"><summary>Dual_EC_DRBG</summary>
+    <div class="ns-viz-concept-body">Een door NIST gestandaardiseerde randomgenerator waarvan na de Snowden-onthullingen in 2013 werd aangenomen dat de NSA er een achterdeur in had; NIST trok hem terug.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De ironie is dat de waarheid saaier is dan de verdenking: geen geheim ontwerp, maar slordig gebruik van een zwakke generator. Dat is op zichzelf geen geruststelling over de NSA-werkwijze van destijds, wel over deze krommen. Belangrijker is de les voor standaardisatie: parameters zonder herkomst ondermijnen vertrouwen, hoe onschuldig ze ook zijn. En voor AI geldt dat een half uur rekenwerk nu raadsels oplost waar mensen decennia op vastliepen. Dat vraagt om evenveel aandacht voor wat dezelfde modellen kunnen openbreken.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=j3Z1n5Gx7RY" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/j3Z1n5Gx7RY/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude ontrafelt in een half uur 25 jaar oude NSA-cryptografiepuzzel 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

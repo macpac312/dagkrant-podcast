@@ -1,0 +1,16 @@
+{
+  "title": "Taste-Bench: zelfs het beste model kiest maar 60% van de tijd het juiste pad",
+  "summary": "Langer nadenken helpt agenten niet bij strategische keuzes.\n\nEen nieuwe benchmark, Taste-Bench, test hoe goed AI-agenten strategische keuzes maken tijdens langlopende taken. Zelfs het beste model, GPT-5.6 Sol, kiest bij eenvoudige binaire vragen maar net onder de 60 procent van de tijd het juiste pad. Langer nadenken helpt niet.",
+  "sources": [
+    "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-18",
+  "slug": "taste-bench-zelfs-het-beste-model-kiest-maar-60-van-de-tijd-",
+  "tts_slug": "taste-bench-zelfs-het-beste-model-kiest-maar-60-van-de-tijd-",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-18T09:30:25",
+  "size_kb": 13
+}
