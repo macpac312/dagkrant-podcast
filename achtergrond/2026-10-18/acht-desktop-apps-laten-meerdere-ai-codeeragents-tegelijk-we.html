@@ -1,0 +1,67 @@
+<ul class="bg-bullets">
+<li>Acht desktop-apps laten meerdere AI-codeeragents tegelijk aan dezelfde codebase werken.</li>
+<li>Ze verschillen in waar agents draaien: lokaal, in een container of in de cloud.</li>
+<li>Bestandsisolatie varieert van aparte git-worktrees tot één gedeelde werkmap.</li>
+<li>Wie de modelrekening betaalt, bepaalt of parallel werken een luxe of routine wordt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De vergelijking in kort bestek</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="8">8</div><div class="ns-viz-stat-label">Desktop-apps vergeleken</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Verschilassen: locatie, bestanden, rekening</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Isolatieniveaus in de praktijk</div></div>
+</div></div>
+<h5>Van één assistent naar een team van agents</h5>
+<p>Een jaar geleden was een AI-codeerassistent vooral een gesprekspartner naast de editor: jij vroeg, het model antwoordde, jij paste toe. Die verhouding is verschoven. Tools als Claude Code, Codex en Cursor, en editors als Zed, laten tegenwoordig meerdere agents tegelijk werken: één herschrijft een testsuite, een tweede migreert een bibliotheek, een derde onderzoekt een bug. Een vergelijking van acht desktop-apps laat zien dat dit er van buiten hetzelfde uitziet, maar van binnen sterk verschilt. De bronnenlijst bij dit stuk bleef leeg, dus de analyse hieronder steunt op het patroon uit de vergelijking en op algemene kennis over hoe deze producten zijn opgebouwd. Waar details per app ontbreken, noem ik die niet.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe parallelle agents elkaar niet in de weg zitten</div>
+<div class="ns-viz-mech-subtitle">Van één gedeelde map naar geïsoleerde werkkopieën die weer samenkomen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Eén repo</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Splitsen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Parallel werken</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Samenvoegen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="110" y="60" width="100" height="80" rx="10" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/><text x="160" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Codebase</text><text x="160" y="116" text-anchor="middle" font-size="11" fill="#44403c">branch main</text><circle class="ns-viz-mech-hotspot" cx="210" cy="60" r="7" data-tip="Eén werkmap: elke agent ziet dezelfde bestanden"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Eén repo</h6><p class="korte">Het uitgangspunt: één projectmap waar alles in staat.</p><p class="uitleg">Zonder isolatie schrijven agents in dezelfde map. Twee agents die hetzelfde bestand aanpassen, overschrijven elkaar of laten halve wijzigingen achter. Sommige apps accepteren dat risico bewust.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="75" width="90" height="50" rx="9" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/><text x="65" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">main</text><path d="M112,90 L205,45" stroke="#7c3aed" stroke-width="2.5" fill="none"/><path d="M112,100 L205,100" stroke="#7c3aed" stroke-width="2.5" fill="none"/><path d="M112,110 L205,155" stroke="#7c3aed" stroke-width="2.5" fill="none"/><rect x="208" y="28" width="95" height="34" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/><text x="255" y="49" text-anchor="middle" font-size="11" fill="#44403c">worktree A</text><rect x="208" y="83" width="95" height="34" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/><text x="255" y="104" text-anchor="middle" font-size="11" fill="#44403c">worktree B</text><rect x="208" y="138" width="95" height="34" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/><text x="255" y="159" text-anchor="middle" font-size="11" fill="#44403c">container C</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Splitsen</h6><p class="korte">Elke agent krijgt een eigen kopie van de code.</p><p class="uitleg">Dat kan lokaal als git-worktree met een eigen branch, of in een container of cloud-sandbox. De laatste optie isoleert ook processen en machtigingen, niet alleen bestanden.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="30" width="85" height="140" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><rect x="118" y="30" width="85" height="140" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><rect x="216" y="30" width="85" height="140" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><text x="62" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Agent 1</text><text x="160" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Agent 2</text><text x="258" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Agent 3</text><circle class="ns-viz-mech-hotspot" cx="160" cy="110" r="7" data-tip="Elke agent verbruikt tokens: de modelrekening loopt parallel op"/><text x="160" y="150" text-anchor="middle" font-size="11" fill="#44403c">tokens</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Parallel werken</h6><p class="korte">Agents werken gelijktijdig, elk op een eigen taak.</p><p class="uitleg">Hier speelt de kostenvraag. Drie agents betekenen grofweg drie keer het tokenverbruik. Apps verschillen in wie dat betaalt: een abonnement van de gebruiker, eigen API-sleutels of de app-aanbieder.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="30" width="90" height="34" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/><text x="65" y="51" text-anchor="middle" font-size="11" fill="#44403c">branch A</text><rect x="20" y="83" width="90" height="34" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/><text x="65" y="104" text-anchor="middle" font-size="11" fill="#44403c">branch B</text><rect x="20" y="136" width="90" height="34" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/><text x="65" y="157" text-anchor="middle" font-size="11" fill="#44403c">branch C</text><path d="M112,47 L205,95" stroke="#7c3aed" stroke-width="2.5" fill="none"/><path d="M112,100 L205,100" stroke="#7c3aed" stroke-width="2.5" fill="none"/><path d="M112,153 L205,105" stroke="#7c3aed" stroke-width="2.5" fill="none"/><rect x="208" y="70" width="95" height="60" rx="10" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/><text x="255" y="97" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Review</text><text x="255" y="114" text-anchor="middle" font-size="11" fill="#44403c">door een mens</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Samenvoegen</h6><p class="korte">Een mens beoordeelt de resultaten en voegt ze samen.</p><p class="uitleg">Isolatie verplaatst het probleem naar het eind: conflicten verschijnen bij het mergen. Dat is beter dan stille overschrijving, maar de review wordt de nieuwe bottleneck.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Isolatie is een spectrum, geen vinkje</h5>
+<p>Het meest opvallende resultaat is dat "meerdere agents" niets zegt over veiligheid. Aan de ene kant staan apps die elke agent in een eigen git-worktree zetten: lichtgewicht, snel, en conflicten blijven beperkt tot de merge. Aan de andere kant staan omgevingen waar agents in een container of cloud-sandbox draaien, met eigen processen, netwerkregels en rechten. Daartussen zit de pragmatische middenweg: agents delen de lokale map en vertrouwen op de gebruiker of op slimme vergrendeling. Dat laatste werkt prima bij twee agents op gescheiden taken en wordt kwetsbaar bij vijf agents die allemaal het configuratiebestand willen aanpassen.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Drie isolatiemodellen</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Gedeelde map</h6><ul><li>Geen extra opzet nodig</li><li>Agents kunnen elkaar overschrijven</li><li>Past bij kleine, gescheiden taken</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Git-worktree</h6><ul><li>Eigen branch per agent</li><li>Draait lokaal, snel</li><li>Conflicten pas bij merge</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Container of cloud</h6><ul><li>Isoleert ook processen en rechten</li><li>Zwaarder en vaak duurder</li><li>Veiliger voor lange, autonome runs</li></ul></div>
+</div></div>
+<blockquote>Isolatie verhindert geen fouten van een agent; ze bepaalt alleen hoe ver die fout zich kan verspreiden.</blockquote>
+<h5>Wie betaalt, bepaalt het gedrag</h5>
+<p>De derde as, de modelrekening, is minder technisch maar wellicht de belangrijkste. Wie met een vast abonnement werkt, gedraagt zich anders dan iemand die per token afrekent: de eerste start gemakkelijk drie agents, de tweede kijkt naar de teller. Dat sluit aan bij eerdere discussies in deze krant over gebruikslimieten bij AI-codeertools, waar een ruimere limiet in de praktijk kon uitpakken als een strakkere. Voor organisaties, ook banken en andere gereguleerde partijen, komt daar governance bij. Een agent met schrijfrechten in een gedeelde map is lastiger te auditen dan een agent in een sandbox met een afgebakende branch en een logboek. Wie modelrisico of change management beheert, zal dus eerst vragen waar de agent draait en wat hij mag aanraken, en pas daarna welk model eronder zit.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Begrippen</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Git-worktree</summary><div class="ns-viz-concept-body">Een extra uitgecheckte werkmap van dezelfde repository, met een eigen branch. Meerdere agents kunnen zo tegelijk werken zonder elkaars bestanden aan te raken.</div></details>
+  <details class="ns-viz-concept"><summary>Sandbox</summary><div class="ns-viz-concept-body">Een afgeschermde omgeving, zoals een container of virtuele machine, waarin de agent alleen de toegestane bestanden, commando's en netwerkverbindingen heeft.</div></details>
+  <details class="ns-viz-concept"><summary>Bring your own key</summary><div class="ns-viz-concept-body">De gebruiker koppelt een eigen API-sleutel of abonnement aan de app, zodat de modelkosten bij hem of haar liggen en niet bij de app-aanbieder.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De markt concurreert nog op het aantal agents dat tegelijk kan draaien, maar de vraag die ertoe doet is wat er misgaat als ze dat doen. Worktrees zijn voor de meeste ontwikkelaars de verstandige standaard, sandboxes voor autonome runs met grotere rechten, en een gedeelde map is alleen verdedigbaar bij kleine, gescheiden taken. Kies dus eerst op isolatie en kostenmodel, en pas daarna op het model. Wie dat andersom doet, ontdekt de verschillen bij de eerste merge-conflicten of de eerste verrassende rekening.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=_tz248EhzqY" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/_tz248EhzqY/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Acht desktop-apps laten meerdere AI-codeeragents tegelijk werken; isolatie verschilt sterk 2026</div></div></a></div>

@@ -1,0 +1,96 @@
+<ul class="bg-bullets">
+<li>Claude Code desktop opent parallelle taken nu als geneste sessies in plaats van losse vensters.</li>
+<li>Opgeslagen omgevingen maken een werkplek reproduceerbaar en delen een agent-opzet tussen taken.</li>
+<li>macOS en Windows zijn volledig ondersteund, Linux blijft in bèta: de volgorde van prioriteiten is zichtbaar.</li>
+<li>De strijd met OpenAI's Codex verschuift van modelkwaliteit naar de orkestratie eromheen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van terminal naar orkestratielaag</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">17 juni</div><div>Claude Code 2.1.181 draait op een Rust-port van Bun</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">14 augustus</div><div>Auto mode wordt standaard voor Pro-, Max- en Teamgebruikers</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">14 oktober</div><div>Desktopapp krijgt geneste sessies en opgeslagen omgevingen</div></div>
+</div></div>
+<h5>Van chatvenster naar werkbank</h5>
+<p>Met de update van 14 oktober laat Anthropic zien waar Claude Code naartoe beweegt. Wie in de desktopapp een parallelle taak start, krijgt die niet langer als losstaand gesprek, maar als geneste sessie onder de bovenliggende opdracht. Daarnaast zijn omgevingen op te slaan: de combinatie van map, instellingen en rechten die een ontwikkelaar voor een project inricht, hoeft niet telkens opnieuw te worden opgebouwd. Dat klinkt als een gebruiksgemak, maar het is een architectuurkeuze. Een agent die werk uitbesteedt aan sub-sessies heeft een hiërarchie nodig, en een hiërarchie vraagt om een plek waar je haar kunt overzien. De terminal was daarvoor nooit gebouwd. Bij deze analyse waren geen brontekst of release notes beschikbaar. De details van de update komen dus uit Anthropics aankondiging in samenvatting, aangevuld met eerdere ontwikkelingen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe geneste sessies werken</div>
+<div class="ns-viz-mech-subtitle">Van één opdracht naar meerdere gecontroleerde deeltaken</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Omgeving</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Hoofdsessie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Splitsing</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Terugkoppeling</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="70" y="40" width="180" height="120" rx="12" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Opgeslagen omgeving</text>
+      <text x="160" y="104" text-anchor="middle" font-size="11" fill="#44403c">projectmap</text>
+      <text x="160" y="122" text-anchor="middle" font-size="11" fill="#44403c">instellingen en rechten</text>
+      <circle class="ns-viz-mech-hotspot" cx="232" cy="58" r="7" data-tip="Eenmalig inrichten, daarna hergebruiken"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Omgeving</h6><p class="korte">De ontwikkelaar legt map, instellingen en rechten eenmalig vast.</p><p class="uitleg">Een opgeslagen omgeving bundelt wat een project nodig heeft om reproduceerbaar te starten. Dat voorkomt dat elke nieuwe taak met een lege configuratie begint.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="90" y="60" width="140" height="70" rx="10" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Hoofdsessie</text>
+      <text x="160" y="110" text-anchor="middle" font-size="11" fill="#44403c">opdracht van de gebruiker</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Hoofdsessie</h6><p class="korte">Eén sessie ontvangt de opdracht en bewaakt het geheel.</p><p class="uitleg">De bovenliggende sessie houdt de context van het doel vast. Dat maakt het mogelijk om deeltaken te delegeren zonder dat de gebruiker het overzicht verliest.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="110" y="20" width="100" height="40" rx="8" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="45" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Hoofdsessie</text>
+      <line x1="140" y1="60" x2="80" y2="120" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="160" y1="60" x2="160" y2="120" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="180" y1="60" x2="240" y2="120" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="35" y="120" width="90" height="40" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/>
+      <rect x="115" y="120" width="90" height="40" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/>
+      <rect x="195" y="120" width="90" height="40" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/>
+      <text x="80" y="145" text-anchor="middle" font-size="10" fill="#44403c">Taak A</text>
+      <text x="160" y="145" text-anchor="middle" font-size="10" fill="#44403c">Taak B</text>
+      <text x="240" y="145" text-anchor="middle" font-size="10" fill="#44403c">Taak C</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Splitsing</h6><p class="korte">Parallelle taken openen als geneste sessies onder de hoofdsessie.</p><p class="uitleg">Elke deeltaak krijgt een eigen sessie binnen dezelfde boom. Zo lopen bijvoorbeeld onderzoek, testen en refactoring naast elkaar, zonder dat de gesprekken door elkaar raken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="90" y="30" width="140" height="50" rx="10" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Review door mens</text>
+      <rect x="90" y="120" width="140" height="44" rx="10" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="1.8"/>
+      <text x="160" y="147" text-anchor="middle" font-size="11" fill="#44403c">resultaten samengevoegd</text>
+      <line x1="160" y1="120" x2="160" y2="82" stroke="#7c3aed" stroke-width="2.5"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Terugkoppeling</h6><p class="korte">Resultaten stromen terug naar de hoofdsessie voor beoordeling.</p><p class="uitleg">De mens blijft de laatste controle. Juist bij meer parallelle agents wordt de vraag belangrijker wie het eindresultaat beoordeelt en op welk moment.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom Linux achterblijft</h5>
+<p>Opvallender dan de nieuwe functies is wat ontbreekt. Linux blijft in bèta, terwijl macOS en Windows volledig worden ondersteund. Dat past bij een patroon in de sector: de desktopmarkt voor ontwikkelaars is groot, maar de Linux-populatie is verdeeld over distributies, venstersystemen en pakketformaten, wat de testlast verhoogt. Er is ook een ironie. Claude Code is in de kern een terminalprogramma, en daar is Linux van oudsher thuis. Wie op Linux werkt, heeft de CLI nog altijd tot zijn beschikking. Voor die groep is de bèta dus een gemis aan gemak, geen blokkade. Dat verklaart waarom Anthropic zich de prioritering kan veroorloven.</p>
+<p>Tegelijk is de timing veelzeggend. Eerder dit jaar kregen Claude Code-sessies de mogelijkheid elkaar berichten te sturen, lokaal of via Anthropics servers. Geneste sessies zijn de zichtbare, bestuurbare vorm van diezelfde gedachte. Een analist wees destijds al op het governance-aspect: agent-tot-agentverkeer vraagt om een eigen categorie van toezicht. Ook de auto mode hoort in dit rijtje. Die keurt acties goed zonder tussenkomst van een mens en blokkeerde in tests 89 procent van de gevaarlijke commando's. Dat betekent ook dat 11 procent niet werd tegengehouden, een cijfer dat zwaarder weegt zodra meerdere sessies tegelijk draaien.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Schaal en veiligheid</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4" data-suffix=" mln">4 mln</div><div class="ns-viz-stat-label">Wekelijkse Codex-gebruikers (OpenAI)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="89" data-suffix="%">89%</div><div class="ns-viz-stat-label">Gevaarlijke commando's geblokkeerd door auto mode in tests</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Van drie platforms volledig ondersteund</div></div>
+</div></div>
+<blockquote>Wie meer agents tegelijk laat werken, verlegt het knelpunt van schrijven naar beoordelen.</blockquote>
+<h5>Concurrentie en toezicht</h5>
+<p>OpenAI rolde Codex onlangs uit in de ChatGPT-app op iOS en Android, als antwoord op Anthropics Dispatch, en meldt vier miljoen wekelijkse gebruikers. Beide partijen concurreren nu minder op de vraag wie de beste code schrijft en meer op wie de beste werkomgeving biedt: sessies, geheugen, rechten en overzicht. Voor Nederlandse en Europese organisaties, ook gereguleerde zoals banken, ligt de vraag elders. Een boom van parallelle sessies vermenigvuldigt de punten waarop een agent bestanden leest of commando's uitvoert. Opgeslagen omgevingen kunnen daarbij helpen, want een vastgelegde configuratie is controleerbaar en herhaalbaar. Ze kunnen ook een slechte instelling snel verspreiden. De waarde hangt dus af van wie de omgeving beheert.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VOOR</h6><p>Parallelle taken zijn losse sessies. De ontwikkelaar richt elke omgeving opnieuw in en houdt zelf het overzicht.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>NA</h6><p>Taken staan genest onder een hoofdsessie en omgevingen zijn opgeslagen. Het toezicht verschuift naar één plek.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Deze update maakt van Claude Code geen slimmere programmeur, wel een beter bestuurbare. Dat is de juiste investering, want de beperking zit niet meer in het genereren van code maar in het overzien ervan. Linux in bèta laat zien dat Anthropic kiest voor de grootste gebruikersgroepen, niet voor de meest trouwe. De echte toets komt wanneer organisaties opgeslagen omgevingen als beleidsinstrument gaan gebruiken. Dan wordt een handige functie een governance-vraag.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=5LCjeni0Z-U" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/5LCjeni0Z-U/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Code desktop krijgt geneste sessies en opgeslagen omgevingen; Linux nog in bèta 2026</div></div></a></div>
