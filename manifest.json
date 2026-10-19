@@ -1,0 +1,19 @@
+{
+  "name": "De Dagkrant",
+  "short_name": "Dagkrant",
+  "description": "Persoonlijke ochtendkrant (telefoon)",
+  "start_url": "laatste.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#1c1917",
+  "lang": "nl",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
