@@ -1,0 +1,71 @@
+<ul class="bg-bullets">
+<li>xAI laat Grok per vraag kiezen uit vier modellen in plaats van één groot model.</li>
+<li>Een router stuurt eenvoudige vragen naar lichte modellen en zware naar redeneermodellen.</li>
+<li>Het drukt rekenkosten, precies nu SpaceX over gaten in hardware spreekt.</li>
+<li>Musk volgt daarmee de route die OpenAI met GPT-5 al insloeg.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van één model naar een router</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">nov 2023</div><div>xAI lanceert Grok voor betalende gebruikers van X</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">mrt 2024</div><div>Gewichten van Grok-1 (314 miljard parameters) vrijgegeven</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">feb 2025</div><div>Grok 3, getraind op het Colossus-cluster in Memphis</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">aug 2025</div><div>OpenAI introduceert router in GPT-5</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>Grok kiest per vraag uit vier modellen</div></div>
+</div></div>
+<h5>Het einde van 'groter is beter'</h5>
+<p>xAI stapt voor Grok over op een router die per vraag kiest uit vier verschillende modellen, meldt Tech Insider. Welke vier modellen het precies zijn en hoe de verdeling werkt, staat niet in het bericht. Symbolisch is de stap groot. Musk was lang een van de luidste verkondigers van de schaalgedachte: meer rekenkracht, meer data, meer parameters, beter model. Het Colossus-datacenter in Memphis, met zijn honderdduizenden GPU's, was daarvan het monument. Toen xAI in 2024 de gewichten van Grok-1 vrijgaf, ging het om een model van 314 miljard parameters; latere versies werden nog groter. Een router betekent niet dat grote modellen verdwijnen, maar wel dat ze niet meer elke vraag beantwoorden. Het grootste model wordt een specialist voor de lastigste taken, in plaats van het standaardantwoord op alles.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een modelrouter werkt</div>
+<div class="ns-viz-mech-subtitle">Van binnenkomende vraag naar het goedkoopste passende model</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Vraag</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Inschatten</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Doorsturen</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Antwoord</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="60" y="60" width="200" height="70" rx="18" fill="#a78bfa" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/><path d="M100 130 L90 160 L130 130 Z" fill="#a78bfa" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/><text x="160" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">"Vat dit artikel samen"</text><text x="160" y="112" text-anchor="middle" font-size="11" fill="#44403c">of: "bewijs deze stelling"</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Vraag</h6><p class="korte">Een gebruiker stelt een vraag aan Grok, eenvoudig of complex.</p><p class="uitleg">Vragen verschillen enorm in moeilijkheid. Een groet of korte samenvatting vraagt een fractie van de rekenkracht die een wiskundig bewijs of lange codeertaak nodig heeft.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><polygon points="160,30 250,100 160,170 70,100" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="160" y="96" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Router</text><text x="160" y="114" text-anchor="middle" font-size="11" fill="#44403c">hoe moeilijk?</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Inschatten</h6><p class="korte">Een klein, snel model schat in welk type en welke zwaarte de vraag heeft.</p><p class="uitleg">De router zelf moet goedkoop zijn, anders vreet hij de besparing op. Bij GPT-5 kwam vorig jaar kritiek dat de router te vaak het lichte model koos.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="100" r="18" fill="#7c3aed"/><line x1="68" y1="100" x2="200" y2="30" stroke="#a78bfa" stroke-width="2"/><line x1="68" y1="100" x2="200" y2="77" stroke="#7c3aed" stroke-width="4"/><line x1="68" y1="100" x2="200" y2="123" stroke="#a78bfa" stroke-width="2"/><line x1="68" y1="100" x2="200" y2="170" stroke="#a78bfa" stroke-width="2"/><rect x="200" y="18" width="90" height="24" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/><rect x="200" y="65" width="90" height="24" rx="6" fill="#7c3aed" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><rect x="200" y="111" width="90" height="24" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/><rect x="200" y="158" width="90" height="24" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/><text x="245" y="34" text-anchor="middle" font-size="10" fill="#44403c">model 1</text><text x="245" y="81" text-anchor="middle" font-size="10" fill="#4c1d95">model 2</text><text x="245" y="127" text-anchor="middle" font-size="10" fill="#44403c">model 3</text><text x="245" y="174" text-anchor="middle" font-size="10" fill="#44403c">model 4</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Doorsturen</h6><p class="korte">De vraag gaat naar één van de vier modellen.</p><p class="uitleg">Welke vier modellen xAI gebruikt, is niet bekendgemaakt. Logisch is een spreiding van licht en snel tot zwaar redeneren, eventueel met een gespecialiseerd model voor code of beeld.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="60" y="60" width="200" height="70" rx="18" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/><path d="M220 130 L230 160 L190 130 Z" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/><text x="160" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Antwoord</text><text x="160" y="112" text-anchor="middle" font-size="11" fill="#44403c">gebruiker ziet één 'Grok'</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Antwoord</h6><p class="korte">De gebruiker krijgt één antwoord en merkt de keuze meestal niet.</p><p class="uitleg">Voor de aanbieder telt de gemiddelde kostprijs per vraag. Gaan de meeste vragen naar lichte modellen, dan dalen de kosten flink zonder dat de topprestatie verdwijnt.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Economie, niet ideologie</h5>
+<p>De verschuiving is vooral economisch te begrijpen. Het trainen van frontiermodellen is duur, maar het draaien ervan voor miljoenen gebruikers is op termijn de grootste kostenpost. OpenAI zette met GPT-5 in augustus 2025 dezelfde stap: een router die tussen een snel model en een redeneermodel kiest. Die lancering liet ook de keerzijde zien, toen gebruikers klaagden dat ze zonder het te weten een zwakkere variant kregen. Voor xAI komt de keuze op een gevoelig moment. Starlink laat dagelijks 20.000 klantgesprekken door Grok afhandelen, een volume waarbij elke besparing per gesprek telt. Tegelijk spreekt SpaceX-president Gwynne Shotwell over tekorten aan hardware en schuift personeel tussen SpaceX en xAI. Een router is ook een manier om met schaarse rekenkracht meer te doen.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Grok in getallen</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Modellen achter één Grok-interface</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="314">314</div><div class="ns-viz-stat-label">Miljard parameters in Grok-1 (2024)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="20000">20000</div><div class="ns-viz-stat-label">Starlink-gesprekken per dag via Grok</div></div>
+</div></div>
+<h5>Wat het betekent voor de concurrentie</h5>
+<p>Dat Musk het idee loslaat dat één steeds groter model alles moet doen, bevestigt een bredere trend. Ook de Wereldbank pleitte deze week voor kleine, gespecialiseerde modellen, en Chinese labs halen met compacte open modellen hoge scores. De race verschuift van wie het grootste model heeft naar wie de slimste samenstelling heeft. Voor gebruikers brengt dat een nieuw transparantieprobleem: wie weet nog welk model een antwoord gaf? Voor zakelijke klanten en toezichthouders, onder meer onder de Europese AI-verordening, wordt die vraag relevanter naarmate systemen uit meerdere onderdelen bestaan.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Parameters</summary>
+    <div class="ns-viz-concept-body">De instelbare getallen in een neuraal netwerk. Meer parameters gaf lang betere prestaties, maar maakt elk antwoord ook duurder om te berekenen.</div></details>
+  <details class="ns-viz-concept"><summary>Router</summary>
+    <div class="ns-viz-concept-body">Een voorschakel-systeem dat per vraag bepaalt welk model het antwoord geeft. Het ziet er voor de gebruiker uit als één assistent.</div></details>
+  <details class="ns-viz-concept"><summary>Mixture-of-experts</summary>
+    <div class="ns-viz-concept-body">Een verwante techniek binnen één model: per woord wordt maar een deel van het netwerk geactiveerd. Een router werkt een niveau hoger, tussen complete modellen.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De overstap naar een router is een stille erkenning dat de schaalwedloop zijn grenzen heeft bereikt, niet technisch maar economisch. Voor xAI is het verstandig: het bedrijf heeft volume nodig bij Starlink en X, en hardware is schaars. Maar het maakt Grok ook minder eenduidig. Wie straks zegt dat Grok iets goed of fout deed, bedoelt een van vier modellen, gekozen door een vijfde. Transparantie over die keuze wordt de volgende strijd.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=hAiLQyjs1RY" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/hAiLQyjs1RY/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Musk vervangt Grok-parameters door een router over vier modellen 2026</div></div></a></div>

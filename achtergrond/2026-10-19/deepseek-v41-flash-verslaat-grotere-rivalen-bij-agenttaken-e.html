@@ -1,0 +1,133 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/06/deepseek_red_whale.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Deepseek's V4.1-Flash-1017 scoort 77,0 procent op DeepSWE voor minder dan $0,20 per taak.</li>
+<li>Kortere antwoorden en training met zelf-feedback (RLSF) drukken de kosten.</li>
+<li>Grotere rivalen kosten in dezelfde grafiek $2 tot ruim $10 per taak.</li>
+<li>Onafhankelijke benchmarks ontbreken nog; de cijfers komen van Deepseek zelf.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📏 DeepSWE-score</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:58"/>
+  </svg>
+  <div class="ns-viz-gauge-val">77,0%</div>
+  <div class="ns-viz-gauge-label">V4.1-Flash-1017 op DeepSWE (eigen meting Deepseek)</div>
+</div></div>
+<h5>Het Chinese antwoord op de kostenvraag</h5>
+<p>Sinds Deepseek begin 2025 de AI-wereld opschudde met een model dat voor een fractie van de Amerikaanse kosten zou zijn getraind, is goedkoop presteren het handelsmerk van het Chinese bedrijf. Met Deepseek-V4.1-Flash-1017 zet het die lijn voort. Het model is beschikbaar via website, app en API, en de gewichten staan als open source op Hugging Face en ModelScope. Volgens The Decoder scoort het beter dan de directe voorganger, rondt het taken sneller af en geeft het kortere antwoorden; Deepseek spreekt van een Pareto-verbetering, waarbij prestaties stijgen zonder dat de kosten toenemen. In de eigen benchmarks verslaat het kleinere Flash-model ook grotere concurrenten zoals Claude Opus 5, GPT 5.6-Sol, Kimi K3 en GLM 5.3 in verschillende categorieën voor programmeren en AI-agenten. Daarnaast stelt Deepseek zijn interne zoekmachine open via nieuwe Search- en Fetch-API's, voor $0,75 per 1000 calls.</p>
+<div class="ns-viz"><div class="ns-viz-title">📈 Kosten per DeepSWE-taak</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-fb41a689"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-fb41a689'),{
+    type:'bar',
+    data:{
+      labels:['1017 (laag)','1017 (top)','Voorganger V4.1-Flash'],
+      datasets:[{
+        label:'Kosten per taak (USD, circa)',data:[0.10,0.20,0.50],
+        backgroundColor:['rgba(167,139,250,.7)','rgba(124,58,237,.85)','rgba(120,113,108,.6)'],
+        borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{afterLabel:function(c){return ['score ~72%','score 77,0%','score 74,2%'][c.dataIndex];}}}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return '$'+v;}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Waarom korter goedkoper is</h5>
+<p>De kostengrafiek voor DeepSWE laat zien waar de winst zit. V4.1-Flash-1017 haalt een topscore van 77,0 procent voor gemiddeld net geen $0,20 per taak; in de lage instelling haalt het nog altijd 72 procent voor ongeveer $0,10. De voorganger kwam op 74,2 procent voor zo'n $0,50 per run. Rivaliserende modellen als GPT-6 Astra, Gemini 3.8 Flash en Claude Opus 5 belanden in dezelfde grafiek tussen $2 en ruim $10 per taak, zonder de nauwkeurigheid van het kleine Deepseek-model te evenaren. Bij agenttaken telt elke uitgevoerde stap mee; een model dat beknopter redeneert en minder tokens produceert, wordt per taak dus fors goedkoper. Daarachter zit een trainingskeuze: reinforcement learning met zelf-feedback, waarmee het model complete softwareprojecten leert bouwen zonder menselijke beoordelaars.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:.3rem .5rem">Model (DeepSWE)</th>
+    <th style="text-align:right;padding:.3rem .5rem">Score</th>
+    <th style="text-align:right;padding:.3rem .5rem">$/taak</th>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">V4.1-Flash-1017 top</td><td style="text-align:right">77,0%</td><td style="text-align:right">&lt;0,20</td></tr>
+    <tr><td style="padding:.25rem .5rem">V4.1-Flash-1017 laag</td><td style="text-align:right">72%</td><td style="text-align:right">~0,10</td></tr>
+    <tr><td style="padding:.25rem .5rem">V4.1-Flash (voorganger)</td><td style="text-align:right">74,2%</td><td style="text-align:right">~0,50</td></tr>
+    <tr><td style="padding:.25rem .5rem">Grote rivalen</td><td style="text-align:right">lager</td><td style="text-align:right">2 tot &gt;10</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Cijfers uit Deepseek's eigen kostengrafiek (The Decoder).</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe RLSF werkt</div>
+<div class="ns-viz-mech-subtitle">Van eigen poging naar eigen beloning, zonder menselijke beoordelaar</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Opdracht</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Poging</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Zelfkritiek</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Bijsturen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="70" y="40" width="180" height="110" rx="8" fill="#7c3aed" fill-opacity=".1" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="70" text-anchor="middle" font-size="12" fill="#7c3aed" font-weight="700">Bouw een compleet project</text>
+      <text x="160" y="95" text-anchor="middle" font-size="11" fill="#44403c">game · 3D-model · ontwerp</text>
+      <text x="160" y="120" text-anchor="middle" font-size="11" fill="#44403c">vanaf nul</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Opdracht</h6>
+      <p class="korte">Het model krijgt de taak een volledig softwareproject vanaf nul te bouwen.</p>
+      <p class="uitleg">Deepseek gebruikt de methode voor end-to-end projectontwikkeling, van gameprogrammering tot 3D-modellering en ontwerpwerk. Het model kan ook korte uitlegvideo's animeren.</p>
+      <a class="ns-viz-mech-bron" href="https://the-decoder.com" target="_blank">📖 The Decoder ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="30" width="220" height="130" rx="8" fill="#1c1917" fill-opacity=".85"/>
+      <g font-family="monospace" font-size="11" fill="#a78bfa"><text x="65" y="60">function render() {</text><text x="80" y="82">drawScene();</text><text x="80" y="104">update(state);</text><text x="65" y="126">}</text></g>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Poging</h6><p class="korte">Het model schrijft code en levert een eerste versie op.</p><p class="uitleg">Bij agenttaken zijn dat vele stappen achter elkaar. De update is getraind om die beknopter uit te voeren, wat het aantal tokens en daarmee de kosten per taak verlaagt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="120" cy="100" r="40" fill="#7c3aed" fill-opacity=".85"/><text x="120" y="105" text-anchor="middle" font-size="12" fill="#fff">model</text>
+      <path d="M160 80 q50 -40 80 0 q-20 30 -80 20" fill="#a78bfa" fill-opacity=".3" stroke="#a78bfa"/>
+      <text x="215" y="85" text-anchor="middle" font-size="11" fill="#7c3aed">zeker? 0,8</text>
+      <text x="160" y="170" text-anchor="middle" font-size="12" fill="#44403c">eigen vertrouwen als beloning</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Zelfkritiek</h6><p class="korte">Het model beoordeelt zijn eigen werk met interne vertrouwensscores of zelfkritiek.</p><p class="uitleg">Bij reinforcement learning met zelf-feedback (RLSF) dienen die eigen scores als beloningssignaal. Menselijke beoordelaars of aparte beloningsmodellen zijn daardoor niet nodig.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M160 40 a60 60 0 1 1 -60 60" fill="none" stroke="#7c3aed" stroke-width="5"/><path d="M92 90 l8 14 l10 -14 z" fill="#7c3aed"/>
+      <text x="160" y="105" text-anchor="middle" font-size="12" fill="#7c3aed" font-weight="700">beter + korter</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Bijsturen</h6><p class="korte">Het model past zijn gedrag aan op basis van zijn eigen beloning.</p><p class="uitleg">Herhaald over vele taken levert dat volgens Deepseek betere scores, snellere afronding en kortere output op. Of zelfbeoordeling ook leidt tot goede code in de praktijk, moeten onafhankelijke tests nog uitwijzen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>Onafhankelijke benchmarks zijn er nog niet, en benchmarks vertellen hoe dan ook maar de helft van het verhaal.</blockquote>
+<h5>Benchmarks, prijzen en geopolitiek</h5>
+<p>De kanttekening is wezenlijk: alle cijfers komen van Deepseek zelf, en ontwikkelaars oordelen over codekwaliteit vaak heel anders dan benchmarks doen. Toch is de richting moeilijk te negeren. Als een open-weight model taken uitvoert voor een tiende of minder van de prijs van Amerikaanse topmodellen, verschuift de concurrentie van 'wie is het slimst' naar 'wie is het goedkoopst per opgelost probleem'. Dat raakt het verdienmodel van gesloten aanbieders, die hun hoge prijzen rechtvaardigen met voorsprong in kwaliteit. De nieuwe zoek-API vergroot de reikwijdte: agenten hebben actuele informatie nodig, en Deepseek biedt die nu als bouwsteen aan. Het model is bovendien afgestemd op omgevingen als Deepseek Harness, Tencent CodeBuddy en WorkBuddy, wat wijst op een eigen Chinees ecosysteem. Voor Europese bedrijven zijn open gewichten aantrekkelijk omdat ze lokaal kunnen draaien, maar de Chinese herkomst roept bij overheden en toezichthouders vragen op over afhankelijkheid en dataveiligheid.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Open-weight</summary>
+    <div class="ns-viz-concept-body">De getrainde modelgewichten zijn openbaar, hier via Hugging Face en ModelScope. Iedereen kan het model zelf draaien of aanpassen.</div></details>
+  <details class="ns-viz-concept"><summary>Pareto-verbetering</summary>
+    <div class="ns-viz-concept-body">Beter op één punt zonder slechter te worden op een ander: hogere prestaties tegen gelijke of lagere kosten.</div></details>
+  <details class="ns-viz-concept"><summary>DeepSWE</summary>
+    <div class="ns-viz-concept-body">Benchmark voor software-engineeringtaken door AI-agenten; Deepseek toont er zowel score als kosten per taak.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Deepseek bewijst opnieuw dat efficiëntie een strategie is, geen bijzaak. Ook als onafhankelijke tests de eigen cijfers wat temperen, zet een prijsverschil van een factor tien de Amerikaanse aanbieders onder druk. Voor gebruikers is dat goed nieuws, voor de gesloten verdienmodellen niet. De echte vraag voor Europa is niet of dit model goed genoeg is, maar of het bereid is om zijn AI-infrastructuur op Chinese open gewichten te bouwen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=YlhO5g2AHpo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/YlhO5g2AHpo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">DeepSeek V4.1 Flash: De architectuur die cachekosten verplettert</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

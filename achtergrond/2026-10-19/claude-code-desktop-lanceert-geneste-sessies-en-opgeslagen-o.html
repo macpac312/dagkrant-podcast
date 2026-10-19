@@ -1,0 +1,65 @@
+<ul class="bg-bullets">
+<li>De desktopapp van Claude Code krijgt geneste sessies en opgeslagen omgevingen.</li>
+<li>Gebruikers starten sessies binnen sessies en bewaren werkomgevingen voor later.</li>
+<li>Daarmee schuift de app op van chatvenster naar werkplek voor meerdere agenten.</li>
+<li>De vraag verschuift van 'wat kan het model' naar 'hoe orkestreer je het werk'.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Eén sessie per taak. Wie stopt, moet bij een nieuwe start de context en opzet van het werk opnieuw inrichten.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>Sessies kunnen binnen een sessie worden gestart, en een werkomgeving kan worden bewaard om later verder te gaan.</p></div>
+</div></div>
+<h5>Van terminal naar werkplek</h5>
+<p>Claude Code begon als een programmeerassistent in de terminal: een agent die code leest, wijzigt en commando's uitvoert. De desktopapp brengt dat werk naar een grafische omgeving. Volgens Pasquale Pillitteri, die de nieuwe functies beschrijft, komen er nu twee bouwstenen bij: geneste sessies, waarbij een gebruiker binnen een lopende sessie een nieuwe kan starten, en opgeslagen omgevingen, waarmee een werkopstelling bewaard blijft om er later mee verder te gaan. Hoe de functies precies zijn ingericht, gaat de beschikbare samenvatting niet in detail uit. De richting is wel duidelijk. Waar AI-assistenten twee jaar geleden vooral losse vragen beantwoordden, worden ze nu ingericht voor langere klussen die over meerdere dagen en deeltaken lopen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een geneste sessie werkt</div>
+<div class="ns-viz-mech-subtitle">Van één hoofdtaak naar deeltaken en weer terug</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Hoofdsessie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Afsplitsen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Terugkoppelen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Bewaren</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="80" y="40" width="160" height="120" rx="10" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><rect x="80" y="40" width="160" height="22" rx="10" fill="#7c3aed" fill-opacity=".35"/><text x="160" y="56" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">Hoofdsessie</text><g fill="#a78bfa"><rect x="95" y="78" width="110" height="8" rx="3"/><rect x="95" y="96" width="80" height="8" rx="3"/><rect x="95" y="114" width="120" height="8" rx="3"/></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Hoofdsessie</h6><p class="korte">De gebruiker werkt met de agent aan één overkoepelende taak.</p><p class="uitleg">Denk aan een functie bouwen in een codebase. De sessie houdt de context bij: welke bestanden zijn gelezen, wat is besproken, wat is al veranderd.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="70" width="110" height="60" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="75" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Hoofd</text><line x1="130" y1="100" x2="190" y2="50" stroke="#a78bfa" stroke-width="2.5"/><line x1="130" y1="100" x2="190" y2="150" stroke="#a78bfa" stroke-width="2.5"/><rect x="190" y="25" width="110" height="50" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="2"/><text x="245" y="55" text-anchor="middle" font-size="11" fill="#7c3aed">Subsessie A</text><rect x="190" y="125" width="110" height="50" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="2"/><text x="245" y="155" text-anchor="middle" font-size="11" fill="#7c3aed">Subsessie B</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Afsplitsen</h6><p class="korte">Binnen de hoofdsessie start een nieuwe sessie voor een deeltaak.</p><p class="uitleg">Een zijpad, zoals een bug uitzoeken of een test schrijven, krijgt zijn eigen ruimte. Zo vervuilt het de hoofdcontext niet en blijft de oorspronkelijke draad overzichtelijk.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="190" y="70" width="110" height="60" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="2"/><text x="245" y="105" text-anchor="middle" font-size="11" fill="#7c3aed">Subsessie</text><line x1="190" y1="100" x2="135" y2="100" stroke="#7c3aed" stroke-width="2.5"/><polygon points="130,100 140,94 140,106" fill="#7c3aed"/><rect x="20" y="70" width="110" height="60" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="75" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Hoofd</text><text x="75" y="115" text-anchor="middle" font-size="10" fill="#7c3aed">+ resultaat</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Terugkoppelen</h6><p class="korte">Het resultaat van de deeltaak komt terug bij het hoofdwerk.</p><p class="uitleg">Het nut van nesten zit in de structuur: een hiërarchie van taken in plaats van één steeds langer wordend gesprek. Hoe de app dat precies samenvoegt, beschrijft de bron niet in detail.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="110" y="45" width="100" height="110" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><rect x="130" y="45" width="60" height="35" fill="#7c3aed" fill-opacity=".35"/><rect x="128" y="110" width="64" height="35" rx="3" fill="#a78bfa" fill-opacity=".4"/><text x="160" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Opgeslagen omgeving</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Bewaren</h6><p class="korte">De werkomgeving wordt bewaard, zodat het werk later kan worden hervat.</p><p class="uitleg">Wie morgen verdergaat, hoeft de opstelling niet opnieuw in te richten. Dat maakt de agent geschikter voor klussen die langer duren dan één zitting.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Orkestratie als nieuw slagveld</h5>
+<p>Het belang van deze functies ligt minder in het model dan in de werkwijze eromheen. Taalmodellen hebben een beperkt contextvenster: hoe langer een gesprek, hoe meer ruis en hoe groter de kans dat eerdere details wegzakken. Het opknippen van werk in deelsessies is een bekende manier om dat te beheersen, en het is dezelfde gedachte die achter subagenten zit. Opgeslagen omgevingen pakken een ander probleem aan: het opnieuw opbouwen van een werkopstelling kost tijd en levert fouten op. Samen maken ze de agent minder een gesprekspartner en meer een collega die een dossier bijhoudt. Dat sluit aan bij de vergelijking die Pillitteri elders maakt van desktopapps waarmee je meerdere agenten parallel laat werken.</p>
+<blockquote>De concurrentie tussen AI-programmeertools verschuift van de slimheid van het model naar de kwaliteit van de werkplaats eromheen.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📊 Claude in de Dagkrant van vandaag</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Nieuwe functies in de desktopapp</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Verhalen over Claude in deze krant</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="14">14</div><div class="ns-viz-stat-label">Dagen loopt het focusverhaal 'claude desktop'</div></div>
+</div></div>
+<h5>Gevolgen voor ontwikkelaars</h5>
+<p>Voor ontwikkelaars betekent dit dat de manier waarop ze werk opdelen belangrijker wordt. Wie een agent langer en zelfstandiger laat werken, moet beter nadenken over afbakening, controle en het nalopen van resultaten. Het Phoronix-verhaal in deze krant, over AI-hulp bij het reverse-engineeren van hardware voor Linux, laat zien waar dat naartoe kan: langdurige, onderzoekende klussen waar een agent over veel sessies heen meedenkt. Tegelijk groeit de afhankelijkheid van één leverancier en diens werkomgeving. Opgeslagen omgevingen zijn handig, maar binden de gebruiker ook aan de app waarin ze zijn opgeslagen.</p>
+<h5>Conclusie</h5>
+<p>Geneste sessies en opgeslagen omgevingen zijn geen spectaculaire doorbraak, maar wel een veelzeggende. Ze laten zien dat de volgende fase van AI-programmeerhulp draait om het beheersen van langlopend werk, niet om nog een slimmer antwoord. Wie die werkplaats het beste inricht, wint de ontwikkelaar; het model zelf wordt steeds meer een gegeven.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=r5x91fOkQnk" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/r5x91fOkQnk/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Hoe comprimeer je een Claude Code-sessie in VS Code (2026)?</div></div></a></div>
