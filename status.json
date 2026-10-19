@@ -3,12 +3,14 @@
     "nieuws verzamelen",
     "artikelen schrijven",
     "krant opbouwen",
+    "achtergronden (ronde 1)",
     "podcast inspreken",
-    "publiceren"
+    "publiceren",
+    "achtergronden (ronde 2)"
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-18T09:30:52+00:00",
+  "updated_at": "2026-10-19T04:11:26+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -48,15 +50,18 @@
     }
   ],
   "default_duration_s": 2700,
-  "status": "done",
-  "date": "2026-10-18",
-  "step": "klaar",
-  "step_index": 5,
-  "progress": 100,
-  "started_at": "2026-10-18T09:02:15+00:00",
-  "finished_at": "2026-10-18T09:20:45+00:00",
-  "duration_s": 1110,
-  "error": null,
-  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-10-18.html",
-  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
+  "steps_log": [
+    {
+      "step": "nieuws",
+      "at": "2026-10-19T04:11:26+00:00"
+    }
+  ],
+  "status": "running",
+  "date": "2026-10-19",
+  "step": "nieuws verzamelen",
+  "step_index": 0,
+  "progress": 0,
+  "started_at": "2026-10-19T04:11:26+00:00",
+  "finished_at": null,
+  "error": null
 }
