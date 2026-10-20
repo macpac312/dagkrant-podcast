@@ -1,0 +1,66 @@
+<ul class="bg-bullets">
+<li>Linus Torvalds bevestigt dat Claude Code is gebruikt voor een patchserie voor de Linux-paginacache.</li>
+<li>De patches moesten de prestaties van de paginacache verbeteren.</li>
+<li>Reviewers vonden daarna een race condition, meldt The New Stack.</li>
+<li>Les: AI versnelt kernelwerk, maar menselijke review blijft het vangnet.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Van AI-patch tot gevonden race</div>
+<div class="ns-viz-mech-subtitle">Hoe een kernelpatch door het reviewproces gaat</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Schrijven</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Insturen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Review</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Race gevonden</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="35" width="240" height="130" rx="8" fill="#1c1917"/><text x="55" y="60" font-size="11" fill="#a78bfa" font-family="monospace">$ claude</text><text x="55" y="82" font-size="10" fill="#d6d3d1" font-family="monospace">&gt; optimaliseer page cache</text><rect x="55" y="95" width="150" height="8" fill="#16a34a" opacity=".7"/><rect x="55" y="110" width="120" height="8" fill="#16a34a" opacity=".7"/><rect x="55" y="125" width="170" height="8" fill="#dc2626" opacity=".6"/><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">Claude Code genereert de wijzigingen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Schrijven</h6><p class="korte">De patchserie voor de paginacache ontstaat met hulp van Claude Code.</p><p class="uitleg">Torvalds bevestigt dat de AI-codeassistent van Anthropic is gebruikt. Het doel was betere prestaties van de paginacache, het deel van de kernel dat bestandsdata in het werkgeheugen vasthoudt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="70" width="80" height="60" rx="4" fill="#fff" stroke="#7c3aed" stroke-width="2"/><polyline points="30,70 70,105 110,70" fill="none" stroke="#7c3aed" stroke-width="2"/><line x1="120" y1="100" x2="180" y2="100" stroke="#7c3aed" stroke-width="2.5"/><polygon points="180,93 193,100 180,107" fill="#7c3aed"/><circle cx="240" cy="60" r="14" fill="#a78bfa"/><circle cx="270" cy="100" r="14" fill="#a78bfa"/><circle cx="240" cy="140" r="14" fill="#a78bfa"/><circle cx="215" cy="100" r="14" fill="#7c3aed"/><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">mailinglijst en maintainers</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Insturen</h6><p class="korte">De patches gaan naar de kernelgemeenschap voor beoordeling.</p><p class="uitleg">Linux-wijzigingen worden openbaar ter review aangeboden. Maintainers en andere ontwikkelaars lezen de code regel voor regel mee, ongeacht wie of wat haar schreef.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="60" y="30" width="140" height="140" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/><line x1="75" y1="55" x2="185" y2="55" stroke="#a78bfa" stroke-width="4"/><line x1="75" y1="75" x2="170" y2="75" stroke="#a78bfa" stroke-width="4"/><line x1="75" y1="95" x2="185" y2="95" stroke="#a78bfa" stroke-width="4"/><line x1="75" y1="115" x2="160" y2="115" stroke="#a78bfa" stroke-width="4"/><circle cx="230" cy="100" r="30" fill="none" stroke="#7c3aed" stroke-width="4"/><line x1="252" y1="122" x2="285" y2="155" stroke="#7c3aed" stroke-width="6" stroke-linecap="round"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Review</h6><p class="korte">Reviewers zoeken naar fouten die tests en de auteur misten.</p><p class="uitleg">Vooral in geheugenbeheer zijn subtiele fouten gevaarlijk: ze treden zelden op, maar kunnen dan data corrumperen of het systeem laten crashen. Juist daar is ervaren menselijke blik onmisbaar.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="130" y="80" width="60" height="40" rx="6" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><text x="160" y="105" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">pagina</text><line x1="40" y1="60" x2="125" y2="95" stroke="#7c3aed" stroke-width="3"/><polygon points="120,88 132,98 118,101" fill="#7c3aed"/><text x="40" y="50" font-size="10" fill="#44403c">thread A</text><line x1="280" y1="60" x2="195" y2="95" stroke="#dc2626" stroke-width="3"/><polygon points="200,88 188,98 202,101" fill="#dc2626"/><text x="240" y="50" font-size="10" fill="#44403c">thread B</text><text x="160" y="155" text-anchor="middle" font-size="16" font-weight="700" fill="#dc2626">⚠ race</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Race gevonden</h6><p class="korte">Reviewers ontdekken een race condition in de AI-geschreven code.</p><p class="uitleg">Bij een race condition hangt de uitkomst af van de toevallige volgorde waarin gelijktijdige processen gedeelde data aanraken. Volgens The New Stack vonden reviewers zo’n fout in deze patchserie.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>AI in het hart van Linux</h5>
+<p>Linus Torvalds heeft bevestigd dat Claude Code, de programmeerassistent van Anthropic, is gebruikt voor een patchserie die de prestaties van de Linux-paginacache verbetert. Dat is symbolisch zwaar. De kernel is misschien wel het meest kritische open-sourceproject ter wereld: hij draait op servers, telefoons, routers en supercomputers. Torvalds stond jarenlang bekend om zijn scherpe afwijzing van slordige code, en de kernelgemeenschap heeft lang met argwaan gekeken naar AI-gegenereerde bijdragen. Dat de oprichter nu openlijk zegt dat een AI-assistent heeft meegeschreven aan zo'n centraal onderdeel, markeert een verschuiving: AI-hulp is in de kern van de open-sourcewereld aangekomen. The New Stack meldt echter dat reviewers daarna een race condition in de wijzigingen vonden.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Paginacache</summary>
+    <div class="ns-viz-concept-body">Het deel van de Linux-kernel dat bestandsdata in het werkgeheugen bewaart, zodat programma's niet steeds naar de trage schijf hoeven. Cruciaal voor de snelheid van vrijwel elk systeem.</div></details>
+  <details class="ns-viz-concept"><summary>Race condition</summary>
+    <div class="ns-viz-concept-body">Een fout die optreedt als twee gelijktijdige processen dezelfde data bewerken en de uitkomst afhangt van wie toevallig eerst is. Zelden reproduceerbaar, daardoor moeilijk te vinden.</div></details>
+  <details class="ns-viz-concept"><summary>Patchserie</summary>
+    <div class="ns-viz-concept-body">Een reeks samenhangende codewijzigingen die als geheel ter beoordeling wordt ingediend bij de kernelontwikkelaars.</div></details>
+</div></div>
+<h5>Wat de race leert</h5>
+<p>Dat er een race condition werd gevonden, is minder verrassend dan het klinkt. Gelijktijdigheid is een van de moeilijkste domeinen in systeemprogrammering, en ook menselijke kernelontwikkelaars introduceren zulke fouten. Het verschil zit in de verwachting. Een AI-assistent produceert snel code die er plausibel en idiomatisch uitziet, wat de verleiding vergroot om haar minder kritisch te lezen. Dat het reviewproces de fout ving, bewijst juist dat het systeem werkt. Het past bij een bredere les die ook elders in deze krant opduikt: Microsoft adviseert bedrijven AI-agents te behandelen als potentiële interne dreiging, en een kernellek als PwnEscape laat zien hoe duur een fout in deze laag kan zijn. Snelheid aan de voorkant vraagt om zorgvuldigheid aan de achterkant.</p>
+<blockquote>De race condition is geen bewijs dat AI-code onbruikbaar is, maar dat review de beslissende stap blijft.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOORHEEN</h6>
+    <p>Kernelpatches vrijwel volledig handgeschreven; AI-bijdragen met argwaan bekeken en zelden openlijk erkend.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NU</h6>
+    <p>Torvalds erkent AI-hulp bij een kerncomponent. Het zwaartepunt verschuift van schrijven naar kritisch beoordelen.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Dit voorval is precies het juiste precedent voor AI in kritische software: openlijk gebruik, gevolgd door strenge review die een echte fout vindt. Voor Anthropic is het reclame met een kanttekening. Voor de open-sourcewereld is de conclusie dat reviewcapaciteit de nieuwe bottleneck wordt. Als AI meer code levert, moeten mensen meer en beter lezen, niet minder.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=HRnmGsBSVkk" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/HRnmGsBSVkk/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">I Read The Review For The AI Kernel Patch (And It’s Bad)</div></div></a></div>

@@ -1,0 +1,16 @@
+{
+  "title": "Hackers stelen API-sleutels via AI-codeertool OpenCode",
+  "summary": "De open-source concurrent van Claude Code en Cursor werd gehackt; gebruikers zagen hun AI-rekeningen oplopen.\n\nHackers zijn binnengedrongen in een deel van het online platform van OpenCode, een open-source AI-codeeragent die populair is als alternatief voor Claude Code en Cursor. Ze stalen API-sleutels van gebruikers en lieten daarmee kosten oplopen op hun AI-accounts.",
+  "sources": [
+    "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-20",
+  "slug": "hackers-stelen-api-sleutels-via-ai-codeertool-opencode",
+  "tts_slug": "hackers-stelen-api-sleutels-via-ai-codeertool-opencode",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-20T04:41:05",
+  "size_kb": 12
+}

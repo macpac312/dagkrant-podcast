@@ -1,0 +1,16 @@
+{
+  "title": "Mercury 3 vs Grok 4.7: kies op latentie, niet op score",
+  "summary": "OrcaRouter vergelijkt twee modellen en adviseert te kijken naar reactiesnelheid.\n\nOrcaRouter vergelijkt Mercury 3 met Grok 4.7 en concludeert dat ontwikkelaars voor interactieve toepassingen beter op latentie dan op benchmarkscores kunnen kiezen.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RT0FDc2JOTmxHQUdVNjY1VEVidEp1NUxmTnlOaXEtcjczd3VWNHhCOTBIa25tdzlfNElKdTAyLV9IZmlmb01Rc0VTQlRZOWU2clJCczlqMmFNMnFtdndmV3FhZDVZZw?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-20",
+  "slug": "mercury-3-vs-grok-47-kies-op-latentie-niet-op-score",
+  "tts_slug": "mercury-3-vs-grok-47-kies-op-latentie-niet-op-score",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-20T04:41:05",
+  "size_kb": 10
+}

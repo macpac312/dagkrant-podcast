@@ -1,0 +1,17 @@
+{
+  "title": "Torvalds liet Claude Code de Linux-paginacache verbeteren; reviewers vonden een race",
+  "summary": "De Linux-maker bevestigt dat Claude Code is gebruikt voor de patchserie. Reviewers vonden later een race condition.\n\nLinus Torvalds heeft bevestigd dat Claude Code is gebruikt voor een patchserie die de prestaties van de Linux-paginacache verbetert. The New Stack meldt dat reviewers daarna een race condition vonden.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWNVVYdFVjSlNnZUd1SkhrMk5XQzJ2ajhWLTFGbm5Wbk9HalI2R3BMYjRFQlRITnc0LWxKMWJTeXZod0t6OFBsd1kySWxmaEUzdkRwWFNGd2ZJOHJ3aF9UXw?oc=5",
+    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRFRieTVjWTVlLXFOa3U1czdncEZyMWxXUFdBNHVLalpqNWlIOE1aSzdxeG1oMkY3cjJ6ZU03NHRVVktiNGY0NkNsMnFia0VWaE9rT3B3Wkh6Wk1kUVZVM0JZMzlRcWZ4djVURXVXRHBiaU1ZTXNCc3k0bENBR3lHeWxhd2FnZjhKZmktRzNqMHgzNEt3WEljQTh3TjlEV3Y3UE1qUUVEelVraHdoY09NMmVTOXdMcTVDMHNrUzNhejB6TDJZWjBfMUE2dE1nYW93Nkgyb3plYw?oc=5"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-10-20",
+  "slug": "torvalds-liet-claude-code-de-linux-paginacache-verbeteren-re",
+  "tts_slug": "torvalds-liet-claude-code-de-linux-paginacache-verbeteren-re",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-20T04:41:06",
+  "size_kb": 10
+}

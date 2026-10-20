@@ -1,0 +1,16 @@
+{
+  "title": "PwnEscape-lek in Linux-kernel; Contabo herstart VPS'en",
+  "summary": "Hosting-aanbieder Contabo moest servers herstarten na een kernelkwetsbaarheid.\n\nEen kwetsbaarheid in de Linux-kernel, PwnEscape genoemd, dwong hostingbedrijf Contabo zijn VPS'en te herstarten, meldt Pasquale Pillitteri.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdmZ5UE4wZ085LXdiblc0eUtKTUV3N2xQWllhczl2MnlMV21ZMDFrNk1jNFRtNEdfbkFvaE5sckk5U1cyb0N1c3FkYTBVUEFSeWY4QU15U0p4RFc0REtHa2tNVGFFdWZrOU9ObVN5ZUd0U0ZQOFdTczVFdXAwdG14NUd3X0dScmo1TXNyNGcwbXJEZERmZFNz?oc=5"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-10-20",
+  "slug": "pwnescape-lek-in-linux-kernel-contabo-herstart-vpsen",
+  "tts_slug": "pwnescape-lek-in-linux-kernel-contabo-herstart-vpsen",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-20T04:41:06",
+  "size_kb": 9
+}

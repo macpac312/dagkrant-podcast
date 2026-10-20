@@ -1,0 +1,73 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://techcrunch.com/wp-content/uploads/2026/10/cyberatttack.jpg?w=612" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© techcrunch.com</div></div><ul class="bg-bullets">
+<li>Aanvallers braken in bij OpenCode Console en stalen API-sleutels van 1,4 procent van de gebruikers.</li>
+<li>OpenCode spreekt van een grootschalige distillatie-aanval; sceptici zien een gewoon datalek.</li>
+<li>Gebruikers zagen rekeningen van honderden tot boven de duizend dollar; providers blokkeerden sleutels.</li>
+<li>Het incident toont hoe lastig kleine AI-bedrijven zich verdedigen tegen AI-gedreven aanvallen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het incident in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1.4" data-suffix="%">1.4%</div><div class="ns-viz-stat-label">Getroffen Console-gebruikers</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="48" data-suffix=" uur">48 uur</div><div class="ns-viz-stat-label">Onafgebroken inbraakpogingen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="&gt;$" data-target="1000">&gt;$1000</div><div class="ns-viz-stat-label">Hoogste gemelde schade per account</div></div>
+</div></div>
+<h5>Een lek in de randapparatuur</h5>
+<p>OpenCode, een open-source AI-codeeragent die terrein wint als alternatief voor Claude Code en Cursor, meldde zaterdag dat aanvallers 's nachts een ouder systeem waren binnengedrongen. Het ging om OpenCode Console, het online platform waar een deel van de gebruikers de API-sleutels opslaat waarmee ze AI-diensten aanspreken. Getroffen werd 1,4 procent van de Console-gebruikers; zij kregen 's ochtends een e-mail. Medeoprichter Dax Raad benadrukte dat de open-source app en de command-line-tool niet zijn geraakt: "Dit is OpenCode Console, niet OpenCode zelf, die sleutels komen nooit bij ons." Voor de getroffenen was de schade intussen concreet. Ontwikkelaars deelden op Reddit en X uitgavenmeldingen van OpenAI, Anthropic en Google die midden in de nacht afgingen; sommigen zagen bedragen van honderden dollars, enkelen meldden totalen boven de 1.000 dollar.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de sleutelroof werkte</div>
+<div class="ns-viz-mech-subtitle">Van ingebroken systeem tot oplopende AI-rekening</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Inbraak</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Sleutels</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Misbruik</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Indamming</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="170" y="40" width="100" height="120" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/><g stroke="#a78bfa" stroke-width="3"><line x1="185" y1="65" x2="255" y2="65"/><line x1="185" y1="90" x2="255" y2="90"/><line x1="185" y1="115" x2="255" y2="115"/></g><text x="220" y="150" text-anchor="middle" font-size="10" fill="#44403c">ouder systeem</text><path d="M40 100 L160 100" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4"/><circle cx="40" cy="100" r="14" fill="#dc2626" opacity=".8"/><text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">Aanvallers dringen 's nachts binnen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Inbraak</h6><p class="korte">Aanvallers kraken een ouder onderdeel van het OpenCode-platform.</p><p class="uitleg">Het ging om een ouder systeem achter OpenCode Console. Volgens Raad probeerden aanvallers het bedrijf 48 uur lang onafgebroken binnen te komen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#7c3aed"><circle cx="90" cy="90" r="20"/><rect x="105" y="85" width="60" height="10"/><rect x="145" y="95" width="8" height="14"/><rect x="157" y="95" width="8" height="10"/></g><g fill="#a78bfa"><circle cx="200" cy="70" r="12"/><rect x="210" y="66" width="40" height="7"/><circle cx="210" cy="125" r="12"/><rect x="220" y="121" width="40" height="7"/></g><text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">API-sleutels uit Console-workspaces</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Sleutels</h6><p class="korte">Opgeslagen API-sleutels van gebruikers komen in handen van de aanvallers.</p><p class="uitleg">De blootgestelde sleutels bevonden zich in Console-workspaces. Gebruikers die alleen de lokale app of CLI gebruiken, waren niet getroffen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#7c3aed"><rect x="40" y="130" width="30" height="30"/><rect x="85" y="110" width="30" height="50"/><rect x="130" y="85" width="30" height="75"/><rect x="175" y="55" width="30" height="105"/><rect x="220" y="30" width="30" height="130" fill="#dc2626"/></g><text x="270" y="40" font-size="14" fill="#dc2626" font-weight="700">$</text><text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">Massaal verbruik op andermans rekening</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Misbruik</h6><p class="korte">Met de sleutels worden grote hoeveelheden AI-output gegenereerd op kosten van gebruikers.</p><p class="uitleg">OpenCode spreekt van een distillatie-aanval: veel output van Amerikaanse modellen verzamelen om een eigen model te trainen. Critici noemen dat onbewezen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><path d="M160 30 L230 55 L230 110 C230 145 195 165 160 175 C125 165 90 145 90 110 L90 55 Z" fill="#7c3aed" opacity=".2" stroke="#7c3aed" stroke-width="2.5"/><path d="M130 105 L152 127 L192 85" stroke="#16a34a" stroke-width="5" fill="none"/><text x="160" y="195" text-anchor="middle" font-size="12" fill="#44403c">Sleutels geblokkeerd, terugbetaling loopt</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Indamming</h6><p class="korte">AI-aanbieders blokkeren sleutels; OpenCode en OpenAI betalen kosten terug.</p><p class="uitleg">Anthropic en Google blokkeerden de vermoedelijk gelekte sleutels. OpenAI herstelde samen met OpenCode de toegang en vergoedt verbruikte credits. OpenCode betaalt onrechtmatige kosten terug.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Distillatie of gewone diefstal?</h5>
+<p>Het meest omstreden punt is de framing. OpenCode noemde het incident op X "een beveiligingslek in verband met een grootschalige distillatie-aanval". Bij distillatie wordt een kleiner model getraind op de antwoorden van een groter model; daarvoor is een enorme hoeveelheid output nodig. Gestolen API-sleutels kunnen gebruikers in landen met beperkte toegang tot Amerikaanse modellen helpen die volumes te genereren zonder zelf te betalen of te worden opgemerkt. Sceptici vinden die uitleg overtrokken: volgens hen ging het om een rechttoe-rechtaan inbraak, en is het gebruik voor distillatie niet aangetoond. Het onderscheid doet ertoe. Een distillatie-verhaal plaatst het incident in de geopolitieke strijd rond AI-modellen en exportbeperkingen; een gewone hack legt de verantwoordelijkheid bij de beveiliging van een ouder systeem dat gevoelige sleutels bewaarde.</p>
+<blockquote>"Note this is the OpenCode Console, not OpenCode itself, those keys never come to us." — Dax Raad, medeoprichter OpenCode</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Reactie van de AI-aanbieders</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Anthropic</h6>
+    <ul><li>Blokkeerde vermoedelijk gelekte sleutels</li><li>Gebruikers kregen uitgavenmeldingen</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Google</h6>
+    <ul><li>Blokkeerde vermoedelijk gelekte sleutels</li><li>Gebruikers kregen uitgavenmeldingen</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>OpenAI</h6>
+    <ul><li>Herstelde toegang samen met OpenCode</li><li>Vergoedt credits die bij de aanval zijn verbruikt</li></ul></div>
+</div></div>
+<h5>Kleine spelers, grote aanvallers</h5>
+<p>TechCrunch ziet in de chaotische reactie een groeiend probleem: bedrijven zonder gecontroleerde toegang tot AI-modellen met minder veiligheidsbeperkingen hebben moeite zich te verdedigen tegen grootschalige, AI-gedreven aanvallen. Het OpenCode-team moest de klok rond defensieve AI-agents laten draaien; de modellen die het voor analyse inzette, hielpen een tijd, maar niet afdoende. Het past in een week waarin Microsoft bedrijven oproept AI-agents te behandelen als potentiële interne dreiging. Voor ontwikkelaars is de les praktisch: API-sleutels zijn geld, en elke dienst die ze centraal bewaart, is een doelwit. Bestedingslimieten, sleutels per project en snelle rotatie beperken de schade. Voor de AI-aanbieders ligt er een vraag over hoe snel zij misbruik detecteren; dat gebruikers zelf alarm sloegen via uitgavenmeldingen, laat zien dat die vangnetten werken, maar pas als het geld al weg is.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>API-sleutel</summary>
+    <div class="ns-viz-concept-body">Digitaal wachtwoord waarmee software een AI-dienst aanspreekt. Al het verbruik wordt op het account van de eigenaar gefactureerd.</div></details>
+  <details class="ns-viz-concept"><summary>Distillatie</summary>
+    <div class="ns-viz-concept-body">Een kleiner model trainen op de antwoorden van een groter model. Vereist grote hoeveelheden output, wat gestolen sleutels aantrekkelijk maakt.</div></details>
+  <details class="ns-viz-concept"><summary>OpenCode Console</summary>
+    <div class="ns-viz-concept-body">Het online platform van OpenCode, los van de open-source app en CLI. Alleen hier stonden sleutels opgeslagen in workspaces.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Of het nu distillatie was of gewone diefstal, de kern is dezelfde: AI-sleutels zijn een nieuw soort betaalmiddel geworden, en wie ze bewaart, beheert een kluis. OpenCode reageerde snel en transparant, maar een ouder systeem met gevoelige gegevens bleef te lang kwetsbaar. Naarmate codeeragents populairder worden, groeit de aantrekkingskracht van hun infrastructuur voor aanvallers. Kleine open-source spelers kunnen die strijd niet alleen voeren; de grote modelaanbieders zullen detectie van misbruik en limieten per sleutel tot standaard moeten maken.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=FTUjLlMgvTU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/FTUjLlMgvTU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Hackers stelen API-sleutels via AI-codeertool OpenCode 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a></div>

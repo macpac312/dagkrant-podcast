@@ -1,0 +1,85 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/minimax.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>MiniMax M3.1 Flash scoort 42 op de Intelligence Index, 13 punten boven M3.</li>
+<li>Kosten per taak rond 0,22 dollar, minder dan de helft van de voorganger.</li>
+<li>Deepseek V4.1 Flash wint op de index, MiniMax op kennis en redeneren.</li>
+<li>Zwakke plek: 93 procent hallucinatiegraad; open weights volgen op 23 oktober.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Artificial Analysis Intelligence Index</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-d1fc6c5c"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-d1fc6c5c'),{
+    type:'bar',
+    data:{
+      labels:['MiniMax M3','Gemini 3.8 Flash','MiniMax M3.1 Flash','GLM-5.3-Flash','Deepseek V4.1 Flash'],
+      datasets:[{
+        label:'Index-score',data:[29,41,42,42,45],
+        backgroundColor:['#d6d3d1','#a78bfa','#7c3aed','#a78bfa','#a78bfa'],
+        borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{beginAtZero:true,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Meer intelligentie voor minder geld</h5>
+<p>Het Chinese AI-bedrijf MiniMax heeft met M3.1 Flash een nieuw redeneermodel uitgebracht dat het beeld van de afgelopen anderhalf jaar bevestigt: in China dalen de prijzen van capabele taalmodellen sneller dan de prestaties stijgen. Volgens Artificial Analysis scoort M3.1 Flash 42 punten op de Intelligence Index, 13 meer dan voorganger M3, tegen minder dan de helft van de kosten per taak. Daarmee staat het gelijk met GLM-5.3-Flash van Zhipu, net boven Google's Gemini 3.8 Flash (41) en achter Deepseek V4.1 Flash (45). De grootste sprong zit in complex redeneren: 48 procent op Humanity's Last Exam en 22 procent op CritPt, een test met 71 natuurkundevraagstukken op onderzoeksniveau. Op de DeepSWE-codeertest haalt het 73,7 procent voor minder dan 30 dollarcent per taak. Het model verwerkt tot een miljoen tokens context, plus tekst en beeld.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:.3rem .5rem">API-prijs M3.1 Flash</th>
+    <th style="text-align:right;padding:.3rem .5rem">$ / mln tokens</th>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Input</td><td style="text-align:right">0,15</td></tr>
+    <tr><td style="padding:.25rem .5rem">Input (cached)</td><td style="text-align:right">0,015</td></tr>
+    <tr><td style="padding:.25rem .5rem">Output</td><td style="text-align:right">0,60</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Tarieven op platform.minimax.io volgens The Decoder.</p>
+</div>
+<h5>Een gelijkspel met Deepseek</h5>
+<p>Interessanter dan de ranglijst is de tweestrijd met Deepseek, dat kort geleden V4.1 Flash uitbracht. Geen van beide wint over de hele linie. Deepseek leidt op de samengestelde index en heeft een kleine voorsprong op CritPt (24 tegen 22 procent). MiniMax wint op Humanity's Last Exam (48 tegen 43 procent) en vooral op feitenkennis: op AA-Omniscience beantwoordt het 56 procent van de vragen goed, tegen 43 procent voor Deepseek en 28 procent voor GLM. De prijsvoorsprong komt niet uit lagere tarieven alleen, maar uit efficiëntie: MiniMax gebruikte voor de benchmark circa 189 miljoen outputtokens, Deepseek 224 miljoen. Dat levert 0,22 tegen 0,26 dollar per taak op. Volgens MiniMax draait het model bovendien drie keer zo snel als M3. Tokenzuinigheid wordt zo een concurrentiewapen op zich.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="Benchmarkscores MiniMax tegen Deepseek">
+  <g font-size="9" fill="var(--t3)"><text x="8" y="94">HLE</text><text x="78" y="94">Omniscience</text><text x="160" y="94">CritPt</text></g>
+  <rect x="8" y="34" width="20" height="48" fill="var(--accent)"/><rect x="30" y="39" width="20" height="43" fill="var(--orange)"/>
+  <rect x="85" y="26" width="20" height="56" fill="var(--accent)"/><rect x="107" y="39" width="20" height="43" fill="var(--orange)"/>
+  <rect x="160" y="60" width="20" height="22" fill="var(--accent)"/><rect x="182" y="58" width="20" height="24" fill="var(--orange)"/>
+  <g font-size="9" fill="var(--t3)" text-anchor="middle"><text x="18" y="30">48</text><text x="40" y="35">43</text><text x="95" y="22">56</text><text x="117" y="35">43</text><text x="170" y="56">22</text><text x="192" y="54">24</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Paars MiniMax M3.1 Flash, oranje Deepseek V4.1 Flash (%).</p>
+</div>
+<blockquote>De prijs per taak daalt niet alleen door goedkopere tokens, maar doordat modellen er minder nodig hebben om tot een antwoord te komen.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 De keerzijde</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#dc2626" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:18"/>
+  </svg>
+  <div class="ns-viz-gauge-val">93%</div>
+  <div class="ns-viz-gauge-label">Hallucinatiegraad volgens Artificial Analysis</div>
+</div></div>
+<h5>Wat de prijzenslag betekent</h5>
+<p>De keerzijde is een hallucinatiegraad van 93 procent: het model probeert elke vraag te beantwoorden in plaats van te erkennen dat het iets niet weet. Voor toepassingen waar betrouwbaarheid telt, zoals juridisch of medisch werk, is dat een serieus bezwaar; voor codeertaken, waar fouten via tests zichtbaar worden, minder. De strategische betekenis ligt elders. MiniMax brengt het model op 23 oktober uit als open weights, net als Deepseek. Daarmee wordt een prestatieniveau dat vergelijkbaar is met Google's Flash-klasse vrij beschikbaar en lokaal te draaien. Voor Amerikaanse aanbieders zet dat de prijzen van hun goedkopere modellen onder druk, terwijl zij juist investeerders moeten overtuigen; Anthropic bereidt een beursgang voor. Voor Europese bedrijven ontstaat een dilemma: goedkope, sterke open modellen, maar uit China, met vragen over herkomst en governance.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Intelligence Index</summary>
+    <div class="ns-viz-concept-body">Samengestelde score van Artificial Analysis over meerdere benchmarks, bedoeld om modellen in één getal te vergelijken.</div></details>
+  <details class="ns-viz-concept"><summary>Hallucinatiegraad</summary>
+    <div class="ns-viz-concept-body">Hoe vaak een model een fout antwoord geeft in plaats van aan te geven dat het iets niet weet.</div></details>
+  <details class="ns-viz-concept"><summary>Open weights</summary>
+    <div class="ns-viz-concept-body">De getrainde parameters worden vrijgegeven, zodat iedereen het model zelf kan draaien en aanpassen, los van de API van de maker.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>M3.1 Flash bewijst dat de Chinese prijzenslag nog geen bodem heeft bereikt, en dat efficiëntie inmiddels zwaarder weegt dan ruwe topprestaties. Maar het model laat ook zien wat er wordt ingeleverd: een model dat bijna altijd een antwoord verzint, is goedkoop in benchmarks en duur in de praktijk. De winnaar van deze race is niet het slimste model, maar het model dat goedkoop én betrouwbaar weet wanneer het moet zwijgen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=rHM754tzFKc" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/rHM754tzFKc/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">MiniMax M3.1 flitser - Het beste open model??</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

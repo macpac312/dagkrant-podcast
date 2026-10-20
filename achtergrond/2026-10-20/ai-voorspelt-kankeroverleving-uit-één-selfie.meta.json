@@ -1,0 +1,16 @@
+{
+  "title": "AI voorspelt kankeroverleving uit één selfie",
+  "summary": "Mass General Brigham trainde het model op 40 miljoen gezichtsfoto's. Het schat biologische leeftijd en overlevingskans.\n\nArtsen van Mass General Brigham hebben een AI-model ontwikkeld dat uit één foto van het gezicht de overlevingskans van kankerpatiënten kan voorspellen. Het model, getraind op meer dan 40 miljoen gezichtsfoto's, verscheen in The Lancet Digital Health.\n\nEr zijn twee varianten: FAHR-FaceAge schat de biologische leeftijd (hoe oud iemand eruitziet), FAHR-FaceSurvival voorspelt over",
+  "sources": [
+    "https://www.theguardian.com/technology/2026/oct/19/ai-tool-predict-cancer-survival-patient-selfie"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-20",
+  "slug": "ai-voorspelt-kankeroverleving-uit-één-selfie",
+  "tts_slug": "ai-voorspelt-kankeroverleving-uit-één-selfie",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-20T04:41:05",
+  "size_kb": 12
+}

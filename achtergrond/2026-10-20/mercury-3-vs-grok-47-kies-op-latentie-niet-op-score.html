@@ -1,0 +1,62 @@
+<ul class="bg-bullets">
+<li>OrcaRouter vergelijkt Mercury 3 met Grok 4.7 voor gebruik door ontwikkelaars.</li>
+<li>Advies: kies voor interactieve toepassingen op reactiesnelheid, niet op benchmarkscores.</li>
+<li>Gebruikers merken vertraging eerder dan een paar procentpunt verschil in modelkwaliteit.</li>
+<li>Het verschuift de concurrentie tussen AI-modellen van 'slimst' naar 'snel genoeg en goed genoeg'.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Hoe mensen wachttijd ervaren</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0.1" data-suffix=" s">0.1 s</div><div class="ns-viz-stat-label">Voelt als directe reactie</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1" data-suffix=" s">1 s</div><div class="ns-viz-stat-label">Grens waarop de gedachtegang blijft lopen</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="10" data-suffix=" s">10 s</div><div class="ns-viz-stat-label">Grens waarop de aandacht wegvalt</div></div>
+</div></div>
+<h5>Een andere vraag dan 'welk model is het slimst'</h5>
+<p>Routeringsdienst OrcaRouter, die verzoeken van ontwikkelaars over verschillende taalmodellen verdeelt, zet Mercury 3 en Grok 4.7 naast elkaar en komt tot een advies dat tegen de gangbare marketing ingaat: kies voor interactieve toepassingen op latentie, niet op benchmarkscore. Dat is minder vanzelfsprekend dan het klinkt. Nieuwe modellen worden vrijwel altijd gelanceerd met ranglijsten waarop ze een paar punten hoger scoren dan de concurrentie. Maar in een chatvenster, een codeerassistent of een spraakinterface merkt de gebruiker vooral hoe lang hij moet wachten. Al decennia geldt in interfaceontwerp de vuistregel dat een tiende seconde als direct voelt, een seconde de gedachtegang nog intact laat en tien seconden de aandacht breekt. Een model dat net iets beter redeneert maar merkbaar trager antwoordt, verliest het in de praktijk.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Waar de wachttijd van een AI-antwoord vandaan komt</div>
+<div class="ns-viz-mech-subtitle">Van verzoek tot volledig antwoord op het scherm</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Routering</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Eerste token</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Generatie</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Ervaring</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="20" y="80" width="70" height="40" rx="6" fill="#a78bfa"/><text x="55" y="105" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">app</text><rect x="125" y="75" width="70" height="50" rx="8" fill="#7c3aed"/><text x="160" y="105" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">router</text><line x1="90" y1="100" x2="125" y2="100" stroke="#7c3aed" stroke-width="2.5"/><line x1="195" y1="90" x2="235" y2="55" stroke="#7c3aed" stroke-width="2.5"/><line x1="195" y1="110" x2="235" y2="145" stroke="#7c3aed" stroke-width="2.5"/><rect x="235" y="35" width="70" height="36" rx="6" fill="#a78bfa"/><text x="270" y="58" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Mercury 3</text><rect x="235" y="128" width="70" height="36" rx="6" fill="#a78bfa"/><text x="270" y="151" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Grok 4.7</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Routering</h6><p class="korte">Een router als OrcaRouter stuurt het verzoek naar het gekozen model.</p><p class="uitleg">Routeringsdiensten laten ontwikkelaars per taak een model kiezen. Elke tussenstap en elke netwerkhop telt mee in de totale wachttijd die de gebruiker voelt.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><line x1="30" y1="120" x2="290" y2="120" stroke="#44403c" stroke-width="2"/><rect x="30" y="95" width="110" height="25" fill="#a78bfa"/><text x="85" y="88" text-anchor="middle" font-size="11" fill="#44403c">verwerken prompt</text><circle cx="145" cy="108" r="9" fill="#7c3aed"/><text x="145" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">eerste woord</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Eerste token</h6><p class="korte">De tijd tot het eerste woord verschijnt, bepaalt of een app vlot aanvoelt.</p><p class="uitleg">Het model moet eerst de volledige invoer verwerken. Bij lange prompts of modellen die eerst intern redeneren, kan deze fase het grootste deel van de wachttijd uitmaken.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#7c3aed"><rect x="30" y="60" width="30" height="16" rx="3"/><rect x="65" y="60" width="30" height="16" rx="3"/><rect x="100" y="60" width="30" height="16" rx="3"/><rect x="135" y="60" width="30" height="16" rx="3" opacity=".6"/><rect x="170" y="60" width="30" height="16" rx="3" opacity=".3"/></g><text x="230" y="73" font-size="11" fill="#44403c">woord voor woord</text><g fill="#a78bfa"><rect x="30" y="120" width="170" height="16" rx="3" opacity=".35"/><rect x="30" y="140" width="170" height="16" rx="3"/></g><text x="230" y="140" font-size="11" fill="#44403c">blok in één keer</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Generatie</h6><p class="korte">Daarna bepaalt de snelheid per token hoe lang een volledig antwoord duurt.</p><p class="uitleg">De meeste taalmodellen schrijven woord voor woord. De Mercury-modellen van Inception werken met diffusie, waarbij een tekstblok in een paar stappen tegelijk wordt verfijnd: een architectuur gericht op snelheid.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="160" cy="90" r="45" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="3"/><line x1="160" y1="90" x2="160" y2="60" stroke="#7c3aed" stroke-width="3"/><line x1="160" y1="90" x2="182" y2="98" stroke="#7c3aed" stroke-width="3"/><text x="160" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">blijft de gebruiker?</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Ervaring</h6><p class="korte">De gebruiker beoordeelt de app op wachttijd, niet op benchmarkpunten.</p><p class="uitleg">In interactieve toepassingen, zoals chat, autocomplete of spraak, wegen seconden zwaarder dan kleine kwaliteitsverschillen. Daarom adviseert OrcaRouter om latentie als eerste criterium te nemen.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom benchmarks misleiden</h5>
+<p>Benchmarks meten wat een model in het beste geval kan, onder laboratoriumomstandigheden en zonder tijdsdruk. Ze zeggen weinig over hoe het aanvoelt om er een product op te bouwen. Grok 4.7 van xAI past in de lijn van grote, breed inzetbare modellen die op redeneervermogen concurreren; de Mercury-familie van Inception profileert zich juist op snelheid. Het advies van OrcaRouter is daarmee geen oordeel over welk model beter is, maar over welke maatstaf bij welke toepassing hoort. Voor een complexe analyse waarop iemand rustig wacht, telt kwaliteit. Voor een assistent die tijdens het typen meedenkt, telt elke honderd milliseconden. Ontwikkelaars die alleen ranglijsten volgen, optimaliseren zo voor de verkeerde gebruiker.</p>
+<blockquote>Voor interactieve toepassingen is latentie de maatstaf die de gebruiker voelt; een benchmarkscore ziet hij nooit.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Kies per toepassing</div>
+<div class="ns-viz-compare">
+<div class="ns-viz-compare-col"><h6>⚡ Latentie eerst</h6>
+<ul><li>Chat en klantenservice</li><li>Autocomplete en codeersuggesties</li><li>Spraakassistenten</li></ul></div>
+<div class="ns-viz-compare-col"><h6>🧠 Kwaliteit eerst</h6>
+<ul><li>Lange analyses en rapporten</li><li>Achtergrondtaken zonder wachtende gebruiker</li><li>Complex redeneerwerk</li></ul></div>
+</div></div>
+<h5>Gevolgen voor het Grok-ecosysteem</h5>
+<p>De vergelijking valt in een week vol Grok-nieuws. SpaceXSI bundelt X Premium, Grok en Cursor in één abonnement, en Grok is nu te starten via de actieknop van de iPhone: allemaal pogingen om het model zo dicht mogelijk op de gebruiker te brengen, waar snelheid juist het verschil maakt. Tegelijk ondervraagt de New Yorkse gemeenteraad SpaceX over een door Grok gegenereerd seksueel beeld van de raadsvoorzitter, een herinnering dat modelkeuze niet alleen over snelheid en score gaat, maar ook over veiligheid en reputatie. Voor ontwikkelaars betekent dat drie criteria in plaats van één.</p>
+<h5>Conclusie</h5>
+<p>Het advies van OrcaRouter is nuchter en terecht: het model met de hoogste score is niet automatisch het beste product. Nu de kwaliteitsverschillen tussen topmodellen kleiner worden, verschuift de concurrentie naar snelheid, prijs en betrouwbaarheid. Wie een interactieve toepassing bouwt, doet er goed aan eerst te meten hoe snel een antwoord binnenkomt, en pas daarna naar de ranglijst te kijken.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Ll-VfBCdDME" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Ll-VfBCdDME/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Mercury 3 vs Grok 4.7: kies op latentie, niet op score 2026</div></div></a></div>

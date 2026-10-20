@@ -1,0 +1,17 @@
+{
+  "title": "Amazon daagt Nvidia uit met TorchNeuron",
+  "summary": "Het nieuwe ontwikkelgereedschap moet PyTorch-apps zonder moeite op Amazons eigen Trainium-chips laten draaien.\n\nAmazon wil de greep van Nvidia op PyTorch, het gratis gereedschap waarmee de meeste AI-apps worden gebouwd, doorbreken. Met TorchNeuron moeten ontwikkelaars hun modellen eenvoudig op Amazons eigen Trainium-chips kunnen draaien. Hugging Face meldt dat zijn modellen al direct werken.",
+  "sources": [
+    "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+    "https://huggingface.co/blog/hf-torchneuron"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-20",
+  "slug": "amazon-daagt-nvidia-uit-met-torchneuron",
+  "tts_slug": "amazon-daagt-nvidia-uit-met-torchneuron",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-20T04:41:05",
+  "size_kb": 13
+}
