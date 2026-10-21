@@ -1,0 +1,163 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-20T210744Z_533448902_RC2FK1ARBKNE_RTRMADP_3_SPACEX-RESULTS-1792543057_c36f12-1792549610.jpg?resize=1200%2C630&quality=80" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© aljazeera.com</div></div><ul class="bg-bullets">
+<li>Tesla en SpaceX onderzoeken een fusie ter waarde van circa 3.500 miljard dollar.</li>
+<li>AI is de drijfveer: 52 procent van de SpaceX-inkomsten komt nu uit AI.</li>
+<li>SpaceX boekte 4,4 miljard winst, maar investeert tientallen miljarden in datacenters.</li>
+<li>Tesla-aandeelhouders moeten met een meerderheid instemmen; de uitkomst is allerminst zeker.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 SpaceX in het derde kwartaal</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="14.6" data-suffix=" mld">$14.6 mld</div><div class="ns-viz-stat-label">Omzet Q3</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="4.4" data-suffix=" mld">$4.4 mld</div><div class="ns-viz-stat-label">Nettowinst Q3 (vorig jaar: −1,05 mld)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="52" data-suffix="%">52%</div><div class="ns-viz-stat-label">Aandeel AI in inkomsten</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1.7" data-suffix=" GW">1.7 GW</div><div class="ns-viz-stat-label">Rekenkracht neocloud</div></div>
+</div></div>
+<h5>Van raketbouwer naar AI-conglomeraat</h5>
+<p>De aankondiging kwam niet toevallig bij de kwartaalcijfers. SpaceX, dat in juni beursgenoteerd werd in de grootste beursgang ooit, boekte in het derde kwartaal voor het eerst een kwartaalwinst: 4,4 miljard dollar, tegen een verlies van 1,05 miljard een jaar eerder. Over de eerste drie kwartalen staat er 413 miljoen dollar winst tegenover een verlies van 2,59 miljard in dezelfde periode vorig jaar. De motor is opvallend genoeg niet de ruimtevaart. Volgens TechCrunch komt 52 procent van de inkomsten inmiddels uit AI, gebundeld in de omgedoopte divisie "Super Intelligence": 7,5 miljard dollar omzet uit codeertool Cursor, chatbot Grok en vooral de snel groeiende neocloud met 1,7 gigawatt rekenkracht. Dat is het resultaat van de fusie met xAI in februari, destijds goed voor 1.250 miljard dollar. Een samengaan met Tesla zou dat record bijna verdrievoudigen. Wel vraagt de winst van de AI-tak om nuance: die bedroeg 431 miljoen dollar en zou zonder een eenmalige aandelenbeloning van 1,2 miljard rond de Cursor-overname hoger zijn uitgevallen. De groei is reëel, de marges zijn nog dun.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 110" width="220" height="110" aria-label="Nettoresultaat SpaceX, eerste drie kwartalen en Q3">
+  <line x1="5" y1="60" x2="215" y2="60" stroke="var(--surface2)" stroke-width="1"/>
+  <rect x="12" y="60" width="38" height="31" fill="var(--orange)"/>
+  <rect x="62" y="56" width="38" height="4" fill="var(--green)"/>
+  <rect x="118" y="60" width="38" height="13" fill="var(--orange)"/>
+  <rect x="168" y="12" width="38" height="48" fill="var(--green)"/>
+  <g font-size="9" fill="currentColor" text-anchor="middle">
+    <text x="31" y="104">9m '25</text><text x="81" y="104">9m '26</text><text x="137" y="104">Q3 '25</text><text x="187" y="104">Q3 '26</text>
+    <text x="31" y="56">−2,59</text><text x="81" y="52">+0,41</text><text x="137" y="56">−1,05</text><text x="187" y="9">+4,4</text>
+  </g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Nettoresultaat SpaceX in miljard dollar.</p>
+</div>
+<div class="ns-viz"><div class="ns-viz-title">📈 De grootste fusies in Musks imperium</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-eec668fe"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-eec668fe'),{
+    type:'bar',
+    data:{
+      labels:['SpaceX + xAI (feb 2026)','SpaceX + Tesla (onderzocht)'],
+      datasets:[{
+        label:'Waarde (mld dollar)',data:[1250,3500],
+        backgroundColor:['rgba(167,139,250,.7)','rgba(124,58,237,.85)'],
+        borderColor:['#a78bfa','#7c3aed'],borderWidth:1.5,borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',
+                  cornerRadius:8,padding:10,callbacks:{label:function(c){return '$'+c.parsed.y+' mld';}}}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'},title:{display:true,text:'miljard dollar',color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>De logica en de prijs</h5>
+<p>Musk ziet "veel merites" omdat beide bedrijven aan AI werken. Fusie-expert Jerayr Haleblian van de University of California, Riverside, onderschrijft de "gezonde logica": beide bedrijven zijn in de kern geavanceerde fabrikanten met expertise in robotica, AI en energie-infrastructuur, wat kennisoverdracht mogelijk maakt. Musk zelf schetst waar de werkelijke schaarste zit: niet in chips, maar in stroom, koeling en infrastructuur. Hij besteedt naar eigen zeggen vier dagen per week in Memphis aan datacenter Colossus II en laat SpaceX-gietcapaciteit turbineonderdelen maken, omdat fabrikanten 12 tot 18 maanden op metalen wachten. Tesla, met batterijen en energieopslag, past in dat plaatje. Maar de rekening is fors: SpaceX investeerde in het derde kwartaal 19,6 miljard dollar en verwacht in het vierde kwartaal 35 tot 40 miljard. De winst werd bovendien geflatteerd door ongeveer een miljard aan bitcoinherstel en niet-gespecificeerde inkomsten van verbonden partijen.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Post SpaceX</th><th style="text-align:right;padding:.3rem .5rem">mld $</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Kapitaaluitgaven Q3</td><td style="text-align:right">19,6</td></tr>
+    <tr><td style="padding:.25rem .5rem">Verwacht Q4</td><td style="text-align:right">35–40</td></tr>
+    <tr><td style="padding:.25rem .5rem">Winst AI-divisie Q3</td><td style="text-align:right">0,43</td></tr>
+    <tr><td style="padding:.25rem .5rem">Eenmalige aandelenbeloning Cursor</td><td style="text-align:right">1,2</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Investeringen overschaduwen de AI-winst (TechCrunch).</p>
+</div>
+<blockquote>"Sommigen gaan ervan uit dat een fusie van SpaceX en Tesla een zekerheid is. Dat zou overdreven zijn." — Elon Musk</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 De route naar een megafusie</div>
+<div class="ns-viz-mech-subtitle">Van speciale commissies tot een stem van Tesla-aandeelhouders</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Commissies</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Voorstel</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Stemming</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Conglomeraat</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <g transform="translate(90,95)"><rect x="-55" y="-30" width="110" height="60" rx="8" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="1.8"/><text x="0" y="-4" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">SpaceX</text><text x="0" y="16" text-anchor="middle" font-size="11" fill="#44403c">speciale commissie</text></g>
+      <g transform="translate(230,95)"><rect x="-55" y="-30" width="110" height="60" rx="8" fill="#a78bfa" fill-opacity=".18" stroke="#a78bfa" stroke-width="1.8"/><text x="0" y="-4" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">Tesla</text><text x="0" y="16" text-anchor="middle" font-size="11" fill="#44403c">speciale commissie</text></g>
+      <line x1="148" y1="95" x2="172" y2="95" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="160" y="170" text-anchor="middle" font-size="11" fill="#78716c">Nog geen akkoord over een voorstel</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Commissies</h6>
+      <p class="korte">Beide bedrijven hebben een speciale commissie ingesteld om een fusie te onderzoeken.</p>
+      <p class="uitleg">Omdat Musk aan beide kanten van de tafel zit, onderhandelen aparte commissies. Volgens Musk is er nog geen overeenstemming over een voorstel; ze moeten eerst "iets bedenken".</p>
+      <a class="ns-viz-mech-bron" href="https://www.aljazeera.com/economy/2026/10/21/elon-musk-says-spacex-and-tesla-exploring-largest-merger-in?traffic_source=rss" target="_blank">📖 Al Jazeera ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="110" y="30" width="100" height="130" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="56" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Fusievoorstel</text>
+      <line x1="125" y1="75" x2="195" y2="75" stroke="#a78bfa" stroke-width="3"/><line x1="125" y1="92" x2="195" y2="92" stroke="#a78bfa" stroke-width="3"/><line x1="125" y1="109" x2="180" y2="109" stroke="#a78bfa" stroke-width="3"/>
+      <text x="160" y="140" text-anchor="middle" font-size="11" fill="#44403c">≈ $3.500 mld</text>
+      <circle class="ns-viz-mech-hotspot" cx="200" cy="140" r="7" data-tip="Gecombineerde marktwaarde nr. 7 en nr. 11 ter wereld"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Voorstel</h6>
+      <p class="korte">De commissies moeten een ruilverhouding en voorwaarden op tafel leggen.</p>
+      <p class="uitleg">SpaceX en Tesla zijn het zevende en elfde grootste bedrijf ter wereld, samen circa 3.500 miljard dollar waard. Het voorstel bepaalt hoeveel elk aandeelhoudersblok krijgt.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="110" y="90" width="100" height="70" rx="6" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="140" y="84" width="40" height="8" rx="2" fill="#7c3aed"/>
+      <rect x="146" y="40" width="28" height="40" rx="2" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <text x="160" y="65" text-anchor="middle" font-size="16" font-weight="700" fill="#7c3aed">✓</text>
+      <text x="160" y="132" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">&gt; 50%</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">Tesla-aandeelhouders</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Stemming</h6>
+      <p class="korte">Tesla-aandeelhouders moeten met meer dan de helft van de stemmen instemmen.</p>
+      <p class="uitleg">Musk noemt die 50 procent zelf een "hoge drempel". Hij vindt de fusie een goed idee, maar benadrukt dat aandeelhouders het uiteindelijk moeten steunen.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="160" cy="95" r="58" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Raketten · Starlink</text>
+      <text x="160" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Grok · Cursor · Colossus</text>
+      <text x="160" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Auto's · energie</text>
+      <text x="160" y="182" text-anchor="middle" font-size="11" fill="#44403c">Eén AI-, energie- en fabricagereus</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Conglomeraat</h6>
+      <p class="korte">Bij een ja ontstaat de grootste bedrijfscombinatie uit de geschiedenis.</p>
+      <p class="uitleg">De fusie zou die van SpaceX en xAI (1.250 miljard dollar, februari) ruim overtreffen en ruimtevaart, AI-infrastructuur, auto's en energieopslag onder één dak brengen.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Gevolgen en perspectieven</h5>
+<p>Beleggers reageerden enthousiast: het SpaceX-aandeel steeg nabeurs ruim 8 procent. Toch is voorzichtigheid op zijn plaats, en Musk zegt dat zelf ook. Voor Tesla-aandeelhouders draait de vraag om waardering en governance: krijgen zij genoeg voor hun belang in een bedrijf dat steeds meer AI-infrastructuur en steeds minder autofabrikant wordt, en hoeveel macht ligt er straks bij één persoon? Musk, met een vermogen van ruim 900 miljard dollar de rijkste mens ter wereld, zou een concern aansturen dat raketten, satellietnetwerken, AI-modellen, datacenters en auto's combineert. Dat raakt ook Europa: Starlink speelt een politieke rol in Oekraïne, zoals elders in deze krant blijkt, en de storing bij Google Cloud in Londen laat zien hoe afhankelijk economieën worden van een handvol infrastructuurspelers. Toezichthouders zullen een nog grotere Musk-groep kritisch bekijken. Ook de olieprijs rond 110 dollar, eveneens elders in deze krant, herinnert eraan dat energie de schaarse factor blijft: precies het terrein waarop Musk denkt dat een gefuseerd concern een voorsprong kan nemen.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Opbouw van het Musk-conglomeraat</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">feb 2026</div><div>SpaceX en xAI fuseren voor 1.250 miljard dollar</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">jun 2026</div><div>SpaceX naar de beurs in grootste IPO ooit</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2026</div><div>Overname codeertool Cursor, bouw Colossus II in Memphis</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>Eerste kwartaalwinst; fusieonderzoek met Tesla bevestigd</div></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>De fusie is minder een technologische noodzaak dan een financiële logica: SpaceX moet tientallen miljarden per kwartaal investeren in rekenkracht, en Tesla heeft een balans, een aandeelhoudersbasis en energietechniek die daarbij helpen. Dat maakt het idee plausibel, maar ook riskant. Wie instemt, koopt geen autobedrijf of raketbouwer meer, maar een weddenschap op Musks AI-ambities, met minder tegenwicht dan ooit. De Tesla-stemming wordt daarmee een referendum over vertrouwen in één man.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=4Lhketanzhk" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/4Lhketanzhk/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Musk bevestigt: Tesla en SpaceX onderzoeken fusie van 3.500 miljard dollar 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.aljazeera.com/economy/2026/10/21/elon-musk-says-spacex-and-tesla-exploring-largest-merger-in?traffic_source=rss" target="_blank" style="color:var(--accent)">aljazeera.com ↗</a> &bull; <a href="https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a> &bull; <a href="https://www.aljazeera.com/video/newsfeed/2026/10/21/musk-confirms-spacex-and-tesla-exploring-merger?traffic_source=rss" target="_blank" style="color:var(--accent)">aljazeera.com ↗</a></div>

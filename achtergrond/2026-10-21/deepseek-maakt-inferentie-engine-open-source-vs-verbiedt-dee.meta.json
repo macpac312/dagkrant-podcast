@@ -1,0 +1,17 @@
+{
+  "title": "Deepseek maakt inferentie-engine open source; VS verbiedt Deepseek bij federale diensten",
+  "summary": "DeepInfer, gebaseerd op vLLM, drukt de kosten van het snelle V4.1-Flash-model.\n\nDeepseek maakt DeepInfer open source, het inferentieframework achter zijn snelle en goedkope V4.1-Flash-model. Het systeem is gebaseerd op vLLM en verlaagt rekenkosten en energieverbruik.\n\nOp dezelfde dag verbood het Amerikaanse ministerie van Binnenlandse Veiligheid federale civiele diensten om Deepseek-technologie te gebruiken.",
+  "sources": [
+    "https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model/",
+    "https://the-decoder.com/us-bans-deepseek-technology-across-federal-civilian-agencies/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-21",
+  "slug": "deepseek-maakt-inferentie-engine-open-source-vs-verbiedt-dee",
+  "tts_slug": "deepseek-maakt-inferentie-engine-open-source-vs-verbiedt-dee",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-21T04:42:49",
+  "size_kb": 15
+}

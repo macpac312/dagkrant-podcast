@@ -1,0 +1,16 @@
+{
+  "title": "GPT-6 veel beter in COBOL en Fortran: 87 procent geslaagde tests",
+  "summary": "Op de nieuwe MultiLangBench haalt GPT-6 Astra 87,4 procent, tegen 38 procent voor GPT-5.6.\n\nOpenAI heeft zijn nieuwste modellen verbeterd voor weinig gebruikte programmeertalen als COBOL, Fortran en Visual Basic. Op de nieuwe MultiLangBench haalt GPT-6 Astra 87,4 procent geslaagde tests over 20 talen, tegen ongeveer 38 procent voor GPT-5.6 Terra.\n\nVoor COBOL-migratie scoort GPT-6.1 Sol volgens OpenAI nog beter.",
+  "sources": [
+    "https://the-decoder.com/openai-says-gpt-6-is-much-better-with-legacy-programming-languages-such-as-cobol-and-fortran/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-21",
+  "slug": "gpt-6-veel-beter-in-cobol-en-fortran-87-procent-geslaagde-te",
+  "tts_slug": "gpt-6-veel-beter-in-cobol-en-fortran-87-procent-geslaagde-te",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-21T04:42:49",
+  "size_kb": 9
+}

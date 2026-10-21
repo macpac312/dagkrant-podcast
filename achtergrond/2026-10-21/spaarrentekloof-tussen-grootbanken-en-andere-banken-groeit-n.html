@@ -1,0 +1,131 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://infinance.nl/wp-content/uploads/2024/08/Sparen.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© infinance.nl</div></div><ul class="bg-bullets">
+<li>Kloof in spaarrente tussen grootbanken en de rest groeit naar 0,98 procentpunt.</li>
+<li>Na de ECB-verhoging naar 2,50 procent verhoogde alleen Rabobank, met 0,10 procentpunt.</li>
+<li>Buitenlandse banken gaven de renteverhoging vaker door dan Nederlandse banken.</li>
+<li>Grootbanken rekenen op trouwe spaarders; overstappen loont voor wie actief vergelijkt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Gemiddelde spaarrente nieuwe klant (€20.000, variabel)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-d9e60ccf"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-d9e60ccf'),{
+    type:'bar',
+    data:{
+      labels:['9 september','15 oktober'],
+      datasets:[
+        {label:'Vier grootbanken',data:[1.28,1.31],backgroundColor:'#7c3aed',borderRadius:6},
+        {label:'Overige 39 banken',data:[2.19,2.29],backgroundColor:'#a78bfa',borderRadius:6}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y.toFixed(2).replace('.',',')+'%';}}}
+      },
+      scales:{
+        y:{beginAtZero:true,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Een rentestap die niet doorkomt</h5>
+<p>Op 10 september verhoogde de Europese Centrale Bank de depositorente met 0,25 procentpunt naar 2,50 procent. Wie verwachtte dat spaarders daar vanzelf van zouden profiteren, komt bedrogen uit, zeker bij de grote Nederlandse banken. Vergelijkingssite RevoSave keek naar de rente voor een nieuwe klant met 20.000 euro op een variabele spaarrekening bij 43 banken, op 9 september en op 15 oktober. Bij ABN Amro, ING, Rabobank en ASN Bank steeg het gemiddelde slechts van 1,28 naar 1,31 procent, en dat kwam volledig door Rabobank, die per 14 oktober 0,10 procentpunt extra gaf. De drie andere grootbanken lieten hun tarieven ongemoeid. Bij de overige 39 banken steeg het gemiddelde van 2,19 naar 2,29 procent. Daarmee groeide de kloof van 0,91 naar 0,98 procentpunt: op 20.000 euro scheelt dat zo'n 196 euro per jaar.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:.3rem .5rem">Bank</th>
+    <th style="text-align:right;padding:.3rem .5rem">Was</th>
+    <th style="text-align:right;padding:.3rem .5rem">Werd</th>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Alisa Bank</td><td style="text-align:right">1,25%</td><td style="text-align:right">2,10%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Carrefour Banque</td><td style="text-align:right">2,03%</td><td style="text-align:right">2,35%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Bigbank (bonus, 6 mnd)</td><td style="text-align:right">2,75%</td><td style="text-align:right">3,00%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Ayvens (actie, 4 mnd)</td><td style="text-align:right">1,85%</td><td style="text-align:right">3,25%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Grootste stijgers volgens RevoSave, 9 sep – 15 okt.</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een ECB-besluit (niet) bij de spaarder komt</div>
+<div class="ns-viz-mech-subtitle">Van depositorente naar uw spaarrekening, met vertraging</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">ECB</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Bankmarge</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Concurrentie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Spaarder</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="100" y="60" width="120" height="100" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M90,60 L160,25 L230,60 z" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="52" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">ECB</text>
+      <text x="160" y="110" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">2,50%</text>
+      <text x="160" y="132" text-anchor="middle" font-size="11" fill="#44403c">+0,25 pp</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>ECB</h6><p class="korte">De ECB verhoogt de depositorente op 10 september naar 2,50 procent.</p><p class="uitleg">De depositorente is wat banken ontvangen op overtollig geld dat ze bij het eurosysteem stallen. Een verhoging maakt die parkeerplaats lucratiever en zou in theorie ook de spaarrente moeten optrekken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="40" width="60" height="120" fill="#7c3aed" fill-opacity=".6"/>
+      <rect x="200" y="117" width="60" height="43" fill="#a78bfa" fill-opacity=".7"/>
+      <text x="90" y="178" text-anchor="middle" font-size="11" fill="#44403c">ECB 2,50%</text>
+      <text x="230" y="178" text-anchor="middle" font-size="11" fill="#44403c">grootbank ~1,3%</text>
+      <line x1="125" y1="40" x2="195" y2="117" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="160" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">marge</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Bankmarge</h6><p class="korte">Wie de spaarrente laag houdt, vergroot de eigen rentemarge.</p><p class="uitleg">Het verschil tussen wat een bank op haar geld verdient en wat zij spaarders betaalt is een kernbron van winst. De drie grootbanken die niets deden, hielden de volledige ECB-stap zelf.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="100" cy="100" r="50" fill="#a78bfa" fill-opacity=".25" stroke="#a78bfa" stroke-width="2"/>
+      <text x="100" y="96" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">15/27</text>
+      <text x="100" y="116" text-anchor="middle" font-size="11" fill="#44403c">buitenlands</text>
+      <circle cx="220" cy="100" r="50" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="220" y="96" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">5/16</text>
+      <text x="220" y="116" text-anchor="middle" font-size="11" fill="#44403c">Nederlands</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Concurrentie</h6><p class="korte">Kleinere en buitenlandse banken moeten spaargeld actief binnenhalen.</p><p class="uitleg">Van de 27 buitenlandse banken verhoogden er vijftien de rente, van de zestien Nederlandse slechts vijf. Nieuwkomers zonder groot klantenbestand concurreren op prijs, vaak met tijdelijke actierentes.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <ellipse cx="160" cy="110" rx="70" ry="50" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="150" y="56" width="20" height="6" fill="#7c3aed"/>
+      <text x="160" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#7c3aed">0,98 pp</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">≈ €196 per jaar op €20.000</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Spaarder</h6><p class="korte">Wie niet overstapt, mist bijna een procentpunt rente.</p><p class="uitleg">De gemiddelde kloof tussen grootbanken en de rest steeg van 0,91 naar 0,98 procentpunt. Grootbanken rekenen erop dat de meeste klanten uit gemak blijven zitten.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Traagheid als verdienmodel</h5>
+<p>Het patroon is bekend uit eerdere renterondes: grote banken passen hun spaarrente trager en minder aan dan de ECB. Ze kunnen dat zich permitteren omdat hun klanten zelden vertrekken. Betaalrekening, hypotheek en spaarrekening zitten vaak onder één dak, en het gemak weegt voor veel huishoudens zwaarder dan een procentpunt. Kleinere en buitenlandse aanbieders hebben die luxe niet. Zij moeten spaargeld actief aantrekken, en dat zie je terug in de cijfers: vijftien van de 27 buitenlandse banken verhoogden de rente, tegen vijf van de zestien Nederlandse. Tegelijk is niet elke verhoging wat ze lijkt. Bigbank verhoogde alleen een bonusrente voor zes maanden, Ayvens Bank lanceerde een actierente van 3,25 procent voor vier maanden terwijl de reguliere rente op 1,85 procent bleef, en de gemeten daling bij Klarna kwam doordat een actie van 3,00 procent afliep, terwijl de reguliere rente daar in september juist van 1,95 naar 2,20 procent was verhoogd. Wie de cijfers leest, moet dus onderscheid maken tussen structurele verhogingen en lokkertjes die na enkele maanden verdwijnen. Alisa Bank en Carrefour Banque vallen in de eerste categorie.</p>
+<blockquote>Van de vier grootbanken gaf alleen Rabobank iets van de ECB-verhoging door; ABN Amro, ING en ASN Bank hielden hun tarieven ongewijzigd.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Depositorente</summary>
+    <div class="ns-viz-concept-body">De rente die banken van de ECB ontvangen op geld dat ze bij het eurosysteem aanhouden. Het belangrijkste sturingsinstrument van het monetaire beleid.</div></details>
+  <details class="ns-viz-concept"><summary>Actierente</summary>
+    <div class="ns-viz-concept-body">Tijdelijk hogere rente voor nieuwe klanten, zoals 3,25 procent voor vier maanden bij Ayvens. Daarna valt de rente terug naar het reguliere tarief.</div></details>
+  <details class="ns-viz-concept"><summary>Depositogarantiestelsel</summary>
+    <div class="ns-viz-concept-body">In de EU is spaargeld tot 100.000 euro per persoon per bank gegarandeerd, ook bij buitenlandse banken, via het stelsel van het land van vestiging.</div></details>
+</div></div>
+<h5>Gevolgen voor spaarders en toezicht</h5>
+<p>Voor spaarders is de les eenvoudig: wie vergelijkt en overstapt, verdient aanzienlijk meer, al moet de rekensom rekening houden met tijdelijke acties en met het land waar de bank gevestigd is. Voor toezichthouders en politiek ligt het gevoeliger. De ACM en de Tweede Kamer hebben de trage doorgifte van rentestijgingen eerder aan de kaak gesteld, en een groeiende kloof zal die discussie nieuw leven inblazen. Het past in een breder Europees debat over bankwinsten en concurrentie, zoals dat vandaag ook speelt rond de Britse bankenbelasting en de vraag of lagere kapitaaleisen Europese banken werkelijk concurrerender maken. Hoge marges op spaargeld zijn voor banken een comfortabele buffer, maar ze ondermijnen het vertrouwen dat rentebeleid ook de gewone spaarder bereikt.</p>
+<h5>Conclusie</h5>
+<p>De groeiende spaarrentekloof is geen marktfalen in de klassieke zin, maar een rationele exploitatie van klanttrouw. De grootbanken verdienen aan de traagheid van hun spaarders en zullen dat blijven doen zolang overstappen als gedoe wordt ervaren. De ECB-verhoging van september laat daarmee vooral zien dat monetair beleid in Nederland via omwegen loopt. Wie die omweg wil vermijden, moet zelf in beweging komen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=MrKJR3qnLSo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/MrKJR3qnLSo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">🚨 Mei Update SVB ALERT 2026  | Nieuwe Bankregels</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://infinance.nl/artikel/renteverschil-tussen-grootbanken-en-andere-banken-groeit/" target="_blank" style="color:var(--accent)">infinance.nl ↗</a></div>

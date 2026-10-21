@@ -1,0 +1,95 @@
+<ul class="bg-bullets">
+<li>Verkopen, bouwstarts en bouwersvertrouwen in VS daalden in september sterker dan verwacht</li>
+<li>Hoge hypotheekrente en het lock-in-effect houden aanbod en vraag tegelijk vast</li>
+<li>Fed overweegt toch een renteverhoging omdat de inflatie te hoog blijft</li>
+<li>Een verhoging zou de woningmarkt verder bevriezen en de bouw raken</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Bovengrens Fed-rente aan het eind van het jaar (%)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-e76a767f"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-e76a767f'),{
+    type:'line',
+    data:{
+      labels:['2021','2022','2023','2024','2025'],
+      datasets:[{
+        label:'Fed funds (bovengrens)',data:[0.25,4.5,5.5,4.5,3.75],
+        borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.08)',
+        tension:.35,fill:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#7c3aed'
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{beginAtZero:true,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Een markt die niet beweegt</h5>
+<p>De Amerikaanse woningmarkt zat al vast, en in september werd de greep nog strakker. Verkopen, bouwstarts en het vertrouwen van huizenbouwers daalden allemaal meer dan economen hadden verwacht, bleek uit cijfers die dinsdag verschenen. Dat de drie indicatoren tegelijk tegenvallen, is veelzeggend: het gaat niet om een incident in één segment, maar om een markt die aan vraag- én aanbodzijde stilvalt. De wortels liggen in de pandemie. In 2020 en 2021 zakte de Amerikaanse hypotheekrente naar historische dieptepunten en legden miljoenen huishoudens een lage rente voor dertig jaar vast. Toen de Federal Reserve vanaf 2022 in hoog tempo de rente verhoogde om de inflatie te temmen, sprong de hypotheekrente omhoog. Sindsdien willen huiseigenaren hun goedkope lening niet opgeven, en kopers kunnen de maandlasten van een nieuwe lening nauwelijks dragen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe de rente de woningmarkt bevriest</div>
+<div class="ns-viz-mech-subtitle">Van Fed-besluit naar een markt zonder verkopers en kopers</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Fed</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Hypotheekrente</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Lock-in</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Bouw</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><polygon points="80,60 160,25 240,60" fill="#7c3aed" fill-opacity=".35" stroke="#7c3aed" stroke-width="2"/><rect x="85" y="60" width="150" height="10" fill="#7c3aed"/><rect x="95" y="72" width="14" height="70" fill="#a78bfa"/><rect x="133" y="72" width="14" height="70" fill="#a78bfa"/><rect x="171" y="72" width="14" height="70" fill="#a78bfa"/><rect x="209" y="72" width="14" height="70" fill="#a78bfa"/><rect x="75" y="142" width="170" height="12" fill="#7c3aed"/><text x="160" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Federal Reserve</text><path d="M270 120 L270 70 M258 82 L270 68 L282 82" stroke="#dc2626" stroke-width="3" fill="none"/></svg></div>
+<div class="ns-viz-mech-info"><h6>Fed</h6><p class="korte">De Fed overweegt de beleidsrente te verhogen tegen hoge inflatie.</p><p class="uitleg">De beleidsrente bepaalt de prijs van kort geld. Een verhoging, of zelfs de verwachting ervan, werkt via de kapitaalmarkt door in de langere rentes waarop hypotheken zijn gebaseerd.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="60" y="90" width="90" height="70" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><polygon points="55,90 105,55 155,90" fill="#7c3aed" fill-opacity=".4"/><polyline points="180,150 210,130 240,110 270,70" stroke="#dc2626" stroke-width="4" fill="none"/><text x="230" y="175" text-anchor="middle" font-size="11" fill="#44403c">maandlast stijgt</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Hypotheekrente</h6><p class="korte">De dertigjarige hypotheekrente volgt de lange rente omhoog.</p><p class="uitleg">Amerikaanse hypotheken lopen vaak dertig jaar met vaste rente en hangen samen met de rente op tienjarige staatsobligaties. Stijgt die, dan worden nieuwe leningen duurder en haken kopers af.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="80" width="120" height="80" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><polygon points="95,80 160,40 225,80" fill="#7c3aed" fill-opacity=".4"/><rect x="140" y="105" width="40" height="34" rx="5" fill="#7c3aed"/><path d="M147 105 L147 93 A13 13 0 0 1 173 93 L173 105" stroke="#7c3aed" stroke-width="5" fill="none"/><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">lage oude rente: niet verkopen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Lock-in</h6><p class="korte">Eigenaren met een goedkope lening blijven zitten.</p><p class="uitleg">Wie in 2020 of 2021 een recordlage rente vastzette, verliest die bij verhuizen. Daardoor komt er weinig bestaand aanbod op de markt, terwijl hoge prijzen en rente de kopers wegjagen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><line x1="80" y1="40" x2="80" y2="160" stroke="#7c3aed" stroke-width="5"/><line x1="80" y1="45" x2="220" y2="45" stroke="#7c3aed" stroke-width="5"/><line x1="200" y1="45" x2="200" y2="85" stroke="#a78bfa" stroke-width="2"/><rect x="185" y="85" width="30" height="20" fill="#a78bfa"/><rect x="120" y="120" width="60" height="40" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5 4"/><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">minder bouwstarts</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Bouw</h6><p class="korte">Bouwers zien de vraag wegvallen en starten minder projecten.</p><p class="uitleg">Ook projectontwikkelaars financieren met geleend geld. Dalend vertrouwen en minder bouwstarts betekenen dat het woningtekort op termijn groter wordt, wat prijzen ondanks de lage omzet hoog houdt.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Het dilemma van de Fed</h5>
+<p>Dat de Fed juist nu een renteverhoging overweegt, laat zien hoe ongemakkelijk haar positie is. Na een verhogingsfase van 2022 en 2023, waarin de beleidsrente van vrijwel nul naar een bovengrens van 5,5 procent ging, verlaagde de centrale bank in 2024 en 2025 de rente stapsgewijs. De inflatie blijkt echter hardnekkiger dan gehoopt, en het mandaat van de Fed is helder: stabiele prijzen, met een inflatiedoel van 2 procent, naast maximale werkgelegenheid. Woningen zijn daarbij een bijzonder gevoelige schakel. Huisvestingskosten wegen zwaar in de Amerikaanse consumentenprijsindex en reageren traag, waardoor de woningmarkt tegelijk slachtoffer en aanjager van de inflatie is. Een renteverhoging drukt de vraag, maar remt ook de bouw van nieuwe woningen, en juist een tekort aan aanbod houdt huren en prijzen hoog. Economen zijn verdeeld: de een ziet verkrapping als onvermijdelijk, de ander waarschuwt dat de Fed de bouw de genadeslag geeft.</p>
+<blockquote>De woningmarkt is voor de Fed tegelijk het kanaal waarlangs rentebeleid werkt en de plek waar het het meeste schade aanricht.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Lock-in-effect</summary>
+    <div class="ns-viz-concept-body">Huiseigenaren met een lage, vastgezette rente verhuizen niet, omdat een nieuwe lening veel duurder is. Het bestaande aanbod droogt op.</div></details>
+  <details class="ns-viz-concept"><summary>Bouwstarts</summary>
+    <div class="ns-viz-concept-body">Het aantal nieuwe woningbouwprojecten dat in een maand begint: een vooruitlopende indicator voor bouwactiviteit en toekomstig aanbod.</div></details>
+  <details class="ns-viz-concept"><summary>Bouwersvertrouwen</summary>
+    <div class="ns-viz-concept-body">Maandelijkse enquête onder huizenbouwers (NAHB-index) naar verkopen en verwachtingen. Een daling wijst op minder plannen en voorzichtiger investeringen.</div></details>
+</div></div>
+<h5>Gevolgen voor Europa en Nederland</h5>
+<p>De Amerikaanse woningmarkt is ook voor Europa een graadmeter. Een Fed die verkrapt, duwt wereldwijd de lange rentes omhoog en maakt de dollar sterker, wat de financieringskosten ook hier beïnvloedt. In Nederland is dat al zichtbaar in de prijs van risico: de renteopslag voor een aflossingsvrije hypotheek is volgens een verwant bericht in deze krant bijna verdrievoudigd, van ruim 0,1 procentpunt begin 2024 naar gemiddeld 0,35 procentpunt bij tien jaar vast met NHG. Tegelijk laat Berlijn zien hoe woningnood de politiek radicaliseert: daar wil een nieuwe linkse coalitie grote vastgoedbedrijven onteigenen. In de VS, Duitsland en Nederland is het onderliggende probleem hetzelfde. Er wordt te weinig gebouwd, en een hogere rente lost dat niet op maar maakt het op korte termijn erger.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="Renteopslag aflossingsvrij NL">
+  <g font-size="9" fill="#78716c"><text x="40" y="84">begin 2024</text><text x="140" y="84">nu</text></g>
+  <rect x="40" y="58" width="50" height="16" fill="var(--accent)"/>
+  <rect x="140" y="22" width="50" height="52" fill="var(--orange)"/>
+  <g font-size="10" fill="#44403c" text-anchor="middle"><text x="65" y="53">~0,1</text><text x="165" y="17">0,35</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Opslag aflossingsvrij, procentpunt, tien jaar vast met NHG.</p>
+</div>
+<h5>Conclusie</h5>
+<p>De septembercijfers tonen een markt die niet afkoelt maar bevriest, en een renteverhoging zou die vorst verdiepen. De Fed heeft gelijk dat inflatie niet mag ontsporen, maar ze kan het woningtekort niet met rentebeleid oplossen. Zonder aanbodbeleid, van bestemmingsplannen tot bouwfinanciering, blijft elke renteverhoging vooral een rem op precies de bouw die de prijsdruk op termijn zou moeten verlichten.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=9wnyvC_utpw" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/9wnyvC_utpw/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">The Fed Just Cut Rates Again. Here’s What’s Ahead for 2026</div></div></a></div>

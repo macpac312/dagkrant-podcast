@@ -1,0 +1,25 @@
+<figure class="reader-hero"><img src="https://itsfoss.com/content/images/2026/10/linus-torvalds-ai-banner.png" alt="Linus Torvalds Says He Likes Using AI, While His New Kernel Branch Credits Claude Code" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>Linus Torvalds Says He Likes Using AI, While His New Kernel Branch Credits Claude Code</h1>
+<p>Linus Torvalds has a new branch in his own kernel repository named noref-filemap-read-with-llm.</p>
+<p>It holds an eight-patch series built on Linux 7.3-rc6 plus fixes, and its <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=noref-filemap-read-with-llm&amp;id=4c0f3697118eb3a708ea79175f7f07c43339bfab&amp;ref=itsfoss.com" target="_blank" rel="noopener">commit message</a> gives no kernel release target for merging it.</p>
+<p>While the commit message is long and technical, the change itself is easy to describe.</p>
+<h2>What he changed</h2>
+<p>When many threads read the same file, the kernel serves them from the page cache, its in-memory copy of recently read data. Today, each read takes a hold of the cached data and releases it afterwards.</p>
+<p>Every thread updates the same counter to do so, resulting in the threads tripping over each other. The issue dates to 2024, when Matthew Wilcox flagged it, citing a customer&#x27;s workload.</p>
+<p>Linus&#x27; series of patches skips that step. To make that safe, memory that leaves the cache is not handed out for reuse until a short period has passed, so a reader can copy data straight out without holding anything.</p>
+<p>The cost is that more memory sits idle for a moment.</p>
+<p>The payoff, measured on his own laptop with some security protections switched off, is that eight threads reading one file went from about 10 million reads per second to between 30 and 33 million.</p>
+<p>Linus ran the measurements himself, but for the rest, the commit message credits <strong>Claude Code</strong>, working under his direction. That includes a draft of the message itself, the code and test programs, and the review behind its list of known problems.</p>
+<p>This is not the first time he has used AI on kernel work. In August, he used it <a href="https://itsfoss.com/news/torvalds-used-ai-fix-kernel-bug/" target="_blank" rel="noopener">to help fix a bug</a> in the Intel Xe graphics driver.</p>
+<h2>What he said in Prague</h2>
+<p>Linus spoke with his long-time friend, Dirk Hohndel, the head of Ericsson Software Technology, at <a href="https://events.linuxfoundation.org/open-source-summit-europe/?ref=itsfoss.com" target="_blank" rel="noopener">Open Source Summit Europe</a> in Prague on Friday.</p>
+<p>ZDNet&#x27;s Steven Vaughan-Nichols, <a href="https://www.zdnet.com/tech/linus-torvalds-ai-coding-programming/?ref=itsfoss.com" target="_blank" rel="noopener">who was in attendance</a>, quotes Linus, saying, &quot;<strong><em>I actually really like using AI</em></strong>.&quot;</p>
+<p>He said he used to think AI was not very good but has changed his mind. In his view, it <strong>works well as long as it is treated as a tool</strong>, and it makes programming more enjoyable for him.</p>
+<p>His own example was <a href="https://github.com/torvalds/GuitarPedal?ref=itsfoss.com" target="_blank" rel="noopener">a guitar pedal project</a> with an interface he had written in C. He wanted a more modern look and tried AI for it, saying, &quot;<em>I use AI to do the things that I&#x27;m bad at</em>.&quot;</p>
+<p>He also defended vibe coding as &quot;<em>a wonderful way to find joy in programming</em>,&quot; mainly for newcomers, and says that while AI is improving the code base, <strong>the load it puts on maintainers has become a real problem</strong>.</p>
+<p>This again shows how much Linus’ stance has changed when it comes to AI. In 2024, he called the AI industry &quot;<em>90 percent marketing and 10 percent reality</em>.&quot; Now, <a href="https://itsfoss.com/news/linus-torvalds-on-ai/" target="_blank" rel="noopener">he is actively using it</a> for kernel work.</p>
+<p><strong>Suggested Read 📖:</strong> Gentoo needs your help <a href="https://itsfoss.com/news/gentoo-infrastructure-sponsors-call/" target="_blank" rel="noopener">for sponsoring its infrastructure</a>.</p>
+<p>Enjoyed this update? Support independent Linux news coverage</p>
+<p>It&#x27;s FOSS has been helping people use Linux for the past 14 years. Help us stay independent from big tech. Become a Plus member, enjoy ad-free reading and get 5 eBooks.</p>
+<p>Tell Google you prefer It&#x27;s FOSS, and it will show our Linux news and tutorials, created by experienced Linux users, more often when you search. It takes just a click.</p>
+<p class="bg-footer">Bron: <a href="https://itsfoss.com/news/linus-torvalds-claude-code-linux/" target="_blank" rel="noopener">itsfoss.com</a></p>

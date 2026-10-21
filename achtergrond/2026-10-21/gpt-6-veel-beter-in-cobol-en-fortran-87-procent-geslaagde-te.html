@@ -1,0 +1,77 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/openai_safety.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>GPT-6 Astra haalt 87,4 procent op MultiLangBench, tegen 37,9 voor GPT-5.6 Terra</li>
+<li>OpenAI richtte training op 'low-resource' talen als COBOL, Fortran en Visual Basic</li>
+<li>COBOL-migratie springt van 5,4 naar 86,6 procent, met maximaal redeneren 97,9</li>
+<li>De benchmarks zijn van OpenAI zelf; onafhankelijke toetsing moet nog volgen</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 MultiLangBench: gemiddeld geslaagde tests over 20 talen (%)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-a7475866"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-a7475866'),{
+    type:'bar',
+    data:{
+      labels:['GPT-5.6 Terra','GPT-6 Luna','GPT-6 Astra'],
+      datasets:[{
+        label:'Geslaagde tests (%)',data:[37.9,40.3,87.4],
+        backgroundColor:['rgba(167,139,250,.55)','rgba(167,139,250,.8)','#7c3aed'],
+        borderColor:'#7c3aed',borderWidth:1,borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{beginAtZero:true,max:100,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>De oude talen onder de wereldeconomie</h5>
+<p>Het grootste deel van de aandacht voor AI-programmeerhulp gaat naar Python, JavaScript en andere talen waarin miljoenen ontwikkelaars dagelijks werken. OpenAI richt zich met zijn nieuwste modellen nadrukkelijk op het tegenovergestelde: 'low-resource' talen als COBOL, Fortran en Visual Basic, waarvan veel minder openbare code bestaat om op te trainen. Dat is geen nostalgie. COBOL, ontworpen eind jaren vijftig, draait nog altijd in het hart van banken, verzekeraars en overheden. IBM schat dat de taal meer dan 40 procent van de systemen voor online bankieren aandrijft en 95 procent van alle geldautomaattransacties. Fortran is evenzeer onmisbaar in wetenschappelijke rekenmodellen, van klimaat tot natuurkunde. Het probleem is bekend: de programmeurs die deze systemen kennen, gaan met pensioen, en jongere ontwikkelaars leren de talen nauwelijks nog. Elke modernisering wordt daardoor duurder en riskanter.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Waarom COBOL ertoe doet (IBM-schatting)</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="&gt;" data-target="40" data-suffix="%">&gt;40%</div><div class="ns-viz-stat-label">Systemen online bankieren</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="95" data-suffix="%">95%</div><div class="ns-viz-stat-label">Geldautomaattransacties</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="20">20</div><div class="ns-viz-stat-label">Talen in MultiLangBench</div></div>
+</div></div>
+<h5>Wat de benchmarks wel en niet meten</h5>
+<p>OpenAI bouwde twee eigen evaluaties. MultiLangBench vraagt een model om vanaf nul een databasemotor te bouwen die compatibel is met SQLite, in twintig verschillende talen. Met maximale redeneerinspanning haalt GPT-6 Astra gemiddeld 87,4 procent geslaagde tests, tegen ongeveer 38 procent voor GPT-5.6 Terra. Het goedkopere GPT-6 Luna komt op 40,3 procent, nauwelijks beter dan zijn voorganger maar tegen veel lagere kosten. De tweede test meet COBOL-migratie: code vertalen naar C++, Java, Kotlin, Python of Rust. Daar haalt GPT-6.1 Sol bij lage redeneerinspanning 86,6 procent nauwkeurigheid, tegen 5,4 procent voor GPT-5.6 Sol; met meer rekentijd loopt dat op tot 97,9 procent. Dat is een sprong van een andere orde. Tegelijk past voorzichtigheid: beide benchmarks zijn door OpenAI zelf ontworpen, en een databasemotor bouwen is iets anders dan veertig jaar aan bedrijfslogica in een bankmainframe doorgronden.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="COBOL-migratie nauwkeurigheid">
+  <g font-size="9" fill="#78716c"><text x="10" y="94">5.6 Sol</text><text x="80" y="94">6.1 Sol laag</text><text x="155" y="94">6.1 Sol max</text></g>
+  <rect x="15" y="76" width="40" height="4" fill="var(--surface2)"/>
+  <rect x="88" y="16" width="40" height="64" fill="var(--accent)"/>
+  <rect x="162" y="8" width="40" height="72" fill="var(--green)"/>
+  <g font-size="10" fill="#44403c" text-anchor="middle"><text x="35" y="70">5,4%</text><text x="108" y="12">86,6%</text><text x="182" y="6">97,9%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">COBOL-migratiebenchmark volgens OpenAI, nauwkeurigheid.</p>
+</div>
+<blockquote>Een sprong van 5,4 naar 86,6 procent op COBOL-migratie is geen incrementele verbetering, maar een verschuiving in wat modernisering van oude systemen kost.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 COBOL-migratie bij maximaal redeneren</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:5"/>
+  </svg>
+  <div class="ns-viz-gauge-val">97,9%</div>
+  <div class="ns-viz-gauge-label">GPT-6.1 Sol, nauwkeurigheid</div>
+</div></div>
+<h5>Gevolgen voor banken, overheden en de AI-race</h5>
+<p>Als de resultaten standhouden, raakt dit een van de duurste problemen in de IT. Grote migraties van mainframes zijn berucht om hun overschrijdingen, en de Amerikaanse werkloosheidssystemen die tijdens de pandemie bezweken onder COBOL-code lieten zien hoe kwetsbaar de afhankelijkheid is. Ook Europese banken en Nederlandse uitvoeringsorganisaties draaien op zulke systemen. Een model dat betrouwbaar vertaalt, verlaagt de drempel om te moderniseren, maar verschuift ook het risico: wie controleert of de vertaalde code exact hetzelfde doet als het origineel? De aankondiging past in een bredere race. Deepseek maakte deze week zijn inferentie-engine open source en drukt de kosten, terwijl Anthropic zijn cloudpartners steeds vaker als concurrenten ziet. Gespecialiseerde, aantoonbare vaardigheden worden zo een manier om je te onderscheiden in een markt waarin algemene chatbots steeds meer op elkaar lijken.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Low-resource taal</summary>
+    <div class="ns-viz-concept-body">Programmeertaal waarvan weinig openbare code bestaat om een model op te trainen, zoals COBOL of Fortran, tegenover overvloedige talen als Python.</div></details>
+  <details class="ns-viz-concept"><summary>MultiLangBench</summary>
+    <div class="ns-viz-concept-body">OpenAI-test waarbij een model in twintig talen een SQLite-compatibele databasemotor bouwt; de score is het aandeel geslaagde tests.</div></details>
+  <details class="ns-viz-concept"><summary>Reasoning effort</summary>
+    <div class="ns-viz-concept-body">Instelbare hoeveelheid denkstappen die een model zet voordat het antwoordt. Meer inspanning geeft hogere scores, maar kost tijd en geld.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>OpenAI kiest een slimme niche: niet de zoveelste chatbotverbetering, maar het oplossen van een concreet, kostbaar probleem onder de financiële infrastructuur. De cijfers zijn indrukwekkend, maar het zijn huiswerkcijfers zolang onafhankelijke tests en echte migraties ontbreken. Banken zullen niet op een benchmark varen. De werkelijke toets is het eerste mainframe dat met AI-hulp foutloos is overgezet.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=nfPsz4lkzpM" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/nfPsz4lkzpM/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">GPT-6 veel beter in COBOL en Fortran: 87 procent geslaagde tests 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/openai-says-gpt-6-is-much-better-with-legacy-programming-languages-such-as-cobol-and-fortran/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

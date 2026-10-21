@@ -1,0 +1,16 @@
+{
+  "title": "Google volgt Amazon met tool om PyTorch-apps los te maken van Nvidia",
+  "summary": "Ontwikkelaars kunnen hun apps makkelijker van Nvidia-GPU's naar eigen chips verhuizen.\n\nGoogle heeft, net als eerder Amazon, een ontwikkelaarstool uitgebracht waarmee PyTorch-gebruikers hun applicaties makkelijker van Nvidia-GPU's kunnen overzetten.\n\nDaarmee vallen beide cloudreuzen het belangrijkste voordeel van Nvidia aan: de software-ecosysteem rond CUDA.",
+  "sources": [
+    "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-21",
+  "slug": "google-volgt-amazon-met-tool-om-pytorch-apps-los-te-maken-va",
+  "tts_slug": "google-volgt-amazon-met-tool-om-pytorch-apps-los-te-maken-va",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-21T04:42:50",
+  "size_kb": 12
+}

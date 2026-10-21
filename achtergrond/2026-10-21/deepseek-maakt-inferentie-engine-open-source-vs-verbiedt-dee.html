@@ -1,0 +1,117 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/08/deepseek_deepseek_logo.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Deepseek zet DeepInfer, de inferentie-engine achter V4.1-Flash, open onder Apache 2.0-licentie.</li>
+<li>De software bouwt op vLLM en drukt rekenkosten en energieverbruik verder omlaag.</li>
+<li>Dezelfde dag verbiedt het Amerikaanse ministerie van Binnenlandse Veiligheid Deepseek bij federale civiele diensten.</li>
+<li>Openheid uit China en afscherming door Washington versterken elkaar: de AI-race wordt een prijsoorlog.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Twee besluiten op één dag</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="Apache " data-target="2.0">Apache 2.0</div><div class="ns-viz-stat-label">Licentie van DeepInfer</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2018">2018</div><div class="ns-viz-stat-label">Jaar van de wet waarop het verbod steunt</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Techreuzen die eerder bredere maatregelen tegenhielden</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Genoemde deadlines of concrete veiligheidszorgen</div></div>
+</div></div>
+<h5>Open deur, dichte deur</h5>
+<p>Op dezelfde dag dat Deepseek zijn interne serversoftware weggaf, sloot Washington de deur. Het Chinese AI-lab maakte DeepInfer open source, het inferentieframework waarmee zijn snelle en goedkope V4.1-Flash-model antwoorden genereert. Inferentie is het deel van AI dat na de training komt: het verwerken van elke vraag van elke gebruiker, en daarmee de post die de rekening van een AI-dienst bepaalt. DeepInfer bouwt voort op vLLM, de populaire open serving-software die aan de Universiteit van Berkeley ontstond, en voegt geoptimaliseerde rekenkernels, verdeling over meerdere chips en snellere tekstgeneratie toe. Ook code voor toekomstige modellen komt open beschikbaar, net als deepseek-recipe, dat de tokenverwerking van de officiële Deepseek-API nabootst zodat zelf gehoste installaties zich identiek gedragen. Het doel, aldus het bedrijf op X: "rekenkosten verlagen, energie besparen en AI betaalbaarder maken". Het Amerikaanse ministerie van Binnenlandse Veiligheid verbood tegelijk federale civiele diensten Deepseek-technologie te gebruiken.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe DeepInfer een vraag beantwoordt</div>
+<div class="ns-viz-mech-subtitle">Van binnenkomende prompt tot goedkoop gegenereerd antwoord</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Tokens</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Batching</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Kernels</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Generatie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="20" y="70" width="110" height="60" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="75" y="105" text-anchor="middle" font-size="12" fill="#44403c">"Vat dit samen"</text>
+      <path d="M135,100 L165,100" stroke="#7c3aed" stroke-width="3"/><path d="M160,93 L170,100 L160,107 z" fill="#7c3aed"/>
+      <rect x="180" y="80" width="26" height="40" rx="4" fill="#7c3aed"/><rect x="210" y="80" width="26" height="40" rx="4" fill="#a78bfa"/><rect x="240" y="80" width="26" height="40" rx="4" fill="#7c3aed"/><rect x="270" y="80" width="26" height="40" rx="4" fill="#a78bfa"/>
+      <circle class="ns-viz-mech-hotspot" cx="238" cy="70" r="7" data-tip="deepseek-recipe bootst de API-tokenverwerking na"/>
+      <text x="238" y="145" text-anchor="middle" font-size="11" fill="#44403c">tokens</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Tokens</h6>
+      <p class="korte">De vraag wordt opgeknipt in tokens, precies zoals de officiële Deepseek-API dat doet.</p>
+      <p class="uitleg">Met deepseek-recipe gedraagt een eigen installatie zich identiek aan Deepseeks eigen dienst. Dat maakt zelf hosten betrouwbaar: dezelfde invoer levert dezelfde verwerking op.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="20" y="30" width="70" height="26" rx="5" fill="#a78bfa"/><rect x="20" y="70" width="70" height="26" rx="5" fill="#a78bfa"/><rect x="20" y="110" width="70" height="26" rx="5" fill="#a78bfa"/><rect x="20" y="150" width="70" height="26" rx="5" fill="#a78bfa"/>
+      <path d="M95,43 Q150,43 175,95" fill="none" stroke="#7c3aed" stroke-width="2"/><path d="M95,83 L175,98" stroke="#7c3aed" stroke-width="2"/><path d="M95,123 L175,103" stroke="#7c3aed" stroke-width="2"/><path d="M95,163 Q150,163 175,106" fill="none" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="180" y="65" width="120" height="70" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="240" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">vLLM-kern</text><text x="240" y="116" text-anchor="middle" font-size="10" fill="#44403c">vragen gebundeld</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Batching</h6>
+      <p class="korte">Veel gelijktijdige vragen worden slim gebundeld zodat de chips nooit stilstaan.</p>
+      <p class="uitleg">Dit is de kracht van vLLM: efficiënt geheugenbeheer en het continu samenvoegen van verzoeken. Hoe beter de bezetting van dure GPU's, hoe lager de prijs per antwoord.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="40" width="70" height="55" rx="6" fill="#1c1917"/><rect x="125" y="40" width="70" height="55" rx="6" fill="#1c1917"/><rect x="220" y="40" width="70" height="55" rx="6" fill="#1c1917"/>
+      <rect x="30" y="115" width="70" height="55" rx="6" fill="#1c1917"/><rect x="125" y="115" width="70" height="55" rx="6" fill="#1c1917"/><rect x="220" y="115" width="70" height="55" rx="6" fill="#1c1917"/>
+      <g fill="#a78bfa"><rect x="50" y="58" width="30" height="20"/><rect x="145" y="58" width="30" height="20"/><rect x="240" y="58" width="30" height="20"/><rect x="50" y="133" width="30" height="20"/><rect x="145" y="133" width="30" height="20"/><rect x="240" y="133" width="30" height="20"/></g>
+      <path d="M100,67 L125,67 M195,67 L220,67 M100,142 L125,142 M195,142 L220,142 M65,95 L65,115 M160,95 L160,115 M255,95 L255,115" stroke="#7c3aed" stroke-width="3"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Kernels</h6>
+      <p class="korte">Geoptimaliseerde rekenkernels verdelen het werk over meerdere chips tegelijk.</p>
+      <p class="uitleg">Grote modellen passen niet op één chip. DeepInfer splitst het model en het rekenwerk over meerdere processors, met kernels die op Deepseeks architectuur zijn toegesneden.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="50" width="260" height="100" rx="12" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="50" y="75" width="60" height="12" rx="3" fill="#7c3aed"/><rect x="115" y="75" width="45" height="12" rx="3" fill="#a78bfa"/><rect x="165" y="75" width="70" height="12" rx="3" fill="#7c3aed"/>
+      <rect x="50" y="100" width="90" height="12" rx="3" fill="#a78bfa"/><rect x="145" y="100" width="40" height="12" rx="3" fill="#7c3aed" opacity=".5"/>
+      <text x="160" y="175" text-anchor="middle" font-size="11" fill="#44403c">sneller, goedkoper, minder energie</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Generatie</h6>
+      <p class="korte">Snellere generatietechnieken leveren het antwoord tegen lagere kosten en minder energie.</p>
+      <p class="uitleg">Het resultaat is het prijsniveau waarmee V4.1-Flash concurreert. Met DeepInfer open kan iedereen – ook westerse cloudbedrijven – Deepseek-modellen even goedkoop draaien.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom openheid een wapen is</h5>
+<p>De vrijgave lijkt altruïstisch, maar heeft een strategische kant. Deepseeks modellen waren al spotgoedkoop; DeepInfer dicht het laatste gat, want wie de gewichten van een model heeft maar niet de software om het efficiënt te draaien, haalt nooit Deepseeks prijsniveau. Nu kan dat wel. The Decoder wijst erop dat dit de prijsdruk op westerse aanbieders als OpenAI en Anthropic vergroot, en dat de stap politiek gemotiveerd kan zijn: als Amerikaanse AI-bedrijven hun groeidoelen missen, raakt dat de Amerikaanse economie. Dat mechanisme kennen we sinds januari 2025, toen het R1-model van Deepseek de beurswaarde van Nvidia in één dag hard deed dalen. Amerikaanse bedrijven bouwen hun waardering op de verwachting dat AI-diensten veel geld opleveren. Elke Chinese stap die inferentie goedkoper maakt, ondergraaft die verwachting – zeker nu Anthropic zijn cloudpartners als concurrenten ziet opdoemen en rekenkracht vóór een beursgang hard nodig heeft.</p>
+<blockquote>Deepseek wil "de community helpen rekenkosten te verlagen, energieverbruik te verminderen en AI betaalbaarder te maken" – en zet daarmee westerse prijzen onder druk.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Washington en de Chinese modellen</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2018</div><div>VS-wet over toeleveringsketenveiligheid bij federale inkoop</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">jan 2025</div><div>Deepseek-R1 schokt de markt met goedkoop sterk model</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">zomer 2026</div><div>Na Kimi K3 overweegt VS sancties tegen Chinese open modellen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">zomer 2026</div><div>Nvidia, Microsoft, Google en Meta houden bredere maatregelen tegen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>DeepInfer open source; federaal verbod op Deepseek-technologie</div></div>
+</div></div>
+<h5>Een verbod vol open vragen</h5>
+<p>Het verbod zelf is opvallend vaag. Diensten moeten bestaande Deepseek-producten verwijderen en mogen geen nieuwe kopen; ook producten van gelieerde bedrijven en diensten "gebouwd met" Deepseek-implementaties vallen eronder. Maar een deadline ontbreekt, concrete veiligheidszorgen worden niet genoemd, en onduidelijk is of tussenlagen als OpenRouter onder de regel vallen. De grondslag is een wet uit 2018 over veiligheid in de toeleveringsketen bij federale inkoop. Interessant is wat er níét gebeurde. Deze zomer overwoog de regering veel verdergaande stappen: sancties, een handelszwarte lijst en regels voor welke modellen overheden mogen gebruiken. Nvidia, Microsoft, Google en Meta – bedrijven die verdienen aan chips, cloud en open modellen – verzetten zich, terwijl OpenAI en Anthropic juist voor restricties lobbyden. Het huidige verbod is dus een compromis: symbolisch streng, economisch beperkt. Voor Europa, waar Mistral vandaag met spraakmodellen komt, ligt de vraag anders: open Chinese software is vrij beschikbaar, maar wie haar gebruikt, kiest ook een geopolitieke kant.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Inferentie</summary>
+    <div class="ns-viz-concept-body">Het draaien van een getraind model om vragen te beantwoorden. Bij miljoenen gebruikers is dit de grootste doorlopende kostenpost van een AI-dienst.</div></details>
+  <details class="ns-viz-concept"><summary>vLLM</summary>
+    <div class="ns-viz-concept-body">Open serving-software voor taalmodellen, bekend om efficiënt geheugenbeheer en het bundelen van verzoeken. Basis van DeepInfer.</div></details>
+  <details class="ns-viz-concept"><summary>Apache 2.0</summary>
+    <div class="ns-viz-concept-body">Ruime open-sourcelicentie: iedereen mag de code gebruiken, aanpassen en commercieel inzetten, ook concurrenten.</div></details>
+  <details class="ns-viz-concept"><summary>"Gebouwd met"</summary>
+    <div class="ns-viz-concept-body">Onduidelijke categorie in het verbod: mogelijk vallen ook diensten van derden eronder die Deepseek-modellen of -software gebruiken.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De twee besluiten van deze dag laten zien hoe asymmetrisch de AI-race is geworden. China concurreert met openheid en lage prijzen, de VS met toegangsbeperking. Op korte termijn wint Washington weinig met een vaag inkoopverbod; Deepseeks software verspreidt zich via de open-sourcegemeenschap toch wel. Op lange termijn is de echte dreiging voor Amerikaanse labs niet spionage maar marge-erosie. Wie inferentie gratis weggeeft, maakt van AI een basisvoorziening – en dat is voor bedrijven die op premiumprijzen rekenen het ongemakkelijkste scenario.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=OxffAN3nw00" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/OxffAN3nw00/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">DeepSeek just open-sourced its Inference Engine!</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a> &bull; <a href="https://the-decoder.com/us-bans-deepseek-technology-across-federal-civilian-agencies/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

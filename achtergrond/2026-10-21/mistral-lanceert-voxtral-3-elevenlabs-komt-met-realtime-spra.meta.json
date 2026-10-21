@@ -1,0 +1,17 @@
+{
+  "title": "Mistral lanceert Voxtral 3, ElevenLabs komt met realtime spraakmodellen",
+  "summary": "Twee Europese spelers in één dag met spraak-AI voor live gesprekken.\n\nMistral AI heeft Voxtral 3 gelanceerd, een familie modellen voor realtime spraakagenten. Het systeem combineert spraakherkenning, spraaksynthese en een SDK, ondersteunt meer dan 50 talen en kan tijdens een gesprek externe tools gebruiken. Het draait ook op eigen infrastructuur.\n\nElevenLabs bracht twee speech-to-speech-modellen uit. De v1 Max-variant scoort 98,8 procent op Big Bench Audio met een reactietijd van 0,57 seconde.",
+  "sources": [
+    "https://the-decoder.com/mistral-ai-launches-voxtral-3-a-full-voice-agent-stack-that-listens-thinks-and-talks-in-real-time/",
+    "https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-21",
+  "slug": "mistral-lanceert-voxtral-3-elevenlabs-komt-met-realtime-spra",
+  "tts_slug": "mistral-lanceert-voxtral-3-elevenlabs-komt-met-realtime-spra",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-21T04:42:50",
+  "size_kb": 13
+}
