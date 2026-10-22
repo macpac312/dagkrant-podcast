@@ -10,7 +10,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-22T04:16:03+00:00",
+  "updated_at": "2026-10-22T04:18:27+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -107,13 +107,17 @@
     {
       "step": "krant",
       "at": "2026-10-22T04:16:03+00:00"
+    },
+    {
+      "step": "achtergronden_1",
+      "at": "2026-10-22T04:18:27+00:00"
     }
   ],
   "status": "running",
   "date": "2026-10-22",
-  "step": "krant opbouwen",
-  "step_index": 2,
-  "progress": 29,
+  "step": "achtergronden (ronde 1)",
+  "step_index": 3,
+  "progress": 43,
   "started_at": "2026-10-22T04:08:03+00:00",
   "finished_at": null,
   "error": null
