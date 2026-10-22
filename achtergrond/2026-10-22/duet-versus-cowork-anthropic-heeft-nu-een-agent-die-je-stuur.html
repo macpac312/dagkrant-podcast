@@ -1,0 +1,103 @@
+<ul class="bg-bullets">
+<li>Cowork voert uit wat jij overdraagt; Duet brengt ongevraagd werk naar jou toe.</li>
+<li>Beide draaien op hetzelfde model en vallen onder hetzelfde abonnement.</li>
+<li>Het verschil zit in wie het initiatief neemt, en daarmee in wie aansprakelijk is.</li>
+<li>Proactieve agents maken vertrouwen, aandacht en toezicht tot de schaarse grondstof.</li>
+</ul>
+
+<div class="ns-viz"><div class="ns-viz-title">⚖ Twee richtingen, één model</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Cowork: jij stuurt</h6>
+    <ul><li>Jij formuleert de taak</li><li>Agent voert uit en rapporteert</li><li>Initiatief ligt bij de gebruiker</li><li>Fout is herleidbaar tot opdracht</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Duet: de agent komt</h6>
+    <ul><li>Agent signaleert zelf werk</li><li>Legt het ongevraagd voor</li><li>Initiatief ligt bij de agent</li><li>Fout is herleidbaar tot oordeel</li></ul></div>
+</div></div>
+
+<h5>Dezelfde motor, een omgekeerde richting</h5>
+<p>Anthropic heeft nu twee agents die op papier bijna identiek zijn en in de praktijk tegenover elkaar staan. Claude Cowork, dat al eerder werd gezien als Anthropics route naar een AI-superapp, werkt volgens het vertrouwde patroon: de gebruiker geeft een taak, de agent gaat aan de slag en komt met een resultaat terug. Claude Duet draait dat om. Het systeem kijkt mee, bedenkt zelf wat er te doen valt en klopt aan met werk dat niemand heeft besteld. Beide gebruiken hetzelfde onderliggende model en vallen onder hetzelfde abonnement, zodat de technische grens vooral een productgrens is. Het is een logische stap in een lijn die bij chatbots begon, via Claude Code naar agents ging en nu bij agents uitkomt die zelf het initiatief nemen. Ook Claude Code kreeg op 10 augustus een automodus als standaard, een signaal dat Anthropic de menselijke goedkeuring per stap steeds verder terugdringt.</p>
+
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een proactieve agent werkt</div>
+<div class="ns-viz-mech-subtitle">Van stil meekijken naar een voorstel dat jij goedkeurt.</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Signaal</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Voorwerk</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Aankloppen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Besluit</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="40" width="110" height="120" rx="8" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/>
+      <text x="85" y="75" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Mail</text>
+      <text x="85" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Agenda</text>
+      <text x="85" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Documenten</text>
+      <circle cx="230" cy="100" r="42" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2.5"/>
+      <circle cx="230" cy="100" r="14" fill="#7c3aed"/>
+      <text x="230" y="168" text-anchor="middle" font-size="12" fill="#44403c">Duet kijkt mee</text>
+      <circle class="ns-viz-mech-hotspot" cx="230" cy="100" r="7" data-tip="De agent leest context zonder opdracht"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Signaal</h6><p class="korte">De agent ziet iets in je werkstroom dat aandacht verdient.</p><p class="uitleg">Waar Cowork wacht op een opdracht, scant Duet de werkcontext op termijnen, openstaande vragen en terugkerend handwerk. De trigger komt uit de data, niet uit de gebruiker.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="50" width="240" height="100" rx="8" fill="#a78bfa" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="60" y="72" width="140" height="10" rx="4" fill="#7c3aed" opacity=".7"/>
+      <rect x="60" y="94" width="180" height="10" rx="4" fill="#7c3aed" opacity=".5"/>
+      <rect x="60" y="116" width="100" height="10" rx="4" fill="#7c3aed" opacity=".35"/>
+      <text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">Concept ligt klaar</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Voorwerk</h6><p class="korte">Het concept wordt gemaakt voordat iemand erom vraagt.</p><p class="uitleg">Dezelfde modelkracht als in Cowork schrijft een antwoord, plant een afspraak of zet een analyse klaar. Dit is de fase waarin het abonnement stilletjes verbruikt wordt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="90" cy="100" r="34" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2.5"/>
+      <text x="90" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Duet</text>
+      <path d="M130 100 L190 100" stroke="#7c3aed" stroke-width="3" fill="none"/>
+      <rect x="195" y="62" width="100" height="76" rx="10" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/>
+      <text x="245" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Jij</text>
+      <text x="245" y="115" text-anchor="middle" font-size="11" fill="#44403c">Melding</text>
+      <circle class="ns-viz-mech-hotspot" cx="160" cy="100" r="7" data-tip="Hier ligt het initiatief bij de agent"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Aankloppen</h6><p class="korte">De agent onderbreekt jou, niet andersom.</p><p class="uitleg">Dit is het scharnierpunt. Een melding vraagt om aandacht op een moment dat de gebruiker niet koos. Te vaak aankloppen wordt ruis; te weinig maakt de agent overbodig.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="70" width="110" height="60" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="95" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Akkoord</text>
+      <rect x="170" y="70" width="110" height="60" rx="9" fill="#a78bfa" fill-opacity=".1" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="225" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Weigeren</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Besluit</h6><p class="korte">Pas na jouw akkoord wordt het voorstel uitgevoerd.</p><p class="uitleg">De menselijke goedkeuring is de rem op het systeem. Hoe vaker gebruikers blind akkoord geven, hoe meer het initiatief feitelijk bij de agent komt te liggen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+
+<h5>Waarom de commerciële logica klopt</h5>
+<p>De timing is niet toevallig. Bloomberg meldde op 17 augustus dat de kwartaalomzet van Anthropic in het tweede kwartaal verveertienvoudigde tot 11,5 miljard dollar. Eerder, in mei, mat Ramp dat Anthropic OpenAI voor het eerst voorbijging in zakelijke adoptie: 34,4 tegen 32,3 procent. Wie zo snel groeit, wil dat gebruikers het product vaker en vanzelfsprekender gebruiken. Een agent die zelf aanklopt vergroot het gebruik zonder dat de gebruiker een nieuwe gewoonte hoeft te leren. Tegelijk is die groei afhankelijk van rekenkracht, en proactief werk is per definitie werk dat niet is aangevraagd: het verbruikt capaciteit ook wanneer het niets oplevert. De vraag is dus of ongevraagd werk binnen één abonnement houdbaar blijft, of dat Anthropic de limieten moet herzien.</p>
+
+<div class="ns-viz"><div class="ns-viz-title">📊 De groei achter de agents</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="11.5" data-prefix="$" data-suffix=" mld">$11.5 mld</div><div class="ns-viz-stat-label">Omzet Anthropic Q2 (Bloomberg)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="14" data-suffix="×">14×</div><div class="ns-viz-stat-label">Groei ten opzichte van vorig jaar</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="34.4" data-suffix="%">34.4%</div><div class="ns-viz-stat-label">Zakelijke adoptie, Ramp (mei)</div></div>
+</div></div>
+
+<h5>Wie draagt de verantwoordelijkheid?</h5>
+<p>Het diepste verschil is juridisch en organisatorisch. Bij Cowork is de keten helder: de opdrachtgever formuleert, de agent voert uit, en een fout is terug te voeren op een instructie. Bij Duet ontstaat het werk uit het oordeel van het systeem, en dat verschuift de vraag wie wat heeft besloten. Voor bedrijven in gereguleerde sectoren, zoals banken waar modelgebruik, toezicht en herleidbaarheid zwaar wegen, is dat meer dan een technisch detail. Een voorstel dat de agent zelf initieert, vraagt om logging, afbakening van toegang en een duidelijke eigenaar. Dat past slecht bij een consumentgerichte "het komt vanzelf"-belofte. Eerder beschreef InfoQ hoe Anthropic Claude over web, Code en Cowork heen probeert in te perken; een agent die zelf het initiatief neemt maakt die inperking lastiger, omdat de gebruiker de context van de actie niet zelf heeft gekozen. Sceptici wijzen bovendien op meldingsmoeheid: de meeste mensen hebben al te veel pings, en een agent die daar nog een laag aan toevoegt, moet aantoonbaar meer oplossen dan hij veroorzaakt.</p>
+
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VOOR</h6><p>De gebruiker bedenkt de taak, draagt die over en controleert het resultaat. Aandacht gaat vooral naar formuleren.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>NA</h6><p>De agent stelt de taak voor, de gebruiker beoordeelt. Aandacht gaat naar selecteren, afwijzen en toezicht.</p></div>
+</div></div>
+
+<h5>Conclusie</h5>
+<p>Duet versus Cowork is minder een productkeuze dan een keuze over wie de agenda bepaalt. Anthropic verkoopt beide als dezelfde intelligentie, maar de gebruiker ervaart er twee verschillende relaties. Mijn inschatting: Cowork blijft het gereedschap dat bedrijven kunnen vertrouwen, en Duet moet zijn plek verdienen met aantoonbaar weinig, maar raak werk. Het succes wordt niet gemeten in aantal meldingen, maar in het aantal keren dat de gebruiker zonder spijt akkoord geeft.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=0xyHuhsRdb4" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/0xyHuhsRdb4/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Duet: Anthropic's New AI Agent That Messages You First</div></div></a></div>

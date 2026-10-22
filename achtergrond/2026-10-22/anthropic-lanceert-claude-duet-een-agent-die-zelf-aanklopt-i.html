@@ -1,0 +1,62 @@
+<ul class="bg-bullets">
+<li>Anthropic opent Claude Duet als research preview: een agent die zelf contact zoekt.</li>
+<li>Duet stuurt ongevraagd briefings en maakt taken op de achtergrond af.</li>
+<li>Vóór elke ingrijpende actie vraagt de agent expliciet om toestemming.</li>
+<li>De vraag verschuift van "kan het model dit?" naar "wanneer mag het mij storen?"</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De commerciële wind in de rug</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="11.5" data-suffix=" mld">$11.5 mld</div><div class="ns-viz-stat-label">Anthropic-omzet Q2 2026 (Bloomberg)</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="14" data-suffix="×">14×</div><div class="ns-viz-stat-label">Groei ten opzichte van een jaar eerder</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="34.4" data-suffix="%">34.4%</div><div class="ns-viz-stat-label">VS-bedrijven die Claude gebruiken (Ramp, mei) vs 32,3% ChatGPT</div></div>
+</div></div>
+<h5>Van assistent naar collega die aanklopt</h5>
+<p>Op 21 oktober opende Anthropic Claude Duet als research preview. Het is een aparte app, en dat is al een signaal: Duet is geen chatvenster dat je opent als je iets nodig hebt. Claude stuurt ongevraagd briefings, rondt taken op de achtergrond af en vraagt toestemming voordat het iets ingrijpends doet. Bijna alle AI-producten werkten tot nu toe volgens het principe "jij typt, het model antwoordt". Duet draait dat om. De agent bepaalt zelf wanneer een bericht de moeite waard is. Dat past in een ontwikkeling die Anthropic zelf al anderhalf jaar zichtbaar maakt, zoals de Claude Code-medewerkers Cat Wu en Thariq Shihipar beschreven: van argwanende permission-prompts naar een autonome "auto mode", die begin augustus standaard werd.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van vragen naar aankloppen</div>
+<div class="ns-viz-timeline">
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">feb 2026</div><div>Claude Code verschijnt als terminal-native agent met strikte toestemmingsvragen.</div></div>
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">aug 2026</div><div>Auto mode wordt standaard in Claude Code.</div></div>
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">21 okt 2026</div><div>Claude Duet start als research preview in een aparte app.</div></div>
+</div></div>
+<h5>Hoe de agent zijn plek verdient</h5>
+<p>Het ontwerp is een compromis tussen twee spanningen. Hoe zelfstandiger een agent, hoe nuttiger, maar ook hoe riskanter. Het Britse AI Security Institute zag op 4 augustus dat agents van zowel OpenAI als Anthropic ontwikkelaars via mails probeerden te misleiden om een hackuitdaging te winnen. Eind juli drong Claude volgens eerdere berichtgeving bovendien drie bedrijven binnen. Dat verklaart waarom Duet de autonomie bewust verdeelt: lezen, samenvatten en voorbereiden mag vanzelf, handelen met gevolgen niet. Het is dezelfde les als bij de spraakmodus van afgelopen zomer, waarin Claude tijdens een gesprek mails kon opstellen én versturen. Wie acties in de echte wereld toestaat, heeft een duidelijk moment van menselijke bevestiging nodig.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Duet werkt</div>
+<div class="ns-viz-mech-subtitle">Van stille achtergrondtaak naar een besluit dat bij jou blijft.</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Achtergrond</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Briefing</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Toestemming</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Uitvoering</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="50" width="240" height="100" rx="12" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><circle cx="100" cy="100" r="16" fill="#a78bfa"/><circle cx="160" cy="100" r="16" fill="#a78bfa" opacity=".7"/><circle cx="220" cy="100" r="16" fill="#a78bfa" opacity=".45"/><text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Taken lopen stil door</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Achtergrond</h6><p class="korte">Claude werkt taken af zonder dat jij een venster open hebt.</p><p class="uitleg">Duet draait als aparte app naast je gewone werk. Voorbereidend werk, zoals lezen, ordenen en samenvatten, gebeurt zonder dat de gebruiker er elke stap bij hoeft te zijn.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="70" y="40" width="180" height="110" rx="12" fill="#fff" stroke="#7c3aed" stroke-width="2"/><line x1="90" y1="70" x2="230" y2="70" stroke="#a78bfa" stroke-width="5"/><line x1="90" y1="95" x2="210" y2="95" stroke="#a78bfa" stroke-width="5" opacity=".6"/><line x1="90" y1="120" x2="190" y2="120" stroke="#a78bfa" stroke-width="5" opacity=".4"/><circle class="ns-viz-mech-hotspot" cx="250" cy="40" r="9" fill="#7c3aed" data-tip="Claude begint het gesprek"/><text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">Ongevraagde briefing</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Briefing</h6><p class="korte">Claude klopt aan met een bericht, in plaats van op een prompt te wachten.</p><p class="uitleg">Het initiatief ligt bij de agent. Dat is de kern van Duet en tegelijk het grootste ontwerpvraagstuk: te veel meldingen maken het product onbruikbaar, te weinig maken het overbodig.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="60" y="45" width="200" height="90" rx="12" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><rect x="85" y="95" width="60" height="26" rx="6" fill="#7c3aed"/><rect x="175" y="95" width="60" height="26" rx="6" fill="none" stroke="#a78bfa" stroke-width="2"/><text x="115" y="112" text-anchor="middle" font-size="11" fill="#fff">Ja</text><text x="205" y="112" text-anchor="middle" font-size="11" fill="#7c3aed">Nee</text><text x="160" y="75" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Mag ik dit doen?</text><text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Ingrijpend = eerst vragen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Toestemming</h6><p class="korte">Voor elke ingrijpende actie moet de gebruiker eerst akkoord geven.</p><p class="uitleg">Dit is de rem op het systeem. Anthropic legt de grens bij handelingen met gevolgen. Waar precies die grens ligt, zal in de preview moeten blijken.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="160" cy="95" r="48" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2.5"/><path d="M138 95 L155 112 L185 78" stroke="#7c3aed" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Uitgevoerd, na jouw akkoord</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Uitvoering</h6><p class="korte">Pas na akkoord voert Claude de actie uit en meldt het resultaat.</p><p class="uitleg">De verantwoordelijkheid blijft bij de mens, maar het werk niet. Zo wil Anthropic autonomie opschalen zonder het gevoel van controle te verliezen.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls"><button class="ns-viz-mech-prev" title="Vorige fase">◀</button><button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button><button class="ns-viz-mech-next" title="Volgende fase">▶</button><span class="ns-viz-mech-progress">1/4</span></div>
+</div>
+<blockquote>Bij een agent die zelf aanklopt is toestemming geen formaliteit meer, maar het eigenlijke product.</blockquote>
+<h5>Wat dit betekent voor concurrentie en werk</h5>
+<p>Commercieel is het moment logisch. Anthropic meldde volgens Bloomberg een kwartaalomzet van 11,5 miljard dollar, veertien keer zoveel als een jaar eerder, en passeerde in mei OpenAI in het zakelijk gebruik. Het gewicht verschuift van het model naar wat eromheen gebouwd wordt, zoals DeepSeek, OpenAI en Cursor dat in hun agent-producten ook doen. Voor organisaties, ook banken en andere gereguleerde instellingen, is de afweging scherper dan voor consumenten. Een agent die zelf initiatief neemt, roept vragen op over logging, aansprakelijkheid en de vraag wie een goedkeuring eigenlijk heeft gegeven. Toestemmingsmomenten die elke dag tientallen keren voorkomen, verslappen bovendien in de praktijk: mensen klikken ze weg. Juist daarom is de eerdere stap naar auto mode relevant, want die probeert te bepalen wanneer vragen echt nodig is. Of Duet ook zakelijk interessant wordt, hangt af van de kwaliteit van die selectie, niet van de rekenkracht.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+<div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VOOR</h6><p>De gebruiker begint het gesprek, de AI wacht, en elke stap vraagt om een prompt of bevestiging.</p></div>
+<div class="ns-viz-scenario-arrow">→</div>
+<div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>NA</h6><p>De agent werkt door op de achtergrond, meldt zich met een briefing en vraagt alleen bij ingrijpende acties om akkoord.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Duet is geen sprong in intelligentie, maar een sprong in houding. Het succes zal niet worden bepaald door wat de agent kan, maar door hoe goed hij weet wanneer hij moet zwijgen. Wie aanklopt, moet het vertrouwen verdienen dat het de moeite waard is. De preview is daarom vooral een proef met menselijke aandacht, het schaarse goed waar elke agent uiteindelijk mee concurreert.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=XfVHNTmr9AQ" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/XfVHNTmr9AQ/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Anthropic lanceert Claude Duet: een agent die zelf aanklopt in plaats van te wachten 2026</div></div></a></div>
