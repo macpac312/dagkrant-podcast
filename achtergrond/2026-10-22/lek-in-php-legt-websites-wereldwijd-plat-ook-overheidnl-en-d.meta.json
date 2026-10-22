@@ -1,0 +1,19 @@
+{
+  "title": "Lek in PHP legt websites wereldwijd plat, ook overheid.nl en de Tweede Kamer",
+  "summary": "Een tien jaar oud gat in de programmeertaal achter bijna 70 procent van alle websites dwingt overheden tot massale noodstops. AI vond het lek, en AI maakt het nu razendsnel misbruikbaar.\n\nWebsites in Nederland, België, Frankrijk, Duitsland, Finland, het VK en Australië zijn uit voorzorg offline gehaald na de ontdekking van een ernstig lek in PHP, de programmeertaal waarop bijna 70 procent van het web draait. In Nederland gingen onder meer overheid.nl, de site van de Tweede Kamer, de digitale-ide",
+  "sources": [
+    "https://www.theguardian.com/technology/2026/oct/21/flaw-in-php-computer-language-leads-to-shutdown-of-websites-around-world",
+    "https://nos.nl/l/2636149",
+    "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+    "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-22",
+  "slug": "lek-in-php-legt-websites-wereldwijd-plat-ook-overheidnl-en-d",
+  "tts_slug": "lek-in-php-legt-websites-wereldwijd-plat-ook-overheidnl-en-d",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-22T04:22:34",
+  "size_kb": 157
+}

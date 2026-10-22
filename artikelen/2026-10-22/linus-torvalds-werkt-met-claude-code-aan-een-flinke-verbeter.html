@@ -1,0 +1,31 @@
+<figure class="reader-hero"><img src="https://www.phoronix.net/image.php?id=2026&amp;image=linus_llm_performance" alt="Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code</h1>
+<p>[](https://www.phoronix.com/rss.php)[](https://x.com/Phoronix)[](https://www.facebook.com/Phoronix)</p>
+<p># Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code</p>
+<p>Written by [Michael Larabel](https://www.michaellarabel.com/) in [Linux Kernel](https://www.phoronix.com/linux/Linux+Kernel) on 11 October 2026 at 08:16 PM EDT. [87 Comments](https://www.phoronix.com/forums/node/1663082)</p>
+<p>![Image 5: LINUX KERNEL](https://www.phoronix.com/assets/categories/linuxkernel.webp)</p>
+<p>Linux creator Linus Torvalds has been known to [use AI to help with kernel debugging](https://www.phoronix.com/news/Linus-Torvalds-Debug-AI) and outside of the kernel tree has also done [some vibe coding with Google&#x27;s Antigravity](https://www.phoronix.com/news/Linus-Torvalds-Vide-Coding). He has previously said [he views AI as a useful tool](https://www.phoronix.com/news/Linux-Is-Not-Anti-AI). It turns out he&#x27;s even now using Claude Code for working on new Linux kernel features.</p>
+<p>While waiting for the Linux 7.3-rc7 kernel release and refreshing his _torvalds/linux.git_ repository, I was surprised to find a new kernel branch appear. Typically Torvalds isn&#x27;t doing much work on branches in his main repository and typically just hosting the _master_ branch.</p>
+<p>![Image 6: noref-filemap-read-with-llm Git branch](https://www.phoronix.net/image.php?id=2026&amp;image=linux_llm_branch)</p>
+<p>The new branch to appear is _noref-filemap-read-with-llm_ and as implied by the &quot;LLM&quot; postfix, is some new kernel improvements he&#x27;s been working on with the help of AI / LLMs. Claude Code in particular. The branched code is working on adapting the memory management code to read from the page cache without folio references.</p>
+<p>The code is working on addressing a Linux issue of small reads of one file from many threads contend on the folio reference counting. So the goal of the branch / patch series is to read from the page cache without folio references.</p>
+<p>For those passionate about AI for loving or hating it, in the main [patch message](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=noref-filemap-read-with-llm&amp;id=4c0f3697118eb3a708ea79175f7f07c43339bfab) Linus Torvalds confirmed his AI use in creating this work and related testing and even the initial draft of the cover letter:</p>
+<p>&gt; &quot;The code, the test programs, the review behind the list above and the first draft of this text were done with an LLM coding assistant (Claude Code) under my direction. The measurements were run on my machine.&quot;</p>
+<p>And for the impact on this situation of addressing the bottleneck of small reads of one file from many threads, the impact of the series is significant:</p>
+<p>![Image 7: performance results of Linus Torvalds AI code](https://www.phoronix.net/image.php?id=2026&amp;image=linus_llm_performance)</p>
+<p>Quite a difference. The patches are currently on Torvalds&#x27; [noref-filemap-read-with-llm Git branch](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?h=noref-filemap-read-with-llm). We&#x27;ll see if he merges his branch for the upcoming Linux 7.4 merge window.</p>
+<p>**Update:** Some additional AI kernel usage by Torvalds with [Linus Torvalds &quot;Did What I Preach&quot;, Used AI To Make Code Decipherable &amp; Uncovered More Bugs](https://www.phoronix.com/news/Linus-Torvalds-Assoc-Array).</p>
+<p>[87 Comments](https://www.phoronix.com/forums/node/1663082)</p>
+<p>[Linux 7.4 Begins Landing Patches To Speed Up The Kernel Build Process](https://www.phoronix.com/news/Linux-7.4-Kbuild)</p>
+<p>[Linus Torvalds Eliminates Unsafe __get_user() &amp; __put_user() Functions In Linux 7.4](https://www.phoronix.com/news/Linus-Kills-Get-Put-User-Linux)</p>
+<p>[Linux 7.4 Kernel Crypto Library Enjoying Optimized AES Implementations On x86 &amp; RISC-V](https://www.phoronix.com/news/Linux-7.4-Crypto-Library)</p>
+<p>[Linux 7.4 To Close Files Synchronously For close_range, exec &amp; exit](https://www.phoronix.com/news/Linux-7.4-Sync-Close-Files)</p>
+<p>[Meta Makes Improvements To Kernfs Scalability With Linux 7.4](https://www.phoronix.com/news/Linux-7.4-Kernfs-Scalability)</p>
+<p>[Linux Coredumps Via Sockets Can Be Much Smaller Now With Sparse Support](https://www.phoronix.com/news/Linux-Coredump-Sockets-Sparse)</p>
+<p>Michael Larabel is the principal author of Phoronix.com and founded the site in 2004 with a focus on enriching the Linux hardware experience. Michael has written more than 20,000 articles covering the state of Linux hardware support, Linux performance, graphics drivers, and other topics. Michael is also the lead developer of the Phoronix Test Suite, Phoromatic, and OpenBenchmarking.org automated benchmarking software. He can be followed via [Twitter](https://twitter.com/MichaelLarabel), [LinkedIn](https://www.linkedin.com/in/michaellarabel/), or contacted via [MichaelLarabel.com](https://www.michaellarabel.com/).</p>
+<p>[Microsoft Releases Microsoft Defender For The Linux Desktop](https://www.phoronix.com/news/Microsoft-Defender-For-Linux-D)</p>
+<p>[Linus Torvalds&#x27; AI Code Improved: Huge Performance Wins With Reworked Code](https://www.phoronix.com/news/Reading-Page-Cache-WO-Folio-Ref)</p>
+<p>[Claude Code / AI Shows Potential For Reverse-Engineering Hardware For Linux Support](https://www.phoronix.com/news/AI-Reverse-Engineer-Linux-HW)</p>
+<p>[Today&#x27;s Steam Beta Makes The Linux Client A 64-bit App](https://www.phoronix.com/news/Steam-Linux-Beta-64-bit)</p>
+<p>[Omarchy Gets The Web Browser Launching Faster By Avoiding XDG Overhead](https://www.phoronix.com/news/Omarchy-Faster-Web-Browser)</p>
+<p class="bg-footer">Bron: <a href="https://www.phoronix.com/news/Linus-Torvalds-Claude-Code" target="_blank" rel="noopener">phoronix.com</a></p>
