@@ -10,7 +10,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-21T04:47:18+00:00",
+  "updated_at": "2026-10-22T04:08:03+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -98,71 +98,15 @@
   "steps_log": [
     {
       "step": "nieuws",
-      "at": "2026-10-21T04:08:59+00:00"
-    },
-    {
-      "step": "artikelen",
-      "at": "2026-10-21T04:11:25+00:00"
-    },
-    {
-      "step": "krant",
-      "at": "2026-10-21T04:20:15+00:00"
-    },
-    {
-      "step": "achtergronden_1",
-      "at": "2026-10-21T04:22:24+00:00"
-    },
-    {
-      "step": "podcast",
-      "at": "2026-10-21T04:27:07+00:00"
-    },
-    {
-      "step": "podcast",
-      "at": "2026-10-21T04:28:43+00:00"
-    },
-    {
-      "step": "achtergronden_2",
-      "at": "2026-10-21T04:31:01+00:00"
-    },
-    {
-      "step": "podcast",
-      "at": "2026-10-21T04:32:11+00:00"
-    },
-    {
-      "step": "podcast",
-      "at": "2026-10-21T04:32:35+00:00"
-    },
-    {
-      "step": "podcast",
-      "at": "2026-10-21T04:43:06+00:00"
-    },
-    {
-      "step": "publiceren",
-      "at": "2026-10-21T04:46:20+00:00"
-    },
-    {
-      "step": "klaar",
-      "at": "2026-10-21T04:47:18+00:00"
+      "at": "2026-10-22T04:08:03+00:00"
     }
   ],
-  "status": "done",
-  "date": "2026-10-21",
-  "step": "klaar",
-  "step_index": 7,
-  "progress": 100,
-  "started_at": "2026-10-21T04:08:59+00:00",
-  "finished_at": "2026-10-21T04:47:18+00:00",
-  "duration_s": 2299,
-  "error": null,
-  "durations_s": {
-    "nieuws": 146,
-    "artikelen": 530,
-    "krant": 129,
-    "achtergronden_1": 283,
-    "podcast": 1083,
-    "achtergronden_2": 70,
-    "publiceren": 58
-  },
-  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-10-21.html",
-  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
+  "status": "running",
+  "date": "2026-10-22",
+  "step": "nieuws verzamelen",
+  "step_index": 0,
+  "progress": 0,
+  "started_at": "2026-10-22T04:08:03+00:00",
+  "finished_at": null,
+  "error": null
 }
