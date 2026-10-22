@@ -1,0 +1,173 @@
+<ul class="bg-bullets">
+<li>Calcasa WOX op 559 punten; gemiddelde woningwaarde €545.000, +3,9% op jaarbasis.</li>
+<li>Goedkoop stijgt het hardst: onder €150.000 +5,8%, boven €500.000 +3,4%.</li>
+<li>Netto woonlasten 24,2% van het inkomen; betaalbaarheid verslechtert 3,3% in één kwartaal.</li>
+<li>Calcasa ziet +1,6% in K3, terwijl CBS in september al een maandelijkse daling meldt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Calcasa WOX K2 2026 in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="559">559</div><div class="ns-viz-stat-label">WOX-stand (1995 = 100)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="€" data-target="545000">€545000</div><div class="ns-viz-stat-label">Gemiddelde woningwaarde</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="+" data-target="3.9" data-suffix="%">+3.9%</div><div class="ns-viz-stat-label">Jaar-op-jaar (K-O-K +0,6%)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="291" data-suffix="k">291k</div><div class="ns-viz-stat-label">Verkopen op jaarbasis (+10,1%)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="236">236</div><div class="ns-viz-stat-label">Executieverkopen (0,1% van totaal)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="+" data-target="1.6" data-suffix="%">+1.6%</div><div class="ns-viz-stat-label">Voorspelling K3 t.o.v. K2</div></div>
+</div></div>
+<h5>Een markt die doorstijgt, maar trager</h5>
+<p>Het WOX-kwartaalbericht van Calcasa bevestigt wat CBS en Kadaster deze week ook lieten zien: de Nederlandse woningmarkt stijgt nog, maar het tempo zakt. De index staat op 559 punten, de gemiddelde woningwaarde op €545.000 – 0,6 procent meer dan een kwartaal eerder en 3,9 procent meer dan een jaar terug, 3,8 procent na inflatie. Sinds 2017 is de gemiddelde waarde verdubbeld. Eengezinswoningen (€581.000) stegen 4,3 procent, meergezinswoningen (€456.000) 2,5 procent. Opvallend is de omgekeerde prijsladder: hoe goedkoper de woning, hoe harder de stijging. Onderaan de markt is de schaarste het grootst, en daar trekken ook de perifere provincies Groningen (+6,0 procent), Limburg (+5,9) en Fryslân (+5,8) aan, terwijl Noord-Holland (+1,8) en Utrecht (+2,6) achterblijven. In Amsterdam staat de waarde op jaarbasis vrijwel stil: +0,1 procent.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Prijsklasse</th><th style="text-align:right;padding:.3rem .5rem">J-O-J</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">&lt; €150.000</td><td style="text-align:right">+5,8%</td></tr>
+    <tr><td style="padding:.25rem .5rem">€150.000–250.000</td><td style="text-align:right">+5,3%</td></tr>
+    <tr><td style="padding:.25rem .5rem">€250.000–350.000</td><td style="text-align:right">+4,8%</td></tr>
+    <tr><td style="padding:.25rem .5rem">€350.000–500.000</td><td style="text-align:right">+3,6%</td></tr>
+    <tr><td style="padding:.25rem .5rem">&gt; €500.000</td><td style="text-align:right">+3,4%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Calcasa WOX K2 2026, tabel 1: waardegroei per prijsklasse.</p>
+</div>
+<div class="ns-viz"><div class="ns-viz-title">📈 Transactiegroei per woningtype (J-O-J, %)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-667a830e"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-667a830e'),{
+    type:'line',
+    data:{
+      labels:['2025K2','2025K3','2025K4','2026K1','2026K2'],
+      datasets:[
+        {label:'Appartement',data:[30.9,29.3,23.1,18.9,12.3],borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.08)',tension:.4,fill:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#7c3aed'},
+        {label:'Tussenwoning',data:[12.2,13.6,12.7,13.4,10.7],borderColor:'#a78bfa',tension:.4,fill:false,pointRadius:4,pointHoverRadius:6,pointBackgroundColor:'#a78bfa'},
+        {label:'Vrijstaand',data:[15.3,12.6,9.3,8.3,5.2],borderColor:'#f59e0b',tension:.4,fill:false,pointRadius:4,pointHoverRadius:6,pointBackgroundColor:'#f59e0b'},
+        {label:'Totaal',data:[17.7,17.4,15.0,13.9,10.1],borderColor:'#78716c',borderDash:[5,4],tension:.4,fill:false,pointRadius:4,pointHoverRadius:6,pointBackgroundColor:'#78716c'}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c',boxWidth:12}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return c.dataset.label+': +'+c.parsed.y+'%';}}}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Het mixeffect: waarom het gemiddelde misleidt</h5>
+<p>Voor wie onderpand waardeert, zit het belangrijkste signaal niet in de 3,9 procent maar in de samenstelling van de transacties. Het aandeel verkopen boven €500.000 is opgelopen tot 39,0 procent; het aandeel onder €250.000 zakte in vijf jaar van 40 naar 8,8 procent. Deels is dat prijsklassekruip – dezelfde woning schuift simpelweg een klasse op – maar het betekent ook dat ongewogen transactiegemiddelden structureel hoger uitvallen dan de waardegroei van een gegeven woning. Een indexatiemodel dat op gemiddelde prijzen leunt, schat de portefeuille dan te rijk. De spreiding onder het nationale cijfer is fors: appartementen van vóór 1944 stegen 1,5 procent, (half-)vrijstaande woningen uit 1945–1979 5,4 procent, Groot-Amsterdam 0,7 procent en appartementen daar 0,3 procent. In 10 van de 40 COROP-regio's daalde de appartementswaarde zelfs ten opzichte van het vorige kwartaal. Ook de verkoopgroei verliest vaart: 291.000 transacties, +10,1 procent, maar bij appartementen ging de groei van 30,9 naar 12,3 procent. Het verstrekte aantal hypotheken (458.000, +9,4 procent) groeit kwartaal-op-kwartaal nog maar 0,5 procent.</p>
+<blockquote>Het aandeel transacties tot €250.000 is in vijf jaar teruggelopen van 40 naar 8,8 procent – een nationaal gemiddelde zegt steeds minder over de woning in de eigen portefeuille.</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Van WOX-cijfer naar risicoparameter</div>
+<div class="ns-viz-mech-subtitle">Hoe een kwartaalindex doorwerkt in onderpand, LGD en verwachting</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Mixverschuiving</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Indexatie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">LGD</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">K3-verwachting</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <text x="160" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Aandeel transacties</text>
+      <rect x="40" y="150" width="60" height="0" fill="#a78bfa"/>
+      <rect x="50" y="70" width="50" height="100" fill="#a78bfa"/>
+      <text x="75" y="64" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">40%</text>
+      <text x="75" y="186" text-anchor="middle" font-size="10" fill="#44403c">&lt;€250k, 5 jr terug</text>
+      <rect x="135" y="148" width="50" height="22" fill="#a78bfa" fill-opacity=".6"/>
+      <text x="160" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">8,8%</text>
+      <text x="160" y="186" text-anchor="middle" font-size="10" fill="#44403c">&lt;€250k, nu</text>
+      <rect x="220" y="72" width="50" height="98" fill="#7c3aed"/>
+      <text x="245" y="66" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">39,0%</text>
+      <text x="245" y="186" text-anchor="middle" font-size="10" fill="#44403c">&gt;€500k, nu</text>
+      <circle class="ns-viz-mech-hotspot" cx="160" cy="130" r="7" data-tip="Deels prijsklassekruip: dezelfde woning schuift een klasse op"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Mixverschuiving</h6>
+      <p class="korte">Steeds meer transacties vallen in het dure segment boven vijfhonderdduizend euro.</p>
+      <p class="uitleg">Het aandeel boven €500.000 is 39,0%, het aandeel onder €250.000 zakte in vijf jaar van 40% naar 8,8%. Gemiddelde transactieprijzen lopen daardoor harder op dan de waarde van één gegeven woning.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <path d="M40 170 L40 60 L80 30 L120 60 L120 170 Z" fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="66" y="120" width="28" height="50" fill="#7c3aed" fill-opacity=".5"/>
+      <text x="80" y="190" text-anchor="middle" font-size="10" fill="#44403c">Vrijstaand '45–'79</text>
+      <text x="80" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">+5,4%</text>
+      <rect x="200" y="40" width="80" height="130" fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"/>
+      <g fill="#7c3aed" fill-opacity=".45"><rect x="212" y="55" width="18" height="14"/><rect x="250" y="55" width="18" height="14"/><rect x="212" y="85" width="18" height="14"/><rect x="250" y="85" width="18" height="14"/><rect x="212" y="115" width="18" height="14"/><rect x="250" y="115" width="18" height="14"/></g>
+      <text x="240" y="190" text-anchor="middle" font-size="10" fill="#44403c">Appartement Groot-A'dam</text>
+      <text x="240" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">+0,3%</text>
+      <text x="160" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#44403c">NL +3,9%</text>
+      <circle class="ns-viz-mech-hotspot" cx="240" cy="30" r="7" data-tip="In 10 van 40 COROP-regio's daalde de appartementswaarde K-O-K"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Indexatie</h6>
+      <p class="korte">Eén nationale index overschat de waarde van achterblijvende segmenten in de portefeuille.</p>
+      <p class="uitleg">Vooroorlogse appartementen +1,5%, (half-)vrijstaand 1945–1979 +5,4%, Groot-Amsterdam +0,7% en appartementen daar +0,3%. Indexeren met +3,9% landelijk blaast de LTV-teller kunstmatig op in juist de stedelijke appartementssegmenten.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <g fill="#a78bfa" fill-opacity=".35">
+        <rect x="30" y="40" width="260" height="110" rx="6"/>
+      </g>
+      <text x="160" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">291.000 verkopen</text>
+      <rect x="150" y="100" width="20" height="20" fill="#7c3aed"/>
+      <text x="160" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">236 executies = 0,1%</text>
+      <text x="160" y="178" text-anchor="middle" font-size="10" fill="#44403c">+11,3% J-O-J, vanaf zeer lage basis</text>
+      <circle class="ns-viz-mech-hotspot" cx="160" cy="110" r="7" data-tip="Weinig verliesobservaties: downturn-LGD blijft afhankelijk van oude crisisdata"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>LGD</h6>
+      <p class="korte">Executies zijn met 236 per jaar zo zeldzaam dat ze nauwelijks verliesdata opleveren.</p>
+      <p class="uitleg">Het aandeel executieverkopen is 0,1% van alle verkopen, wel 11,3% meer dan een jaar eerder. Stijgende prijzen drukken realised LGD, maar het gebrek aan recente observaties maakt de downturn-kalibratie leunend op historische crisisperioden.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <line x1="40" y1="160" x2="290" y2="160" stroke="#78716c" stroke-width="1"/>
+      <polyline points="60,120 160,112" fill="none" stroke="#7c3aed" stroke-width="3"/>
+      <polyline points="160,112 260,90" fill="none" stroke="#7c3aed" stroke-width="3" stroke-dasharray="6,4"/>
+      <circle cx="60" cy="120" r="5" fill="#7c3aed"/><circle cx="160" cy="112" r="5" fill="#7c3aed"/><circle cx="260" cy="90" r="6" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+      <text x="60" y="180" text-anchor="middle" font-size="10" fill="#44403c">K1</text>
+      <text x="160" y="180" text-anchor="middle" font-size="10" fill="#44403c">K2: +0,6%</text>
+      <text x="260" y="180" text-anchor="middle" font-size="10" fill="#44403c">K3: +1,6%?</text>
+      <text x="260" y="76" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">J-O-J +3,5%</text>
+      <text x="160" y="40" text-anchor="middle" font-size="11" fill="#44403c">CBS sept: 2,9% J-O-J, maanddaling</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>K3-verwachting</h6>
+      <p class="korte">Calcasa voorspelt een kwartaalsprong van 1,6 procent, terwijl de jaargroei verder afneemt.</p>
+      <p class="uitleg">K3: +1,6% K-O-K (eengezins +1,6%, meergezins +1,8%) en +3,5% J-O-J (eengezins +3,9%, meergezins +2,8%). CBS meldde voor september 2,9% op jaarbasis en een daling ten opzichte van augustus.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Betaalbaarheid, verliezen en de K3-sprong</h5>
+<p>De keerzijde van de prijsstijging staat in de betaalbaarheidsindex: een huishouden met een gemiddeld inkomen dat een gemiddelde woning koopt, besteedt 24,2 procent van het netto inkomen aan netto woonlasten. De netto woonlasten stegen 3,4 procent in één kwartaal en 2,1 procent op jaarbasis. Voor PD-modellen is dat relevant omdat nieuwe leningen bij krappere woonquotes worden afgesloten. Voor LGD is het beeld voorlopig gunstig: 236 executieverkopen op jaarbasis, 0,1 procent van alle verkopen. Wel 11,3 procent meer dan een jaar eerder, maar vanaf een zeer lage basis. Het nadeel is dat recente verliesdata vrijwel ontbreekt, waardoor een downturn-LGD blijft leunen op de crisisjaren. Calcasa's voorspelling voor het derde kwartaal, +1,6 procent ten opzichte van K2 en +3,5 procent op jaarbasis, botst bovendien met CBS-cijfers die in september een maandelijkse prijsdaling lieten zien. NVM meldt intussen dat nieuwbouw (mediaan €504.000) en bestaande bouw (€503.000) bijna even duur zijn, en dat 22.000 geplande nieuwbouwwoningen onzeker zijn door geldgebrek voor ov. Op korte termijn komt er dus weinig extra aanbod bij.</p>
+<div class="ns-viz"><div class="ns-viz-title">📏 Betaalbaarheidsindex K2 2026</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:190"/>
+  </svg>
+  <div class="ns-viz-gauge-val">24,2%</div>
+  <div class="ns-viz-gauge-label">Netto inkomen naar netto woonlasten (K-O-K −3,3%, J-O-J −2,0% betaalbaarheid)</div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Het WOX-bericht laat een markt zien die op kwantiteit afkoelt en op prijs nog doorstijgt. Voor onderpandwaardering is de les dat het nationale cijfer van 3,9 procent een samenstellingsgemiddelde is dat de werkelijke spreiding verbergt, van +0,1 procent in Amsterdam tot +6,3 procent in de gemeente Groningen. Banken die op landelijk of provinciaal niveau indexeren, nemen een systematische fout in stedelijke appartementsportefeuilles voor lief. De lage executiecijfers zijn geruststellend voor huidige verliezen, maar zeggen weinig over een volgende neergang. De K3-voorspelling moet tegen de CBS-cijfers worden gelegd voordat iemand erop indexeert.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=cN-eWo6yP24" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/cN-eWo6yP24/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">CREA stelt de prognose voor de huizenverkoop in 2026 opnieuw naar beneden bij.</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://calcasa.nl/onderzoek/2026-q2-wox-kwartaalbericht" target="_blank" style="color:var(--accent)">calcasa.nl ↗</a> &bull; <a href="https://calcasa.nl/files/Calcasa_WOX_2026Q2_NL.pdf" target="_blank" style="color:var(--accent)">calcasa.nl ↗</a></div>
