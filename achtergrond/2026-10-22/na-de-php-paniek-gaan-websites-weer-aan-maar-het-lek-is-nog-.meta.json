@@ -1,0 +1,20 @@
+{
+  "title": "Na de PHP-paniek gaan websites weer aan, maar het lek is nog niet dicht",
+  "summary": "DigiD, MijnOverheid en honderden andere sites gingen woensdag uit voorzorg op zwart. Inmiddels zijn de meeste terug, terwijl onderzoekers al een derde bug melden en twijfelen of de spoedpatch volstaat.\n\nTwee kritieke kwetsbaarheden in PHP, de programmeertaal onder zo'n 70 procent van alle websites, legden woensdag een groot deel van het Nederlandse internet stil. DigiD, MijnOverheid, de Tweede Kamer, het NCSC zelf, RTL, Tweakers, Stedin, de RET en ziekenhuizen haalden hun sites uit voorzorg offl",
+  "sources": [
+    "https://fd.nl/tech-en-innovatie/1616229/veel-websites-offline-om-lek-in-software-en-angst-voor-cyberaanvallen",
+    "https://fd.nl/tech-en-innovatie/1616233/hoe-een-zwakke-plek-in-php-het-internet-ontregelde",
+    "https://www.nrc.nl/nieuws/2026/10/22/veel-websites-weer-online-na-php-lek-cyberveiligheidscentrum-ziet-nog-steeds-geen-actief-misbruik-a4939524",
+    "https://tweakers.net/nieuws/253620/securityexperts-vinden-derde-bug-in-php-en-claimen-dat-patch-incompleet-is.html",
+    "https://www.theguardian.com/technology/2026/oct/21/flaw-in-php-computer-language-leads-to-shutdown-of-websites-around-world"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-22",
+  "slug": "na-de-php-paniek-gaan-websites-weer-aan-maar-het-lek-is-nog-",
+  "tts_slug": "na-de-php-paniek-gaan-websites-weer-aan-maar-het-lek-is-nog-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-22T09:32:39",
+  "size_kb": 111
+}
