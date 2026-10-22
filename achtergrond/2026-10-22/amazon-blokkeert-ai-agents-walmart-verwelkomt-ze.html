@@ -1,0 +1,71 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://techcrunch.com/wp-content/uploads/2018/01/gettyimages-903923942.jpeg?resize=1200,800" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© techcrunch.com</div></div><ul class="bg-bullets">
+<li>Walmart lanceert een Agent Gateway waarmee goedgekeurde AI-agents namens klanten kunnen winkelen.</li>
+<li>Amazon kiest het tegenovergestelde en blokkeert agents die namens shoppers aankopen doen.</li>
+<li>Klanten krijgen per agent een profiel, met bestedingslimieten of goedkeuring per transactie.</li>
+<li>De strijd gaat over wie de klantrelatie bezit: de winkel of de agent.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Twee strategieën</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>🛒 Walmart</h6>
+    <ul><li>Eigen MCP-server: Agent Gateway</li><li>Partnerschap met Meta's Muse</li><li>Koppelingen met ChatGPT, Gemini en andere</li><li>Ook voor Sam's Club</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>📦 Amazon</h6>
+    <ul><li>Blokkeert agents bij aankopen</li><li>Houdt eigen winkel gesloten</li><li>Zelfde lijn als reis- en boekingssites</li></ul></div>
+</div></div>
+<h5>Een splitsing in de retail</h5>
+<p>Nu AI-agents steeds vaker zelfstandig zoeken, vergelijken en afrekenen, moeten webwinkels kiezen: deur open of deur dicht. Amazon is kort geleden begonnen agents te blokkeren die namens shoppers aankopen doen, en staat daarin niet alleen; verschillende reis- en boekingssites sluiten agents zelfs volledig uit. Walmart, Amazons grootste concurrent, kiest de omgekeerde route. Het bedrijf had al een partnerschap met Muse, de agent van Meta, en koppelingen met ChatGPT, Gemini en andere populaire AI-apps. Nu volgt de Agent Gateway, die volgens topman John Furner het bedrijf moet voorbereiden op een wereld waarin agents mainstream worden. Dat het moment rijp lijkt, bevestigt Meta zelf: winkelen is volgens het bedrijf een van de populairste activiteiten in Muse.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een agent bij Walmart afrekent</div>
+<div class="ns-viz-mech-subtitle">Van opdracht van de klant tot gescheiden aankoop in het account</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Verbinden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Profiel</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Goedkeuren</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Aankoop</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="65" cy="100" r="35" fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"/><text x="65" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AI-agent</text><rect x="200" y="60" width="95" height="80" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="247" y="95" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Agent</text><text x="247" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Gateway</text><line x1="102" y1="100" x2="196" y2="100" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="6 4"/><text x="150" y="92" text-anchor="middle" font-size="10" fill="#44403c">MCP</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Verbinden</h6><p class="korte">Een goedgekeurde agent maakt via het Model Context Protocol verbinding met Walmarts Agent Gateway.</p><p class="uitleg">De Agent Gateway is Walmarts nieuwe MCP-server. Het protocol, oorspronkelijk door Anthropic ontwikkeld, laat agents aansluiten op externe data en tools. Zo kan de agent het online assortiment doorzoeken en kopen, ook bij Sam's Club.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="70" y="30" width="180" height="140" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Klantaccount</text><rect x="90" y="70" width="140" height="28" rx="5" fill="#a78bfa" fill-opacity=".25"/><text x="160" y="89" text-anchor="middle" font-size="11" fill="#44403c">Profiel: Muse</text><rect x="90" y="106" width="140" height="28" rx="5" fill="#a78bfa" fill-opacity=".25"/><text x="160" y="125" text-anchor="middle" font-size="11" fill="#44403c">Profiel: ChatGPT</text><text x="160" y="157" text-anchor="middle" font-size="10" fill="#78716c">eigen aankopen apart</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Profiel</h6><p class="korte">Elke agent krijgt een eigen Agent Profile in het account van de klant.</p><p class="uitleg">Met Agent Profiles, die volgende maand uitrollen, autoriseert de klant elke agent afzonderlijk en ziet hij diens aankopen los van de eigen aankopen. Walmart vergelijkt het met een gemachtigde gebruiker op een creditcard.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="55" width="115" height="90" rx="8" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><text x="87" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Per aankoop</text><text x="87" y="115" text-anchor="middle" font-size="11" fill="#44403c">goedkeuren</text><rect x="175" y="55" width="115" height="90" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="2"/><text x="232" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Binnen limiet</text><text x="232" y="115" text-anchor="middle" font-size="11" fill="#44403c">automatisch</text><text x="160" y="178" text-anchor="middle" font-size="11" fill="#44403c">De klant kiest</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Goedkeuren</h6><p class="korte">De klant kiest: elke transactie goedkeuren, of de agent vrij laten binnen een limiet.</p><p class="uitleg">Die keuze is de kern van het vertrouwensvraagstuk. Een agent die zonder grens kan kopen is riskant; een agent die voor elke aankoop toestemming vraagt is minder handig. Walmart laat de afweging bij de klant.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><path d="M80,70 L100,70 L120,140 L230,140 L250,85 L110,85" fill="none" stroke="#7c3aed" stroke-width="3"/><circle cx="135" cy="158" r="9" fill="#7c3aed"/><circle cx="215" cy="158" r="9" fill="#7c3aed"/><rect x="145" y="95" width="30" height="30" fill="#a78bfa"/><rect x="185" y="100" width="25" height="25" fill="#a78bfa" opacity=".7"/><text x="160" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Zonder aankoophistorie te delen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Aankoop</h6><p class="korte">De agent koopt de vaste merken van de klant, zonder diens gegevens te ontvangen.</p><p class="uitleg">Volgens Walmart kan de Gateway helpen de gebruikelijke producten te kopen zonder dat persoonlijke informatie of aankoopgeschiedenis direct met de agent wordt gedeeld. De retailer houdt die data dus zelf.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waar het werkelijk om draait</h5>
+<p>Achter de technische details schuilt een machtsvraag. Wie een agent laat winkelen, ziet de winkel zelf nauwelijks nog; de agent vergelijkt, kiest en rekent af. Dat bedreigt alles waarmee een webwinkel normaal verdient: de etalage, de aanbevelingen, de advertenties tussen de zoekresultaten. Amazons blokkade is vanuit dat perspectief logisch: het bedrijf beschermt een platform dat op die directe klantrelatie is gebouwd. Walmart gokt erop dat het beter is mee te bewegen en de spelregels zelf te bepalen. Door agents via een eigen gateway binnen te laten, houdt het controle over wie toegang krijgt, en door klantgegevens niet aan de agent door te geven, blijft de data bij Walmart. Het gebruik van MCP is daarbij veelzeggend: een open protocol van Anthropic wordt zo de standaard waarlangs een van 's werelds grootste retailers met AI-systemen van concurrenten als Meta, OpenAI en Google praat.</p>
+<blockquote>Walmart vergelijkt de nieuwe agent-controles met het toevoegen van een gemachtigde gebruiker aan je creditcard.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📊 Walmarts agent-aanbod</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Winkels aangesloten: Walmart en Sam's Club</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Goedkeuringsmodi: per aankoop of binnen limiet</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Eigen profiel per agent in het account</div></div>
+</div></div>
+<h5>Gevolgen en risico's</h5>
+<p>Voor consumenten belooft het gemak, maar de risico's zijn reëel. Dezelfde dagkrant meldt een boete van 25 miljard dollar voor Meta omdat het loog over toegang van derden tot gebruikersgegevens, en dat is precies de partij achter Muse, Walmarts belangrijkste agent-partner. Ook het PHP-lek dat websites wereldwijd platlegde laat zien hoe snel AI kwetsbaarheden kan vinden en misbruiken; een systeem waarmee agents namens mensen geld uitgeven, wordt een aantrekkelijk doelwit. Walmarts limieten en aparte profielen zijn daarom geen bijzaak maar een voorwaarde. Voor Europese retailers is de les dat ze dezelfde keuze zullen moeten maken. Of agents hier even snel ingeburgerd raken, en hoe Europese regels voor consumentenbescherming en AI daarop inwerken, is nog open.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Agentic commerce</summary>
+    <div class="ns-viz-concept-body">Winkelen waarbij een AI-agent namens de klant zoekt, kiest en afrekent, in plaats van dat de klant zelf door een webwinkel klikt.</div></details>
+  <details class="ns-viz-concept"><summary>Model Context Protocol (MCP)</summary>
+    <div class="ns-viz-concept-body">Open protocol, oorspronkelijk van Anthropic, waarmee AI-agents verbinding maken met externe databronnen, tools en workflows.</div></details>
+  <details class="ns-viz-concept"><summary>Agent Profiles</summary>
+    <div class="ns-viz-concept-body">Walmarts functie, volgende maand beschikbaar, waarmee klanten elke agent apart autoriseren en de aankopen per agent gescheiden zien.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Amazon verdedigt zijn fort, Walmart bouwt een poort. Op korte termijn is de blokkade de veiligste keuze, maar op langere termijn lijkt Walmart beter gepositioneerd: als agents werkelijk de manier worden waarop mensen boodschappen doen, wint de winkel die ze netjes ontvangt. De grote vraag is of klanten genoeg vertrouwen hebben om een algoritme met hun geld te laten winkelen. Walmarts controles zijn een verstandige eerste stap, maar het vertrouwen moet nog verdiend worden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=FmKorqjOgHw" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/FmKorqjOgHw/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Waarom Amazon AI-winkelbots blokkeert: ze scrollen nooit</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a></div>

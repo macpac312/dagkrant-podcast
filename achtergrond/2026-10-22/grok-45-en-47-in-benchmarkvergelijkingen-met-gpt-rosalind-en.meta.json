@@ -1,0 +1,17 @@
+{
+  "title": "Grok 4.5 en 4.7 in benchmarkvergelijkingen met GPT-Rosalind en Muse Wonder",
+  "summary": "OrcaRouter zet de modellen naast elkaar op gezondheid en prijs-prestatie.\n\nOrcaRouter vergelijkt Grok 4.7 met OpenAI's GPT-Rosalind op een gezondheidsbenchmark, en Grok 4.5 met Meta's Muse Wonder: dat laatste model scoort 13 punten hoger, maar kost vijf keer zoveel.\n\nDe stukken waarschuwen dat een gezondheidsbenchmark niet hetzelfde is als biologische veiligheid.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBaVm5YTjJpVUVxLThvWVd5b0hzb1RiQzVUWDduRDRyblFObjgzck1DRlhWZFZOZm5UaGYtd2RPOWtLNk1nVE05M3V5QkotN29sWklJOFhmTU9aU1ZWYlBmX3NUSkdPQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ObU9aakxSeVpRXzJ1RG96WlBBVnpQNkN3ZDY3Z1FNRzZIMGlDbDdnNUN0RFB4dEVlLWVhLUlWQ2hjY25QY2NjbVJwN3BtSEJEMUxqNF9faVp3d1FMOTZhY0N3QTc?oc=5"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-22",
+  "slug": "grok-45-en-47-in-benchmarkvergelijkingen-met-gpt-rosalind-en",
+  "tts_slug": "grok-45-en-47-in-benchmarkvergelijkingen-met-gpt-rosalind-en",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-22T04:33:29",
+  "size_kb": 6
+}

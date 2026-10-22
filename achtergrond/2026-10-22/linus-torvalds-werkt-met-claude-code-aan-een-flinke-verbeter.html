@@ -1,0 +1,94 @@
+<ul class="bg-bullets">
+<li>Linus Torvalds gebruikt Claude Code bij een omvangrijke verbetering van de Linux-kernel, meldt Phoronix.</li>
+<li>Juist omdat Torvalds bekendstaat als criticus van hypes, trekt dit veel aandacht.</li>
+<li>Welke kernelwijziging het is en hoe groot de AI-bijdrage is, staat niet in ons bronmateriaal.</li>
+<li>Het signaal: AI-hulp schuift op van experiment naar het hart van kritieke software.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Torvalds in context</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1991">1991</div><div class="ns-viz-stat-label">Eerste Linux-kernel van Torvalds</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2005">2005</div><div class="ns-viz-stat-label">Torvalds schrijft Git</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2026">2026</div><div class="ns-viz-stat-label">Kernelwerk met Claude Code</div></div>
+</div></div>
+<h5>Wat er speelt</h5>
+<p>Volgens Phoronix, en besproken door Pasquale Pillitteri, gebruikt Linus Torvalds Claude Code bij zijn werk aan een flinke verbetering van de Linux-kernel. Claude Code is de programmeeromgeving van Anthropic. Dat bericht trekt veel aandacht in de opensourcewereld. Torvalds schreef in 1991 de eerste Linux-kernel en later ook het versiebeheersysteem Git. Hij staat bekend als nuchter en vaak scherp kritisch over technologische hypes. Als juist hij AI-hulp inzet, krijgt dat gewicht. Om welke kernelwijziging het precies gaat, hoeveel code Claude heeft geschreven en hoe Torvalds het resultaat beoordeelt, kunnen we op basis van het beschikbare materiaal niet vaststellen. De oorspronkelijke berichten waren bij het samenstellen van deze krant niet op te halen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een kernelwijziging met AI-hulp door het proces gaat</div>
+<div class="ns-viz-mech-subtitle">Van terminalsessie tot samengevoegde code: de mens blijft poortwachter</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Opdracht</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Patch</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Review</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Merge</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="30" width="260" height="140" rx="8" fill="#1c1917"/>
+      <circle cx="48" cy="45" r="4" fill="#dc2626"/><circle cx="62" cy="45" r="4" fill="#f59e0b"/><circle cx="76" cy="45" r="4" fill="#16a34a"/>
+      <text x="45" y="80" font-size="12" font-family="monospace" fill="#a78bfa">$ claude</text>
+      <text x="45" y="102" font-size="11" font-family="monospace" fill="#d4d0cb">&gt; verbeter dit subsysteem...</text>
+      <text x="45" y="124" font-size="11" font-family="monospace" fill="#78716c">leest code, stelt plan voor</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Opdracht</h6>
+      <p class="korte">De ontwikkelaar geeft in de terminal een opdracht en de AI leest de code.</p>
+      <p class="uitleg">Claude Code werkt in de terminal, in de eigen codebasis van de ontwikkelaar. De agent kan bestanden doorzoeken, wijzigingen voorstellen en commando's draaien. De mens bepaalt richting en reikwijdte.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="30" width="220" height="140" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="62" y="50" width="196" height="16" fill="#dc2626" fill-opacity=".15"/><text x="70" y="62" font-size="11" font-family="monospace" fill="#dc2626">- oude regel</text>
+      <rect x="62" y="72" width="196" height="16" fill="#16a34a" fill-opacity=".15"/><text x="70" y="84" font-size="11" font-family="monospace" fill="#16a34a">+ nieuwe regel</text>
+      <rect x="62" y="94" width="196" height="16" fill="#16a34a" fill-opacity=".15"/><text x="70" y="106" font-size="11" font-family="monospace" fill="#16a34a">+ nieuwe regel</text>
+      <text x="160" y="150" text-anchor="middle" font-size="11" fill="#7c3aed" font-weight="700">diff / patch</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Patch</h6>
+      <p class="korte">De wijzigingen worden een patch die de ontwikkelaar zelf controleert en test.</p>
+      <p class="uitleg">De ontwikkelaar blijft verantwoordelijk voor elke regel. Bij de kernel, die op miljarden apparaten draait, is grondig testen essentieel, ongeacht wie of wat de code schreef.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="120" y="75" width="80" height="50" rx="8" fill="#7c3aed"/>
+      <text x="160" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">mailinglijst</text>
+      <g fill="#a78bfa" fill-opacity=".5" stroke="#7c3aed"><circle cx="50" cy="50" r="18"/><circle cx="270" cy="50" r="18"/><circle cx="50" cy="155" r="18"/><circle cx="270" cy="155" r="18"/></g>
+      <g stroke="#7c3aed" stroke-width="2"><line x1="66" y1="58" x2="120" y2="85"/><line x1="254" y1="58" x2="200" y2="85"/><line x1="66" y1="147" x2="120" y2="118"/><line x1="254" y1="147" x2="200" y2="118"/></g>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">maintainers beoordelen</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Review</h6>
+      <p class="korte">Kernelpatches gaan langs mailinglijsten en maintainers die ze publiek beoordelen.</p>
+      <p class="uitleg">Het kernelproces is berucht streng. Wijzigingen worden openbaar besproken en vaak meermaals herzien. Daardoor is ook AI-gegenereerde code onderworpen aan dezelfde menselijke toetsing.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <line x1="30" y1="100" x2="290" y2="100" stroke="#7c3aed" stroke-width="4"/>
+      <path d="M 90 100 C 130 40, 190 40, 230 100" fill="none" stroke="#a78bfa" stroke-width="3"/>
+      <circle cx="90" cy="100" r="8" fill="#7c3aed"/><circle cx="230" cy="100" r="10" fill="#7c3aed"/>
+      <text x="160" y="40" text-anchor="middle" font-size="11" fill="#44403c">wijziging</text>
+      <text x="160" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">mainline-kernel</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Merge</h6>
+      <p class="korte">Pas na review komt de wijziging in de hoofdlijn van de kernel.</p>
+      <p class="uitleg">Torvalds is traditioneel degene die wijzigingen in de mainline-kernel samenvoegt. Als hij zelf AI gebruikt, is hij tegelijk maker en eindredacteur, wat de discussie over verantwoordelijkheid scherper maakt.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom dit ertoe doet</h5>
+<p>De Linux-kernel draait op servers, telefoons, auto's en supercomputers. Het is software waar fouten direct wereldwijd voelbaar zijn. In de opensourcewereld is lang gediscussieerd of AI-gegenereerde bijdragen welkom zijn. Er waren zorgen over kwaliteit, auteursrecht en een stroom van slordige patches die maintainers moeten beoordelen. Als Torvalds zelf zo'n hulpmiddel gebruikt, verschuift dat de norm. De vraag is dan niet meer óf AI meeschrijft, maar hoe je toetst wat er binnenkomt. Voor Anthropic is het intussen een prestigieuze referentie, op een moment dat het de toegang tot Claude Code Projects uitbreidt naar alle Pro- en Max-gebruikers op de wachtlijst.</p>
+<blockquote>Als de bekendste scepticus van de opensourcewereld een AI-assistent gebruikt, gaat het debat niet meer over óf, maar over hoe je toetst.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Linux-kernel</summary>
+    <div class="ns-viz-concept-body">De kern van het besturingssysteem Linux. Die regelt geheugen, processen en hardware, en wordt door duizenden ontwikkelaars wereldwijd onderhouden.</div></details>
+  <details class="ns-viz-concept"><summary>Claude Code</summary>
+    <div class="ns-viz-concept-body">Programmeerassistent van Anthropic die in de terminal werkt. Hij leest code, stelt wijzigingen voor en voert taken uit onder regie van de ontwikkelaar.</div></details>
+  <details class="ns-viz-concept"><summary>Phoronix</summary>
+    <div class="ns-viz-concept-body">Gespecialiseerde nieuwssite over Linux, open source en hardwareprestaties. Een van de vaste bronnen voor kernelnieuws.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Zonder details over de wijziging zelf is voorzichtigheid geboden. Eén ontwikkelaar die een hulpmiddel gebruikt, bewijst nog niets over de kwaliteit van AI-code in het algemeen. De symboliek is wel sterk. Het kernelproces met zijn strenge publieke review is misschien de beste omgeving om AI-hulp te gebruiken: niet de herkomst van een regel code telt, maar of die de toets van de maintainers doorstaat.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=mIdBYw_EBrE" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/mIdBYw_EBrE/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Torvalds gebruikte Claude-code in de Linux-kernel. Wat is bewezen, wat niet?</div></div></a></div>
