@@ -7,6 +7,7 @@
 !index.html
 !laatste.html
 !archief.html
+!inzicht-*.html
 ![0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].html
 !achtergrond/**/*.html
 !artikelen/**/*.html

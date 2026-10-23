@@ -6517,16 +6517,68 @@ function _openReaderBgFromReader(mode, force) {
 // ─── Chat onder achtergrond-artikel ───────────────────────────────────────
 function _renderAchtergrondChat(panelInner, title, slug) {
   if (!panelInner || !title) return;
+  try { if (document.head && document.getElementById && !document.getElementById('ns-chat-hist-css')) {
+    var css = document.createElement('style');
+    css.id = 'ns-chat-hist-css';
+    css.textContent = '.ach-chat-historie{margin:.4rem 0 .9rem;padding:.6rem .8rem;border:1px solid var(--border,#ddd);'
+      + 'border-radius:8px;background:var(--viz-card,rgba(127,127,127,.05))}'
+      + '.ach-chat-hist-title{font:600 .78rem/1.3 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.05em;'
+      + 'opacity:.75;margin-bottom:.35rem}.ach-chat-hist-item{border-top:1px solid var(--border,#e5e5e5);padding:.45rem 0}'
+      + '.ach-chat-hist-item:first-of-type{border-top:0}.ach-chat-hist-item summary{cursor:pointer;line-height:1.4}'
+      + '.ach-chat-hist-item .ach-chat-resp{margin-top:.45rem;font-size:.95em;line-height:1.55}'
+      + '.ach-chat-readonly{margin-top:2rem}';
+    document.head.appendChild(css);
+  } } catch (e) {}
+  // Bewaarde vervolgvragen (<stem>.chat.json naast de achtergrond, achtergrond_chat.py).
+  window._nsChatMd = window._nsChatMd || function(t) {
+    return String(t || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>');
+  };
+  window._nsChatHistRender = window._nsChatHistRender || function(box, items) {
+    if (!box) return;
+    items = (items || []).filter(function(x) { return x && x.vraag && x.antwoord; });
+    box.hidden = !items.length;
+    box.innerHTML = items.length
+      ? '<div class="ach-chat-hist-title">💬 Eerder gevraagd aan Claude (' + items.length + ')</div>'
+        + items.slice().reverse().map(function(x) {
+            // Standaard open: antwoord direct zichtbaar; klik op de vraag om in te klappen.
+            return '<details class="ach-chat-hist-item" open><summary><strong>' + window._nsChatMd(x.vraag)
+              + '</strong>' + (x.tijd ? ' <span style="opacity:.55;font-size:.8em">' + String(x.tijd).replace(/</g,'') + '</span>' : '')
+              + '</summary><div class="ach-chat-resp">' + window._nsChatMd(x.antwoord) + '</div></details>';
+          }).join('')
+      : '';
+  };
+  window._nsChatHistAdd = window._nsChatHistAdd || function(wrap, vraag, antwoord) {
+    var box = wrap && wrap.querySelector('.ach-chat-historie');
+    if (!box) return;
+    var items = wrap._nsHist || [];
+    items.push({vraag: vraag, antwoord: antwoord, tijd: new Date().toISOString().slice(0,16).replace('T',' ')});
+    wrap._nsHist = items;
+    window._nsChatHistRender(box, items);
+  };
+  var datum = window.DAGKRANT_DATE || (new Date()).toISOString().slice(0,10);
+  var stem = String(slug || '').replace(/_deep$/, '');
+  var live = true;
   try {
-    if (typeof _nsCanLiveGen === 'function') {
-      if (!_nsCanLiveGen()) return;
-    } else {
-      var host = (typeof location !== 'undefined' && location.hostname) || '';
-      if (/github\.io$/i.test(host)) return;
-    }
+    if (typeof _nsCanLiveGen === 'function') live = _nsCanLiveGen();
+    else live = !/github\.io$/i.test((typeof location !== 'undefined' && location.hostname) || '');
   } catch (e) {}
   if (panelInner.querySelector && panelInner.querySelector('.ach-chat')) return;
-  var datum = window.DAGKRANT_DATE || (new Date()).toISOString().slice(0,10);
+  if (!live) {
+    // Telefoon (Pages): alleen-lezen, als er op de laptop vragen zijn gesteld en gepubliceerd.
+    if (!stem || typeof fetch !== 'function') return;
+    try { fetch('achtergrond/' + datum + '/' + stem + '.chat.json?t=' + Date.now())
+      .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function(items) {
+        if (!items || !items.length || panelInner.querySelector('.ach-chat')) return;
+        var ro = document.createElement('div');
+        ro.className = 'ach-chat ach-chat-readonly';
+        ro.innerHTML = '<div class="ach-chat-historie"></div>';
+        panelInner.appendChild(ro);
+        window._nsChatHistRender(ro.querySelector('.ach-chat-historie'), items);
+      }).catch(function() {}); } catch (e) {}
+    return;
+  }
   var wrap = document.createElement('div');
   wrap.className = 'ach-chat';
   wrap.setAttribute('data-title', title);
@@ -6535,10 +6587,11 @@ function _renderAchtergrondChat(panelInner, title, slug) {
   wrap.innerHTML =
     '<div class="ach-chat-head">'
     +   '<span class="ach-chat-icon">💬</span>'
-    +   '<span class="ach-chat-title">Vraag aan Grok</span>'
-    +   '<button class="ach-chat-deep" title="Schakel Opus 4.8 in voor diepere antwoorden (langzamer)" data-on="0">🧠 Diep</button>'
+    +   '<span class="ach-chat-title">Vraag aan Claude</span>'
+    +   '<button class="ach-chat-deep" title="Schakel Claude Opus in voor diepere antwoorden (langzamer)" data-on="0">🧠 Diep</button>'
     +   '<button class="ach-chat-refresh" title="Genereer 4 nieuwe suggesties">⟳</button>'
     + '</div>'
+    + '<div class="ach-chat-historie" hidden></div>'
     + '<div class="ach-chat-suggesties"><span class="ach-chat-loading">Suggesties laden…</span></div>'
     + '<form class="ach-chat-form">'
     +   '<textarea class="ach-chat-input" rows="2" placeholder="Stel een vraag over dit onderwerp…"></textarea>'
@@ -6565,6 +6618,15 @@ function _renderAchtergrondChat(panelInner, title, slug) {
     deepBtn.setAttribute('data-on', on ? '0' : '1');
     deepBtn.classList.toggle('active', !on);
   });
+
+  try {
+    _nsAchtergrondPost('achtergrond-chat', {action: 'history', title: title, datum_iso: datum, slug: slug || ''})
+      .then(function(res) {
+        var items = (res && res.data && res.data.vragen) || [];
+        wrap._nsHist = items;
+        window._nsChatHistRender(wrap.querySelector('.ach-chat-historie'), items);
+      }).catch(function() {});
+  } catch (e) {}
 
   _loadAchtergrondSuggesties(wrap, false);
 }
@@ -6649,7 +6711,7 @@ function _postAchtergrondVraag(wrap, vraag) {
     +   '<strong>Vraag:</strong> ' + vraag.replace(/</g,'&lt;')
     +   ' <span style="opacity:.6">· via ' + modelLabel + '</span>'
     + '</div>'
-    + '<div class="ach-chat-thinking">⏳ Grok denkt na… (' + verwacht + ')</div>';
+    + '<div class="ach-chat-thinking">⏳ Claude denkt na… (' + verwacht + ')</div>';
   sendBtn.disabled = true; ta.disabled = true;
 
   _nsAchtergrondPost('achtergrond-chat', {
@@ -6667,7 +6729,8 @@ function _postAchtergrondVraag(wrap, vraag) {
         + '<div class="ach-chat-err">Fout: ' + ((res.data && res.data.error) || 'onbekend') + '</div>';
       return;
     }
-    var ant = ((res.data && res.data.antwoord) || '').replace(/</g,'&lt;').replace(/\n/g,'<br>');
+    var ant = ((res.data && res.data.antwoord) || '').replace(/</g,'&lt;')
+      .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>');
     var rawAnt = (res.data && res.data.antwoord) || '';
     antBox.innerHTML =
       '<div class="ach-chat-vraag-echo"><strong>Vraag:</strong> ' + vraag.replace(/</g,'&lt;') + '</div>'
@@ -6682,6 +6745,7 @@ function _postAchtergrondVraag(wrap, vraag) {
       });
     }
     ta.value = '';
+    if (window._nsChatHistAdd && rawAnt) window._nsChatHistAdd(wrap, vraag, rawAnt);
   })
   .catch(function(err) {
     sendBtn.disabled = false; ta.disabled = false;
