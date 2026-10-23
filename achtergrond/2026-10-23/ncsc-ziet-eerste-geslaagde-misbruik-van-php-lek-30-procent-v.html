@@ -1,0 +1,114 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://images.cdn.nos.nl/8/D/K/W/k/A/rKa5MjcgoAphQxmjwd8K21r9Qtmxd5UkHgnPKSs/18x2x1824x1026-1280x720.webp" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© nos.nl</div></div><ul class="bg-bullets">
+<li>NCSC ziet eerste signalen van geslaagd misbruik van het PHP-lek PHP2Shell.</li>
+<li>Het lek zit in geheugenbeheer en foutafhandeling: onderdelen die vrijwel elk verzoek raakt.</li>
+<li>Volgens Hadrian draait 30 procent van de sites op versies waarvoor de patch niet werkt.</li>
+<li>AI vond het lek; dezelfde versnelling maakt misbruik na publicatie razendsnel.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 PHP2Shell in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="70" data-suffix="%">70%</div><div class="ns-viz-stat-label">Websites die op PHP draaien</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="30" data-suffix="%">30%</div><div class="ns-viz-stat-label">Sites op versie zonder werkende patch (Hadrian)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="50000">50000</div><div class="ns-viz-stat-label">Waarschuwingen Brits NCSC</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Kwetsbaarheden (CVE-2026-109618/9)</div></div>
+</div></div>
+<h5>Van voorzorg naar daadwerkelijk misbruik</h5>
+<p>Het Nationaal Cyber Security Centrum heeft zijn toon in één dag bijgesteld. Waar de dienst eerder nog geen geslaagde aanvallen zag, meldde een woordvoerder donderdag dat er 'de eerste signalen binnenkomen' dat het grote lek in PHP met succes is misbruikt, en dat de situatie snel kan verergeren nu werkende aanvalsmethodes rondgaan. Wat die signalen inhouden, zegt het NCSC niet; onderzoek kan maanden duren. De onthulling had al tot een ongewone golf van voorzorgsmaatregelen geleid: RTL Nieuws en overheidssites gingen offline, gemeenten met Notubiz en boekhouders met Exact konden niet inloggen, en ook in Frankrijk, Canada, Japan en Duitsland gingen overheidssites tijdelijk op zwart. Kort voor 16.00 uur kwam de patch beschikbaar. In Azië vielen donderdag de sites van de Japanse belastingdienst, Japan Airlines en bank Nomura weg. PHP is ruim dertig jaar oud en draagt systemen als WordPress; naar schatting 70 procent van het web draait erop.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe PHP2Shell werkt</div>
+<div class="ns-viz-mech-subtitle">Van één kwaadaardig verzoek tot greep op de server</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Verzoek</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Geheugen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Overname</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Patch-race</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="20" y="70" width="70" height="50" rx="6" fill="#dc2626" opacity=".8"/><text x="55" y="100" text-anchor="middle" font-size="11" fill="#fff">aanvaller</text>
+      <path d="M 95 95 L 200 95" stroke="#dc2626" stroke-width="3" stroke-dasharray="6 4"/>
+      <text x="148" y="85" text-anchor="middle" font-size="10" fill="#44403c">HTTP-verzoek</text>
+      <rect x="205" y="45" width="95" height="110" rx="8" fill="#7c3aed" opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="252" y="75" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Webserver</text>
+      <text x="252" y="100" text-anchor="middle" font-size="10" fill="#44403c">WordPress</text><text x="252" y="116" text-anchor="middle" font-size="10" fill="#44403c">Drupal · Joomla</text>
+      <text x="252" y="140" text-anchor="middle" font-size="10" fill="#7c3aed">PHP-engine</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Verzoek</h6><p class="korte">Een aanvaller stuurt zonder inlog een gemanipuleerd verzoek naar een PHP-site.</p><p class="uitleg">De demonstraties lieten aanvallen zonder authenticatie zien op WordPress, Drupal en Joomla. Het lek zit niet in een plug-in of inlogcode maar in de PHP-engine zelf, waardoor vrijwel elke PHP-toepassing een ingang is.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <g fill="#a78bfa"><rect x="40" y="50" width="40" height="30"/><rect x="85" y="50" width="40" height="30"/><rect x="130" y="50" width="40" height="30"/><rect x="175" y="50" width="40" height="30"/><rect x="220" y="50" width="40" height="30"/></g>
+      <g fill="#a78bfa"><rect x="40" y="85" width="40" height="30"/><rect x="85" y="85" width="40" height="30"/><rect x="175" y="85" width="40" height="30"/><rect x="220" y="85" width="40" height="30"/></g>
+      <rect x="130" y="85" width="40" height="30" fill="#dc2626"/><text x="150" y="105" text-anchor="middle" font-size="12" fill="#fff">!</text>
+      <text x="160" y="145" text-anchor="middle" font-size="11" fill="#44403c">out-of-memory / fatale fout</text>
+      <text x="160" y="35" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Werkgeheugen PHP</text>
+      <circle class="ns-viz-mech-hotspot" cx="150" cy="100" r="7" data-tip="Geheugencorruptie bij afhandeling van fouten"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Geheugen</h6><p class="korte">Het verzoek corrumpeert geheugen tijdens geheugentekort of een fatale fout.</p><p class="uitleg">Volgens de PHP Foundation zitten beide fouten in geheugenbeheer en foutafhandeling, 'onderdelen die vrijwel elk verzoek raakt'. Onderzoekers toonden ook Heartbleed-achtig uitlekken van geheugen aan, bij elke PHP-applicatie.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="110" y="40" width="100" height="70" rx="8" fill="#7c3aed"/><text x="160" y="80" text-anchor="middle" font-size="12" fill="#fff">shell</text>
+      <ellipse cx="70" cy="155" rx="40" ry="12" fill="#a78bfa"/><rect x="30" y="135" width="80" height="20" fill="#a78bfa"/><ellipse cx="70" cy="135" rx="40" ry="12" fill="#c4b5fd"/>
+      <text x="70" y="185" text-anchor="middle" font-size="10" fill="#44403c">database</text>
+      <path d="M 210 150 L 290 150 L 290 175 L 210 175 Z" fill="#a78bfa"/><text x="250" y="190" text-anchor="middle" font-size="10" fill="#44403c">bestanden</text>
+      <line x1="140" y1="112" x2="80" y2="128" stroke="#dc2626" stroke-width="2.5"/><line x1="180" y1="112" x2="245" y2="148" stroke="#dc2626" stroke-width="2.5"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Overname</h6><p class="korte">Wie de corruptie benut, kan code uitvoeren en data stelen.</p><p class="uitleg">Het Amerikaanse NSA waarschuwt dat het lek 'een direct pad naar het bestandssysteem of de database' kan bieden. Hadrian doopte het PHP2Shell: van PHP naar een shell op de server, oftewel volledige remote code execution.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="70" width="80" height="60" rx="6" fill="#16a34a" opacity=".8"/><text x="70" y="104" text-anchor="middle" font-size="11" fill="#fff">patch</text>
+      <path d="M 115 100 L 190 100" stroke="#78716c" stroke-width="2"/><text x="152" y="90" text-anchor="middle" font-size="10" fill="#44403c">verschil lezen</text>
+      <g fill="#dc2626"><circle cx="220" cy="70" r="6"/><circle cx="240" cy="95" r="6"/><circle cx="215" cy="120" r="6"/><circle cx="260" cy="70" r="6"/><circle cx="270" cy="115" r="6"/><circle cx="290" cy="90" r="6"/><circle cx="250" cy="140" r="6"/></g>
+      <text x="255" y="175" text-anchor="middle" font-size="10" fill="#dc2626">duizenden → miljoenen pogingen</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Patch-race</h6><p class="korte">De patch zelf verraadt waar het lek zit, en aanvallers lezen mee.</p><p class="uitleg">Cloudflare zag het aantal aanvalspogingen na publicatie oplopen van duizenden naar miljoenen. Sites op oude PHP-versies krijgen de reparatie niet; volgens Hadrian zo'n 30 procent. Zij moeten upgraden of anders afschermen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom de patch het probleem niet oplost</h5>
+<p>Het venijn zit in de dynamiek na publicatie. Een patch is ook een routekaart: wie de oude en nieuwe code vergelijkt, ziet precies waar het mis zat. Cloudflare zag het aantal aanvalspogingen na het verschijnen van de reparatie oplopen van duizenden naar miljoenen. Tegelijk schat Hadrian dat bijna een op de drie websites op een verouderde PHP-versie draait waarvoor de fix niet werkt. Dat is het klassieke probleem van open-sourcefundamenten: oude installaties blijven jaren draaien op goedkope hosting, in vergeten intranetten en in maatwerk dat niemand durft aan te raken. De NOS telde zeker 113.000 Nederlandse sites die aantoonbaar een nieuwere, veilige versie draaien, maar ook circa 145.000 die mogelijk nog kwetsbaar zijn; op afstand valt niet te zien of die via een andere weg zijn afgeschermd. De vergelijking met Log4Shell en Heartbleed ligt voor de hand, al is de vakwereld verdeeld over de vraag of PHP2Shell die orde van grootte haalt.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="Nederlandse websites naar PHP-status">
+  <g font-size="9" fill="#78716c"><text x="4" y="30">Beschermd</text><text x="4" y="66">Mogelijk kwetsbaar</text></g>
+  <rect x="90" y="16" width="86" height="20" fill="var(--green)"/>
+  <rect x="90" y="52" width="110" height="20" fill="var(--orange)"/>
+  <g font-size="10" fill="#44403c"><text x="180" y="30">113k</text><text x="160" y="66" fill="#fff">145k</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Nederlandse websites naar PHP-versie, onderzoek NOS.</p>
+</div>
+<blockquote>De PHP Foundation: de fouten zitten 'in delen van PHP die vrijwel elk verzoek raakt: geheugenbeheer en foutafhandeling'.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van ontdekking tot misbruik</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">half aug 2026</div><div>Calif-onderzoeker via OpenAI's Patch the Planet en Wiz vinden lek</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">aug–okt</div><div>Ruim twee maanden gecoördineerde, geheime voorbereiding van patches</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">onthulling</div><div>Sites uit voorzorg offline; patch kort voor 16.00 beschikbaar</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">na publicatie</div><div>Cloudflare: aanvalspogingen van duizenden naar miljoenen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">donderdag</div><div>NCSC meldt eerste signalen van geslaagd misbruik</div></div>
+</div></div>
+<h5>AI als vinder én als versneller</h5>
+<p>PHP2Shell is ook een kantelpunt in hoe kwetsbaarheden worden gevonden. Het lek werd half augustus onafhankelijk ontdekt door een onderzoeker van Calif binnen OpenAI's Patch the Planet-programma en door Wiz, dat zowel modellen van OpenAI als Google inzette; de PHP Foundation liet zijn code daarnaast scannen met een model van Anthropic. Het gecoördineerde embargo tot 22 oktober geldt als schoolvoorbeeld van verantwoorde openbaarmaking. Maar in dezelfde dagen doken ook lekken op in Node.js, GitLab, Plex en andere diensten. Cryptograaf Matthew Green vergelijkt het internet met 'droog tondel'. Latent Space plaatst daar tegenover dat kritieke software nu de grootste beveiligingsaudit uit de geschiedenis ondergaat. Beide kunnen waar zijn. Voor Nederlandse organisaties betekent het vooral dat de tijd tussen publicatie en misbruik is gekrompen tot uren, en dat het uitstellen van een PHP-upgrade geen gemakzucht meer is maar een risico.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Remote code execution (RCE)</summary>
+    <div class="ns-viz-concept-body">Een aanvaller laat op afstand eigen code draaien op de server, met toegang tot bestanden en databases. De zwaarste categorie lek.</div></details>
+  <details class="ns-viz-concept"><summary>Embargo / coordinated disclosure</summary>
+    <div class="ns-viz-concept-body">Ontdekkers en beheerders houden een lek geheim tot een vaste datum, zodat patches klaar zijn voordat aanvallers ervan weten. Hier: tot 22 oktober.</div></details>
+  <details class="ns-viz-concept"><summary>Patch-diffing</summary>
+    <div class="ns-viz-concept-body">Aanvallers vergelijken de code voor en na een reparatie om het lek te reconstrueren. Daarom stijgt misbruik vaak juist na een patch.</div></details>
+  <details class="ns-viz-concept"><summary>End-of-life PHP-versie</summary>
+    <div class="ns-viz-concept-body">Een versie die geen beveiligingsupdates meer krijgt. Sites daarop moeten upgraden of het lek via een andere laag, zoals een firewall, afschermen.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>PHP2Shell laat zien dat de zwakste schakel niet de ontdekking is, maar het onderhoud. De coördinatie werkte: patches lagen klaar, sites gingen tijdig uit de lucht. Toch is dat weinig waard als een derde van het web op software draait die niet meer te repareren valt. Nu AI lekken in tempo vindt, wordt achterstallig onderhoud een structureel veiligheidsprobleem dat bestuurders, niet alleen systeembeheerders, moeten oplossen. Wie nog op oude PHP draait, heeft geen patch-probleem maar een migratieprobleem.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=BAoKuAB2h_E" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/BAoKuAB2h_E/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">php2shell uitgelegd: Ben jij getroffen en hoe kun je snel patchen? CVE-2026-109618, 109619</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://nos.nl/l/2636225" target="_blank" style="color:var(--accent)">nos.nl ↗</a> &bull; <a href="https://www.theguardian.com/technology/2026/oct/22/what-is-php-computer-language-flaw-causing-global-website-shutdowns" target="_blank" style="color:var(--accent)">theguardian.com ↗</a> &bull; <a href="https://www.404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next/" target="_blank" style="color:var(--accent)">404media.co ↗</a> &bull; <a href="https://www.latent.space/p/ainews-openais-patch-the-planet-program" target="_blank" style="color:var(--accent)">latent.space ↗</a> &bull; <a href="https://simonwillison.net/2026/Oct/22/armin-ronacher/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>

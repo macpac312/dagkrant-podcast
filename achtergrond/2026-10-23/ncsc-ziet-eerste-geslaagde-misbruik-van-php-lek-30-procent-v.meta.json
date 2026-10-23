@@ -1,0 +1,20 @@
+{
+  "title": "NCSC ziet eerste geslaagde misbruik van PHP-lek, 30 procent van de sites kan niet simpel patchen",
+  "summary": "De patch is uit, maar volgens Hadrian draait bijna een op de drie websites op een PHP-versie waarvoor die niet werkt.\n\nHet Nationaal Cyber Security Centrum (NCSC) krijgt de eerste signalen dat het grote lek in PHP met succes is misbruikt. 'We zien pogingen om de kwetsbaarheden te misbruiken en we krijgen de eerste signalen binnen dat dat met succes gebeurt', zei een woordvoerder donderdag. Eerder zag het NCSC dat nog niet. De situatie kan volgens de dienst 'snel verergeren', omdat werkende aanva",
+  "sources": [
+    "https://nos.nl/l/2636225",
+    "https://fd.nl/tech-en-innovatie/1616489/cyberwaakhond-onderzoekt-eerste-signalen-hacks-situatie-kan-verergeren",
+    "https://www.theguardian.com/technology/2026/oct/22/what-is-php-computer-language-flaw-causing-global-website-shutdowns",
+    "https://www.404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next/",
+    "https://www.latent.space/p/ainews-openais-patch-the-planet-program"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-23",
+  "slug": "ncsc-ziet-eerste-geslaagde-misbruik-van-php-lek-30-procent-v",
+  "tts_slug": "ncsc-ziet-eerste-geslaagde-misbruik-van-php-lek-30-procent-v",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-23T04:28:17",
+  "size_kb": 16
+}
