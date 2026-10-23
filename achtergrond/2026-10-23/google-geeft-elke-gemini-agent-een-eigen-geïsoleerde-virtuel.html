@@ -1,0 +1,101 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Google lanceert Agent Compute Engine: elke Gemini-agent draait in een eigen geïsoleerde micro-VM.</li>
+<li>Pauzeren bij inactiviteit en gedeeld geheugen moeten de rekenkosten per agent drukken.</li>
+<li>Google claimt tien keer meer agents per server en hervatten binnen 500 milliseconden.</li>
+<li>Nieuwe beheertools richten zich op bedrijven die agents willen controleren en afrekenen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wat Google belooft</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="10" data-suffix="x">10x</div><div class="ns-viz-stat-label">Meer agents per server</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="200000">200000</div><div class="ns-viz-stat-label">Agents in Googles test</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="&lt;" data-target="500" data-suffix=" ms">&lt;500 ms</div><div class="ns-viz-stat-label">Pauzeren en hervatten</div></div>
+</div></div>
+<h5>Een eigen kamer voor elke agent</h5>
+<p>Google heeft Agent Compute Engine aangekondigd, een rekenomgeving die speciaal is gebouwd voor AI-agents. Het principe is eenvoudig: elke agent krijgt een eigen micro-virtuele machine, een uitgeklede virtuele computer die hardwarematig is afgeschermd van alle andere. Die isolatie wordt geborgd door Titanium, Googles eigen beveiligingschip in zijn datacenters. De dienst draait volgens Google al achter Gemini en gaat de komende maanden in preview open voor klanten. Dat is een logische volgende stap. Een chatbot beantwoordt een vraag en is klaar; een agent voert code uit, opent websites, bewerkt bestanden en blijft soms urenlang bezig. Daarvoor heeft hij een eigen werkplek nodig, en die werkplek moet zo zijn afgeschermd dat een agent die op hol slaat of wordt misleid geen andere klanten of systemen kan raken. Het idee van micro-VM's is niet nieuw. Amazon ontwikkelde met Firecracker een vergelijkbare techniek voor zijn serverloze diensten, en isolatie per taak is in de cloud al langer gangbaar.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe Agent Compute Engine werkt</div>
+<div class="ns-viz-mech-subtitle">Van opstarten tot slapen en wekken in een halve seconde</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Eigen micro-VM</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Titanium</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Pauze</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Hervatten</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f3ff"/>
+      <rect x="30" y="30" width="260" height="140" rx="10" fill="none" stroke="#44403c" stroke-width="2"/>
+      <text x="160" y="22" text-anchor="middle" font-size="11" fill="#44403c">Server</text>
+      <rect x="50" y="55" width="60" height="90" rx="8" fill="#7c3aed" fill-opacity=".85"/>
+      <rect x="130" y="55" width="60" height="90" rx="8" fill="#a78bfa" fill-opacity=".85"/>
+      <rect x="210" y="55" width="60" height="90" rx="8" fill="#7c3aed" fill-opacity=".85"/>
+      <text x="80" y="104" text-anchor="middle" font-size="11" fill="#fff">Agent A</text>
+      <text x="160" y="104" text-anchor="middle" font-size="11" fill="#fff">Agent B</text>
+      <text x="240" y="104" text-anchor="middle" font-size="11" fill="#fff">Agent C</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Eigen micro-VM</h6><p class="korte">Elke agent start in een eigen, kleine virtuele machine.</p><p class="uitleg">Een micro-VM is een uitgeklede virtuele computer die snel opstart. Agents delen de fysieke server, maar zien elkaars processen, bestanden en geheugen niet.</p><a class="ns-viz-mech-bron" href="https://the-decoder.com" target="_blank">📖 The Decoder ↗</a></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f3ff"/>
+      <rect x="110" y="50" width="100" height="100" rx="8" fill="#7c3aed"/>
+      <rect x="130" y="70" width="60" height="60" rx="4" fill="#a78bfa"/>
+      <text x="160" y="105" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Titanium</text>
+      <g stroke="#7c3aed" stroke-width="4">
+        <line x1="125" y1="50" x2="125" y2="35"/><line x1="160" y1="50" x2="160" y2="35"/><line x1="195" y1="50" x2="195" y2="35"/>
+        <line x1="125" y1="150" x2="125" y2="165"/><line x1="160" y1="150" x2="160" y2="165"/><line x1="195" y1="150" x2="195" y2="165"/>
+      </g>
+      <text x="160" y="190" text-anchor="middle" font-size="12" fill="#44403c">Isolatie in hardware</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Titanium</h6><p class="korte">Googles eigen beveiligingschip bewaakt de grenzen tussen agents.</p><p class="uitleg">Doordat de afscherming in hardware is verankerd en niet alleen in software, is het moeilijker voor een gecompromitteerde agent om uit zijn VM te breken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f3ff"/>
+      <rect x="60" y="55" width="80" height="90" rx="8" fill="#a78bfa" fill-opacity=".35" stroke="#7c3aed" stroke-dasharray="5 4"/>
+      <rect x="85" y="80" width="10" height="40" fill="#7c3aed"/><rect x="105" y="80" width="10" height="40" fill="#7c3aed"/>
+      <rect x="180" y="55" width="80" height="90" rx="8" fill="#7c3aed"/>
+      <text x="220" y="104" text-anchor="middle" font-size="11" fill="#fff">Actief</text>
+      <text x="100" y="170" text-anchor="middle" font-size="11" fill="#44403c">Gepauzeerd</text>
+      <text x="220" y="170" text-anchor="middle" font-size="11" fill="#44403c">Krijgt ruimte</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Pauze</h6><p class="korte">Een agent die niets doet, wordt automatisch stilgezet.</p><p class="uitleg">De vrijgekomen capaciteit gaat naar andere agents. Gedeeld geheugen tussen VM's verlaagt de kosten per agent verder. Zo komt Google op tien keer meer agents per server.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f3ff"/>
+      <circle cx="160" cy="95" r="60" fill="none" stroke="#a78bfa" stroke-width="10"/>
+      <path d="M160 35 A60 60 0 0 1 220 95" fill="none" stroke="#7c3aed" stroke-width="10"/>
+      <text x="160" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#7c3aed">&lt;500</text>
+      <text x="160" y="112" text-anchor="middle" font-size="12" fill="#44403c">milliseconden</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">Getest met 200.000 agents</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Hervatten</h6><p class="korte">Bij een nieuwe opdracht staat de agent binnen een halve seconde klaar.</p><p class="uitleg">In Googles test met 200.000 agents duurde pauzeren en hervatten minder dan 500 milliseconden. Dat is snel genoeg om voor de gebruiker onmerkbaar te zijn.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>De economie van slapende agents</h5>
+<p>De werkelijke vernieuwing zit minder in de beveiliging dan in de kosten. Virtuele machines zijn een grote kostenpost bij het aanbieden van agents, omdat een agent veel tijd wachtend doorbrengt: op een antwoord van het taalmodel, op een website die laadt, of op de gebruiker. Een VM die al die tijd draait, kost geld zonder iets te doen. Google pauzeert daarom een agent zodra die stilvalt en geeft de machine vrij voor anderen. Gedeeld geheugen tussen VM's drukt de kosten per agent verder. Op die manier passen volgens Google tien keer zoveel agents op één server. In een test met 200.000 agents kostte pauzeren en weer opstarten minder dan 500 milliseconden. Achter die efficiëntie zit ook Agent Substrate, een Kubernetes-runtime die Google open source heeft gemaakt. Dat is een strategische keuze: door de onderliggende laag open te stellen, hoopt Google dat ontwikkelaars zijn manier van agents draaien als standaard overnemen, ook buiten zijn eigen cloud. Kubernetes zelf begon ooit op dezelfde manier: als intern Google-systeem dat open source werd en uitgroeide tot de standaard voor het draaien van software in de cloud.</p>
+<blockquote>Een agent brengt het grootste deel van zijn tijd wachtend door. Wie die wachttijd goedkoop maakt, bepaalt de prijs van de agent-economie.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Micro-VM</summary>
+    <div class="ns-viz-concept-body">Een minimale virtuele machine die in fracties van een seconde start. Combineert de lichtheid van containers met de sterkere afscherming van een volledige VM.</div></details>
+  <details class="ns-viz-concept"><summary>Titanium</summary>
+    <div class="ns-viz-concept-body">Googles eigen chip- en systeemlaag voor beveiliging en offloading in zijn datacenters. Hier gebruikt om agents hardwarematig van elkaar te scheiden.</div></details>
+  <details class="ns-viz-concept"><summary>Agent Substrate</summary>
+    <div class="ns-viz-concept-body">Een door Google open source gemaakte Kubernetes-runtime voor het efficiënt draaien van grote aantallen agents.</div></details>
+  <details class="ns-viz-concept"><summary>Model routing</summary>
+    <div class="ns-viz-concept-body">Automatisch bepalen welk taalmodel een verzoek afhandelt, bijvoorbeeld een goedkoop model voor eenvoudige taken en een zwaarder model voor complexe.</div></details>
+</div></div>
+<h5>Beheersbaarheid als verkoopargument</h5>
+<p>Naast de rekenomgeving voegt Google beheerfuncties toe: het bijhouden van tokengebruik, het automatisch kiezen van een taalmodel per taak en ondersteuning voor identiteitsbeheer van derden als Ping Identity en SailPoint. Die controles gaan ook gelden voor Cloud Run, GKE en beheerde endpoints, in cloud-, hybride en on-premise omgevingen. Dat sluit naadloos aan bij de andere berichten van vandaag. Grote Amerikaanse banken weren agents omdat ze niet kunnen zien wie er achter een inlog zit; koppeling aan identiteitsbeheer is precies een antwoord op die vraag. Uber zet 30.000 medewerkers op ChatGPT Work en moet straks kunnen nagaan wat dat kost. De cloudstrijd tussen Google, Amazon en Microsoft verschuift zo van ruwe rekenkracht naar de vraag wie agents het veiligst en het goedkoopst laat draaien. Voor Europese bedrijven, die onder de AI-verordening moeten aantonen wat hun systemen doen, kan vooral die controlelaag doorslaggevend zijn.</p>
+<h5>Conclusie</h5>
+<p>Agent Compute Engine laat zien waar de echte strijd om agents wordt gevoerd: niet in de modellen, maar in de infrastructuur eronder. Google verkoopt veiligheid, maar verdient aan efficiëntie. Als de claim van tien keer meer agents per server standhoudt, daalt de prijs van een agent fors, en daarmee de drempel voor bedrijven. Tegelijk bindt elke stap in beheer en identiteit klanten steviger aan één cloud. De open source Substrate-laag is het lokkertje, de beheertools zijn het abonnement.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=wdKSjqCm6cY" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/wdKSjqCm6cY/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">De 90-dagen Google AI Pro Bypass: Gratis Gemini Advanced (Masterclass 2026)</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

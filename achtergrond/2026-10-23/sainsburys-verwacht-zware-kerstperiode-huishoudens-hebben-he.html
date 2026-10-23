@@ -1,0 +1,122 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://i.guim.co.uk/img/media/0d591ffb8e10dbde56c4ada53fea8a1211205a8d/1130_0_2084_1667/master/2084.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5c649d456d37fae7b3836e083e05f799" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© theguardian.com</div></div><ul class="bg-bullets">
+<li>Sainsbury's verwacht een 'behoorlijk uitdagende' markt richting kerst.</li>
+<li>Omzetgroei vertraagde naar 2,6 procent; in het tweede kwartaal slechts 1,9 procent.</li>
+<li>Hoge energie- en kunstmestprijzen kunnen voedsel volgend jaar duurder maken.</li>
+<li>Topman Roberts waarschuwt de regering bedrijven niet nog zwaarder te belasten.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Omzetontwikkeling per onderdeel (halfjaar tot 12 september)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-a87dc424"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  var d=[9,6,3,2.6,1.9,-1.8,-3.4];
+  new Chart(document.getElementById('chart-bg-1-a87dc424'),{
+    type:'bar',
+    data:{
+      labels:['Online boodschappen','Taste the Difference','Groei Q1','Groei halfjaar','Groei Q2','Argos','Non-food en kleding'],
+      datasets:[{
+        label:'Verandering (%)',data:d,
+        backgroundColor:d.map(function(v){return v<0?'rgba(220,38,38,.7)':'rgba(124,58,237,.6)';}),
+        borderRadius:5
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        x:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        y:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Een supermarkt als thermometer van de Britse huishoudens</h5>
+<p>Sainsbury's, de op een na grootste supermarkt van het Verenigd Koninkrijk, waarschuwt voor een 'behoorlijk uitdagende' markt in de aanloop naar kerst. Huishoudens 'hebben het moeilijk' en voedselproducenten krijgen te maken met stijgende kosten, zegt topman Simon Roberts. De cijfers bevestigen dat beeld. De omzetgroei over het halfjaar tot 12 september bleef met 2,6 procent achter bij de verwachtingen, en de vertraging zat vooral in de recente maanden: van 3 procent in het eerste kwartaal naar 1,9 procent in het tweede. Het aandeel zakte donderdag zo'n 3 procent. Opvallend is hoe klanten zich gedragen. Ze houden het aantal artikelen in hun mandje strak in de hand en schrappen vooral grote uitgaven, zoals meubels bij dochter Argos, waar de omzet 1,8 procent daalde. Non-food en kleding zakten samen 3,4 procent. Wat wel groeide, zegt evenveel: online boodschappen stegen 9 procent en het luxe huismerk Taste the Difference 6 procent. Britten bezuinigen, maar gunnen zichzelf thuis nog een kleine luxe.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="Omzetgroei per kwartaal">
+  <g font-size="9" fill="var(--t3)"><text x="30" y="84">Q1</text><text x="100" y="84">Halfjaar</text><text x="175" y="84">Q2</text></g>
+  <rect x="20" y="20" width="40" height="54" fill="var(--accent)"/>
+  <rect x="95" y="27" width="40" height="47" fill="var(--accent)" opacity=".75"/>
+  <rect x="170" y="40" width="40" height="34" fill="var(--orange)"/>
+  <g font-size="10" fill="var(--t3)" text-anchor="middle"><text x="40" y="15">3,0%</text><text x="115" y="22">2,6%</text><text x="190" y="35">1,9%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">De groei halveerde bijna van Q1 naar Q2.</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe kosten van akker naar kassabon lopen</div>
+<div class="ns-viz-mech-subtitle">Van energieprijs naar duurdere boodschappen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Energie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Kunstmest</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Producent</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Kassa</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="120" y="50" width="80" height="100" rx="10" fill="#7c3aed" opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M165 65 L145 105 L162 105 L152 138 L180 95 L163 95 L172 65 z" fill="#f59e0b"/>
+      <text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">Olie en gas duurder door spanningen in de Golf</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Energie</h6>
+      <p class="korte">Hogere energieprijzen werken door in elke schakel van de voedselketen.</p>
+      <p class="uitleg">Verwarmde kassen, koeling, transport en verwerking draaien op energie. Met olie boven de 110 dollar door de spanningen rond de Golf stijgen die kosten opnieuw.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M110 60 L210 60 L200 160 L120 160 z" fill="#a78bfa" opacity=".35" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">N-P-K</text>
+      <text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">Kunstmest wordt met aardgas gemaakt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Kunstmest</h6><p class="korte">Stikstofkunstmest wordt met aardgas geproduceerd en wordt dus mee duurder.</p><p class="uitleg">Roberts noemt hoge kunstmestprijzen expliciet als reden voor duurder voedsel volgend jaar. Boeren die nu duurder inkopen, zien dat pas bij de volgende oogst terug in hun prijzen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30 150 L30 100 L80 75 L80 100 L130 75 L130 150 z" fill="#7c3aed" opacity=".25" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="170" y="110" width="40" height="40" fill="#a78bfa"/><rect x="215" y="110" width="40" height="40" fill="#a78bfa"/><rect x="192" y="68" width="40" height="40" fill="#a78bfa" opacity=".7"/>
+      <text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">Producenten geven kosten door</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Producent</h6><p class="korte">Voedselproducenten krijgen te maken met stijgende kosten en willen hogere inkoopprijzen.</p><p class="uitleg">Daar komen Britse loonkosten bij: werkgeverspremies en bedrijfsbelastingen gingen in eerdere begrotingen omhoog. Roberts vraagt de regering dat niet te herhalen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80 60 L240 60 L225 140 L95 140 z" fill="#7c3aed" opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <circle cx="110" cy="160" r="10" fill="#7c3aed"/><circle cx="210" cy="160" r="10" fill="#7c3aed"/>
+      <text x="160" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#dc2626">£ ↑</text>
+      <text x="160" y="190" text-anchor="middle" font-size="12" fill="#44403c">Kleiner mandje, duurdere inhoud</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Kassa</h6><p class="korte">Supermarkten moeten kiezen tussen marge inleveren of prijzen verhogen bij krappe klanten.</p><p class="uitleg">Klanten kopen nu al minder artikelen. Hogere prijzen zouden het volume verder drukken, en in een felle prijsstrijd tussen supermarkten kan elk procent marge het verschil maken.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Kosten die zich opstapelen</h5>
+<p>Roberts richt zijn pijlen nadrukkelijk op de regering. Het is volgens hem 'belangrijk dat deze regering niet herhaalt wat we in eerdere begrotingen hebben gezien', een verwijzing naar de verhoging van de bedrijfsbelastingen en van de werkgeverspremies voor de sociale verzekeringen. 'Dat was echt zwaar', zegt hij. Voor supermarkten, met veel personeel en dunne marges, tellen zulke maatregelen snel op. Tegelijk is zijn toon verzoenend: na een overleg met ministers vorige week zegt hij dat de regering 'echt luistert' naar het bedrijfsleven. Over voedselinflatie is Roberts genuanceerd. Die is volgens hem lang niet zo hoog als eerder dit jaar werd gevreesd, maar hoge energie- en kunstmestprijzen kunnen voedsel volgend jaar duurder maken. Hij pleit voor meer voedselzekerheid en meer binnenlandse productie, en voor belastingvoordelen voor investeringen in boerderijtechnologie zoals irrigatie en waterbekkens, omdat klimaatverandering vaker hete, droge zomers zoals deze brengt. De cijfers zijn bovendien vertekend door een uitzonderlijke vergelijkingsbasis: vorige zomer profiteerde Sainsbury's van cyberaanvallen die concurrenten Marks &amp; Spencer en Co-op troffen.</p>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">Het is belangrijk dat deze regering niet herhaalt wat we in eerdere begrotingen hebben gezien.</p>
+  <p class="ns-viz-quote-attr">— Simon Roberts, topman Sainsbury's</p>
+</div>
+<h5>Wat het zegt over Groot-Brittannië en Europa</h5>
+<p>Sainsbury's waarschuwing past in een breder patroon. Britse huishoudens hebben na de energiecrisis en de hoge inflatie van de afgelopen jaren weinig buffer over, en de nieuwe stijging van de olieprijs door de spanningen rond de Golf dreigt die druk te verlengen. Supermarkten zitten daarmee klem tussen leveranciers die hogere prijzen vragen en klanten die elke pond omdraaien. De regering staat voor hetzelfde dilemma in het groot: ze heeft inkomsten nodig, maar elke lastenverzwaring voor bedrijven komt via de kassabon terug bij de kiezer. Voor Nederland en de rest van Europa is het Britse beeld een vroege waarschuwing. Dezelfde keten van energie naar kunstmest naar voedsel werkt hier ook, en ook in Nederland is de koopkracht gevoelig voor een nieuwe energieschok. Wat Britse supermarkten nu over hun klanten melden, kan zo over enkele maanden ook in de kwartaalcijfers van Europese ketens opduiken, zeker als de energieprijzen langer hoog blijven dan markten nu verwachten.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Business rates</summary>
+    <div class="ns-viz-concept-body">Britse lokale belasting op bedrijfspanden. Voor ketens met veel winkels en distributiecentra is dit een grote, vaste kostenpost.</div></details>
+  <details class="ns-viz-concept"><summary>Werkgeverspremie (National Insurance)</summary>
+    <div class="ns-viz-concept-body">Sociale premie die werkgevers over lonen afdragen. Een verhoging treft arbeidsintensieve sectoren zoals supermarkten direct.</div></details>
+  <details class="ns-viz-concept"><summary>Taste the Difference</summary>
+    <div class="ns-viz-concept-body">Het premium huismerk van Sainsbury's. De groei van 6 procent wijst op klanten die thuis luxe kopen in plaats van buiten de deur.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Sainsbury's cijfers zijn geen crisis, maar een veelzeggende vertraging. Britten bezuinigen gericht: minder artikelen, minder grote aankopen, af en toe een luxe huismerk. Het echte risico ligt volgend jaar, als duurdere energie en kunstmest doorwerken in de voedselprijzen. Roberts' oproep aan de regering is daarom meer dan lobby: wie bedrijven nu zwaarder belast, betaalt dat straks via duurdere boodschappen. De begroting zal laten zien of de regering die rekensom heeft gemaakt, en of kerst voor de supermarkt een seizoen van volume of van marge wordt.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=q6K0pJaksvk" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/q6K0pJaksvk/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">10 BIG CHANGES Coming To SAINSBURY'S In 2026! What You Need to Know and How it Will Impact You</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.theguardian.com/business/2026/oct/22/sainsburys-challenging-run-up-to-christmas-households-feel-squeeze" target="_blank" style="color:var(--accent)">theguardian.com ↗</a></div>

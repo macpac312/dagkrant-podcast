@@ -1,0 +1,90 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://techcrunch.com/wp-content/uploads/2023/11/Sam-Altman-OpenAI.jpg?resize=1200,680" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© techcrunch.com</div></div><ul class="bg-bullets">
+<li>OpenAI onderhandelt over 30 miljard dollar tegen een waardering van 1250 miljard vooraf.</li>
+<li>Coatue en investeerders uit de VAE leiden de ronde, mogelijk gekoppeld aan rekenkracht.</li>
+<li>Het zou OpenAI de hoogst gewaardeerde private onderneming ooit maken, vlak voor de beursgang.</li>
+<li>De lat voor de beursgangen van OpenAI én Anthropic komt daarmee nog hoger te liggen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Waarderingen van de twee AI-labs (mld dollar)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-d40e426e"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-d40e426e'),{
+    type:'bar',
+    data:{
+      labels:['OpenAI mrt 2026','Anthropic mei 2026','OpenAI nu (gemeld)','OpenAI (Bloomberg, mnd terug)','Anthropic IPO-doel (laag)','Anthropic IPO-doel (hoog)'],
+      datasets:[{
+        label:'Waardering',data:[852,965,1250,1400,1500,2000],
+        backgroundColor:['#7c3aed','#f97316','#7c3aed','#a78bfa','#fdba74','#fdba74'],borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Nog één keer privaat geld ophalen</h5>
+<p>OpenAI staat volgens CNBC dicht bij een nieuwe megaronde: tot 30 miljard dollar tegen een waardering van 1250 miljard dollar vóór de investering, geleid door Coatue en investeerders uit de Verenigde Arabische Emiraten. TechCrunch, dat het nieuws oppikte, wijst erop dat Bloomberg een maand geleden nog meldde dat dezelfde 30 miljard werd opgehaald tegen 1400 miljard. De voorwaarden zijn nog niet definitief, en OpenAI wil niet reageren. De ronde past in een reeks die in korte tijd duizelingwekkend is geworden. In maart 2025 haalde OpenAI nog geld op tegen een waardering van 300 miljard dollar; in maart van dit jaar was dat 852 miljard na de investering. In juni diende het bedrijf vertrouwelijk de papieren in voor een beursgang. Dat het toch weer privaat geld zoekt, zegt iets over het tempo waarin het kapitaal verbrandt aan rekenkracht.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="OpenAI-waardering 2025-2026">
+  <g font-size="9" fill="#a6adc8"><text x="12" y="94">mrt 2025</text><text x="82" y="94">mrt 2026</text><text x="156" y="94">nu</text></g>
+  <rect x="12" y="66" width="44" height="16" fill="#a78bfa"/>
+  <rect x="82" y="37" width="44" height="45" fill="#7c3aed"/>
+  <rect x="152" y="16" width="44" height="66" fill="#7c3aed"/>
+  <g font-size="10" fill="#7c3aed" text-anchor="middle"><text x="34" y="61">300</text><text x="104" y="32">852</text><text x="174" y="12">1250</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Waardering OpenAI in miljard dollar, binnen anderhalf jaar.</p>
+</div>
+<div class="ns-viz"><div class="ns-viz-title">⚡ Geld voor rekenkracht</div>
+<div class="ns-viz-flow"><svg viewBox="0 0 720 130" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs>
+  <rect class="anim-node" x="10" y="35" width="150" height="60" rx="9" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="85" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Coatue + VAE</text>
+  <text x="85" y="78" text-anchor="middle" font-size="11" fill="#44403c">tot $30 mld</text>
+  <line class="anim-line" x1="163" y1="65" x2="193" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="196" y="35" width="150" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="271" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">OpenAI</text>
+  <text x="271" y="78" text-anchor="middle" font-size="11" fill="#44403c">$1250 mld vooraf</text>
+  <line class="anim-line" x1="349" y1="65" x2="379" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="382" y="35" width="150" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="457" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Rekenkracht VAE</text>
+  <text x="457" y="78" text-anchor="middle" font-size="11" fill="#44403c">mogelijke koppeldeal</text>
+  <line class="anim-line" x1="535" y1="65" x2="565" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="568" y="35" width="142" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="639" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Beursgang</text>
+  <text x="639" y="78" text-anchor="middle" font-size="11" fill="#44403c">hogere lat</text>
+</svg></div></div>
+<h5>Kapitaal, chips en geopolitiek</h5>
+<p>Het opvallendste detail is niet het bedrag maar de herkomst. Volgens CNBC kan het geld uit de Emiraten gepaard gaan met een afspraak over extra rekencapaciteit in de VAE. Daarmee vervaagt de grens tussen investeerder en leverancier: wie meebetaalt, levert ook de datacenters en de stroom. Dat patroon kennen we inmiddels van eerdere deals waarin chipmakers en cloudbedrijven investeren in AI-labs die vervolgens hun hardware afnemen. Voor de Golfstaten is het een manier om een plek in de AI-keten te kopen, voor OpenAI een manier om schaarse capaciteit veilig te stellen. Tegelijk wordt de waardering zelf een strategisch instrument. Lukt de ronde, dan is OpenAI de hoogst gewaardeerde private onderneming ooit, en dat ijkpunt bepaalt wat beursbeleggers straks moeten accepteren. Dat raakt direct concurrent Anthropic, dat volgens CNBC voor zijn beursgang 1500 tot 2000 miljard dollar ambieert.</p>
+<blockquote>Een waardering van meer dan duizend miljard dollar zou records breken en de lat voor de eigen beursgang van OpenAI nog hoger leggen.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Pre-money en post-money</summary>
+    <div class="ns-viz-concept-body">Pre-money is de waarde vóór de nieuwe investering, post-money erna. Bij 1250 miljard vooraf en 30 miljard nieuw geld komt OpenAI op ongeveer 1280 miljard uit.</div></details>
+  <details class="ns-viz-concept"><summary>Vertrouwelijke IPO-aanvraag</summary>
+    <div class="ns-viz-concept-body">In de VS kan een bedrijf zijn beursprospectus eerst vertrouwelijk bij de toezichthouder SEC indienen. Pas later wordt het openbare S-1-document gepubliceerd.</div></details>
+  <details class="ns-viz-concept"><summary>Megaronde</summary>
+    <div class="ns-viz-concept-body">Een private financieringsronde van ongekende omvang, vaak geleid door een handvol grote fondsen of staatsinvesteerders, als alternatief of opmaat voor een beursgang.</div></details>
+</div></div>
+<h5>Wat het betekent voor de AI-race</h5>
+<p>De race tussen OpenAI en Anthropic is daarmee ook een race naar de beurs geworden. Anthropic haalde in mei 65 miljard dollar op tegen een waardering van 965 miljard, en diende net als OpenAI in juni vertrouwelijk zijn beurspapieren in; volgens geruchten kan het openbare prospectus elk moment verschijnen. Wie als eerste naar de beurs gaat, zet de toon voor de ander. Ondertussen laat de rest van het nieuws zien waar de omzet vandaan moet komen: Uber zet alle 30.000 medewerkers op ChatGPT Work, terwijl Google met een eigen runtime voor agents concurreert en grote Amerikaanse banken AI-agents die met klantwachtwoorden inloggen juist weren. De zakelijke markt groeit, maar niet zonder weerstand. Voor Europese beleggers en toezichthouders is de concentratie van kapitaal bij twee Amerikaanse labs bovendien een signaal van hoe ver Europa in deze laag achterloopt.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Privaat versus beurs</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>PRIVATE RONDE</h6>
+    <p>Enkele grote investeerders, onderhandelde prijs, weinig openbaarheid. Snel geld, mogelijk gekoppeld aan rekenkracht.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>BEURSGANG</h6>
+    <p>Openbaar prospectus, kwartaalcijfers, dagelijkse koers. De markt moet de private waardering waarmaken.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Een ronde van 30 miljard tegen 1250 miljard is minder een teken van kracht dan van honger. OpenAI kiest opnieuw voor privaat geld omdat de rekenrekening sneller groeit dan de beurs kan bijbenen, en omdat een hogere private prijs de beursgang aantrekkelijker maakt voor de bestaande aandeelhouders. Het risico verschuift daarmee naar later: hoe hoger de lat nu, hoe pijnlijker het wordt als publieke beleggers die waardering straks niet willen betalen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=wtz-vWXVbQM" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/wtz-vWXVbQM/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI werkt aan ronde van 30 miljard dollar tegen waardering van 1250 miljard 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a></div>

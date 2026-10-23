@@ -1,0 +1,16 @@
+{
+  "title": "Google geeft elke Gemini-agent een eigen geïsoleerde virtuele machine",
+  "summary": "Met Agent Compute Engine lanceert Google een runtime speciaal voor AI-agents, plus extra beheertools.\n\nGoogle introduceert Agent Compute Engine, een runtime-omgeving speciaal voor AI-agents. Elke Gemini-agent krijgt een eigen, hardwarematig geïsoleerde micro-VM. Google breidt ook de governance-mogelijkheden uit waarmee bedrijven agents beheren in cloud-, hybride en on-premise omgevingen.",
+  "sources": [
+    "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-23",
+  "slug": "google-geeft-elke-gemini-agent-een-eigen-geïsoleerde-virtuel",
+  "tts_slug": "google-geeft-elke-gemini-agent-een-eigen-geïsoleerde-virtuel",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-23T04:44:04",
+  "size_kb": 13
+}

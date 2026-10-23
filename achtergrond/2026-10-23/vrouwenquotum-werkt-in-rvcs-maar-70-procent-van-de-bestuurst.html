@@ -1,0 +1,101 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://images.fd.nl/897244-897359.jpeg?fit=crop&crop=faces&auto=format%2Ccompress&q=45&w=1280&h=720&fm=jpg&cs=tinysrgb" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© fd.nl</div></div><ul class="bg-bullets">
+<li>Aandeel vrouwelijke bestuurders bij 81 beursbedrijven blijft steken op 18 procent.</li>
+<li>In raden van commissarissen, met wettelijk quotum, is 44 procent inmiddels vrouw.</li>
+<li>Bijna 70 procent van de bedrijven heeft nog een volledig mannelijk bestuur.</li>
+<li>In het huidige tempo is pas in 2044 een derde van de bestuurders vrouw.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Vrouwen aan de top, 2006–2026</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-b9576df0"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-b9576df0'),{
+    type:'line',
+    data:{
+      labels:['2006','2026','2044 (trend)'],
+      datasets:[{
+        label:'Commissarissen (%)',data:[8,44,null],
+        borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.08)',
+        tension:.3,fill:false,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#7c3aed'
+      },{
+        label:'Bestuurders (%)',data:[2,18,33],
+        borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.08)',
+        tension:.3,fill:false,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#f59e0b',
+        segment:{borderDash:function(ctx){return ctx.p0DataIndex===1?[5,4]:undefined;}}
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{min:0,max:50,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Twintig jaar meten</h5>
+<p>Toen hoogleraar corporate governance Mijntje Lückerath-Rovers in 2006 de eerste Female Board Index samenstelde, was 2 procent van de bestuurders en 8 procent van de commissarissen bij Nederlandse beursfondsen vrouw. Haar doel was helder: een derde vrouwen in beide organen. Twintig jaar later is dat doel half gehaald. In de raden van commissarissen zit nu 44 procent vrouwen, ruim boven de drempel. In de raden van bestuur van de 81 beursgenoteerde bedrijven is het aandeel gestegen tot 18 procent, maar een versnelling bij nieuwe benoemingen ziet de hoogleraar niet. Bijna 70 procent van de ondernemingen heeft nog altijd een volledig mannelijk bestuur. Bij voortzetting van de trend is pas in 2044 een derde van de bestuurders vrouw. 'Ik had gehoopt dat we inmiddels het doel bereikt hadden', verzucht Lückerath-Rovers, die het stokje van de index na dit jubileumjaar overdraagt maar betrokken blijft.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+<thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Orgaan</th><th style="text-align:right;padding:.3rem .5rem">2006</th><th style="text-align:right;padding:.3rem .5rem">2026</th></tr></thead>
+<tbody>
+<tr><td style="padding:.25rem .5rem">Raad van commissarissen</td><td style="text-align:right">8%</td><td style="text-align:right">44%</td></tr>
+<tr><td style="padding:.25rem .5rem">Raad van bestuur</td><td style="text-align:right">2%</td><td style="text-align:right">18%</td></tr>
+</tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Aandeel vrouwen bij Nederlandse beursfondsen (Female Board Index).</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe het quotum werkt, en waar het stopt</div>
+<div class="ns-viz-mech-subtitle">Van wettelijke drempel in de rvc naar een stokkende bestuurstafel</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Wet</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Lege stoel</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Rvc groeit</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Bestuur stokt</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="105" y="30" width="110" height="140" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="58" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">WET</text><g stroke="#a78bfa" stroke-width="3"><line x1="120" y1="75" x2="200" y2="75"/><line x1="120" y1="92" x2="200" y2="92"/><line x1="120" y1="109" x2="185" y2="109"/></g><text x="160" y="150" text-anchor="middle" font-size="20" font-weight="700" fill="#7c3aed">⅓</text><text x="160" y="190" text-anchor="middle" font-size="12" fill="#44403c">ingroeiquotum sinds 2022</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Wet</h6><p class="korte">Sinds 2022 moet minstens een derde van de rvc van beursfondsen vrouw zijn.</p><p class="uitleg">De Wet ingroeiquotum en streefcijfers schrijft voor raden van commissarissen van beursgenoteerde bedrijven een evenwichtige verdeling voor: minstens een derde vrouw en een derde man. Voor bestuurders geldt zo'n harde grens niet.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="110" width="240" height="14" rx="4" fill="#44403c"/><g fill="#a78bfa"><rect x="55" y="70" width="34" height="40" rx="6"/><rect x="105" y="70" width="34" height="40" rx="6"/><rect x="181" y="70" width="34" height="40" rx="6"/><rect x="231" y="70" width="34" height="40" rx="6"/></g><rect x="143" y="70" width="34" height="40" rx="6" fill="none" stroke="#7c3aed" stroke-width="3" stroke-dasharray="5 4"/><text x="160" y="55" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">lege stoel</text><text x="160" y="160" text-anchor="middle" font-size="12" fill="#44403c">benoeming in strijd met quotum = nietig</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Lege stoel</h6><p class="korte">Een benoeming die het quotum niet dichterbij brengt, is nietig.</p><p class="uitleg">Zolang de drempel niet is gehaald, kan een rvc geen man benoemen zonder dat de benoeming ongeldig is. De zetel blijft dan leeg. Dat maakt het quotum afdwingbaar zonder boetes.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="60" y="150" width="200" height="4" fill="#44403c"/><rect x="85" y="138" width="50" height="12" fill="#a78bfa"/><rect x="185" y="62" width="50" height="88" fill="#7c3aed"/><text x="110" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">8%</text><text x="210" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">44%</text><text x="110" y="172" text-anchor="middle" font-size="11" fill="#44403c">2006</text><text x="210" y="172" text-anchor="middle" font-size="11" fill="#44403c">2026</text><text x="160" y="25" text-anchor="middle" font-size="12" fill="#44403c">vrouwelijke commissarissen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Rvc groeit</h6><p class="korte">In de raden van commissarissen stijgt het aandeel vrouwen naar 44 procent.</p><p class="uitleg">Van 8 procent in 2006 naar 44 procent nu: de stijging zet al jaren door en ligt ruim boven de wettelijke ondergrens. De druk van het quotum en van de jaarlijkse ranglijst versterken elkaar.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><ellipse cx="160" cy="110" rx="110" ry="40" fill="#44403c"/><g fill="#a78bfa"><circle cx="70" cy="70" r="13"/><circle cx="115" cy="58" r="13"/><circle cx="205" cy="58" r="13"/><circle cx="250" cy="70" r="13"/></g><circle cx="160" cy="54" r="13" fill="#f59e0b"/><text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">18% vrouw · 70% van de tafels volledig man</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Bestuur stokt</h6><p class="korte">Zonder harde norm blijft het bestuur op 18 procent vrouwen hangen.</p><p class="uitleg">Grotere bedrijven moeten voor bestuur en subtop wel eigen streefcijfers opstellen, maar daar staat geen sanctie op. Bijna 70 procent van de beursbedrijven heeft nog een volledig mannelijk bestuur.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Een tweedeling met een wettelijke oorzaak</h5>
+<p>Het verschil tussen beide organen is geen toeval maar het directe gevolg van wetgeving. Voor raden van commissarissen van beursfondsen geldt sinds 2022 een ingroeiquotum: zolang niet ten minste een derde van de zetels door een vrouw wordt bezet, is een benoeming die dat evenwicht niet dichterbij brengt nietig. Voor bestuurders bestaat zo'n grens niet; grotere bedrijven moeten alleen zelf streefcijfers formuleren, zonder sanctie als ze die missen. Het resultaat is precies wat je zou verwachten: waar de norm afdwingbaar is, beweegt het, waar ze vrijblijvend is, stokt het. Dat bevestigt een les uit eerdere jaren. Lange tijd gold een wettelijk streefcijfer van 30 procent voor zowel bestuur als rvc, maar dat werd breed genegeerd. Pas de harde drempel bracht de commissarissen in beweging. Ook het naming-and-shaming-effect van de index zelf telt: bedrijven die onderaan bungelden, benoemden het jaar daarop vaker vrouwen, merkte Lückerath-Rovers.</p>
+<blockquote>Waar de norm afdwingbaar is, beweegt het; waar ze vrijblijvend is, stokt het. Twintig jaar Female Board Index is vooral een les in de kracht van een harde regel.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 Bestuurders: afstand tot het doel</div>
+<div class="ns-viz-gauge">
+<svg viewBox="0 0 200 110">
+<path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+<path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:206"/>
+</svg>
+<div class="ns-viz-gauge-val">18%</div>
+<div class="ns-viz-gauge-label">Vrouwelijke bestuurders · doel: een derde</div>
+</div></div>
+<h5>Lichtpunten en de Europese context</h5>
+<p>Toch is het beeld niet eenduidig somber. Het aantal bedrijven met ten minste een derde vrouwen in zowel bestuur als rvc steeg van zeventien naar 21. Bij PostNL, Triodos, Fastned en Hydratec zijn beide raden fifty-fifty verdeeld, en bij ABN Amro bestaan beide zelfs voor een meerderheid uit vrouwen. Dat laat zien dat het kan, ook in sectoren die traditioneel mannelijk zijn. De discussie krijgt bovendien een Europese dimensie. De EU-richtlijn over vrouwen in raden van beursgenoteerde bedrijven uit 2022 legt lidstaten doelen op voor de verdeling van bestuurszetels, en raakt daarmee ook de Nederlandse aanpak. Dat staat in contrast met een andere trend in dezelfde krant: Brussel laat juist de eis vallen dat pensioenfondsen in durfkapitaal moeten beleggen. Bij het ene dossier kiest Europa voor dwang, bij het andere voor vrijheid. De vraag voor Den Haag is of het quotum ook voor bestuurders moet gelden, of dat bedrijven nog een kans krijgen het zelf te regelen.</p>
+<h5>Conclusie</h5>
+<p>Twintig jaar data laat weinig ruimte voor twijfel: vrijwilligheid werkt niet aan de bestuurstafel. Wie tot 2044 wil wachten, accepteert dat nog een generatie talent onbenut blijft. Een wettelijk quotum voor raden van bestuur is geen ideologische wens maar de logische conclusie uit het experiment dat Nederland zelf heeft uitgevoerd. De uitgangspunten liggen er al: waar de drempel gold, werd hij gehaald. Het is nu aan de politiek om die les ook toe te passen op het orgaan dat het bedrijf werkelijk bestuurt. Bedrijven die dat willen voorkomen, hebben een eenvoudige uitweg: zelf benoemen voordat de wetgever het voor hen doet. Twintig jaar ervaring wijst er alleen niet op dat ze die kans grijpen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=dsz3V8vma0k" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/dsz3V8vma0k/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Vergadering van de Commissie voor de Status van Vrouwen (CSW) | 8 oktober 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://nos.nl/l/2636191" target="_blank" style="color:var(--accent)">nos.nl ↗</a></div>

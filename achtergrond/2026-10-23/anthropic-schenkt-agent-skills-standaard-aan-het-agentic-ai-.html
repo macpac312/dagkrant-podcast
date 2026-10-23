@@ -1,0 +1,67 @@
+<ul class="bg-bullets">
+<li>Anthropic draagt de Agent Skills-standaard over aan het Agentic AI Foundation (AAIF).</li>
+<li>De AAIF valt onder de Linux Foundation en werd opgericht met Block en OpenAI.</li>
+<li>Na MCP is dit de tweede Anthropic-standaard die naar een neutrale stichting gaat.</li>
+<li>Agents krijgen zo gedeelde bouwstenen, terwijl de concurrentie verschuift naar runtime en beveiliging.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">🏛 Wie beheert de agent-standaarden</div>
+<div class="ns-viz-tree">
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+  <line class="ns-viz-tree-link" data-power="oneway" x1="360" y1="42" x2="360" y2="120"/>
+  <line class="ns-viz-tree-link" data-power="oneway" x1="360" y1="138" x2="200" y2="220"/>
+  <line class="ns-viz-tree-link" data-power="oneway" x1="360" y1="138" x2="520" y2="220"/>
+  <g class="ns-viz-tree-node" data-level="0" data-kind="overheid" transform="translate(360,30)"><circle r="10"/><text x="0" y="-16" text-anchor="middle">Linux Foundation</text><text x="0" y="-2" text-anchor="middle" class="ns-viz-tree-node-sub">neutrale koepel</text></g>
+  <g class="ns-viz-tree-node" data-level="1" data-kind="regulator" transform="translate(360,128)"><circle r="8"/><text x="0" y="-14" text-anchor="middle">Agentic AI Foundation</text><text x="0" y="24" text-anchor="middle" class="ns-viz-tree-node-sub">opgericht door Anthropic, Block, OpenAI</text></g>
+  <g class="ns-viz-tree-node" data-level="2" data-kind="bank" transform="translate(200,228)"><circle r="6"/><text x="0" y="20" text-anchor="middle">Model Context Protocol</text><text x="0" y="34" text-anchor="middle" class="ns-viz-tree-node-sub">eerder gedoneerd</text></g>
+  <g class="ns-viz-tree-node" data-level="2" data-kind="bank" transform="translate(520,228)"><circle r="6"/><text x="0" y="20" text-anchor="middle">Agent Skills</text><text x="0" y="34" text-anchor="middle" class="ns-viz-tree-node-sub">nu gedoneerd</text></g>
+</svg>
+</div></div>
+<h5>Van bedrijfsformaat naar gedeelde standaard</h5>
+<p>Anthropic heeft de Agent Skills-standaard geschonken aan het Agentic AI Foundation, een stichting onder de Linux Foundation die het bedrijf vorig jaar samen met Block en OpenAI oprichtte. Eerder ging ook het Model Context Protocol (MCP) daarheen. Het bedrijf zegt Agent Skills 'open, community-gedreven en leveranciersneutraal' te willen houden. Een skill is in essentie een map met instructies, scripts en bronnen die een AI-agent kan laden om een specifieke taak uit te voeren, van het opmaken van een spreadsheet tot het volgen van een interne werkwijze. Anthropic introduceerde het formaat vorig jaar en verklaarde het in december tot open standaard. Ontwikkelaar en blogger Simon Willison voorspelde toen al dat het bij de AAIF zou eindigen. Daarmee herhaalt zich een patroon uit de geschiedenis van internet en open source: een bedrijf bedenkt een formaat, ziet het aanslaan, en geeft het weg om te voorkomen dat concurrenten een eigen variant bouwen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een agent een skill gebruikt</div>
+<div class="ns-viz-mech-subtitle">Van map op schijf naar uitgevoerde taak, in vier stappen</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Map</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Ontdekken</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Laden</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Uitvoeren</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><path d="M60 50 L120 50 L135 65 L260 65 L260 165 L60 165 Z" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><g font-size="11" fill="#44403c" font-family="monospace"><text x="80" y="95">SKILL.md</text><text x="80" y="118">scripts/</text><text x="80" y="141">bronnen/</text></g><text x="160" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Een skill = een map</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Map</h6><p class="korte">Een skill is een map met instructies, scripts en bronnen voor één taak.</p><p class="uitleg">Het hart is een tekstbestand met een naam, een korte beschrijving en de instructies zelf. Daarnaast kunnen scripts en referentiebestanden worden meegeleverd. Omdat het gewone bestanden zijn, kan iedere ontwikkelaar of organisatie ze schrijven en delen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#fff" stroke="#a78bfa" stroke-width="2"><rect x="30" y="60" width="70" height="40" rx="6"/><rect x="125" y="60" width="70" height="40" rx="6"/><rect x="220" y="60" width="70" height="40" rx="6"/></g><g font-size="10" text-anchor="middle" fill="#44403c"><text x="65" y="84">naam</text><text x="160" y="84">naam</text><text x="255" y="84">naam</text></g><circle cx="160" cy="150" r="20" fill="#7c3aed"/><text x="160" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">agent</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Ontdekken</h6><p class="korte">De agent ziet eerst alleen de naam en korte beschrijving van elke skill.</p><p class="uitleg">Zo kan een agent veel skills beschikbaar hebben zonder dat ze allemaal ruimte in het werkgeheugen van het model innemen. Dit stapsgewijze laden is een van de ontwerpprincipes van het formaat.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="60" width="90" height="80" rx="6" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><text x="85" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">skill</text><path d="M135 100 L185 100" stroke="#7c3aed" stroke-width="3" marker-end="url(#m1)"/><defs><marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs><circle cx="235" cy="100" r="40" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="235" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">context</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Laden</h6><p class="korte">Past een taak bij een skill, dan laadt de agent de volledige instructies.</p><p class="uitleg">Pas op dat moment komen de uitgebreide instructies en, indien nodig, de bijbehorende bestanden in beeld. Het model weet dan hoe deze specifieke taak volgens de afgesproken werkwijze moet worden uitgevoerd.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="60" y="45" width="200" height="110" rx="8" fill="#1c1917"/><g font-size="11" font-family="monospace" fill="#a6e3a1"><text x="75" y="75">$ script draaien</text><text x="75" y="98">✓ taak uitgevoerd</text></g><text x="160" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Resultaat</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Uitvoeren</h6><p class="korte">De agent volgt de instructies en draait waar nodig de meegeleverde scripts.</p><p class="uitleg">Doordat het formaat nu leveranciersneutraal wordt beheerd, kan dezelfde skill in principe bij agents van verschillende aanbieders werken. Dat maakt het voor bedrijven aantrekkelijker om er werk in te steken.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom een concurrent zijn standaard weggeeft</h5>
+<p>Op het eerste gezicht is het vreemd dat Anthropic een eigen vinding onderbrengt bij een stichting die het deelt met rivaal OpenAI. Maar standaarden winnen niet door eigendom, ze winnen door adoptie. Een formaat dat aan één leverancier vastzit, roept bij klanten de angst op voor afhankelijkheid, en bij concurrenten de neiging een eigen alternatief te lanceren. Door het beheer bij een neutrale partij te leggen, verlaagt Anthropic die drempel. MCP liet zien hoe dat werkt: het protocol voor het koppelen van AI-modellen aan externe gereedschappen en databronnen werd al snel breed omarmd, ook door concurrenten, en kreeg daarna een neutraal thuis bij de AAIF. De Linux Foundation is daarvoor een beproefde gastheer; zij beheert al tal van infrastructuurprojecten waarop rivaliserende bedrijven samen bouwen. Anthropic houdt intussen een voorsprong in kennis en ervaring, ook als het formaal geen eigenaar meer is.</p>
+<blockquote>Standaarden winnen niet door eigendom maar door adoptie: wie het formaat weggeeft, wint de plek waar alle agents op gaan draaien.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📊 De AAIF in getallen</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Oprichters: Anthropic, Block, OpenAI</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Anthropic-standaarden gedoneerd: MCP en Agent Skills</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Koepel: de Linux Foundation</div></div>
+</div></div>
+<h5>Gevolgen: de strijd verschuift naar de runtime</h5>
+<p>Als de bouwstenen gedeeld zijn, verplaatst de concurrentie zich naar de omgeving waarin agents draaien en de mate waarin ze te vertrouwen zijn. Het nieuws van dezelfde dag illustreert dat. Google geeft elke Gemini-agent een eigen geïsoleerde virtuele machine, Uber zet al zijn 30.000 medewerkers op ChatGPT Work, en grote Amerikaanse banken blokkeren of beperken agents die met klantwachtwoorden inloggen. Daar zit het echte knelpunt: niet hoe een agent een taak leert, maar wat hij mag doen en met welke rechten. Een open skill-formaat maakt het bovendien makkelijker om kwaadaardige instructies of scripts te verspreiden, en het NCSC-nieuws over een misbruikt PHP-lek laat zien hoe snel kwetsbaarheden worden uitgebuit. Voor Europese bedrijven en toezichthouders biedt een neutrale standaard wel kansen: wie werkwijzen in skills vastlegt, is minder afhankelijk van één Amerikaanse leverancier.</p>
+<h5>Conclusie</h5>
+<p>De overdracht is geen altruïsme maar strategie, en een verstandige. Anthropic bevestigt zijn rol als architect van de agent-infrastructuur, terwijl het de verdenking van lock-in wegneemt. Het succes hangt nu af van de vraag of OpenAI, Google en anderen het formaat echt overnemen in plaats van er alleen lippendienst aan te bewijzen. Intussen moet de sector dringend antwoord geven op de vraag die de banken al stellen: wie is verantwoordelijk als een agent met een gedeelde skill iets doet wat niet mocht?</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=GXZDa-4mSic" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/GXZDa-4mSic/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Anthropic schenkt Agent Skills-standaard aan het Agentic AI Foundation 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>
