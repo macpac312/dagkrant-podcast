@@ -1,0 +1,111 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://i.guim.co.uk/img/media/cb4c18c4ae3df1d687b8488dfb57058ade00d1a7/731_0_3659_2927/master/3659.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6f5df3e6d7b2ff59e15544af666e83a6" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© theguardian.com</div></div><ul class="bg-bullets">
+<li>AI vond kritieke, mogelijk jarenoude fouten in PHP, de taal onder naar schatting 70% van websites.</li>
+<li>Kern van het alarm: AI vindt lekken sneller dan beheerders ze kunnen dichten.</li>
+<li>NCSC nuanceert: grootschalig misbruik lastiger dan gevreesd, slimme apparaten thuis lopen weinig risico.</li>
+<li>De echte druk verschuift naar fabrikanten en serverbeheerders, met de Cyber Resilience Act als hefboom.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kerncijfers Black October</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="70" data-suffix="%">70%</div><div class="ns-viz-stat-label">Websites mogelijk geraakt (schatting)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="30" data-suffix="%">30%</div><div class="ns-viz-stat-label">NL-woningen met slim huishoudapparaat</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2" data-suffix=" jaar">2 jaar</div><div class="ns-viz-stat-label">'Ongelooflijk beladen' periode volgens Cloudflare</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">NL-overheidssites tijdelijk offline</div></div>
+</div></div>
+<h5>Van 'vulnpocalypse' naar Black October</h5>
+<p>Al maanden waarschuwden beveiligingsonderzoekers voor wat zij half spottend de 'vulnpocalypse' noemden: het moment waarop AI-modellen zo goed worden in het doorzoeken van broncode dat het aantal ontdekte lekken explodeert. Tot deze maand bleef dat een theoretisch risico. Met de bekendmaking op 21 oktober van ernstige fouten in PHP, de programmeertaal waarop volgens schattingen zo'n 70 procent van het web draait, kreeg het een gezicht. Onderzoekers gebruikten AI om de fouten op te sporen, die mogelijk jarenlang onopgemerkt bleven. Dat maakt de vergelijking met eerdere ijkpunten onvermijdelijk: Heartbleed in OpenSSL (2014) en Log4Shell in Java-bibliotheek Log4j (2021) lieten al zien hoe één fout in gedeelde basiscode een groot deel van het internet kwetsbaar maakt. Het verschil nu is niet de omvang van één lek, maar de verwachting dat er snel veel meer volgen. Bij Heartbleed en Log4Shell was het vinden van de fout het werk van een handvol mensen, gevolgd door een maandenlange opruimactie. Als AI dat vinden industrialiseert, verandert de economie van beveiliging: niet het lek is dan schaars, maar de tijd en de mensen om het te dichten. Juist open-sourceprojecten als PHP, die grotendeels draaien op vrijwilligers en kleine kernteams, voelen die druk het eerst.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe de 'vulnerability tsunami' werkt</div>
+<div class="ns-viz-mech-subtitle">Van AI-scan naar een race die verdedigers dreigen te verliezen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">AI scant</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Lek gevonden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Patchrace</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Achterstand</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="30" width="150" height="140" rx="8" fill="#a78bfa" fill-opacity=".12" stroke="#a78bfa" stroke-width="1.5"/>
+      <g fill="#7c3aed" opacity=".55"><rect x="45" y="48" width="110" height="6" rx="3"/><rect x="45" y="64" width="80" height="6" rx="3"/><rect x="45" y="80" width="120" height="6" rx="3"/><rect x="45" y="96" width="70" height="6" rx="3"/><rect x="45" y="112" width="100" height="6" rx="3"/><rect x="45" y="128" width="90" height="6" rx="3"/><rect x="45" y="144" width="60" height="6" rx="3"/></g>
+      <text x="105" y="24" text-anchor="middle" font-size="11" fill="#44403c">PHP-broncode</text>
+      <circle cx="235" cy="95" r="38" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="235" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#7c3aed">AI</text>
+      <line x1="197" y1="95" x2="160" y2="85" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="235" y="155" text-anchor="middle" font-size="11" fill="#44403c">'oneindig geduld'</text>
+      <circle class="ns-viz-mech-hotspot" cx="235" cy="95" r="7" data-tip="Tools zoeken onvermoeibaar het hele internet af naar fouten"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>AI scant</h6>
+      <p class="korte">AI-tools doorzoeken gedeelde basiscode sneller en geduldiger dan menselijke onderzoekers.</p>
+      <p class="uitleg">Cloudflare-topman Matthew Prince spreekt van tools met 'oneindig geduld'. Wat voor een mens weken analyse vergt, kost een model een fractie daarvan. Juist veelgebruikte, oude code als PHP levert dan de grootste oogst op.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="40" width="200" height="120" rx="10" fill="#a78bfa" fill-opacity=".1" stroke="#a78bfa" stroke-width="1.5"/>
+      <path d="M150 60 L170 60 L162 100 L178 100 L148 145 L156 108 L140 108 Z" fill="#dc2626" opacity=".85"/>
+      <text x="160" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">21 oktober</text>
+      <text x="160" y="182" text-anchor="middle" font-size="11" fill="#44403c">kritieke fout, mogelijk jaren oud</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Lek gevonden</h6>
+      <p class="korte">Op 21 oktober werden kritieke PHP-fouten bekend, met AI-hulp opgespoord.</p>
+      <p class="uitleg">Via het lek zouden servers en websites kunnen worden overgenomen. Dat de fout mogelijk jarenlang onopgemerkt bleef, laat zien hoeveel latente zwakte er in fundamentele internetcode zit.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <line x1="30" y1="70" x2="290" y2="70" stroke="#e5e7eb" stroke-width="10" stroke-linecap="round"/>
+      <line x1="30" y1="70" x2="250" y2="70" stroke="#dc2626" stroke-width="10" stroke-linecap="round"/>
+      <text x="30" y="55" font-size="11" fill="#dc2626" font-weight="700">Aanvallers met AI</text>
+      <line x1="30" y1="130" x2="290" y2="130" stroke="#e5e7eb" stroke-width="10" stroke-linecap="round"/>
+      <line x1="30" y1="130" x2="140" y2="130" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/>
+      <text x="30" y="115" font-size="11" fill="#7c3aed" font-weight="700">Beheerders die patchen</text>
+      <text x="160" y="175" text-anchor="middle" font-size="11" fill="#44403c">wie is er eerst?</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Patchrace</h6>
+      <p class="korte">Na bekendmaking begint de wedloop tussen patchende beheerders en aanvallers.</p>
+      <p class="uitleg">Dezelfde AI die lekken vindt, helpt kwaadwillenden ze te misbruiken. Beheerders moeten miljoenen installaties bijwerken; in Nederland gingen deze week MijnOverheid, DigiD en de NCSC-site tijdelijk uit de lucht.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 150 Q60 60 110 120 T210 90 T310 70 L310 190 L10 190 Z" fill="#7c3aed" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="40" y="150" width="34" height="30" fill="#a78bfa"/><rect x="90" y="150" width="34" height="30" fill="#a78bfa"/><rect x="140" y="150" width="34" height="30" fill="#a78bfa"/>
+      <text x="160" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">'Niet alle bugs te patchen'</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Achterstand</h6>
+      <p class="korte">Als ontdekkingen sneller gaan dan reparaties, groeit een permanente stapel open lekken.</p>
+      <p class="uitleg">Anthropics Jason Clinton: 'Er zal niet genoeg tijd zijn om kritieke infrastructuur te patchen.' Sam Altman denkt niet meer dat alle bugs te dichten zijn. Prioriteren en blootstelling beperken wordt dan belangrijker dan volledigheid.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Een asymmetrische wapenwedloop</h5>
+<p>Opvallend is de eensgezindheid in de sector. Sam Altman van OpenAI zei donderdagavond niet meer te geloven dat alle bugs te patchen zijn. Jason Clinton, plaatsvervangend beveiligingschef van Anthropic, voorspelt een 'vulnerability tsunami'; Salesforce-topman Marc Benioff spreekt van 'code red'. Matthew Prince van Cloudflare verwacht dat het de komende twee jaar zal voelen 'alsof de hemel naar beneden valt'. Het onderliggende mechanisme is een asymmetrie. Een lek vinden is met AI goedkoop en schaalbaar geworden; een lek dichten blijft mensenwerk, met testen, uitrollen en de eeuwige achterblijvers die nooit updaten. Dezelfde modellen die verdedigers helpen, verlagen ook voor aanvallers de drempel. Wel past hier een kanttekening: de waarschuwers zijn deels ook de verkopers van AI en beveiligingsdiensten. Hun alarm is inhoudelijk onderbouwd, maar heeft ook commerciële lading.</p>
+<blockquote>De kern van Black October is niet één lek, maar het besef dat de snelheid van ontdekken die van repareren structureel gaat overtreffen.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Tijdlijn</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2014</div><div>Heartbleed: één OpenSSL-fout raakt groot deel van het web</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">dec 2021</div><div>Log4Shell legt kwetsbaarheid van gedeelde bibliotheken bloot</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2026</div><div>Experts waarschuwen maandenlang voor AI-gedreven 'vulnpocalypse'</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">21 okt</div><div>Kritieke PHP-fouten bekend, gevonden met hulp van AI</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">deze week</div><div>MijnOverheid, DigiD en NCSC-site tijdelijk uit de lucht</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">22 okt</div><div>Altman, Clinton, Benioff en Prince slaan publiek alarm</div></div>
+</div></div>
+<h5>Wat het betekent voor Nederland en Europa</h5>
+<p>In Nederland werd de kwestie deze week tastbaar toen MijnOverheid, DigiD en zelfs de website van het NCSC tijdelijk offline gingen. Het NCSC wees er bovendien op dat PHP ook in deurbellen met camera, slimme wasmachines en robotstofzuigers kan zitten; zo'n 30 procent van de Nederlandse woningen heeft volgens marktonderzoek een of meer verbonden huishoudapparaten. Tegelijk nuanceren deskundigen het consumentenrisico. Volgens het NCSC is grootschalig misbruik lastiger dan eerst gedacht. Daan Keuper van Computest wijst erop dat de meeste apparaten wel naar buiten 'bellen' maar zelf geen bereikbaar 'nummer' hebben; Ralph Moonen en Michel van Eeten (TU Delft) zien de router en het ontbreken van PHP daarin als buffer. Het reële risico ligt eerder bij servers van fabrikanten. Daar grijpt de Europese Cyber Resilience Act in, die leveranciers verplicht hun producten en systemen veilig te houden en kwetsbaarheden te melden. Spierenburg van het NCSC verwacht dat de meeste leveranciers zich daaraan houden. Voor organisaties die zelf websites en portalen draaien, van gemeenten tot webwinkels, ligt de opgave dichterbij: weten waar PHP draait, updates snel doorvoeren en overbodige systemen van het net halen. Dat laatste advies geeft het NCSC ook aan consumenten: denk na of elk apparaat echt online moet.</p>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">Er zal niet genoeg tijd zijn om kritieke infrastructuur te patchen.</p>
+  <p class="ns-viz-quote-attr">— Jason Clinton, plaatsvervangend CISO Anthropic</p>
+</div>
+<h5>Conclusie</h5>
+<p>Black October markeert het moment waarop AI-gedreven lekkenjacht van voorspelling naar praktijk ging. De paniek over de slimme wasmachine is overdreven; de zorg over serverparken, overheidsportalen en oude open-sourcecode niet. Als niet alles meer te patchen is, wordt beveiliging een kwestie van prioriteren, blootstelling beperken en aansprakelijkheid bij leveranciers leggen. Europa heeft met de Cyber Resilience Act het juiste instrument in handen. De vraag is of handhaving het tempo bijhoudt van modellen die nooit moe worden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=RaQeEQ11iuQ" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/RaQeEQ11iuQ/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">'Black October': na het PHP-lek waarschuwt de techsector voor een tsunami aan door AI gevonden kwetsbaarheden 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.theguardian.com/technology/2026/oct/23/cybersecurity-ai-hacking-php-vulnerability" target="_blank" style="color:var(--accent)">theguardian.com ↗</a> &bull; <a href="https://nos.nl/l/2636368" target="_blank" style="color:var(--accent)">nos.nl ↗</a></div>

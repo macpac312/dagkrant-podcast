@@ -1,0 +1,20 @@
+{
+  "title": "'Black October': na het PHP-lek waarschuwt de techsector voor een tsunami aan door AI gevonden kwetsbaarheden",
+  "summary": "Altman, Anthropic, Cloudflare en Salesforce zeggen hetzelfde: AI vindt sneller lekken dan mensen ze kunnen dichten. Het NCSC waarschuwt ook voor slimme apparaten thuis.\n\nNa de kritieke kwetsbaarheden in PHP, de programmeertaal onder naar schatting 70 procent van alle websites, slaan techbestuurders alarm. 'Ik denk niet meer dat we alle bugs kunnen patchen', zei OpenAI-topman Sam Altman donderdagavond. Jason Clinton, plaatsvervangend beveiligingschef van Anthropic, voorspelt een 'vulnerability ts",
+  "sources": [
+    "https://www.theguardian.com/technology/2026/oct/23/cybersecurity-ai-hacking-php-vulnerability",
+    "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+    "https://nos.nl/l/2636368",
+    "https://fd.nl/opinie/1616537/gratis-software-heeft-een-keerzijde",
+    "https://latent.space/p/ainews-black-october/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-24",
+  "slug": "black-october-na-het-php-lek-waarschuwt-de-techsector-voor-e",
+  "tts_slug": "black-october-na-het-php-lek-waarschuwt-de-techsector-voor-e",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-24T04:26:20",
+  "size_kb": 14
+}
