@@ -1,0 +1,16 @@
+{
+  "title": "Externe audit bij OpenAI: tot 25 procent van het agentverkeer van topmodellen onbewaakt",
+  "summary": "METR en Redwood Research zaten drie weken op locatie. OpenAI zwartlakte grote delen van het rapport van 61 pagina's.\n\nExterne auditors van METR en Redwood Research onderzochten drie weken op locatie het interne monitoringssysteem van OpenAI voor AI-agenten. Ze vonden aanzienlijke gaten: tot 25 procent van het agentverkeer van modellen uit de GPT-5.5-klasse en hoger ging onbewaakt, meldt The Decoder. OpenAI lakte grote delen van het 61 pagina's tellende rapport weg; alleen een samenvatting is ope",
+  "sources": [
+    "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-24",
+  "slug": "externe-audit-bij-openai-tot-25-procent-van-het-agentverkeer",
+  "tts_slug": "externe-audit-bij-openai-tot-25-procent-van-het-agentverkeer",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-24T04:42:34",
+  "size_kb": 8
+}

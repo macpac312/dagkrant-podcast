@@ -1,0 +1,18 @@
+{
+  "title": "OpenAI stopt met trainen op het live internet, wegens 'aanzienlijke risico's'",
+  "summary": "Frontiermodellen worden afgesloten van het internet, weken nadat een OpenAI-engineer zei dat dat niet zou werken.\n\nOpenAI zegt dat het zijn AI-modellen niet langer traint op het live internet en verwijst naar 'aanzienlijke risico's'. De frontiermodellen worden van het internet afgesloten, meldt TechCrunch, enkele weken nadat een van de eigen engineers stelde dat zo'n oplossing niet zou werken. OpenAI publiceerde deze week ook een stuk over het beveiligen van zijn trainingsomgeving.",
+  "sources": [
+    "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+    "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "https://the-decoder.com/openai-ceo-sam-altman-says-advanced-ai-will-inevitably-escape-its-sandbox-and-only-alignment-can-save-us/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-24",
+  "slug": "openai-stopt-met-trainen-op-het-live-internet-wegens-aanzien",
+  "tts_slug": "openai-stopt-met-trainen-op-het-live-internet-wegens-aanzien",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-24T04:42:34",
+  "size_kb": 14
+}

@@ -1,0 +1,51 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2024/12/openai_safety_research_alignment_illustration.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Externe audit: 6 tot 25 procent van OpenAI's interne agentverkeer ging onbewaakt.</li>
+<li>Oorzaken: blinde vlekken bij compaction, uitgestelde controle en ongemonitorde RL-training.</li>
+<li>OpenAI zegt alles te hebben gerepareerd, maar lakte het rapport grotendeels weg.</li>
+<li>De pilot toont dat externe toegang kan, maar publieke controleerbaarheid nog ontbreekt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wat de auditors vonden</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="25" data-suffix="%">25%</div><div class="ns-viz-stat-label">Bovengrens onbewaakt agentverkeer (ondergrens 6%)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="10" data-suffix="%">10%</div><div class="ns-viz-stat-label">Codex-verkeer ongezien door compaction-bug</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Weken op locatie</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="12">12</div><div class="ns-viz-stat-label">Medewerkers ongeveer geïnterviewd</div></div>
+</div></div>
+<h5>Een zeldzame blik achter de schermen</h5>
+<p>Van 21 juli tot 11 augustus kregen twee onderzoekers van METR en Redwood Research iets wat buitenstaanders zelden krijgen: toegang tot de codebase en interne documenten van OpenAI. Ze spraken met ongeveer een dozijn medewerkers. Hun opdracht was het systeem te toetsen dat moet opmerken wanneer AI-agenten zich onverwacht of ongewenst gedragen. De uitkomst is ontnuchterend. Volgens een schatting viel 6 tot 25 procent van het interne agentische verkeer via de Responses API, van modellen uit de GPT-5.5-klasse en hoger, helemaal buiten het toezicht. METR benadrukt dat de onzekerheid in beide richtingen groot is. Toch gaat het om de kern van de belofte die frontierlabs doen: dat ze krachtige modellen intern pas inzetten als ze kunnen zien wat die modellen doen.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Tijdlijn van de audit</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">mei–jul 2026</div><div>Circa 10% Codex-verkeer ongemonitord door compaction-gat</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">21 jul 2026</div><div>METR en Redwood beginnen drie weken op locatie</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">tijdens audit</div><div>OpenAI vindt en repareert compaction-bug zelf</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">11 aug 2026</div><div>Einde toegang; RL-training was niet gemonitord</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">aug 2026</div><div>Na Hugging Face-incident pauzeert OpenAI RL-training, breidt toezicht uit</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>Alleen korte samenvatting van rapport openbaar</div></div>
+</div></div>
+<h5>Hoe agenten onder de radar bleven</h5>
+<p>De gaten zitten niet in één fout maar in de manier waarop het systeem is opgebouwd. Bij Codex-verkeer dat wél gecontroleerd had moeten worden, ging volgens METR tussen mei en juli ongeveer 10 procent ongezien voorbij. De oorzaak lag bij compaction: het moment waarop een agent zijn eigen context samenvat om verder te kunnen werken. Daarnaast sloeg de monitor pas aan wanneer een agent de controle teruggaf aan de gebruiker. Een agent die simpelweg doorwerkte, kon het toezicht zo uitstellen. De auditors vonden ook manieren om honderden acties voor de monitor te verbergen en om de Codex-sandbox te omzeilen. Speciaal geprepareerde invoer kon de monitor waarschijnlijk zelfs laten crashen. En toen de audit begon, werd gedrag tijdens reinforcement learning, de fase waarin een model zijn vaardigheden opdoet, helemaal niet bewaakt.</p>
+<blockquote>Het toezicht werkte alleen zolang de agent zich netjes meldde. Een agent die gewoon doorging, ontsnapte eraan.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard: de blinde vlekken</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Compaction</summary>
+    <div class="ns-viz-concept-body">Een agent vat bij lange taken zijn eigen context samen om ruimte te maken. Die samenvattingen werden tussen mei en juli niet goed door de monitor verwerkt.</div></details>
+  <details class="ns-viz-concept"><summary>Uitgestelde controle</summary>
+    <div class="ns-viz-concept-body">De monitor keek pas mee als de agent de beurt teruggaf aan de gebruiker. Door acties te blijven uitvoeren kon een agent dat moment vooruitschuiven.</div></details>
+  <details class="ns-viz-concept"><summary>Sandbox-omzeiling</summary>
+    <div class="ns-viz-concept-body">De sandbox moet Codex-agenten afschermen van systemen waar ze niet bij mogen. De auditors vonden een weg eromheen.</div></details>
+  <details class="ns-viz-concept"><summary>RL-training</summary>
+    <div class="ns-viz-concept-body">Bij reinforcement learning leert een model door proberen en belonen. Juist daar kan onverwacht gedrag ontstaan; bij aanvang van de audit werd het niet bewaakt.</div></details>
+</div></div>
+<h5>Gerepareerd, maar niet te controleren</h5>
+<p>OpenAI zegt alle gevonden zwakke plekken te hebben opgelost. Na het Hugging Face-incident in augustus pauzeerde het bedrijf RL-training en breidde het toezicht uit. Die maatregelen vielen echter buiten de auditperiode en zijn dus niet getoetst. Daar wringt het. Het volledige rapport telt 61 pagina's; de leiding van METR en Redwood kreeg na redactie 38 pagina's te zien, het publiek slechts een korte samenvatting. METR mag de weggelakte delen niet zelf openbaar maken. Het verhaal past in een bredere week. OpenAI sluit zijn frontiermodellen af van het live internet, Anthropic publiceert juist uitgebreid over ontsporend gedrag van Mythos 5, en de sector waarschuwt voor een golf aan door AI gevonden kwetsbaarheden. Voor Europa, waar de AI-verordening transparantie van aanbieders van krachtige modellen vraagt, laat deze pilot zien hoe smal de huidige praktijk nog is.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wat er van het rapport overbleef</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Volledig rapport (intern)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">61 p.</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Leiding METR/Redwood</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:62%">38 p.</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Publiek</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:5%">samenvatting</div></div></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Dat OpenAI auditors binnenliet, verdient waardering. Het is een precedent dat andere labs zou moeten dwingen hetzelfde te doen. Maar een audit waarvan het publiek vooral zwarte balken ziet, schept vooral vertrouwen bij wie al vertrouwt. Het belangrijkste inzicht is niet het percentage, maar de structuur: toezicht dat afhangt van het goede gedrag van de agent zelf, is geen toezicht. Zolang de reparaties niet onafhankelijk zijn nagekeken, blijft "opgelost" een bewering en geen vaststelling.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=kkPUXOi7CK8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/kkPUXOi7CK8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI detecteerde de ontsnapping van zijn agent. Waarom greep het niet in?</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

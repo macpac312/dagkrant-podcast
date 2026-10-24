@@ -1,0 +1,96 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://infinance.nl/wp-content/uploads/2023/08/Mark-de-Rijke-2023.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© infinance.nl</div></div><ul class="bg-bullets">
+<li>NHG-grens stijgt per 1 januari 2027 naar 500.000 euro, 41 procent boven begin 2022.</li>
+<li>Gemiddeld hypotheekbedrag steeg in dezelfde periode slechts circa 9 procent.</li>
+<li>Volledige NHG-grens lenen vergt nu circa 110.000 euro inkomen, 50 procent meer dan in 2022.</li>
+<li>De Hypotheker: inkomen en rente bepalen de leenruimte, niet de garantiegrens.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Grens, koopsom en hypotheek: 2022 versus nu</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-486779cd"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-486779cd'),{
+    type:'bar',
+    data:{
+      labels:['NHG-grens','Gemiddelde koopsom','Gemiddelde hypotheek'],
+      datasets:[
+        {label:'2022',data:[355000,429000,330000],backgroundColor:'rgba(167,139,250,.75)',borderRadius:4},
+        {label:'2026/2027',data:[500000,503000,361000],backgroundColor:'#7c3aed',borderRadius:4}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,callbacks:{label:function(c){return c.dataset.label+': €'+c.parsed.y.toLocaleString('nl-NL');}}}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Een grens die harder groeit dan de leningen</h5>
+<p>De Nationale Hypotheek Garantie is in Nederland een vertrouwd vangnet: wie met NHG leent en door bijvoorbeeld werkloosheid of scheiding de woning met verlies moet verkopen, kan onder voorwaarden een restschuld kwijtgescholden krijgen. Banken belonen die zekerheid met een rentekorting. Per 1 januari 2027 stijgt de NHG-grens naar 500.000 euro; begin 2022 lag die nog op 355.000 euro. Dat is een stijging van 41 procent. Volgens adviesketen De Hypotheker groeide het gemiddelde hypotheekbedrag in dezelfde periode echter slechts van 330.000 naar circa 361.000 euro, ongeveer 9 procent. De gemiddelde koopsom ging van 429.000 euro in 2022 naar 503.000 euro in 2026, een stijging van 17 procent. Kopers lenen dus minder hard bij dan de prijzen stijgen, en de garantiegrens loopt beide voorbij.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="Stijging sinds 2022">
+  <g font-size="9" fill="#a6adc8"><text x="18" y="94">NHG-grens</text><text x="92" y="94">koopsom</text><text x="160" y="94">hypotheek</text></g>
+  <rect x="25" y="20" width="40" height="62" fill="#7c3aed"/>
+  <rect x="95" y="56" width="40" height="26" fill="#fab387"/>
+  <rect x="165" y="68" width="40" height="14" fill="#a6e3a1"/>
+  <g font-size="10" fill="#cdd6f4" text-anchor="middle"><text x="45" y="16">+41%</text><text x="115" y="52">+17%</text><text x="185" y="64">+9%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Stijging sinds 2022 (De Hypotheker).</p>
+</div>
+<h5>Inkomen en rente zijn de echte grens</h5>
+<p>De kern van het betoog van De Hypotheker zit in een rekenvoorbeeld. Om de volledige nieuwe NHG-grens van 500.000 euro te kunnen lenen, is bij een hypotheekrente van 4,46 procent een gezamenlijk bruto jaarinkomen van circa 110.000 euro nodig. Begin 2022 volstond voor een hypotheek van 355.000 euro, bij een rente van 1,55 procent, een inkomen van ongeveer 73.500 euro. Het benodigde inkomen om tot de maximale grens te lenen ligt dus zo'n 50 procent hoger, als gevolg van zowel een hoger bedrag als een fors hogere rente. Die rente blijft oplopen: volgens ING steeg het tarief voor tien jaar vast met NHG het afgelopen jaar van 3,6 naar 4,4 procent, waardoor starters ongeveer 6 procent minder kunnen lenen. Een ruimere garantiegrens verandert niets aan de leennormen die bepalen hoeveel iemand met een bepaald inkomen mag lenen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Waarom een hogere NHG-grens niet meer leenruimte geeft</div>
+<div class="ns-viz-mech-subtitle">Van garantiegrens naar wat een koper echt kan lenen</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Grens</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Leennorm</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Rente</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Concurrentie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><path d="M160 30 L230 55 L230 110 Q230 155 160 175 Q90 155 90 110 L90 55 Z" fill="#7c3aed"/><text x="160" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">€500k</text><text x="160" y="125" text-anchor="middle" font-size="10" fill="#fff">NHG 2027</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Grens</h6><p class="korte">De NHG-grens stijgt naar 500.000 euro, zodat duurdere woningen onder de garantie vallen.</p><p class="uitleg">Meer kopers kunnen zo profiteren van de financiële zekerheid en de mogelijke rentekorting die NHG biedt. De grens zegt alleen tot welk bedrag een lening garantie kan krijgen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="70" y="50" width="180" height="110" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">bruto jaarinkomen</text><rect x="90" y="100" width="60" height="40" fill="#a78bfa"/><rect x="170" y="88" width="60" height="52" fill="#7c3aed"/><text x="120" y="155" text-anchor="middle" font-size="9" fill="#44403c">€73.500</text><text x="200" y="155" text-anchor="middle" font-size="9" fill="#44403c">€110.000</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Leennorm</h6><p class="korte">Hoeveel iemand mag lenen, hangt af van inkomen, niet van de NHG-grens.</p><p class="uitleg">Voor de volle 500.000 euro is volgens De Hypotheker circa 110.000 euro gezamenlijk bruto inkomen nodig. Dat is voor veel starters en middeninkomens buiten bereik.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="80" y="130" width="60" height="25" fill="#a78bfa"/><rect x="180" y="62" width="60" height="93" fill="#7c3aed"/><text x="110" y="122" text-anchor="middle" font-size="12" fill="#44403c">1,55%</text><text x="210" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">4,46%</text><text x="110" y="175" text-anchor="middle" font-size="10" fill="#44403c">begin 2022</text><text x="210" y="175" text-anchor="middle" font-size="10" fill="#44403c">rekenrente nu</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Rente</h6><p class="korte">Een hogere rente drukt de leenruimte bij elk inkomen verder omlaag.</p><p class="uitleg">De Hypotheker rekent met 4,46 procent, tegen 1,55 procent begin 2022. Daardoor ligt het benodigde inkomen voor de maximale NHG-lening circa 50 procent hoger dan toen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><polygon points="160,50 220,95 100,95" fill="#7c3aed"/><rect x="115" y="95" width="90" height="60" fill="#a78bfa"/><g fill="#44403c"><circle cx="50" cy="120" r="12"/><circle cx="270" cy="120" r="12"/><circle cx="70" cy="165" r="12"/><circle cx="250" cy="165" r="12"/></g><text x="160" y="185" text-anchor="middle" font-size="10" fill="#44403c">meer kopers rond €500.000</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Concurrentie</h6><p class="korte">Meer kopers met garantie richten zich op hetzelfde prijssegment tot 500.000 euro.</p><p class="uitleg">Mark de Rijke van De Hypotheker verwacht dat de ruimere grens de concurrentie om woningen tot 500.000 euro vergroot, wat de prijzen in dat segment kan opdrijven.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>Een hogere garantiegrens beschermt meer kopers, maar maakt niet één woning betaalbaarder.</blockquote>
+<h5>Bescherming, geen koopkracht</h5>
+<p>Dat maakt de hogere grens niet zinloos. Mark de Rijke, commercieel directeur van De Hypotheker, noemt het positief dat de NHG-grens meegroeit met de huizenprijzen, omdat meer kopers zo profiteren van zekerheid en rentekorting. Dat is relevant nu de gemiddelde verkoopprijs van een bestaande woning volgens het Kadaster in september 504.658 euro bedroeg, al boven de nieuwe grens. Zonder verhoging zou een steeds groter deel van de markt buiten de garantie vallen. Tegelijk waarschuwt De Rijke dat het voor starters en middeninkomens lastig blijft om een passende woning te financieren, en dat de ruimere grens de concurrentie om woningen tot 500.000 euro kan vergroten. Dat risico is reëel in een markt die nog altijd krap is: wie de vraag in een segment verruimt zonder het aanbod te vergroten, drijft daar vooral de prijzen op.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er per 2027</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>BEGIN 2022</h6>
+    <p>NHG-grens €355.000. Bij 1,55 procent rente volstond circa €73.500 inkomen om die volledig te lenen.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>1 JANUARI 2027</h6>
+    <p>NHG-grens €500.000. Bij 4,46 procent rente is circa €110.000 inkomen nodig: zo'n 50 procent meer.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>De verhoging van de NHG-grens is noodzakelijk onderhoud, geen woonbeleid. Ze voorkomt dat de garantie veroudert, maar lost het betaalbaarheidsprobleem niet op en kan het in het segment rond 500.000 euro zelfs verergeren. Wie de koopkracht van starters wil vergroten, moet kijken naar aanbod, rente en leennormen. De garantiegrens is daarvoor het verkeerde instrument, en dat zegt de hypotheekbranche nu zelf.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=74a7__IzTWs" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/74a7__IzTWs/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">De Hypotheker: 'Hogere NHG-grens vergroot betaalbaarheid niet vanzelf' 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://infinance.nl/artikel/hogere-nhg-grens-vergroot-betaalbaarheid-niet-vanzelf/" target="_blank" style="color:var(--accent)">infinance.nl ↗</a></div>

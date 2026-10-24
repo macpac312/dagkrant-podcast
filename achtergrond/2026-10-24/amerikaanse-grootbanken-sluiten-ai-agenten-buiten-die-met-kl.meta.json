@@ -1,0 +1,17 @@
+{
+  "title": "Amerikaanse grootbanken sluiten AI-agenten buiten die met klantgegevens inloggen",
+  "summary": "Morgan Stanley blokkeert agenten, andere banken beperken ze tot alleen-lezen. 1Password lanceert een manier om agenten in te laten loggen zonder het wachtwoord te zien.\n\nKlanten laten AI-agenten met hun inloggegevens toegang krijgen tot rekeningen bij Morgan Stanley, JPMorgan en andere grote Amerikaanse banken, soms zonder directe instructie. Morgan Stanley blokkeert de agenten, andere banken beperken de toegang; de meeste willen agenten alleen leesrechten geven, meldt The Decoder.\n\nTegelijk lan",
+  "sources": [
+    "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/",
+    "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-24",
+  "slug": "amerikaanse-grootbanken-sluiten-ai-agenten-buiten-die-met-kl",
+  "tts_slug": "amerikaanse-grootbanken-sluiten-ai-agenten-buiten-die-met-kl",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-24T04:42:34",
+  "size_kb": 13
+}
