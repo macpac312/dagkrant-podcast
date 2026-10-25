@@ -10,7 +10,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-25T05:26:53+00:00",
+  "updated_at": "2026-10-25T05:29:44+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -172,6 +172,10 @@
     {
       "step": "podcast",
       "at": "2026-10-25T05:26:53+00:00"
+    },
+    {
+      "step": "podcast",
+      "at": "2026-10-25T05:29:44+00:00"
     }
   ],
   "status": "running",
