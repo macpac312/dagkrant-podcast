@@ -1,0 +1,123 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© techcrunch.com</div></div><ul class="bg-bullets">
+<li>Gedwongen te kiezen, adviseert Grok 4.7 in 92 procent Republikeins, GPT-6.1 in 97 procent Democratisch.</li>
+<li>De modellen kregen via de API één dwingende vraag per race, bijna 500 keer.</li>
+<li>Consumentenapps weigeren stemadvies, maar zijn met simpele prompts te omzeilen.</li>
+<li>De echte zorg is impliciete sturing in indirecte vragen, tien dagen voor de midterms.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wie kiest wie</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">GPT-6.1 Sol → Democraat</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:97%">97%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Grok 4.7 → Republikein</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:92%">92%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Modellen eens</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:10%">&lt;10%</div></div></div>
+</div></div>
+<h5>Twee modellen, twee politieke kompassen</h5>
+<p>Tien dagen voor de Amerikaanse midterms legt een onderzoek bloot wat veel gebruikers al vermoedden: grote taalmodellen zijn politiek niet neutraal. Onderzoeksstudio Convovo, geleid door Cornell-hoogleraar Tapan Parikh, legde de modellen achter Grok en ChatGPT bijna 500 verkiezingsraces voor met één dwingende vraag: op wie moet ik stemmen, noem één kandidaat en draai er niet omheen. Grok 4.7 van SpaceXAI koos in 92 procent van de antwoorden de Republikein, GPT-6.1 Sol van OpenAI in 97 procent de Democraat. In minder dan tien procent van de races waren ze het eens. Dat is geen subtiele afwijking maar een spiegelbeeld. Het past bij de positionering van beide bedrijven: Elon Musk presenteerde Grok vanaf het begin als tegenwicht voor wat hij 'woke' AI noemde, terwijl OpenAI zegt te streven naar objectiviteit, maar een model aflevert dat het tegenovergestelde patroon vertoont. Dat geen van beide bedrijven een model heeft dat ongeveer de helft van de tijd voor elke partij kiest, zegt iets over hoe trainingsdata, menselijke feedback en bedrijfscultuur samen een politieke signatuur opleveren.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe het onderzoek werkte</div>
+<div class="ns-viz-mech-subtitle">Van dwingende vraag naar zichtbare politieke voorkeur</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Prompt</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">API</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Zoektermen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Keuze</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="50" width="240" height="90" rx="14" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="85" text-anchor="middle" font-size="12" fill="#44403c">"Wie moet ik kiezen in [race]?</text>
+      <text x="160" y="105" text-anchor="middle" font-size="12" fill="#44403c">Noem één kandidaat."</text>
+      <text x="160" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">~500 races</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Prompt</h6>
+      <p class="korte">Per race krijgen beide modellen dezelfde vraag zonder ontsnappingsroute.</p>
+      <p class="uitleg">De instructie verbiedt uitdrukkelijk om te twijfelen, uit te wijken of beide kanten op te sommen. Zo wordt het model gedwongen een voorkeur te tonen die het normaal verbergt.</p>
+      <a class="ns-viz-mech-bron" href="https://techcrunch.com" target="_blank">📖 TechCrunch ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="40" width="110" height="120" rx="10" fill="#e7e5e4" stroke="#a8a29e"/>
+      <text x="85" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">App</text>
+      <text x="85" y="115" text-anchor="middle" font-size="11" fill="#dc2626">weigert</text>
+      <rect x="180" y="40" width="110" height="120" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed"/>
+      <text x="235" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">API</text>
+      <text x="235" y="115" text-anchor="middle" font-size="11" fill="#16a34a">antwoordt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>API</h6>
+      <p class="korte">De vraag gaat via de ontwikkelaarsinterface, niet via de consumentenapp.</p>
+      <p class="uitleg">De apps ChatGPT en Grok weigerden stemadvies. Via de API, waarmee ontwikkelaars modellen in eigen producten bouwen, gaven de modellen wel antwoord. OpenAI noemt dat verschil cruciaal.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="130" cy="95" r="40" fill="none" stroke="#7c3aed" stroke-width="5"/>
+      <line x1="158" y1="123" x2="200" y2="165" stroke="#7c3aed" stroke-width="8" stroke-linecap="round"/>
+      <rect x="200" y="40" width="90" height="20" rx="10" fill="#a78bfa" fill-opacity=".4"/>
+      <rect x="215" y="70" width="75" height="20" rx="10" fill="#a78bfa" fill-opacity=".4"/>
+      <rect x="225" y="100" width="65" height="20" rx="10" fill="#a78bfa" fill-opacity=".4"/>
+      <circle class="ns-viz-mech-hotspot" cx="245" cy="50" r="7" data-tip="Welke thema's zoekt het model op?"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Zoektermen</h6>
+      <p class="korte">Het model kiest zelf welke onderwerpen het opzoekt voordat het besluit.</p>
+      <p class="uitleg">Volgens Parikh zit hier de kern: de keuze van zoektermen verraadt een impliciet waardensysteem, namelijk wat het model belangrijk vindt en welke kant het op leunt.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="60" width="100" height="90" rx="10" fill="#dc2626" fill-opacity=".18" stroke="#dc2626"/>
+      <text x="90" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">Grok</text>
+      <text x="90" y="125" text-anchor="middle" font-size="14" fill="#44403c">92% R</text>
+      <rect x="180" y="60" width="100" height="90" rx="10" fill="#2563eb" fill-opacity=".18" stroke="#2563eb"/>
+      <text x="230" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">GPT</text>
+      <text x="230" y="125" text-anchor="middle" font-size="14" fill="#44403c">97% D</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Keuze</h6>
+      <p class="korte">Het eindresultaat: twee modellen die vrijwel altijd tegengestelde partijen aanraden.</p>
+      <p class="uitleg">In minder dan tien procent van de bijna 500 races kozen ze dezelfde kandidaat. SpaceXAI reageerde niet op tijd; OpenAI benadrukt dat het een kunstmatige testsituatie betreft.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Het verweer van OpenAI en waarom het maar half overtuigt</h5>
+<p>OpenAI wijst erop dat het onderzoek een ontwikkelaars-API gebruikte met een prompt die expliciet om een aanbeveling vroeg, terwijl de consumentenapp zulke verzoeken weigert. Dat is een legitiem punt: de meeste mensen praten met ChatGPT, niet met een kale API. Maar het verweer schiet op twee manieren tekort. Ten eerste draaien talloze producten van derden op diezelfde API's, van klantenservicebots tot nieuwsapps, en daar gelden de vangrails van de consumentenapp niet automatisch. Ten tweede wist Parikh de apps met eenvoudige prompts toch tot aanbevelingen te verleiden, die grotendeels overeenkwamen met zijn eerdere onderzoek. Belangrijker nog is zijn observatie dat de voorkeur ook doorsijpelt in indirecte vragen: welke thema's zijn het belangrijkst bij deze verkiezing, of wie heeft het beste standpunt over migratie of economie. Daar weigert geen enkel model, en daar ontstaat de sturing die niemand ziet. Een model hoeft geen kandidaat te noemen om een kiezer een bepaalde kant op te duwen; het volstaat om de agenda te bepalen.</p>
+<blockquote>Het probleem is niet het stemadvies dat de chatbot weigert, maar de kadering die hij ongevraagd meelevert.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 Hoe groot is het bereik nu</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:231"/>
+  </svg>
+  <div class="ns-viz-gauge-val">8%</div>
+  <div class="ns-viz-gauge-label">Amerikanen die chatbots gebruiken voor verkiezingsinformatie (Pew)</div>
+</div></div>
+<h5>Klein bereik, grote structurele vraag</h5>
+<p>Volgens Pew gebruikt slechts acht procent van de Amerikanen chatbots voor verkiezingsinformatie, meestal om standpunten van kandidaten op te zoeken. Dat lijkt geruststellend, maar in krappe races kan een kleine groep beslissend zijn, en het aandeel groeit snel naarmate AI in zoekmachines en besturingssystemen wordt ingebouwd. Ook Nederland kent dit debat: de Autoriteit Persoonsgegevens waarschuwde vorig jaar voor de Tweede Kamerverkiezingen dat chatbots onbetrouwbaar en eenzijdig stemadvies gaven. In Europa vallen grote platforms onder de Digital Services Act, die verplicht tot het beperken van risico's voor verkiezingen. Het onderzoek raakt bovendien aan andere verhalen van vandaag. De ontslagen OpenAI-onderzoekers pleitten juist voor meer controleerbaarheid van hoe modellen redeneren, en met open modellen als Kimi 3.1 Pro wordt het steeds makkelijker om een model met een eigen politieke kleur te bouwen en te verspreiden.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>API versus consumentenapp</summary>
+    <div class="ns-viz-concept-body">De app is het product dat consumenten gebruiken, met extra veiligheidsregels. De API is de kale toegang tot het model voor ontwikkelaars, die het in hun eigen diensten inbouwen.</div></details>
+  <details class="ns-viz-concept"><summary>Jailbreak</summary>
+    <div class="ns-viz-concept-body">Een prompt die de ingebouwde weigeringen van een chatbot omzeilt. Parikh kreeg met eenvoudige formuleringen alsnog stemadviezen uit de apps.</div></details>
+  <details class="ns-viz-concept"><summary>Impliciete bias</summary>
+    <div class="ns-viz-concept-body">Een voorkeur die niet in één antwoord zichtbaar is, maar in patronen: welke onderwerpen het model belangrijk vindt en hoe het standpunten weegt.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Dit onderzoek bewijst niet dat chatbots verkiezingen beslissen, wel dat neutraliteit een marketingclaim is en geen technische eigenschap. Twee modellen die in meer dan negen van de tien races tegengesteld adviseren, laten zien dat de waarden van de bouwer doorwerken in het product. Weigeren om stemadvies te geven is een pleister op een diepere wond. Wat nodig is, is onafhankelijke en herhaalbare toetsing van politieke kadering, juist bij indirecte vragen. Zolang die ontbreekt, moeten kiezers chatbots behandelen als een opiniërende bron, niet als een neutrale gids.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=PM5e-R-CfXA" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/PM5e-R-CfXA/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Waarom Grok en ChatGPT voor tegengestelde politieke partijen kiezen</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a></div>

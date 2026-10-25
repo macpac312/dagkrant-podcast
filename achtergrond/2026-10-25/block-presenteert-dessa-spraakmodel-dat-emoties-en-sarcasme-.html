@@ -1,0 +1,64 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/dessa_block.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Block presenteert Dessa: een spraakmodel getraind op uitsluitend menselijke spraak, zonder tekst.</li>
+<li>Audio wordt direct verwerkt, waardoor emotie, sarcasme, lachen en pauzes behouden blijven.</li>
+<li>Het model draait lokaal op een MacBook Pro M4 Max en luistert en spreekt tegelijk.</li>
+<li>Klinken als een mens is nog geen intelligentie; redeneren blijft de echte toets.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Dessa in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0" data-suffix="%">0%</div><div class="ns-viz-stat-label">Tekst in trainingsdata</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">GB200 NVL72-rack voor training</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="72">72</div><div class="ns-viz-stat-label">GPU's in dat rack</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Laptop nodig om te draaien</div></div>
+</div></div>
+<h5>Waarom een betaalbedrijf een spraakmodel bouwt</h5>
+<p>Block, het bedrijf van Jack Dorsey achter Square en Cash App, is niet de eerste naam die opkomt bij fundamenteel AI-onderzoek. Toch presenteert het nu Dessa, volgens Block het eerste AI-model dat volledig op menselijke spraak is getraind, vanaf nul en zonder enige tekstdata. De meeste spraakassistenten werken als een estafette: spraak wordt eerst omgezet in tekst, een taalmodel bedenkt een antwoord, en een synthesizer leest dat weer voor. Bij elke overdracht gaat informatie verloren, vooral alles wat niet in woorden zit: toon, ironie, een aarzeling, een lach. Dessa slaat die tussenstap over en verwerkt het geluid direct. Het model is bovendien full-duplex, wat betekent dat het tegelijk kan luisteren en praten, zoals mensen elkaar in een gesprek onderbreken. Block noemt drie motieven: nieuwsgierigheid, betere communicatie tussen mens en machine, en veiligheid, omdat huidige spraak-AI emotionele signalen negeert. Dat Block het model op één enkel Nvidia-rack trainde, onderstreept bovendien dat zulk onderzoek niet langer voorbehouden is aan de handvol labs met eigen datacenters.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe Dessa luistert</div>
+<div class="ns-viz-mech-subtitle">Van geluidsgolf naar antwoord, zonder omweg via tekst</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Geluid binnen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Toon lezen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Tegelijk praten</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Lokaal antwoord</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="60" cy="100" r="26" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><text x="60" y="105" text-anchor="middle" font-size="12" fill="#7c3aed">mens</text><path d="M95 100 Q105 70 115 100 T135 100 T155 100 T175 100 T195 100" fill="none" stroke="#7c3aed" stroke-width="3"/><rect x="215" y="70" width="80" height="60" rx="10" fill="#7c3aed"/><text x="255" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Dessa</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Geluid binnen</h6><p class="korte">De ruwe geluidsgolf gaat rechtstreeks het model in, zonder transcriptie.</p><p class="uitleg">Klassieke assistenten zetten spraak eerst om naar tekst. Dessa werkt op de audio zelf, omdat het nooit tekst heeft gezien: het is van de grond af getraind op opnames van menselijke spraak.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><path d="M30 120 Q60 60 90 120 T150 110 T210 80 T290 120" fill="none" stroke="#7c3aed" stroke-width="3"/><circle class="ns-viz-mech-hotspot" cx="90" cy="120" r="7" data-tip="pauze"/><circle class="ns-viz-mech-hotspot" cx="210" cy="80" r="7" data-tip="stijgende toon: sarcasme?"/><g font-size="12" fill="#44403c" text-anchor="middle"><text x="90" y="150">pauze</text><text x="210" y="60">ironie</text><text x="270" y="160">lach</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Toon lezen</h6><p class="korte">Emotie, sarcasme, lachen en pauzes blijven als signaal behouden.</p><p class="uitleg">Precies die informatie verdwijnt bij omzetting naar tekst. "Geweldig" met een zucht betekent iets anders dan "geweldig" met een lach; een tekstmodel ziet beide als hetzelfde woord.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><line x1="40" y1="75" x2="280" y2="75" stroke="#a78bfa" stroke-width="10" stroke-linecap="round"/><line x1="40" y1="125" x2="280" y2="125" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/><g font-size="12" fill="#44403c"><text x="40" y="60">luisteren</text><text x="40" y="150">spreken</text></g><text x="160" y="185" text-anchor="middle" font-size="12" fill="#7c3aed" font-weight="700">full-duplex: beide kanalen tegelijk</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Tegelijk praten</h6><p class="korte">Het model luistert terwijl het spreekt en kan dus onderbroken worden.</p><p class="uitleg">Full-duplex maakt een gesprek natuurlijker dan de beurtelingse walkietalkie-stijl van veel assistenten. Kyutai's Moshi toonde dit principe in 2024 al eerder.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="80" y="50" width="160" height="95" rx="8" fill="#fff" stroke="#44403c" stroke-width="2"/><rect x="60" y="145" width="200" height="12" rx="4" fill="#44403c"/><rect x="120" y="80" width="80" height="36" rx="8" fill="#7c3aed"/><text x="160" y="103" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Dessa</text><text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">MacBook Pro M4 Max, geen cloud</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Lokaal antwoord</h6><p class="korte">Het hele model draait op een krachtige laptop, zonder datacenter.</p><p class="uitleg">Lokaal draaien beperkt vertraging en houdt gevoelige spraak op het apparaat. Training vond plaats op één Nvidia GB200 NVL72-rack, bescheiden naar frontier-maatstaven.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Een lange reeks pogingen</h5>
+<p>Emotionele spraak-AI is geen nieuw idee, en de geschiedenis is weinig bemoedigend. De startup Hume AI lanceerde in maart 2024 EVI, een stem-interface met "emotionele intelligentie". Het Franse lab Kyutai volgde in september 2024 met Moshi, dat al full-duplex werkte. LAION werkt sinds eind 2023 met open data aan empathische spraaksynthese, en OpenAI vernieuwde in juni 2025 de geavanceerde spraakmodus van ChatGPT, met betere intonatie, pauzes en overtuigender sarcasme. Geen van die projecten heeft de manier waarop mensen met computers praten wezenlijk veranderd. Het onderscheid van Dessa zit in de radicale keuze voor nul tekst. Dat is ook een gok: tekst is de rijkste bron van wereldkennis die AI-modellen hebben. Een model dat alleen spraak kent, hoort misschien perfect dat je geïrriteerd bent, maar weet het mogelijk minder goed waaróm, of wat het eraan kan doen. Of Dessa kan redeneren tijdens het antwoorden, laat Block nog niet zien. Onafhankelijke benchmarks ontbreken eveneens, zodat de claims voorlopig op het woord van het bedrijf zelf rusten.</p>
+<blockquote>Emotioneel klinken is niet hetzelfde als emotioneel of intelligent zijn: voor spraak-AI telt redeneren tijdens het antwoord zwaarder dan een natuurlijke stem.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Emotionele spraak-AI</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">eind 2023</div><div>LAION start Open Empathic met open audiodataset</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">mrt 2024</div><div>Hume AI lanceert EVI, "empathische" stem-interface</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">sep 2024</div><div>Kyutai presenteert full-duplex model Moshi</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">jun 2025</div><div>OpenAI vernieuwt Advanced Voice Mode van ChatGPT</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">nu</div><div>Block toont Dessa, getraind zonder enige tekst</div></div>
+</div></div>
+<h5>Veiligheid, privacy en de betaalwereld</h5>
+<p>Opvallend is dat Block Dessa nog niet uitbrengt, maar eerst AI-veiligheidsonderzoekers zoekt om onverwachte risico's te testen. Dat is verstandig. Een model dat emoties uit stemmen leest, is ook een model dat stress, twijfel of kwetsbaarheid kan detecteren, en dus kan uitbuiten. De Europese AI-verordening verbiedt emotieherkenning al op de werkvloer en in het onderwijs, en merkt die elders aan als risicovol. Voor een betaalbedrijf ligt de verleiding voor de hand: klantenservice die een boze klant herkent, of fraudedetectie die hoort wanneer iemand onder druk wordt gezet. Dat laatste kan beschermen, zeker nu oplichters zelf steeds vaker gekloonde stemmen inzetten. Het feit dat Dessa lokaal op een laptop draait, helpt bij privacy, maar maakt toezicht lastiger: wat op een apparaat draait, ontsnapt aan elke centrale controle. Dat spanningsveld zie je ook terug bij open modellen als het vandaag besproken Kimi. Hoe capabeler de modellen die buiten de cloud draaien, hoe minder grip toezichthouders en de makers zelf nog hebben op hoe ze worden ingezet.</p>
+<h5>Conclusie</h5>
+<p>Dessa is minder een product dan een stelling: dat stem een eigen modaliteit is die niet via tekst hoeft. Als dat klopt, krijgen spraakassistenten eindelijk oor voor wat mensen bedoelen in plaats van alleen wat ze zeggen. Maar de geschiedenis van emotionele spraak-AI leert dat een warme stem snel went en een dom antwoord blijft hangen. Block wint pas als Dessa niet alleen beter luistert, maar ook beter denkt, en dat moet het nog bewijzen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=8tP9FDKlZ6Q" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/8tP9FDKlZ6Q/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Block presenteert Dessa: spraakmodel dat emoties en sarcasme direct uit audio haalt 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/blocks-new-ai-model-dessa-was-trained-entirely-on-human-speech-to-catch-emotions-text-based-models-miss/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

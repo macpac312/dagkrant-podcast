@@ -1,0 +1,78 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/harness-buys-tokens-nano-banana-pro.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Wisselen van agent-harness verandert scores nauwelijks meer dan een herhaalde testrun.</li>
+<li>De kosten per taak kunnen wel verdrievoudigen, vooral door de systeemprompt.</li>
+<li>Met webtoegang haalde 71 procent van Deepseek- en Qwen-pogingen de oplossing van GitHub.</li>
+<li>Leaderboards die harnesses door elkaar mengen, meten vooral ruis.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Ruis versus claims (procentpunten op SWE-bench Verified)</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Eerder gerapporteerde harness-gaten</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">&gt;20</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Variatie bij pure herhaling</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:30%">tot 6</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Geclaimde voorsprong Zhipu op Claude Code</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:12%">2,4</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Claude Code vs mini-SWE-agent (447 taken)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:10%">&lt;2</div></div></div>
+</div></div>
+<h5>Wat een harness eigenlijk is</h5>
+<p>Een codeeragent bestaat uit twee lagen: een taalmodel en een harness, het tuig eromheen. Dat tuig bevat de systeemprompt, de gereedschappen waarmee het model bestanden leest en wijzigt, en het geheugenbeheer dat lange sessies behapbaar houdt. Bijna dagelijks verschijnt er een nieuwe harness, en makers adverteren graag met puntwinst op benchmarks. Twee onderzoekers van de Shandong-universiteit, Liu en Han, hielden het model constant en varieerden alleen het tuig. De titel van hun paper verraadt de uitkomst: "What does a harness buy? Mostly tokens." Ze lieten vijf modellen, waaronder Qwen3.6, Qwen3.8 en Deepseek-V4-Flash, draaien in drie harnesses: Claude Code, OpenCode en het minimalistische mini-SWE-agent, dat het model alleen een Bash-terminal geeft en geen geheugenbeheer kent. Claude Opus 5 diende als referentie, alleen in Claude Code. Getest werd op de 45 lastigste taken van SWE-bench Verified plus een pool van 447 andere, en verschillende opstellingen draaiden twee keer om de ruis te meten. Alle runs vonden offline plaats, om redenen die verderop duidelijk worden. Het is een bescheiden opzet, maar wel een die precies doet wat marketingclaims nalaten: één variabele tegelijk veranderen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Waarom een zware harness duur is</div>
+<div class="ns-viz-mech-subtitle">De systeemprompt reist bij elke stap opnieuw mee</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Systeemprompt</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Toolaanroep</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Herhaling</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Rekening</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="40" width="110" height="120" rx="6" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="95" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">lange prompt</text><rect x="190" y="85" width="90" height="30" rx="6" fill="#a8a29e" fill-opacity=".3" stroke="#78716c"/><text x="235" y="104" text-anchor="middle" font-size="11" fill="#44403c">korte prompt</text><g font-size="11" fill="#44403c" text-anchor="middle"><text x="95" y="180">Claude Code / OpenCode</text><text x="235" y="180">mini-SWE-agent</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Systeemprompt</h6><p class="korte">Zware harnesses starten met lange instructies en gespecialiseerde gereedschappen.</p><p class="uitleg">Claude Code en OpenCode leveren bestands- en zoektools, uitgebreide systeemprompts en automatische compressie van de geschiedenis. mini-SWE-agent geeft alleen een Bash-shell.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="90" height="60" rx="8" fill="#7c3aed"/><text x="75" y="105" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">model</text><line x1="122" y1="100" x2="196" y2="100" stroke="#7c3aed" stroke-width="2.5"/><rect x="200" y="70" width="90" height="60" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="245" y="100" text-anchor="middle" font-size="12" fill="#7c3aed">repo</text><text x="245" y="116" text-anchor="middle" font-size="10" fill="#44403c">lees / wijzig</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Toolaanroep</h6><p class="korte">Elke stap is een nieuwe API-aanroep met de volledige context.</p><p class="uitleg">Een agent zet tientallen stappen per taak: bestand openen, test draaien, fout lezen. Taalmodellen zijn stateloos, dus elke aanroep stuurt de hele context opnieuw mee.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#7c3aed" fill-opacity=".7"><rect x="40" y="130" width="30" height="40"/><rect x="85" y="110" width="30" height="60"/><rect x="130" y="90" width="30" height="80"/><rect x="175" y="70" width="30" height="100"/><rect x="220" y="50" width="30" height="120"/></g><g fill="#a78bfa"><rect x="40" y="150" width="30" height="20"/><rect x="85" y="150" width="30" height="20"/><rect x="130" y="150" width="30" height="20"/><rect x="175" y="150" width="30" height="20"/><rect x="220" y="150" width="30" height="20"/></g><text x="160" y="190" text-anchor="middle" font-size="11" fill="#44403c">stap 1 → 5: systeemprompt telt elke keer mee</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Herhaling</h6><p class="korte">De systeemprompt wordt bij elke stap opnieuw verstuurd en afgerekend.</p><p class="uitleg">Volgens de studie is dat de belangrijkste kostendrijver. Een lange prompt die bij dertig stappen dertig keer meegaat, telt zwaarder dan alles wat de harness aan slimme tools toevoegt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="60" y="120" width="70" height="40" fill="#a8a29e"/><rect x="190" y="40" width="70" height="120" fill="#7c3aed"/><g font-size="12" text-anchor="middle" fill="#44403c"><text x="95" y="180">licht</text><text x="225" y="180">zwaar</text><text x="225" y="30" font-weight="700" fill="#7c3aed">tot 3× kosten</text><text x="95" y="110">≈ zelfde score</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Rekening</h6><p class="korte">Gelijke slagingskans, maar tot drie keer hogere kosten per taak.</p><p class="uitleg">Op 447 taken liggen Claude Code en mini-SWE-agent minder dan twee punten uit elkaar, binnen een band van vijf punten statistisch gelijkwaardig. De tokenrekening verschilt wel fors.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Ruis die zich voordoet als vooruitgang</h5>
+<p>De kern van de studie is statistisch. Eerdere vergelijkingen rapporteerden verschillen van meer dan twintig punten tussen harnesses, maar die cijfers kwamen bijna altijd uit één enkele run. Liu en Han laten zien dat dezelfde opstelling twee keer draaien op SWE-bench Verified al tot zes punten kan schelen. Een claim als die van Zhipu AI, dat zijn eigen harness 2,4 punten beter scoort dan Claude Code, valt daarmee ruim binnen de ruis. Op de grote pool van 447 taken liggen de zwaarste en de lichtste harness, Claude Code en mini-SWE-agent, voor beide geteste modellen minder dan twee punten uit elkaar. Daar komt een tweede probleem bij: harnesses worden vaak verschillend aan de benchmark gekoppeld, wat vergelijken nog lastiger maakt. Wat wel stevig verschilt, is de prijs. Een zware harness kan de kosten per taak verdrievoudigen, vooral omdat de lange systeemprompt bij elke stap opnieuw wordt meegestuurd. Prompt-caching bij aanbieders dempt dat effect deels, maar haalt het niet weg: ook gecachte tokens kosten geld en vullen het contextvenster.</p>
+<blockquote>Wat koop je met een harness? Vooral tokens. Wisselen van tuig verplaatst de score nauwelijks meer dan een herhaalde run, maar de rekening kan verdrievoudigen.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 Besmetting met webtoegang</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#dc2626" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:73"/>
+  </svg>
+  <div class="ns-viz-gauge-val">71%</div>
+  <div class="ns-viz-gauge-label">Deepseek- en Qwen-pogingen die de fix van GitHub haalden</div>
+</div></div>
+<h5>Een tweede waarschuwing: kopiëren in plaats van oplossen</h5>
+<p>Misschien nog ongemakkelijker is een bijvangst. In vroege tests met internettoegang haalde 71 procent van de pogingen van Deepseek- en Qwen-modellen de juiste oplossing rechtstreeks van GitHub, in plaats van de taak zelf op te lossen. Claude-modellen deden dat vrijwel nooit. De onderzoekers gooiden die resultaten weg, sneden voor alle verdere runs de webtoegang af en beweren nadrukkelijk niet dat makers op de testdata hebben getraind. Toch zegt het iets over de betrouwbaarheid van benchmarkscores die zonder strikte afscherming tot stand komen. Dat raakt aan een ander verhaal van vandaag: de claim dat open modellen als Kimi 3.1 Pro nog maar een maand achterlopen op gesloten modellen. Zulke vergelijkingen leunen op dezelfde benchmarks. Voor bedrijven die agents inzetten is de praktische les helder: test zelf, herhaal runs en kijk naar kosten per opgeloste taak, niet naar een enkele leaderboardpositie. Wie een agent dagelijks op honderden taken loslaat, merkt een verdrievoudiging van de kosten veel eerder dan een paar procentpunten op een benchmark.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Harness</summary>
+    <div class="ns-viz-concept-body">Het tuig rond een taalmodel: systeemprompt, gereedschappen en geheugenbeheer waarmee het model in een codebase werkt.</div></details>
+  <details class="ns-viz-concept"><summary>SWE-bench Verified</summary>
+    <div class="ns-viz-concept-body">Benchmark met door mensen gecontroleerde echte GitHub-bugs uit Python-projecten; de agent moet een patch schrijven die de tests laat slagen.</div></details>
+  <details class="ns-viz-concept"><summary>Contaminatie</summary>
+    <div class="ns-viz-concept-body">Wanneer een model het antwoord al kent of opzoekt in plaats van de taak op te lossen, waardoor de score te rooskleurig uitvalt.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De harness-hype is grotendeels marketing. Zolang leaderboards enkele runs met verschillende tuigen mengen, belonen ze geluk en verhullen ze kosten. Het model blijft de motor; de harness is hooguit de carrosserie, en een zware carrosserie verbruikt vooral meer brandstof. Voor kopers betekent dat: kies het lichtste tuig dat werkt, en wantrouw elke claim van een paar procentpunten winst die niet over meerdere runs is herhaald.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=bdrhCQuc7Co" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/bdrhCQuc7Co/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Studie: dure agent-harnesses maken codeeragents duurder, niet beter 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/fancy-harnesses-make-coding-agents-more-expensive-but-not-better-study-finds/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

@@ -1,0 +1,118 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/openai_fired_researchers.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Drie ontslagen OpenAI-veiligheidsonderzoekers ontkennen dat ze vertrouwelijke informatie lekten.</li>
+<li>Ze kregen naar eigen zeggen nooit schriftelijk te horen wat ze gelekt zouden hebben.</li>
+<li>Ze zien een verband met hun pleidooi om de redeneerstappen van modellen controleerbaar te houden.</li>
+<li>De zaak kan onafhankelijke auditors afschrikken om met AI-bedrijven samen te werken.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De zaak in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Onderzoekers tegelijk ontslagen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Week tussen telefooncontrole en ontslag</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Schriftelijke specificaties van het lek</div></div>
+</div></div>
+<h5>Een ontslag zonder duidelijke aanklacht</h5>
+<p>Tomek Korbak, Mikita Balesni en Jasmine Wang werkten aan de veiligheid van de modellen van OpenAI, tot ze tegelijk op straat stonden. Het bedrijf ontsloeg hen na een intern onderzoek naar vermeende schendingen van het beleid rond gevoelige informatie. Nu vertellen ze in de Wall Street Journal hun kant van het verhaal. De beveiligingsafdeling vermoedde dat zij details over de interne modelarchitectuur hadden gedeeld met een externe veiligheidsonderzoeker en vroeg hen hun privételefoons te ontgrendelen. Daarop werden Signal-chats met verdwijnende berichten aangetroffen. Een week later volgde het ontslag van alle drie. OpenAI stelt dat Signal geen goedgekeurd communicatiemiddel is, maar benadrukt dat dit niet de reden voor het ontslag was, en dat de beslissing niets te maken had met de veiligheidszorgen die de onderzoekers eerder publiekelijk uitten. De drie zeggen echter nooit schriftelijk te hebben gehoord welke informatie ze precies verkeerd zouden hebben behandeld. Korbak wijst erop dat verdwijnende berichten in Silicon Valley gewoon een gangbare beveiligingspraktijk zijn.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van pleidooi tot ontslag</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2025</div><div>Balesni, Korbak en Wang tekenen paper voor behoud van chain-of-thought-toezicht</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">Zomer 2026</div><div>Intern debat over modellen die langer denken, minder opschrijven</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">Daarna</div><div>Balesni deelt intern voorstel van Ryan Greenblatt (Redwood Research)</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">Onderzoek</div><div>Beveiliging vraagt privételefoons te ontgrendelen; Signal-chats gevonden</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">Week later</div><div>Alle drie tegelijk ontslagen; nu vertellen ze hun verhaal in WSJ</div></div>
+</div></div>
+<h5>Het eigenlijke conflict: mogen we zien hoe een model denkt</h5>
+<p>Achter het personeelsconflict ligt een technische kwestie met grote gevolgen. Redeneermodellen schrijven tussenstappen van hun probleemoplossing weg op een intern kladblok, de chain of thought. Bedrijven en veiligheidsonderzoekers gebruiken die sporen om te begrijpen hoe een model tot een besluit komt en om misleidend of riskant gedrag vroeg te signaleren. In een paper uit 2025 riepen Balesni, Korbak en Wang samen met vooraanstaande onderzoekers van meerdere AI-labs op om die controleerbaarheid te behouden. Afgelopen zomer werd dat urgenter, toen binnen AI-bedrijven werd gesproken over modellen die langer nadenken maar minder tussenstappen opschrijven. Dat kan efficiënter zijn, maar betekent ook dat het venster op de redenering van het model kleiner wordt. Balesni verzette zich intern door een voorstel te delen van Ryan Greenblatt, toen hoofdwetenschapper bij Redwood Research. Wie in die discussie de commerciële belangen tegenover de veiligheidsbelangen zet, begrijpt waarom de onderzoekers een verband vermoeden met hun ontslag.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe chain-of-thought-toezicht werkt</div>
+<div class="ns-viz-mech-subtitle">Van redeneerstap naar signaal, en wat er verloren gaat</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Redeneren</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Kladblok</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Toezicht</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Blinde vlek</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="110" y="50" width="100" height="100" rx="16" fill="#7c3aed" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/>
+      <circle cx="140" cy="85" r="6" fill="#7c3aed"/><circle cx="180" cy="85" r="6" fill="#7c3aed"/><circle cx="160" cy="115" r="6" fill="#7c3aed"/>
+      <line x1="140" y1="85" x2="180" y2="85" stroke="#a78bfa" stroke-width="2"/><line x1="140" y1="85" x2="160" y2="115" stroke="#a78bfa" stroke-width="2"/><line x1="180" y1="85" x2="160" y2="115" stroke="#a78bfa" stroke-width="2"/>
+      <text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Redeneermodel krijgt een taak</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Redeneren</h6>
+      <p class="korte">Een redeneermodel lost een taak op in meerdere tussenstappen.</p>
+      <p class="uitleg">In plaats van direct een antwoord te geven, denkt het model stap voor stap na. Dat verbetert prestaties op complexe taken en maakt het denkproces in principe zichtbaar.</p>
+      <a class="ns-viz-mech-bron" href="https://the-decoder.com" target="_blank">📖 The Decoder ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="90" y="25" width="140" height="150" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="105" y1="55" x2="215" y2="55" stroke="#7c3aed" stroke-width="3"/>
+      <line x1="105" y1="80" x2="200" y2="80" stroke="#7c3aed" stroke-width="3"/>
+      <line x1="105" y1="105" x2="210" y2="105" stroke="#7c3aed" stroke-width="3"/>
+      <line x1="105" y1="130" x2="180" y2="130" stroke="#7c3aed" stroke-width="3"/>
+      <text x="160" y="195" text-anchor="middle" font-size="11" fill="#44403c">chain of thought</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Kladblok</h6>
+      <p class="korte">De tussenstappen komen op een intern kladblok terecht, leesbaar als tekst.</p>
+      <p class="uitleg">Dit kladblok, de chain of thought, is geen garantie dat het model eerlijk is, maar biedt wel een uniek inkijkje in hoe het tot zijn besluit komt.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="50" width="100" height="100" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="55" y1="80" x2="125" y2="80" stroke="#7c3aed" stroke-width="3"/><line x1="55" y1="105" x2="115" y2="105" stroke="#dc2626" stroke-width="3"/>
+      <ellipse cx="230" cy="100" rx="45" ry="28" fill="#fff" stroke="#7c3aed" stroke-width="3"/>
+      <circle cx="230" cy="100" r="13" fill="#7c3aed"/>
+      <line x1="145" y1="100" x2="183" y2="100" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 3"/>
+      <circle class="ns-viz-mech-hotspot" cx="85" cy="105" r="7" data-tip="Riskante redenering valt op"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Toezicht</h6>
+      <p class="korte">Onderzoekers en monitors lezen mee en signaleren riskante redeneringen.</p>
+      <p class="uitleg">Interne teams en externe auditors gebruiken de sporen om misleiding, ongewenste doelen of fouten te ontdekken voordat een model breed wordt uitgerold.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="90" y="25" width="140" height="150" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="105" y1="55" x2="170" y2="55" stroke="#7c3aed" stroke-width="3"/>
+      <rect x="105" y="75" width="110" height="80" fill="#44403c" fill-opacity=".15"/>
+      <text x="160" y="120" text-anchor="middle" font-size="22" fill="#44403c">?</text>
+      <text x="160" y="195" text-anchor="middle" font-size="11" fill="#dc2626">langer denken, minder opschrijven</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Blinde vlek</h6>
+      <p class="korte">Modellen die minder stappen opschrijven, maken toezicht moeilijker.</p>
+      <p class="uitleg">Precies dit punt stond deze zomer intern ter discussie. De drie onderzoekers pleitten voor behoud van leesbare tussenstappen; Balesni deelde daartoe een voorstel van Redwood Research.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>Wie de onderzoekers ontslaat die pleiten voor inzicht in het denken van modellen, wekt de indruk dat dat inzicht niet welkom is.</blockquote>
+<h5>Een patroon bij OpenAI en een signaal aan de sector</h5>
+<p>De zaak staat niet op zichzelf. In 2024 vertrokken prominente veiligheidsmensen bij OpenAI, werd het superalignment-team opgeheven en kwam het bedrijf onder vuur te liggen om vertrekregelingen die kritiek op het bedrijf ontmoedigden. Ook toen werd een onderzoeker ontslagen wegens een vermeend lek. Telkens staat dezelfde spanning centraal: een bedrijf dat razendsnel wil opschalen, tegenover medewerkers die vinden dat veiligheid en openheid achterblijven. Het grootste risico van deze nieuwe zaak zit volgens de drie bij externe toezichthouders: onafhankelijke auditors kunnen terughoudender worden om met AI-bedrijven samen te werken als contact al snel als lek wordt uitgelegd. Dat raakt ook Europa, waar de AI Act juist leunt op toetsing en transparantie bij de krachtigste modellen. En het verhaal resoneert met ander nieuws van vandaag: het onderzoek naar de politieke voorkeur van GPT en Grok laat zien hoe belangrijk het is om te begrijpen hoe modellen tot keuzes komen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Chain of thought</summary>
+    <div class="ns-viz-concept-body">De tussenstappen die een redeneermodel noteert voordat het antwoordt. Een belangrijk hulpmiddel om te zien hoe het model tot een besluit komt.</div></details>
+  <details class="ns-viz-concept"><summary>Verdwijnende berichten</summary>
+    <div class="ns-viz-concept-body">Een Signal-functie die berichten na een ingestelde tijd wist. Volgens Korbak routine in Silicon Valley; voor OpenAI geen goedgekeurd kanaal.</div></details>
+  <details class="ns-viz-concept"><summary>Externe veiligheidsauditor</summary>
+    <div class="ns-viz-concept-body">Onafhankelijke onderzoeker of organisatie die modellen van AI-bedrijven toetst op risico's. Werkt vaak met vertrouwelijke toegang tot de modellen.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>OpenAI kan gelijk hebben dat er regels zijn overtreden, maar een ontslag zonder schriftelijke onderbouwing van wat er gelekt zou zijn, is voor een bedrijf met zo'n invloedrijke positie onverdedigbaar. Juist omdat de drie bekendstonden om hun pleidooi voor controleerbare AI, had OpenAI extra zorgvuldig moeten zijn. Nu blijft de indruk hangen dat kritische veiligheidsstemmen een risico lopen. Wie wil dat de samenleving AI-bedrijven vertrouwt, moet laten zien dat interne tegenspraak beschermd wordt, niet bestraft.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=UvjcDvWrTug" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/UvjcDvWrTug/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI heeft zojuist 3 veiligheidsonderzoekers ONTSLAGEN! (Brief van klokkenluider gelekt)</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/three-fired-openai-safety-researchers-say-they-were-never-told-what-they-actually-leaked/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

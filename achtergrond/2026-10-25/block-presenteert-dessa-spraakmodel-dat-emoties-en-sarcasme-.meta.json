@@ -1,0 +1,16 @@
+{
+  "title": "Block presenteert Dessa: spraakmodel dat emoties en sarcasme direct uit audio haalt",
+  "summary": "Het model van het bedrijf achter Square en Cash App werkt zonder tussenstap via tekst, en draait lokaal op een MacBook Pro.\n\nBlock, het bedrijf achter Square en Cash App, heeft Dessa gepresenteerd: een spraakmodel dat audio direct verwerkt in plaats van eerst naar tekst om te zetten. Het is volledig getraind op menselijke spraak en moet in realtime emoties, sarcasme en pauzes herkennen die tekstmodellen missen.\n\nDessa draait lokaal op een MacBook Pro M4 Max, maar is nog niet publiek beschikbaar.",
+  "sources": [
+    "https://the-decoder.com/blocks-new-ai-model-dessa-was-trained-entirely-on-human-speech-to-catch-emotions-text-based-models-miss/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-25",
+  "slug": "block-presenteert-dessa-spraakmodel-dat-emoties-en-sarcasme-",
+  "tts_slug": "block-presenteert-dessa-spraakmodel-dat-emoties-en-sarcasme-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-25T05:46:01",
+  "size_kb": 12
+}

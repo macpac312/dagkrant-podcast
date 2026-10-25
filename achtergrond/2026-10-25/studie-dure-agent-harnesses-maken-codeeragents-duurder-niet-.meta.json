@@ -1,0 +1,16 @@
+{
+  "title": "Studie: dure agent-harnesses maken codeeragents duurder, niet beter",
+  "summary": "Wisselen tussen Claude Code, OpenCode of mini-SWE-agent verandert de score nauwelijks, maar de kosten per taak kunnen verdrievoudigen.\n\nEen gecontroleerde studie laat zien dat wisselen tussen harnesses voor codeeragents, zoals Claude Code, OpenCode of mini-SWE-agent, de slagingspercentages nauwelijks meer beïnvloedt dan dezelfde opzet opnieuw draaien. De kosten per taak kunnen echter verdrievoudigen.\n\nDe belangrijkste kostendrijver is de systeemprompt, die bij elke stap opnieuw wordt meegestuurd",
+  "sources": [
+    "https://the-decoder.com/fancy-harnesses-make-coding-agents-more-expensive-but-not-better-study-finds/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-25",
+  "slug": "studie-dure-agent-harnesses-maken-codeeragents-duurder-niet-",
+  "tts_slug": "studie-dure-agent-harnesses-maken-codeeragents-duurder-niet-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-25T05:46:01",
+  "size_kb": 13
+}

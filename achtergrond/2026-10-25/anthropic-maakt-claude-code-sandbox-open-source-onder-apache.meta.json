@@ -1,0 +1,16 @@
+{
+  "title": "Anthropic maakt Claude Code-sandbox open source onder Apache 2.0",
+  "summary": "De afschermingslaag waarin Claude Code commando's uitvoert, is nu vrij te gebruiken en aan te passen.\n\nAnthropic heeft de sandbox van Claude Code open source gemaakt onder de Apache 2.0-licentie, meldt AI Weekly. De sandbox is de afschermingslaag die bepaalt welke bestanden en netwerkverbindingen een codeeragent mag gebruiken.\n\nDoor de open licentie kunnen ook andere harnesses en desktopomgevingen, waaronder Linux, dezelfde beveiligingslaag gebruiken.",
+  "sources": [
+    "https://aiweekly.co/alerts/anthropic-open-sources-claude-code-sandbox-under-apache-20"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-10-25",
+  "slug": "anthropic-maakt-claude-code-sandbox-open-source-onder-apache",
+  "tts_slug": "anthropic-maakt-claude-code-sandbox-open-source-onder-apache",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-25T05:46:01",
+  "size_kb": 13
+}

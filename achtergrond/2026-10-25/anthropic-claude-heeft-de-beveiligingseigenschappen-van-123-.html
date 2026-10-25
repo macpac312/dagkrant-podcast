@@ -1,0 +1,95 @@
+<ul class="bg-bullets">
+<li>Anthropic zegt dat Claude de beveiligingseigenschappen van 123 bibliotheken formeel heeft bewezen.</li>
+<li>Formele verificatie levert een wiskundig bewijs, maar kostte traditioneel maanden mensenwerk.</li>
+<li>Als AI dat werk overneemt, wordt bewezen veilige software betaalbaar.</li>
+<li>Een bewijs is zo sterk als de specificatie; onafhankelijke toetsing ontbreekt nog.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De claim in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="123">123</div><div class="ns-viz-stat-label">Bibliotheken formeel bewezen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="6">6</div><div class="ns-viz-stat-label">Agentproducten van Anthropic (OrcaRouter)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2009">2009</div><div class="ns-viz-stat-label">seL4: eerste volledig bewezen OS-kernel</div></div>
+</div></div>
+<h5>Van maanden handwerk naar machinewerk</h5>
+<p>Anthropic zegt dat Claude de beveiligingseigenschappen van 123 softwarebibliotheken formeel heeft bewezen, meldt Unite.AI. Dat klinkt technisch, maar het is een opmerkelijke claim. Formele verificatie levert geen test die laat zien dat code in de geprobeerde gevallen werkt, maar een wiskundig bewijs dat de code in alle gevallen aan een bepaalde eigenschap voldoet, bijvoorbeeld dat er nooit buiten een geheugenbuffer wordt gelezen. De techniek bestaat al decennia, maar was vanwege de kosten voorbehouden aan uitzonderlijke projecten. Het bekendste voorbeeld is seL4, een besturingssysteemkernel waarvan onderzoekers in 2009 de correctheid bewezen, na jarenlang werk door een team van specialisten. Ook de C-compiler CompCert en delen van de cryptografie bij grote cloudbedrijven zijn zo geverifieerd. Voor gewone open-sourcebibliotheken, waarop vrijwel alle software rust, was dat nooit haalbaar: het kost maanden mensenwerk per project, en er zijn simpelweg te weinig specialisten. Daardoor rust de digitale infrastructuur grotendeels op code die wel getest, maar nooit bewezen is, vaak onderhouden door een handvol vrijwilligers.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe formele verificatie met een AI werkt</div>
+<div class="ns-viz-mech-subtitle">Van broncode naar een door de machine gecontroleerd bewijs</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Specificatie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Bewijs</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Controle</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Garantie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="40" width="110" height="120" rx="6" fill="#e5e7eb" stroke="#78716c" stroke-width="2"/>
+      <g stroke="#78716c" stroke-width="3"><line x1="55" y1="65" x2="130" y2="65"/><line x1="65" y1="85" x2="135" y2="85"/><line x1="65" y1="105" x2="120" y2="105"/><line x1="55" y1="125" x2="110" y2="125"/></g>
+      <text x="95" y="178" text-anchor="middle" font-size="11" fill="#44403c">code</text>
+      <rect x="180" y="60" width="110" height="80" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/>
+      <text x="235" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">∀ invoer:</text>
+      <text x="235" y="115" text-anchor="middle" font-size="11" fill="#7c3aed">geen overloop</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Specificatie</h6><p class="korte">Eerst wordt precies vastgelegd welke veiligheidseigenschap de code moet hebben.</p><p class="uitleg">Een specificatie is een formele, wiskundige beschrijving, bijvoorbeeld dat een functie bij geen enkele invoer buiten zijn geheugen leest. Een fout of gat in die specificatie maakt het latere bewijs waardeloos.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="80" cy="100" r="38" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2.5"/>
+      <text x="80" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Claude</text>
+      <g fill="#a78bfa" fill-opacity=".5"><rect x="150" y="50" width="130" height="18" rx="4"/><rect x="160" y="78" width="120" height="18" rx="4"/><rect x="170" y="106" width="110" height="18" rx="4"/><rect x="160" y="134" width="120" height="18" rx="4"/></g>
+      <line x1="120" y1="100" x2="148" y2="100" stroke="#7c3aed" stroke-width="2.5"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Bewijs</h6><p class="korte">Het model stelt stap voor stap een bewijs op dat de code aan de specificatie voldoet.</p><p class="uitleg">Dit is het arbeidsintensieve deel dat specialisten traditioneel maanden kostte: hulpstellingen bedenken, invarianten formuleren en mislukte pogingen herstellen. Een taalmodel kan dat zoekwerk grotendeels automatiseren.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="70" width="90" height="60" rx="6" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <text x="85" y="105" text-anchor="middle" font-size="11" fill="#44403c">bewijs</text>
+      <line x1="132" y1="100" x2="168" y2="100" stroke="#7c3aed" stroke-width="2.5"/>
+      <rect x="170" y="55" width="110" height="90" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2.5"/>
+      <text x="225" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">bewijs-</text>
+      <text x="225" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">controleur</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Controle</h6><p class="korte">Een klein, betrouwbaar programma controleert elke stap; het model zelf hoeft niet vertrouwd te worden.</p><p class="uitleg">Dat is de kern van de aanpak. Een AI kan zich vergissen of hallucineren, maar een bewijscontroleur accepteert alleen logisch sluitende stappen. Een fout bewijs wordt dus geweigerd, niet ongemerkt doorgelaten.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M160,30 L230,55 L230,110 C230,145 195,165 160,175 C125,165 90,145 90,110 L90,55 Z" fill="#7c3aed" fill-opacity=".18" stroke="#7c3aed" stroke-width="2.5"/>
+      <path d="M130,105 L152,128 L195,82" fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Garantie</h6><p class="korte">De bibliotheek is aantoonbaar vrij van de gespecificeerde fout, voor elke mogelijke invoer.</p><p class="uitleg">Anders dan testen dekt een bewijs alle gevallen. De garantie geldt wel alleen voor de bewezen eigenschap: andere fouten, of fouten in de omgeving van de code, blijven mogelijk.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom een taalmodel hier goed past</h5>
+<p>Formele verificatie is een bijna ideaal terrein voor AI, om een reden die vaak over het hoofd wordt gezien: het resultaat is controleerbaar. Een taalmodel kan zich vergissen en verzint soms dingen, maar een bewijs wordt gecontroleerd door een klein, wiskundig betrouwbaar programma dat alleen sluitende redeneringen accepteert. Een fout bewijs komt er dus niet door. Het model doet het zoekwerk dat mensen maanden kost, de machine bewaakt de waarheid. Dat verklaart waarom meerdere AI-labs zich nadrukkelijk op wiskunde en bewijsvoering richten: het is een domein waarin vooruitgang objectief meetbaar is. Het zwakke punt zit ergens anders: in de specificatie. Een bewijs garandeert alleen wat vooraf is opgeschreven. Is de eigenschap te smal of verkeerd geformuleerd, dan is de bibliotheek wiskundig correct en toch onveilig. Zolang Anthropic niet publiceert welke eigenschappen precies zijn bewezen en wie de specificaties heeft opgesteld, valt de claim van 123 bibliotheken moeilijk op waarde te schatten. Ook onduidelijk is hoe groot de bibliotheken waren: een bewijs voor een kleine hulpfunctie is iets anders dan voor een complete cryptografische bibliotheek.</p>
+<blockquote>Een AI-bewijs hoeft niet vertrouwd te worden: de controleur weigert elke stap die niet klopt. Het risico verschuift naar de specificatie.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Waarom bewezen veilige bibliotheken ertoe doen</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2009</div><div>seL4-kernel als eerste volledig formeel bewezen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2014</div><div>Heartbleed: geheugenlek in OpenSSL treft half internet</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2021</div><div>Log4Shell in Java-bibliotheek Log4j</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2024</div><div>Achterdeur in compressiebibliotheek xz ontdekt</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>Claude bewijst eigenschappen van 123 bibliotheken</div></div>
+</div></div>
+<h5>Gevolgen voor de softwareketen</h5>
+<p>De relevantie wordt duidelijk als je terugkijkt. Heartbleed in 2014, Log4Shell in 2021 en de achterdeur in xz in 2024 lieten zien hoe één zwakke plek in een veelgebruikte bibliotheek wereldwijd systemen kan raken. Europa reageert daarop met de Cyber Resilience Act, die fabrikanten verantwoordelijk maakt voor de veiligheid van hun producten, inclusief de open-sourceonderdelen die ze gebruiken. Als AI bewezen veilige bibliotheken betaalbaar maakt, verandert de economie van softwarebeveiliging fundamenteel. Wel blijft voorzichtigheid geboden. De claim komt van Anthropic zelf, via Unite.AI, en onafhankelijke toetsing ontbreekt nog. Ook het moment is veelzeggend: in dezelfde week maakte Anthropic de sandbox van Claude Code open source en publiceerde OrcaRouter een overzicht van zes agentproducten van het bedrijf. Veiligheid wordt zo nadrukkelijk het verkoopargument in de strijd om zakelijke klanten. Voor Nederlandse bedrijven en overheden die onder de nieuwe Europese regels vallen, kan zo'n aanpak op termijn een praktische manier worden om aan te tonen dat gebruikte componenten aan veiligheidseisen voldoen.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Formele verificatie is maandenlang specialistenwerk, alleen voor kernels, compilers en cryptografie.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>AI maakt bewijzen op schaal mogelijk, ook voor gewone open-sourcebibliotheken; de specificatie wordt het knelpunt.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Als de claim standhoudt, is dit een van de nuttigste toepassingen van AI tot nu toe: niet meer code schrijven, maar bestaande code aantoonbaar veiliger maken. De ironie is dat AI-gegenereerde code juist zorgen baart over kwaliteit, terwijl AI-gegenereerde bewijzen die zorg deels kunnen wegnemen. Maar een bewijs is zo goed als de vraag die het beantwoordt, en die vraag blijft voorlopig mensenwerk. Anthropic moet de specificaties openbaar maken, zodat anderen kunnen beoordelen of de 123 bibliotheken werkelijk veiliger zijn of alleen op papier.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=f-doX7iZM0o" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/f-doX7iZM0o/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Anthropic: Claude heeft de beveiligingseigenschappen van 123 bibliotheken formeel bewezen 2026</div></div></a></div>
