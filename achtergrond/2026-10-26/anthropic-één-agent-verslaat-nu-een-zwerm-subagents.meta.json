@@ -1,0 +1,16 @@
+{
+  "title": "Anthropic: één agent verslaat nu een zwerm subagents",
+  "summary": "Nu modellen complexiteit zelf aankunnen, adviseert Anthropic om subagents te consolideren. Een migratiekit staat op GitHub.\n\nAnthropic adviseert bedrijven te kijken of ze hun subagents kunnen samenvoegen tot één agent die context op aanvraag laadt. In een vergelijking van architecturen draaide de opzet met één agent ongeveer twee keer zo snel, meldt The Decoder. Anthropic publiceerde een migratiekit op GitHub.\n\nDe redenering: krachtigere modellen hebben minder behoefte aan opgeknipte taken en ge",
+  "sources": [
+    "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-26",
+  "slug": "anthropic-één-agent-verslaat-nu-een-zwerm-subagents",
+  "tts_slug": "anthropic-één-agent-verslaat-nu-een-zwerm-subagents",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-26T05:53:49",
+  "size_kb": 14
+}

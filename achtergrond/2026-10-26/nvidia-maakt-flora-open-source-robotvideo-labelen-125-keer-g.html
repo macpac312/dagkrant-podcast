@@ -1,0 +1,79 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/nvidia-flora-hero-robot-hands.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Nvidia maakt Flora open source: een uur robotvideo labelen voor 72 cent in plaats van 88,50 dollar.</li>
+<li>Drie gefinetunede Qwen3.5-modellen leveren alle drie soorten labels die robotmodellen nodig hebben.</li>
+<li>Flora vindt actiegrenzen het best, maar Astra beschrijft vaak preciezer.</li>
+<li>De kostenclaim is een projectie, geen productiemeting; de trend naar specialistische modellen is echt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kosten per uur gelabelde robotvideo</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">GPT-6 Astra</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">$88,50</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Claude Opus 5</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:47%">~$42</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Flora (projectie)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:2%">$0,72</div></div></div>
+</div></div>
+<h5>Het datatekort van de robotica</h5>
+<p>Grote AI-modellen voor robots leren van video, maar ruwe beelden zijn niet genoeg. Elke video moet worden voorzien van tekstuele annotaties, en volgens Nvidia's onderzoekslab GEAR zijn daar drie soorten van nodig. Beschrijvingen van welke actie wanneer plaatsvindt, om trainingsdata te selecteren. Beoordelingen van hoe goed een robot stap voor stap vordert, zodat hij kan leren met vallen en opstaan. En oordelen over of een taak is geslaagd, om robots tijdens gebruik te bewaken. De meeste bestaande tools leveren maar één van die soorten. Grote taalmodellen zoals GPT-6 Astra kunnen er meerdere maken, maar zijn te duur voor de enorme hoeveelheden video die robotica vraagt. Daar komt Flora binnen, een open data-engine die volgens Nvidia alle drie de soorten levert. Het systeem draait al bij de training van Nvidia's GR00T-modellen, met tot 200.000 uur video per dag op 512 GB300-gpu's.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe Flora robotvideo labelt</div>
+<div class="ns-viz-mech-subtitle">Van ruwe beelden naar trainingsdata voor GR00T</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Segmenteren</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Beschrijven</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Beoordelen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Trainen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="60" width="280" height="60" rx="6" fill="#1c1917" fill-opacity=".85"/><g fill="#a78bfa" fill-opacity=".6"><rect x="28" y="68" width="60" height="44" rx="3"/><rect x="96" y="68" width="90" height="44" rx="3"/><rect x="194" y="68" width="98" height="44" rx="3"/></g><g stroke="#f97316" stroke-width="3"><line x1="92" y1="52" x2="92" y2="128"/><line x1="190" y1="52" x2="190" y2="128"/></g><g font-size="10" fill="#44403c" text-anchor="middle"><text x="58" y="145">grijpen</text><text x="141" y="145">optillen</text><text x="243" y="145">plaatsen</text></g><text x="160" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">9B-model knipt in acties</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Segmenteren</h6><p class="korte">Een 9B-model knipt de video op in afzonderlijke actiesegmenten.</p><p class="uitleg">Het vinden van de grenzen tussen acties is waar Flora volgens Nvidia het sterkst is: op de publieke WGO-Bench scoort het daar het best van alle geteste systemen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="70" width="80" height="60" rx="6" fill="#a78bfa" fill-opacity=".6"/><text x="70" y="104" text-anchor="middle" font-size="11" fill="#fff">segment</text><line x1="112" y1="100" x2="150" y2="100" stroke="#7c3aed" stroke-width="3"/><rect x="150" y="45" width="140" height="110" rx="8" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><g font-size="11" fill="#44403c"><text x="160" y="70">"De arm pakt de</text><text x="160" y="88">rode beker op, na</text><text x="160" y="106">het openen van de</text><text x="160" y="124">la…"</text></g><text x="220" y="175" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">27B-model</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Beschrijven</h6><p class="korte">Een 27B-model beschrijft elk segment, met oog voor wat ervoor en erna gebeurde.</p><p class="uitleg">Die context maakt de beschrijvingen bruikbaar voor de selectie van trainingsdata. Op pure beschrijvingsnauwkeurigheid blijft Flora wel achter bij Gemini 3.8 Flash, en Astra beschrijft acties vaak preciezer.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><g font-size="11" text-anchor="middle"><rect x="25" y="40" width="80" height="34" rx="6" fill="#16a34a"/><text x="65" y="62" fill="#fff">normaal</text><rect x="120" y="40" width="80" height="34" rx="6" fill="#f97316"/><text x="160" y="62" fill="#fff">suboptimaal</text><rect x="215" y="40" width="80" height="34" rx="6" fill="#dc2626"/><text x="255" y="62" fill="#fff">fout</text></g><text x="160" y="100" text-anchor="middle" font-size="11" fill="#44403c">per halve seconde</text><g fill="#7c3aed"><circle cx="100" cy="140" r="10"/><circle cx="130" cy="140" r="10"/><circle cx="160" cy="140" r="10"/><circle cx="190" cy="140" r="10" fill-opacity=".3"/><circle cx="220" cy="140" r="10" fill-opacity=".3"/></g><text x="160" y="178" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">succes 3 / 5</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Beoordelen</h6><p class="korte">Flora-Rewarder beoordeelt succes, elke stap en eigen rubrieken.</p><p class="uitleg">Een tweede 27B-model vervult afhankelijk van de prompt drie rollen: het scoort het succes van een episode op een schaal van 1 tot 5, classificeert elke halve seconde als normaal, suboptimaal of fout, en geeft scores op zelfgedefinieerde rubrieken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="50" width="100" height="100" rx="8" fill="#1c1917" fill-opacity=".85"/><g fill="#7c3aed"><rect x="52" y="62" width="34" height="34"/><rect x="94" y="62" width="34" height="34"/><rect x="52" y="104" width="34" height="34"/><rect x="94" y="104" width="34" height="34"/></g><text x="90" y="170" text-anchor="middle" font-size="11" fill="#44403c">512 × GB300</text><line x1="145" y1="100" x2="185" y2="100" stroke="#7c3aed" stroke-width="3"/><circle cx="235" cy="70" r="16" fill="#a78bfa"/><rect x="220" y="88" width="30" height="45" rx="6" fill="#a78bfa"/><line x1="250" y1="98" x2="280" y2="80" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/><text x="235" y="160" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">GR00T</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Trainen</h6><p class="korte">De labels voeden de training van Nvidia's GR00T-robotmodellen.</p><p class="uitleg">Volgens Nvidia annoteert Flora tot 200.000 uur video per dag op 512 GB300-gpu's. De modellen staan op Hugging Face, zodat ook andere robotbouwers ze kunnen inzetten.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Hoe eerlijk is de vergelijking?</h5>
+<p>De kop van 125 keer goedkoper verdient een kanttekening, en The Decoder plaatst die ook. In een test met 50 video's scoorde Flora volgens Nvidia iets beter dan GPT-6 Astra, ook al mocht het OpenAI-model zijn volledige redeneercapaciteit gebruiken. Claude Opus 5 scoorde in dezelfde test veel slechter en kostte nog altijd ongeveer 42 dollar per uur. Maar de kosten van Flora zijn een projectie, geen meting in productie: Nvidia rekende met een veronderstelde huurprijs van 10 dollar per gpu per uur. Ook inhoudelijk is het beeld genuanceerder. Op de publieke WGO-Bench is Flora het best in het vinden van actiegrenzen, maar blijft het in de totaalscore achter bij Astra en op pure beschrijvingsnauwkeurigheid bij Gemini 3.8 Flash. De winst zit dus vooral in structuur en schaal, niet in betere taal.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Onderdeel</th><th style="text-align:right;padding:.3rem .5rem">Model</th><th style="text-align:right;padding:.3rem .5rem">Rol</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Segmentatie</td><td style="text-align:right">Qwen3.5 9B</td><td style="text-align:right">actiegrenzen</td></tr>
+    <tr><td style="padding:.25rem .5rem">Beschrijving</td><td style="text-align:right">Qwen3.5 27B</td><td style="text-align:right">wat, wanneer</td></tr>
+    <tr><td style="padding:.25rem .5rem">Flora-Rewarder</td><td style="text-align:right">Qwen3.5 27B</td><td style="text-align:right">succes, stappen, rubrieken</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Flora bestaat uit drie gefinetunede Qwen3.5-modellen.</p>
+</div>
+<blockquote>De kostencijfers van Flora zijn een projectie op basis van 10 dollar per gpu-uur, geen productiemeting.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 De drie labels die een robotmodel nodig heeft</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Actiebeschrijving</summary>
+    <div class="ns-viz-concept-body">Welke handeling vindt wanneer plaats in de video? Wordt gebruikt om de juiste trainingsdata te selecteren.</div></details>
+  <details class="ns-viz-concept"><summary>Voortgangsbeoordeling</summary>
+    <div class="ns-viz-concept-body">Hoe goed vordert de robot stap voor stap? Dit signaal maakt leren met vallen en opstaan mogelijk.</div></details>
+  <details class="ns-viz-concept"><summary>Succesoordeel</summary>
+    <div class="ns-viz-concept-body">Is de taak geslaagd? Wordt gebruikt om robots tijdens hun inzet te bewaken en fouten op te merken.</div></details>
+</div></div>
+<p>De schaal waarop Nvidia Flora inzet, laat zien waarom de prijs per uur zo zwaar weegt. Bij 200.000 uur video per dag zou een tarief van tientallen dollars per uur neerkomen op miljoenen dollars per dag, alleen voor het labelen. Met minder dan een dollar per uur wordt hetzelfde volume een beheersbare kostenpost. Daarmee verandert ook wat haalbaar is: wie goedkoop kan labelen, kan meer en gevarieerdere video gebruiken, en dat is in robotica, waar echte data schaars en duur is, misschien wel de belangrijkste winst.</p>
+<h5>Specialisten tegen generalisten</h5>
+<p>Flora past in een patroon dat deze krant vandaag vaker laat zien. Terwijl OpenAI en Anthropic hun prijzen in enkele maanden tot 80 procent verlaagden en elkaars klanten bestoken met kortingen, laat Nvidia zien dat een gespecialiseerd, open model voor een afgebakende taak een frontier-model op prijs verplettert en op kwaliteit bijbenen kan. Opvallend is de keuze voor Qwen, de modelfamilie van het Chinese Alibaba, als basis: open Chinese modellen zetten de prijsdruk ook hier. Voor Nvidia is de logica helder. Wie robotbouwers goedkope tools geeft om data te labelen, vergroot de vraag naar de gpu's waarop zowel het labelen als het trainen draait.</p>
+<h5>Conclusie</h5>
+<p>De factor 125 is een marketingcijfer met een aanname eronder, maar de richting is overtuigend. Voor massale, repetitieve taken als het labelen van robotvideo zijn algemene frontier-modellen simpelweg te duur, en een gericht open systeem is goed genoeg of beter. Het knelpunt van robotica verschuift daarmee van data annoteren naar data verzamelen. Nvidia maakt het eerste goedkoop en verkoopt intussen de hardware voor beide.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=vtGDWUd__zE" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/vtGDWUd__zE/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Nvidia maakt Flora open source: robotvideo labelen 125 keer goedkoper dan met GPT-6 Astra 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

@@ -1,0 +1,16 @@
+{
+  "title": "Nvidia maakt Flora open source: robotvideo labelen 125 keer goedkoper dan met GPT-6 Astra",
+  "summary": "72 cent per uur video in plaats van 88 dollar, bij iets hogere kwaliteit.\n\nNvidia heeft Flora open source gemaakt, een data-engine die een uur robotvideo labelt voor 72 cent, tegenover 88 dollar met GPT-6 Astra, bij een iets hogere kwaliteitsscore, meldt The Decoder. Het systeem is gebouwd op drie gefinetunede Qwen3.5-modellen.\n\nFlora vangt fouten in robotacties volgens Nvidia veel betrouwbaarder dan algemene modellen.",
+  "sources": [
+    "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-26",
+  "slug": "nvidia-maakt-flora-open-source-robotvideo-labelen-125-keer-g",
+  "tts_slug": "nvidia-maakt-flora-open-source-robotvideo-labelen-125-keer-g",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-10-26T05:53:51",
+  "size_kb": 13
+}

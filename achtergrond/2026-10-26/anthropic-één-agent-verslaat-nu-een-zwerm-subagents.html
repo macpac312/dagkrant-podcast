@@ -1,0 +1,78 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/claude_claude_baby_logos.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Anthropic adviseert subagents samen te voegen tot één agent die context op aanvraag laadt.</li>
+<li>Nieuwere modellen plannen complexe taken zelf in één lus; orkestratielagen worden overbodig.</li>
+<li>In één vergelijking draaide de enkele agent ongeveer twee keer zo snel.</li>
+<li>Een migratiekit op GitHub moet teams helpen de overstap te evalueren.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Van zwerm naar één agent</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Intentherkenning, vaste pijplijn, segmentatie, aparte aanbevelingstakken en een orkestrator erboven. Elk team een eigen subagent, systeem-prompt vol tegenstrijdige regels.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>Eén hoofdagent met een schone systeem-prompt, vier à vijf slanke datatools, vaste guardrails op de output en skills die pas laden als ze nodig zijn.</p></div>
+</div></div>
+<h5>Een architectuur die het organogram kopieerde</h5>
+<p>Toen taalmodellen nog moeite hadden met lange, samengestelde opdrachten, was het logisch om taken op te knippen. Een orkestrator verdeelde het werk, gespecialiseerde subagents voerden deelopdrachten uit, en vaste pijplijnen hielden het geheel in het gareel. Anthropic stelt nu dat die aanpak achterhaald raakt. Op basis van ervaring bij meerdere zakelijke implementaties concludeerde het Applied AI-team dat één agent met zogeheten skills vaak beter presteert dan zowel monolithische prompts als subagent-opstellingen, op kwaliteit, kosten en wachttijd. Nieuwere modellen, vanaf Opus 4.5 en inmiddels Opus 5.5 en Fable 5.1, kunnen complexe plannen direct in één lus afhandelen. In één vergelijking was de enkele agent ongeveer twee keer zo snel als de multi-agentopzet. Anthropic publiceerde een migratiekit op GitHub.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kerncijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="~" data-target="2" data-suffix="×">~2×</div><div class="ns-viz-stat-label">Sneller met één agent in Anthropics vergelijking</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="&gt;" data-target="80" data-suffix="%">&gt;80%</div><div class="ns-viz-stat-label">Kortere systeem-prompt voor Claude Code</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="12">12</div><div class="ns-viz-stat-label">Subagents in één klantgerichte agent (voorbeeld)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5">5</div><div class="ns-viz-stat-label">Maximaal aantal slanke datatools dat volstaat</div></div>
+</div></div>
+<h5>Conway's Law en de Frankenprompt</h5>
+<p>Anthropic gebruikt een treffende vergelijking: Conway's Law voor agents. De wet stelt dat systemen de communicatiestructuur weerspiegelen van de organisatie die ze bouwt. Bij agents betekent dat: elk team levert zijn eigen subagent, tot er honderden overlappende agents zonder gedeelde standaarden zijn. Het gevolg noemt het bedrijf een Frankenprompt, een systeem-prompt waarin elk team regels toevoegt die elkaar uiteindelijk tegenspreken. Eén bedrijf had een dozijn gespecialiseerde subagents in zijn klantgerichte agent, met een inconsistente merkervaring en hoge wachttijden als resultaat. Volgens Anthropic dekken een schone prompt, vier à vijf datatools en vaste guardrails een groot deel van de toepassing. Het bedrijf paste dat zelf toe: de systeem-prompt van Claude Code werd voor nieuwere modellen met meer dan 80 procent ingekort, mede doordat skills en tools pas laden als ze nodig zijn.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de consolidatie werkt</div>
+<div class="ns-viz-mech-subtitle">Van een dozijn subagents naar één agent met skills op aanvraag</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Inventaris</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Skills</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Eén lus</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Guardrails</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="130" y="15" width="60" height="30" rx="6" fill="#7c3aed"/><text x="160" y="35" text-anchor="middle" font-size="11" fill="#fff">orkestrator</text><g stroke="#a78bfa" stroke-width="1.5"><line x1="160" y1="45" x2="40" y2="110"/><line x1="160" y1="45" x2="100" y2="110"/><line x1="160" y1="45" x2="160" y2="110"/><line x1="160" y1="45" x2="220" y2="110"/><line x1="160" y1="45" x2="280" y2="110"/></g><g fill="#a78bfa"><rect x="20" y="110" width="40" height="26" rx="5"/><rect x="80" y="110" width="40" height="26" rx="5"/><rect x="140" y="110" width="40" height="26" rx="5"/><rect x="200" y="110" width="40" height="26" rx="5"/><rect x="260" y="110" width="40" height="26" rx="5"/><rect x="50" y="150" width="40" height="26" rx="5"/><rect x="110" y="150" width="40" height="26" rx="5"/><rect x="170" y="150" width="40" height="26" rx="5"/><rect x="230" y="150" width="40" height="26" rx="5"/></g><text x="160" y="196" text-anchor="middle" font-size="10" fill="#44403c">elk team een eigen subagent</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Inventaris</h6><p class="korte">Breng in kaart welke subagents, pijplijnen en regels er zijn opgestapeld.</p><p class="uitleg">Veel ontwerpen volgen hetzelfde patroon: intentherkenning, vaste verwerking, gebruikerssegmentatie, aparte aanbevelingstakken en een orkestrator. Volgens Anthropic kan het model veel daarvan nu zelf.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><g fill="#a78bfa" fill-opacity=".35" stroke="#7c3aed"><rect x="30" y="40" width="70" height="40" rx="6"/><rect x="125" y="40" width="70" height="40" rx="6"/><rect x="220" y="40" width="70" height="40" rx="6"/></g><g font-size="11" text-anchor="middle" fill="#44403c"><text x="65" y="65">skill</text><text x="160" y="65">skill</text><text x="255" y="65">skill</text></g><path d="M65 82 L150 135 M160 82 L160 132 M255 82 L170 135" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 4" fill="none"/><circle cx="160" cy="150" r="20" fill="#7c3aed"/><text x="160" y="155" text-anchor="middle" font-size="11" fill="#fff">agent</text><text x="160" y="192" text-anchor="middle" font-size="10" fill="#44403c">laadt alleen wat nodig is</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Skills</h6><p class="korte">Specialistische kennis wordt een skill die de agent op aanvraag laadt.</p><p class="uitleg">In plaats van een aparte subagent per taak, wordt de expertise gebundeld als skill. Die komt pas in de context als de taak erom vraagt, wat de prompt kort en consistent houdt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="160" cy="100" r="60" fill="none" stroke="#a78bfa" stroke-width="6"/><path d="M215 75 L222 92 L205 90" fill="#a78bfa"/><circle cx="160" cy="100" r="26" fill="#7c3aed"/><text x="160" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">plan</text><g font-size="11" fill="#44403c" text-anchor="middle"><text x="160" y="30">denken</text><text x="250" y="105">tool</text><text x="160" y="180">controle</text><text x="70" y="105">bijsturen</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Eén lus</h6><p class="korte">Het model plant, voert uit en controleert zichzelf binnen één lus.</p><p class="uitleg">Nieuwere modellen melden hun eigen voortgang en controleren hun werk, waardoor extra controlelagen deels overbodig worden. Minder overdrachten tussen agents betekent minder vertraging: in Anthropics vergelijking ongeveer twee keer zo snel.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="90" cy="100" r="24" fill="#7c3aed"/><text x="90" y="105" text-anchor="middle" font-size="11" fill="#fff">agent</text><line x1="114" y1="100" x2="200" y2="100" stroke="#7c3aed" stroke-width="3"/><rect x="200" y="55" width="16" height="90" rx="4" fill="#16a34a"/><text x="208" y="45" text-anchor="middle" font-size="11" fill="#16a34a">guardrail</text><rect x="235" y="80" width="60" height="40" rx="6" fill="#a78bfa"/><text x="265" y="105" text-anchor="middle" font-size="11" fill="#fff">output</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Guardrails</h6><p class="korte">Vaste controles op de uitvoer bewaken kwaliteit en merkervaring.</p><p class="uitleg">De vrijheid van één agent wordt begrensd aan de achterkant: vaste guardrails op de output, in plaats van een web van regels verspreid over subagents. Subagents blijven volgens Anthropic zinvol in specifieke gevallen, zoals wanneer het contextvenster van één agent meetbaar gaat knellen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>De architectuur wordt een kopie van het organogram: elk team levert zijn eigen subagent, tot honderden overlappende agents zich opstapelen zonder gedeelde standaarden.</blockquote>
+<h5>Gevolgen voor bedrijven en voor de markt</h5>
+<p>Voor bedrijven die het afgelopen jaar fors investeerden in multi-agentplatforms is dit ongemakkelijk advies. Een deel van die architectuur blijkt een tijdelijke oplossing voor de beperkingen van oudere modellen. Tegelijk is het advies niet belangeloos: wie consolideert op één krachtig model, wordt afhankelijker van de leverancier van dat model. Dat speelt nu de prijzenoorlog woedt, waarin OpenAI Anthropic-klanten met kortingen tot 90 procent probeert over te halen. Eenvoudiger architecturen maken overstappen technisch makkelijker, maar commercieel ook spannender. Het advies past bovendien in een bredere verschuiving in het vak: minder sturing van buitenaf, meer vertrouwen in het model zelf.</p>
+<p>Er is ook een technische kant die vaak onderbelicht blijft. Elke overdracht tussen agents kost tijd en tokens: de orkestrator moet een taak formuleren, de subagent moet context opbouwen en het resultaat moet weer worden samengevat. Bij één agent die skills op aanvraag laadt, verdwijnt een groot deel van die overdrachten. Dat verklaart de gemeten snelheidswinst en raakt aan de kostenanalyse in deze krant over de prijzenoorlog, waaruit blijkt dat bij codeeragents het opnieuw meesturen van context het overgrote deel van de rekening vormt. Minder agents betekent minder herhaalde context.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Subagent</summary>
+    <div class="ns-viz-concept-body">Een aparte AI-agent met een eigen opdracht en context, aangestuurd door een orkestrator die deeltaken uitdeelt en resultaten verzamelt.</div></details>
+  <details class="ns-viz-concept"><summary>Skill</summary>
+    <div class="ns-viz-concept-body">Een bundel instructies, kennis of tools die de agent pas in zijn context laadt wanneer een taak erom vraagt, in plaats van alles vooraf in de prompt.</div></details>
+  <details class="ns-viz-concept"><summary>Conway's Law</summary>
+    <div class="ns-viz-concept-body">Het principe dat systemen de structuur kopiëren van de organisatie die ze bouwt. Anthropic past het toe op agents die het organogram nabootsen.</div></details>
+  <details class="ns-viz-concept"><summary>Frankenprompt</summary>
+    <div class="ns-viz-concept-body">Anthropics term voor een systeem-prompt waarin elk team eigen regels heeft toegevoegd, tot ze elkaar tegenspreken.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Het advies van Anthropic is in de kern een les over software in een tijd van snel verbeterende modellen: elke laag die je bouwt om een zwakte van het model te compenseren, wordt technische schuld zodra het model beter wordt. Bedrijven doen er goed aan hun agentarchitectuur periodiek te toetsen tegen de nieuwste modellen, en complexiteit te behandelen als een kostenpost die zich moet bewijzen. Eenvoud is hier geen esthetische keuze, maar een concurrentievoordeel.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Nh5lHcaIwzw" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Nh5lHcaIwzw/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Single Loop vs. Subagents: Which Agent Architecture Wins?</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>
