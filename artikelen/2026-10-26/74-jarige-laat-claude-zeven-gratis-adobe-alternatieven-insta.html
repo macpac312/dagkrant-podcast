@@ -1,0 +1,37 @@
+<figure class="reader-hero"><img src="https://assets.st-note.com/production/uploads/images/326547433/rectangle_large_type_2_0a5c5ead756b951809305c4a289c260d.png?fit=bounds&amp;quality=85&amp;width=1280" alt="At 74, I had Claude run 7 free Adobe alternatives on Linux Mint｜sunset よしえもん" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>At 74, I had Claude run 7 free Adobe alternatives on Linux Mint｜sunset よしえもん</h1>
+<p>At 74, I had Claude run 7 free Adobe alternatives on Linux Mint. Oct 20, 2026 · @Yoshio</p>
+<h2>Introduction</h2>
+<p>It took me half a day to install 7 free Adobe alternatives on my Linux Mint PC and get Claude to run them. The inspiration was a YouTube video claiming that &quot;Adobe has been completely recreated for free.&quot; It showed that software replacing Photoshop, Premiere, Word, and Excel was available for free and could be operated by Claude (AI). Can I really do this at 74? I will write down everything, including the parts where I stumbled, after actually trying it. I hope this serves as a guide for others who want to try the same thing.</p>
+<h2>What is ArtCraft?</h2>
+<p>ArtCraft is a collection of free software released by an overseas development team. The source code is fully public, and it uses a license (MIT/Apache-2.0) that allows free use even for work. It runs on Windows, Mac, and Linux. The 7 programs I installed this time are as follows (as of October 20, 2026).</p>
+<p>The biggest feature is that every piece of software is designed to be operated by text commands. That is why an AI can operate them instead of a human. <strong>I will also write about the honest current situation.</strong> Although the video introduced them as &quot;exactly the same as Adobe,&quot; the developers themselves write that &quot;it is still in the early prototype stage (alpha version) and cannot yet replace professional daily work.&quot; The fact that you can try them for free and that an AI can operate them is certain. Source: <a href="https://getartcraft.com/apps" target="_blank" rel="noopener">ArtCraft Official Page</a>, <a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener">PhotoCraft (GitHub)</a></p>
+<h2>Step 1: Install all 7 programs at once</h2>
+<p>By simply pasting the following command into the terminal (the black screen), all 7 programs were installed in a few minutes. This is for Linux Mint and Ubuntu (64-bit). This command fetches each piece of software from its official GitHub repository and verifies that it is a &quot;genuine file&quot; using a number (SHA256) before installing it. You need about 1GB of free space in total.</p>
+<p>Copy the entire contents of the box below, paste it into the terminal, and press Enter (to paste, use Ctrl + Shift + V)</p>
+<p>If asked for a password, enter your login password (no characters will appear on the screen, but this is normal)</p>
+<p>At first, I tried to receive the script as a file and run it from the &quot;Downloads&quot; folder. However, it said &quot;No such file.&quot; It hadn&#x27;t been saved. I solved this by using the method above where &quot;pasting it creates the file as well.&quot;</p>
+<p>At the end, a line mixed with English appears saying &quot;N: File... without going through the sandbox...&quot; This is not an error, just a notification.</p>
+<p>When taking a screenshot to show others, please make sure your password is not visible. I once accidentally typed my password into the command field and took a picture of it.</p>
+<p>The installed software can be found by opening the green mark (menu) at the bottom left of the screen and typing &quot;photo,&quot; &quot;word,&quot; etc.</p>
+<h2>Step 2: Install and log in to Claude Code</h2>
+<p>Claude Code is Claude used within the terminal. Since the Claude you talk to in a browser runs on the internet, it cannot operate software on your own computer. To have it run software on your PC, you need Claude Code. Using it requires a paid Claude plan (Pro or higher).</p>
+<p>curl -fsSL https://claude.ai/install.sh | bash</p>
+<p>When &quot;Claude Code successfully installed!&quot; appears, close the terminal and reopen it.</p>
+<p>Create a working folder and launch Claude there.</p>
+<p>When asked &quot;Do you trust this folder?&quot;, use the down arrow key to select &quot;Yes, I trust this folder&quot; and press Enter.</p>
+<p>Type /login in the input field and select &quot;Claude account with subscription&quot;.</p>
+<p>A browser will open; log in. If it says &quot;You are ready to use Claude Code,&quot; you have succeeded.</p>
+<p>At first, I launched it in the entire home folder. If you grant permission there, Claude will be able to access everything, including photos and documents. It is safer to separate a working folder.</p>
+<p>On the confirmation screen, the item marked with &quot;❯&quot; is selected. At first, I pressed Enter while &quot;No, exit&quot; was still marked, and Claude exited.</p>
+<p>If &quot;Not logged in&quot; appears in the bottom right even after launching, you cannot use it yet. /login is required.</p>
+<p>If you choose the login method labeled &quot;API&quot; or &quot;Console,&quot; you will be charged separately for usage. It is fine as long as the display on the screen says &quot;Claude Pro.&quot;</p>
+<h2>Step 3: Requesting my first task</h2>
+<p>My first task was to create a table calculating the cost of the Adobe corporate version. When I asked in Japanese, Claude ran GridCraft (an Excel alternative) on its own and created the table in a few dozen seconds. Request text: Using gridcraft-cli, create a table calculating the monthly, annual, and 10-year total costs for 5 people using the Adobe corporate version (11,990 yen per person per month), and save it as &quot;Adobe_Cost_Estimate.xlsx&quot;. Display the contents when finished. The resulting table: Period Cost (yen) Monthly 59,950 Annual 719,400 10-year total 7,194,000 The table contains formulas, so if you change the unit price or the number of people, the total will change automatically. When I followed up by asking, &quot;Also add the case for 10 people,&quot; it corrected it right away.</p>
+<p>You may be asked, &quot;Do you want to execute this command?&quot; along the way. Until you get used to it, it is safer to choose &quot;1. Yes&quot; to see how things go. In the current version, &quot;Auto Mode&quot; is the default, so it proceeds with safe operations without confirmation (you can toggle this with Shift + Tab).</p>
+<h2>Step 4: Create a system so you don&#x27;t have to worry about forgetting the steps</h2>
+<p>Even if you succeed once, you will forget the steps by the next time you try. So, I created two systems to avoid having to memorize them.</p>
+<p><strong>Desktop icon</strong>: Double-clicking it launches Claude in the working folder. You don&#x27;t need to type any commands.</p>
+<p><strong>Memo for Claude (CLAUDE.md)</strong>: If you keep this in your working folder, Claude reads it every time it starts. Even if you don&#x27;t remember the names of the software, you can just say &quot;make a table&quot; and it will use the correct software.</p>
+<p>With Claude Code closed, paste the entire block below into your terminal and press Enter. Please rewrite the &quot;User&quot; line in the memo to suit yourself.</p>
+<p class="bg-footer">Bron: <a href="https://note.com/livenavi/n/n9b68ed5d4c63?hl=en" target="_blank" rel="noopener">note.com</a></p>
