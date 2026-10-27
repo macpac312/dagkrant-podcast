@@ -10,7 +10,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-27T05:34:36+00:00",
+  "updated_at": "2026-10-27T05:44:45+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -179,6 +179,21 @@
         "publiceren": 39,
         "achtergronden_2": 812
       }
+    },
+    {
+      "date": "2026-10-27",
+      "route": "claude",
+      "duration_s": 2116,
+      "finished_at": "2026-10-27T05:44:45+00:00",
+      "durations_s": {
+        "nieuws": 185,
+        "artikelen": 543,
+        "krant": 62,
+        "achtergronden_1": 227,
+        "podcast": 405,
+        "publiceren": 85,
+        "achtergronden_2": 609
+      }
     }
   ],
   "default_duration_s": 2700,
@@ -214,14 +229,30 @@
     {
       "step": "achtergronden_2",
       "at": "2026-10-27T05:34:36+00:00"
+    },
+    {
+      "step": "klaar",
+      "at": "2026-10-27T05:44:45+00:00"
     }
   ],
-  "status": "running",
+  "status": "done",
   "date": "2026-10-27",
-  "step": "achtergronden (ronde 2)",
-  "step_index": 6,
-  "progress": 86,
+  "step": "klaar",
+  "step_index": 7,
+  "progress": 100,
   "started_at": "2026-10-27T05:09:29+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-10-27T05:44:45+00:00",
+  "duration_s": 2116,
+  "error": null,
+  "durations_s": {
+    "nieuws": 185,
+    "artikelen": 543,
+    "krant": 62,
+    "achtergronden_1": 227,
+    "podcast": 405,
+    "publiceren": 85,
+    "achtergronden_2": 609
+  },
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-10-27.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
