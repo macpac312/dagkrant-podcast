@@ -1,0 +1,16 @@
+{
+  "title": "Stemadvies van AI: GPT kiest Democraten, Grok kiest Republikeinen",
+  "summary": "Onderzoekers vroegen GPT-6.1 Sol en Grok 4.7 via de API om stemadvies. De uitkomsten liepen haaks op elkaar.\n\nOnderzoekers vroegen GPT-6.1 Sol en Grok 4.7 via de API om aanbevelingen voor de verkiezingen. GPT koos vrijwel steeds voor de Democraten, Grok voor de Republikeinen, meldt heise online.",
+  "sources": [
+    "https://www.heise.de/en/news/AI-election-recommendations-GPT-picks-Democrats-Grok-picks-Republicans-11500896.html"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-10-27",
+  "slug": "stemadvies-van-ai-gpt-kiest-democraten-grok-kiest-republikei",
+  "tts_slug": "stemadvies-van-ai-gpt-kiest-democraten-grok-kiest-republikei",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-27T05:44:25",
+  "size_kb": 11
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Onderzoekers vinden zes patronen die AI-tekst zo vermoeiend maken",
+  "summary": "Frontiermodellen gebruiken stelselmatig taalpatronen die moeilijk te verwerken zijn. Oorzaak: training op code en wiskunde, waar juistheid telt en helderheid niet.\n\nEen studie van New York University en de University of Texas at Austin laat zien dat frontier-taalmodellen stelselmatig taalpatronen overgebruiken die voor mensen lastig te verwerken zijn. De onderzoekers onderscheiden zes van die patronen.\n\nZe leiden het probleem terug naar de training op code en wiskunde, waar het model wordt beloo",
+  "sources": [
+    "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-27",
+  "slug": "onderzoekers-vinden-zes-patronen-die-ai-tekst-zo-vermoeiend-",
+  "tts_slug": "onderzoekers-vinden-zes-patronen-die-ai-tekst-zo-vermoeiend-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-27T05:44:25",
+  "size_kb": 13
+}

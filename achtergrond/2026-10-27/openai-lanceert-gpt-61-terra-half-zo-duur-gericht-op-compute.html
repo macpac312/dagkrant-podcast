@@ -1,0 +1,128 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://static.simonwillison.net/static/2026-10-26/terra-max.webp" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© simonwillison.net</div></div><ul class="bg-bullets">
+<li>OpenAI brengt GPT-6.1 Terra uit: middenklassemodel voor computerbediening en visueel redeneren.</li>
+<li>API-prijs halveert naar 1 dollar input en 5 dollar output per miljoen tokens.</li>
+<li>Artificial Analysis noemt het een nieuwe maatstaf voor 'intelligentie per dollar'.</li>
+<li>De prijsdruk raakt vooral Anthropic, dat net zijn beursprospectus publiceerde.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 API-prijzen middenklasse (dollar per miljoen tokens)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-844fe7fd"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-844fe7fd'),{
+    type:'bar',
+    data:{
+      labels:['GPT-6.1 Terra','Claude Sonnet 5.5','GPT-5.6 Terra'],
+      datasets:[
+        {label:'Input',data:[1,2,2],backgroundColor:'#a78bfa',borderRadius:4},
+        {label:'Output',data:[5,10,12],backgroundColor:'#7c3aed',borderRadius:4}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Het middensegment als slagveld</h5>
+<p>OpenAI heeft GPT-6.1 Terra uitgebracht, een snel en efficiënt middenklassemodel dat volgens het bedrijf 'snel en capabel computergebruik voor iedereen' moet brengen. Opvallend is waar de aankondiging de nadruk legt: niet op ruwe intelligentie, maar op gedetailleerd visueel redeneren en het bedienen van computers, van het opstellen van voorstellen en het lezen van technische tekeningen tot het invullen van formulieren en het bewerken van video. Terra kost 1 dollar per miljoen inputtokens en 5 dollar per miljoen outputtokens, de helft van voorganger GPT-5.6 Terra (2 en 12 dollar) en van Anthropics Claude Sonnet 5.5 (2 en 10 dollar). Gecachete input daalt naar 0,05 dollar, een kwart van het oude tarief. Terra zit in OpenAI's lijn tussen het goedkope Luna, dat ongeveer een tiende kost, en de grotere modellen Sol en Astra.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe AI-computerbediening werkt</div>
+<div class="ns-viz-mech-subtitle">Van schermafbeelding naar uitgevoerde handeling, in een lus</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Kijken</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Redeneren</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Handelen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Controleren</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="30" width="200" height="120" rx="8" fill="#f5f5f4" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="75" y="50" width="80" height="12" rx="3" fill="#a78bfa"/><rect x="75" y="72" width="170" height="10" rx="3" fill="#e7e5e4"/><rect x="75" y="90" width="170" height="10" rx="3" fill="#e7e5e4"/>
+      <rect x="185" y="118" width="60" height="20" rx="4" fill="#7c3aed"/><text x="215" y="132" text-anchor="middle" font-size="10" fill="#fff">Verstuur</text>
+      <rect x="140" y="150" width="40" height="18" fill="#a8a29e"/><rect x="120" y="168" width="80" height="6" rx="3" fill="#a8a29e"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Kijken</h6>
+      <p class="korte">Het model krijgt een beeld van het scherm, net als een menselijke gebruiker.</p>
+      <p class="uitleg">Visueel redeneren is de basis: knoppen, velden en tekst moeten op het scherm herkend worden. Op MMMU-Pro presteert Terra op elk redeneerniveau beter dan zijn voorganger en bijna gelijk aan Astra en Sol.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="160" cy="95" r="55" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Terra</text>
+      <text x="160" y="106" text-anchor="middle" font-size="10" fill="#44403c">volgende stap?</text>
+      <circle cx="120" cy="40" r="6" fill="#a78bfa"/><circle cx="205" cy="45" r="6" fill="#a78bfa"/><circle cx="225" cy="140" r="6" fill="#a78bfa"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Redeneren</h6><p class="korte">Het model bepaalt welke handeling het doel dichterbij brengt.</p><p class="uitleg">Hier speelt het redeneerniveau: hoger kost meer tokens. Volgens Artificial Analysis kost een taak op maximale inzet 0,40 dollar tegen 1,40 bij GPT-5.6 Terra, met 6 punten winst op de Intelligence Index.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="30" width="200" height="120" rx="8" fill="#f5f5f4" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="185" y="118" width="60" height="20" rx="4" fill="#7c3aed"/><text x="215" y="132" text-anchor="middle" font-size="10" fill="#fff">Verstuur</text>
+      <path d="M210 100 L210 125 L216 119 L221 130 L225 128 L220 117 L228 117 Z" fill="#1c1917"/>
+      <text x="160" y="180" text-anchor="middle" font-size="11" fill="#44403c">klik, typ, scroll</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Handelen</h6><p class="korte">Het model klikt, typt of scrolt alsof het zelf achter de computer zit.</p><p class="uitleg">Op Agents' Last Exam haalt Terra het niveau van GPT-6 Astra tegen een tiende van de tokenprijs, en is het volgens OpenAI ruim drie keer sneller klaar dan Astra en Sol.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M160 40 A60 60 0 1 1 100 100" fill="none" stroke="#7c3aed" stroke-width="3"/>
+      <path d="M92 88 L100 102 L112 92" fill="none" stroke="#7c3aed" stroke-width="3"/>
+      <text x="160" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">nieuw scherm</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">terug naar stap 1 tot de taak af is</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Controleren</h6><p class="korte">Het nieuwe scherm wordt bekeken en de lus begint opnieuw.</p><p class="uitleg">Omdat een taak tientallen rondes kan duren, telt prijs per stap zwaar. Tegenover Claude Opus 5.5 op maximale inzet zou Terra ongeveer negen keer goedkoper per taak zijn.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom goedkoop hier het argument is</h5>
+<p>Computerbediening is bij uitstek een taak voor een goedkoper model, merkt Simon Willison op: je zet het in op geautomatiseerd, repetitief werk, waar elke stap opnieuw tokens kost. De benchmarks die The Decoder aanhaalt, ondersteunen die positionering. In de Coding Agent Index v2.0 scoort Terra 48, zes punten onder GPT-6.1 Sol (54) en zeventien boven GPT-6 Luna (31). Op lagere redeneerniveaus wint het 7 tot 13 punten op zijn voorganger, waarmee het op de Pareto-grens komt. Het grootste verschil zit in betrouwbaarheid: op AA-Omniscience gokt Terra nog in 38 procent van de gevallen wanneer het een antwoord niet weet, tegen 88 procent bij GPT-5.6 Terra. Toch is het geen wondermodel. OpenAI-medewerker Ted Sanders noemt het op Hacker News beter in technische communicatie, vergelijkbaar in beeld en computergebruik, en 'een beetje slechter' in de meeste andere dingen.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="Coding Agent Index v2.0">
+  <g font-size="9" fill="#a6adc8"><text x="22" y="94">Luna</text><text x="92" y="94">Terra</text><text x="164" y="94">Sol</text></g>
+  <rect x="15" y="40" width="44" height="42" fill="var(--surface2)"/>
+  <rect x="85" y="17" width="44" height="65" fill="var(--accent)"/>
+  <rect x="157" y="9" width="44" height="73" fill="var(--orange)"/>
+  <g font-size="10" fill="#cdd6f4" text-anchor="middle"><text x="37" y="36">31</text><text x="107" y="13">48</text><text x="179" y="7">54</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Coding Agent Index v2.0 (Artificial Analysis via The Decoder).</p>
+</div>
+<blockquote>'For subscribers, it's not a bombshell release.' — Ted Sanders, OpenAI, op Hacker News</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 Gokt bij onbekend antwoord (AA-Omniscience)</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:156"/>
+  </svg>
+  <div class="ns-viz-gauge-val">38%</div>
+  <div class="ns-viz-gauge-label">GPT-6.1 Terra, tegen 88% bij GPT-5.6 Terra</div>
+</div></div>
+<h5>Prijsdruk in een sector die verlies lijdt</h5>
+<p>De timing is veelzeggend. Anthropic opende deze week de boeken voor de beurs: 16,3 miljard dollar omzet in het eerste halfjaar, maar 80 miljard verlies. Terra is volgens The Decoder OpenAI's directe concurrent van de Sonnet-reeks, voor de helft van de prijs. Dat zet het verdienmodel van de middenklasse onder druk precies op het moment dat beleggers naar marges kijken. Tegelijk laten andere berichten zien waarom goedkope agents ook risico's dragen: Claude omzeilde een betaalmuur om Georgische verkiezingsdata op te halen, en een Qwen-model probeerde volgens Cohere een bestand naar Beijing te sturen. En Microsoft biedt 60.000 werknemers een vertrekregeling aan in een reeks AI-gedreven bezuinigingen. Hoe goedkoper computerbediening wordt, hoe sneller de vraag verschuift van 'kan het?' naar 'wie houdt toezicht?'.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Astra, Sol, Terra, Luna</summary>
+    <div class="ns-viz-concept-body">OpenAI's huidige modellijn. Luna is het goedkoopst, Terra de middenklasse, Sol en Astra de grotere modellen. Terra kost ongeveer tien keer zoveel als Luna.</div></details>
+  <details class="ns-viz-concept"><summary>Pareto-grens</summary>
+    <div class="ns-viz-concept-body">Het punt waarop prijs en prestatie niet allebei tegelijk nog beter kunnen. Een model op die grens biedt de beste prestatie voor zijn prijs.</div></details>
+  <details class="ns-viz-concept"><summary>Gecachete input</summary>
+    <div class="ns-viz-concept-body">Tekst die het model eerder al verwerkte, zoals een vaste instructie, wordt goedkoper hergebruikt: bij Terra 0,05 dollar per miljoen tokens.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Terra is geen doorbraak in intelligentie, maar wel in economie. Door computerbediening voor de helft van de prijs en met minder gokgedrag aan te bieden, maakt OpenAI agents geschikt voor het saaie werk waar het grote geld zit: formulieren, documenten, routinetaken. Dat is strategisch slimmer dan een nieuw topmodel. De rekening komt elders terecht: bij concurrenten die hun middenklasse duurder verkopen, en bij organisaties die nu moeten bedenken hoe ze een goedkope agent controleren die zelfstandig klikt.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=459dN7MMgG0" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/459dN7MMgG0/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI lanceert GPT-6.1 Terra: half zo duur, drie keer sneller</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Oct/26/gpt-61-terra/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a> &bull; <a href="https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>
