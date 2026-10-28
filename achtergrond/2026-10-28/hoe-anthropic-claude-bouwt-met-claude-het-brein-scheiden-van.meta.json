@@ -1,0 +1,17 @@
+{
+  "title": "Hoe Anthropic Claude bouwt met Claude: het ‘brein’ scheiden van de ‘handen’",
+  "summary": "Katelyn Lesse en Angela Jiang vertellen bij Latent Space over Opus 5.5, het Claude Platform en de techniek achter agents.\n\nIn de podcast Latent Space vertellen Katelyn Lesse en Angela Jiang van Anthropic over de lancering van Opus 5.5 en de techniek achter het Claude Platform. Centraal staat het idee om het ‘brein’ van het model te scheiden van de ‘handen’ van de agent: het model redeneert, terwijl een aparte, gecontroleerde laag de acties uitvoert.\n\nZe bespreken ook het schalen van de API en he",
+  "sources": [
+    "https://latent.space/p/opus55/",
+    "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-28",
+  "slug": "hoe-anthropic-claude-bouwt-met-claude-het-brein-scheiden-van",
+  "tts_slug": "hoe-anthropic-claude-bouwt-met-claude-het-brein-scheiden-van",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-28T05:40:01",
+  "size_kb": 12
+}

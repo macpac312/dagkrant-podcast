@@ -1,0 +1,88 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.ecb.europa.eu/press/shared/img/socialmedia/social-default.jpg?0ef1632c35edede913681bb76af694a4" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© ecb.europa.eu</div></div><ul class="bg-bullets">
+<li>Eurozonebanken scherpten in het derde kwartaal de kredieteisen voor bedrijven verder aan.</li>
+<li>Hogere risicopercepties, geopolitiek en energieprijzen drukken de risicobereidheid van banken.</li>
+<li>Bedrijven vroegen minder krediet; het aandeel afgewezen aanvragen steeg in alle segmenten.</li>
+<li>Voor het vierde kwartaal verwachten banken een flinke aanscherping, ook voor hypotheken.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Netto aanscherping kredieteisen, Q3 2026</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-c47bb4f3"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-c47bb4f3'),{
+    type:'bar',
+    data:{
+      labels:['Bedrijven (verwacht)','Bedrijven (werkelijk)','Hypotheken','Consumptief krediet'],
+      datasets:[{label:'Netto % banken dat aanscherpt',data:[5,9,0,14],
+        backgroundColor:['rgba(167,139,250,.45)','rgba(124,58,237,.85)','rgba(148,163,184,.6)','rgba(220,38,38,.7)'],
+        borderRadius:6}]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}},
+      scales:{y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},x:{grid:{display:false},ticks:{color:'#78716c'}}},
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Wat de banken melden</h5>
+<p>De bank lending survey is een van de vroegste signalen die de ECB heeft over de kredietverlening. Vier keer per jaar vraagt de centrale bank ruim honderdvijftig banken in de eurozone of zij hun interne acceptatiecriteria hebben aangescherpt of versoepeld en hoe de vraag naar leningen zich ontwikkelt. De editie van oktober 2026 laat een duidelijk beeld zien: banken worden voorzichtiger. Per saldo meldde 9 procent van de banken strengere eisen voor leningen aan bedrijven, meer dan de 5 procent die zij een kwartaal eerder hadden voorspeld. Voor consumptief krediet was de netto aanscherping met 14 procent nog groter. Alleen de eisen voor hypotheken bleven per saldo onveranderd, terwijl banken daar juist een lichte aanscherping hadden verwacht. De vraag naar bedrijfskrediet daalde per saldo met 6 procent. Daarmee raken aanbod en vraag tegelijk in de min: banken willen minder lenen en bedrijven willen minder lenen. Dat is precies de combinatie die economen als vroeg signaal van een afkoelende economie zien.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Segment</th><th style="text-align:right;padding:.3rem .5rem">Q3 netto</th><th style="text-align:right;padding:.3rem .5rem">Verwachting Q4</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Bedrijven: eisen</td><td style="text-align:right">+9%</td><td style="text-align:right">strenger</td></tr>
+    <tr><td style="padding:.25rem .5rem">Bedrijven: vraag</td><td style="text-align:right">−6%</td><td style="text-align:right">–</td></tr>
+    <tr><td style="padding:.25rem .5rem">Hypotheken: eisen</td><td style="text-align:right">0%</td><td style="text-align:right">flink strenger</td></tr>
+    <tr><td style="padding:.25rem .5rem">Consumptief: eisen</td><td style="text-align:right">+14%</td><td style="text-align:right">flink strenger</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Netto percentages banken, ECB bank lending survey oktober 2026.</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe bankvoorzichtigheid de economie remt</div>
+<div class="ns-viz-mech-subtitle">Van risicoperceptie bij banken tot minder investeringen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Risico</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Eisen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Voorwaarden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Economie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><polygon points="160,30 250,70 70,70" fill="#a78bfa"/><rect x="85" y="70" width="150" height="10" fill="#7c3aed"/><rect x="100" y="80" width="14" height="60" fill="#a78bfa"/><rect x="153" y="80" width="14" height="60" fill="#a78bfa"/><rect x="206" y="80" width="14" height="60" fill="#a78bfa"/><rect x="80" y="140" width="160" height="10" fill="#7c3aed"/><text x="270" y="60" font-size="22" fill="#dc2626">⚡</text><text x="30" y="60" font-size="20" fill="#dc2626">!</text><text x="160" y="178" text-anchor="middle" font-size="11" fill="#44403c">geopolitiek en energie</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Risico</h6><p class="korte">Banken schatten het risico hoger in en willen minder risico dragen.</p><p class="uitleg">Hogere risicopercepties en lagere risicotolerantie blijven de hoofdoorzaak. Sommige banken noemen expliciet geopolitieke onzekerheid en ontwikkelingen op de energiemarkt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="100" y="40" width="120" height="130" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="64" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Acceptatie</text><rect x="115" y="80" width="12" height="12" fill="none" stroke="#7c3aed"/><rect x="115" y="104" width="12" height="12" fill="none" stroke="#7c3aed"/><rect x="115" y="128" width="12" height="12" fill="none" stroke="#7c3aed"/><line x1="135" y1="86" x2="205" y2="86" stroke="#a78bfa"/><line x1="135" y1="110" x2="200" y2="110" stroke="#a78bfa"/><line x1="135" y1="134" x2="205" y2="134" stroke="#dc2626" stroke-width="2"/><text x="250" y="110" font-size="14" font-weight="700" fill="#7c3aed">+9%</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Eisen</h6><p class="korte">Interne richtlijnen worden strenger, vooral voor bedrijven en consumptief krediet.</p><p class="uitleg">Netto 9 procent van de banken scherpte de eisen voor bedrijven aan, 14 procent die voor consumptief krediet. Het aandeel afgewezen aanvragen steeg voor alle groepen leners.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="60" y="60" width="200" height="90" rx="6" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed"/><text x="160" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Leningcontract</text><text x="160" y="112" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">rente ↑</text><text x="160" y="136" text-anchor="middle" font-size="10" fill="#44403c">alle segmenten strenger</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Voorwaarden</h6><p class="korte">In de feitelijke contracten worden de voorwaarden zwaarder, vooral via de rente.</p><p class="uitleg">De ECB onderscheidt eisen van voorwaarden. Die laatste, de daadwerkelijk afgesproken condities, werden in alle segmenten strenger, vooral door hogere rentes.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="40" y="110" width="50" height="50" fill="#a78bfa"/><polygon points="40,110 65,85 90,110" fill="#7c3aed"/><rect x="120" y="90" width="60" height="70" fill="#a78bfa"/><rect x="128" y="100" width="12" height="12" fill="#fff"/><rect x="160" y="100" width="12" height="12" fill="#fff"/><polyline points="210,80 240,100 265,95 290,135" fill="none" stroke="#dc2626" stroke-width="3"/><text x="250" y="160" text-anchor="middle" font-size="10" fill="#44403c">investeringen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Economie</h6><p class="korte">Minder en duurder krediet remt investeringen en consumptie.</p><p class="uitleg">De vraag naar bedrijfskrediet daalde al per saldo met 6 procent. Voor het vierde kwartaal verwachten banken verdere aanscherping, ook flink voor hypotheken.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom dit meer is dan een technisch rapport</h5>
+<p>Het belang van de enquête zit in het onderscheid tussen eisen en voorwaarden. Eisen zijn de interne richtlijnen van een bank; voorwaarden zijn wat er uiteindelijk in het contract staat. Beide werden strenger, de voorwaarden in alle segmenten, vooral door hogere rentes. Dat betekent dat de rentetransmissie volop werkt: duurder geld bereikt bedrijven en huishoudens. De drijfveer is echter niet alleen de rente. Banken noemen hun eigen risicoperceptie en lagere risicotolerantie als hoofdoorzaak, met geopolitieke onzekerheid en energieprijzen als extra druk. Opvallend is een aparte vraag over kunstmatige intelligentie: de meeste banken hanteren nog geen kwantitatieve criteria voor leningen aan AI-projecten, al nemen sommige AI-risico's wel mee in hun kwalitatieve beoordeling, met IT-bedrijven onder de scherpste loep. Dat is relevant nu beleggers miljarden in AI-infrastructuur pompen: banken lijken die golf voorlopig vooral met kwalitatieve voorzichtigheid te volgen.</p>
+<blockquote>Voor het vierde kwartaal verwachten banken een flinke aanscherping voor zowel hypotheken als consumptief krediet: de rust op de hypotheekmarkt is tijdelijk.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Netto percentage</summary><div class="ns-viz-concept-body">Het aandeel banken dat aanscherpt min het aandeel dat versoepelt. Een positief getal betekent per saldo strengere eisen, een negatief getal bij vraag betekent per saldo minder vraag.</div></details>
+  <details class="ns-viz-concept"><summary>Kredieteisen</summary><div class="ns-viz-concept-body">De interne richtlijnen of acceptatiecriteria van een bank: welke leners en projecten zij überhaupt wil financieren.</div></details>
+  <details class="ns-viz-concept"><summary>Kredietvoorwaarden</summary><div class="ns-viz-concept-body">De daadwerkelijk afgesproken condities in het leencontract, zoals rente, looptijd, onderpand en convenanten.</div></details>
+</div></div>
+<h5>Gevolgen voor Nederland en het beleid</h5>
+<p>Voor Nederlandse huishoudens is het hypotheeksignaal het belangrijkst. Dat banken in het derde kwartaal de eisen nog stabiel hielden maar voor het vierde kwartaal een flinke aanscherping verwachten, valt samen met andere berichten in deze krant: NHG gaat vanaf 2027 funderingsrisico's meewegen en de AFM trad hard op tegen hypotheekfraude. De ruimte om te lenen wordt dus van meerdere kanten kleiner. Voor bedrijven, vooral in het mkb, betekent de combinatie van strengere eisen en dalende vraag dat investeringen worden uitgesteld. Voor de ECB is het rapport een dilemma: strakkere kredietverlening dempt de inflatie, maar vergroot ook het risico dat de economie te hard afremt.</p>
+<h5>Conclusie</h5>
+<p>De oktoberenquête laat zien dat banken voorlopen op de economie: zij trekken zich terug voordat de cijfers over groei dat doen. Het feit dat de aanscherping voor bedrijven groter uitvalt dan banken zelf verwachtten, is het eigenlijke nieuws. Als de verwachte aanscherping voor hypotheken en consumptief krediet in het vierde kwartaal uitkomt, krijgt de ECB een sterk argument om terughoudend te zijn met verdere renteverhogingen of eerder te versoepelen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=CQ3UtQfYWVA" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/CQ3UtQfYWVA/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Juridische conferentie ECB/ESCB 2026 - Panel 2</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html" target="_blank" style="color:var(--accent)">ecb.europa.eu ↗</a></div>

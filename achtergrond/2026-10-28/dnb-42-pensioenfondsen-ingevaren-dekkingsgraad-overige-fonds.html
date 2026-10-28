@@ -1,0 +1,92 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://infinance.nl/wp-content/uploads/2020/07/Pensioen-1.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© infinance.nl</div></div><ul class="bg-bullets">
+<li>Eind september waren 42 pensioenfondsen ingevaren, acht meer dan een kwartaal eerder.</li>
+<li>Stijgende rente, hogere aandelenkoersen en een nieuwe levensverwachting tilden de dekkingsgraad.</li>
+<li>FTK-fondsen staan gemiddeld op 136,1 procent: een comfortabele uitgangspositie voor invaren.</li>
+<li>Met ingevaren fondsen verdwijnt de dekkingsgraad als één vergelijkbare maatstaf.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wie beheert de 1.630 miljard?</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">FTK-fondsen (€1.064 mld)</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:65%">65%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Ingevaren, Wtp (€566 mld)</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:35%">35%</div></div></div>
+</div></div>
+<h5>Waar de transitie staat</h5>
+<p>De overstap naar het nieuwe pensioenstelsel is de grootste operatie in de Nederlandse financiële sector sinds decennia. Volgens cijfers van De Nederlandsche Bank waren eind september 42 pensioenfondsen ingevaren, acht meer dan eind juni. Samen beheerden de fondsen 1.630 miljard euro. Daarvan valt 566 miljard, ruim een derde, al onder de Wet toekomst pensioenen; de overige 1.064 miljard zit nog bij fondsen onder het financieel toetsingskader. De wettelijke deadline ligt op 1 januari 2028: tot die datum kunnen fondsen opgebouwde rechten invaren. Het tempo is dus behoorlijk, maar het zwaartepunt ligt nog voor ons. Een groot deel van het vermogen moet de komende vijf kwartalen worden omgezet, en juist de grootste fondsen kiezen voor een late overstapdatum om hun administratie op orde te krijgen.</p>
+<div class="ns-viz"><div class="ns-viz-title">📈 Dekkingsgraad FTK-fondsen</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-10ec903b"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-10ec903b'),{
+    type:'bar',
+    data:{
+      labels:['Actuele dekkingsgraad','Beleidsdekkingsgraad'],
+      datasets:[
+        {label:'Eind Q2 2026',data:[131.4,127.7],backgroundColor:'rgba(167,139,250,.55)',borderRadius:6},
+        {label:'Eind Q3 2026',data:[136.1,130.0],backgroundColor:'rgba(124,58,237,.85)',borderRadius:6}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}},
+      scales:{y:{min:110,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},x:{grid:{display:false},ticks:{color:'#78716c'}}},
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Waarom de buffers groeien</h5>
+<p>Bij de fondsen die nog niet zijn overgestapt, steeg de dekkingsgraad in het derde kwartaal met 4,7 procentpunt naar 136,1 procent. DNB noemt drie oorzaken. De oplopende rente verlaagt de contante waarde van toekomstige pensioenuitkeringen, waardoor de verplichtingen krimpen. Stijgende aandelenkoersen vergroten tegelijk de beleggingen. En de nieuwe prognosetafel van het Actuarieel Genootschap stelt de verwachte levensduur neerwaarts bij: wie korter leeft, krijgt minder jaren pensioen, en dus is er minder geld nodig. De beleidsdekkingsgraad, het gemiddelde over twaalf maanden, steeg met 2,3 procentpunt naar 130 procent. Die maatstaf loopt achter, maar laat zien dat de verbetering geen eenmalige uitschieter is. Ter vergelijking: tijdens de lagerentejaren tot 2021 kampten veel fondsen met dekkingsgraden rond of onder de honderd procent en dreigden kortingen.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="Aantal ingevaren fondsen">
+  <g font-size="9" fill="#78716c"><text x="30" y="94">eind juni</text><text x="130" y="94">eind sept</text></g>
+  <rect x="30" y="30" width="50" height="54" fill="var(--surface2)" stroke="var(--accent)"/>
+  <rect x="130" y="12" width="50" height="72" fill="var(--accent)"/>
+  <g font-size="11" fill="#7c3aed" text-anchor="middle" font-weight="700"><text x="55" y="24">34</text><text x="155" y="8">42</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Aantal ingevaren pensioenfondsen volgens DNB.</p>
+</div>
+<blockquote>Voor ingevaren fondsen is de financiële positie volgens DNB niet meer in één vergelijkbare indicator samen te vatten.</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe invaren werkt</div>
+<div class="ns-viz-mech-subtitle">Van collectieve pot met dekkingsgraad naar persoonlijk pensioenvermogen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">FTK-pot</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Peildatum</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Verdeling</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Wtp</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="40" y="60" width="100" height="110" rx="8" fill="#7c3aed" fill-opacity=".8"/><text x="90" y="110" text-anchor="middle" font-size="11" fill="#fff">beleggingen</text><rect x="180" y="80" width="100" height="90" rx="8" fill="#a78bfa"/><text x="230" y="125" text-anchor="middle" font-size="11" fill="#fff">verplichtingen</text><text x="160" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">136,1%</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>FTK-pot</h6><p class="korte">In het oude stelsel meet de dekkingsgraad of de collectieve pot de toezeggingen dekt.</p><p class="uitleg">De dekkingsgraad is de verhouding tussen beleggingen en verplichtingen. De rente bepaalt hoe zwaar de verplichtingen wegen; bij FTK-fondsen staat die verhouding nu gemiddeld op 136,1 procent.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="110" y="40" width="100" height="110" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/><rect x="110" y="40" width="100" height="28" rx="8" fill="#7c3aed"/><text x="160" y="59" text-anchor="middle" font-size="11" fill="#fff">invaardatum</text><text x="160" y="115" text-anchor="middle" font-size="24" font-weight="700" fill="#7c3aed">1/1</text><text x="160" y="178" text-anchor="middle" font-size="10" fill="#44403c">uiterlijk 1 januari 2028</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Peildatum</h6><p class="korte">Het fonds kiest een moment waarop alle opgebouwde rechten worden omgezet.</p><p class="uitleg">Fondsen kunnen tot en met 1 januari 2028 invaren. De financiële positie op die peildatum bepaalt hoeveel vermogen er te verdelen valt; een hoge dekkingsgraad geeft extra ruimte.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><circle cx="160" cy="60" r="34" fill="#7c3aed"/><text x="160" y="64" text-anchor="middle" font-size="10" fill="#fff">fondsvermogen</text><line x1="160" y1="94" x2="60" y2="150" stroke="#a78bfa" stroke-width="3"/><line x1="160" y1="94" x2="125" y2="150" stroke="#a78bfa" stroke-width="3"/><line x1="160" y1="94" x2="195" y2="150" stroke="#a78bfa" stroke-width="3"/><line x1="160" y1="94" x2="260" y2="150" stroke="#a78bfa" stroke-width="3"/><circle cx="60" cy="160" r="12" fill="#a78bfa"/><circle cx="125" cy="160" r="12" fill="#a78bfa"/><circle cx="195" cy="160" r="12" fill="#a78bfa"/><circle cx="260" cy="160" r="12" fill="#a78bfa"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Verdeling</h6><p class="korte">Het collectieve vermogen wordt over de deelnemers verdeeld.</p><p class="uitleg">Elke deelnemer krijgt een eigen deel van het vermogen, berekend op basis van de opgebouwde rechten. Hier zit het gevoeligste punt: de verdeling tussen jong en oud.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="50" y="120" width="40" height="50" fill="#a78bfa"/><rect x="110" y="100" width="40" height="70" fill="#a78bfa"/><rect x="170" y="80" width="40" height="90" fill="#7c3aed"/><rect x="230" y="60" width="40" height="110" fill="#7c3aed"/><polyline points="70,110 130,90 190,70 250,50" fill="none" stroke="#16a34a" stroke-width="2.5"/><text x="160" y="190" text-anchor="middle" font-size="10" fill="#44403c">persoonlijk vermogen, verwacht pensioen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Wtp</h6><p class="korte">Na het invaren telt een persoonlijk vermogen waaruit een verwacht pensioen volgt.</p><p class="uitleg">Er is geen toezegging meer die tegen een dekkingsgraad wordt afgezet. Beleggingsrendement en rente werken directer door in het verwachte pensioen. DNB zoekt nog naar goede vervangende indicatoren.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Gevolgen: einde van een vertrouwde maatstaf</h5>
+<p>Het meest principiële punt in het DNB-bericht is bijna een bijzin: voor ingevaren fondsen is de financiële positie niet meer in één vergelijkbare indicator te vangen. Decennialang was de dekkingsgraad het getal waarmee deelnemers, politici en media de gezondheid van pensioenfondsen beoordeelden. In het nieuwe stelsel werken regelingen met persoonlijke vermogens en verwachte pensioenen. Dat maakt het stelsel transparanter voor het individu, maar ondoorzichtiger als geheel. Voor toezichthouder en politiek ontstaat een blinde vlek precies in de jaren waarin het vertrouwen in de transitie moet worden gewonnen. Tegelijk geeft de hoge dekkingsgraad de achterblijvers wind mee: wie met 136 procent invaart, heeft ruimte om compensatie te betalen en pensioenen bij de start te verhogen. De ECB-enquête over strengere kredietvoorwaarden en een oplopende rente versterken dat beeld voorlopig.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>FTK</summary><div class="ns-viz-concept-body">Financieel toetsingskader: de toezichtsregels van het oude stelsel, met buffers en de dekkingsgraad als centrale maatstaf.</div></details>
+  <details class="ns-viz-concept"><summary>Wtp</summary><div class="ns-viz-concept-body">Wet toekomst pensioenen: het nieuwe stelsel met persoonlijke pensioenvermogens in plaats van collectieve toezeggingen.</div></details>
+  <details class="ns-viz-concept"><summary>Beleidsdekkingsgraad</summary><div class="ns-viz-concept-body">Het gemiddelde van de twaalf laatste maandelijkse dekkingsgraden. Minder actueel, maar stabieler; nu 130 procent.</div></details>
+  <details class="ns-viz-concept"><summary>Prognosetafel</summary><div class="ns-viz-concept-body">Prognose van de levensverwachting door het Actuarieel Genootschap. De nieuwe tafel stelt de verwachte levensduur neerwaarts bij.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De cijfers zijn gunstig, maar niet het eigenlijke verhaal. De transitie komt op stoom in een gunstig financieel klimaat, en dat maakt invaren politiek makkelijker. Het risico zit in de periode daarna. Zolang er geen breed geaccepteerde opvolger van de dekkingsgraad is, ontbreekt een gedeelde maatstaf om het nieuwe stelsel te beoordelen. DNB doet er goed aan die indicatoren te ontwikkelen voordat de volgende marktdaling het vertrouwen op de proef stelt.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=U9xGg6nhQoI" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/U9xGg6nhQoI/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">We blijven beleggen voor je pensioen</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://infinance.nl/artikel/42-pensioenfondsen-ingevaren/" target="_blank" style="color:var(--accent)">infinance.nl ↗</a></div>

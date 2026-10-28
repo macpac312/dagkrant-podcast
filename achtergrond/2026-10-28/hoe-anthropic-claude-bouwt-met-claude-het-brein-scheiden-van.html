@@ -1,0 +1,70 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://latent.space/og/card/post/opus55/424ddad38742d39855425564a6d71e585315f47ab534e7bd8abe95172704d214.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© latent.space</div></div><ul class="bg-bullets">
+<li>Anthropic scheidt in Managed Agents het redenerende 'brein' van de uitvoerende 'handen'.</li>
+<li>Sessielog en harness blijven bestaan; de sandbox die code draait is vervangbaar.</li>
+<li>Opus 5.5 moet slimmer per dollar zijn en minder breedsprakig dan zijn voorgangers.</li>
+<li>Groei maakt saaie keuzes, zoals CPU-gebruik van de API, ineens strategisch.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Brein, harness en handen</div>
+<div class="ns-viz-mech-subtitle">Hoe een beheerde agent een crashende sandbox overleeft</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Brein</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Harness</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Handen</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Herstel</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><ellipse cx="160" cy="95" rx="70" ry="55" fill="#7c3aed" opacity=".85"/><path d="M160 45 C150 70,170 90,160 145" stroke="#ede9fe" stroke-width="3" fill="none"/><path d="M120 80 C135 90,135 105,120 115" stroke="#ede9fe" stroke-width="2" fill="none"/><path d="M200 80 C185 90,185 105,200 115" stroke="#ede9fe" stroke-width="2" fill="none"/><text x="160" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#4c1d95">Claude redeneert</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Brein</h6><p class="korte">Het model bedenkt wat er moet gebeuren, maar voert zelf niets uit.</p><p class="uitleg">Claude plant stappen en kiest gereedschap. Door het redeneren los te houden van de uitvoering kan Anthropic het model upgraden zonder de rest van de agent te herbouwen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="80" y="40" width="160" height="120" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/><g fill="#a78bfa"><rect x="95" y="58" width="130" height="10" rx="3"/><rect x="95" y="78" width="110" height="10" rx="3"/><rect x="95" y="98" width="120" height="10" rx="3"/><rect x="95" y="118" width="90" height="10" rx="3"/></g><text x="160" y="182" text-anchor="middle" font-size="13" font-weight="700" fill="#4c1d95">Sessielog + harness</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Harness</h6><p class="korte">Een aparte laag bewaart het sessielog en stuurt de agent aan.</p><p class="uitleg">De harness houdt bij wat er al is gebeurd en blijft bestaan, ook over contextvensters heen. Dat is het geheugen van de agent, los van waar code draait.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="60" y="50" width="200" height="100" rx="8" fill="#1c1917"/><text x="75" y="80" font-family="monospace" font-size="12" fill="#a78bfa">$ run tests</text><text x="75" y="100" font-family="monospace" font-size="12" fill="#a6e3a1">ok 42 passed</text><text x="75" y="120" font-family="monospace" font-size="12" fill="#a78bfa">$ _</text><rect x="50" y="40" width="220" height="120" rx="10" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="6 4"/><text x="160" y="182" text-anchor="middle" font-size="13" font-weight="700" fill="#4c1d95">Geïsoleerde sandbox</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Handen</h6><p class="korte">Code draait in een afgeschermde sandbox die alleen wordt opgestart als het nodig is.</p><p class="uitleg">Isolatie, credentials en netwerkcontroles zitten in deze laag. Het model krijgt geen directe sleutels; de sandbox voert uit wat het brein vraagt.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="30" y="60" width="90" height="70" rx="8" fill="#dc2626" opacity=".2" stroke="#dc2626" stroke-width="2"/><line x1="45" y1="75" x2="105" y2="115" stroke="#dc2626" stroke-width="4"/><line x1="105" y1="75" x2="45" y2="115" stroke="#dc2626" stroke-width="4"/><rect x="200" y="60" width="90" height="70" rx="8" fill="#16a34a" opacity=".2" stroke="#16a34a" stroke-width="2"/><text x="245" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">nieuw</text><path d="M125 95 L195 95" stroke="#7c3aed" stroke-width="3"/><path d="M185 88 L195 95 L185 102" fill="none" stroke="#7c3aed" stroke-width="3"/><text x="160" y="170" text-anchor="middle" font-size="12" fill="#4c1d95" font-weight="700">sessie loopt door</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Herstel</h6><p class="korte">Valt een sandbox om, dan start er een nieuwe en loopt de sessie door.</p><p class="uitleg">Omdat het log in de harness staat, sleept een mislukte uitvoeromgeving niet de hele agent mee. Voor langlopende taken is dat het verschil tussen opnieuw beginnen en hervatten.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Het lab achter het prospectus</h5>
+<p>Een dag na de S-1-indiening, het beursprospectus dat Anthropic deze week openbaar maakte, zat de podcast Latent Space met twee mensen die het product dagelijks bouwen: Katelyn Lesse, hoofd engineering, en Angela Jiang, hoofd product van het Claude Platform. Latent Space opent met een opvallende cijferreeks uit het prospectus: binnen een jaar ging de GAAP-marge van een verlies van 126 procent naar een winst van 19 procent. Het bedrijf schrijft dat toe aan twee lussen, verbetering en investering. Opus 5.5 geldt volgens de podcast al een maand als het algemeen erkende beste taalmodel. Het gesprek gaat echter minder over benchmarks dan over de minder zichtbare beslissingen: wie krijgt wanneer toegang tot sterkere modellen, hoe voorkom je misbruik, en hoe houd je een API overeind die harder groeit dan de hardware bijbenen kan.</p>
+<div class="ns-viz"><div class="ns-viz-title">📏 GAAP-marge nu</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:203"/>
+  </svg>
+  <div class="ns-viz-gauge-val">19%</div>
+  <div class="ns-viz-gauge-label">Winstmarge, een jaar na −126%</div>
+</div></div>
+<h5>Waarom brein en handen uit elkaar moeten</h5>
+<p>Het sterkste idee uit het gesprek is architectonisch. In Managed Agents scheidt Anthropic het sessielog en de harness van de sandbox die code uitvoert. Het model is het brein, de sandbox zijn de handen, en de harness is het zenuwstelsel dat ze verbindt. Dat klinkt als een technisch detail, maar het lost twee problemen tegelijk op. Ten eerste betrouwbaarheid: een agent die uren doorwerkt, crasht vroeg of laat ergens, en dan wil je niet alles kwijt. Ten tweede veiligheid: credentials en netwerktoegang horen in een gecontroleerde laag, niet in de handen van een model dat door een kwaadwillende prompt kan worden omgepraat. Hetzelfde principe kent de klassieke informatica als scheiding van besturing en uitvoering. Nieuw is dat het nu geldt voor een uitvoerder die zelf beslissingen neemt.</p>
+<blockquote>Een mislukte sandbox hoeft niet de hele agentsessie mee te nemen: dat is de kern van brein en handen.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat de ontkoppeling verandert</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VOOR</h6><p>Model, geheugen en uitvoering in één proces. Crasht de omgeving, dan is de sessie weg en zitten sleutels dicht bij het model.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>NA</h6><p>Harness bewaart de sessie, sandbox wordt op aanvraag gemaakt. Fouten blijven lokaal; credentials en netwerk worden apart afgeschermd.</p></div>
+</div></div>
+<h5>Kosten, distillatie en de prijs van groei</h5>
+<p>Ook de lancering van Opus 5.5 draaide om meer dan kwaliteit. Klanten vonden eerdere Opus-generaties te breedsprakig en vroegen om meer intelligentie per dollar; Anthropic zegt dat het nieuwe model goedkoper draait, al hangt de besparing af van de werklast en het gebruik van gecachete context. Een minder zichtbare wijziging is het bewaren van denkblokken over beurten heen, onder meer om te voorkomen dat concurrenten het redeneren van Claude aftappen om eigen modellen te distilleren. Dat beschermt Anthropic, maar kan bestaande integraties van klanten breken. Opvallend is ook dat CPU-gebruik van de API strategisch wordt: de Messages API werd herbouwd in Rust. Tegen de achtergrond van Amazons terugtocht uit eigen modellen en de auteursrechtzaken rond trainingsdata toont dit gesprek de andere kant van Anthropic: een bedrijf dat zijn voorsprong vooral in infrastructuur en discipline zoekt.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Harness</summary><div class="ns-viz-concept-body">De software rond een model die gereedschap aanroept, context beheert en de voortgang van een agent bijhoudt.</div></details>
+  <details class="ns-viz-concept"><summary>Distillatie</summary><div class="ns-viz-concept-body">Een kleiner of concurrerend model trainen op de uitvoer van een sterker model, zodat het diens gedrag goedkoop nabootst.</div></details>
+  <details class="ns-viz-concept"><summary>Early access</summary><div class="ns-viz-concept-body">Klanten testen een nieuw model vooraf in hun eigen omgeving en melden verrassend gedrag, ook buiten wat Anthropics eigen producten afdekken.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De race tussen AI-labs wordt vaak voorgesteld als een benchmarkwedstrijd. Dit gesprek laat zien dat de beslissende winst in 2026 eerder zit in saaie lagen: harnesses, sandboxen, CPU-budgetten en evals die echte klantomgevingen weerspiegelen. Wie agents betrouwbaar wil laten doorwerken, moet ze leren falen zonder alles te verliezen. Die ontkoppeling is waarschijnlijk duurzamer dan welk benchmarkrecord ook, en concurrenten zullen haar overnemen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=SkFmiMHDN38" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/SkFmiMHDN38/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Hoe een antropomorfe ingenieur Claude Docs gebruikt</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://latent.space/p/opus55/" target="_blank" style="color:var(--accent)">latent.space ↗</a> &bull; <a href="https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/" target="_blank" style="color:var(--accent)">latent.space ↗</a></div>
