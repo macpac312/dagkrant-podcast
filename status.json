@@ -10,7 +10,7 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-10-29T05:25:12+00:00",
+  "updated_at": "2026-10-29T05:26:50+00:00",
   "history": [
     {
       "date": "2026-10-15",
@@ -232,13 +232,17 @@
     {
       "step": "podcast",
       "at": "2026-10-29T05:25:12+00:00"
+    },
+    {
+      "step": "achtergronden_2",
+      "at": "2026-10-29T05:26:50+00:00"
     }
   ],
   "status": "running",
   "date": "2026-10-29",
-  "step": "podcast inspreken",
-  "step_index": 4,
-  "progress": 57,
+  "step": "achtergronden (ronde 2)",
+  "step_index": 6,
+  "progress": 86,
   "started_at": "2026-10-29T05:08:27+00:00",
   "finished_at": null,
   "error": null
