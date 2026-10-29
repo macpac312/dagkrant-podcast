@@ -1,0 +1,137 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://images.fd.nl/900057-900852.jpeg?fit=crop&crop=faces&auto=format%2Ccompress&q=45&w=1280&h=720&fm=jpg&cs=tinysrgb" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© fd.nl</div></div><ul class="bg-bullets">
+<li>Dit jaar al ruim 87.000 gemelde softwarelekken bij CVE, 82 procent meer dan vorig jaar.</li>
+<li>AI-agents vinden kwetsbaarheden sneller dan IT-afdelingen ze kunnen dichten.</li>
+<li>Urgente meldingen verdubbelden tot boven de 9000; vooral het mkb loopt achter.</li>
+<li>Het PHP-lek liet zien hoe één melding DigiD en mijnoverheid.nl offline haalt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De lekkenstroom van 2026</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="87000">87000</div><div class="ns-viz-stat-label">Gemelde kwetsbaarheden dit jaar</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="+" data-target="82" data-suffix="%">+82%</div><div class="ns-viz-stat-label">Ten opzichte van vorig jaar</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="9000" data-prefix="&gt;">&gt;9000</div><div class="ns-viz-stat-label">Urgente meldingen (ruim verdubbeld)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="70" data-suffix="%">70%</div><div class="ns-viz-stat-label">Websites dat op PHP draait</div></div>
+</div></div>
+<h5>Van druppel naar vloedgolf</h5>
+<p>Het CVE-register, sinds 1999 de wereldwijde catalogus van softwarelekken, is opgezet als gedeelde taal: elke kwetsbaarheid krijgt een nummer, zodat leveranciers, onderzoekers en beheerders over hetzelfde probleem praten. Dat systeem kraakt. Uit onderzoek van het FD blijkt dat ethische hackers en IT-bedrijven dit jaar al ruim 87.000 kwetsbaarheden meldden, 82 procent meer dan vorig jaar. Het aantal lekken dat zo snel mogelijk actie vraagt, ruim verdubbelde tot boven de 9000, onder meer in software van Microsoft en in Google Chrome. De infrastructuur eromheen was al wankel. In april 2025 dreigde de Amerikaanse financiering van het CVE-programma, dat beheerd wordt door MITRE, af te lopen en werd die op het laatste moment verlengd. Europa begon kort daarna met een eigen kwetsbaarhedendatabank bij ENISA, juist om minder afhankelijk te zijn van Washington.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 100" width="220" height="100" aria-label="Meldingen vorig jaar en dit jaar als index">
+  <g font-size="9" fill="#a6adc8"><text x="14" y="94">Alle, vorig jr</text><text x="122" y="94">Alle, dit jr</text></g>
+  <rect x="20" y="48" width="60" height="34" fill="#a78bfa"/>
+  <rect x="128" y="20" width="60" height="62" fill="#7c3aed"/>
+  <g font-size="10" fill="#7c3aed" text-anchor="middle"><text x="50" y="44">100</text><text x="158" y="16">182</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Meldingen als index, vorig jaar = 100 (FD, CVE).</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een lek een race wordt</div>
+<div class="ns-viz-mech-subtitle">Van ontdekking door AI tot ongepatchte server</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Ontdekking</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Melding</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Misbruik</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Achterstand</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="40" width="140" height="110" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <g fill="#a78bfa"><rect x="52" y="54" width="90" height="6"/><rect x="52" y="68" width="110" height="6"/><rect x="52" y="82" width="70" height="6"/><rect x="52" y="110" width="100" height="6"/><rect x="52" y="124" width="80" height="6"/></g>
+      <rect x="52" y="96" width="100" height="6" fill="#dc2626"/>
+      <circle cx="225" cy="95" r="34" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="225" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">AI</text>
+      <line x1="191" y1="98" x2="155" y2="99" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="160" y="178" text-anchor="middle" font-size="12" fill="#44403c">Agent scant code op zwakke plekken</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Ontdekking</h6>
+      <p class="korte">AI-agents doorzoeken software razendsnel en vinden veel meer lekken dan voorheen.</p>
+      <p class="uitleg">Bedrijven als Hadrian voeren met AI veiligheidsscans uit. Wat vroeger weken handwerk van een onderzoeker kostte, doet een agent nu automatisch en op grote schaal. Dat verklaart een groot deel van de stijging met 82 procent.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="95" y="45" width="130" height="90" rx="8" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">CVE-2026-xxxxx</text>
+      <text x="160" y="100" text-anchor="middle" font-size="11" fill="#44403c">openbaar register</text>
+      <line x1="225" y1="90" x2="280" y2="60" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="225" y1="90" x2="280" y2="120" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="95" y1="90" x2="40" y2="90" stroke="#a78bfa" stroke-width="2"/>
+      <circle cx="285" cy="58" r="8" fill="#a78bfa"/><circle cx="285" cy="122" r="8" fill="#dc2626"/><circle cx="35" cy="90" r="8" fill="#a78bfa"/>
+      <text x="160" y="170" text-anchor="middle" font-size="12" fill="#44403c">Beheerders én aanvallers lezen mee</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Melding</h6>
+      <p class="korte">Het lek krijgt een CVE-nummer en is daarmee voor iedereen zichtbaar.</p>
+      <p class="uitleg">Openbaarheid is bedoeld om verdedigers te waarschuwen, maar dezelfde meldingen bereiken ook kwaadwillenden. Met meer dan 9000 urgente meldingen dit jaar ontstaat een lijst die verdedigers niet meer kunnen afwerken.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="70" width="80" height="50" rx="8" fill="#dc2626" fill-opacity=".15" stroke="#dc2626" stroke-width="2"/>
+      <text x="70" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">Aanvaller</text>
+      <path d="M112 95 L200 95" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <path d="M196 89 L206 95 L196 101 z" fill="#dc2626"/>
+      <rect x="210" y="55" width="80" height="80" rx="6" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="2"/>
+      <text x="250" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">PHP-</text>
+      <text x="250" y="106" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">website</text>
+      <text x="160" y="170" text-anchor="middle" font-size="12" fill="#44403c">AI helpt ook bij het bouwen van exploits</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Misbruik</h6>
+      <p class="korte">Aanvallers zetten de melding met AI-hulp snel om in een werkende aanval.</p>
+      <p class="uitleg">Het venster tussen publicatie en misbruik krimpt. Bij het PHP-lek van vorige week gingen tientallen sites uit voorzorg offline, waaronder DigiD en mijnoverheid.nl. PHP draait onder ongeveer 70 procent van alle websites.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="120" width="200" height="18" fill="#a78bfa"/>
+      <rect x="60" y="100" width="200" height="18" fill="#a78bfa" fill-opacity=".8"/>
+      <rect x="60" y="80" width="200" height="18" fill="#a78bfa" fill-opacity=".6"/>
+      <rect x="60" y="60" width="200" height="18" fill="#dc2626" fill-opacity=".6"/>
+      <rect x="60" y="40" width="200" height="18" fill="#dc2626" fill-opacity=".8"/>
+      <circle cx="40" cy="128" r="12" fill="#7c3aed"/>
+      <text x="40" y="160" text-anchor="middle" font-size="10" fill="#44403c">IT-team</text>
+      <text x="175" y="175" text-anchor="middle" font-size="12" fill="#44403c">Patchstapel groeit sneller dan hij slinkt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Achterstand</h6>
+      <p class="korte">IT-afdelingen, vooral in het mkb, kunnen het tempo van patchen niet bijhouden.</p>
+      <p class="uitleg">Dimitri van Zantvliet van het Ciso Platform Nederland verwacht dat bedrijven de komende twee jaar vaker gehackt worden en sluit landelijke storingen niet uit. Kleine organisaties missen mensen om meldingen te beoordelen en updates te testen.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>AI verschuift de balans tussen aanval en verdediging</h5>
+<p>De verklaring voor de explosie is grotendeels technologisch. AI-agents lezen code, testen invoer en vinden fouten op een schaal die menselijke onderzoekers nooit haalden. Google liet al in 2024 zien dat een AI-agent een onbekend lek in de database SQLite kon vinden, en wat toen een demonstratie was, is nu een bedrijfsmodel. In principe is dat goed nieuws: elk gevonden lek kan worden gedicht. Maar ontdekken en repareren lopen niet in hetzelfde tempo. Een scan is goedkoop, een patch moet worden ontwikkeld, getest en uitgerold op systemen die vaak decennia oud zijn. Daar komt bij dat dezelfde gereedschappen ook aanvallers helpen een melding om te zetten in een werkende aanval. "Ik denk dat we met de cybersecuritywereld midden in een crisis zitten", zegt Rogier Fischer van Hadrian. Opvallend is dat hij zelf AI-scans verkoopt: de industrie die de stroom aanjaagt, waarschuwt er ook voor.</p>
+<blockquote>Vooral mkb-bedrijven zijn niet meer in staat om het bij te benen. Het wordt gevaarlijk. — Dimitri van Zantvliet, Ciso Platform Nederland</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Een systeem onder druk</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">1999</div><div>CVE-register start als gedeelde catalogus van lekken</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">apr 2025</div><div>Amerikaanse financiering van CVE hangt aan een zijden draad</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">sep 2026</div><div>Meldplicht Cyber Resilience Act gaat in; zeven diensten waarschuwen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>PHP-lek haalt DigiD en mijnoverheid.nl offline</div></div>
+</div></div>
+<h5>Gevolgen voor Nederland en Europa</h5>
+<p>Eind september waarschuwden zeven Nederlandse veiligheidsdiensten, waaronder de AIVD en de politie, al voor de toegenomen dreiging. Het PHP-incident maakte die waarschuwing concreet: één kwetsbaarheid in een basiscomponent was genoeg om publieke diensten als DigiD uit voorzorg offline te halen. Europa probeert de verantwoordelijkheid te verleggen naar de makers. Sinds september moeten fabrikanten onder de Cyber Resilience Act actief misbruikte lekken melden, en NIS2 legt zwaardere zorgplichten op aan vitale sectoren. Dat helpt bij grote leveranciers, maar het gat zit bij de gebruikers: het mkb heeft geen eigen securityteam en draait vaak software die niemand actief onderhoudt. Daar ontstaat het risico waarvoor Van Zantvliet waarschuwt, met kettingeffecten wanneer zo'n bedrijf toeleverancier is van grotere organisaties. Kwetsbaarheid wordt zo een ketenprobleem: de sterkste schakel helpt weinig als een kleine leverancier met een ongepatchte server toegang biedt tot het netwerk van een ziekenhuis, gemeente of vervoerder.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er voor beheerders</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Lekken vooral gevonden door menselijke onderzoekers; beheerders hadden tijd om te prioriteren en maandelijks te patchen.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>AI vindt lekken op industriële schaal; ruim 9000 urgente meldingen per jaar vragen continu, geautomatiseerd patchen en scherpe keuzes.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>De 87.000 meldingen zijn geen teken dat software slechter wordt, maar dat de zoeklamp feller is gaan schijnen. Het probleem is dat de reparatiecapaciteit niet meegroeit. Zolang patchen handwerk blijft, wint wie het snelst automatiseert, en dat zijn nu vaker aanvallers dan beheerders. De oplossing ligt niet in nog meer meldingen, maar in prioritering, automatisch bijwerken en gedeelde voorzieningen voor het mkb. Zonder die verschuiving wordt het PHP-incident van vorige week geen uitzondering, maar het nieuwe normaal.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=j_6iAe90vQE" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/j_6iAe90vQE/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Kwetsbaarheden in de webcode vereisen dringende systeemupdates 🔒</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://fd.nl/economie/1617497/explosie-aan-meldingen-van-kwestbaarheden-in-software" target="_blank" style="color:var(--accent)">fd.nl ↗</a></div>
