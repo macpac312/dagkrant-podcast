@@ -1,0 +1,16 @@
+{
+  "title": "Programmeren in de Himalaya met een offline AI-agent",
+  "summary": "Latent Space laat zien hoe je met OpenCode, Ollama en Qwen een coding-agent draait zonder internet.\n\nLatent Space beschrijft hoe je een coding-agent volledig offline kunt draaien, met de open-source agent OpenCode, de lokale modelserver Ollama en een Qwen-model van Alibaba. De auteur gebruikte de opzet tijdens een reis in de Himalaya, zonder betrouwbare verbinding.",
+  "sources": [
+    "https://latent.space/p/offline-coding/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-29",
+  "slug": "programmeren-in-de-himalaya-met-een-offline-ai-agent",
+  "tts_slug": "programmeren-in-de-himalaya-met-een-offline-ai-agent",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-29T05:37:52",
+  "size_kb": 12
+}

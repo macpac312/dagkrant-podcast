@@ -1,0 +1,70 @@
+<ul class="bg-bullets">
+<li>Gemergde pull requests op GitHub verdrievoudigden in minder dan een jaar tot 220 miljoen per maand.</li>
+<li>Commits stegen tot 7,38 miljard per maand, vooral in de tweede helft van 2026.</li>
+<li>AI-agents verklaren die sprong: ze schrijven, testen en openen wijzigingen zelfstandig.</li>
+<li>Meer code betekent ook meer beoordelingswerk en meer kwetsbaarheden om te dichten.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 GitHub per maand in 2026</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="220" data-suffix=" mln">220 mln</div><div class="ns-viz-stat-label">Gemergde pull requests (×3)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="7.38" data-suffix=" mld">7.38 mld</div><div class="ns-viz-stat-label">Commits (meer dan ×3)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="30.3" data-suffix=" mln">30.3 mln</div><div class="ns-viz-stat-label">Nieuwe repositories (×2)</div></div>
+</div></div>
+<h5>Het jaar waarin de machines gingen committen</h5>
+<p>Het Octoverse-rapport van GitHub is al jaren de thermometer van de software-industrie: hoeveel ontwikkelaars er zijn, welke talen groeien, welke landen het meest bijdragen. Dit jaar meet de thermometer koorts. Op de conferentie GitHub Universe presenteerde EVP Jay Parikh cijfers die Simon Willison, als gast aanwezig, "een vrij scherpe weergave van de impact van agentic engineering" noemt. Het aantal gemergde pull requests verdrievoudigde in minder dan een jaar tot 220 miljoen per maand. Commits stegen meer dan driedubbel tot 7,38 miljard per maand, met het grootste deel van die toename in de tweede helft van het jaar. Het tempo waarin nieuwe repositories worden aangemaakt, verdubbelde tot 30,3 miljoen per maand. Zulke sprongen passen niet bij organische groei van het aantal menselijke ontwikkelaars. Ze passen wel bij software die zelf code schrijft en indient.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Groeifactor binnen een jaar</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Commits</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">meer dan ×3</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Gemergde PR's</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:90%">×3</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Nieuwe repo's</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:60%">×2</div></div></div>
+</div></div>
+<h5>Hoe een agent het werk verandert</h5>
+<p>De verklaring ligt in de manier waarop programmeren in 2026 is veranderd. Een ontwikkelaar geeft een opdracht, een agent als Copilot, Claude Code of Codex zoekt in de codebase, schrijft wijzigingen, draait tests en opent een pull request. Elk van die stappen laat sporen na in de statistieken, en omdat agents kleinere, frequentere commits maken en meerdere taken parallel uitvoeren, groeit het volume harder dan het aantal mensen erachter. Dat de versnelling vooral in de tweede helft van het jaar zit, sluit aan bij andere signalen. OpenAI meldde deze week in Berlijn dat het aantal wekelijkse Codex-gebruikers in Duitsland sinds januari twintig keer zo groot is geworden. Google opende Android Studio voor ruim veertig externe coding-agents. Opvallend is ook de nieuwe categorie in het rapport: repositories over interoperabiliteit en reverse engineering, zoals clean-room-implementaties en drop-in-vervangers, een soort werk dat agents goedkoop maken.</p>
+<blockquote>Het Octoverse-rapport is "een vrij scherpe weergave van de impact van agentic engineering op GitHub." — Simon Willison</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Van opdracht tot merge: de agent-keten</div>
+<div class="ns-viz-mech-subtitle">Waarom één prompt tientallen commits kan opleveren</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Opdracht</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Commits</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Pull request</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Merge</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="80" cy="80" r="22" fill="#7c3aed"/><rect x="55" y="105" width="50" height="55" rx="18" fill="#7c3aed"/><path d="M130 70 L270 70 Q285 70 285 85 L285 115 Q285 130 270 130 L160 130 L140 150 L145 130 Q130 130 130 115 Z" fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"/><text x="207" y="97" text-anchor="middle" font-size="11" fill="#44403c">"Los bug #418 op</text><text x="207" y="114" text-anchor="middle" font-size="11" fill="#44403c">en schrijf tests"</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Opdracht</h6><p class="korte">Een ontwikkelaar beschrijft een taak in gewone taal en geeft die aan een agent.</p><p class="uitleg">Tools als Copilot, Claude Code en Codex werken direct in de repository. Eén mens kan zo meerdere agents tegelijk aansturen, wat de verhouding tussen mensen en activiteit op GitHub verandert.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><line x1="30" y1="100" x2="290" y2="100" stroke="#a78bfa" stroke-width="4"/><g fill="#7c3aed"><circle cx="50" cy="100" r="9"/><circle cx="85" cy="100" r="9"/><circle cx="120" cy="100" r="9"/><circle cx="155" cy="100" r="9"/><circle cx="190" cy="100" r="9"/><circle cx="225" cy="100" r="9"/><circle cx="260" cy="100" r="9"/></g><text x="160" y="60" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">7,38 miljard commits per maand</text><text x="160" y="140" text-anchor="middle" font-size="11" fill="#44403c">kleine, frequente stappen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Commits</h6><p class="korte">De agent werkt in kleine stappen en legt elke wijziging vast als commit.</p><p class="uitleg">Agents proberen, testen en corrigeren in korte cycli. Dat verklaart waarom commits harder groeiden dan pull requests: meer dan een verdrievoudiging, met de piek in de tweede helft van 2026.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="140" x2="280" y2="140" stroke="#7c3aed" stroke-width="5"/><path d="M90 140 Q110 70 160 70 L220 70" stroke="#a78bfa" stroke-width="5" fill="none"/><path d="M220 70 Q250 70 255 140" stroke="#a78bfa" stroke-width="5" fill="none" stroke-dasharray="8 6"/><g fill="#a78bfa"><circle cx="140" cy="74" r="8"/><circle cx="185" cy="70" r="8"/></g><circle cx="90" cy="140" r="9" fill="#7c3aed"/><rect x="200" y="20" width="90" height="30" rx="6" fill="#7c3aed"/><text x="245" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">PR open</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Pull request</h6><p class="korte">De agent bundelt het werk in een pull request ter beoordeling.</p><p class="uitleg">Automatische tests en vaak ook een AI-reviewer beoordelen de wijziging. Hier zit het nieuwe knelpunt: menselijke reviewers moeten een veelvoud aan voorstellen controleren.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="120" x2="280" y2="120" stroke="#7c3aed" stroke-width="5"/><path d="M90 120 Q110 60 160 60 Q215 60 230 120" stroke="#a78bfa" stroke-width="5" fill="none"/><circle cx="230" cy="120" r="14" fill="#16a34a"/><path d="M223 120 L229 127 L239 113" stroke="#fff" stroke-width="3" fill="none"/><text x="160" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">220 miljoen merges per maand</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Merge</h6><p class="korte">Na goedkeuring gaat de wijziging de hoofdcode in.</p><p class="uitleg">Het aantal gemergde pull requests verdrievoudigde in minder dan een jaar tot 220 miljoen per maand. Elke merge is software die in productie kan belanden, met nieuwe functies én mogelijke nieuwe lekken.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Meer code, meer zorgen</h5>
+<p>De keerzijde van al die productiviteit staat elders in deze krant. Het FD telde dit jaar 87.000 gemelde softwarelekken, 82 procent meer dan vorig jaar, en ziet dat agents kwetsbaarheden sneller vinden dan organisaties ze kunnen dichten. Meer code betekent meer aanvalsoppervlak en meer onderhoud. Ook de methodologie van GitHub laat zien hoe diep AI inmiddels in de meting zelf zit: landen worden toegekend via LLM-classificatie van profielen, om vertekening door VPN-gebruik te corrigeren, en repositories worden met een getraind embeddingmodel in bedrijfssectoren ingedeeld. Dat is pragmatisch, maar het maakt vergelijkingen met eerdere jaren minder hard. Voor Nederlandse bedrijven is de les dubbel. Wie agents inzet, haalt snelheid binnen; wie de review- en beveiligingscapaciteit niet meeschaalt, haalt ook risico binnen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Agentic engineering</summary>
+    <div class="ns-viz-concept-body">Softwareontwikkeling waarbij AI-agents zelfstandig meerstapstaken uitvoeren: code lezen, wijzigen, testen en indienen. De mens stuurt en beoordeelt in plaats van elke regel te typen.</div></details>
+  <details class="ns-viz-concept"><summary>Commit versus pull request</summary>
+    <div class="ns-viz-concept-body">Een commit is één vastgelegde wijziging. Een pull request bundelt commits tot een voorstel dat wordt beoordeeld en daarna in de hoofdcode wordt opgenomen (gemerged).</div></details>
+  <details class="ns-viz-concept"><summary>Interoperabiliteit en reverse engineering</summary>
+    <div class="ns-viz-concept-body">Nieuwe Octoverse-categorie: projecten die bestaande software of protocollen namaken of vervangen, zoals clean-room-implementaties en drop-in-vervangers. Agents maken zulk werk veel goedkoper.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De Octoverse-cijfers zijn het eerste harde bewijs op platformschaal dat agents geen demo meer zijn maar het grootste deel van de nieuwe activiteit op GitHub kunnen verklaren. Toch meet een verdrievoudiging van commits volume, niet waarde. De echte vraag voor 2027 is of de kwaliteit meegroeit, of dat de industrie een berg code opbouwt die niemand volledig heeft gelezen. Wie het beoordelen van code niet net zo serieus automatiseert als het schrijven ervan, verplaatst het knelpunt alleen maar.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=AArI948SDz8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/AArI948SDz8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Opening keynote: bouwen aan het volgende tijdperk van software op GitHub Universe 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Oct/28/github-octoverse-2026/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>
