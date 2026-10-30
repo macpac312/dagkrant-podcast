@@ -1,0 +1,119 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://images.fd.nl/901478-901890.jpeg?fit=crop&crop=faces&auto=format%2Ccompress&q=45&w=1280&h=720&fm=jpg&cs=tinysrgb" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© fd.nl</div></div><ul class="bg-bullets">
+<li>De Europese gasprijs ging woensdag voor het eerst sinds 2022 boven 100 euro per MWh.</li>
+<li>Vaste contracten en prijsafdekkingen lopen af, waardoor bedrijven de echte prijs gaan voelen.</li>
+<li>Yara en OCI produceren minder; papiermaker Sappi ziet marges krimpen.</li>
+<li>Hoe langer de Iran-oorlog duurt, hoe dieper de schade aan de Europese industrie.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Europese gasprijs (TTF, €/MWh)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-8f361856"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-8f361856'),{
+    type:'line',
+    data:{
+      labels:['Voor feb 2026','Gem. Q2 2026','Gem. Q3 2026','Woensdag'],
+      datasets:[{
+        label:'€/MWh',data:[30,48,64,100],
+        borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.08)',
+        tension:.4,fill:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#7c3aed'
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{min:0,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Van 30 naar 100 euro: de vertraagde klap</h5>
+<p>Maandenlang lag de Europese gasprijs rond de 30 euro per megawattuur. Toen vielen de Verenigde Staten in februari Iran aan, viel lng uit het Midden-Oosten weg en raakte de Straat van Hormuz lange tijd geblokkeerd. In het tweede kwartaal lag de gemiddelde prijs boven 48 euro, in het derde kwartaal rond 64 euro. Woensdag ging de prijs voor het eerst sinds de crisis van 2022 door de grens van 100 euro: ruim een verdrievoudiging. Opvallend is dat de industrie tot nu toe redelijk standhield. Dat kwam niet door weerbaarheid, maar door contracten: veel bedrijven hadden hun gas maanden vooruit tegen vaste prijzen ingekocht of het risico afgedekt met financiële instrumenten. Die buffers lopen nu af, schrijft het FD. 'Hoe langer deze situatie duurt, hoe meer het begint te bijten', zegt ING-analist Edse Dantuma.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een gasschok de fabriek bereikt</div>
+<div class="ns-viz-mech-subtitle">Van afgedekte inkoop naar productiestop</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Prijsschok</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Buffer</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Afloop</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Afschalen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 140 Q60 120 50 100 Q75 115 70 80 Q100 110 95 140 Z" fill="#f59e0b" fill-opacity=".7"/>
+      <rect x="130" y="70" width="150" height="70" rx="10" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="1.8"/>
+      <text x="205" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">TTF &gt; €100</text>
+      <text x="205" y="120" text-anchor="middle" font-size="11" fill="#44403c">lng uit Golf valt weg</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Prijsschok</h6>
+      <p class="korte">De oorlog met Iran haalt lng uit het Midden-Oosten van de markt.</p>
+      <p class="uitleg">Door de blokkade van de Straat van Hormuz en schade aan installaties in de Golf verdrievoudigde de gasprijs: van zo'n 30 euro voor februari tot boven 100 euro per megawattuur deze week.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M160 30 L240 60 L240 110 Q240 160 160 180 Q80 160 80 110 L80 60 Z" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Vast contract</text>
+      <text x="160" y="125" text-anchor="middle" font-size="11" fill="#44403c">+ hedge</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Buffer</h6><p class="korte">Vaste contracten en afdekkingen schermen bedrijven maandenlang af.</p><p class="uitleg">Wie vooruit had ingekocht, betaalde nog de oude prijs. Daarom bleef de industrie in het voorjaar en de zomer opvallend overeind, ondanks de stijgende marktprijs.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="90" y="40" width="140" height="120" rx="8" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="110" y1="70" x2="210" y2="70" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="110" y1="95" x2="210" y2="95" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="110" y1="120" x2="180" y2="120" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="80" y1="170" x2="240" y2="30" stroke="#dc2626" stroke-width="4"/>
+      <text x="160" y="190" text-anchor="middle" font-size="11" fill="#44403c">contract verloopt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Afloop</h6><p class="korte">Contracten verlopen; nieuw gas moet tegen de dagprijs worden gekocht.</p><p class="uitleg">Sappi had het risico niet volledig afgedekt. 'Elke megawattuur die we tegen de huidige prijs moeten kopen, doet pijn', zegt Europa-topman Marco Eikelenboom.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="70" y="90" width="180" height="70" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="100" y="50" width="22" height="40" fill="#7c3aed" fill-opacity=".4"/>
+      <rect x="190" y="60" width="22" height="30" fill="#7c3aed" fill-opacity=".4"/>
+      <text x="160" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Yara −7% gas</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">productie omlaag</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Afschalen</h6><p class="korte">Fabrieken draaien minder omdat produceren duurder is dan de opbrengst.</p><p class="uitleg">Yara verbruikte in het derde kwartaal 7 procent minder gas, vooral door lagere productie in Italië. OCI Nitrogen op Chemelot ziet afnemers minder ammoniak kopen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Kunstmest als kanarie in de kolenmijn</h5>
+<p>Dat juist kunstmestmakers als eerste terugschroeven, is geen toeval. Bij de productie van ammoniak is aardgas zowel brandstof als grondstof: het levert de waterstof die met stikstof uit de lucht wordt gebonden. Gas is daardoor veruit de grootste kostenpost. Yara verbruikte in het derde kwartaal 7 procent minder gas, vooral door lagere productie in Italië. OCI Nitrogen op Chemelot in Limburg ziet grote afnemers minder ammoniak afnemen, terwijl de ammoniakprijs met zo'n 20 procent daalt. Dat is de pijnlijkste combinatie: de kosten verdrievoudigen, de verkoopprijs zakt. Het patroon is bekend uit 2022, toen Europese ammoniakfabrieken massaal stillagen en importen uit landen met goedkoop gas het gat vulden. Papierfabrikant Sappi laat zien dat de pijn breder is: wie het risico niet volledig had afgedekt, voelt elke megawattuur direct in de marge.</p>
+<blockquote>'Elke megawattuur die we tegen de huidige prijs moeten kopen, doet pijn.' — Marco Eikelenboom, Europa-topman Sappi</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📊 De pijn in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="€" data-target="100" data-suffix="+">€100+</div><div class="ns-viz-stat-label">Gasprijs per MWh</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3" data-suffix="x">3x</div><div class="ns-viz-stat-label">Stijging sinds februari</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="−" data-target="7" data-suffix="%">−7%</div><div class="ns-viz-stat-label">Gasverbruik Yara Q3</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="−" data-target="20" data-suffix="%">−20%</div><div class="ns-viz-stat-label">Ammoniakprijs</div></div>
+</div></div>
+<h5>Winnaars, verliezers en Den Haag</h5>
+<p>Dezelfde gasprijs die Yara en OCI pijn doet, vult elders de kassa. Shell verdubbelde zijn kwartaalwinst tot 10,8 miljard dollar, mede dankzij hogere lng-opbrengsten. Die tegenstelling maakt de energiecrisis politiek explosief: de Kamer stemde in het voorjaar al voor een motie om overwinsten extra te belasten, maar dat blijkt bij een niet langer Nederlands bedrijf lastig. Tegelijk staat de Europese industrie onder druk van meerdere kanten. Ook Volkswagen kampt met kosten, Amerikaanse heffingen en Chinese concurrentie. Voor Nederland, met een energie-intensieve chemiesector in Chemelot, Rotterdam en Terneuzen, is de vraag hoe lang bedrijven productie afschalen voordat ze die definitief verplaatsen. Het vertrek van ECB-president Lagarde in februari voegt monetaire onzekerheid toe: een centrale bank die met energie-inflatie worstelt, kan de industrie weinig verlichting bieden.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>TTF</summary>
+    <div class="ns-viz-concept-body">Title Transfer Facility: de Nederlandse virtuele gashandelsplaats en de Europese referentieprijs voor aardgas, uitgedrukt in euro per megawattuur.</div></details>
+  <details class="ns-viz-concept"><summary>Afdekken (hedgen)</summary>
+    <div class="ns-viz-concept-body">Een bedrijf legt via termijncontracten nu al een prijs vast voor gas dat het later afneemt. Dat beschermt tijdelijk, maar loopt af zodra het contract verloopt.</div></details>
+  <details class="ns-viz-concept"><summary>Ammoniak</summary>
+    <div class="ns-viz-concept-body">Basisstof voor kunstmest, gemaakt door waterstof uit aardgas te binden aan stikstof. Gas is daardoor grondstof én energiebron, wat de sector extra gevoelig maakt.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De echte gascrisis voor de industrie begint nu pas. De oorlog duurt al sinds februari, maar contracten maskeerden de schok; nu die aflopen, wordt de marktprijs de fabrieksprijs. Kunstmestmakers zijn de eerste signalen, niet de laatste. Als de prijs boven 100 euro blijft, verschuift de discussie van tijdelijke productiebeperking naar structureel verlies van Europese productiecapaciteit, en dat verlies is na 2022 al eens moeilijk teruggedraaid. Beleidsmakers doen er goed aan nu al te bepalen welke productie Europa strategisch wil behouden, in plaats van te wachten tot de markt die keuze maakt.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=rY4neILiQ4Y" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/rY4neILiQ4Y/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">VOE00305 2026-04-08 Het 10 procentprobleem: Wereldwijde autonomiestrategie</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://fd.nl/economie/1617555/kabinet-krijgt-mes-op-de-keel-links-of-rechts" target="_blank" style="color:var(--accent)">fd.nl ↗</a></div>

@@ -1,0 +1,86 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://techcrunch.com/wp-content/uploads/2022/09/GettyImages-1415078085.jpg?resize=1200,721" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© techcrunch.com</div></div><ul class="bg-bullets">
+<li>Jassy ziet AWS binnen vijf tot tien jaar een biljoen dollar omzet halen.</li>
+<li>Daarvoor stijgen de investeringen: circa 220 miljard dollar in 2026, meer in 2027.</li>
+<li>AWS groeide 39 procent; Jassy verwacht ruim 40 procent in 2027 en 2028.</li>
+<li>Beleggers twijfelen: het aandeel daalde donderdag ongeveer 6 procent.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 AWS en Amazon in kerncijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="220" data-suffix=" mld">$220 mld</div><div class="ns-viz-stat-label">Verwachte cash-capex Amazon 2026</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="184" data-suffix=" mld">$184 mld</div><div class="ns-viz-stat-label">Jaaromzet-tempo AWS (run-rate)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="39" data-suffix="%">39%</div><div class="ns-viz-stat-label">Omzetgroei AWS op jaarbasis</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="-" data-target="6" data-suffix="%">-6%</div><div class="ns-viz-stat-label">Koersdaling donderdag (ongeveer)</div></div>
+</div></div>
+<h5>Een ambitie zonder precedent</h5>
+<p>Andy Jassy herhaalde bij de kwartaalcijfers van Amazon een ambitie die hij eerder al uitsprak: AWS kan een bedrijf worden met een biljoen dollar jaaromzet. 'Er is nog nooit een bedrijf geweest met een biljoen dollar aan jaaromzet', zei hij. De cloudtak draait nu op een jaarbasis van 184 miljard dollar en groeide 39 procent ten opzichte van een jaar eerder, het zesde kwartaal op rij met gestage groei. Jassy verwacht dat AWS in zowel 2027 als 2028 meer dan 40 procent groeit. De historische context is relevant: AWS begon twintig jaar geleden als bijproduct van Amazons eigen infrastructuur en werd de winstmotor van het concern. Nu moet AI-vraag datzelfde patroon herhalen, maar op een schaal die alles wat eerder kwam overstijgt.</p>
+<div class="ns-viz"><div class="ns-viz-title">📈 AWS-groei: gerealiseerd en verwacht</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-f723163d"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-f723163d'),{
+    type:'bar',
+    data:{
+      labels:['Afgelopen kwartaal','2027 (verwachting)','2028 (verwachting)'],
+      datasets:[{
+        label:'Omzetgroei AWS (%)',data:[39,40,40],
+        backgroundColor:['#7c3aed','rgba(167,139,250,.7)','rgba(167,139,250,.7)'],
+        borderColor:'#7c3aed',borderWidth:1.5,borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return c.dataIndex===0?'39% gerealiseerd':'meer dan 40% (Jassy)';}}}
+      },
+      scales:{
+        y:{beginAtZero:true,max:50,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Eerst uitgeven, dan verdienen</h5>
+<p>De keerzijde van de ambitie staat in de investeringsplanning. Amazon verwacht dit jaar ongeveer 220 miljard dollar aan cash-capex, grotendeels voor AWS, en wil in 2027 'aanzienlijk meer' uitgeven. Analisten vroegen Jassy herhaaldelijk naar de signalen dat die groei er echt komt en naar de verwachte marges. Zijn antwoord: dit is een eenmalige kans, gedreven door historische vraag naar cloudcapaciteit voor AI, en wie nu niet bouwt, verliest het leiderschap. Het mechanisme is eenvoudig maar riskant. Datacenters en chips worden jaren vóór de omzet betaald; de winst komt pas als klanten de capaciteit ook werkelijk afnemen. Elke vertraging in de AI-adoptie bij bedrijven, die Jassy zelf nog 'in de allereerste fase' noemt, rekt de terugverdientijd op. De koersdaling van ongeveer 6 procent laat zien dat beleggers die rekensom minder rooskleurig maken dan Jassy.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="AWS run-rate versus biljoen-doel">
+  <rect x="10" y="20" width="37" height="18" fill="#7c3aed"/>
+  <rect x="10" y="52" width="200" height="18" fill="var(--surface2)" stroke="#a78bfa"/>
+  <g font-size="10" fill="#a6adc8"><text x="52" y="33">$184 mld nu</text><text x="14" y="85">$1.000 mld doel (5-10 jaar)</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Huidig jaaromzet-tempo AWS tegenover het biljoen-doel.</p>
+</div>
+<div class="ns-viz"><div class="ns-viz-title">⚡ Van capex naar biljoen: de keten</div>
+<div class="ns-viz-flow"><svg viewBox="0 0 720 130" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs>
+  <rect class="anim-node" x="10" y="35" width="125" height="60" rx="9" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="72" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Capex</text>
+  <text x="72" y="78" text-anchor="middle" font-size="11" fill="#44403c">~$220 mld in 2026</text>
+  <line class="anim-line" x1="138" y1="65" x2="160" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="163" y="35" width="125" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="225" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Datacenters</text>
+  <text x="225" y="78" text-anchor="middle" font-size="11" fill="#44403c">en chips</text>
+  <line class="anim-line" x1="291" y1="65" x2="313" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="316" y="35" width="125" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="378" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AI-workloads</text>
+  <text x="378" y="78" text-anchor="middle" font-size="11" fill="#44403c">van bedrijven</text>
+  <line class="anim-line" x1="444" y1="65" x2="466" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="469" y="35" width="115" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="526" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Groei 40%+</text>
+  <text x="526" y="78" text-anchor="middle" font-size="11" fill="#44403c">2027 en 2028</text>
+  <line class="anim-line" x1="587" y1="65" x2="609" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="612" y="35" width="100" height="60" rx="9" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="662" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">$1 biljoen</text>
+  <text x="662" y="78" text-anchor="middle" font-size="11" fill="#44403c">5 tot 10 jaar</text>
+</svg></div></div>
+<h5>Gevolgen voor markt en Europa</h5>
+<p>Amazon staat niet alleen. De grote techbedrijven investeren dit jaar samen honderden miljarden dollars in datacenters en chips, en deze week bleek opnieuw waarom: Google zette met Gemini 4 Carbon een nieuw topmodel neer, OpenAI verdubbelde zijn gebruikslimieten en Mistral bracht een biljoen-parametermodel uit dat op acht Nvidia-chips draait. Al die modellen hebben rekenkracht nodig, en dat is precies wat Jassy verkoopt. Voor Europa heeft de investeringsgolf twee gezichten. Ze levert capaciteit en banen op, maar legt ook druk op stroomnetten en ruimte, zoals de discussie over datacenters in Nederland laat zien. En ze versterkt de afhankelijkheid van een handvol Amerikaanse cloudaanbieders, juist nu Brussel op digitale soevereiniteit hamert.</p>
+<p>De groeiprognose verdient een nuchtere rekensom. Een omzetbasis van 184 miljard dollar die jaarlijks 40 procent groeit, nadert de biljoen pas na ruim vijf jaar onafgebroken expansie. Dat verklaart waarom Jassy een bandbreedte van vijf tot tien jaar noemt: het doel is alleen haalbaar als de huidige groeivoet veel langer standhoudt dan clouddiensten historisch hebben laten zien. Tegelijk heeft AWS een voordeel dat jongere rivalen missen: bestaande zakelijke klanten die hun kernsystemen al in de cloud draaien en daar nu AI aan toevoegen. Die combinatie van traditionele en AI-workloads is precies wat Jassy als groeimotor noemt. Of beleggers geduld houden, hangt af van de marges, en daarover gaf de topman donderdag weinig concrete antwoorden.</p>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">We gaan investeren om de leider te blijven. We kunnen dit plan financieren, en het zal de omvang van Amazon voorgoed veranderen.</p>
+  <p class="ns-viz-quote-attr">— Andy Jassy, topman Amazon</p>
+</div>
+<h5>Conclusie</h5>
+<p>Jassy's biljoen is geen prognose maar een rechtvaardiging. Het getal moet beleggers overtuigen dat 220 miljard dollar dit jaar, en meer volgend jaar, geen overinvestering is. De groeicijfers geven hem voorlopig gelijk: 39 procent op een basis van 184 miljard is uitzonderlijk. Maar de les van elke infrastructuurgolf, van spoorwegen tot glasvezel, is dat bouwers vaak gelijk krijgen over de vraag en ongelijk over het tempo. Dat verschil bepaalt of Amazon de koning van de AI-cloud wordt of de financier ervan.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=-HXdUoHPz5M" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/-HXdUoHPz5M/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Jassy: AWS wordt bedrijf van een biljoen dollar omzet, maar eerst gaat het geld uitgeven 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/" target="_blank" style="color:var(--accent)">techcrunch.com ↗</a></div>
