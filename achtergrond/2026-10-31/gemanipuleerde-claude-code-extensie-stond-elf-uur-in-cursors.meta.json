@@ -1,0 +1,17 @@
+{
+  "title": "Gemanipuleerde Claude Code-extensie stond elf uur in Cursors marketplace",
+  "summary": "De extensie probeerde gegevens te stelen en externe toegang op te zetten bij tot 5000 gebruikers. Cursor haalde de hele marketplace offline.\n\nEen gemanipuleerde versie van de Claude Code-extensie stond ongeveer elf uur in de extensie-marketplace van de code-editor Cursor, meldt The Decoder. Tot 5000 gebruikers kunnen zijn getroffen. De extensie probeerde gebruikersgegevens te stelen en een verbinding voor toegang op afstand op te zetten.\n\nCursor haalde de volledige marketplace offline en zette h",
+  "sources": [
+    "https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/",
+    "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-10-31",
+  "slug": "gemanipuleerde-claude-code-extensie-stond-elf-uur-in-cursors",
+  "tts_slug": "gemanipuleerde-claude-code-extensie-stond-elf-uur-in-cursors",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-10-31T05:40:10",
+  "size_kb": 13
+}

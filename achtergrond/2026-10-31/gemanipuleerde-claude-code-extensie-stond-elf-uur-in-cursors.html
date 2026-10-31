@@ -1,0 +1,100 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2024/08/cursor_AI_logo.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Gemanipuleerde Claude Code-extensie stond ongeveer elf uur in Cursors marketplace.</li>
+<li>Tot 5000 gebruikers geraakt; malware verzamelde systeemgegevens en zocht toegang op afstand.</li>
+<li>Cursor haalde de hele marketplace offline; Anthropic was niet betrokken bij de extensie.</li>
+<li>AI-codeertools worden een aantrekkelijk doelwit: ze draaien met ruime rechten op ontwikkelaarsmachines.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het incident in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="±" data-target="11" data-suffix=" uur">±11 uur</div><div class="ns-viz-stat-label">Online in de marketplace</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5000">5000</div><div class="ns-viz-stat-label">Mogelijk getroffen gebruikers</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Soorten systeemgegevens gezocht</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Andere extensies geraakt (Cursor)</div></div>
+</div></div>
+<h5>Een vertrouwde naam als vermomming</h5>
+<p>Op donderdag stond in de extensie-marketplace van code-editor Cursor ongeveer elf uur lang een gemanipuleerde versie van de Claude Code-extensie. Volgens Cursor kunnen tot 5000 gebruikers zijn getroffen. De extensie probeerde gegevens als hostnaam, gebruikersnaam, besturingssysteem en publiek IP-adres te verzamelen en een verbinding op te zetten waarmee de aanvaller op afstand toegang kon krijgen. Dat laatste zou op de meeste machines volgens Cursor niet gelukt zijn, omdat daarvoor beheerdersrechten nodig zijn. Anthropic had geen enkele rol bij de ontwikkeling van deze versie. Na de ontdekking haalde Cursor de extensie weg en zette het de volledige marketplace offline; pas nadat samen met providers de malware was geneutraliseerd en er geen verder risico meer was, kwam de winkel terug. Beveiligingsonderzoekers, onder wie die van Phorion, publiceerden analyses van de backdoor.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de aanval verliep</div>
+<div class="ns-viz-mech-subtitle">Van nagemaakte extensie tot offline gehaalde marketplace</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Plaatsing</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Installatie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Payload</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Respons</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="40" width="240" height="120" rx="10" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="55" y="58" width="65" height="40" rx="5" fill="#a78bfa" opacity=".4"/><rect x="128" y="58" width="65" height="40" rx="5" fill="#7c3aed" opacity=".85"/><rect x="201" y="58" width="65" height="40" rx="5" fill="#a78bfa" opacity=".4"/>
+      <text x="160" y="83" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Claude Code</text>
+      <text x="160" y="135" text-anchor="middle" font-size="12" fill="#44403c">Marketplace Cursor</text>
+      <circle class="ns-viz-mech-hotspot" cx="185" cy="62" r="7" data-tip="Gemanipuleerde versie, niet van Anthropic"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Plaatsing</h6>
+      <p class="korte">Een gemanipuleerde versie van een populaire extensie verschijnt in de marketplace.</p>
+      <p class="uitleg">De aanvaller lift mee op de bekendheid van Claude Code. Gebruikers die de extensie zoeken, krijgen een versie die Anthropic niet heeft gemaakt. Ze stond ongeveer elf uur online.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="70" y="40" width="180" height="110" rx="8" fill="#7c3aed" opacity=".85"/>
+      <rect x="130" y="150" width="60" height="12" fill="#44403c"/><rect x="100" y="162" width="120" height="8" rx="3" fill="#44403c"/>
+      <text x="160" y="90" text-anchor="middle" font-size="13" fill="#fff">Installeren…</text>
+      <rect x="100" y="105" width="120" height="8" rx="4" fill="#a78bfa"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Installatie</h6><p class="korte">Tot 5000 gebruikers installeren de extensie in hun editor.</p><p class="uitleg">Editor-extensies draaien met de rechten van de gebruiker en hebben toegang tot bestanden, terminal en netwerk. Een extensie installeren is daarmee in feite code van een derde uitvoeren.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="60" width="100" height="80" rx="8" fill="#7c3aed" opacity=".8"/><text x="80" y="92" text-anchor="middle" font-size="10" fill="#fff">host · user</text><text x="80" y="110" text-anchor="middle" font-size="10" fill="#fff">OS · IP</text>
+      <path d="M135 100 L215 100" stroke="#dc2626" stroke-width="3" stroke-dasharray="6 4"/>
+      <circle cx="250" cy="100" r="30" fill="#dc2626" opacity=".8"/><text x="250" y="105" text-anchor="middle" font-size="11" fill="#fff">aanvaller</text>
+      <text x="160" y="170" text-anchor="middle" font-size="12" fill="#44403c">Data weg; toegang op afstand vereist adminrechten</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Payload</h6><p class="korte">De malware verzamelt systeemgegevens en probeert toegang op afstand op te zetten.</p><p class="uitleg">Hostnaam, gebruikersnaam, besturingssysteem en publiek IP-adres gaan naar de aanvaller. De backdoor voor toegang op afstand vereist beheerdersrechten en werkte volgens Cursor op de meeste machines waarschijnlijk niet.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="70" y="50" width="180" height="100" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="3"/>
+      <circle cx="160" cy="100" r="28" fill="none" stroke="#7c3aed" stroke-width="5"/><line x1="160" y1="72" x2="160" y2="96" stroke="#7c3aed" stroke-width="5"/>
+      <text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Marketplace offline tot risico weg is</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Respons</h6><p class="korte">Cursor verwijdert de extensie en haalt de hele marketplace offline.</p><p class="uitleg">Samen met providers wordt de malware geneutraliseerd. Pas daarna komt de marketplace terug. Volgens Cursor waren geen andere extensies getroffen. Onderzoekers van onder meer Phorion analyseerden de backdoor.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom AI-editors kwetsbaar zijn</h5>
+<p>Het incident legt een structureel zwak punt bloot. Cursor is gebouwd op de open broncode van Visual Studio Code, maar heeft geen toegang tot Microsofts eigen extensiewinkel en leunt daarom op een alternatieve marketplace. Zulke open registers zijn de afgelopen jaren herhaaldelijk misbruikt met nagemaakte of besmette extensies. Het verdienmodel van de aanvaller is eenvoudig: ontwikkelaars zitten op waardevolle toegang, van broncode en cloudsleutels tot cryptowallets, en installeren extensies vaak zonder controle. AI-codeerassistenten maken dat risico groter. Ze krijgen bewust ruime rechten om bestanden te lezen en commando's uit te voeren, en een populaire naam als Claude Code wekt direct vertrouwen. Dat Cursor de hele marketplace offline haalde, is dan ook een veelzeggend signaal: kennelijk kon het niet snel genoeg uitsluiten dat er meer mis was.</p>
+<blockquote>Een extensie installeren is code van een onbekende uitvoeren met de rechten van de ontwikkelaar. De naam op het etiket is geen garantie.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Eerdere misbruik van open extensieregisters</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2025</div><div>Nep-Solidity-extensie in Open VSX besteelt Cursor-ontwikkelaar (Kaspersky)</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2025</div><div>Zelfverspreidende 'GlassWorm'-malware duikt op in Open VSX-extensies</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">okt 2026</div><div>Gemanipuleerde Claude Code-extensie elf uur in Cursors marketplace</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">daarna</div><div>Marketplace offline, malware geneutraliseerd, winkel hersteld</div></div>
+</div></div>
+<h5>Gevolgen voor ontwikkelaars en bedrijven</h5>
+<p>Voor wie de extensie recent installeerde, is het advies helder: verwijderen, de machine controleren en wachtwoorden en sleutels die op dat systeem stonden roteren. Voor organisaties is de les breder. Ook in Nederland en Europa groeit het gebruik van AI-codeertools snel, vaak buiten het zicht van IT-beveiliging. Onder de Europese NIS2- en Cyber Resilience-regels wordt de keten van software die bedrijven gebruiken nadrukkelijker hun verantwoordelijkheid; een editorextensie is daar onderdeel van. Het incident valt bovendien in een week waarin de AI-sector onder vergrootglas ligt, van Googles koersval tot de vraag hoe autonoom AI-agents mogen handelen. Hoe meer bevoegdheden agents krijgen, hoe groter de schade van een besmette schakel.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Supply-chain-aanval</summary>
+    <div class="ns-viz-concept-body">De aanvaller breekt niet direct in, maar besmet een onderdeel dat slachtoffers zelf installeren, zoals een softwarebibliotheek of editorextensie.</div></details>
+  <details class="ns-viz-concept"><summary>Backdoor / remote access</summary>
+    <div class="ns-viz-concept-body">Een verborgen verbinding waarmee de aanvaller later opdrachten op de machine kan uitvoeren. In dit geval waren daarvoor beheerdersrechten nodig.</div></details>
+  <details class="ns-viz-concept"><summary>Open VSX</summary>
+    <div class="ns-viz-concept-body">Een open register voor VS Code-extensies, gebruikt door editors die niet bij Microsofts eigen marketplace mogen, zoals Cursor.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Elf uur en maximaal 5000 gebruikers klinkt beperkt, en de snelle, drastische reactie van Cursor verdient lof. Maar het incident toont dat de beveiliging van AI-ontwikkeltools achterloopt bij hun macht. Een marketplace die een vervalste versie van een van de bekendste AI-extensies doorlaat, controleert onvoldoende op herkomst. Zolang uitgeversverificatie en ondertekening niet standaard zijn, blijft elke populaire AI-tool een ideale vermomming voor de volgende aanval.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Z2JdCx75ysI" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Z2JdCx75ysI/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Malicious Claude Code extension in the Cursor marketplace: Coralogix Security Advisory</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>
