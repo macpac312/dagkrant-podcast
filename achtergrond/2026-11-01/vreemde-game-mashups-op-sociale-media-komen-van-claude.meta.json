@@ -1,0 +1,16 @@
+{
+  "title": "Vreemde game-mashups op sociale media komen van Claude",
+  "summary": "Claude kan gamecode in een nacht decompileren, en dat heeft het modden van games veranderd, schrijft de Guardian.\n\nSociale media staan vol met clips van bizarre combinaties van games: Skyrim in Minecraft, Halo met Mario. Volgens de Guardian zijn dat geen AI-video's, maar door AI geholpen code: Anthropics Claude is sinds enkele weken zeer goed in het decompileren van gamecode, het terugvertalen van binaire code naar leesbare broncode. Wat maanden werk was, kost nu een avond.\n\nDe beste mashups vra",
+  "sources": [
+    "https://www.theguardian.com/games/2026/oct/28/social-media-is-full-of-weird-video-game-mashups-where-are-they-all-coming-from"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-01",
+  "slug": "vreemde-game-mashups-op-sociale-media-komen-van-claude",
+  "tts_slug": "vreemde-game-mashups-op-sociale-media-komen-van-claude",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-01T05:40:45",
+  "size_kb": 11
+}

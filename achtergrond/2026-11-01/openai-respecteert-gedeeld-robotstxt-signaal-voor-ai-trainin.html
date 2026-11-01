@@ -1,0 +1,89 @@
+<ul class="bg-bullets">
+<li>OpenAI gaat een gedeeld robots.txt-signaal voor AI-training respecteren.</li>
+<li>Websites geven met één regel hun voorkeur door aan alle deelnemende aanbieders.</li>
+<li>Het vervangt het lappendeken van aparte bot-namen per AI-bedrijf.</li>
+<li>Het blijft vrijwillig: de waarde hangt af van hoeveel aanbieders meedoen.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een gedeeld trainingssignaal werkt</div>
+<div class="ns-viz-mech-subtitle">Van één regel in robots.txt naar een keuze bij elke aanbieder</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Uitgever</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Crawler</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Aanbieder</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="70" y="30" width="180" height="140" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="70" y="30" width="180" height="22" rx="8" fill="#7c3aed" fill-opacity=".2"/>
+      <text x="160" y="46" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">/robots.txt</text>
+      <text x="85" y="80" font-size="11" fill="#44403c" font-family="monospace">User-agent: *</text>
+      <text x="85" y="100" font-size="11" fill="#44403c" font-family="monospace">Allow: /</text>
+      <rect x="80" y="112" width="160" height="22" rx="4" fill="#a78bfa" fill-opacity=".3"/>
+      <text x="85" y="127" font-size="11" fill="#7c3aed" font-family="monospace">[AI-training: nee]</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Uitgever</h6>
+      <p class="korte">De website zet één gedeeld signaal over AI-training in zijn robots.txt.</p>
+      <p class="uitleg">In plaats van elke AI-crawler apart te moeten kennen en blokkeren, geeft de site-eigenaar een algemene voorkeur op die voor alle deelnemende aanbieders geldt.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="90" cy="100" r="40" fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"/>
+      <text x="90" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">crawler</text>
+      <line x1="135" y1="100" x2="200" y2="100" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="5 4"/>
+      <rect x="205" y="70" width="80" height="60" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="245" y="105" text-anchor="middle" font-size="11" fill="#44403c">robots.txt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Crawler leest</h6>
+      <p class="korte">De crawler leest het bestand voordat hij pagina's ophaalt.</p>
+      <p class="uitleg">Dat is hetzelfde principe als bij zoekmachines sinds de jaren negentig: robots.txt is een verzoek, geen technische blokkade.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="60" width="100" height="80" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="90" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Trainingsset</text>
+      <rect x="180" y="60" width="100" height="80" rx="8" fill="#e5e7eb" stroke="#78716c" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="230" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#78716c">Uitgesloten</text>
+      <text x="230" y="116" text-anchor="middle" font-size="10" fill="#78716c">bij 'nee'</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Aanbieder respecteert</h6>
+      <p class="korte">Deelnemende AI-bedrijven, nu ook OpenAI, laten de content dan buiten de training.</p>
+      <p class="uitleg">De afdwingbaarheid hangt af van de toezegging van elke aanbieder; wie niet meedoet, is technisch niet gebonden.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/3</span>
+</div>
+</div>
+<h5>Van zoekmachines naar taalmodellen</h5>
+<p>Robots.txt is een van de oudste afspraken van het web: een tekstbestand waarin een site aangeeft welke crawlers welke pagina's mogen bezoeken. De conventie stamt uit 1994 en werd pas in 2022 als IETF-standaard (RFC 9309) vastgelegd. Ze werkt op vertrouwen. Toen AI-bedrijven het web op grote schaal begonnen te verzamelen voor training, bleek dat systeem slecht toegerust. OpenAI introduceerde in 2023 zijn eigen crawler GPTBot, Google kwam met een apart token voor AI-gebruik, en andere aanbieders volgden met eigen namen. Uitgevers moesten zo een steeds langere lijst bijhouden. Een gedeeld signaal, waarmee site-eigenaren hun trainingsvoorkeur in één keer aan alle deelnemende aanbieders doorgeven, moet dat vereenvoudigen. OpenAI zegt dat signaal nu te gaan respecteren.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Mijlpalen van het web-opt-out</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1994">1994</div><div class="ns-viz-stat-label">Robots.txt-conventie ontstaat</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2019">2019</div><div class="ns-viz-stat-label">EU-richtlijn: opt-out voor tekst- en datamining</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2022">2022</div><div class="ns-viz-stat-label">Robots.txt als IETF-standaard</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2023">2023</div><div class="ns-viz-stat-label">OpenAI lanceert GPTBot</div></div>
+</div></div>
+<h5>Vrijwillig, maar juridisch niet vrijblijvend</h5>
+<p>Voor Europa is dit meer dan een technisch detail. De Europese auteursrechtrichtlijn van 2019 staat tekst- en datamining toe, tenzij de rechthebbende dat op een machineleesbare manier heeft uitgesloten. De AI Act verplicht aanbieders van algemene AI-modellen om zulke voorbehouden te respecteren. Een breed erkend signaal kan dus uitgroeien tot hét bewijs dat een uitgever zijn rechten heeft voorbehouden. Tegelijk laat een ander bericht in deze krant zien hoe beweeglijk die opt-outs zijn: OpenAI gaat vanaf 29 november wel trainen op cybersecuritydata van Daybreak Blue, ook bij gebruikers die eerder buiten de training bleven. Welke details het nieuwe signaal precies kent en welke aanbieders meedoen, is uit de beschikbare berichtgeving nog niet volledig op te maken.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Robots.txt</summary>
+    <div class="ns-viz-concept-body">Tekstbestand in de hoofdmap van een website met instructies voor crawlers. Het is een verzoek: kwaadwillende of niet-deelnemende bots kunnen het negeren.</div></details>
+  <details class="ns-viz-concept"><summary>User-agent-token</summary>
+    <div class="ns-viz-concept-body">De naam waarmee een crawler zich meldt, zoals GPTBot. Sites konden tot nu toe vooral per token blokkeren, wat een lijst per AI-bedrijf vereiste.</div></details>
+  <details class="ns-viz-concept"><summary>TDM-voorbehoud</summary>
+    <div class="ns-viz-concept-body">In de EU mag tekst- en datamining, tenzij de rechthebbende dit machineleesbaar uitsluit. Een gedeeld signaal kan als zo'n voorbehoud gaan gelden.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Een gedeeld signaal is een stap vooruit voor uitgevers: het verlaagt de drempel om nee te zeggen. Maar het blijft een herenakkoord in een sector waar de prikkel om meer data te verzamelen enorm is. De echte toets is niet OpenAI's toezegging, maar of het signaal breed wordt overgenomen en of Europese toezichthouders het gaan behandelen als bindend voorbehoud.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=3TS96IfyBeE" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/3TS96IfyBeE/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI respecteert gedeeld robots.txt-signaal voor AI-training 2026</div></div></a></div>

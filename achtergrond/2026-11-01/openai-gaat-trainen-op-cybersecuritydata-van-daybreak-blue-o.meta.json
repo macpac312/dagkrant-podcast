@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI gaat trainen op cybersecuritydata van Daybreak Blue, ook bij opt-out",
+  "summary": "Vanaf 29 november gebruikt OpenAI sessiedata die eerder buiten de training bleef; na kritiek komt er een aparte opt-out.\n\nOpenAI gaat vanaf 29 november data uit Daybreak Blue-sessies gebruiken om modellen te trainen, ook als gebruikers training hadden uitgezet, meldt The Decoder. Na kritiek beloofde een vervolgmail een aparte opt-out.\n\nDe stap doet denken aan het conflict met wiskundigen die vermoedden dat OpenAI hun ongepubliceerde werk gebruikte.",
+  "sources": [
+    "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-01",
+  "slug": "openai-gaat-trainen-op-cybersecuritydata-van-daybreak-blue-o",
+  "tts_slug": "openai-gaat-trainen-op-cybersecuritydata-van-daybreak-blue-o",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-01T05:40:45",
+  "size_kb": 7
+}

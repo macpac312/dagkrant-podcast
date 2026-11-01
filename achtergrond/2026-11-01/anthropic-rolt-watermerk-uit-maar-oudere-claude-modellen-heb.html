@@ -1,0 +1,72 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Anthropic voorziet vier extra Claude-modellen van een onzichtbaar tekstwatermerk.</li>
+<li>De aanleiding is de deadline van de EU AI Act in december.</li>
+<li>Bij Opus 4.6 en Sonnet 4.6 werkt het watermerk alleen bij standaardinstellingen.</li>
+<li>Ook xAI watermerkt Grok-tekst vanaf 7 november: transparantie wordt de norm, niet de uitzondering.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Welke modellen, welke voorwaarden</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Nieuwe modellen</h6>
+    <ul><li>Alles na 2 augustus 2026</li><li>O.a. Claude Opus 5.5</li><li>Watermerk vanaf dag één</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Mythos 5 · Opus 4.7</h6>
+    <ul><li>Krijgen watermerk nu alsnog</li><li>Geen voorbehoud in Anthropic-mail</li><li>Lijkt altijd actief</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Opus 4.6 · Sonnet 4.6</h6>
+    <ul><li>Krijgen watermerk nu alsnog</li><li>Alleen bij standaard samplinginstellingen</li><li>Alleen een compliancewaarschuwing</li></ul></div>
+</div></div>
+<h5>Een watermerk onder druk van Brussel</h5>
+<p>De EU AI Act verplicht aanbieders van generatieve AI om synthetische inhoud machineleesbaar te markeren. Die transparantieverplichting gaat in december in, en Anthropic loopt daarop vooruit. In een e-mail aan API-klanten meldt het bedrijf dat Claude Mythos 5, Opus 4.7, Opus 4.6 en Sonnet 4.6 een tekstwatermerk krijgen. Nieuwere modellen, zoals Opus 5.5, hebben dat al; elk model dat na 2 augustus 2026 uitkwam, werd ermee geleverd. Op Amazon Bedrock kan de uitrol enkele dagen langer duren. Omdat het watermerk in het model zelf zit, werkt het op elk platform dat Claude aanbiedt, van AWS en Google Cloud tot Microsoft Foundry, en klanten kunnen het niet uitzetten. Anthropic beschrijft het als een 'onwaarneembaar patroon in woordkeuze' dat betekenis, kwaliteit en leesbaarheid niet verandert, geen extra tokens kost en geen informatie over gebruikers bevat.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een tekstwatermerk werkt</div>
+<div class="ns-viz-mech-subtitle">Van woordkeuze naar statistisch herkenbare handtekening</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Kansen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Bijsturen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Patroon</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Detectie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><text x="160" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Volgend woord: kandidaten</text><g fill="#a78bfa"><rect x="50" y="70" width="40" height="90"/><rect x="110" y="95" width="40" height="65"/><rect x="170" y="115" width="40" height="45"/><rect x="230" y="135" width="40" height="25"/></g><g font-size="10" text-anchor="middle" fill="#44403c"><text x="70" y="178">groot</text><text x="130" y="178">fors</text><text x="190" y="178">flink</text><text x="250" y="178">ruim</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Kansen</h6><p class="korte">Een taalmodel kiest elk woord uit een verdeling van waarschijnlijke kandidaten.</p><p class="uitleg">Vaak zijn meerdere woorden even passend. Die vrijheid in woordkeuze is de ruimte waarin een watermerk kan worden verstopt, zonder dat de betekenis verandert.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><text x="160" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Geheime sleutel stuurt bij</text><g><rect x="50" y="80" width="40" height="80" fill="#a78bfa"/><rect x="110" y="70" width="40" height="90" fill="#7c3aed"/><rect x="170" y="115" width="40" height="45" fill="#a78bfa"/><rect x="230" y="125" width="40" height="35" fill="#7c3aed"/></g><text x="160" y="185" text-anchor="middle" font-size="10" fill="#44403c">sommige woorden krijgen een kleine voorkeur</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Bijsturen</h6><p class="korte">Een sleutel verschuift de kansen licht in het voordeel van bepaalde woorden.</p><p class="uitleg">Anthropic gebruikt een variant van SynthID-text van Google DeepMind, dat de toevalsfactor achter de woordkeuze aanpast. Per woord is het effect verwaarloosbaar.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g font-size="11"><rect x="30" y="60" width="260" height="80" rx="8" fill="#fff" stroke="#a78bfa"/><text x="45" y="88" fill="#44403c">De <tspan fill="#7c3aed" font-weight="700">forse</tspan> groei van de <tspan fill="#7c3aed" font-weight="700">sector</tspan></text><text x="45" y="112" fill="#44403c">blijkt <tspan fill="#7c3aed" font-weight="700">vooral</tspan> uit de cijfers…</text></g><text x="160" y="170" text-anchor="middle" font-size="10" fill="#44403c">voor mensen onzichtbaar</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Patroon</h6><p class="korte">Over honderden woorden ontstaat een statistisch patroon dat lezers niet zien.</p><p class="uitleg">Er komen geen extra tekens of tokens bij, prijs en formaat blijven gelijk en de snelheid daalt nauwelijks, aldus Anthropic.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="140" cy="95" r="45" fill="none" stroke="#7c3aed" stroke-width="5"/><line x1="172" y1="127" x2="220" y2="175" stroke="#7c3aed" stroke-width="8" stroke-linecap="round"/><text x="140" y="101" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">AI?</text><text x="250" y="60" text-anchor="middle" font-size="10" fill="#44403c">detectie-API</text><text x="250" y="74" text-anchor="middle" font-size="10" fill="#44403c">(private preview)</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Detectie</h6><p class="korte">Met de sleutel kan een detector het patroon terugvinden.</p><p class="uitleg">Anthropic heeft een detectie-API in private preview. Hoe sterker de tekst van het oorspronkelijke model afwijkt, door instellingen of herschrijven, hoe zwakker het signaal.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>De maas bij de oudere modellen</h5>
+<p>Het voorbehoud zit bij de twee oudste modellen in de reeks. Bij Opus 4.6 en Sonnet 4.6 wordt het watermerk volgens Anthropic alleen toegepast als ontwikkelaars de drie samplingparameters – temperature, top_p en top_k – op hun standaardwaarde laten staan. Wie die aanpast, krijgt ongemarkeerde tekst. Anthropic adresseert dat niet technisch, maar met een waarschuwing: wie voor zijn eigen compliance op het watermerk leunt, moet de standaardinstellingen aanhouden. Voor Mythos 5 en Opus 4.7 noemt de e-mail dat voorbehoud niet. Het gat is relevanter dan het lijkt, schrijft The Decoder, omdat Opus 4.6 nog altijd als Anthropics beste schrijfmodel geldt, zelfs vóór Opus 5.5. Juist de tekst die het meest geschikt is om als menselijk door te gaan, is dus het makkelijkst ongemarkeerd te krijgen.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 De uitrol in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Oudere modellen krijgen alsnog het watermerk</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Daarvan alleen bij standaardinstellingen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Samplingparameters die standaard moeten blijven</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Extra tokens of kosten, aldus Anthropic</div></div>
+</div></div>
+<blockquote>Een watermerk dat afhangt van de goede wil van de gebruiker, is eerder een keurmerk voor de nette klant dan een rem op misbruik.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Aanloop naar de AI Act-deadline</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2 aug 2026</div><div>Nieuwe Claude-modellen voortaan met watermerk vanaf dag één</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">eind okt 2026</div><div>Anthropic mailt: vier oudere modellen volgen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">7 nov 2026</div><div>xAI voegt onzichtbare watermerken toe aan Grok-API-tekst</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">dec 2026</div><div>Transparantieplicht EU AI Act voor synthetische inhoud</div></div>
+</div></div>
+<h5>Wat de regelgeving wél en niet bereikt</h5>
+<p>Tekstwatermerken zijn technisch kwetsbaarder dan beeldwatermerken: korte teksten bevatten weinig signaal, en herschrijven of vertalen kan het patroon uitwissen. De AI Act vraagt markering 'voor zover technisch haalbaar', en precies die formulering geeft aanbieders speelruimte. Dat xAI vanaf 7 november hetzelfde doet met Grok-API-tekst, laat zien dat de hele sector zich naar Brussel voegt. Maar de vraag is wie het watermerk eigenlijk dient. Toezichthouders krijgen een instrument om naleving te toetsen, bedrijven een vinkje voor hun compliance. Voor docenten, redacties of platforms die AI-tekst willen herkennen, is een systeem met bekende uitzonderingen en een gesloten detector weinig waard. Op dezelfde dag dat het lek in ChatGPT's HTML-previews en de achterdeur in een Claude Code-extensie aandacht trekken, onderstreept dit dat veiligheid in AI nog vooral een kwestie van randvoorwaarden is.</p>
+<h5>Conclusie</h5>
+<p>Anthropic voldoet formeel aan wat Brussel vraagt, en sneller dan veel concurrenten. Maar door bij zijn beste schrijfmodel een uitzondering met alleen een waarschuwing af te dekken, laat het zien dat het watermerk primair een complianceproduct is. Dat is begrijpelijk – het achteraf inbouwen in oudere modellen is lastig – maar het ondergraaft het argument dat watermerken het informatie-ecosysteem beschermen. Toezichthouders doen er goed aan 'technisch haalbaar' strenger te lezen dan de industrie hoopt.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=T__byHgKYBo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/T__byHgKYBo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Anthropic rolt watermerk uit, maar oudere Claude-modellen hebben een maas 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

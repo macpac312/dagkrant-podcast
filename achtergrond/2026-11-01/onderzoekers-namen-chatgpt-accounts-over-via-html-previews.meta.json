@@ -1,0 +1,17 @@
+{
+  "title": "Onderzoekers namen ChatGPT-accounts over via HTML-previews",
+  "summary": "Parameter Labs vond een gat in OpenAI’s sandbox voor interactieve HTML-apps waarmee accounts konden worden gekaapt.\n\nOnderzoekers van Parameter Labs beschrijven hoe ze accounts van ChatGPT konden overnemen via de implementatie van interactieve HTML-apps (vroeger Canvas, nu HTML-previews). Die apps draaien in een sandbox, maar door een fout in die afscherming konden ze toch bij accountgegevens. Simon Willison besprak de bevindingen; op Hacker News trok het stuk ruim driehonderd punten.\n\nOpenAI he",
+  "sources": [
+    "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-01",
+  "slug": "onderzoekers-namen-chatgpt-accounts-over-via-html-previews",
+  "tts_slug": "onderzoekers-namen-chatgpt-accounts-over-via-html-previews",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-01T05:40:45",
+  "size_kb": 8
+}

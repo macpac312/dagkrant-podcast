@@ -1,0 +1,126 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://static.cryptobriefing.com/wp-content/uploads/2026/10/31181642/library-xai-adds-invisible-text-watermarking-to-grok-api-models-800x450.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© cryptobriefing.com</div></div><ul class="bg-bullets">
+<li>Vanaf 7 november krijgt alle Grok-API-tekst standaard een onzichtbaar statistisch watermerk.</li>
+<li>Het merkteken zit in subtiel gestuurde tokenkeuzes, niet in de zichtbare tekst.</li>
+<li>De Europese AI Act dwingt transparantie af; xAI sluit aan bij onder meer Anthropic.</li>
+<li>ChatGPT is volgens Crypto Briefing de laatste grote Noord-Amerikaanse dienst zonder tekstwatermerk.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De uitrol in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="7" data-suffix=" nov">7 nov</div><div class="ns-viz-stat-label">Watermerk standaard aan (2026)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5">5</div><div class="ns-viz-stat-label">Grok-modelversies gedekt (4.20 t/m 4.7)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">API-ingangen: api.x.ai, Responses, Chat Completions</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Consumentenproducten geraakt</div></div>
+</div></div>
+<h5>Een stille koerswijziging</h5>
+<p>xAI zet vanaf 7 november een onzichtbaar statistisch watermerk op alle tekst die via de Grok-API wordt gegenereerd. Ontwikkelaars hoeven niets aan te zetten: het merkteken komt standaard mee op grok-4.7, 4.6, 4.5, 4.3 en 4.20, en op elke tekst-endpoint, van api.x.ai tot de Responses- en Chat Completions-API. Dat is een opvallende draai. xAI verzette zich eerder publiekelijk tegen het markeren van output, met het argument dat tekst onaangetast moest blijven. De nieuwe aanpak verzoent die positie met de praktijk: wat de lezer ziet, verandert niet, het merkteken zit in de statistiek. De consumentenkant (de Grok-app en Grok op X) valt er buiten; het gaat om bedrijven en ontwikkelaars die Grok in hun eigen producten inbouwen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een statistisch tekstwatermerk werkt</div>
+<div class="ns-viz-mech-subtitle">Van gestuurde woordkeuze naar aantoonbare vingerafdruk</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Kandidaten</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Bijsturen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Leesbare tekst</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Detectie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="70" width="90" height="50" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="65" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Grok</text>
+      <text x="65" y="108" text-anchor="middle" font-size="10" fill="#44403c">volgend woord?</text>
+      <line x1="112" y1="95" x2="170" y2="45" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="112" y1="95" x2="170" y2="95" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="112" y1="95" x2="170" y2="145" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="172" y="30" width="120" height="30" rx="6" fill="#f5f5f4" stroke="#a78bfa"/><text x="232" y="50" text-anchor="middle" font-size="11" fill="#44403c">"belangrijk" 31%</text>
+      <rect x="172" y="80" width="120" height="30" rx="6" fill="#f5f5f4" stroke="#a78bfa"/><text x="232" y="100" text-anchor="middle" font-size="11" fill="#44403c">"wezenlijk" 28%</text>
+      <rect x="172" y="130" width="120" height="30" rx="6" fill="#f5f5f4" stroke="#a78bfa"/><text x="232" y="150" text-anchor="middle" font-size="11" fill="#44403c">"cruciaal" 24%</text>
+      <text x="160" y="190" text-anchor="middle" font-size="9" fill="#78716c">illustratieve kansen</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Kandidaten</h6>
+      <p class="korte">Bij elk woord weegt het model meerdere bijna even goede kandidaten af.</p>
+      <p class="uitleg">Een taalmodel kiest tekst token voor token uit een kansverdeling. Vaak liggen meerdere woorden dicht bij elkaar: inhoudelijk maakt het weinig uit welke wint. Precies in die speelruimte wordt het watermerk verstopt.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="40" width="70" height="120" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/>
+      <rect x="125" y="20" width="70" height="140" rx="8" fill="#7c3aed" fill-opacity=".35" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="210" y="55" width="70" height="105" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/>
+      <text x="75" y="178" text-anchor="middle" font-size="11" fill="#44403c">belangrijk</text>
+      <text x="160" y="178" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">wezenlijk ↑</text>
+      <text x="245" y="178" text-anchor="middle" font-size="11" fill="#44403c">cruciaal</text>
+      <text x="160" y="12" text-anchor="middle" font-size="10" fill="#7c3aed">geheime sleutel geeft licht duwtje</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Bijsturen</h6>
+      <p class="korte">Het systeem duwt de keuze subtiel richting een vooraf bepaald patroon.</p>
+      <p class="uitleg">xAI omschrijft het als het 'zachtjes sturen' van tokenkeuzes naar een patroon. Het duwtje is zo klein dat de beste kandidaat meestal ook de gemarkeerde is. Volgens xAI veranderen lengte, kwaliteit en snelheid van antwoorden niet.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="40" width="260" height="120" rx="10" fill="#fafaf9" stroke="#a78bfa" stroke-width="1.5"/>
+      <line x1="50" y1="70" x2="270" y2="70" stroke="#d6d3d1" stroke-width="6" stroke-linecap="round"/>
+      <line x1="50" y1="92" x2="250" y2="92" stroke="#d6d3d1" stroke-width="6" stroke-linecap="round"/>
+      <line x1="50" y1="114" x2="265" y2="114" stroke="#d6d3d1" stroke-width="6" stroke-linecap="round"/>
+      <line x1="50" y1="136" x2="200" y2="136" stroke="#d6d3d1" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="232" cy="136" r="12" fill="none" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">voor de lezer: gewone tekst</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Leesbare tekst</h6>
+      <p class="korte">Per zin valt niets op; de zichtbare tekst blijft gewoon tekst.</p>
+      <p class="uitleg">Er komen geen tekens, labels of metadata bij. Daarmee kan xAI blijven zeggen dat de output 'onaangetast' is. Het merkteken bestaat alleen als statistische afwijking over vele woorden heen.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="60" width="100" height="80" rx="8" fill="#f5f5f4" stroke="#a78bfa"/>
+      <text x="70" y="104" text-anchor="middle" font-size="11" fill="#44403c">veel tekst</text>
+      <line x1="122" y1="100" x2="170" y2="100" stroke="#7c3aed" stroke-width="2.5"/>
+      <circle cx="210" cy="100" r="36" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="210" y="97" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">detector</text>
+      <text x="210" y="112" text-anchor="middle" font-size="10" fill="#44403c">patroon?</text>
+      <text x="290" y="104" text-anchor="middle" font-size="22" fill="#7c3aed">✓</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Detectie</h6>
+      <p class="korte">Met genoeg tekst toont een detector de statistische vingerafdruk aan.</p>
+      <p class="uitleg">Wie de sleutel kent, telt hoe vaak de gemarkeerde keuzes voorkomen. Bij korte fragmenten is dat onzeker, bij langere teksten wordt het patroon overtuigend. Herschrijven of parafraseren verzwakt het signaal, een bekende zwakte van zulke methoden.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom nu: regelgeving en klantvertrouwen</h5>
+<p>De verklaring ligt grotendeels in Brussel. De Europese AI Act eist dat aanbieders van generatieve AI hun output herkenbaar maken als machinaal gemaakt, en een aanbieder die zijn API wereldwijd verkoopt, bouwt liever één standaard dan een aparte Europese variant. Crypto Briefing plaatst xAI daarmee naast Anthropic; Google markeert tekst al langer met SynthID. De opt-out is smal: teambeheerders kunnen het watermerk per model uitzetten in de xAI Console, maar alleen voor specifieke juridische of compliance-uitzonderingen, niet als algemene uitknop. Dat maakt het watermerk in de praktijk een eigenschap van het product, niet van een instelling. Voor xAI komt de stap op een moment dat het bedrijf, inmiddels onderdeel van SpaceX, ook elders onder vergrootglas ligt: een Amerikaanse rechter liet zojuist een NAACP-zaak over luchtvervuiling door het Colossus-datacenter in Memphis doorgaan.</p>
+<blockquote>De zichtbare output blijft onaangetast; de vingerafdruk leeft in de statistiek. Zo verzoent xAI zijn oude principe met de nieuwe Europese realiteit.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Wie markeert tekst?</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>xAI (Grok-API)</h6>
+    <ul><li>Watermerk standaard vanaf 7 november</li><li>Opt-out alleen bij juridische uitzondering</li><li>Consumentenapp niet geraakt</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Anthropic / Google</h6>
+    <ul><li>Volgens Crypto Briefing al conform transparantie-eisen</li><li>Google: SynthID voor tekst</li><li>Gebruikt als referentie door xAI</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>OpenAI (ChatGPT)</h6>
+    <ul><li>Geen tekstwatermerk volgens de aankondiging</li><li>Laatste grote Noord-Amerikaanse uitzondering</li><li>Druk neemt toe via AI Act</li></ul></div>
+</div></div>
+<h5>Gevolgen voor ontwikkelaars en Europa</h5>
+<p>Voor Europese bedrijven die Grok in klantenservice, marketing of contentproductie gebruiken, verandert er zichtbaar niets, maar juridisch wel iets. Hun teksten worden achteraf aantoonbaar herleidbaar tot een AI-model, wat compliance onder de AI Act vergemakkelijkt maar ook ongemakkelijk kan zijn voor wie AI-gebruik liever niet benadrukt. Voor onderwijs en journalistiek is de winst beperkter dan het lijkt: zolang niet elke grote aanbieder meedoet en detectoren niet openbaar of gestandaardiseerd zijn, bewijst het ontbreken van een watermerk niets. Dat maakt de positie van OpenAI interessant. Met de grootste gebruikersbasis bepaalt ChatGPT of tekstwatermerken een werkende infrastructuur worden of een lappendeken.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er op 7 november</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Grok-API levert ongemarkeerde tekst; xAI verdedigt publiekelijk dat output onaangetast hoort te blijven.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>Alle tekst via api.x.ai, Responses en Chat Completions draagt standaard een statistische vingerafdruk; uitzetten alleen bij juridische noodzaak.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>xAI levert hier geen principiële bekering, maar een pragmatische: het watermerk is zo ontworpen dat het oude standpunt formeel overeind blijft. Dat is verstandig. Regelgeving, niet ideologie, bepaalt nu de productroadmap van Amerikaanse AI-bedrijven in Europa. De echte toets ligt echter niet bij xAI maar bij OpenAI. Zolang de marktleider niet meedoet, blijft tekstwatermerken vooral een compliance-vinkje en geen betrouwbaar middel om echte van machinale tekst te onderscheiden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=8LVUqdABiyo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/8LVUqdABiyo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">xAI voegt vanaf 7 november onzichtbaar watermerk toe aan Grok-API 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://cryptobriefing.com/xai-grok-text-watermarking-api/" target="_blank" style="color:var(--accent)">cryptobriefing.com ↗</a></div>

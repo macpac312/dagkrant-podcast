@@ -1,0 +1,16 @@
+{
+  "title": "Anthropic rolt watermerk uit, maar oudere Claude-modellen hebben een maas",
+  "summary": "Voor de EU AI Act-deadline van december krijgen vier extra modellen een tekstwatermerk; bij Opus 4.6 en Sonnet 4.6 is het te omzeilen.\n\nAnthropic breidt zijn tekstwatermerk uit naar vier extra Claude-modellen om aan de deadline van de EU AI Act in december te voldoen. Bij de oudere modellen Claude Opus 4.6 en Sonnet 4.6 kunnen ontwikkelaars het watermerk volgens The Decoder omzeilen door één samplingparameter aan te passen. Anthropic pakt dat aan met slechts een compliancewaarschuwing.\n\nOok xAI ",
+  "sources": [
+    "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-01",
+  "slug": "anthropic-rolt-watermerk-uit-maar-oudere-claude-modellen-heb",
+  "tts_slug": "anthropic-rolt-watermerk-uit-maar-oudere-claude-modellen-heb",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-01T05:40:45",
+  "size_kb": 12
+}

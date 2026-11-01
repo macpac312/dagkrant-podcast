@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI respecteert gedeeld robots.txt-signaal voor AI-training",
+  "summary": "Websites kunnen via een gezamenlijk signaal aangeven of hun content voor training mag worden gebruikt.\n\nOpenAI gaat een gedeeld robots.txt-signaal respecteren waarmee website-eigenaren hun voorkeuren voor AI-training kunnen doorgeven aan deelnemende aanbieders.\n\nHet signaal moet een standaard worden die meerdere AI-bedrijven erkennen.",
+  "sources": [
+    "https://openai.com/index/helping-websites-express-ai-training-preferences"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-01",
+  "slug": "openai-respecteert-gedeeld-robotstxt-signaal-voor-ai-trainin",
+  "tts_slug": "openai-respecteert-gedeeld-robotstxt-signaal-voor-ai-trainin",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-01T05:40:45",
+  "size_kb": 9
+}
