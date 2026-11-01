@@ -1,0 +1,130 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.notebookcheck.nl/fileadmin/Notebooks/News/_nc5/claude-code-cursor-hintertuer-teaser.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© notebookcheck.nl</div></div><ul class="bg-bullets">
+<li>Besmette Claude Code-extensie stond op 29 oktober elf uur in Cursors marktplaats.</li>
+<li>Versies 2.1.312 en 2.1.313 plaatsten een SSH-sleutel van de aanvaller en bleven actief.</li>
+<li>Tot 5000 ontwikkelaars installeerden de extensie mogelijk; hun machines kunnen open staan.</li>
+<li>AI-codetools met brede systeemrechten maken de softwareketen een aantrekkelijker doelwit.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het incident in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="11" data-suffix=" uur">11 uur</div><div class="ns-viz-stat-label">Beschikbaar in de marktplaats</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5000">5000</div><div class="ns-viz-stat-label">Mogelijk getroffen gebruikers</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Besmette versies (2.1.312, 2.1.313)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1000" data-prefix="~">~1000</div><div class="ns-viz-stat-label">Punten voor de analyse op Hacker News</div></div>
+</div></div>
+<h5>Elf uur lang een vertrouwde naam</h5>
+<p>Op donderdag 29 oktober stond in de extensiemarktplaats van Cursor, de AI-code-editor die inmiddels eigendom is van SpaceX, een versie van Anthropics Claude Code-extensie die niet van Anthropic kwam. Volgens Cursor was de gemanipuleerde build beschikbaar van 5.27 uur tot 16.35 uur Amerikaanse oostkusttijd, ongeveer elf uur. De versies 2.1.312 en 2.1.313 voegden een SSH-sleutel van de aanvaller toe aan de machine van de ontwikkelaar, installeerden een mechanisme om na een herstart actief te blijven en stuurden systeemgegevens naar buiten: hostnaam, gebruikersnaam, besturingssysteem, pad naar de thuismap en publiek IP-adres. Versie 2.1.314 verving de malafide build. Cursor schat dat tot 5000 gebruikers de extensie mogelijk hebben geïnstalleerd en zegt te hebben vastgesteld dat geen andere extensies zijn gemanipuleerd. Onderzoekers van Phorion brachten de zaak naar buiten.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de achterdeur werkte</div>
+<div class="ns-viz-mech-subtitle">Van vertrouwde update naar externe toegang tot de ontwikkelaarsmachine</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Vermomming</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Toegang</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Persistentie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Exfiltratie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="30" width="240" height="140" rx="10" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <text x="160" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Cursor-marktplaats</text>
+      <rect x="60" y="66" width="200" height="38" rx="6" fill="#7c3aed" fill-opacity=".1" stroke="#a78bfa"/>
+      <text x="72" y="90" font-size="11" fill="#44403c">Claude Code · v2.1.311</text>
+      <rect x="60" y="114" width="200" height="38" rx="6" fill="#dc2626" fill-opacity=".1" stroke="#dc2626" stroke-width="1.8"/>
+      <text x="72" y="138" font-size="11" font-weight="700" fill="#dc2626">Claude Code · v2.1.312</text>
+      <circle class="ns-viz-mech-hotspot" cx="245" cy="133" r="7" data-tip="Zelfde naam, malafide inhoud"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Vermomming</h6>
+      <p class="korte">Een gemanipuleerde build verschijnt onder de naam van de officiële extensie.</p>
+      <p class="uitleg">Ontwikkelaars kregen de besmette versies 2.1.312 en 2.1.313 als gewone update of installatie aangeboden. Wie de extensie vertrouwde, had geen reden om te twijfelen: het versienummer volgde netjes op de vorige.</p>
+      <a class="ns-viz-mech-bron" href="https://www.theverge.com" target="_blank">📖 The Verge ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="150" y="40" width="140" height="120" rx="8" fill="#7c3aed" fill-opacity=".1" stroke="#7c3aed" stroke-width="2"/>
+      <text x="220" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">~/.ssh/authorized_keys</text>
+      <line x1="165" y1="82" x2="275" y2="82" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="165" y1="100" x2="260" y2="100" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="165" y1="122" x2="275" y2="122" stroke="#dc2626" stroke-width="4"/>
+      <circle cx="55" cy="122" r="18" fill="#dc2626" fill-opacity=".2" stroke="#dc2626" stroke-width="2"/>
+      <rect x="47" y="117" width="16" height="11" fill="#dc2626"/>
+      <path d="M 50 117 V 112 A 5 5 0 0 1 60 112 V 117" fill="none" stroke="#dc2626" stroke-width="2"/>
+      <line x1="75" y1="122" x2="160" y2="122" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+      <text x="55" y="158" text-anchor="middle" font-size="10" fill="#44403c">sleutel aanvaller</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Toegang</h6>
+      <p class="korte">De extensie zet een SSH-sleutel van de aanvaller op de machine.</p>
+      <p class="uitleg">Een publieke sleutel in authorized_keys geeft de bezitter van de bijbehorende privésleutel inlogrechten zonder wachtwoord, voor zover de machine via SSH bereikbaar is. Het is een stille, legitiem ogende toegangsweg.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="160" cy="100" r="55" fill="none" stroke="#a78bfa" stroke-width="3" stroke-dasharray="8 5"/>
+      <polygon points="212,85 222,100 202,100" fill="#a78bfa"/>
+      <rect x="125" y="80" width="70" height="40" rx="6" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">herstart</text>
+      <circle cx="160" cy="45" r="9" fill="#dc2626"/>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">malware start opnieuw mee</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Persistentie</h6>
+      <p class="korte">Een ingebouwd mechanisme zorgt dat de code ook na een herstart actief blijft.</p>
+      <p class="uitleg">Daarom volstaat het verwijderen of updaten van de extensie niet. Getroffen ontwikkelaars moeten opstartitems en geplande taken nalopen, naast de SSH-configuratie, om zeker te zijn dat niets achterblijft.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="25" y="55" width="110" height="80" rx="8" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/>
+      <text x="80" y="80" text-anchor="middle" font-size="10" fill="#44403c">hostnaam · user</text>
+      <text x="80" y="96" text-anchor="middle" font-size="10" fill="#44403c">OS · thuismap</text>
+      <text x="80" y="112" text-anchor="middle" font-size="10" fill="#44403c">publiek IP</text>
+      <path d="M 140 95 C 180 60, 210 60, 235 80" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+      <polygon points="230,72 242,84 228,86" fill="#dc2626"/>
+      <ellipse cx="265" cy="95" rx="38" ry="24" fill="#dc2626" fill-opacity=".15" stroke="#dc2626" stroke-width="2"/>
+      <text x="265" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626">aanvaller</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Exfiltratie</h6>
+      <p class="korte">Systeemgegevens worden naar buiten gestuurd, zodat de aanvaller weet waar hij binnen kan.</p>
+      <p class="uitleg">Hostnaam, gebruikersnaam, besturingssysteem, thuismap en publiek IP-adres vormen samen een adresboek: welke machine, welk account, waar bereikbaar. In combinatie met de geplaatste sleutel is dat een kant-en-klare ingang.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom ontwikkelaars het doelwit zijn</h5>
+<p>Aanvallen op de softwareketen zijn niet nieuw. In 2018 kaapte een kwaadwillende de populaire npm-bibliotheek event-stream om cryptowallets leeg te halen, in 2020 liep de SolarWinds-aanval via een besmette update tot diep in Amerikaanse overheidsnetwerken, en in 2024 werd de achterdeur in xz-utils op het nippertje ontdekt. Het gemeenschappelijke patroon: niet het eindsysteem aanvallen, maar het vertrouwde kanaal waarlangs software binnenkomt. Editor-extensies zijn daarin een zwakke plek. Ze draaien met de rechten van de gebruiker, kunnen bestanden lezen en schrijven en processen starten. AI-codeassistenten als Claude Code versterken dat probleem, omdat hun functie juist vraagt om brede toegang tot code, terminal en configuratie. Een ontwikkelaarsmachine is bovendien zelden een eindpunt: ze bevat sleutels tot repositories, cloudomgevingen en productieservers.</p>
+<blockquote>Wie de ontwikkelaar binnendringt, staat één stap verwijderd van alles wat die ontwikkelaar mag aanraken; het gevaar van deze achterdeur zit niet in de vijfduizend laptops, maar in waar die laptops toegang toe hebben.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Tijdlijn van het incident</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">29 okt, 5.27 ET</div><div>Gemanipuleerde Claude Code-build verschijnt in Cursor-marktplaats</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">29 okt, overdag</div><div>Versies 2.1.312 en 2.1.313 bereiken tot 5000 gebruikers</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">29 okt, 16.35 ET</div><div>Cursor verwijdert de extensie; 2.1.314 vervangt de malafide build</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">na 29 okt</div><div>Phorion publiceert analyse; bijna duizend punten op Hacker News</div></div>
+</div></div>
+<h5>Wie draagt de verantwoordelijkheid?</h5>
+<p>Het incident legt een gat bloot tussen maker en distributeur. Anthropic bouwt de extensie, maar Cursor beheert de marktplaats waarin de besmette versie stond. Hoe de aanvaller de build daar kreeg, is uit de beschikbare informatie niet op te maken, en dat is precies de vraag die gebruikers beantwoord willen zien. Cursor benadrukt dat geen andere extensies zijn aangetast, maar elf uur is lang voor een pakket dat automatisch kan worden bijgewerkt. Voor Europese bedrijven valt dit samen met de Cyber Resilience Act, die softwareleveranciers verantwoordelijker maakt voor de veiligheid van hun producten en updates. Praktisch is het advies helder: controleer authorized_keys, roteer SSH-sleutels en andere geheimen die op de machine stonden, en loop systemen na op persistentie.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Supply-chain-aanval</summary>
+    <div class="ns-viz-concept-body">Een aanval die niet het doelwit zelf treft, maar een leverancier of distributiekanaal waarlangs het doelwit software ontvangt. De besmetting reist mee op vertrouwen.</div></details>
+  <details class="ns-viz-concept"><summary>authorized_keys</summary>
+    <div class="ns-viz-concept-body">Bestand in de .ssh-map met publieke sleutels die zonder wachtwoord mogen inloggen. Een onbekende regel erin betekent dat iemand anders toegang kan hebben.</div></details>
+  <details class="ns-viz-concept"><summary>Persistentie</summary>
+    <div class="ns-viz-concept-body">Technieken waarmee malware een herstart overleeft, zoals opstartitems of geplande taken. Daarom is alleen de extensie verwijderen onvoldoende.</div></details>
+  <details class="ns-viz-concept"><summary>Sleutelrotatie</summary>
+    <div class="ns-viz-concept-body">Bestaande sleutels en tokens intrekken en vervangen door nieuwe, zodat eventueel buitgemaakte exemplaren waardeloos worden.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Dit was geen kwetsbaarheid in Claude Code, maar een les over het vertrouwen eromheen. Nu AI-assistenten steeds meer rechten krijgen op de machines van ontwikkelaars, wordt de marktplaats waarlangs ze binnenkomen kritieke infrastructuur. Dat Cursor de schade binnen een dag kon afbakenen is goed, maar onvoldoende: ondertekende builds die de maker zelf verifieert en die de editor afdwingt, horen standaard te zijn. Tot die tijd blijft elke extensie-update een sprong in vertrouwen die een aanvaller kan uitbuiten.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=JG523dnH2v8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/JG523dnH2v8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Fake Claude Code update in Cursor hid a backdoor. Check your computer (Oct 2026)</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.theverge.com/ai-artificial-intelligence/1023096/cursor-says-around-5000-people-may-have-installed-a-malicious-claude-code-extension" target="_blank" style="color:var(--accent)">theverge.com ↗</a></div>

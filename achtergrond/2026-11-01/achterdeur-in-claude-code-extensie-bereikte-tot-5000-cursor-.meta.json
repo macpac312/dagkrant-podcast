@@ -1,0 +1,20 @@
+{
+  "title": "Achterdeur in Claude Code-extensie bereikte tot 5000 Cursor-gebruikers",
+  "summary": "Een gemanipuleerde versie van de officiële Claude Code-extensie stond elf uur in de marktplaats van Cursor en installeerde een SSH-sleutel van de aanvaller. Een les in de kwetsbaarheid van de softwareketen.\n\nEen gemanipuleerde versie van de Claude Code-extensie van Anthropic was op 29 oktober ongeveer elf uur beschikbaar in de extensiemarktplaats van Cursor, de AI-code-editor die inmiddels eigendom is van SpaceX. De besmette versies (2.1.312 en 2.1.313) voegden een SSH-sleutel van de aanvaller t",
+  "sources": [
+    "https://www.notebookcheck.nl/Gemanipuleerde-Claude-Code-extensie-in-Cursor-plaatste-een-SSH-achterdeur.1438729.0.html",
+    "https://www.theverge.com/ai-artificial-intelligence/1023096/cursor-says-around-5000-people-may-have-installed-a-malicious-claude-code-extension",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeE05d0ZPMGJhT25SdDZYeDNtcEJkNmtaY1FDYkV5TDg0OWtHb1Vqa3p2SVRYeExIVWZ6WDgyZi13RGlWNXlPLUNNSEsteUwxMVNxdEh5Y2x6eVN2YXlaVzM5YWtBOVpNeExEXzFHNXZQSUt3RC1FNVB6eF9Ua2V3Y1dWYnFBdnlHczY2ZEw3ckNDQ0Z1cTJZQzI5S0lIdUU5dFdwakljdmEyMHhwVnV1elpVSW44d1U0Z0Fpcm1R?oc=5",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rNThSZ0RuMnEzTm5LMWlxU1dWcDl2Z2Fnc1I2RDV1U3k0alVJM052aTB5YnZCUWF1TktMaExNRmNMcE43dXdmSTliZkFOVUMtYmYzcGVqZjB0dm96a3A4MkNXeUhvaUdZX2FzRnQzQUFQUjYxZFE?oc=5",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQzdKWXRiWk0zaGNvdzItNGg1VWZ5Vjc0U1RSRno5a1lKT1lLeTZaOUwwT2dMMU8yajMwN2pvQ1VKZF9BZFVpbndKNEQ1VDNGeG9JcUZ1Q0VyYUdkOHhYRFFSekY4WS1JeVVtZU8waktRNndNeEt2MVRvN1dIM29rOWJsWjA4R2stdDdqTzc4ZmVpeEJ2X3BvSWFPVk43T01XTjNtWm4tZjRtdEtBYWhnZEFKc1c?oc=5"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-01",
+  "slug": "achterdeur-in-claude-code-extensie-bereikte-tot-5000-cursor-",
+  "tts_slug": "achterdeur-in-claude-code-extensie-bereikte-tot-5000-cursor-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-01T05:23:47",
+  "size_kb": 14
+}
