@@ -1,0 +1,17 @@
+{
+  "title": "Claude en Grok krijgen onzichtbaar tekstwatermerk vanwege de AI Act",
+  "summary": "Anthropic breidt watermerken vanaf 3 november uit naar oudere Claude-modellen; xAI volgt op 7 november.\n\nAnthropic voegt onzichtbare watermerken toe aan door Claude gegenereerde tekst, en breidt dat vanaf 3 november uit naar vier oudere modellen. Het bedrijf verwijst naar de transparantieverplichting uit artikel 50 van de Europese AI-verordening en de gedragscode die het heeft ondertekend. Detectie is alleen op aanvraag mogelijk.\n\nOok xAI zet vanaf 7 november standaard een watermerk op de API-ui",
+  "sources": [
+    "https://www.ndtvprofit.com/technology/using-claude-to-write-top-models-will-now-use-text-watermarking-as-identifiers-12269428",
+    "https://www.blocktempo.com/anthropic-claude-xai-grok-invisible-text-watermark-eu-ai-act/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-02",
+  "slug": "claude-en-grok-krijgen-onzichtbaar-tekstwatermerk-vanwege-de",
+  "tts_slug": "claude-en-grok-krijgen-onzichtbaar-tekstwatermerk-vanwege-de",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-02T05:42:46",
+  "size_kb": 13
+}

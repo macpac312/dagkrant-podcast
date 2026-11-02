@@ -1,0 +1,71 @@
+---
+titel: "Xiaomi 18 Fold in gamingtest: 120 fps in Call of Duty, maar teleurstelling elders"
+url: https://www.notebookcheck.net/Xiaomi-18-Fold-gaming-review-120-FPS-in-Call-of-Duty-but-another-game-is-a-major-disappointment.1428182.0.html
+bron: xiaomi
+kind: xiaomi
+gegenereerd: 2026-11-02T05:42:47
+---
+
+© notebookcheck.net
+
+De Xiaomi 18 Fold haalt in Call of Duty Mobile vrijwel constant 120 fps.
+
+PUBG Mobile zit vast op 30 fps, ongeacht de grafische instelling.
+
+Die limiet wijst op software of game-optimalisatie, niet op te weinig rekenkracht.
+
+REDMI mikt volgens XimiTime in 2027 op een brede telefoon zonder vouw.
+
+Een topchip, drie gezichten
+
+Notebookcheck testte de Xiaomi 18 Fold met GameBench in drie populaire games. Het toestel heeft de Xring O3, Xiaomi’s eigen topprocessor, en een OLED-scherm van 120 Hz. In Call of Duty Mobile op de hoogste grafische en framerate-instellingen haalt het gemiddeld 119,6 beelden per seconde, met een mediaan van 120 en zelfs bij de laagste één procent nog 110,5. GameBench geeft een stabiliteitsscore van 100 procent; in de benchmark van ongeveer drieënhalve minuut waren geen noemenswaardige dips. Genshin Impact draait op het hoge profiel gemiddeld 55,8 fps met een mediaan van 60, maar zakt herhaaldelijk naar ongeveer 45; stabiliteit 74 procent. De oppervlaktetemperatuur blijft met maximaal 40,6 graden gematigd. PUBG Mobile is de domper: hoger dan 30 fps is niet in te stellen, en hogere detailniveaus ontbreken helemaal.
+
+Waarom een snelle chip toch op 30 fps blijft
+
+Het contrast tussen Call of Duty en PUBG laat zien dat rekenkracht niet alles bepaalt. Notebookcheck concludeert dat de beperking in PUBG Mobile wijst op een gebrek aan game-optimalisatie of een softwarematige limiet, niet op te weinig vermogen. Gamemakers bepalen vaak per toestel welke grafische profielen en framerates beschikbaar zijn. Een nieuw of minder gangbaar platform, en een eigen chip als de Xring O3 is dat, moet eerst door de game worden herkend voordat de hogere standen opengaan. Tot die tijd valt het toestel terug op een veilige standaard. De 30 fps worden wel met 99 procent stabiliteit vastgehouden, maar het toestel wordt tijdens het spelen merkbaar warm. Genshin Impact laat een ander patroon zien: de chip trekt het, maar de framerate schommelt, wat vaker wijst op zware scènes dan op een kunstmatig plafond.
+
+Game
+
+Mediaan
+
+Laagste
+
+Call of Duty Mobile
+
+120
+
+110,5 (1%)
+
+Genshin Impact
+
+60
+
+~45
+
+PUBG Mobile
+
+30
+
+plafond 30
+
+Framerates in fps, Notebookcheck met GameBench.
+
+De Xiaomi 18 Fold kan veel hogere framerates aan; de grens in PUBG Mobile ligt bij de software, niet bij de chip.
+
+Gevolgen voor Xiaomi en de vouwmarkt
+
+Voor Xiaomi is de test een tweesnijdend zwaard. De eigen Xring-chip moet laten zien dat het merk minder afhankelijk is van Qualcomm en MediaTek, en Call of Duty toont dat de hardware daarvoor klaar is. Maar een eigen chip vraagt ook een eigen ecosysteem: gamemakers moeten het platform ondersteunen, anders blijven kopers op standaardinstellingen steken. Dat probleem kennen andere merken met eigen chips ook. Intussen verbreedt Xiaomi zijn vormexperiment. Volgens XimiTime werkt dochtermerk REDMI voor 2027 aan een breedbeeldtelefoon zonder vouw, in lijn met de bredere Chinese trend die Huawei met de Pura X View inzette. Vouwtelefoons krijgen daarmee concurrentie uit eigen huis: wie vooral een breder scherm wil, hoeft straks misschien geen scharnier meer te kopen.
+
+Conclusie
+
+De Xiaomi 18 Fold heeft de spierkracht van een topgametoestel, maar niet overal de toegang. Het PUBG-plafond is een softwareprobleem dat Xiaomi niet zelf kan oplossen; het moet gamemakers overtuigen hun spel af te stemmen op de Xring O3. Lukt dat snel, dan is de test een voetnoot. Lukt het niet, dan wordt de eigen chip een rem in plaats van een troef.
+
+▶ YouTube
+
+Xiaomi 18 Fold in gamingtest: 120 fps in Call of Duty, maar teleurstelling elders 2026
+
+Bronnen:
+
+ 
+
+notebookcheck.net ↗

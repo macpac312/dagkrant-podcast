@@ -1,0 +1,113 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://inews.gtimg.com/om_ls/OcAyBTZ-4jr-WX57atIa-SI-zICRA7CSwNTt_8cIcywL0AA_640330/0" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© news.qq.com</div></div><ul class="bg-bullets">
+<li>Vanaf 7 november krijgt API-tekst van zeven Grok-modellen standaard een onzichtbaar watermerk.</li>
+<li>Het merk zit in de tokenkeuze, niet in verborgen tekens of metadata.</li>
+<li>xAI en Anthropic verwijzen allebei naar artikel 50 van de Europese AI-verordening.</li>
+<li>Detectie blijft voorlopig voorbehouden aan wie een aanvraag doet.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het Grok-watermerk in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="7">7</div><div class="ns-viz-stat-label">Grok-modellen met watermerk</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">API’s: Responses en Chat Completions</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Detectie-uitkomsten</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Extra tekens in de tekst</div></div>
+</div></div>
+<h5>Europese regel, wereldwijde uitrol</h5>
+<p>SpaceXSI, het moederbedrijf van xAI, voegt vanaf 7 november standaard een onzichtbaar watermerk toe aan tekst die Grok-modellen via de API genereren. Het gaat om grok-4.7, grok-4.6, grok-4.5, grok-4.3 en drie varianten van grok-4.20: reasoning, non-reasoning en multi-agent. Gewone antwoorden, gestructureerde output en parameters van toolaanroepen vallen er allemaal onder. Volgens de ontwikkelaarsdocumentatie is het een reactie op de Europese AI-verordening, maar het geldt wereldwijd. Daarmee herhaalt zich een bekend patroon: een Europese regel wordt een mondiale standaard omdat aanbieders geen aparte versies per regio willen onderhouden. Artikel 50 verplicht aanbieders van generatieve AI sinds 2 augustus 2026 om output machineleesbaar te markeren als door AI gemaakt. De bijbehorende gedragscode is vrijwillig, de plicht zelf niet.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een tekstwatermerk werkt</div>
+<div class="ns-viz-mech-subtitle">Van tokenkeuze tot statistische detectie, zonder zichtbare sporen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Tokenkeuze</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Antwoord</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Detectie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Uitzetten</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="20" width="280" height="160" rx="12" fill="#7c3aed" fill-opacity=".06" stroke="#a78bfa"/>
+      <text x="160" y="45" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Volgende token?</text>
+      <rect x="45" y="65" width="70" height="30" rx="6" fill="#a78bfa" fill-opacity=".25" stroke="#a78bfa"/><text x="80" y="85" text-anchor="middle" font-size="12" fill="#44403c">snel</text>
+      <rect x="125" y="65" width="70" height="30" rx="6" fill="#7c3aed" fill-opacity=".35" stroke="#7c3aed" stroke-width="2"/><text x="160" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">vlot</text>
+      <rect x="205" y="65" width="70" height="30" rx="6" fill="#a78bfa" fill-opacity=".25" stroke="#a78bfa"/><text x="240" y="85" text-anchor="middle" font-size="12" fill="#44403c">rap</text>
+      <path d="M160 100 L160 135" stroke="#7c3aed" stroke-width="2.5"/>
+      <text x="160" y="155" text-anchor="middle" font-size="11" fill="#44403c">lichte duw in de kansverdeling</text>
+      <circle class="ns-viz-mech-hotspot" cx="160" cy="80" r="7" data-tip="Het model kiest iets vaker uit een geheim patroon van woorden"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Tokenkeuze</h6>
+      <p class="korte">Tijdens het schrijven kiest het model zijn woorden net iets anders dan normaal.</p>
+      <p class="uitleg">Volgens xAI wordt het watermerk bij generatie aangebracht door de keuze van tokens, de kleinste teksteenheden, licht te beïnvloeden. Anthropic beschrijft hetzelfde principe als een moeilijk waarneembaar patroon in de woordkeuze.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="25" width="240" height="150" rx="10" fill="#fff" stroke="#a78bfa" stroke-width="1.5"/>
+      <rect x="55" y="45" width="210" height="8" rx="4" fill="#a78bfa" fill-opacity=".5"/>
+      <rect x="55" y="62" width="180" height="8" rx="4" fill="#a78bfa" fill-opacity=".5"/>
+      <rect x="55" y="79" width="200" height="8" rx="4" fill="#a78bfa" fill-opacity=".5"/>
+      <rect x="55" y="96" width="150" height="8" rx="4" fill="#a78bfa" fill-opacity=".5"/>
+      <rect x="55" y="130" width="120" height="26" rx="6" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed"/>
+      <text x="115" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">x-watermark: true</text>
+      <circle class="ns-viz-mech-hotspot" cx="190" cy="143" r="7" data-tip="De header laat ontwikkelaars zien dat de output gemarkeerd is"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Antwoord</h6>
+      <p class="korte">De tekst ziet er normaal uit, alleen de header verraadt het watermerk.</p>
+      <p class="uitleg">Er komen geen extra tekens, markeringen of verborgen tekst in het antwoord. Ontwikkelaars zien in de responsheader x-watermark de waarde true. xAI zegt dat kwaliteit en snelheid niet veranderen.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="110" cy="95" r="45" fill="none" stroke="#7c3aed" stroke-width="5"/>
+      <line x1="143" y1="128" x2="185" y2="170" stroke="#7c3aed" stroke-width="8" stroke-linecap="round"/>
+      <rect x="205" y="35" width="95" height="28" rx="6" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed"/><text x="252" y="54" text-anchor="middle" font-size="11" fill="#44403c">watermerk</text>
+      <rect x="205" y="75" width="95" height="28" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/><text x="252" y="94" text-anchor="middle" font-size="11" fill="#44403c">geen</text>
+      <rect x="205" y="115" width="95" height="28" rx="6" fill="#e7e5e4" stroke="#a8a29e"/><text x="252" y="134" text-anchor="middle" font-size="11" fill="#44403c">onzeker</text>
+      <text x="110" y="100" text-anchor="middle" font-size="11" fill="#7c3aed">tekst</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Detectie</h6>
+      <p class="korte">Een detector beoordeelt statistisch of het patroon aanwezig is.</p>
+      <p class="uitleg">De uitkomst is: watermerk, geen watermerk of onbeslist. Hoe langer de tekst, hoe sterker het signaal. De detectie-API van xAI moet apart worden aangevraagd; bij Anthropic is detectie een besloten preview.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="40" width="200" height="120" rx="12" fill="#7c3aed" fill-opacity=".06" stroke="#a78bfa"/>
+      <text x="160" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Teambeheer</text>
+      <text x="90" y="98" font-size="11" fill="#44403c">grok-4.x</text>
+      <rect x="200" y="85" width="40" height="20" rx="10" fill="#a78bfa"/><circle cx="210" cy="95" r="8" fill="#fff"/>
+      <text x="90" y="132" font-size="11" fill="#44403c">vergrendeld</text>
+      <rect x="200" y="119" width="40" height="20" rx="10" fill="#7c3aed"/><circle cx="230" cy="129" r="8" fill="#fff"/>
+      <circle class="ns-viz-mech-hotspot" cx="250" cy="129" r="7" data-tip="Sommige modellen kunnen niet worden uitgezet"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Uitzetten</h6>
+      <p class="korte">Beheerders mogen het watermerk per model uitschakelen, op eigen verantwoordelijkheid.</p>
+      <p class="uitleg">Wie uitschakelt, moet bevestigen dat het gebruik onder een wettelijke uitzondering valt en neemt de plicht tot labelen en openbaarmaking zelf over. Een deel van de modellen is vergrendeld en blijft altijd gemarkeerd.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Twee bedrijven, één week</h5>
+<p>xAI handelt niet alleen. Anthropic breidt zijn tekstwatermerk vanaf 3 november uit naar Claude Mythos 5, Opus 4.7, Opus 4.6 en Sonnet 4.6, nadat het in augustus al op de nieuwste modellen was ingevoerd. Anthropic heeft de gedragscode onder artikel 50 ondertekend en belooft output van modellen die vóór 2 augustus 2026 uitkwamen alsnog te markeren. De technieken lijken op elkaar: beide bedrijven werken via de woordkeuze, niet via metadata die met één bewerking verdwijnt. Anthropic zegt dat het merk kopiëren en plakken overleeft en mogelijk ook gedeeltelijke bewerking. Volgens een Chinese AI-governancewaarnemer, geciteerd door IT时代网, zijn er inmiddels nog maar weinig grote tekstproducten zonder zo’n watermerk, onder meer ChatGPT in Noord-Amerika. Die bewering is niet onafhankelijk getoetst. Een verschil: Anthropic markeert op modelniveau in al zijn producten, terwijl xAI het nu expliciet over de API heeft.</p>
+<blockquote>Het watermerk is onzichtbaar voor wie de tekst leest, en voorlopig ook niet te controleren door wie hem heeft laten schrijven.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van wet naar watermerk</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2 aug 2026</div><div>Transparantieplicht artikel 50 AI-verordening van kracht</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">aug 2026</div><div>Anthropic markeert output van nieuwste Claude-modellen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">30 okt 2026</div><div>Anthropic meldt klanten uitbreiding naar oudere modellen</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">3 nov 2026</div><div>Watermerk op Mythos 5, Opus 4.7, Opus 4.6, Sonnet 4.6</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">7 nov 2026</div><div>Zeven Grok-modellen standaard gemarkeerd via de API</div></div>
+</div></div>
+<h5>Gevolgen: wie mag kijken?</h5>
+<p>De grootste vraag is niet technisch maar institutioneel: wie krijgt toegang tot de detectie? Anthropic beperkt die tot partijen die de Europese wet noemt, zoals toezichthouders, opsporingsdiensten, media, factcheckers, onderzoekers, onderwijsinstellingen en maatschappelijke organisaties. xAI vraagt een apart verzoek. Gebruikers kunnen hun eigen tekst dus niet controleren, terwijl die wel als AI-tekst herkenbaar is. Volgens een commentator op sociale media geldt dat zelfs bij een snelle correctieronde; Anthropic spreekt van door Claude ‘gegenereerde en verwerkte’ inhoud zonder dat onderscheid te maken. Voor Nederlandse scholen, redacties en werkgevers betekent dit dat AI-gebruik achteraf beter traceerbaar wordt, maar niet waterdicht: korte teksten geven een zwak signaal, en modellen zonder watermerk blijven bestaan. Bovendien kan een API-klant het merk bij xAI soms uitzetten.</p>
+<h5>Conclusie</h5>
+<p>Met xAI en Anthropic in dezelfde week schuift het tekstwatermerk van experiment naar standaard, aangejaagd door Brussel. Dat is winst voor transparantie, maar het systeem is asymmetrisch: de aanbieder en een selecte groep controleurs zien wat de gebruiker niet ziet. Zonder publieke, onafhankelijke detectie en duidelijke regels voor licht bewerkte tekst dreigt een watermerk dat vooral wantrouwen organiseert. Daar ligt de volgende opdracht voor de Europese toezichthouders.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=WeuuNDlxkJY" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/WeuuNDlxkJY/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">xAI watermerkt alle tekst uit Grok API vanaf 7 november 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://news.qq.com/rain/a/20261101A07DGG00" target="_blank" style="color:var(--accent)">news.qq.com ↗</a> &bull; <a href="https://www.blocktempo.com/musk-grok-bot-serving-cost-unsustainable-revenue-users-hit-limits/" target="_blank" style="color:var(--accent)">blocktempo.com ↗</a> &bull; <a href="https://www.blocktempo.com/anthropic-claude-xai-grok-invisible-text-watermark-eu-ai-act/" target="_blank" style="color:var(--accent)">blocktempo.com ↗</a> &bull; <a href="https://news.qq.com/rain/a/20261030A085W000" target="_blank" style="color:var(--accent)">news.qq.com ↗</a> &bull; <a href="https://note.com/tata_15/n/na19fa802e433" target="_blank" style="color:var(--accent)">note.com ↗</a></div>

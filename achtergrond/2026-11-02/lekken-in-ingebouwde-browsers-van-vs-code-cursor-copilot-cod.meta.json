@@ -1,0 +1,17 @@
+{
+  "title": "Lekken in ingebouwde browsers van VS Code, Cursor, Copilot, Codex en Claude Desktop",
+  "summary": "Onderzoekers konden code uitvoeren, bestanden stelen en de adresbalk vervalsen.\n\nBeveiligingsonderzoekers vonden kwetsbaarheden in de ingebouwde browsers van Cursor, GitHub Copilot, Codex, VS Code en Claude Desktop. Via die lekken konden ze code uitvoeren, bestanden stelen en de adresbalk vervalsen. In VS Code en Codex kon één bestand de hele schijf van een ontwikkelaar uitlezen; die twee waren bij publicatie nog niet gepatcht.",
+  "sources": [
+    "https://www.helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities/",
+    "https://cybersecuritynews.com/popular-ai-embedded-browsers-hacked/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-02",
+  "slug": "lekken-in-ingebouwde-browsers-van-vs-code-cursor-copilot-cod",
+  "tts_slug": "lekken-in-ingebouwde-browsers-van-vs-code-cursor-copilot-cod",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-02T05:42:46",
+  "size_kb": 12
+}

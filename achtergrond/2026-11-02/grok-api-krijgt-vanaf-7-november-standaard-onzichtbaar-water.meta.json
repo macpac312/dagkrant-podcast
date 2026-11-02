@@ -1,0 +1,20 @@
+{
+  "title": "Grok-API krijgt vanaf 7 november standaard onzichtbaar watermerk",
+  "summary": "Het gaat om zeven modellen, van grok-4.7 tot grok-4.20 reasoning, wereldwijd.\n\nxAI voegt vanaf 7 november een onzichtbaar watermerk toe aan tekst die Grok-modellen via de API genereren. Het geldt wereldwijd en voor zeven modellen, waaronder grok-4.7, grok-4.6 en grok-4.20 reasoning. Volgens xAI is het een reactie op de Europese AI-verordening.",
+  "sources": [
+    "https://news.qq.com/rain/a/20261101A07DGG00",
+    "https://www.blocktempo.com/musk-grok-bot-serving-cost-unsustainable-revenue-users-hit-limits/",
+    "https://www.blocktempo.com/anthropic-claude-xai-grok-invisible-text-watermark-eu-ai-act/",
+    "https://news.qq.com/rain/a/20261030A085W000",
+    "https://note.com/tata_15/n/na19fa802e433"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-11-02",
+  "slug": "grok-api-krijgt-vanaf-7-november-standaard-onzichtbaar-water",
+  "tts_slug": "grok-api-krijgt-vanaf-7-november-standaard-onzichtbaar-water",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-02T05:42:47",
+  "size_kb": 14
+}

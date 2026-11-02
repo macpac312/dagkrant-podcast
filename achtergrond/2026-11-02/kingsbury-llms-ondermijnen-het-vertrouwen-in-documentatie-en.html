@@ -1,0 +1,72 @@
+<ul class="bg-bullets">
+<li>Kyle Kingsbury (Jepsen) waarschuwt dat LLM's het vertrouwen in software uithollen.</li>
+<li>Documentatie en tests waren dure signalen van volwassenheid; nu zijn ze goedkoop.</li>
+<li>Engineers zullen elk nieuw project met argwaan gaan bekijken.</li>
+<li>Onafhankelijke verificatie en benchmarks worden het nieuwe keurmerk.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een vertrouwenssignaal zijn waarde verliest</div>
+<div class="ns-viz-mech-subtitle">Van duur bewijs van zorg naar goedkope imitatie</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Duur signaal</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Goedkope kopie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Argwaan</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Nieuw bewijs</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="30" width="110" height="140" rx="6" fill="#f5f5f4" stroke="#7c3aed" stroke-width="2"/><text x="95" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">README / docs</text><g fill="#a78bfa"><rect x="55" y="65" width="80" height="6" rx="3"/><rect x="55" y="80" width="70" height="6" rx="3"/><rect x="55" y="95" width="80" height="6" rx="3"/><rect x="55" y="110" width="60" height="6" rx="3"/></g><rect x="175" y="50" width="110" height="100" rx="6" fill="#16a34a" fill-opacity=".1" stroke="#16a34a" stroke-width="2"/><text x="230" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#16a34a">Testsuite</text><g fill="#16a34a" font-size="11"><text x="190" y="95">✔ test_read</text><text x="190" y="113">✔ test_write</text><text x="190" y="131">✔ test_crash</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Duur signaal</h6><p class="korte">Uitgebreide documentatie en tests kostten veel tijd, dus wezen ze op een volwassen project.</p><p class="uitleg">Engineers gebruikten zulke signalen als snelle maatstaf: wie de moeite nam alles te beschrijven en te testen, nam het product vermoedelijk serieus. De kosten maakten het signaal geloofwaardig.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="70" cy="100" r="38" fill="#7c3aed" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/><text x="70" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">LLM</text><g stroke="#a78bfa" stroke-width="2"><line x1="110" y1="85" x2="170" y2="55"/><line x1="110" y1="100" x2="170" y2="100"/><line x1="110" y1="115" x2="170" y2="145"/></g><g fill="#f5f5f4" stroke="#a78bfa"><rect x="175" y="35" width="110" height="36" rx="5"/><rect x="175" y="82" width="110" height="36" rx="5"/><rect x="175" y="129" width="110" height="36" rx="5"/></g><g font-size="10" fill="#44403c" text-anchor="middle"><text x="230" y="57">docs in minuten</text><text x="230" y="104">tests in bulk</text><text x="230" y="151">nette changelog</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Goedkope kopie</h6><p class="korte">Taalmodellen maken dezelfde artefacten in een fractie van de tijd.</p><p class="uitleg">Volgens Kingsbury zijn de signalen waarop engineers vertrouwden 'makkelijker te vervalsen'. Een project kan er volwassen uitzien zonder dat iemand de inhoud werkelijk heeft gecontroleerd.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="160" cy="95" r="55" fill="#dc2626" fill-opacity=".08" stroke="#dc2626" stroke-width="2"/><circle cx="150" cy="88" r="26" fill="none" stroke="#dc2626" stroke-width="4"/><line x1="169" y1="107" x2="195" y2="133" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/><text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">elk nieuw project verdacht</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Argwaan</h6><p class="korte">Als signalen niets meer zeggen, behandelen engineers elk project met wantrouwen.</p><p class="uitleg">Het vertrouwen in documentatie, software en de organisaties erachter erodeert. Ook zorgvuldige makers lijden daaronder: hun echte werk is niet meer te onderscheiden van gegenereerde schijn.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="50" width="100" height="100" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="90" y="95" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Onafhankelijke</text><text x="90" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">toets</text><g fill="#7c3aed"><rect x="185" y="110" width="20" height="40"/><rect x="215" y="85" width="20" height="65"/><rect x="245" y="65" width="20" height="85"/></g><text x="225" y="170" text-anchor="middle" font-size="10" fill="#44403c">reproduceerbare metingen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Nieuw bewijs</h6><p class="korte">Vertrouwen moet voortaan komen uit verificatie die moeilijk te faken is.</p><p class="uitleg">Kingsbury stelt de open vraag hoe maintainers correcte software kunnen garanderen en dat aan gebruikers kunnen laten zien. Onafhankelijke tests, zoals Jepsen-analyses, en echte benchmarks zijn een voor de hand liggend antwoord.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>De waarschuwing van een systeemtester</h5>
+<p>Kyle Kingsbury is in de softwarewereld geen willekeurige criticus. Onder de naam Jepsen test hij al jaren gedistribueerde databases op hun beloften, en zijn rapporten hebben bij bekende systemen fouten blootgelegd die in de documentatie werden ontkend. In zijn analyse van ParticleDB 1.1.4, door Simon Willison op 1 november geciteerd, trekt hij een bredere conclusie. Het gebruik van taalmodellen 'holt het vertrouwen uit in documentatie, in software en in de organisaties die ze maken'. Misschien, schrijft hij, gaan engineers elk nieuw softwareproject met argwaan bekijken, omdat 'de signalen waarop we vertrouwden als kenmerk van een volwassen systeem nu makkelijker te vervalsen zijn'. Het is een waarschuwing van iemand wiens werk draait om het verschil tussen wat software zegt te doen en wat ze werkelijk doet.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Uitgebreide documentatie, veel tests en een verzorgde site waren kostbaar en golden daardoor als betrouwbare tekenen van een volwassen project.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>Dezelfde artefacten zijn met een taalmodel snel te maken. Ze bewijzen niets meer; vertrouwen verschuift naar onafhankelijke verificatie en metingen.</p></div>
+</div></div>
+<h5>Goedkope signalen, dure gevolgen</h5>
+<p>Het mechanisme is bekend uit de economie: een signaal is alleen geloofwaardig zolang het duur is om te geven. Michael Spence beschreef dat voor diploma's op de arbeidsmarkt; in software functioneerden documentatie en testdekking op dezelfde manier. Wie honderden pagina's handleiding schreef, had vermoedelijk ook nagedacht over randgevallen. Taalmodellen breken die koppeling. Ze leveren de vorm zonder de garantie dat iemand de inhoud heeft gecontroleerd. Webontwikkelaar Nolan Lawson legt een verwant probleem bloot. Volgens hem worden in de frontendwereld beslissingen al lang op gevoel genomen, en dat is in het tijdperk van agents niet veranderd: frameworks worden herschreven omdat ze 'beter voor agents' zouden zijn, vaak zonder enig bewijs. Lawson schreef daarom zelf een benchmark, met een eenvoudige Pokémon-app gebouwd met de officiële MCP- of skills-ondersteuning van elk framework. Zijn vraag, 'Waar zijn de benchmarks?', is de praktische tegenhanger van Kingsbury's zorg.</p>
+<blockquote>Een signaal werkt alleen zolang het duur is; wie het gratis kan namaken, maakt het voor iedereen waardeloos.</blockquote>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?</p>
+  <p class="ns-viz-quote-attr">— Kyle Kingsbury, Jepsen-rapport over ParticleDB 1.1.4</p>
+</div>
+<h5>Wie betaalt de prijs</h5>
+<p>De gevolgen raken vooral open source en kleine leveranciers. Grote bedrijven kunnen vertrouwen ontlenen aan naam, certificering en juridische aansprakelijkheid; een onafhankelijke maintainer had vaak alleen zijn zorgvuldige documentatie. Als die niet meer onderscheidend is, wint de gevestigde orde. Tegelijk ontstaat er een markt voor verificatie: onafhankelijke audits, reproduceerbare benchmarks en tests door derden, precies het soort werk dat Jepsen doet. Voor Europa, waar de Cyber Resilience Act fabrikanten verplicht de veiligheid van software aantoonbaar te maken, is dat geen abstracte zorg. Aantoonbaarheid wordt een wettelijke eis op het moment dat de klassieke bewijsstukken hun zeggingskracht verliezen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Jepsen</summary>
+    <div class="ns-viz-concept-body">Kingsbury's project dat databases en gedistribueerde systemen test op consistentie- en veiligheidsbeloften, met openbare rapporten per versie.</div></details>
+  <details class="ns-viz-concept"><summary>Kostbaar signaal</summary>
+    <div class="ns-viz-concept-body">Economisch begrip: een signaal is geloofwaardig omdat het moeite of geld kost om af te geven, zoals een diploma of uitgebreide documentatie.</div></details>
+  <details class="ns-viz-concept"><summary>Vibes-based beslissen</summary>
+    <div class="ns-viz-concept-body">Nolan Lawsons term voor keuzes in webontwikkeling die op gevoel en marketingclaims rusten in plaats van op meetbaar bewijs.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Kingsbury beschrijft geen tijdelijk ongemak maar een structurele verschuiving. Als de vorm van zorgvuldigheid gratis wordt, moet zorgvuldigheid zelf zichtbaar worden gemaakt, door metingen die anderen kunnen herhalen. Dat is duurder en trager, maar het is de enige weg terug naar vertrouwen. Ontwikkelaars en kopers doen er goed aan elke glanzende README voortaan te lezen als een belofte, niet als bewijs.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=yJmnVrvHi_o" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/yJmnVrvHi_o/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Kingsbury: LLM’s ondermijnen het vertrouwen in documentatie en software 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/1/kyle-kingsbury/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a> &bull; <a href="https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/" target="_blank" style="color:var(--accent)">nolanlawson.com ↗</a></div>

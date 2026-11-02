@@ -1,0 +1,73 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/KI-Bias-Propaganda-1200x670.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Vals AI testte 25 modellen op overeenstemming met standpunten van Beijing.</li>
+<li>Chinese modellen bleken minder eenvormig pro-regering dan verwacht; westerse soms juist niet.</li>
+<li>De taal van de vraag stuurt het antwoord: Vereenvoudigd Chinees levert meer partijlijn op.</li>
+<li>Intussen verschuiven Chinese labs hun distillatie volgens een rapport naar OpenAI's GPT-6 Astra.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kerncijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="25">25</div><div class="ns-viz-stat-label">Geteste AI-modellen (Vals AI)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value">−1 … +1</div><div class="ns-viz-stat-label">Schaal 'pro-China lean': kritisch tot regeringsgezind</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value">90–99%</div><div class="ns-viz-stat-label">Minder extraheerbare data dankzij Anthropic-verdediging (eigen claim)</div></div>
+</div></div>
+<h5>Geen eenvormige spreekbuizen</h5>
+<p>Chinese taalmodellen hebben de reputatie dat ze op gevoelige vragen de officiële lijn van Beijing volgen of simpelweg weigeren te antwoorden. Benchmarkbedrijf Vals AI schetst een genuanceerder beeld. Het stelde Chinese, Amerikaanse en andere modellen honderden vragen over China en varieerde daarbij de taal, de gebruikscontext en het antwoordformaat. De gemeten overeenstemming met regeringsstandpunten, de 'pro-China lean', loopt van −1 (kritisch) tot +1 (regeringsgezind). Gemiddeld viel die neiging bij Chinese modellen lager uit dan verwacht, met grote verschillen per model. GLM-5.3 Flash bevestigde bijvoorbeeld expliciet dat Chinese mensenrechtenschendingen goed gedocumenteerd zijn. Omgekeerd namen sommige niet-Chinese modellen af en toe officiële Chinese posities over. Het beeld van een strakke scheidslijn tussen 'gecensureerde' Chinese en 'vrije' westerse modellen houdt dus geen stand.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Hoe de context het antwoord kleurt</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Vereenvoudigd Chinees</h6>
+    <ul><li>Meest regeringsgezinde antwoorden</li><li>Effect sterkst bij Chinese modellen</li><li>Taal van het vasteland</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Traditioneel Chinees</h6>
+    <ul><li>Kleiner maar consistent verschil</li><li>Gebruikt in Taiwan en Hongkong</li><li>Iets minder partijlijn</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Engels, Russisch, Spaans</h6>
+    <ul><li>Minder regeringsgezind</li><li>Ook Amerikaanse modellen verschuiven</li><li>Systeemprompt 'VS-gebruik' dempt de neiging</li></ul></div>
+</div></div>
+<h5>De taal als verborgen instructie</h5>
+<p>De sterkste bevinding gaat over taal. Bij de meeste modellen waren antwoorden in Vereenvoudigd Chinees regeringsgezinder dan in het Engels, Russisch of Spaans, bij Chinese modellen veel sterker dan bij Amerikaanse. Zelfs tussen Vereenvoudigd en Traditioneel Chinees zat een kleiner maar consistent verschil. Vals vermoedt dat modellen uit de taal afleiden welk perspectief de vraagsteller verwacht. Een tweede experiment ondersteunt dat: wanneer de systeemprompt meldde dat het model intern bij een bedrijf op het vasteland werd gebruikt, antwoordden sommige modellen regeringsgezinder dan bij Amerikaans gebruik. De aanname dat Chinese modellen vooral blokkeren, gold in de tests alleen voor bepaalde DeepSeek-modellen. De meeste andere weigerden zelden en namen liever de officiële positie over. Dat is subtieler dan een weigering en daardoor lastiger te herkennen voor gebruikers.</p>
+<blockquote>Een model dat de partijlijn herhaalt in plaats van te zwijgen, is moeilijker te betrappen dan een model dat simpelweg weigert.</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe distillatie van een concurrent werkt</div>
+<div class="ns-viz-mech-subtitle">Van uitvragen van een frontiermodel tot de volgende zwakste schakel</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Uitvragen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Redeneerstappen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Leerlingmodel</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Verschuiving</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="60" width="90" height="80" rx="10" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa"/><text x="65" y="105" text-anchor="middle" font-size="12" fill="#7c3aed">Chinees lab</text><rect x="210" y="50" width="90" height="100" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="255" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Frontier-</text><text x="255" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">model</text><g stroke="#7c3aed" stroke-width="2"><line x1="115" y1="80" x2="205" y2="80"/><line x1="115" y1="100" x2="205" y2="100"/><line x1="115" y1="120" x2="205" y2="120"/></g><text x="160" y="72" text-anchor="middle" font-size="10" fill="#44403c">massa-vragen</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Uitvragen</h6><p class="korte">Een lab stuurt grote aantallen vragen naar het model van een concurrent.</p><p class="uitleg">Volgens The Information steunden DeepSeek en Moonshot AI zwaar op uitvoer van GPT-6 Astra. Eind september meldde OpenAI al een gecoördineerde campagne gelinkt aan mensen rond Moonshot.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="30" width="240" height="140" rx="10" fill="#f5f5f4" stroke="#a78bfa"/><text x="60" y="58" font-size="11" fill="#7c3aed" font-weight="700">Antwoord</text><g fill="#a78bfa"><rect x="60" y="70" width="180" height="8" rx="4"/><rect x="60" y="88" width="140" height="8" rx="4"/></g><text x="60" y="122" font-size="11" fill="#dc2626" font-weight="700">Verborgen redenering</text><g fill="#dc2626" fill-opacity=".5"><rect x="60" y="132" width="200" height="8" rx="4"/><rect x="60" y="148" width="160" height="8" rx="4"/></g><circle class="ns-viz-mech-hotspot" cx="262" cy="122" r="7" data-tip="Zowel OpenAI als Anthropic verbieden het ontfutselen hiervan"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Redeneerstappen</h6><p class="korte">Het waardevolste is de verborgen gedachtegang van het model.</p><p class="uitleg">De techniek draait erom het model zijn verborgen redeneerstappen te laten prijsgeven. OpenAI en Anthropic verbieden dat in hun voorwaarden, maar het blijft een kat-en-muisspel.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="90" cy="100" r="50" fill="#7c3aed" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/><text x="90" y="104" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Leraar</text><circle cx="235" cy="100" r="32" fill="#a78bfa" fill-opacity=".25" stroke="#a78bfa" stroke-width="2"/><text x="235" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Leerling</text><path d="M140 100 L200 100" stroke="#7c3aed" stroke-width="3"/><path d="M196 94 L204 100 L196 106 z" fill="#7c3aed"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Leerlingmodel</h6><p class="korte">De verzamelde uitvoer traint een eigen, goedkoper model.</p><p class="uitleg">Het rapport noemt Kimi K3.1 Pro en V4.1-Flash 1017. Hoeveel Astra-uitvoer werd gebruikt en hoeveel de modellen verbeterden, staat er niet in; de bronnen zijn anoniem.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="60" width="100" height="80" rx="10" fill="#e5e7eb" stroke="#78716c"/><text x="80" y="96" text-anchor="middle" font-size="12" fill="#44403c">Anthropic</text><text x="80" y="114" text-anchor="middle" font-size="10" fill="#44403c">afgeschermd</text><rect x="190" y="60" width="100" height="80" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="240" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">OpenAI</text><text x="240" y="114" text-anchor="middle" font-size="10" fill="#44403c">nieuw doelwit</text><path d="M135 100 Q160 70 185 100" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-dasharray="5 3"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Verschuiving</h6><p class="korte">Wie zich beter verdedigt, stuurt aanvallers naar de buren.</p><p class="uitleg">Anthropic zegt de extraheerbare data met 90 tot 99 procent te hebben teruggedrongen. Daarop verschoof de aandacht naar GPT-6 Astra. Een OpenAI-woordvoerder zegt dat aanvallers zich aan elke nieuwe verdediging aanpassen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Distillatie: de stille kennisoverdracht</h5>
+<p>Het tweede verhaal van de dag laat zien hoe verweven Chinese en Amerikaanse modellen zijn. Volgens The Information, via The Decoder, verleggen Chinese labs hun distillatie van Anthropics Claude naar OpenAI's GPT-6 Astra, nadat Anthropic zijn verdediging aanscherpte. Die cijfers zijn de eigen claim van Anthropic, de kernbeweringen steunen op anonieme bronnen, Moonshot wilde niet reageren en DeepSeek antwoordde niet. Toch is het patroon herkenbaar: als één lab zijn redeneersporen beter afschermt, verhuist de aanvaller naar het volgende. Dat roept twee vragen op. Als Chinese modellen deels op westerse uitvoer zijn getraind, verklaart dat mogelijk waarom ze politiek minder eenduidig zijn dan verwacht. En omgekeerd: als westerse modellen in het Chinees de partijlijn overnemen, weerspiegelen ze vooral hun trainingsdata. Voor Europese gebruikers en toezichthouders betekent het dat de herkomst van een model weinig zegt; het gedrag moet per taal en context worden getest.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Pro-China lean</summary>
+    <div class="ns-viz-concept-body">Maat van Vals AI voor overeenstemming met officiële Chinese standpunten, van −1 (kritisch) tot +1 (regeringsgezind).</div></details>
+  <details class="ns-viz-concept"><summary>Distillatie</summary>
+    <div class="ns-viz-concept-body">Een kleiner of nieuw model trainen op de uitvoer van een sterker model, zodat het diens gedrag en kennis overneemt.</div></details>
+  <details class="ns-viz-concept"><summary>Systeemprompt</summary>
+    <div class="ns-viz-concept-body">Verborgen instructie die de context van een gesprek vastlegt, zoals 'je wordt gebruikt door een bedrijf op het vasteland'.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De studie ontkracht het simpele beeld van Chinese modellen als propagandamachines, maar is geen geruststelling. Het werkelijke risico is subtieler: modellen die zich aanpassen aan wat ze denken dat de vraagsteller wil horen, in welke taal dan ook. Gecombineerd met grootschalige distillatie vervaagt de grens tussen 'Chinese' en 'westerse' AI. Wie betrouwbaarheid wil beoordelen, moet modellen meertalig en contextgevoelig testen, niet op hun paspoort.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Emq2Z2fBkK8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Emq2Z2fBkK8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Chinese AI-modellen politiek complexer dan gedacht, westerse modellen nemen soms Beijings lijn over 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a> &bull; <a href="https://fork.zone/p/1011/report-chinese-labs-now-target-openai-s-gpt-6-astra-for" target="_blank" style="color:var(--accent)">fork.zone ↗</a></div>

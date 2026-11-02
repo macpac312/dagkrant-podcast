@@ -1,0 +1,16 @@
+{
+  "title": "Adobe laat AI-agent werken als een Photoshop-professional",
+  "summary": "EditAgent kiest per taak het juiste gereedschap in plaats van steeds dezelfde editor te proberen.\n\nAdobe Research en UC San Diego bouwden EditAgent, een AI-systeem dat beelden bewerkt zoals een Photoshop-professional. In plaats van herhaaldelijk een algemene beeldeditor te proberen, kiest de agent per taak een gespecialiseerd gereedschap en laat een gewoon taalmodel het werk plannen.",
+  "sources": [
+    "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-02",
+  "slug": "adobe-laat-ai-agent-werken-als-een-photoshop-professional",
+  "tts_slug": "adobe-laat-ai-agent-werken-als-een-photoshop-professional",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-02T05:42:46",
+  "size_kb": 12
+}

@@ -1,0 +1,100 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://infinance.nl/wp-content/uploads/2016/07/woning-huis-kopen-stel-hypotheek-adviseur-koopwoning.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© infinance.nl</div></div><ul class="bg-bullets">
+<li>Kopers onder de 35 kochten 37 procent van de woningen die nu in aanbouw zijn.</li>
+<li>55-plussers nemen 32 procent; de traditionele doorstromers van 35 tot 55 vallen terug.</li>
+<li>Driekwart van de nieuwbouw is een appartement, en woningen worden compacter.</li>
+<li>Het aanbod volgt de bouwkosten en de rente, niet de woonwens van de eengezinswoning.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wie kopen de woningen in aanbouw</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Jonger dan 35</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:37%">37%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">35 tot 55</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:31%">± 31%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">55-plus</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:32%">32%</div></div></div>
+</div></div>
+<h5>De kopersgroep kantelt</h5>
+<p>Jarenlang was de nieuwbouwkoper bij uitstek een dertiger of veertiger met een gezin, die vanuit een rijtjeshuis of appartement doorstroomde naar iets ruimers. Dat beeld klopt niet meer. Van de woningen die nu worden gebouwd, is volgens het Kadaster 37 procent gekocht door kopers jonger dan 35 jaar. Ook 55-plussers nemen met 32 procent een flink deel voor hun rekening. De groep daartussen, de 35- tot 55-jarigen die lange tijd de grootste kopersgroep vormden, valt daarmee terug naar ruwweg een derde. Het Kadaster vergeleek de woningen in aanbouw met de nieuwbouw van de afgelopen tien jaar. In de grote steden kopen vooral jongeren appartementen, daarbuiten worden nieuwbouwappartementen relatief vaak door 55-plussers gekocht. De verschuiving zegt veel over hoe de woningmarkt in een decennium van stijgende prijzen, renteschokken en bouwkosten van karakter is veranderd.</p>
+<div class="ns-viz"><div class="ns-viz-title">📈 Het nieuwbouwaanbod verschuift</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-3d5ec206"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-3d5ec206'),{
+    type:'bar',
+    data:{
+      labels:['Appartement in nieuwbouw','Appartement in koopsector','Aandeel G4 in nieuwbouw','Appartement > 90 m²','Eengezinswoning < 100 m²'],
+      datasets:[
+        {label:'Eerder',data:[50,17,18,22,9],backgroundColor:'rgba(167,139,250,.55)',borderColor:'#a78bfa',borderWidth:1,borderRadius:4},
+        {label:'Nu / komende jaren',data:[75,42,27,13,22],backgroundColor:'rgba(124,58,237,.8)',borderColor:'#7c3aed',borderWidth:1,borderRadius:4}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y+'%';}}}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}},beginAtZero:true,max:80},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Wat er gebouwd wordt, bepaalt wie er koopt</h5>
+<p>De verklaring ligt minstens zo veel aan de aanbodkant als aan de vraagkant. Driekwart van alle woningen die nu worden gebouwd, is een appartement, tegen ongeveer de helft in de afgelopen vijf jaar. Binnen de koopsector stijgt het aandeel appartementen van 17 naar 42 procent. De woningen worden bovendien kleiner: van de nieuwe appartementen is nog 13 procent groter dan 90 vierkante meter, tegen 22 procent tien jaar geleden, en het aandeel eengezinswoningen onder de 100 vierkante meter steeg van 9 naar 22 procent. Ontwikkelaars bouwen compacter en in hogere dichtheid om de stijgende bouw- en grondkosten betaalbaar te houden. Zulke woningen passen bij starters met één inkomen of een jong stel, en bij senioren die hun eengezinswoning verruilen voor een gelijkvloers appartement. Ze passen slecht bij het gezin dat volgens het WoonOnderzoek Nederland 2024 juist een eengezinswoning met tuin wil.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:.3rem .5rem">Herkomst nieuwbouwkoper</th>
+    <th style="text-align:right;padding:.3rem .5rem">Aandeel</th>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Uit de eigen gemeente</td><td style="text-align:right">± 60%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Uit een aangrenzende gemeente</td><td style="text-align:right">± 20%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Elders vandaan</td><td style="text-align:right">± 20%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Nieuwbouw blijft een lokale markt (Kadaster).</p>
+</div>
+<blockquote>De nieuwbouw volgt de rekensom van bouwkosten en rente, niet de woonwens: er komen vooral compacte appartementen, terwijl kopers een eengezinswoning met tuin zoeken.</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe de doorstromer uit beeld raakt</div>
+<div class="ns-viz-mech-subtitle">Van dure bouw naar een andere kopersgroep</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Kosten</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Compact</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Starter en senior</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Doorstromer blijft</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="60" y="140" width="200" height="12" fill="#a78bfa"/><rect x="90" y="70" width="60" height="70" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/><line x1="200" y1="40" x2="200" y2="140" stroke="#78716c" stroke-width="4"/><line x1="200" y1="45" x2="270" y2="45" stroke="#78716c" stroke-width="4"/><line x1="255" y1="45" x2="255" y2="75" stroke="#78716c" stroke-width="2"/><text x="250" y="110" font-size="22" fill="#dc2626" font-weight="700">€↑</text><text x="160" y="180" text-anchor="middle" font-size="12" fill="#44403c">Grond, bouw en rente worden duurder</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Kosten</h6><p class="korte">Hoge bouw-, grond- en financieringskosten drukken op elk nieuw project.</p><p class="uitleg">Ontwikkelaars moeten woningen verkopen tegen prijzen die kopers kunnen financieren. Met de gestegen rente, die volgens experts ook vastgoedprijzen omlaag dwingt, wordt die rekensom krapper.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="110" y="30" width="100" height="140" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><g fill="#a78bfa"><rect x="122" y="42" width="20" height="16"/><rect x="150" y="42" width="20" height="16"/><rect x="178" y="42" width="20" height="16"/><rect x="122" y="72" width="20" height="16"/><rect x="150" y="72" width="20" height="16"/><rect x="178" y="72" width="20" height="16"/><rect x="122" y="102" width="20" height="16"/><rect x="150" y="102" width="20" height="16"/><rect x="178" y="102" width="20" height="16"/><rect x="122" y="132" width="20" height="16"/><rect x="178" y="132" width="20" height="16"/></g><text x="160" y="190" text-anchor="middle" font-size="12" fill="#44403c">Driekwart van de bouw is appartement</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Compact</h6><p class="korte">Er komen vooral kleinere appartementen in en rond de grote steden.</p><p class="uitleg">Driekwart van de woningen in aanbouw is een appartement. Het aandeel van Amsterdam, Rotterdam, Den Haag en Utrecht in de nieuwbouw loopt op van 18 naar 27 procent, en woningen worden kleiner.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><circle cx="105" cy="75" r="16" fill="#7c3aed"/><rect x="89" y="95" width="32" height="50" rx="7" fill="#7c3aed"/><text x="105" y="170" text-anchor="middle" font-size="12" fill="#7c3aed" font-weight="700">&lt;35: 37%</text><circle cx="215" cy="75" r="16" fill="#a78bfa"/><rect x="199" y="95" width="32" height="50" rx="7" fill="#a78bfa"/><line x1="245" y1="100" x2="250" y2="150" stroke="#78716c" stroke-width="3"/><text x="215" y="170" text-anchor="middle" font-size="12" fill="#7c3aed" font-weight="700">55+: 32%</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Starter en senior</h6><p class="korte">Jongeren en 55-plussers kopen samen bijna zeventig procent van de nieuwbouw.</p><p class="uitleg">Compacte appartementen passen bij starters in de stad en bij senioren die buiten de grote steden gelijkvloers willen wonen. Samen kopen zij 69 procent van de woningen in aanbouw.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><polygon points="90,90 160,40 230,90" fill="#a78bfa" fill-opacity=".4" stroke="#7c3aed" stroke-width="2"/><rect x="105" y="90" width="110" height="70" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><rect x="148" y="120" width="24" height="40" fill="#7c3aed" fill-opacity=".5"/><path d="M60 175 Q160 150 260 175" stroke="#16a34a" stroke-width="6" fill="none"/><text x="160" y="195" text-anchor="middle" font-size="12" fill="#44403c">Eengezinswoning met tuin blijft bezet</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Doorstromer blijft</h6><p class="korte">Het gezin dat ruimte zoekt, vindt in de nieuwbouw weinig passends.</p><p class="uitleg">De 35- tot 55-jarigen willen volgens het WoonOnderzoek vooral een eengezinswoning met tuin. Die wordt minder gebouwd, waardoor zij blijven zitten en de doorstroming in de bestaande voorraad stokt.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Gevolgen voor beleid en markt</h5>
+<p>Op het eerste gezicht is het nieuws positief: starters, die in de afgelopen jaren structureel werden overboden, vinden in de nieuwbouw een ingang. Dat sluit aan bij politieke ambities om meer betaalbare woningen voor jongeren te bouwen. Maar de keerzijde is dat de doorstroming waar het woonbeleid op leunt, hapert. Als het gezin met een groeiende behoefte aan ruimte geen passend nieuwbouwhuis vindt, komt ook zijn huidige woning niet vrij voor de volgende koper. De nieuwbouw blijft bovendien een lokale markt: zo'n 60 procent van de kopers komt uit de eigen gemeente, nog eens 20 procent uit een aangrenzende. Tegelijk waarschuwen vastgoedexperts in het FD dat de gestegen rente de prijzen onvermijdelijk omlaag drukt. Dat kan projecten onder druk zetten waarvan de businesscase op hogere verkoopprijzen rekende, en daarmee het tempo van de bouw zelf.</p>
+<h5>Conclusie</h5>
+<p>De jonge nieuwbouwkoper is minder een teken van een herstelde markt dan van een aanbod dat zich heeft aangepast aan wat nog te bouwen valt. Compacte appartementen bedienen starters en senioren, maar laten het gezin in het midden staan. Wie de woningmarkt echt in beweging wil krijgen, moet niet alleen tellen hoeveel woningen er komen, maar ook welke. Zonder voldoende betaalbare eengezinswoningen blijft de doorstromer zitten, en stokt de keten waar ook de starter uiteindelijk van afhankelijk is.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=nfhW9c7RdIU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/nfhW9c7RdIU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Nieuwbouw versus bestaande woning: werkelijke maandelijkse kosten in 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://infinance.nl/artikel/woningkopers-onder-35-jaar-grootste-kopersgroep-nieuwbouw/" target="_blank" style="color:var(--accent)">infinance.nl ↗</a></div>
