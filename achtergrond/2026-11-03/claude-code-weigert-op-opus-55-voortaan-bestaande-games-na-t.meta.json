@@ -1,0 +1,19 @@
+{
+  "title": "Claude Code weigert op Opus 5.5 voortaan bestaande games na te bouwen",
+  "summary": "Anthropic bevestigt een nieuwe regel. Gebruikers melden ook blokkades bij reverse engineering.\n\nAnthropic heeft een regel toegevoegd aan Claude Code die voorkomt dat de codeerassistent op het Opus 5.5-model specifieke bestaande videogames namaakt. Het bedrijf bevestigde de wijziging. Originele games, games in een genre of met vergelijkbare mechaniek blijven wel mogelijk.\n\nGebruikers merkten de verandering toen Claude Code verzoeken om een kloon van een bekende game afwees.",
+  "sources": [
+    "https://www.ghacks.net/2026/11/02/anthropic-adds-a-claude-code-rule-on-opus-5-5-that-blocks-recreations-of-existing-games/",
+    "https://www.kocpc.com.tw/archives/701815",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxPbHBSQ0FBNnZhaGNvd3NWVXN2UzA2SWZyY0dEQ3FhMmRNZThMWDNTbVdHMzMyVHdHN21sNFBEMW5GbU9aRzNnWlNwd2hUTHhscVV4a2F0QllPb3A5M0w2UktEbmc3S1VaQm1RSjByQXZoeGtFRHQxSUVMdlJFM1g1WEZHREdsME0yTFF0RXUtb3Z3Zl90N0QtT01LX3Z2QQ?oc=5",
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxQN1kwaEVjT0ZUcUtveDdXdnNKUUVwMXM4X3AtM2RnR1JyRGU2VUZ6OEFHUEFGUjlkajBYZ2U5LXA1WEhSV1c2aG8ycjQ5R2RrbW80RkM2WVlPYWJLV2RuLTdhYnN5TWRiaVN6R2hmX01fd3lBXzYxMzhhSzJIbjZYQnR6S2EwX3J1VDNvODNlVW5uNDIyT2t6b3VvQQ?oc=5"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-03",
+  "slug": "claude-code-weigert-op-opus-55-voortaan-bestaande-games-na-t",
+  "tts_slug": "claude-code-weigert-op-opus-55-voortaan-bestaande-games-na-t",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-03T05:37:41",
+  "size_kb": 9
+}

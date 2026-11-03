@@ -1,0 +1,96 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://media.assettype.com/analyticsinsight%2F2026-11-02%2F9at5svkk%2FGitHub-Copilot-Fusion-vs-Claude-Code-How-AI-Model-Orchestration-Changes-Coding.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© analyticsinsight.net</div></div><ul class="bg-bullets">
+<li>GitHub Copilot Fusion is sinds 28 oktober 2026 algemeen beschikbaar.</li>
+<li>Fusion verdeelt werk over meerdere modellen; Claude Code laat één agent de hele taak uitvoeren.</li>
+<li>Orkestratie kan kosten drukken: eenvoudige taken hebben geen topmodel nodig.</li>
+<li>De vraag verschuift van 'welk model is het slimst' naar 'hoe werken modellen samen'.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Twee filosofieën</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>GitHub Copilot Fusion</h6>
+    <ul><li>Meerdere modellen, gekozen per taak</li><li>Rollen: schrijven, beoordelen, verbeteren</li><li>Modi: Single, Cascade, Critique</li><li>Goedkoper model waar het kan</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Claude Code</h6>
+    <ul><li>Claude-modellen als zelfstandige agent</li><li>Overzicht over de hele codebase</li><li>Plant, bewerkt, draait tests, herstelt fouten</li><li>Subagents voor review, onderzoek, tests</li></ul></div>
+</div></div>
+<h5>Van één model naar een team van modellen</h5>
+<p>AI-codeertools leunen niet langer op één model voor elke taak. Dat is de kern van een vergelijking die Analytics Insight maakte tussen GitHub Copilot Fusion en Claude Code van Anthropic. Fusion, dat op 28 oktober 2026 algemeen beschikbaar werd na eerder onderzoekswerk onder de naam HydraFusion, kiest per taak verschillende modellen, afhankelijk van complexiteit en gevraagde inspanning. Claude Code gaat een andere weg: Anthropics eigen modellen plannen de taak, verkennen de codebase, bewerken bestanden, voeren terminalcommando's uit en testen hun eigen werk. Beide beloven ontwikkelaars werk uit handen te nemen, maar het ontwerp verschilt fundamenteel. Bij Fusion zit de intelligentie in de samenwerking tussen modellen, bij Claude Code in één agent die het hele traject doorloopt.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 In getallen</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Werkwijzen in Copilot Fusion</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="28">28</div><div class="ns-viz-stat-label">Oktober 2026: Fusion algemeen beschikbaar</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Agent die bij Claude Code de hele taak draagt</div></div>
+</div></div>
+<h5>Hoe Fusion modellen laat samenwerken</h5>
+<p>Fusion kent drie werkwijzen. Bij Single doet één model de taak. Bij Cascade begint een goedkoper model; een beoordelend model controleert het resultaat en schakelt een sterker model in als de eerste poging tekortschiet. Bij Critique schrijft één model de code, beoordelen andere modellen die, en verbetert het eerste model zijn werk op basis van die feedback. Het voordeel is tweeledig: ontwikkelaars hoeven niet per taak een model te kiezen, en de kosten blijven lager omdat eenvoudige taken geen topmodel nodig hebben. Claude Code kan met subagents ook werk opsplitsen, bijvoorbeeld voor review, onderzoek of het schrijven van tests, maar dat is een andere werkwijze dan Fusions ingebouwde systeem van modellen die elkaar beoordelen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Cascade werkt</div>
+<div class="ns-viz-mech-subtitle">Van goedkope eerste poging naar gecontroleerd resultaat</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Opdracht</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Goedkoop model</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Beoordelaar</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Opschalen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="45" width="200" height="110" rx="8" fill="#1c1917"/>
+      <text x="76" y="78" font-family="monospace" font-size="12" fill="#a78bfa">$ fix failing test</text>
+      <rect x="76" y="92" width="10" height="14" fill="#7c3aed"/>
+      <text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">Ontwikkelaar geeft een taak</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Opdracht</h6><p class="korte">De ontwikkelaar geeft een taak; Fusion schat complexiteit en benodigde inspanning in.</p><p class="uitleg">Op basis daarvan kiest Fusion welke modellen en welke werkwijze worden ingezet. De ontwikkelaar hoeft zelf geen model te kiezen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="160" cy="90" r="34" fill="#a78bfa"/>
+      <text x="160" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">klein model</text>
+      <rect x="120" y="140" width="80" height="26" rx="4" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <text x="160" y="158" text-anchor="middle" font-size="11" fill="#44403c">eerste code</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Goedkoop model</h6><p class="korte">Een goedkoper model doet de eerste poging.</p><p class="uitleg">Voor veel eenvoudige taken is dat genoeg. Hier zit de kostenwinst van orkestratie: het dure topmodel wordt alleen gebruikt als het nodig is.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="110" y="50" width="100" height="70" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M135 85 l15 15 l30 -30" stroke="#7c3aed" stroke-width="4" fill="none"/>
+      <text x="160" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Judge-model</text>
+      <text x="160" y="170" text-anchor="middle" font-size="11" fill="#44403c">goed genoeg?</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Beoordelaar</h6><p class="korte">Een beoordelend model controleert of het resultaat voldoet.</p><p class="uitleg">Is de eerste poging goed genoeg, dan is de taak klaar. Zo niet, dan beslist de beoordelaar dat er een sterker model nodig is.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="100" cy="100" r="22" fill="#a78bfa"/>
+      <circle cx="220" cy="100" r="42" fill="#7c3aed"/>
+      <line x1="125" y1="100" x2="172" y2="100" stroke="#7c3aed" stroke-width="3"/>
+      <text x="220" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">topmodel</text>
+      <text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Alleen bij een tekortschietende poging</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Opschalen</h6><p class="korte">Schiet de eerste poging tekort, dan neemt een sterker model het over.</p><p class="uitleg">Het resultaat combineert lage kosten voor routinewerk met topkwaliteit waar die nodig is. Bij Critique gebeurt iets vergelijkbaars, maar dan als review en verbetering.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>Wat nu telt, is hoe modellen samenwerken, niet alleen hoe slim één model is.</blockquote>
+<h5>Gevolgen voor teams en organisaties</h5>
+<p>Voor ontwikkelteams is de keuze minder technisch dan hij lijkt. Fusion past bij organisaties die vooral grip willen op kosten en kwaliteit per taak; Claude Code bij teams die grotere, samenhangende klussen aan een agent willen overlaten. Dat de praktijk weerbarstig is, bleek deze week bij Goldman Sachs, dat Claude Code en Copilot alleen nog aan engineers geeft en handelaren en bankiers de toegang ontneemt, terwijl de CIO in juli nog 'vibe coding' prees. Meer autonomie vraagt ook meer toezicht: een agent die zelf commando's uitvoert, verdient dezelfde controle als een nieuwe collega met beheerdersrechten.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Modelorkestratie</summary>
+    <div class="ns-viz-concept-body">Een systeem dat per taak bepaalt welk AI-model welke rol krijgt, in plaats van één model alles te laten doen.</div></details>
+  <details class="ns-viz-concept"><summary>Critique</summary>
+    <div class="ns-viz-concept-body">Fusion-werkwijze waarin één model code schrijft, andere modellen die beoordelen en het eerste model op basis van die feedback verbetert.</div></details>
+  <details class="ns-viz-concept"><summary>Subagent</summary>
+    <div class="ns-viz-concept-body">Bij Claude Code een hulpagent die een afgebakende deeltaak oppakt, zoals code review, onderzoek of het schrijven van tests.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De vergelijking laat zien dat de concurrentie tussen codeertools verschuift van modelkwaliteit naar architectuur. Orkestratie is een antwoord op de kostenvraag, autonomie een antwoord op de productiviteitsvraag. Beide benaderingen zullen naar elkaar toe groeien: Claude Code heeft al subagents, Fusion verdeelt al rollen. Wie nu kiest, kiest vooral hoeveel zeggenschap hij aan de machine wil geven.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=gboPbbTnSqQ" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/gboPbbTnSqQ/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Code vs GitHub Copilot — Praktische gids + Veelgemaakte fouten (2026)</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.analyticsinsight.net/github/github-copilot-fusion-vs-claude-code-how-ai-model-orchestration-changes-coding" target="_blank" style="color:var(--accent)">analyticsinsight.net ↗</a></div>

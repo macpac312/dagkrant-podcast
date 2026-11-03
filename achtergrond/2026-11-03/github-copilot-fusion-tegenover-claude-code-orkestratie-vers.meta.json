@@ -1,0 +1,16 @@
+{
+  "title": "GitHub Copilot Fusion tegenover Claude Code: orkestratie versus autonomie",
+  "summary": "Copilot laat meerdere modellen schrijven en reviewen; Claude Code zet in op zelfstandige taken.\n\nAnalytics Insight vergelijkt GitHub Copilot Fusion met Claude Code. Copilot Fusion zet meerdere AI-modellen in om code te schrijven, te reviewen en te verbeteren. Claude Code richt zich op autonome codeertaken, analyse van hele repositories en het inzetten van subagents.\n\nDe vergelijking laat twee filosofieën zien: orkestratie van modellen versus één agent die zelfstandig werkt.",
+  "sources": [
+    "https://www.analyticsinsight.net/github/github-copilot-fusion-vs-claude-code-how-ai-model-orchestration-changes-coding"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-03",
+  "slug": "github-copilot-fusion-tegenover-claude-code-orkestratie-vers",
+  "tts_slug": "github-copilot-fusion-tegenover-claude-code-orkestratie-vers",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-03T05:37:41",
+  "size_kb": 11
+}

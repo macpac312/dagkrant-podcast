@@ -1,0 +1,33 @@
+---
+titel: "DNB: AI biedt Nederland kansen, maar succes is geen gegeven"
+url: https://www.dnb.nl/en/general-news/news-2026/ai-offers-opportunities-for-the-netherlands-but-success-is-not-a-foregone-conclusion/
+bron: regulatoir
+kind: regulatoir
+gegenereerd: 2026-11-03T05:37:41
+---
+
+DNB: AI kan de Nederlandse economie productiever en welvarender maken.
+
+Nederland is goed gepositioneerd en hoeft geen eigen AI-modellen te bouwen.
+
+Ontslagrecht en scholing remmen de herverdeling van werk die AI vraagt.
+
+DNB noemt versoepeling van het ontslagrecht; de winst is 'geen uitgemaakte zaak'.
+
+Een voorzichtig optimistische centrale bank
+
+De Nederlandsche Bank publiceerde maandag een analyse over kunstmatige intelligentie en de economie. De toon is optimistisch, maar met een duidelijk voorbehoud. AI kan volgens DNB bijdragen aan een productievere en welvarendere economie, en Nederland is daar goed voor gepositioneerd. Tegelijk benadrukt de bank dat die voordelen 'geen uitgemaakte zaak' zijn. Volgens het FD hoeft Nederland van DNB geen eigen modellen te bouwen. Dat is een nuchtere keuze: de waarde van AI zit voor een open, dienstverlenende economie vooral in toepassing, niet in het trainen van eigen grote taalmodellen, een race die wordt beheerst door Amerikaanse en Chinese partijen met veel grotere budgetten.
+
+De arbeidsmarkt als knelpunt
+
+De kern van de analyse zit niet bij de technologie, maar bij de arbeidsmarkt. Een nieuwe technologie levert pas brede productiviteitswinst op als werk zich herverdeelt: taken verdwijnen, nieuwe ontstaan, en mensen stappen over. Volgens DNB remmen het ontslagrecht en de scholing die herverdeling. De bank noemt versoepeling van het ontslagrecht als oplossing. Dat is politiek gevoelig terrein. Vakbonden zien ontslagbescherming als fundament van bestaanszekerheid, en een voorstel om haar te versoepelen roept bij werknemers die al onzeker zijn over AI eerder weerstand dan vertrouwen op. Dat die onzekerheid reëel is, bleek elders in het nieuws: het UWV meldt dat het aandeel hogeropgeleiden in de WW is gestegen naar 38 procent, met AI als groeiende factor.
+
+AI kan bijdragen aan een productievere en welvarendere economie, maar de voordelen zijn 'geen uitgemaakte zaak'. — De Nederlandsche Bank
+
+Conclusie
+
+DNB legt de vinger op de juiste plek: de vraag is niet of Nederland AI kan gebruiken, maar of de arbeidsmarkt de gevolgen kan verwerken. Wie alleen naar ontslagrecht kijkt, mist echter de helft van het verhaal. Flexibiliteit zonder scholing schuift het risico naar werknemers. Een geloofwaardig AI-beleid koppelt soepelere regels aan serieuze investeringen in omscholing; anders blijft de welvaartswinst een belofte op papier.
+
+▶ YouTube
+
+DNB: Arbeidsmarkt moet flexibeler om vruchten van AI te kunnen plukken
