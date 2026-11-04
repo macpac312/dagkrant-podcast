@@ -1,0 +1,27 @@
+<figure class="reader-hero"><img src="https://cyberpress.org/wp-content/uploads/2026/11/anthropic-adds-edr-security-monitoring-to-claude-cowork-for-enterprise-users234-6ae971e69c7b7.webp" alt="Anthropic Adds EDR Security Monitoring to Claude Cowork for Enterprise Users" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>Anthropic Adds EDR Security Monitoring to Claude Cowork for Enterprise Users</h1>
+<p>Anthropic has introduced beta support for running endpoint detection and response sensors <a href="https://cyberpress.org/claude-cowork-expands-web-mobile/" target="_blank" rel="noopener">inside Claude Cowork’s local virtual machine</a>, giving enterprise security teams visibility into activity that existing host sensors cannot inspect.</p>
+<p>The integration supports Team and Enterprise plans on Claude Desktop for macOS and Window. The capability also works with Claude Desktop connected to Amazon Bedrock, Google Cloud Vertex AI, or Microsoft Foundry.</p>
+<p>However, coverage stops at the local device: organizations cannot install their sensors in cloud Cowork sessions hosted on Anthropic’s infrastructure.</p>
+<h2>Anthropic Adds EDR Security Monitoring</h2>
+<p>Cowork executes shell commands and code inside an isolated virtual machine. While that separation creates an execution boundary, the endpoint security sensor installed on the surrounding computer cannot see inside it.</p>
+<p>Installing a vendor sensor within the guest environment brings that activity into the security console organizations already use.</p>
+<p>At each VM startup, <a href="https://cyberpress.org/claude-desktop-reportedly-adds-browser-access-bridge-for-multiple-chromium-based-browsers/" target="_blank" rel="noopener">Claude Desktop</a> copies the configured sensor package into the environment and verifies its signature against the approved key for the specified vendor.</p>
+<p>A valid signature allows Claude to execute the vendor’s installation script, at most once per VM start. Without configuration, no sensor is installed. The sensor then connects to its vendor’s cloud service and reports activity.</p>
+<p>Notably, its telemetry and data transfers can bypass Cowork’s network allowlist, creating an important distinction between ordinary workload networking restrictions and security monitoring traffic.</p>
+<p>Approved vendors currently include CrowdStrike, Evoke Security, Neo, Palo Alto Networks, Pluto Security, SentinelOne, and Tanium. Claude Desktop accepts only packages signed using an approved vendor’s key.</p>
+<p>Administrators need Claude Desktop version 4.4212.0 or later. Windows deployments require the .msix build on Windows 10 or 11, with hardware virtualization and the Virtual Machine Platform feature enabled.</p>
+<p>Configuration requires <a href="https://cyberpress.org/mdm-solutions-by-business-size/" target="_blank" rel="noopener">mobile device management</a> on macOS or registry policy management on Windows through tools such as Group Policy or Intune.</p>
+<p><a href="https://support.claude.com/en/articles/17828685-run-your-endpoint-detection-and-response-edr-sensor-in-claude-cowork-on-claude-desktop" target="_blank" rel="noopener">Anthropic’s enterprise policy documentation</a> identifies coworkEDRIntegration as the signed package’s full path and coworkEDRIntegrationVendor as the lowercase vendor identifier.</p>
+<p>Windows administrators configure both under the machine-level Claude policy registry location. Each vendor supplies its own installation files and instructions.</p>
+<p>The sensor can inspect VM activity and content, including prompts, files, and Claude responses. That information goes to the chosen EDR vendor; Anthropic says it neither receives nor controls the data.<a href="https://support.claude.com/en/articles/17828685-run-your-endpoint-detection-and-response-edr-sensor-in-claude-cowork-on-claude-desktop#h_ae012dc926" target="_blank" rel="noopener"></a></p>
+<p>Organizations must also manage lifecycle limitations. Removing configuration does not uninstall an existing sensor, but prevents package execution at subsequent VM starts.</p>
+<p>Package signatures do not cover updates the sensor downloads later, and signatures expire within two years, requiring replacement with a newly signed package.</p>
+<p>Anthropic charges no additional integration fee during beta, although vendors may charge separately. Customers remain responsible for testing before deployment and after updates to Claude or the EDR software.</p>
+<p><strong>Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. <a href="https://any.run/enterprise/?utm_source=cyber+press&amp;utm_medium=article&amp;utm_campaign=german+manufacturer&amp;utm_content=enterprise+sales&amp;utm_term=150926#contact-sales" target="_blank" rel="noopener">Explore for your team</a></strong></p>
+<h2>NIST Releases New Cybersecurity Guidelines to Protect Small Businesses From Cyberattacks</h2>
+<h2>Renault TomTom Navigation System Vulnerability Allows Root Code Execution Through Malicious SD Card</h2>
+<h2>Hackers Exploit Just 0.5% of Known Vulnerabilities, Prioritizing Critical System Takeover Flaws</h2>
+<h2>Hackers Hide Malicious DLLs Inside Fake ChatGPT and Claude Installers to Hijack Windows Systems</h2>
+<h2>CrowdStrike and Deloitte Spain Expand Cybersecurity Partnership With AI-Powered Threat Detection</h2>
+<p class="bg-footer">Bron: <a href="https://cyberpress.org/anthropic-adds-edr-security-monitoring/" target="_blank" rel="noopener">cyberpress.org</a></p>
