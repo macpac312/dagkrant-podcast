@@ -1,0 +1,102 @@
+<ul class="bg-bullets">
+<li>Anthropic laat bedrijven in bèta EDR-sensoren draaien in de lokale virtuele machine van Claude Cowork.</li>
+<li>Beveiligingssensoren op de computer zelf konden niet zien wat de agent in die VM deed.</li>
+<li>Alleen ondertekende pakketten van zeven goedgekeurde leveranciers worden geïnstalleerd, eenmaal per VM-start.</li>
+<li>Cloudsessies van Cowork blijven buiten bereik: het toezicht stopt bij het eigen apparaat.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kerncijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="7">7</div><div class="ns-viz-stat-label">Goedgekeurde EDR-leveranciers</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1" data-suffix="x">1x</div><div class="ns-viz-stat-label">Installatiescript per VM-start (maximaal)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Cloudplatforms: Bedrock, Vertex AI, Foundry</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value">4.4212.0</div><div class="ns-viz-stat-label">Minimale versie Claude Desktop</div></div>
+</div></div>
+<h5>Het blinde vlak van de AI-agent</h5>
+<p>Claude Cowork voert namens gebruikers shellcommando’s en code uit, in een geïsoleerde virtuele machine op de eigen computer. Die isolatie is bedoeld als veiligheidsgrens: wat de agent doet, blijft binnen de VM. Maar ze had een bijwerking die beveiligingsteams niet beviel. De sensor voor endpoint detection and response (EDR), die op vrijwel elke zakelijke laptop draait om verdacht gedrag te signaleren, kon niet in die VM kijken. Precies de plek waar een autonome agent het meest actief is, was dus onzichtbaar voor de beveiligingsconsole. Anthropic heeft nu bètaondersteuning toegevoegd om een EDR-sensor van de leverancier binnen die gastomgeving te installeren, meldt Cyberpress. De functie is beschikbaar voor Team- en Enterprise-abonnementen op Claude Desktop voor macOS en Windows, en werkt ook als Claude Desktop is gekoppeld aan Amazon Bedrock, Google Cloud Vertex AI of Microsoft Foundry.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de sensor in de VM komt</div>
+<div class="ns-viz-mech-subtitle">Van ondertekend pakket naar telemetrie in de beveiligingsconsole</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Beleid</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">VM-start</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Handtekening</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Rapportage</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="50" width="110" height="100" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="85" y="75" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">MDM / GPO</text>
+      <line x1="45" y1="92" x2="125" y2="92" stroke="#a78bfa" stroke-width="3"/><line x1="45" y1="106" x2="125" y2="106" stroke="#a78bfa" stroke-width="3"/><line x1="45" y1="120" x2="105" y2="120" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="145" y1="100" x2="180" y2="100" stroke="#7c3aed" stroke-width="2.5"/><path d="M180,94 l10,6 l-10,6 z" fill="#7c3aed"/>
+      <rect x="195" y="60" width="100" height="80" rx="8" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <text x="245" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Claude</text>
+      <text x="245" y="112" text-anchor="middle" font-size="11" fill="#44403c">Desktop</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Beleid</h6><p class="korte">Beheerders stellen via MDM of registerbeleid in welk sensorpakket en welke leverancier.</p><p class="uitleg">Op macOS via mobile device management, op Windows via registerbeleid met tools als Group Policy of Intune. De sleutels heten coworkEDRIntegration (pad naar het pakket) en coworkEDRIntegrationVendor (leverancier, in kleine letters).</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="20" y="30" width="280" height="140" rx="10" fill="#e7e5e4" stroke="#78716c" stroke-width="2"/>
+      <text x="40" y="52" font-size="11" fill="#44403c">Laptop</text>
+      <rect x="140" y="60" width="140" height="95" rx="8" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="210" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Cowork-VM</text>
+      <rect x="45" y="95" width="50" height="34" rx="4" fill="#7c3aed" fill-opacity=".7"/>
+      <text x="70" y="116" text-anchor="middle" font-size="10" fill="#fff">pakket</text>
+      <line x1="98" y1="112" x2="170" y2="112" stroke="#7c3aed" stroke-width="2.5"/><path d="M170,106 l10,6 l-10,6 z" fill="#7c3aed"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>VM-start</h6><p class="korte">Bij elke start van de VM kopieert Claude Desktop het sensorpakket naar binnen.</p><p class="uitleg">Zonder configuratie wordt er niets geïnstalleerd. Windows vraagt de .msix-build op Windows 10 of 11, met hardwarevirtualisatie en het Virtual Machine Platform ingeschakeld.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="60" width="90" height="80" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M80,120 q10,-25 20,0 t20,0" fill="none" stroke="#7c3aed" stroke-width="2"/>
+      <circle cx="225" cy="100" r="34" fill="#16a34a" fill-opacity=".2" stroke="#16a34a" stroke-width="3"/>
+      <polyline points="208,100 220,113 243,88" fill="none" stroke="#16a34a" stroke-width="5"/>
+      <rect x="200" y="148" width="50" height="22" rx="4" fill="#7c3aed" fill-opacity=".6"/><circle cx="212" cy="159" r="5" fill="#fff"/>
+      <text x="105" y="160" text-anchor="middle" font-size="10" fill="#44403c">handtekening</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Handtekening</h6><p class="korte">Alleen pakketten ondertekend met de sleutel van een goedgekeurde leverancier worden uitgevoerd.</p><p class="uitleg">Klopt de handtekening, dan draait Claude het installatiescript van de leverancier, hooguit één keer per VM-start. Goedgekeurd zijn CrowdStrike, Evoke Security, Neo, Palo Alto Networks, Pluto Security, SentinelOne en Tanium.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="25" y="80" width="100" height="70" rx="8" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">sensor</text>
+      <path d="M200,70 a22,22 0 0 1 40,-8 a18,18 0 0 1 30,18 a16,16 0 0 1 -8,30 h-66 a20,20 0 0 1 4,-40 z" fill="#7c3aed" fill-opacity=".5"/>
+      <text x="232" y="96" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">leverancier</text>
+      <path d="M125,110 C160,110 170,90 195,90" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="5,4"/>
+      <rect x="150" y="135" width="120" height="26" rx="4" fill="#fff" stroke="#dc2626" stroke-width="1.5"/>
+      <text x="210" y="152" text-anchor="middle" font-size="10" fill="#dc2626">langs de allowlist</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Rapportage</h6><p class="korte">De sensor meldt activiteit aan de cloud van de leverancier, buiten de netwerk-allowlist om.</p><p class="uitleg">Telemetrie en dataoverdracht van de sensor kunnen de netwerk-allowlist van Cowork passeren. Zo ontstaat een onderscheid tussen het afgeschermde verkeer van de agent en het toezichtverkeer van de beveiliging.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Vertrouwen via handtekeningen en grenzen</h5>
+<p>Het ontwerp is zichtbaar gebouwd rond controle. Bij elke start van de VM kopieert Claude Desktop het geconfigureerde sensorpakket naar binnen en controleert de handtekening tegen de goedgekeurde sleutel van de opgegeven leverancier. Alleen bij een geldige handtekening draait het installatiescript, hooguit één keer per start. Goedgekeurd zijn nu CrowdStrike, Evoke Security, Neo, Palo Alto Networks, Pluto Security, SentinelOne en Tanium. Dat voorkomt dat de nieuwe opening zelf een aanvalsvector wordt: wie een vals pakket in het pad zet, krijgt het niet uitgevoerd. Een opvallende keuze is dat het verkeer van de sensor naar de cloud van de leverancier de netwerk-allowlist van Cowork mag passeren. Dat is functioneel logisch, want een sensor die niet kan rapporteren is waardeloos, maar het betekent wel dat beheerders twee soorten netwerkverkeer uit dezelfde VM moeten begrijpen. Belangrijkste beperking: in cloudsessies van Cowork op de infrastructuur van Anthropic kunnen bedrijven geen eigen sensoren installeren.</p>
+<blockquote>Een agent die je niet kunt observeren, kun je niet vertrouwen. EDR in de VM maakt van een zwarte doos een gelogd werkstation.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Lokaal versus cloud</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>💻 Lokale Cowork-VM</h6><ul><li>Eigen EDR-sensor mogelijk (bèta)</li><li>Team- en Enterprise, macOS en Windows</li><li>Ook via Bedrock, Vertex AI, Foundry</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>☁ Cowork in de cloud</h6><ul><li>Draait op infrastructuur van Anthropic</li><li>Geen eigen sensoren te installeren</li><li>Toezicht afhankelijk van de aanbieder</li></ul></div>
+</div></div>
+<h5>Waarom dit nu speelt</h5>
+<p>De timing is geen toeval. Dezelfde krant meldt een explosieve toename van cyberaanvallen, waarbij ontwerpfouten in software worden misbruikt en AI dat makkelijker maakt, met gehackte supermarktkoelingen als nieuwste voorbeeld. Bedrijven die AI-agents toegang geven tot hun systemen, vragen terecht welk gedrag die agents vertonen en of een gekaapte agent opvalt. Voor Anthropic, dat volgens berichtgeving worstelt met stijgende computekosten vlak voor een beursgang, is de zakelijke markt cruciaal, en daar is aansluiting op bestaande beveiligingstools vaak een harde inkoopeis. Het past ook bij FlashProve, Anthropics werk aan cryptografisch bewijs van welk model een antwoord gaf: beide gaan over controleerbaarheid. Voor Europese organisaties, die onder NIS2 en de AI-verordening moeten aantonen dat ze risico’s beheersen, maakt zichtbaarheid in de agent het verschil tussen experimenteren en verantwoord uitrollen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>EDR</summary><div class="ns-viz-concept-body">Endpoint detection and response: software op een apparaat die activiteit vastlegt, verdacht gedrag signaleert en aan een centrale beveiligingsconsole meldt.</div></details>
+  <details class="ns-viz-concept"><summary>Netwerk-allowlist</summary><div class="ns-viz-concept-body">Lijst van bestemmingen waarmee de Cowork-VM mag communiceren. Sensortelemetrie mag daar buiten vallen.</div></details>
+  <details class="ns-viz-concept"><summary>MDM en registerbeleid</summary><div class="ns-viz-concept-body">Centrale beheerinstrumenten: MDM op macOS, Group Policy of Intune op Windows, om de EDR-integratie op alle apparaten in te stellen.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Anthropic dicht een reëel blind vlak, en doet dat met verstandige waarborgen: ondertekende pakketten, een beperkte lijst leveranciers, uitvoering één keer per start. Maar de beperking tot lokale sessies laat zien waar de echte vertrouwensvraag ligt. Hoe meer agents in de cloud van de aanbieder draaien, hoe meer bedrijven moeten vertrouwen op toezicht dat ze niet zelf uitvoeren. Deze bèta is daarom een goed begin, geen eindpunt. Wie AI-agents serieus inzet, zal dezelfde zichtbaarheid ook in de cloud eisen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=6o8s6sGjplI" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/6o8s6sGjplI/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Cowork neemt écht werk van je over (Tutorial 2026).</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://cyberpress.org/anthropic-adds-edr-security-monitoring/" target="_blank" style="color:var(--accent)">cyberpress.org ↗</a></div>

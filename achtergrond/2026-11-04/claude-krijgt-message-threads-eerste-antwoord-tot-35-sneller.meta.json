@@ -1,0 +1,18 @@
+{
+  "title": "Claude krijgt Message Threads: eerste antwoord tot 35% sneller",
+  "summary": "Lange gesprekken hoeven niet steeds opnieuw verstuurd te worden. De prijs blijft gelijk.\n\nAnthropic heeft Message Threads in publieke bèta uitgebracht. De functie verkort de tijd tot het eerste antwoord bij grote verzoeken met ongeveer 35%, omdat niet bij elke beurt de volledige gespreksgeschiedenis opnieuw verstuurd hoeft te worden.\n\nDe prijzen blijven ongewijzigd. The New Stack merkt op dat Claude Code er sneller van wordt, maar dat de tokenrekening hetzelfde blijft.",
+  "sources": [
+    "https://www.indiatoday.in/technology/news/story/anthropic-rolls-out-message-threads-in-public-beta-to-make-claude-ai-much-faster-3031855-2026-11-04",
+    "https://www.newsbytesapp.com/news/science/anthropic-launches-message-threads-for-claude-cuts-time-to-first-token-roughly-35/tldr",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00S0lXVE1UVDl2VnluQzE0Z1NVbDlBQmktT3NKRnVZaGFuSmlMdENzaUFKSGcwTjZQTGFNMjJlMmkyMExNQUp3OVdhbVJLR29jOE41Y3JzZlY0WWRpeG5oQzhOS0pWeXM?oc=5"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-04",
+  "slug": "claude-krijgt-message-threads-eerste-antwoord-tot-35-sneller",
+  "tts_slug": "claude-krijgt-message-threads-eerste-antwoord-tot-35-sneller",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-04T05:41:10",
+  "size_kb": 14
+}

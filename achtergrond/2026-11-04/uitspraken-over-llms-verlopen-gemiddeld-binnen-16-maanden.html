@@ -1,0 +1,95 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/11/ai_goalpost_moving-1200x800.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Stanford toetste 50 veelgeciteerde LLM-claims aan 20 modellen: 44% is verlopen.</li>
+<li>Claims over wat modellen níét kunnen, verlopen het snelst.</li>
+<li>Voorkeuren en neigingen, zoals vleierij, blijken veel hardnekkiger.</li>
+<li>Vooruitgang is ongelijk: verzonnen bronnen verschillen sterk per model.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wat er van 50 claims over is</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Verlopen</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:44%">44%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Flink verzwakt</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:34%">34%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Houdt stand</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:16%">16%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Sterker geworden</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:6%">6%</div></div></div>
+</div></div>
+<h5>Wetenschap die achter de feiten aan loopt</h5>
+<p>Wetenschappelijke kennis veroudert altijd, maar zelden zo snel als bij grote taalmodellen. Stanford-onderzoekers Owen Queen en James Zou namen 50 veelgeciteerde claims over LLM's en toetsten die opnieuw op 20 modellen van acht ontwikkelaars, uitgebracht tussen juli 2024 en september 2026. De uitkomst is ontnuchterend voor wie op literatuur vertrouwt: 44 procent van de bevindingen is 'verlopen', het oorspronkelijke effect is grotendeels verdwenen. Nog eens 34 procent is flink verzwakt. Slechts 16 procent houdt stand en 6 procent is zelfs sterker geworden. Van de 22 bevindingen waarvoor een vervaldatum te schatten viel, was de gemiddelde levensduur 15,7 maanden. Na een jaar was 16 procent verlopen, na twee jaar 39 procent. Dat is korter dan de doorlooptijd van veel tijdschriftpublicaties en promotietrajecten: een bevinding kan achterhaald zijn voordat ze gedrukt staat.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="Aandeel verlopen claims na een en twee jaar">
+  <g font-size="9" fill="#a6adc8"><text x="35" y="84">na 1 jaar</text><text x="135" y="84">na 2 jaar</text></g>
+  <rect x="35" y="56" width="50" height="18" fill="#a6e3a1"/>
+  <rect x="135" y="30" width="50" height="44" fill="#fab387"/>
+  <g font-size="10" fill="#cdd6f4" text-anchor="middle"><text x="60" y="51">16%</text><text x="160" y="25">39%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Deel van de claims dat verlopen is (Queen &amp; Zou).</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een zwakte-claim verloopt</div>
+<div class="ns-viz-mech-subtitle">Van gepubliceerde beperking tot achterhaalde bevinding</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Publicatie</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Doelwit</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Training</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Verlopen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="35" width="120" height="140" rx="4" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="60" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">PAPER</text><line x1="115" y1="80" x2="205" y2="80" stroke="#a78bfa" stroke-width="4"/><line x1="115" y1="95" x2="205" y2="95" stroke="#a78bfa" stroke-width="4"/><text x="160" y="130" text-anchor="middle" font-size="12" fill="#dc2626">"strawberry":</text><text x="160" y="148" text-anchor="middle" font-size="12" fill="#dc2626">2× r ?</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Publicatie</h6><p class="korte">Onderzoekers documenteren iets wat modellen niet kunnen.</p><p class="uitleg">Bekende voorbeelden: letters tellen in "strawberry", rekenen in onbekende talstelsels, informatie kwijtraken midden in lange contexten en goede antwoorden opgeven als gebruikers aandringen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="160" cy="100" r="60" fill="none" stroke="#a78bfa" stroke-width="10"/><circle cx="160" cy="100" r="38" fill="none" stroke="#7c3aed" stroke-width="10"/><circle cx="160" cy="100" r="14" fill="#dc2626"/><text x="160" y="190" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Er is één juist antwoord</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Duidelijk doelwit</h6><p class="korte">Zulke fouten hebben een correcte uitkomst om naartoe te trainen.</p><p class="uitleg">De onderzoekers vermoeden dat dit verklaart waarom redeneerclaims zo snel verlopen: ontwikkelaars weten precies wat goed is en kunnen gericht verbeteren.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="70" width="70" height="60" rx="8" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><text x="75" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">data</text><line x1="112" y1="100" x2="200" y2="100" stroke="#7c3aed" stroke-width="3"/><polygon points="200,92 214,100 200,108" fill="#7c3aed"/><rect x="216" y="60" width="70" height="80" rx="10" fill="#7c3aed" fill-opacity=".18" stroke="#7c3aed" stroke-width="2"/><text x="251" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">nieuw model</text><text x="160" y="40" text-anchor="middle" font-size="12" fill="#44403c">volgende generatie</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Training</h6><p class="korte">Nieuwe modelgeneraties worden op het bekende probleem verbeterd.</p><p class="uitleg">Binnen de onderzochte periode van ruim twee jaar brachten acht ontwikkelaars de 20 geteste modellen uit. Elk nieuw model is een nieuwe toets voor oude claims.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="35" width="120" height="140" rx="4" fill="#fff" stroke="#78716c" stroke-width="2"/><line x1="115" y1="80" x2="205" y2="80" stroke="#d6d3d1" stroke-width="4"/><line x1="115" y1="95" x2="205" y2="95" stroke="#d6d3d1" stroke-width="4"/><rect x="85" y="110" width="150" height="34" rx="4" fill="none" stroke="#dc2626" stroke-width="3" transform="rotate(-12 160 127)"/><text x="160" y="133" text-anchor="middle" font-size="15" font-weight="700" fill="#dc2626" transform="rotate(-12 160 127)">VERLOPEN</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Verlopen</h6><p class="korte">Het oorspronkelijke effect is bij huidige modellen grotendeels verdwenen.</p><p class="uitleg">Vijf van de negen redeneerclaims gelden als verlopen; geen enkele hield stand of werd sterker. De gemiddelde houdbaarheid van claims met een vervaldatum: 15,7 maanden.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Wat verdwijnt en wat blijft</h5>
+<p>Het interessantste aan de studie is niet het gemiddelde, maar de scheidslijn. Claims over wat modellen níét kunnen, verlopen het snelst. Van de negen bevindingen over redeneren geldt vijf als verlopen, en geen enkele hield stand of werd sterker. De onderzoekers vermoeden dat zulke fouten een 'juist' antwoord hebben, waardoor ontwikkelaars een helder trainingsdoel hebben. Claims over voorkeuren en neigingen blijken veel taaier. Van de elf bevindingen die standhielden of sterker werden, gaan er drie over LLM's als beoordelaar: ze verkiezen hun eigen antwoorden, beoordelen geaccepteerde en afgewezen papers vergelijkbaar en laten zich beïnvloeden door taalkundige spin in medische samenvattingen. Drie andere gaan over vleierij en meegaandheid richting gebruikers. Verder houden een linkse politieke voorkeur, vrijwel identieke antwoorden op open vragen en een scheve verdeling bij het genereren van 'willekeurige' getallen stand. Dat zijn precies de eigenschappen zonder eenduidige score, en dus zonder makkelijke fix.</p>
+<blockquote>Snelle vooruitgang betekent geen vrijbrief: de fouten die het makkelijkst te meten zijn, verdwijnen het eerst, terwijl vleierij en zelfvoorkeur hardnekkig blijven.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📈 Verzonnen literatuurverwijzingen per model</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-42003691"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-42003691'),{
+    type:'bar',
+    data:{
+      labels:['GPT-3.5 (2023)','GPT-6.1 Sol','Claude Sonnet 5.5','Qwen3.7-Flash'],
+      datasets:[{
+        label:'Verzonnen referenties (%)',data:[55,0,1,69],
+        backgroundColor:['#a78bfa','#7c3aed','#7c3aed','#dc2626'],borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return c.parsed.y+'% verzonnen';}}}},
+      scales:{
+        y:{max:100,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Geen vrijbrief: de ongelijke vooruitgang</h5>
+<p>De casestudy naar verzonnen bronvermeldingen laat zien waarom 'verlopen' niet 'opgelost' betekent. In de oorspronkelijke studie van Walters en Wilder uit 2023 verzon GPT-3.5 55 procent van zijn referenties. Met dezelfde prompts verzon GPT-6.1 Sol nul procent en Claude Sonnet 5.5 één procent. Maar Qwen3.7-Flash, eveneens een model uit 2026, verzon er nog 69 procent. Ook bij zogenoemde two-hop-vragen, waarbij een model twee bekende feiten moet combineren, faalt Claude Sonnet 5.5 nog in ongeveer tien procent van de gevallen. De praktijk bevestigt dat: elders in deze krant citeerde een Britse aanklager verzonnen jurisprudentie na een AI-zoekopdracht. Voor beleidsmakers is de les dubbel. Wie regels baseert op wat 'AI niet kan', bouwt op drijfzand. Maar wie aanneemt dat alle modellen even ver zijn, onderschat hoe groot de verschillen tussen aanbieders blijven. Initiatieven als Anthropics FlashProve, dat cryptografisch moet aantonen welk model antwoordde, worden in dat licht relevanter.</p>
+<h5>Conclusie</h5>
+<p>De studie van Queen en Zou is een ongemakkelijke spiegel voor het AI-debat. Veel van wat we 'weten' over taalmodellen is een momentopname met een houdbaarheid van ruim een jaar. Daar volgen twee conclusies uit. Onderzoekers moeten claims dateren en herhaalbaar maken, zoals medicijnonderzoek doet. En gebruikers moeten zich minder zorgen maken over spectaculaire rekenfouten dan over de stille, hardnekkige neigingen: vleierij, zelfvoorkeur en politieke kleur. Die verdwijnen niet vanzelf met de volgende versie.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=7IbKpKwjqkI" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/7IbKpKwjqkI/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Uitspraken over LLM's verlopen gemiddeld binnen 16 maanden 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/rapid-llm-development-is-outrunning-the-research-meant-to-explain-it-study-finds/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

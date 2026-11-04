@@ -1,0 +1,17 @@
+{
+  "title": "Taalmodellen kunnen neurale netwerkgewichten lezen en schrijven",
+  "summary": "Een nieuw paper over 'weight-space programming' zet de AI-wereld in beweging. Ook een klein lokaal model kan het.\n\nHet besproken paper van deze week is 'Sparks of Weight-Space Programming' van Rikiya Takehi, Jayden Teoh, Alex Zhang en Omar Khattab. Het laat zien dat frontier-modellen de gewichten van neurale netwerken direct kunnen lezen en schrijven.\n\nSimon Willison probeerde het zelf en ontdekte dat ook Qwen 3.8 27B op zijn laptop modelgewichten kan interpreteren. Latent Space beschrijft hoe o",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+    "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-04",
+  "slug": "taalmodellen-kunnen-neurale-netwerkgewichten-lezen-en-schrij",
+  "tts_slug": "taalmodellen-kunnen-neurale-netwerkgewichten-lezen-en-schrij",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-04T05:41:10",
+  "size_kb": 13
+}

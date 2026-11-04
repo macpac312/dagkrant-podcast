@@ -1,0 +1,16 @@
+{
+  "title": "Claude Cowork krijgt EDR-beveiligingsmonitoring voor bedrijven",
+  "summary": "Beveiligingsteams kunnen voortaan zien wat de AI-agent in zijn virtuele machine doet.\n\nAnthropic heeft bètaondersteuning toegevoegd voor endpoint detection and response (EDR) in Claude Cowork. Bedrijven kunnen EDR-sensoren draaien in de lokale virtuele machine van Cowork, zodat beveiligingsteams zicht krijgen op activiteiten van de AI-agent.",
+  "sources": [
+    "https://cyberpress.org/anthropic-adds-edr-security-monitoring/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-04",
+  "slug": "claude-cowork-krijgt-edr-beveiligingsmonitoring-voor-bedrijv",
+  "tts_slug": "claude-cowork-krijgt-edr-beveiligingsmonitoring-voor-bedrijv",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-04T05:41:10",
+  "size_kb": 13
+}

@@ -1,0 +1,119 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://infinance.nl/wp-content/uploads/2016/12/zzp-ondernemer.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© infinance.nl</div></div><ul class="bg-bullets">
+<li>Bijna driekwart van de ondernemers woont in een koopwoning, tegen 64% van de werknemers.</li>
+<li>46% van ondernemers met een woning tot €450.000 heeft geen NHG; bij werknemers 33%.</li>
+<li>27% van de zelfstandigen regelde niets voor arbeidsongeschiktheid; ruim een derde ziet het huis als pensioen.</li>
+<li>ABN Amro pleit voor hypotheekadvies dat woning en bedrijf samen bekijkt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Ondernemers versus werknemers</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-c787e583"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-c787e583'),{
+    type:'bar',
+    data:{
+      labels:['Geen NHG (WOZ ≤ €450k)','≥150 m² woonoppervlak','Zeer tevreden over woning','Moeite met maandlasten'],
+      datasets:[
+        {label:'Ondernemers',data:[46,41,45,5.8],backgroundColor:'#7c3aed',borderRadius:4},
+        {label:'Werknemers in loondienst',data:[33,21,34,5.3],backgroundColor:'#a78bfa',borderRadius:4}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y+'%';}}}},
+      scales:{y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}},
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script>
+<p style="font-size:.75rem;color:var(--t3)">Bron: ABN Amro op basis van WoON 2024.</p></div>
+<h5>Eigenaar van huis én bedrijf</h5>
+<p>Ondernemers zijn in Nederland vaker huiseigenaar dan werknemers. Bijna driekwart van hen woont in een koopwoning, tegenover 64% van de huishoudens in loondienst, blijkt uit een analyse van ABN Amro op basis van het WoON-onderzoek 2024. Ze wonen ook ruimer: 41% heeft minstens 150 vierkante meter, tegen 21% van de werknemers, en 45% is zeer tevreden over de woning, tegen 34%. Dat beeld past bij een groep met relatief veel vermogen in stenen. Maar juist daar zit de kwetsbaarheid. Van de ondernemers met een hypotheek op een woning met een WOZ-waarde tot €450.000, het segment waarin de Nationale Hypotheek Garantie in principe mogelijk is, heeft 46% geen NHG. Bij werknemers is dat 33%. De ondernemer die het meest afhankelijk is van een wisselend inkomen, heeft dus het minst vaak het vangnet dat precies voor inkomensschokken bedoeld is.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="Aandeel koopwoning en geen NHG">
+  <g font-size="9" fill="#a6adc8"><text x="8" y="84">koop ondern.</text><text x="62" y="84">koop werkn.</text><text x="118" y="84">geen NHG o.</text><text x="172" y="84">geen NHG w.</text></g>
+  <rect x="12" y="18" width="36" height="56" fill="var(--accent)"/>
+  <rect x="66" y="26" width="36" height="48" fill="var(--surface2)"/>
+  <rect x="122" y="40" width="36" height="34" fill="var(--orange)"/>
+  <rect x="176" y="50" width="36" height="24" fill="var(--surface2)"/>
+  <g font-size="10" fill="#cdd6f4" text-anchor="middle"><text x="30" y="14">~¾</text><text x="84" y="22">64%</text><text x="140" y="36">46%</text><text x="194" y="46">33%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Vaker eigenaar, minder vaak verzekerd (ABN Amro, WoON 2024).</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een zakelijke tegenslag thuis landt</div>
+<div class="ns-viz-mech-subtitle">Van omzetdip naar risico op het eigen huis</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Tegenslag</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Inkomen weg</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Woonlasten</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Vangnet?</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="80" width="200" height="80" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="60" y="62" width="200" height="20" fill="#7c3aed"/><text x="160" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">DE ZAAK</text>
+      <polyline points="80,110 120,100 160,115 200,135 240,150" fill="none" stroke="#dc2626" stroke-width="3"/>
+      <path d="M240,150 l-12,-2 l6,-9 z" fill="#dc2626"/>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">omzet daalt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Tegenslag</h6><p class="korte">Een slecht jaar, een verloren klant of ziekte raakt eerst het bedrijf.</p><p class="uitleg">Ondernemers ‘steken al hun energie in de zaak’, zegt ABN Amro. Hun inkomen beweegt mee met de bedrijfsresultaten, anders dan een vast salaris.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="160" cy="95" r="55" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="103" text-anchor="middle" font-size="26" font-weight="700" fill="#7c3aed">€</text>
+      <line x1="110" y1="45" x2="210" y2="145" stroke="#dc2626" stroke-width="5"/>
+      <text x="160" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">27% heeft geen AOV-regeling</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Inkomen weg</h6><p class="korte">Ruim een kwart van de zelfstandigen regelde niets tegen arbeidsongeschiktheid.</p><p class="uitleg">Volgens de Zelfstandigen Enquête Arbeid 2025 van TNO en CBS heeft 27% van de zelfstandig ondernemers geen voorziening voor arbeidsongeschiktheid. Valt het inkomen weg, dan is er geen uitkering die het opvangt.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <polygon points="160,40 250,100 70,100" fill="#7c3aed" fill-opacity=".6"/>
+      <rect x="90" y="100" width="140" height="70" fill="#a78bfa" fill-opacity=".35" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="145" y="130" width="30" height="40" fill="#7c3aed" fill-opacity=".6"/>
+      <text x="270" y="70" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">!</text>
+      <text x="160" y="192" text-anchor="middle" font-size="11" fill="#44403c">maandlasten lopen door</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Woonlasten</h6><p class="korte">De hypotheek moet betaald blijven, ook als de zaak tegenzit.</p><p class="uitleg">Nu heeft 5,8% van de ondernemers met een koopwoning moeite met de maandlasten, tegen 5,3% van de werknemers. Het verschil is klein, maar de klap bij een inkomensschok is groter.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <polygon points="100,40 160,80 40,80" fill="#7c3aed" fill-opacity=".6"/><rect x="55" y="80" width="90" height="50" fill="#a78bfa" fill-opacity=".35"/>
+      <path d="M30,145 Q100,175 170,145" fill="none" stroke="#16a34a" stroke-width="4"/>
+      <text x="100" y="185" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="700">met NHG</text>
+      <polygon points="240,40 300,80 180,80" fill="#7c3aed" fill-opacity=".6"/><rect x="195" y="80" width="90" height="50" fill="#a78bfa" fill-opacity=".35"/>
+      <line x1="200" y1="160" x2="280" y2="160" stroke="#dc2626" stroke-width="3" stroke-dasharray="6,6"/>
+      <text x="240" y="185" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="700">zonder: 46%</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Vangnet?</h6><p class="korte">NHG kan bij gedwongen verkoop een restschuld opvangen; bijna de helft heeft het niet.</p><p class="uitleg">NHG is een borg die bij betalingsproblemen door onder meer inkomensverlies helpt en een eventuele restschuld kan kwijtschelden. ‘Een zakelijke tegenslag raakt direct het thuisfront als er geen vangnet onder de woning ligt’, zegt Siri Mauer van ABN Amro.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Het huis als pensioenpot</h5>
+<p>Waarom kiezen ondernemers zo vaak voor een hypotheek zonder garantie? De bronnen geven geen sluitende verklaring, maar het patroon is bekend. NHG brengt een eenmalige premie en strengere voorwaarden met zich mee, en wie een ruim vermogen of een flinke eigen inbreng heeft, of een woning boven de grens koopt, valt er sowieso buiten. Ondernemers kunnen bovendien moeilijker een stabiel inkomen aantonen, waardoor hun financiering vaker maatwerk is. Daar komt een tweede risico bij. Ruim een derde van de zelfstandigen beschouwt de eigen woning als pensioenvoorziening, blijkt uit de Zelfstandigen Enquête Arbeid 2025 van TNO en CBS, en 27% heeft niets geregeld voor arbeidsongeschiktheid. Het huis moet zo tegelijk dak, buffer en oudedagsvoorziening zijn. Dat werkt zolang de prijzen stijgen en de zaak draait, maar concentreert alle risico’s op één bezit.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het vangnet van de zelfstandige</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="27" data-suffix="%">27%</div><div class="ns-viz-stat-label">Zelfstandigen zonder voorziening arbeidsongeschiktheid</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="46" data-suffix="%">46%</div><div class="ns-viz-stat-label">Ondernemers zonder NHG (WOZ ≤ €450.000)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="€" data-target="450000">€450000</div><div class="ns-viz-stat-label">WOZ-grens in de analyse</div></div>
+</div></div>
+<blockquote>‘Het huis voelt als een veilige basis en vaak zelfs als pensioenpot. Maar een zakelijke tegenslag raakt direct het thuisfront als er geen vangnet onder de woning ligt.’ — Siri Mauer, ABN Amro</blockquote>
+<h5>Wat banken en beleid ermee moeten</h5>
+<p>ABN Amro pleit ervoor om bij hypotheekadvies aan ondernemers de samenhang tussen woning en bedrijf te bekijken, niet alleen bij de aanvraag maar ook bij een verbouwing, verduurzaming of verhuizing. Dat is een verstandige, maar ook commercieel gekleurde boodschap: de bank verkoopt zowel hypotheken als zakelijke producten. Voor beleidsmakers raakt het aan een breder debat. De verplichte arbeidsongeschiktheidsverzekering voor zelfstandigen laat al jaren op zich wachten, terwijl het aandeel zelfstandigen groot blijft. Tegelijk staat de woningmarkt onder druk: in 2025 ontstonden via transformatie van kantoren en winkels 6.400 woningen, 19% minder dan een jaar eerder, de vierde daling op rij. Een krappe markt houdt prijzen hoog, wat het huis als pensioenpot aantrekkelijker maakt, maar ook de val dieper als het misgaat.</p>
+<h5>Conclusie</h5>
+<p>De cijfers tonen een paradox: de groep met het meest onzekere inkomen heeft het grootste vastgoedbezit en het dunste vangnet. Dat is geen individuele onverstandigheid maar een systeemgat. Zolang zelfstandigen zich niet verplicht tegen arbeidsongeschiktheid verzekeren en de woning hun pensioen moet zijn, is NHG voor ondernemers in het juiste segment geen luxe maar een noodzaak. Adviseurs zouden het standaard moeten bespreken, en de politiek zou het AOV-dossier eindelijk moeten afronden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=74a7__IzTWs" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/74a7__IzTWs/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Ondernemers hebben vaker een koopwoning, maar minder vaak NHG 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://infinance.nl/artikel/ondernemers-hebben-vaker-koopwoning-maar-minder-vaak-nhg/" target="_blank" style="color:var(--accent)">infinance.nl ↗</a></div>

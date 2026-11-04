@@ -1,0 +1,17 @@
+{
+  "title": "Anthropic bouwt FlashProve: cryptografisch bewijs van welk model antwoordde",
+  "summary": "Iedereen moet kunnen controleren dat een AI-antwoord echt van het opgegeven model komt.\n\nAnthropic werkt aan FlashProve, een systeem waarmee iedereen kan controleren dat een AI-antwoord echt afkomstig is van het model dat het beweert te zijn. Het systeem levert een cryptografisch bewijs dat een antwoord is gegenereerd met vastgelegde modelgewichten, en wordt open source uitgebracht.",
+  "sources": [
+    "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+    "https://www.newsbytesapp.com/news/science/anthropic-releases-open-source-flashprove-to-cryptographically-verify-model-origin/tldr"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-04",
+  "slug": "anthropic-bouwt-flashprove-cryptografisch-bewijs-van-welk-mo",
+  "tts_slug": "anthropic-bouwt-flashprove-cryptografisch-bewijs-van-welk-mo",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-04T05:41:10",
+  "size_kb": 13
+}
