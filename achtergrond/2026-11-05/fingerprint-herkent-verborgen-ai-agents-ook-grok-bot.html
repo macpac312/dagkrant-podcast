@@ -1,0 +1,67 @@
+<ul class="bg-bullets">
+<li>Fingerprint detecteert nu AI-agents die zich niet als bot melden, waaronder Grok Bot.</li>
+<li>Grok Bot stopte rond 9 oktober met het ondertekenen van zijn verkeer via Web Bot Auth.</li>
+<li>Websites kunnen agentverkeer daardoor minder makkelijk onderscheiden van menselijke bezoekers.</li>
+<li>Zonder afdwingbare identificatie wordt het web een kat-en-muisspel tussen agents en detectie.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📏 Het web is niet meer menselijk</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:125"/>
+  </svg>
+  <div class="ns-viz-gauge-val">&gt;50%</div>
+  <div class="ns-viz-gauge-label">Aandeel niet-menselijk webverkeer in 2026 (volgens Fingerprint)</div>
+</div></div>
+<h5>Agents die hun gezicht verbergen</h5>
+<p>Het beveiligingsbedrijf Fingerprint, dat apparaatherkenning levert aan onder meer banken en webwinkels, breidt zijn botdetectie uit naar AI-agents die zich niet als zodanig kenbaar maken. Het noemt drie namen: Meta's Muse, Instinct van Spear Street en Grok Bot van xAI. De achtergrond is een verschuiving in hoe het web wordt gebruikt. Volgens Fingerprint is in 2026 meer dan de helft van het webverkeer niet meer menselijk, grotendeels door agents die namens consumenten of bedrijven websites bezoeken, inloggen en taken afronden. Om dat beheersbaar te houden is de standaard Web Bot Auth ontwikkeld, waarmee een agent cryptografisch kan bewijzen wie hij is. Maar volgens Fingerprint kiest een groeiend aantal bekende agents ervoor om ongedeclareerd te opereren, of stappen ze juist af van ondertekend verkeer. Grok Bot deed dat rond 9 oktober.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een verborgen agent toch wordt herkend</div>
+<div class="ns-viz-mech-subtitle">Van ondertekend bezoek naar detectie op browserniveau</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Melden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Verbergen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Afleiden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Beslissen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="80" height="60" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="70" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AI-agent</text><rect x="210" y="60" width="90" height="80" rx="6" fill="#fff" stroke="#44403c" stroke-width="2"/><text x="255" y="105" text-anchor="middle" font-size="12" fill="#44403c">website</text><line x1="112" y1="100" x2="206" y2="100" stroke="#16a34a" stroke-width="2.5"/><rect x="140" y="82" width="38" height="24" rx="4" fill="#16a34a"/><text x="159" y="98" text-anchor="middle" font-size="10" fill="#fff">✓ sig</text><text x="160" y="165" text-anchor="middle" font-size="11" fill="#44403c">Web Bot Auth: verzoek ondertekend</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Melden</h6><p class="korte">Een agent ondertekent zijn verzoeken cryptografisch en maakt zo bekend wie hij is.</p><p class="uitleg">Met Web Bot Auth kan een website zien dat een bezoek van een bepaalde agent komt en zelf kiezen of die welkom is. Grok Bot deed dit tot rond 9 oktober 2026.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="80" height="60" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5 3"/><text x="70" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">agent</text><text x="70" y="114" text-anchor="middle" font-size="10" fill="#44403c">als mens vermomd</text><rect x="210" y="60" width="90" height="80" rx="6" fill="#fff" stroke="#44403c" stroke-width="2"/><text x="255" y="105" text-anchor="middle" font-size="12" fill="#44403c">website</text><line x1="112" y1="100" x2="206" y2="100" stroke="#a78bfa" stroke-width="2.5"/><text x="159" y="90" text-anchor="middle" font-size="18" fill="#dc2626">?</text><text x="160" y="165" text-anchor="middle" font-size="11" fill="#44403c">geen handtekening, aangepaste vingerafdruk</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Verbergen</h6><p class="korte">Ongedeclareerde agents tekenen niet en lijken zoveel mogelijk op gewone browsers.</p><p class="uitleg">Muse past volgens Fingerprint zijn browservingerafdruk aan en onderdrukt de standaard automatiseringssignalen waar klassieke botdetectie op leunt. Instinct logt in met de inloggegevens van de gebruiker.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="140" cy="95" r="45" fill="none" stroke="#7c3aed" stroke-width="5"/><line x1="172" y1="128" x2="215" y2="170" stroke="#7c3aed" stroke-width="8" stroke-linecap="round"/><path d="M115 80 Q140 60 165 80 M110 95 Q140 72 170 95 M115 110 Q140 90 165 110" fill="none" stroke="#a78bfa" stroke-width="2.5"/><text x="250" y="60" font-size="11" fill="#44403c">browser-</text><text x="250" y="74" font-size="11" fill="#44403c">signalen</text><circle class="ns-viz-mech-hotspot" cx="140" cy="95" r="7" data-tip="Detectie van Muse binnen ongeveer twee weken na aankondiging"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Afleiden</h6><p class="korte">Fingerprint leidt uit signalen op browserniveau af dat er waarschijnlijk een agent achter zit.</p><p class="uitleg">Het bedrijf spreekt bewust van verkeer dat wordt "afgeleid" als agentverkeer. Detectie voor Muse stond er volgens Fingerprint zo'n twee weken na de aankondiging van die agent.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="75" height="60" rx="8" fill="#16a34a" fill-opacity=".15" stroke="#16a34a" stroke-width="2"/><text x="67" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#16a34a">toestaan</text><rect x="122" y="70" width="75" height="60" rx="8" fill="#f59e0b" fill-opacity=".15" stroke="#f59e0b" stroke-width="2"/><text x="160" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">beperken</text><rect x="214" y="70" width="75" height="60" rx="8" fill="#dc2626" fill-opacity=".12" stroke="#dc2626" stroke-width="2"/><text x="252" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">blokkeren</text><text x="160" y="160" text-anchor="middle" font-size="11" fill="#44403c">de website beslist per interactie</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Beslissen</h6><p class="korte">De website kiest per interactie of een agent mag doorgaan, wordt afgeremd of geweerd.</p><p class="uitleg">Doel is fraude te stoppen zonder legitieme klanten te hinderen. Een agent die namens een echte gebruiker een reservering doet, is niet per definitie kwaadaardig.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom agents liever anoniem blijven</h5>
+<p>De drie voorbeelden laten verschillende varianten van hetzelfde probleem zien. Muse biedt volgens Fingerprint geen verifieerbare identiteit en verhult actief dat het een geautomatiseerde browser is; het bedrijf zegt Muse-activiteit te hebben gevonden op de inlogpagina's van een grote bank, die andere beveiligingsleveranciers hadden gemist. Instinct logt in met de gegevens van de gebruiker en vraagt zelfs sms-codes voor tweestapsverificatie op. Volgens CNN bestookte de agent reserveringsplatform Resy namens één gebruiker honderden keren per uur, waarna diens account werd gedeactiveerd. Grok Bot meldde zich eerst netjes aan, maar stopte daar begin oktober mee. De prikkel is duidelijk: een agent die zich meldt, kan worden geblokkeerd. Wie zijn taak voor de gebruiker wil afronden, heeft er belang bij niet op te vallen. Daarmee ondergraven juist de grote spelers de vrijwillige standaard die het web ordelijk moest houden.</p>
+<blockquote>"More AI agents are visiting websites without disclosing their identity, and some that used to, like Grok Bot, have stopped." — Dan Pinto, CEO Fingerprint</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Drie verborgen agents</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Muse (Meta)</h6>
+    <ul><li>Geen verifieerbare identiteit</li><li>Past browservingerafdruk aan</li><li>Gezien op inlogpagina's van een bank</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Instinct (Spear Street)</h6>
+    <ul><li>Logt in met gebruikersgegevens</li><li>Vraagt sms-codes voor MFA op</li><li>Resy honderden keren per uur benaderd</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Grok Bot (xAI)</h6>
+    <ul><li>Logt in, werkt inboxen af</li><li>Tekende eerst via Web Bot Auth</li><li>Stopte daarmee rond 9 oktober</li></ul></div>
+</div></div>
+<h5>Gevolgen en perspectieven</h5>
+<p>Hierbij past een kanttekening: het nieuws komt uit een persbericht van Fingerprint zelf, dat belang heeft bij een dreigend beeld. Het cijfer over meer dan de helft niet-menselijk verkeer en de claims over gemiste detectie bij andere leveranciers zijn niet onafhankelijk getoetst. Toch raakt het verhaal aan een reëel probleem. Voor banken en webwinkels vervaagt het onderscheid tussen een klant en software die namens die klant handelt. Klassieke fraudeherkenning gaat ervan uit dat een bot een aanvaller is; met agents is dat niet langer vanzelfsprekend. Voor Europa raakt dit aan de vraag of de AI-verordening en de regels voor betaaldiensten, met hun eisen aan sterke klantauthenticatie, rekening houden met software die sms-codes opvraagt en doorgeeft. Tegelijk laat de golf van hacks op koelsystemen elders in deze krant zien hoe kwetsbaar systemen worden zodra automatisering zonder toezicht toegang krijgt.</p>
+<h5>Conclusie</h5>
+<p>Web Bot Auth was een gentleman's agreement, en die blijken in de AI-race weinig waard. Dat Grok Bot zijn handtekening liet vallen, is het duidelijkste signaal: vrijwillige transparantie verliest het van commerciële prikkels. Detectiebedrijven als Fingerprint vullen dat gat, maar detectie op basis van afleiding blijft een wapenwedloop. Uiteindelijk zal identificatie van agents een harde eis moeten worden, vastgelegd door platforms of toezichthouders, en geen beleefdheid.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=qTA21D1QU3Y" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/qTA21D1QU3Y/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Hoe je in 2026 gratis en eenvoudig AI-agenten kunt bouwen met Grok</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://finance.yahoo.com/technology/ai/articles/fingerprint-expands-bot-detection-uncover-010500832.html" target="_blank" style="color:var(--accent)">finance.yahoo.com ↗</a></div>

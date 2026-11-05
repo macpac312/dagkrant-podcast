@@ -1,0 +1,16 @@
+{
+  "title": "Tekstwatermerk van Claude op oudere modellen eenvoudig te omzeilen",
+  "summary": "Anthropic rolt watermerken uit naar vier extra modellen voor de deadline van de AI Act, maar via de API kan één parameter ze uitschakelen.\n\nAnthropic voegt tekstwatermerken toe aan vier extra Claude-modellen, vooruitlopend op de deadline van de Europese AI Act in december. Maar op oudere modellen als Claude Opus 4.6 en Sonnet 4.6 kunnen API-gebruikers het watermerk uitschakelen door één samplingparameter te wijzigen, meldt The Decoder. Anthropic reageert met een nalevingswaarschuwing.",
+  "sources": [
+    "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-05",
+  "slug": "tekstwatermerk-van-claude-op-oudere-modellen-eenvoudig-te-om",
+  "tts_slug": "tekstwatermerk-van-claude-op-oudere-modellen-eenvoudig-te-om",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-05T05:42:09",
+  "size_kb": 12
+}

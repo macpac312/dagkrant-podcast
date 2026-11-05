@@ -1,0 +1,115 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Anthropic voorziet vanaf 16 november vier extra Claude-modellen van een tekstwatermerk.</li>
+<li>Op oudere modellen werkt het merk alleen bij standaardwaarden voor temperature, top_p en top_k.</li>
+<li>Eén aangepaste samplingparameter is genoeg om het watermerk te omzeilen.</li>
+<li>Voor de AI Act-deadline in december verschuift de nalevingslast deels naar de klant.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De uitrol in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="7">7</div><div class="ns-viz-stat-label">Oudere modellen die achteraf een watermerk krijgen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5">5</div><div class="ns-viz-stat-label">Waarvan alleen gemerkt bij standaard-sampling</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Parameters die het merk kunnen uitschakelen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="16" data-suffix=" nov">16 nov</div><div class="ns-viz-stat-label">Start tweede golf</div></div>
+</div></div>
+<h5>Een watermerk met een uitknop</h5>
+<p>Anthropic heeft API-klanten opnieuw gemaild over het achteraf toevoegen van tekstwatermerken aan oudere Claude-modellen. Vanaf 16 november krijgen Claude Opus 4.6, Opus 4.5, Sonnet 4.5 en Haiku 4.5 het merk; op Amazon Bedrock kan dat enkele dagen langer duren. Opus 4.6 zat eigenlijk in de eerste golf en had het watermerk op 3 november moeten krijgen; Anthropic bevestigt de vertraging, maar geeft geen reden. Mythos 5, Opus 4.7 en Sonnet 4.6, de rest van de eerste golf, ontbreken in de nieuwe mail en zijn vermoedelijk wel op 3 november omgezet. Nieuwere modellen zoals Opus 5.5 dragen het merk al. Het punt dat The Decoder blootlegt: bij alle vier modellen uit de tweede golf, en bij Opus 4.6 en Sonnet 4.6 uit de eerste, werkt het watermerk alleen als temperature, top_p en top_k op hun standaardwaarde staan.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Welke modellen, welk merk</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Al gemarkeerd</h6>
+    <ul><li>Nieuwere modellen, zoals Opus 5.5</li><li>Watermerk standaard aanwezig</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Golf 1 (3 nov)</h6>
+    <ul><li>Mythos 5, Opus 4.7: geen samplingbeperking gemeld</li><li>Sonnet 4.6: alleen bij standaard-sampling</li><li>Opus 4.6: uitgesteld naar 16 nov</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Golf 2 (16 nov)</h6>
+    <ul><li>Opus 4.6, Opus 4.5</li><li>Sonnet 4.5, Haiku 4.5</li><li>Alle vier: alleen bij standaard-sampling</li></ul></div>
+</div></div>
+<h5>Waarom sampling ertoe doet</h5>
+<p>Anthropic omschrijft het watermerk als een 'onwaarneembaar patroon in woordkeuze' dat betekenis, kwaliteit en leesbaarheid niet aantast, geen extra tekens of tokens toevoegt en 'geen informatie bevat over de gebruiker, diens organisatie of de gesprekken'. Technische details geeft het bedrijf niet, maar de gangbare methoden voor tekstwatermerken werken via het selectieproces van woorden: het model verschuift de kansverdeling subtiel in een patroon dat een detector later statistisch kan herkennen. Juist die stap hangt samen met de samplingparameters, die bepalen hoeveel willekeur het model gebruikt bij het kiezen van het volgende woord. Dat het watermerk bij oudere modellen alleen onder standaardinstellingen werkt, wijst erop dat de inbouw achteraf daar minder robuust is dan bij modellen die er vanaf het begin op zijn ontworpen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een statistisch tekstwatermerk werkt</div>
+<div class="ns-viz-mech-subtitle">Algemeen principe; Anthropic publiceert zijn eigen methode niet</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Kansen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Bijsturen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Detecteren</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Omzeilen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <text x="160" y="30" text-anchor="middle" font-size="12" fill="#44403c">"De markt reageerde ..."</text>
+      <rect x="50" y="80" width="40" height="80" fill="#a78bfa"/><text x="70" y="178" text-anchor="middle" font-size="10" fill="#44403c">kalm</text>
+      <rect x="110" y="100" width="40" height="60" fill="#a78bfa"/><text x="130" y="178" text-anchor="middle" font-size="10" fill="#44403c">nerveus</text>
+      <rect x="170" y="115" width="40" height="45" fill="#a78bfa"/><text x="190" y="178" text-anchor="middle" font-size="10" fill="#44403c">rustig</text>
+      <rect x="230" y="130" width="40" height="30" fill="#a78bfa"/><text x="250" y="178" text-anchor="middle" font-size="10" fill="#44403c">gelaten</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Kansen</h6>
+      <p class="korte">Bij elk woord berekent het model kansen voor alle mogelijke vervolgen.</p>
+      <p class="uitleg">Temperature, top_p en top_k bepalen hoe uit die verdeling wordt gekozen: hoe willekeurig, en uit hoeveel kandidaten. Vaak zijn meerdere woorden even goed.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="50" y="90" width="40" height="70" fill="#a78bfa"/><text x="70" y="178" text-anchor="middle" font-size="10" fill="#44403c">kalm</text>
+      <rect x="110" y="110" width="40" height="50" fill="#a78bfa"/><text x="130" y="178" text-anchor="middle" font-size="10" fill="#44403c">nerveus</text>
+      <rect x="170" y="85" width="40" height="75" fill="#7c3aed"/><text x="190" y="178" text-anchor="middle" font-size="10" fill="#44403c">rustig</text>
+      <rect x="230" y="135" width="40" height="25" fill="#a78bfa"/><text x="250" y="178" text-anchor="middle" font-size="10" fill="#44403c">gelaten</text>
+      <text x="190" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">+ klein duwtje</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Bijsturen</h6>
+      <p class="korte">Het watermerk duwt de keuze subtiel richting bepaalde woorden.</p>
+      <p class="uitleg">Een geheime sleutel bepaalt per positie welke woorden een kleine voorkeur krijgen. Per zin is dat onzichtbaar; de betekenis blijft gelijk en er komen geen extra tokens bij.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="40" width="160" height="120" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="55" y1="65" x2="185" y2="65" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="55" y1="85" x2="175" y2="85" stroke="#7c3aed" stroke-width="3"/>
+      <line x1="55" y1="105" x2="185" y2="105" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="55" y1="125" x2="165" y2="125" stroke="#7c3aed" stroke-width="3"/>
+      <circle cx="245" cy="95" r="26" fill="none" stroke="#7c3aed" stroke-width="4"/>
+      <line x1="263" y1="113" x2="290" y2="140" stroke="#7c3aed" stroke-width="5"/>
+      <text x="245" y="175" text-anchor="middle" font-size="11" fill="#44403c">detector met sleutel</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Detecteren</h6>
+      <p class="korte">Over een langere tekst wordt het patroon statistisch zichtbaar.</p>
+      <p class="uitleg">Wie de sleutel heeft, telt hoe vaak de 'voorkeurswoorden' voorkomen. Ligt dat ver boven toeval, dan is de tekst vrijwel zeker door het model geschreven.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="60" width="200" height="16" rx="8" fill="#e5e7eb"/>
+      <circle cx="200" cy="68" r="12" fill="#dc2626"/>
+      <text x="160" y="45" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">temperature ≠ standaard</text>
+      <rect x="100" y="110" width="120" height="50" rx="6" fill="#fff" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="160" y="140" text-anchor="middle" font-size="12" fill="#dc2626">geen watermerk</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Omzeilen</h6>
+      <p class="korte">Op vijf oudere modellen schakelt één aangepaste parameter het merk uit.</p>
+      <p class="uitleg">Bij Opus 4.6, Sonnet 4.6, Opus 4.5, Sonnet 4.5 en Haiku 4.5 werkt het watermerk alleen bij standaardwaarden voor temperature, top_p en top_k. Wie er één aanpast, levert ongemarkeerde tekst.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">If you rely on the watermark for your own compliance, keep these settings at their defaults.</p>
+  <p class="ns-viz-quote-attr">— Anthropic, e-mail aan API-klanten</p>
+</div>
+<h5>Naleving als gedeelde verantwoordelijkheid</h5>
+<p>De timing is geen toeval: de uitrol loopt vooruit op de deadline in december waarop de transparantieverplichtingen van de Europese AI Act ingaan, die van aanbieders vragen dat door AI gegenereerde inhoud machineleesbaar herkenbaar is. Anthropic lost dat op met een waarschuwing in plaats van een technische afdichting: wie voor de eigen naleving op het watermerk vertrouwt, moet de instellingen op standaard laten. Daarmee verschuift een deel van de verantwoordelijkheid naar de klant. Voor bedrijven die Claude in eigen producten inbouwen en vaak bewust aan de samplingknoppen draaien, betekent dat een afweging tussen gewenst modelgedrag en aantoonbare naleving. Tegelijk laat de zaak de grens van watermerken in het algemeen zien: ook een robuust merk kan sneuvelen door herschrijven of vertalen. Watermerken zijn een signaal, geen sluitend bewijs.</p>
+<h5>Conclusie</h5>
+<p>Een watermerk dat uitgaat zodra je aan een knop draait, is vooral een nalevingsinstrument voor wie zich wil laten controleren, niet voor wie dat wil vermijden. Dat is geen schandaal, maar wel een eerlijke maatstaf voor wat de AI Act op dit punt kan bereiken. Anthropic doet er goed aan de beperking ook publiek en per model te documenteren in plaats van haar in een klantmail te verstoppen. Toezichthouders zullen hoe dan ook moeten accepteren dat herkenbaarheid van AI-tekst een kwestie van waarschijnlijkheid blijft.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=K6DQnMP3yJM" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/K6DQnMP3yJM/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Tekstwatermerk van Claude op oudere modellen eenvoudig te omzeilen 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

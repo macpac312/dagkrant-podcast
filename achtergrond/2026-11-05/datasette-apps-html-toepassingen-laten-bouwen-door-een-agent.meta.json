@@ -1,0 +1,18 @@
+{
+  "title": "Datasette Apps: HTML-toepassingen laten bouwen door een agent",
+  "summary": "Simon Willison brengt nieuwe versies uit van datasette-apps, datasette-llm en llm 0.37.1.\n\nSimon Willison bracht datasette-apps 0.3a0 uit, waarmee gebruikers eigen HTML-toepassingen binnen Datasette hosten en bewerken. Die zijn met de hand te maken, maar makkelijker via Datasette Agent; de nieuwe versie verbetert die koppeling. Daarnaast verschenen bugfixreleases van datasette-llm en de command line-tool llm 0.37.1.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+    "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+    "https://simonwillison.net/2026/Nov/3/llm/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-05",
+  "slug": "datasette-apps-html-toepassingen-laten-bouwen-door-een-agent",
+  "tts_slug": "datasette-apps-html-toepassingen-laten-bouwen-door-een-agent",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-05T05:42:09",
+  "size_kb": 11
+}
