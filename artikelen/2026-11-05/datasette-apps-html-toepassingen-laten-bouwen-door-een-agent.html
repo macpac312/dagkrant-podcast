@@ -1,0 +1,9 @@
+<h1>Release: datasette-apps 0.3a0</h1>
+<p>Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.</p>
+<p>These can be created by hand, but it&#x27;s easier to create them using LLMs via <a href="https://agent.datasette.io/" target="_blank" rel="noopener">Datasette Agent</a>. This release improves that integration:</p>
+<blockquote>Apps can now be tagged in Datasette Agent chat messages by typing #, which autocompletes from the apps the user has permission to view. New app_add_stored_queries() and app_remove_stored_queries() tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first. app_create() now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created. The &quot;View app&quot; buttons shown by the agent tools, and the links on # app references, now open the app full screen in the Datasette Agent panel.</blockquote>
+<h2>Recent articles</h2>
+<p>This is a <strong>beat</strong> by Simon Willison, posted on 4th November 2026.</p>
+<h2>Monthly briefing</h2>
+<p>Sponsor me for <strong>$10/month</strong> and get a curated email digest of the month&#x27;s most important LLM developments.</p>
+<p class="bg-footer">Bron: <a href="https://simonwillison.net/2026/Nov/4/datasette-apps/" target="_blank" rel="noopener">simonwillison.net</a></p>
