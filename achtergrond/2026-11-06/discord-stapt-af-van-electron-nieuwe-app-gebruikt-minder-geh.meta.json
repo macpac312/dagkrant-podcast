@@ -1,0 +1,16 @@
+{
+  "title": "Discord stapt af van Electron, nieuwe app gebruikt minder geheugen",
+  "summary": "De chatdienst bouwt zijn desktopapp opnieuw zonder het populaire Electron-framework. Op Hacker News een van de best gelezen stukken van de dag.\n\nDiscord stapt af van Electron, het framework waarmee veel desktopapps als webapplicatie worden gebouwd, meldt The Verge via Hacker News. De nieuwe app gebruikt merkbaar minder RAM.\n\nHet stuk kreeg op Hacker News ruim 400 punten en honderden reacties.",
+  "sources": [
+    "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-06",
+  "slug": "discord-stapt-af-van-electron-nieuwe-app-gebruikt-minder-geh",
+  "tts_slug": "discord-stapt-af-van-electron-nieuwe-app-gebruikt-minder-geh",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-06T05:34:55",
+  "size_kb": 14
+}

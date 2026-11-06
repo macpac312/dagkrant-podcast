@@ -1,0 +1,73 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/acastro_STK062_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© theverge.com</div></div><ul class="bg-bullets">
+<li>Discord bouwt zijn desktopapp volledig in Rust en laat Electron los.</li>
+<li>Electron-apps draaien elk een eigen browser, wat veel geheugen kost.</li>
+<li>Testversie gebruikt 290 MB RAM, tegen vaak 1 GB of meer nu.</li>
+<li>Mogelijk keerpunt voor het web-als-desktopmodel van chat- en werkapps.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Geheugengebruik Discord op Windows</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Huidige app (paar servers)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">1 GB+</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Nieuwe Rust-client</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:29%">290 MB</div></div></div>
+</div></div>
+<h5>Het einde van een gemakzuchtig compromis</h5>
+<p>Discord neemt afscheid van Electron, het framework waarmee ontwikkelaars desktopapps bouwen met webtechniek. De chatdienst verhuist zijn hele client naar Rust, een moderne programmeertaal die draait om snelheid en geheugenveiligheid. Het nieuws, gebracht door The Verge, werd op Hacker News een van de best gelezen stukken van de dag, met ruim 400 punten en honderden reacties. Dat zegt iets: weinig onderwerpen zijn onder ontwikkelaars zo beladen als de vraag of Electron een zegen of een plaag is. Het framework, ooit door GitHub ontwikkeld voor de Atom-editor, maakte het mogelijk om met één codebasis in HTML, CSS en JavaScript een app voor Windows, macOS en Linux te leveren. Dat verklaart waarom Slack, Visual Studio Code, Microsoft Teams in zijn eerste versie en Discord er allemaal op bouwden. De prijs is bekend: elke Electron-app sleept een complete Chromium-browser mee.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Van Electron naar een Rust-kern</div>
+<div class="ns-viz-mech-subtitle">Waarom een webapp op de desktop zo zwaar is, en wat Discord verandert</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Electron-bundel</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Geheugendruk</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Rust-kern</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Gedeelde code</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="60" y="30" width="200" height="140" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Electron-app</text><rect x="80" y="62" width="160" height="30" rx="5" fill="#a78bfa" fill-opacity=".35"/><text x="160" y="82" text-anchor="middle" font-size="11" fill="#44403c">Chromium (browser)</text><rect x="80" y="98" width="160" height="28" rx="5" fill="#a78bfa" fill-opacity=".25"/><text x="160" y="117" text-anchor="middle" font-size="11" fill="#44403c">Node.js-runtime</text><rect x="80" y="132" width="160" height="26" rx="5" fill="#7c3aed" fill-opacity=".8"/><text x="160" y="150" text-anchor="middle" font-size="11" fill="#fff">Discord (webcode)</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Electron-bundel</h6><p class="korte">Elke Electron-app brengt een eigen browser en JavaScript-runtime mee.</p><p class="uitleg">Electron combineert Chromium voor de weergave met Node.js voor toegang tot het systeem. De app zelf is in feite een website. Handig voor ontwikkelaars: één codebasis voor alle besturingssystemen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="40" y="150" width="240" height="16" rx="4" fill="#e7e5e4"/><rect x="40" y="150" width="230" height="16" rx="4" fill="#dc2626" fill-opacity=".7"/><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">werkgeheugen pc</text><g fill="#a78bfa" stroke="#7c3aed"><rect x="50" y="60" width="60" height="70" rx="6"/><rect x="130" y="60" width="60" height="70" rx="6"/><rect x="210" y="60" width="60" height="70" rx="6"/></g><text x="80" y="100" text-anchor="middle" font-size="10" fill="#fff">Discord</text><text x="160" y="100" text-anchor="middle" font-size="10" fill="#fff">Slack</text><text x="240" y="100" text-anchor="middle" font-size="10" fill="#fff">Browser</text><text x="160" y="45" text-anchor="middle" font-size="11" fill="#7c3aed">elk een eigen Chromium</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Geheugendruk</h6><p class="korte">Met een paar servers open loopt het RAM-gebruik op tot 1 GB of meer.</p><p class="uitleg">Omdat elke Electron-app een volledige browser draait, stapelt het geheugengebruik op naast de gewone browser en andere webapps. Op laptops met 8 GB merkt de gebruiker dat direct, zeker tijdens gamen, Discords kernpubliek.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><circle cx="160" cy="100" r="50" fill="#7c3aed" fill-opacity=".85"/><text x="160" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Rust</text><text x="160" y="114" text-anchor="middle" font-size="11" fill="#fff">client-kern</text><g stroke="#a78bfa" stroke-width="3"><line x1="160" y1="50" x2="160" y2="25"/><line x1="210" y1="100" x2="240" y2="100"/><line x1="110" y1="100" x2="80" y2="100"/></g><text x="160" y="20" text-anchor="middle" font-size="10" fill="#44403c">infra (sinds 2018)</text><text x="285" y="104" text-anchor="middle" font-size="10" fill="#44403c">spraak</text><text x="45" y="104" text-anchor="middle" font-size="10" fill="#44403c">desktop-UI</text><circle class="ns-viz-mech-hotspot" cx="160" cy="150" r="7" data-tip="Testversie: 290 MB RAM op Windows"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Rust-kern</h6><p class="korte">Discord brengt de hele client naar Rust, waar infra en spraak al draaiden.</p><p class="uitleg">Discord gebruikt Rust sinds 2018 voor infrastructuur, spraaktechniek en delen van de huidige client. CTO Stanislav Vishnevskiy noemt de volledige client in Rust "de heilige graal". Een testversie draaide op Windows met 290 MB RAM.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="110" y="20" width="100" height="44" rx="8" fill="#7c3aed"/><text x="160" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Gedeelde Rust-code</text><line x1="140" y1="64" x2="80" y2="120" stroke="#a78bfa" stroke-width="3"/><line x1="180" y1="64" x2="240" y2="120" stroke="#a78bfa" stroke-width="3"/><rect x="30" y="120" width="100" height="50" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="80" y="150" text-anchor="middle" font-size="11" fill="#7c3aed">Desktop</text><rect x="190" y="120" width="100" height="50" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="240" y="142" text-anchor="middle" font-size="11" fill="#7c3aed">Mobiel</text><text x="240" y="158" text-anchor="middle" font-size="9" fill="#44403c">native UI</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Gedeelde code</h6><p class="korte">Desktop en mobiel delen voortaan de app-logica via Rust.</p><p class="uitleg">Ook React Native verdwijnt. Mobiele apps houden een native gebruikersinterface, maar de onderliggende logica wordt gedeeld met de desktop. Wanneer de overstap volledig is, is nog onduidelijk; Discord wil snel met gebruikers testen.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom Rust, en waarom nu</h5>
+<p>Discord is geen nieuwkomer met Rust. "We zijn sinds 2018 vroege gebruikers van Rust, en veel van onze infra, spraaktechniek en zelfs een deel van de huidige client is al Rust", schrijft technisch directeur Stanislav Vishnevskiy op X. Het bedrijf maakte eerder naam in ontwikkelaarskringen met de uitleg waarom het een drukbelaste interne dienst van Go naar Rust overzette: geen pauzes door garbage collection, voorspelbaarder prestaties. Die logica trekt het nu door naar de app die gebruikers zien. Volgens Vishnevskiy verdwijnen Electron én React Native; mobiele apps houden een native gebruikersinterface maar delen hun code met de desktop. De winst is meteen zichtbaar. Vishnevskiy toonde een Windows-client die 290 MB werkgeheugen gebruikte, terwijl de huidige app met een handvol servers al snel boven de 1 GB uitkomt. Dat is ruwweg een factor drie tot vier minder.</p>
+<blockquote>"De heilige graal was de hele client daarheen krijgen. Dat betekent dat Electron verdwijnt, en React Native ook." — Stanislav Vishnevskiy, CTO Discord</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Discord en Rust</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2015</div><div>Discord lanceert, desktopapp gebouwd op Electron</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2018</div><div>Eerste Rust in infrastructuur en spraaktechniek</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2020</div><div>Interne dienst van Go naar Rust overgezet</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">nu</div><div>Volledige client naar Rust, Electron en React Native eruit</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">binnenkort</div><div>Testfase met gebruikers, datum nog onbekend</div></div>
+</div></div>
+<h5>Gevolgen voor de rest van de softwarewereld</h5>
+<p>De vraag is of Discord een uitzondering is of een voorbode. Een volledige herbouw is duur, en weinig bedrijven hebben de Rust-expertise die Discord al jaren opbouwt. Voor kleinere teams blijft Electron, of lichtere alternatieven als Tauri, aantrekkelijk omdat het tijd bespaart. Toch verschuift de afweging. Nu AI-assistenten op de desktop zelf veel geheugen vragen en lokale modellen op laptops opkomen, wordt elke onnodige browserinstantie duurder. Tegelijk maakt AI het schrijven en omzetten van code goedkoper, wat een migratie als deze minder afschrikwekkend maakt. De keuze voor Rust heeft ook een veiligheidskant: geheugenveilige talen sluiten hele klassen kwetsbaarheden uit, een thema dat urgenter wordt nu modellen als OpenAI's GPT-6 Cyber in hoog tempo lekken vinden in grote codebases zoals Firefox. Voor gebruikers is het effect concreter: minder geheugengebruik betekent een snellere pc tijdens het gamen, een langere accuduur op laptops en minder reden om oudere hardware te vervangen. Dat laatste is geen bijzaak in een tijd waarin softwarebloat stilzwijgend de levensduur van apparaten bekort.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Electron</summary>
+    <div class="ns-viz-concept-body">Open-source framework dat Chromium en Node.js combineert, zodat webcode als desktopapp draait op Windows, macOS en Linux.</div></details>
+  <details class="ns-viz-concept"><summary>React Native</summary>
+    <div class="ns-viz-concept-body">Framework van Meta om met JavaScript mobiele apps te bouwen die native interface-elementen gebruiken.</div></details>
+  <details class="ns-viz-concept"><summary>Geheugenveiligheid</summary>
+    <div class="ns-viz-concept-body">Rust controleert bij het compileren of code geen ongeldige geheugenadressen aanspreekt, wat fouten en lekken voorkomt zonder garbage collector.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Discords overstap is een zeldzame erkenning dat gemak voor ontwikkelaars jarenlang is betaald door gebruikers, in de vorm van traag werkende laptops en volle werkgeheugens. Dat een grote speler nu de omgekeerde rekensom maakt, is belangrijker dan de 290 megabyte zelf. Het bewijs moet nog komen: een herbouwde client moet even stabiel en compleet zijn als de oude. Lukt dat, dan wordt het voor andere zware desktopapps lastiger om Electron te blijven verdedigen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=B4VoLx8sbN8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/B4VoLx8sbN8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Discord stapt af van Electron, nieuwe app gebruikt minder geheugen 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.theverge.com/news/1027379/discord-ditching-electron-web-app" target="_blank" style="color:var(--accent)">theverge.com ↗</a></div>

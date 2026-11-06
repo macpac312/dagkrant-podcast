@@ -1,0 +1,16 @@
+{
+  "title": "Baidu brengt ERNIE 5.5 Flash Base uit als open basismodel",
+  "summary": "Het MoE-model met 280 miljard parameters is getraind op 33,5 biljoen tokens en bewust zonder finetuning vrijgegeven.\n\nBaidu heeft ERNIE 5.5 Flash Base uitgebracht, een open-source mixture-of-experts-model met 280 miljard parameters, meldt The Decoder. Het is getraind op 33,5 biljoen tokens.\n\nBaidu levert het bewust zonder finetuning, zodat ontwikkelaars het zelf kunnen aanpassen.",
+  "sources": [
+    "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-06",
+  "slug": "baidu-brengt-ernie-55-flash-base-uit-als-open-basismodel",
+  "tts_slug": "baidu-brengt-ernie-55-flash-base-uit-als-open-basismodel",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-06T05:34:55",
+  "size_kb": 13
+}

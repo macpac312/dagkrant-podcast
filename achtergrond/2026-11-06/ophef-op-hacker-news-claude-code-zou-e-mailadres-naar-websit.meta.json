@@ -1,0 +1,16 @@
+{
+  "title": "Ophef op Hacker News: Claude Code zou e-mailadres naar websites sturen",
+  "summary": "Een GitHub-issue over Claude Code dat het e-mailadres van gebruikers naar websites stuurt, kreeg ruim 700 punten op Hacker News.\n\nEen melding op GitHub dat Claude Code het e-mailadres van gebruikers naar websites stuurt, werd een van de best gelezen stukken op Hacker News, met ruim 700 punten en 250 reacties.\n\nHet issue staat in de officiële repository van Claude Code.",
+  "sources": [
+    "https://github.com/anthropics/claude-code/issues/107757"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-06",
+  "slug": "ophef-op-hacker-news-claude-code-zou-e-mailadres-naar-websit",
+  "tts_slug": "ophef-op-hacker-news-claude-code-zou-e-mailadres-naar-websit",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-06T05:34:55",
+  "size_kb": 11
+}

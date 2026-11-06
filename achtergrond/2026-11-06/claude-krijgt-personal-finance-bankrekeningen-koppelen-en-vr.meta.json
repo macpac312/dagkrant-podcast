@@ -1,0 +1,20 @@
+{
+  "title": "Claude krijgt Personal Finance: bankrekeningen koppelen en vragen stellen over geld",
+  "summary": "Anthropic lanceert in de VS een functie waarmee gebruikers via Plaid hun bank- en kaartrekeningen koppelen. De toegang is alleen-lezen.\n\nAnthropic heeft Personal Finance in Claude gelanceerd, meldt TechCrunch. Gebruikers kunnen hun bank- en kaartrekeningen koppelen via Plaid en vervolgens vragen stellen over hun uitgaven, saldo's en budget.\n\nDe functie is alleen-lezen en wordt in de Verenigde Staten geleidelijk uitgerold naar Pro-, Max- en Ultra-abonnees. OpenAI bracht eerder een vergelijkbare f",
+  "sources": [
+    "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+    "https://news.lavx.hu/article/claude-s-new-personal-finance-tool-aims-to-help-analyze-your-spending-read-only-of-course",
+    "https://www.zdnet.com/innovation/personal-finance-claude-anthropic/",
+    "https://timesofindia.indiatimes.com/technology/tech-news/anthropic-launches-personal-finance-feature-in-claude-lets-users-connect-bank-accounts-for-money-insights/articleshow/135591426.cms",
+    "https://www.adgully.com/post/23544/anthropic-launches-personal-finance-in-claude"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-06",
+  "slug": "claude-krijgt-personal-finance-bankrekeningen-koppelen-en-vr",
+  "tts_slug": "claude-krijgt-personal-finance-bankrekeningen-koppelen-en-vr",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-06T05:34:55",
+  "size_kb": 14
+}

@@ -1,0 +1,16 @@
+{
+  "title": "NVIDIA brengt Cosmos 3 uit: open modellen voor interactieve wereldsimulatie",
+  "summary": "De nieuwe open modellen moeten interactieve simulaties van de fysieke wereld mogelijk maken, voor robotica en autonome systemen.\n\nNVIDIA heeft Cosmos 3 uitgebracht, een nieuwe generatie open modellen voor interactieve wereldsimulatie, meldt de Hugging Face-blog.\n\nDe modellen zijn bedoeld voor het trainen en testen van robots en autonome voertuigen in gesimuleerde omgevingen.",
+  "sources": [
+    "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-06",
+  "slug": "nvidia-brengt-cosmos-3-uit-open-modellen-voor-interactieve-w",
+  "tts_slug": "nvidia-brengt-cosmos-3-uit-open-modellen-voor-interactieve-w",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-06T05:34:55",
+  "size_kb": 13
+}
