@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI meet met BioBasicsBench hoe agents alledaags labwerk aankunnen",
+  "summary": "Een benchmark van 100 taken toetst of AI-agents ruwe experimentele data kunnen interpreteren.\n\nOpenAI introduceert BioBasicsBench, een benchmark van 100 taken die meet hoe goed AI-agents ruwe experimentele gegevens interpreteren en alledaags natlabwerk afhandelen.",
+  "sources": [
+    "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-07",
+  "slug": "openai-meet-met-biobasicsbench-hoe-agents-alledaags-labwerk-",
+  "tts_slug": "openai-meet-met-biobasicsbench-hoe-agents-alledaags-labwerk-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-07T05:38:26",
+  "size_kb": 6
+}

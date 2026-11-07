@@ -1,0 +1,20 @@
+{
+  "title": "Claude krijgt Personal Finance: bankrekeningen koppelen via Plaid",
+  "summary": "Amerikaanse gebruikers kunnen hun rekeningen aan Claude koppelen voor inzicht in uitgaven, waarschuwingen en planning.\n\nAnthropic lanceert Personal Finance in Claude, meldt onder meer The Information. Amerikaanse gebruikers kunnen via een samenwerking met fintechbedrijf Plaid hun bankrekeningen koppelen en vragen stellen over hun uitgaven, waarschuwingen krijgen bij verdachte afschrijvingen en plannen tot de volgende salarisbetaling.\n\nVolgens The Information is persoonlijke financiën een van de ",
+  "sources": [
+    "https://www.theinformation.com/briefings/anthropic-launches-personal-finance-feature-claude",
+    "https://9to5mac.com/2026/11/05/anthropic-upgrades-claude-with-new-personal-finance-feature/",
+    "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-launches-claude-personal-finance-ahead-of-nasdaq-listing/",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWl9sYkhNZ1RPSVVTX09ETDZaRzMzQlBlRWxUaGtjNmwwbEl4N01taFBDeTQxQzNxbmVISElLRVItOS1Bb3lYbEZDRXo3Q1ZwZk14bDJHZWN4RUNxMGtsTHRUaUpXMzNDVEhQdy0zRHZoZ3lQbVlvQ1VaaGtDRUFyX3hPSGpjcXdPUmhkbVhYaXN4aDdfTjhZbGpDZW9VbkFtUzFCX3ZmRnJmQXluNS1sZmZrbF9xV3pKWWMtb1Fn?oc=5",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTE41WjcwY0s0OHhCMUN0aGNBWHM1TnpxVFBGWEkwQ1hsMU9qWU5ueU1CLTJhZEFpZ05uUUZtalFDclRTNzQyMld5ckpzcXNGaEtQdWVmUnFneFphN3VSWlp5QUk0ZWw2Qk5tZ2lWLXBSMjFvWGNLY0h1UQ?oc=5"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-07",
+  "slug": "claude-krijgt-personal-finance-bankrekeningen-koppelen-via-p",
+  "tts_slug": "claude-krijgt-personal-finance-bankrekeningen-koppelen-via-p",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-07T05:38:26",
+  "size_kb": 11
+}

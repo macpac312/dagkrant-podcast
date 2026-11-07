@@ -1,0 +1,96 @@
+<ul class="bg-bullets">
+<li>Grok-gebruikers melden dat de assistent belt en afspraken boekt namens hen.</li>
+<li>Het gaat om agentisch gedrag: spraak en browserbesturing in één assistent.</li>
+<li>Gemak voor gebruikers, maar vragen over toestemming, privacy en aansprakelijkheid.</li>
+<li>Praktijkvoorbeelden ondersteunen Musks pleidooi voor nut boven benchmarkscores.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een AI-assistent een afspraak regelt</div>
+<div class="ns-viz-mech-subtitle">Van gebruikersverzoek naar bevestigde afspraak, zonder zelf te bellen</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Opdracht</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Plan</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Uitvoering</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Terugkoppeling</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="120" y="30" width="80" height="140" rx="12" fill="#a78bfa" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="132" y="55" width="56" height="22" rx="8" fill="#7c3aed" fill-opacity=".8"/>
+      <text x="160" y="70" text-anchor="middle" font-size="9" fill="#fff">Bel de tandarts</text>
+      <rect x="132" y="88" width="48" height="18" rx="8" fill="#a78bfa" fill-opacity=".5"/>
+      <text x="156" y="100" text-anchor="middle" font-size="8" fill="#44403c">Grok: oké</text>
+      <text x="160" y="190" text-anchor="middle" font-size="11" fill="#7c3aed">Gebruiker typt of spreekt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Opdracht</h6>
+      <p class="korte">De gebruiker vraagt de assistent een telefoontje of boeking af te handelen.</p>
+      <p class="uitleg">In het bericht van 4 november ging het om een vraag aan een tandartsverzekeraar. De gebruiker geeft het doel; de assistent moet zelf de nodige stappen bedenken.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="160" cy="90" r="48" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Taalmodel</text>
+      <text x="160" y="102" text-anchor="middle" font-size="10" fill="#44403c">plant stappen</text>
+      <text x="40" y="40" font-size="10" fill="#44403c">nummer?</text>
+      <text x="230" y="40" font-size="10" fill="#44403c">gegevens?</text>
+      <text x="230" y="160" font-size="10" fill="#44403c">tijdslot?</text>
+      <circle class="ns-viz-mech-hotspot" cx="160" cy="42" r="7" data-tip="Het model splitst het doel op in deeltaken"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Plan</h6><p class="korte">Het model splitst het doel op: wie bellen, wat vragen, welke gegevens meegeven.</p><p class="uitleg">Dit is het kenmerk van een ‘agent’: niet één antwoord, maar een reeks beslissingen. Fouten in deze stap werken door in alles wat volgt, daarom is controle door de gebruiker belangrijk.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="50" width="110" height="90" rx="10" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/>
+      <text x="85" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">📞 Telefoon</text>
+      <text x="85" y="108" text-anchor="middle" font-size="9" fill="#44403c">verzekeraar</text>
+      <rect x="180" y="50" width="110" height="90" rx="10" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="180" y="50" width="110" height="16" rx="6" fill="#7c3aed" fill-opacity=".4"/>
+      <text x="235" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">🌐 Browser</text>
+      <text x="235" y="114" text-anchor="middle" font-size="9" fill="#44403c">boekingsformulier</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Uitvoering</h6><p class="korte">De assistent voert het gesprek of vult online een boekingsformulier in.</p><p class="uitleg">Het bericht van 15 oktober beschreef een afspraak die via de browser werd geboekt voor de zoon van een gebruiker. Spraak en browserbesturing zijn twee verschillende vaardigheden die hier samenkomen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="110" y="45" width="100" height="110" rx="10" fill="#a78bfa" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M138 100 L155 118 L186 82" stroke="#7c3aed" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <text x="160" y="180" text-anchor="middle" font-size="11" fill="#7c3aed">Afspraak bevestigd</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Terugkoppeling</h6><p class="korte">De gebruiker krijgt het resultaat en hoeft zelf niet aan de lijn te hangen.</p><p class="uitleg">Hier zit de waarde voor de gebruiker, maar ook het risico: wat er onderweg namens hem is gezegd of ingevuld, ziet hij vaak alleen achteraf.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Van chatbot naar assistent die de telefoon pakt</h5>
+<p>Gebruikers van Grok beschrijven op X hoe de assistent namens hen telefoontjes en online boekingen afhandelt, meldt EconoTimes. In een bericht van 4 november ging het om een vraag aan een tandartsverzekeraar; een bericht van 15 oktober beschreef een afspraak die via de browser werd geboekt voor de zoon van een gebruiker. Het idee is niet nieuw. Google liet in 2018 met Duplex al zien hoe een computerstem een kapper kon bellen, wat destijds vooral ophef veroorzaakte omdat het gesprek menselijk klonk. Sindsdien hebben vrijwel alle grote AI-bedrijven ‘agents’ ontwikkeld die een browser kunnen bedienen. Nieuw is dat zulke handelingen nu door gewone gebruikers worden gedeeld als alledaagse ervaring, niet als demo op een ontwikkelaarsconferentie.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 De gemelde voorbeelden</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Gedeelde praktijkvoorbeelden</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="20" data-suffix=" dagen">20 dagen</div><div class="ns-viz-stat-label">Tussen 15 okt en 4 nov</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Kanalen: telefoon en browser</div></div>
+</div></div>
+<h5>Waarom dit meer is dan een handigheidje</h5>
+<p>Het belang zit in de combinatie van vaardigheden. Een telefoongesprek vraagt realtime spraakherkenning, een stem die verstaanbaar en geduldig blijft en het vermogen om af te wijken van het script als de medewerker iets onverwachts vraagt. Een browserboeking vraagt het lezen van webpagina’s, het invullen van formulieren en het kiezen van een tijdslot. Dat een assistent beide doet, maakt hem tot een uitvoerder in plaats van een vraagbaak. Het past bij de lijn die Elon Musk deze week uitzette: Grok 4.8 komt later, maar volgens hem telt vooral of het model mensen echt helpt, niet de benchmarkscores. Kanttekening: het gaat om anekdotes van gebruikers op X, het platform van Musk zelf. Hoe vaak zulke taken mislukken, is uit deze berichten niet op te maken.</p>
+<blockquote>Een assistent die belt en boekt, verschuift de vraag van ‘klopt het antwoord?’ naar ‘mag dit namens mij?’</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er voor de gebruiker</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Zelf bellen, in de wacht staan, formulieren invullen. De chatbot geeft hooguit het telefoonnummer of een conceptmail.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>De assistent voert gesprek en boeking uit. De gebruiker controleert achteraf, en draagt het risico van fouten of gedeelde gegevens.</p></div>
+</div></div>
+<h5>Gevolgen voor Europa en de dienstverlener aan de andere kant</h5>
+<p>Voor Nederlandse en Europese gebruikers roept dit concrete vragen op. Een verzekeraar of tandartspraktijk spreekt opeens met een machine: moet die zich als AI bekendmaken? De Europese AI-verordening vraagt transparantie wanneer mensen met een AI-systeem communiceren, en de AVG stelt eisen aan het delen van gezondheids- en verzekeringsgegevens, juist het soort informatie dat in een gesprek met een tandartsverzekeraar langskomt. Daarbij komt de politieke context: in de VS willen Democraten na hun verkiezingswinst onderzoek doen naar Grok, onder meer naar het gebruik ervan door president Trump. Dat onderzoek gaat niet over afspraken bij de tandarts, maar het vergroot de aandacht voor wat Grok met gebruikersgegevens doet. Voor bedrijven kan het omgekeerde ook gelden: wie veel telefoonverkeer heeft, zal straks vaker AI tegenover AI zien.</p>
+<h5>Conclusie</h5>
+<p>Dat gebruikers Grok de tandarts laten bellen, is een veelzeggend signaal: AI-assistenten worden beoordeeld op wat ze afmaken, niet op wat ze weten. Daarmee wint Musks pleidooi voor nut boven scores aan geloofwaardigheid. Maar elke taak die een assistent namens iemand uitvoert, maakt ook de vraag naar toestemming, controle en aansprakelijkheid groter. Zolang daar geen duidelijke regels en logboeken voor zijn, blijft dit een gemak met kleine lettertjes.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Y39Q6VFcwJA" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Y39Q6VFcwJA/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Musk: Grok Bot kan nu telefoongesprekken voeren namens gebruikers</div></div></a></div>

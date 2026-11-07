@@ -1,0 +1,16 @@
+{
+  "title": "Inkling 2 Small getraind in 68 uur op 12 biljoen tokens",
+  "summary": "Latent Space duikt in de trainingsrun en in METR's onderzoek naar AI-onderzoek bij Anthropic.\n\nDe nieuwsbrief Latent Space beschrijft de trainingsrun van Inkling 2 Small, een mixture-of-experts-model met 594 miljard parameters waarvan 17 miljard actief, getraind in 68 uur op 12 biljoen tokens. Volgens de titel verslaat het model Muse Spark.\n\nDe aflevering behandelt ook een studie van METR naar AI-ondersteund onderzoek bij Anthropic.",
+  "sources": [
+    "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-07",
+  "slug": "inkling-2-small-getraind-in-68-uur-op-12-biljoen-tokens",
+  "tts_slug": "inkling-2-small-getraind-in-68-uur-op-12-biljoen-tokens",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-07T05:38:26",
+  "size_kb": 14
+}
