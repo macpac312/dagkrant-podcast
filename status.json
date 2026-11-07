@@ -10,23 +10,8 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-11-07T05:27:11+00:00",
+  "updated_at": "2026-11-07T05:42:35+00:00",
   "history": [
-    {
-      "date": "2026-10-19",
-      "route": "claude",
-      "duration_s": 2019,
-      "finished_at": "2026-10-19T04:45:05+00:00",
-      "durations_s": {
-        "nieuws": 127,
-        "artikelen": 539,
-        "krant": 140,
-        "achtergronden_1": 238,
-        "podcast": 294,
-        "publiceren": 39,
-        "achtergronden_2": 642
-      }
-    },
     {
       "date": "2026-10-20",
       "route": "claude",
@@ -308,6 +293,21 @@
         "publiceren": 45,
         "achtergronden_2": 567
       }
+    },
+    {
+      "date": "2026-11-07",
+      "route": "claude",
+      "duration_s": 2064,
+      "finished_at": "2026-11-07T05:42:35+00:00",
+      "durations_s": {
+        "nieuws": 124,
+        "artikelen": 410,
+        "krant": 84,
+        "achtergronden_1": 192,
+        "podcast": 297,
+        "publiceren": 33,
+        "achtergronden_2": 924
+      }
     }
   ],
   "default_duration_s": 2700,
@@ -343,14 +343,30 @@
     {
       "step": "achtergronden_2",
       "at": "2026-11-07T05:27:11+00:00"
+    },
+    {
+      "step": "klaar",
+      "at": "2026-11-07T05:42:35+00:00"
     }
   ],
-  "status": "running",
+  "status": "done",
   "date": "2026-11-07",
-  "step": "achtergronden (ronde 2)",
-  "step_index": 6,
-  "progress": 86,
+  "step": "klaar",
+  "step_index": 7,
+  "progress": 100,
   "started_at": "2026-11-07T05:08:11+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-11-07T05:42:35+00:00",
+  "duration_s": 2064,
+  "error": null,
+  "durations_s": {
+    "nieuws": 124,
+    "artikelen": 410,
+    "krant": 84,
+    "achtergronden_1": 192,
+    "podcast": 297,
+    "publiceren": 33,
+    "achtergronden_2": 924
+  },
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-11-07.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
