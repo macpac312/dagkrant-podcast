@@ -1,0 +1,97 @@
+<ul class="bg-bullets">
+<li>Curl stopte in januari met zijn bug bounty; Intel schortte zijn programma in september op.</li>
+<li>Premies voor gevonden lekken bestaan al zo'n dertig jaar, maar het nut staat ter discussie.</li>
+<li>Waar meldingen goedkoop worden, stijgen de kosten van het beoordelen ervan.</li>
+<li>Het model verschuift: minder open loketten, meer gerichte en besloten programma's.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Dertig jaar premies voor hackers</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">1995</div><div>Netscape start een van de eerste bug bounties</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2010</div><div>Google lanceert zijn Vulnerability Reward Program</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2012</div><div>Platforms als HackerOne en Bugcrowd maken bounties schaalbaar</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">2016</div><div>Ook het Pentagon zet hackers in via 'Hack the Pentagon'</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">jan 2026</div><div>Curl stopt met zijn bug bounty</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">sep 2026</div><div>Intel schort zijn programma op</div></div>
+</div></div>
+<h5>Een beproefd instrument onder vuur</h5>
+<p>Al ongeveer drie decennia betalen softwaremakers externe hackers die fouten in hun code vinden. Netscape was er halverwege de jaren negentig vroeg bij; daarna volgden grote techbedrijven, en rond 2012 maakten platforms als HackerOne en Bugcrowd het model schaalbaar voor iedere organisatie. Zelfs het Amerikaanse ministerie van Defensie nodigde hackers uit. Het idee is eenvoudig: duizenden ogen van buiten zien meer dan een intern beveiligingsteam, en een premie lokt kwetsbaarheden naar de maker in plaats van naar de zwarte markt. Toch twijfelen steeds meer bedrijven, blijkt uit een VoxEU-podcast. Curl, de veelgebruikte opensourcetool voor dataverkeer, stopte in januari met zijn programma; Intel schortte het zijne in september op. Dat zijn geen marginale spelers: de ene is een fundament van internetsoftware, de andere een van 's werelds grootste chipmakers.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een bug bounty werkt, en waar het knelt</div>
+<div class="ns-viz-mech-subtitle">Van melding tot premie, met de beoordeling als bottleneck</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Zoeken</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Melden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Triage</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Premie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="40" width="200" height="120" rx="8" fill="#1c1917"/>
+      <text x="80" y="70" font-size="11" fill="#a78bfa" font-family="monospace">if (len &gt; buf)</text>
+      <text x="80" y="90" font-size="11" fill="#a78bfa" font-family="monospace">  memcpy(...)</text>
+      <text x="80" y="110" font-size="11" fill="#d4d0cb" font-family="monospace">return ok;</text>
+      <circle cx="210" cy="95" r="22" fill="none" stroke="#f59e0b" stroke-width="4"/><line x1="226" y1="111" x2="246" y2="131" stroke="#f59e0b" stroke-width="5"/>
+      <text x="160" y="185" text-anchor="middle" font-size="12" fill="#44403c">Externe onderzoeker spit code door</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Zoeken</h6><p class="korte">Externe hackers zoeken zelfstandig naar kwetsbaarheden in de software.</p><p class="uitleg">Het bedrijf betaalt alleen voor resultaat. Dat maakt het model aantrekkelijk: veel zoekers, weinig vaste kosten, en een legaal alternatief voor het verkopen van lekken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="60" width="60" height="44" rx="4" fill="#a78bfa"/><rect x="60" y="80" width="60" height="44" rx="4" fill="#a78bfa" fill-opacity=".8"/><rect x="80" y="100" width="60" height="44" rx="4" fill="#a78bfa" fill-opacity=".6"/>
+      <path d="M150 110 L210 110" stroke="#7c3aed" stroke-width="3"/><path d="M210 110 l-10 -6 v12 z" fill="#7c3aed"/>
+      <rect x="220" y="70" width="70" height="80" rx="6" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="255" y="115" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Inbox</text>
+      <text x="160" y="35" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Rapporten stromen binnen</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Melden</h6><p class="korte">De vinder stuurt een rapport met beschrijving en bewijs in.</p><p class="uitleg">Een melding kost de indiener weinig. Wie op premies jaagt, heeft een prikkel om veel en snel te melden, ook als het rapport zwak onderbouwd is.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <path d="M90 40 L230 40 L180 110 L180 160 L140 160 L140 110 Z" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <circle cx="120" cy="55" r="7" fill="#a78bfa"/><circle cx="150" cy="60" r="7" fill="#a78bfa"/><circle cx="180" cy="52" r="7" fill="#a78bfa"/><circle cx="205" cy="58" r="7" fill="#a78bfa"/>
+      <circle cx="160" cy="150" r="7" fill="#16a34a"/>
+      <circle class="ns-viz-mech-hotspot" cx="160" cy="105" r="7" data-tip="Elke melding moet door een mens worden beoordeeld"/>
+      <text x="160" y="190" text-anchor="middle" font-size="12" fill="#44403c">Veel in, weinig echt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Triage</h6><p class="korte">Ontwikkelaars moeten elke melding beoordelen en reproduceren.</p><p class="uitleg">Hier zit de verborgen kostenpost. Voor een klein opensourceproject als curl betekent elke onzinnige melding tijd van een handvol maintainers die ook de software moeten onderhouden.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="160" cy="95" r="45" fill="#7c3aed"/><text x="160" y="105" text-anchor="middle" font-size="30" font-weight="700" fill="#fff">$</text>
+      <text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">Premie en patch</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Premie</h6><p class="korte">Bij een echte kwetsbaarheid volgen een patch en een uitbetaling.</p><p class="uitleg">De rekensom klopt zolang de waarde van gevonden lekken opweegt tegen premies plus beoordelingstijd. Stijgt het aandeel waardeloze meldingen, dan kantelt die balans.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>De economie van de melding</h5>
+<p>Een bug bounty is in feite een markt met een asymmetrie. De indiener betaalt weinig om een melding te doen; de ontvanger betaalt in tijd voor elke beoordeling, ook als het rapport niets voorstelt. Zolang meldingen schaars en serieus zijn, werkt dat uitstekend. Maar het evenwicht is gevoelig voor de kosten van het produceren van rapporten. Curl-oprichter Daniel Stenberg klaagde de afgelopen jaren publiekelijk over een stroom van met AI gegenereerde meldingen die overtuigend klinken maar geen echte kwetsbaarheid beschrijven. Voor een project dat door een kleine kern van vrijwilligers en enkele betaalde ontwikkelaars wordt gedragen, is dat een reële belasting. De beschikbare bron vermeldt niet waarom Intel zijn programma opschortte; voor een chipmaker met eigen grote beveiligingsteams kan de afweging anders liggen dan voor een opensourceproject, en dat verschil verdient voorzichtigheid bij het trekken van één conclusie.</p>
+<blockquote>Als het maken van een melding vrijwel niets meer kost, wordt de beoordelaar de schaarse factor, en niet de hacker.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Voor en tegen</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>✅ Waarom bounties werken</h6>
+    <ul><li>Veel externe ogen tegen lage vaste kosten</li><li>Betalen alleen voor gevonden lekken</li><li>Legaal alternatief voor de zwarte markt</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>⚠ Waarom bedrijven stoppen</h6>
+    <ul><li>Triage van zwakke meldingen kost veel tijd</li><li>Goedkope, gegenereerde rapporten vervuilen de inbox</li><li>Kleine teams kunnen de stroom niet bijhouden</li></ul></div>
+</div></div>
+<h5>Wat dit betekent</h5>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kerncijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="30">30</div><div class="ns-viz-stat-label">Jaar bug bounties</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Grote afhakers in 2026</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="8">8</div><div class="ns-viz-stat-label">Maanden tussen curl en Intel</div></div>
+</div></div>
+<p>Het stoppen van curl en Intel betekent niet dat externe beveiligingsonderzoekers overbodig worden. Kwetsbaarheden blijven bestaan, en wie ze vindt, heeft nog altijd een kanaal nodig om ze te melden. De vraag is eerder welke vorm overleeft. Besloten programma's met geselecteerde onderzoekers, hogere drempels voor indieners of een vereiste van reproduceerbaar bewijs zijn voor de hand liggende alternatieven. Voor Europa is het debat relevant omdat de Cyber Resilience Act fabrikanten verplicht om kwetsbaarheden actief te beheren; als het open loket minder aantrekkelijk wordt, moeten bedrijven die verplichting op andere manieren invullen. Het past in een breder patroon in de economie van informatie, dat ook in andere VoxEU-studies in deze krant terugkomt: hoe je een signaal uitlokt, bepaalt de kwaliteit van wat je terugkrijgt.</p>
+<h5>Conclusie</h5>
+<p>De bug bounty is niet mislukt, maar zijn oorspronkelijke premisse, dat meer meldingen beter is, houdt geen stand in een wereld waarin meldingen bijna gratis te maken zijn. De programma's die overleven, zullen selectiever en duurder per indiener zijn. Dat is geen achteruitgang, maar een volwassenwording: niet de hoeveelheid ogen telt, wel de kwaliteit van wat ze zien.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=oFxcG7yerG4" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/oFxcG7yerG4/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">How to Become a Top Bug Bounty Hunter in 2026</div></div></a></div>

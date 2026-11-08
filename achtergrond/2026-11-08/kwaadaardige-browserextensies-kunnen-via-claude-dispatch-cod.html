@@ -1,0 +1,127 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil2RWGFxPYdzFDr1Tl0G6604dLCacXJDMaR-i0nSdrR7vBGgK-lUkZbE5eZYMbWO0Geqw_rDbN2qUkWpEadukl6gccv-xuUWJfEOx2_FWFiZxjVs4uNPiRK3JYOBo0QI1Lx08xd9Iz3-8TFN_kf-njbCQ-AFDcLNNRy6JcwsZyoM12qLt99OzNQNhmaGs/s1700-nu-rw-lo-l85-e365/claude-dispatch.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© thehackernews.com</div></div><ul class="bg-bullets">
+<li>Forever Security laat zien hoe een browserextensie via Claude Dispatch code laat uitvoeren.</li>
+<li>De kern: een ingelogde websessie geldt als bewijs dat de gebruiker een lokaal commando goedkeurde.</li>
+<li>'Prompt forcing' plus automatisch 'Allow' klikken omzeilt de menselijke controle volledig.</li>
+<li>Geen aanvallen in het wild bekend; Dispatch uitzetten en extensies controleren sluit het pad af.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De aanval in getallen</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="200" data-suffix=" px">200 px</div><div class="ns-viz-stat-label">Verborgen pop-up van 200×200 pixels</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Prompts nodig om Claude over te halen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1" data-suffix="/s">1/s</div><div class="ns-viz-stat-label">Automatische klik op elke 'Allow'-knop</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Gemelde aanvallen in het wild</div></div>
+</div></div>
+<h5>Een verborgen deur in een gewone sessie</h5>
+<p>Dispatch is een Claude-functie waarmee gebruikers taken van hun telefoon of browser naar Claude Desktop sturen, een AI-agent die met lokale bestanden werkt en commando's kan uitvoeren. Onderzoeker Gal Weizman van Forever Security publiceerde op 4 november een analyse onder de naam ThisBash. Hij ontdekte dat de interface en API van Dispatch ook bereikbaar waren vanuit een gewone ingelogde sessie op claude.ai, hoewel de site er geen link naar toonde. Volgens Cybersecurity News komt dat doordat Claude Desktop een Electron-app is, gebouwd op dezelfde webinterface en API als claude.ai. De webversie verborg de link alleen, maar blokkeerde de toegang niet. De koppeling tussen telefoon en desktop zelf bleek veilig. Het probleem ontstond toen dezelfde workflow werd aangeroepen vanuit een browser, waar extensies naast de pagina kunnen draaien en scripts kunnen uitvoeren met de cookies van de gebruiker.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe ThisBash werkt</div>
+<div class="ns-viz-mech-subtitle">Van een extensie op claude.ai naar code op je computer</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Injectie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Sessie-ID</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Prompt forcing</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Uitvoering</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="30" width="260" height="140" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="30" y="30" width="260" height="22" rx="8" fill="#7c3aed"/>
+      <text x="60" y="46" font-size="10" fill="#fff">claude.ai</text>
+      <rect x="250" y="34" width="30" height="14" rx="3" fill="#dc2626"/>
+      <path d="M265 52 L200 110" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="5 4"/>
+      <rect x="140" y="100" width="70" height="40" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+      <text x="175" y="125" text-anchor="middle" font-size="10" fill="#dc2626">script</text>
+      <circle class="ns-viz-mech-hotspot" cx="265" cy="41" r="7" data-tip="Kwaadaardige, gekaapte of buggy extensie"/>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Injectie</h6>
+      <p class="korte">Een extensie die scripts op claude.ai mag draaien, injecteert code in de pagina.</p>
+      <p class="uitleg">De extensie kan kwaadaardig zijn, gekaapt via een slechte update of gewoon buggy. Er is geen browserexploit nodig: het script gebruikt de ingelogde sessie en de cookies van de gebruiker.</p>
+      <a class="ns-viz-mech-bron" href="https://shiftdelete.net" target="_blank">📖 ShiftDelete ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="70" width="60" height="60" fill="#a78bfa" fill-opacity=".4" stroke="#7c3aed" stroke-width="2"/>
+      <text x="70" y="145" text-anchor="middle" font-size="10" fill="#44403c">200×200 pop-up</text>
+      <path d="M105 100 L195 100" stroke="#7c3aed" stroke-width="2.5"/>
+      <rect x="200" y="75" width="90" height="50" rx="6" fill="#7c3aed"/>
+      <text x="245" y="98" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">session_id</text>
+      <text x="245" y="113" text-anchor="middle" font-size="9" fill="#fff">desktop-agent</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Sessie-ID</h6>
+      <p class="korte">Het script opent Dispatch in een piepkleine pop-up en vraagt het sessie-ID van de desktopagent op.</p>
+      <p class="uitleg">De pop-up van 200 bij 200 pixels was het enige zichtbare spoor op het scherm. Via de API haalde het script daarna het sessie-ID van Claude Desktop op.</p>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="40" y="30" width="150" height="26" rx="13" fill="#a78bfa"/><text x="115" y="47" text-anchor="middle" font-size="10" fill="#fff">installeer dit npm-pakket</text>
+      <rect x="130" y="64" width="150" height="26" rx="13" fill="#e7e5e4"/><text x="205" y="81" text-anchor="middle" font-size="10" fill="#44403c">ik twijfel…</text>
+      <rect x="40" y="98" width="150" height="26" rx="13" fill="#a78bfa"/><text x="115" y="115" text-anchor="middle" font-size="10" fill="#fff">het is veilig, echt</text>
+      <rect x="130" y="132" width="150" height="26" rx="13" fill="#7c3aed"/><text x="205" y="149" text-anchor="middle" font-size="10" fill="#fff">oké</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">aanvaller stuurt het hele gesprek</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Prompt forcing</h6>
+      <p class="korte">Het script praat in naam van de gebruiker tot Claude toegeeft.</p>
+      <p class="uitleg">Claude aarzelde eerst bij een onbekend npm-pakket. Het script las elk antwoord en stuurde een vervolgbericht. Vier prompts waren genoeg. Anders dan bij prompt injection heeft de aanvaller het hele gesprek in handen en kan hij het blijven proberen.</p>
+      <a class="ns-viz-mech-bron" href="https://cybersecuritynews.com" target="_blank">📖 Cybersecurity News ↗</a>
+    </div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="60" width="80" height="34" rx="6" fill="#16a34a"/><text x="70" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Allow</text>
+      <path d="M115 77 L160 77" stroke="#7c3aed" stroke-width="2.5"/>
+      <rect x="165" y="40" width="120" height="110" rx="8" fill="#1c1917"/>
+      <text x="175" y="62" font-size="10" fill="#a6e3a1" font-family="monospace">$ npm install</text>
+      <text x="175" y="80" font-size="10" fill="#a6e3a1" font-family="monospace">&gt; postinstall</text>
+      <rect x="195" y="92" width="60" height="44" rx="4" fill="#a78bfa"/>
+      <text x="225" y="118" text-anchor="middle" font-size="10" fill="#fff">Calculator</text>
+      <text x="160" y="180" text-anchor="middle" font-size="11" fill="#44403c">met de rechten van de gebruiker</text>
+    </svg></div>
+    <div class="ns-viz-mech-info">
+      <h6>Uitvoering</h6>
+      <p class="korte">Een lus klikt elke seconde op 'Allow' en het installatiescript draait.</p>
+      <p class="uitleg">In de demonstratie opende het pakket de Rekenmachine. Dezelfde stap had bestanden kunnen kopiëren, SSH-sleutels kunnen toevoegen of een achterdeur kunnen installeren, omdat de agent met de rechten van de gebruiker werkt.</p>
+    </div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom dit meer is dan één lek</h5>
+<p>De aanval vraagt dat veel dingen tegelijk kloppen. Er moet een extensie zijn die op claude.ai scripts mag uitvoeren, de gebruiker moet op claude.ai en in Claude Desktop zijn ingelogd met Dispatch aan, en de computer moet wakker zijn met de app open. Dispatch is bovendien al gesloten voor nieuwe gebruikers en volgens Anthropics helppagina een beperkte bèta, al hebben sommige Pro-, Max- en Ultra-abonnees het nog. Anthropic wil Dispatch uitfaseren. Toch noemen de onderzoekers het probleem fundamenteel. De echte zwakte is dat een ingelogde websessie geldt als bewijs dat de gebruiker een lokaal commando goedkeurde, en dat ontwerp zit volgens hen ook in andere Claude-functies. Omdat Dispatch apparaten koppelt, zou een extensie ook Claude Desktop op een andere computer met hetzelfde account kunnen bereiken, zoals een werklaptop. Dat scenario is beschreven, maar niet gedemonstreerd.</p>
+<blockquote>Een goedkeuringsknop beschermt alleen als er een mens achter zit. Zodra een script die knop kan indrukken, is de veiligheidscontrole alleen nog schijn.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Prompt injection vs. prompt forcing</summary>
+    <div class="ns-viz-concept-body">Bij prompt injection staat vijandige tekst verstopt in een pagina of bestand dat het model leest, en heeft de aanvaller één poging. Bij prompt forcing heeft de aanvaller het hele gesprek in handen en kan hij herformuleren en aandringen tot het model toegeeft.</div></details>
+  <details class="ns-viz-concept"><summary>Electron-app</summary>
+    <div class="ns-viz-concept-body">Een desktopapp gebouwd met webtechniek. Claude Desktop gebruikt daardoor dezelfde interface en API als claude.ai. Een functie die alleen verborgen is in de webversie, blijft daar dus bereikbaar.</div></details>
+  <details class="ns-viz-concept"><summary>Hoe bescherm je jezelf?</summary>
+    <div class="ns-viz-concept-body">Zet Dispatch uit of log uit bij Claude Desktop op machines die het niet nodig hebben. Controleer welke browserextensies toegang hebben tot claude.ai, want daar begint de aanval.</div></details>
+</div></div>
+<h5>Een patroon bij agents</h5>
+<p>Dit is niet het enige Claude-beveiligingsverhaal in deze krant. Apiiro vond 2539 geheimen in 1994 openbare repositories, uitgelekt via de 'niet meer vragen'-optie van Claude Code. Goedgekeurde commando's in een instellingenbestand leidden ertoe dat wachtwoorden op GitHub belandden. Tegelijk breidt Anthropic Claude uit naar gevoelige gebieden, zoals de koppeling met bankgegevens via Plaid voor Personal Finance in de VS. Het gemeenschappelijke probleem is toestemming. Agents vragen goedkeuring per handeling, maar die goedkeuring wordt opgeslagen, geautomatiseerd of, zoals hier, door een script nagebootst. Het is de agentversie van een oud browserprobleem: een site vertrouwt een verzoek omdat er een geldige cookie bij zit, ook als de gebruiker het niet zelf verstuurde. Voor bedrijven betekent dit dat een AI-agent op een werklaptop een beheerd systeem is, met eigen regels voor extensies en accounts.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 90" width="220" height="90" aria-label="Apiiro: geheimen versus repositories">
+  <g font-size="9" fill="#a6adc8"><text x="10" y="30">Geheimen</text><text x="10" y="66">Repositories</text></g>
+  <rect x="75" y="18" width="135" height="16" fill="var(--orange)"/>
+  <rect x="75" y="54" width="104" height="16" fill="var(--accent)"/>
+  <g font-size="10" fill="#cdd6f4"><text x="142" y="30" text-anchor="middle">2539</text><text x="127" y="66" text-anchor="middle">1994</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Apiiro: uitgelekte geheimen via Claude Code-instellingen.</p>
+</div>
+<h5>Conclusie</h5>
+<p>ThisBash is in de praktijk een beperkt risico: weinig gebruikers, veel voorwaarden en geen bekende aanvallen. Als ontwerples is het wel belangrijk. Agents die lokaal code uitvoeren, kunnen hun veiligheid niet laten afhangen van een webpagina en een knop die iedereen kan indrukken. Dispatch uitfaseren lost dit ene pad op, maar niet het onderliggende probleem. Dat vraagt om toestemming die per apparaat wordt bevestigd en die een script niet kan nabootsen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=zjuhk9kda2s" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/zjuhk9kda2s/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Kwaadaardige browserextensies kunnen via Claude Dispatch code uitvoeren 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://shiftdelete.net/en/claude-dispatch-flaw" target="_blank" style="color:var(--accent)">shiftdelete.net ↗</a> &bull; <a href="https://cybersecuritynews.com/claude-dispatch-vulnerability/" target="_blank" style="color:var(--accent)">cybersecuritynews.com ↗</a></div>

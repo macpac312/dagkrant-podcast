@@ -1,0 +1,126 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.ecb.europa.eu/press/shared/img/socialmedia/social-default.jpg?0ef1632c35edede913681bb76af694a4" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© ecb.europa.eu</div></div><ul class="bg-bullets">
+<li>ECB-loontracker: cao-lonen stijgen 2,3% in 2026, 2,8% in eerste helft 2027.</li>
+<li>Zonder eenmalige uitkeringen gemiddeld 2,8% in 2027, tegen 2,6% over 2026.</li>
+<li>De dekking voor 2027 is nog laag: 31,8% en 23,3% van de werknemers.</li>
+<li>Geen nieuwe loongolf, maar ook geen verdere afkoeling richting 2%.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 ECB-loontracker: drie varianten</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-673e9147"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-673e9147'),{
+    type:'line',
+    data:{
+      labels:['2026 (jaar)','H2 2026','H1 2027','Q3 2027'],
+      datasets:[
+        {label:'Headline (eenmalig uitgesmeerd)',data:[2.3,2.7,2.8,2.4],borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.08)',tension:.35,fill:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#7c3aed'},
+        {label:'Zonder eenmalige uitkeringen',data:[2.6,null,2.9,2.5],borderColor:'#f59e0b',tension:.35,spanGaps:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#f59e0b'},
+        {label:'Eenmalig niet uitgesmeerd',data:[2.7,null,2.7,2.4],borderColor:'#16a34a',borderDash:[5,4],tension:.35,spanGaps:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:'#16a34a'}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c',boxWidth:12}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y+'%';}}}
+      },
+      scales:{
+        y:{min:2,max:3.2,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return v+'%';}}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Wat de tracker meet</h5>
+<p>De ECB publiceerde een nieuwe stand van haar loontracker, een indicator die de lopende collectieve arbeidsovereenkomsten in de eurozone bundelt. De headline-variant, waarin eenmalige uitkeringen over twaalf maanden worden uitgesmeerd, komt uit op 2,3% voor heel 2026. Voor de tweede helft van 2026 staat hij op 2,7%, voor de eerste helft van 2027 op 2,8%, waarna hij terugvalt naar 2,4% in het derde kwartaal van 2027. Het lage cijfer over 2026 is deels een rekeneffect: eenmalige betalingen die in de tweede helft van 2024 werden uitgekeerd en daarna niet terugkwamen, drukken de vergelijking. Volgens de ECB is dat effect in de tweede helft van 2026 volledig uitgewerkt. Ten opzichte van de publicatie van september zijn de cijfers voor eind 2026 en begin 2027 met ongeveer 0,1 procentpunt opwaarts bijgesteld.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 110" width="220" height="110" aria-label="Dekking loontracker per periode">
+  <g font-size="9" fill="#a6adc8">
+    <text x="12" y="104">2026</text><text x="62" y="104">H2 '26</text><text x="116" y="104">H1 '27</text><text x="168" y="104">Q3 '27</text>
+  </g>
+  <rect x="10" y="38" width="40" height="54" fill="#7c3aed"/>
+  <rect x="62" y="39" width="40" height="53" fill="#7c3aed"/>
+  <rect x="114" y="55" width="40" height="37" fill="#fab387"/>
+  <rect x="166" y="65" width="40" height="27" fill="#fab387"/>
+  <g font-size="10" fill="#cdd6f4" text-anchor="middle">
+    <text x="30" y="33">46,2%</text><text x="82" y="34">45,6%</text><text x="134" y="50">31,8%</text><text x="186" y="60">23,3%</text>
+  </g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Aandeel werknemers gedekt door de tracker (ECB).</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe de ECB-loontracker werkt</div>
+<div class="ns-viz-mech-subtitle">Van losse cao's naar één vooruitkijkende loonindicator</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Cao's</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Eenmalig</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Dekking</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Signaal</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="40" width="70" height="90" rx="4" fill="#fff" stroke="#7c3aed" stroke-width="2"/><line x1="42" y1="60" x2="88" y2="60" stroke="#a78bfa" stroke-width="3"/><line x1="42" y1="75" x2="88" y2="75" stroke="#a78bfa" stroke-width="3"/><line x1="42" y1="90" x2="75" y2="90" stroke="#a78bfa" stroke-width="3"/>
+      <rect x="125" y="50" width="70" height="90" rx="4" fill="#fff" stroke="#7c3aed" stroke-width="2"/><line x1="137" y1="70" x2="183" y2="70" stroke="#a78bfa" stroke-width="3"/><line x1="137" y1="85" x2="183" y2="85" stroke="#a78bfa" stroke-width="3"/>
+      <rect x="220" y="40" width="70" height="90" rx="4" fill="#fff" stroke="#7c3aed" stroke-width="2"/><line x1="232" y1="60" x2="278" y2="60" stroke="#a78bfa" stroke-width="3"/><line x1="232" y1="75" x2="278" y2="75" stroke="#a78bfa" stroke-width="3"/>
+      <text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">lopende cao's in de eurozone</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Cao's</h6><p class="korte">De tracker verzamelt de loonafspraken uit actieve cao's in deelnemende landen.</p><p class="uitleg">Omdat cao's vooruit vastleggen wat werknemers de komende maanden krijgen, kijkt de tracker verder vooruit dan officiële loonstatistieken. De horizon loopt nu tot eind september 2027.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="40" width="20" height="110" fill="#7c3aed"/>
+      <text x="40" y="170" text-anchor="middle" font-size="10" fill="#44403c">piek</text>
+      <line x1="70" y1="95" x2="110" y2="95" stroke="#7c3aed" stroke-width="2.5"/><polygon points="110,89 120,95 110,101" fill="#7c3aed"/>
+      <g fill="#a78bfa"><rect x="135" y="122" width="12" height="28"/><rect x="149" y="122" width="12" height="28"/><rect x="163" y="122" width="12" height="28"/><rect x="177" y="122" width="12" height="28"/><rect x="191" y="122" width="12" height="28"/><rect x="205" y="122" width="12" height="28"/><rect x="219" y="122" width="12" height="28"/><rect x="233" y="122" width="12" height="28"/><rect x="247" y="122" width="12" height="28"/><rect x="261" y="122" width="12" height="28"/><rect x="275" y="122" width="12" height="28"/><rect x="289" y="122" width="12" height="28"/></g>
+      <text x="218" y="170" text-anchor="middle" font-size="10" fill="#44403c">uitgesmeerd over 12 maanden</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Eenmalig</h6><p class="korte">Eenmalige uitkeringen worden in de headline-variant over twaalf maanden verdeeld.</p><p class="uitleg">Daardoor laat de headline de dynamiek per kwartaal of maand beter zien. De variant zónder uitsmeren beschrijft volgens de ECB beter de jaarontwikkeling; de variant zonder eenmalige betalingen toont de structurele loongroei.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#7c3aed"><circle cx="50" cy="60" r="9"/><circle cx="80" cy="60" r="9"/><circle cx="110" cy="60" r="9"/><circle cx="140" cy="60" r="9"/><circle cx="170" cy="60" r="9"/></g>
+      <g fill="#e5e7eb"><circle cx="200" cy="60" r="9"/><circle cx="230" cy="60" r="9"/><circle cx="260" cy="60" r="9"/></g>
+      <g fill="#7c3aed"><circle cx="50" cy="130" r="9"/><circle cx="80" cy="130" r="9"/></g>
+      <g fill="#e5e7eb"><circle cx="110" cy="130" r="9"/><circle cx="140" cy="130" r="9"/><circle cx="170" cy="130" r="9"/><circle cx="200" cy="130" r="9"/><circle cx="230" cy="130" r="9"/><circle cx="260" cy="130" r="9"/></g>
+      <text x="160" y="95" text-anchor="middle" font-size="11" fill="#44403c">2026: 46% gedekt</text>
+      <text x="160" y="165" text-anchor="middle" font-size="11" fill="#44403c">Q3 2027: 23% gedekt</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Dekking</h6><p class="korte">Hoe verder vooruit, hoe minder cao's al zijn afgesloten.</p><p class="uitleg">Voor 2026 dekt de tracker 46,2% van de werknemers, voor het derde kwartaal van 2027 nog maar 23,3%. Nieuwe cao's vullen dat aan; de cijfers voor 2027 kunnen dus nog verschuiven.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="110" y="40" width="100" height="80" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">ECB</text>
+      <text x="160" y="95" text-anchor="middle" font-size="10" fill="#44403c">Raad van Bestuur</text>
+      <line x1="160" y1="122" x2="160" y2="150" stroke="#7c3aed" stroke-width="2.5"/>
+      <rect x="95" y="152" width="130" height="30" rx="6" fill="#a78bfa" fill-opacity=".25" stroke="#a78bfa"/>
+      <text x="160" y="172" text-anchor="middle" font-size="11" fill="#44403c">inflatie- en renteafweging</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Signaal</h6><p class="korte">De loongroei is een sleutelinput voor de inflatieverwachting van de ECB.</p><p class="uitleg">Lonen bepalen voor een groot deel de prijzen van diensten. Blijft de loongroei rond 2,5 à 3%, dan is dat voor de centrale bank een teken dat de inflatie in diensten niet vanzelf verder daalt.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Structureel iets hoger, niet spectaculair</h5>
+<p>De interessantste variant is die zonder eenmalige uitkeringen, omdat hij de blijvende loonsverhoging laat zien. Die meet 2,6% gemiddeld over 2026, 2,9% in de eerste helft van 2027 en 2,5% in het derde kwartaal. Over de eerste drie kwartalen van 2027 komt dat uit op gemiddeld 2,8%: een fractie hoger dan in 2026. De ECB leest daarin ook dat er in recent gesloten cao's weinig ruimte is gemaakt voor eenmalige betalingen, wat erop wijst dat werkgevers en vakbonden weer kiezen voor structurele verhogingen. De ongeschoonde variant, die volgens de bank het best de jaarbeweging weergeeft, staat op 2,7% voor 2026 en de eerste helft van 2027 en daalt naar 2,4% in het derde kwartaal. De drie varianten vertellen samen één verhaal: een loongroei die stabiliseert rond 2,5 à 3%, zonder duidelijke trend omlaag.</p>
+<blockquote>Zonder eenmalige uitkeringen komt de tracker in de eerste drie kwartalen van 2027 uit op gemiddeld 2,8%: iets hogere structurele loongroei dan over heel 2026.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Drie varianten verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Headline-tracker</summary>
+    <div class="ns-viz-concept-body">Eenmalige uitkeringen uitgesmeerd over 12 maanden. Het best geschikt om de beweging per kwartaal of maand te volgen. 2026: 2,3%.</div></details>
+  <details class="ns-viz-concept"><summary>Ongeschoond (eenmalig niet uitgesmeerd)</summary>
+    <div class="ns-viz-concept-body">Eenmalige betalingen tellen mee op het moment van uitkeren. Volgens de ECB het best geschikt voor jaarvergelijkingen. 2026: 2,7%.</div></details>
+  <details class="ns-viz-concept"><summary>Zonder eenmalige uitkeringen</summary>
+    <div class="ns-viz-concept-body">Alleen blijvende loonsverhogingen. Toont de onderliggende, structurele loongroei. 2026: 2,6%; eerste drie kwartalen 2027: gemiddeld 2,8%.</div></details>
+</div></div>
+<h5>Wat het betekent voor rente en koopkracht</h5>
+<p>Voor de ECB is dit een bericht van evenwicht. Een loongroei van rond de 2,5 à 3% is op zichzelf verenigbaar met een inflatiedoel van 2%, mits de productiviteit wat meegroeit. Maar het is ook geen cijfer dat ruimte geeft voor verdere ontspanning: de afkoeling van de loongroei lijkt tot staan gekomen. Wie op een volgende renteverlaging hoopt, vindt hier weinig steun; wie vreest voor een nieuwe loon-prijsspiraal evenmin. Twee kanttekeningen blijven. De dekking voor 2027 is nog dun, met 31,8% en 23,3% van de werknemers, dus de cijfers zullen veranderen naarmate meer cao's worden getekend. En de cijfers betreffen de eurozone als geheel; landelijke verschillen blijven buiten beeld. In dezelfde Dagkrant staat ECB-directielid Cipollone stil bij de digitale euro, en Lagarde bij klimaatrisico: het mandaat verbreedt zich, maar lonen en prijzen blijven de kern.</p>
+<h5>Conclusie</h5>
+<p>De loontracker bevestigt dat de eurozone een nieuw normaal heeft bereikt: lonen die iets sneller stijgen dan de inflatiedoelstelling, structureel en zonder grote eenmalige pieken. Dat is goed nieuws voor de koopkracht en neutraal tot licht ongemakkelijk voor de ECB. De opwaartse bijstelling van 0,1 procentpunt is klein, maar de richting telt: de bank heeft geen reden om haast te maken met verdere versoepeling.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=NEym88WEfas" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/NEym88WEfas/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Lagarde Leaves ECB in Feb 2027; AI Is 25% of Firm Credit Gro #Shorts</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html" target="_blank" style="color:var(--accent)">ecb.europa.eu ↗</a></div>

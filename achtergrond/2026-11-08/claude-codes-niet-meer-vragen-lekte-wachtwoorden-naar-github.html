@@ -1,0 +1,76 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZH3vYLZb9lP7mDLqy2h-upzdComeWIfjDX5siFUO3FM2HlUs03OTwirA1R2uzOZq_clptIVBsoaJNXIuf8LlTbXHFvzBJLRl1l3mqGVesHjgdmD86S_c-k2JY_t56xZqI0bnN6jXRDr92KlMw6X5BHzm5hqogpWflsERi9zrsMHSS_abAcvZMcUGovd8/s1700-nu-rw-lo-l85-e365/claude-code.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© thehackernews.com</div></div><ul class="bg-bullets">
+<li>Apiiro vond 2539 geheimen in 1994 openbare GitHub-repositories, via Claude Code-instellingen.</li>
+<li>'Niet meer vragen' bewaart goedgekeurde commando's letterlijk, inclusief wachtwoorden en API-sleutels.</li>
+<li>Het lek ontstaat pas als ontwikkelaars dat instellingenbestand meecommitten en pushen.</li>
+<li>Geen bug maar gedrag: een oud patroon dat met AI-agents opnieuw opduikt.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Wat Apiiro vond</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2539">2539</div><div class="ns-viz-stat-label">Gelekte geheimen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1994">1994</div><div class="ns-viz-stat-label">Openbare repositories</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1.3">1.3</div><div class="ns-viz-stat-label">Geheimen per repo (gemiddeld)</div></div>
+</div></div>
+<h5>Een gemaksknop met een geheugen</h5>
+<p>Claude Code, de programmeeragent van Anthropic, vraagt toestemming voordat het een commando uitvoert. Wie dat telkens moet bevestigen, kiest al snel voor 'Don't ask again'. Het commando komt dan op een lijst van toegestane acties in een instellingenbestand in de projectmap, zodat de agent het voortaan zonder vragen mag draaien. Het probleem: dat gebeurt letterlijk. Stond er in het commando een wachtwoord, een token of een API-sleutel, dan staat die nu ook in het bestand. Beveiligingsbedrijf Apiiro zocht openbare GitHub-repositories af en vond zo 2539 geheimen in 1994 repositories, meldt The Hacker News. Het bericht werd op Hacker News druk besproken. Dat zegt iets over de schaal: dit is geen randgeval van een paar onvoorzichtige gebruikers, maar een patroon dat ontstaat zodra een gemaksfunctie en een gewone werkwijze elkaar raken.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe een sleutel op GitHub belandt</div>
+<div class="ns-viz-mech-subtitle">Van één klik in de terminal tot een openbaar geheim</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Goedkeuren</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Opslaan</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Pushen</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Gevonden</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="30" width="260" height="140" rx="8" fill="#1c1917"/><circle cx="48" cy="44" r="4" fill="#dc2626"/><circle cx="62" cy="44" r="4" fill="#f59e0b"/><circle cx="76" cy="44" r="4" fill="#16a34a"/><text x="45" y="80" font-size="11" fill="#d6d3d1" font-family="monospace">$ curl -H "Bearer sk-…"</text><text x="45" y="105" font-size="11" fill="#a78bfa" font-family="monospace">Toestaan?</text><rect x="45" y="118" width="150" height="24" rx="4" fill="#7c3aed"/><text x="120" y="134" text-anchor="middle" font-size="11" fill="#fff">Don't ask again</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Goedkeuren</h6><p class="korte">Een ontwikkelaar staat een commando met een geheim erin blijvend toe.</p><p class="uitleg">Bijvoorbeeld een API-aanroep met een token in de header. Om niet steeds te hoeven bevestigen, kiest de gebruiker 'niet meer vragen'.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><path d="M90 30 L200 30 L230 60 L230 175 L90 175 Z" fill="#fff" stroke="#7c3aed" stroke-width="2"/><path d="M200 30 L200 60 L230 60" fill="#a78bfa" opacity=".5"/><text x="105" y="80" font-size="10" fill="#44403c" font-family="monospace">"allow": [</text><text x="112" y="100" font-size="10" fill="#dc2626" font-family="monospace">"curl … sk-…"</text><text x="105" y="120" font-size="10" fill="#44403c" font-family="monospace">]</text><circle class="ns-viz-mech-hotspot" cx="200" cy="96" r="7" data-tip="Het geheim staat letterlijk in de toegestane regel"/></svg></div>
+<div class="ns-viz-mech-info"><h6>Opslaan</h6><p class="korte">Het hele commando, geheim inbegrepen, komt in een instellingenbestand in de projectmap.</p><p class="uitleg">Claude Code bewaart de goedgekeurde regel woordelijk op zijn lijst van toegestane acties. Het bestand staat naast de code, waar het makkelijk mee in versiebeheer belandt.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="70" width="90" height="70" rx="8" fill="#a78bfa" opacity=".4" stroke="#7c3aed"/><text x="75" y="110" text-anchor="middle" font-size="12" fill="#44403c">laptop</text><line x1="125" y1="105" x2="190" y2="105" stroke="#7c3aed" stroke-width="3"/><path d="M185 98 L198 105 L185 112 Z" fill="#7c3aed"/><circle cx="245" cy="105" r="42" fill="#1c1917"/><text x="245" y="110" text-anchor="middle" font-size="12" fill="#fff">GitHub</text><text x="160" y="95" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="monospace">git push</text><text x="245" y="170" text-anchor="middle" font-size="11" fill="#dc2626">openbaar</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Pushen</h6><p class="korte">De ontwikkelaar commit de projectmap inclusief het instellingenbestand naar een openbare repo.</p><p class="uitleg">Wie 'alles' toevoegt aan een commit, neemt ook de agentinstellingen mee. Staat het bestand niet in .gitignore, dan gaat het geheim mee naar GitHub.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="140" cy="95" r="45" fill="none" stroke="#7c3aed" stroke-width="8"/><line x1="172" y1="128" x2="225" y2="180" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/><text x="140" y="92" text-anchor="middle" font-size="12" fill="#dc2626" font-family="monospace">sk-…</text><text x="140" y="108" text-anchor="middle" font-size="10" fill="#44403c">2539×</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Gevonden</h6><p class="korte">Wie openbare repositories doorzoekt, vindt de geheimen terug.</p><p class="uitleg">Apiiro deed dat als onderzoeker en vond er 2539. Kwaadwillenden scannen openbare code op dezelfde manier; een gelekte sleutel moet daarom als gecompromitteerd worden beschouwd.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Geen bug, wel een ontwerpvraag</h5>
+<p>Strikt genomen doet Claude Code wat het belooft: het onthoudt een toestemming. Het lek ontstaat door de combinatie met menselijk gedrag, het meecommitten van een bestand dat er onschuldig uitziet. Dat maakt het een bekend patroon. Wachtwoorden in configuratiebestanden, sleutels in scripts en tokens in de geschiedenis van een repository zijn al zo lang een probleem als openbaar versiebeheer bestaat. GitHub zelf scant openbare repositories om die reden op bekende sleutelformaten. Nieuw is dat een AI-agent zo'n bestand automatisch vult, zonder dat de gebruiker het ooit opent. Wie zelf een configuratiebestand schrijft, ziet wat erin staat; wie op een knop drukt, niet. Daarmee verschuift de vraag van gebruikersdiscipline naar ontwerp: zou een agent geheimen in een commando moeten herkennen, maskeren of weigeren op te slaan?</p>
+<blockquote>Het probleem zit niet in een bug, maar in de ontmoeting tussen een gemaksknop en een gewone git-gewoonte.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Geheim (secret)</summary>
+    <div class="ns-viz-concept-body">Een wachtwoord, API-sleutel of token waarmee software toegang krijgt tot een dienst. Wie het heeft, kan namens de eigenaar handelen.</div></details>
+  <details class="ns-viz-concept"><summary>.gitignore</summary>
+    <div class="ns-viz-concept-body">Een lijst bestanden die git negeert. Wat erop staat, komt niet in commits en dus niet op GitHub terecht.</div></details>
+  <details class="ns-viz-concept"><summary>Sleutelrotatie</summary>
+    <div class="ns-viz-concept-body">Een gelekte sleutel intrekken en vervangen door een nieuwe. Verwijderen uit de repo is niet genoeg: de oude versie blijft in de git-geschiedenis staan.</div></details>
+  <details class="ns-viz-concept"><summary>Omgevingsvariabele</summary>
+    <div class="ns-viz-concept-body">Een waarde die buiten de code wordt meegegeven. Het commando verwijst naar de variabele; het geheim zelf komt zo niet in de goedgekeurde regel.</div></details>
+</div></div>
+<h5>Gevolgen voor wie met agents werkt</h5>
+<p>De les is praktisch. Zet het lokale instellingenbestand van de agent in .gitignore, geef geheimen mee via omgevingsvariabelen in plaats van ze in commando's te typen, en roteer elke sleutel die mogelijk is gelekt, want verwijderen uit de huidige versie wist de git-geschiedenis niet. Het past in een bredere reeks deze week rond de Claude-producten. In dezelfde krant laten onderzoekers zien hoe kwaadaardige browserextensies via Claude Dispatch code kunnen uitvoeren, en tegelijk koppelt Claude in de VS via Plaid aan bankrekeningen. Hoe meer toegang een agent krijgt, tot terminal, browser en geld, hoe groter de schade van een kleine nalatigheid. Voor Anthropic, dat afstevent op een beursgang, is dit geen technisch detail maar een vertrouwenskwestie.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Veilig werken met goedkeuringen</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>RISICO</h6>
+    <p>Geheim getypt in commando, 'niet meer vragen', instellingen meegecommit naar een openbare repo.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>VEILIG</h6>
+    <p>Geheim via omgevingsvariabele, lokaal instellingenbestand in .gitignore, gelekte sleutels direct geroteerd.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Dat 1994 repositories geheimen lekten, is minder een verwijt aan individuele ontwikkelaars dan aan een ontwerp dat te veel vertrouwt op hun discipline. Een agent die zelf bestanden schrijft, moet ook zelf voorkomen dat daar geheimen in belanden: herkennen, maskeren, of standaard buiten versiebeheer houden. Gemak en veiligheid hoeven niet te botsen, maar dan moet de veilige keuze de standaard zijn, niet de taak van de gebruiker.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Rw9k1sX49cU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Rw9k1sX49cU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Code's 'niet meer vragen' lekte wachtwoorden naar GitHub 2026</div></div></a></div>

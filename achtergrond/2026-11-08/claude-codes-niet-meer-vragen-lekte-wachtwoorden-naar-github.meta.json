@@ -1,0 +1,20 @@
+{
+  "title": "Claude Code's 'niet meer vragen' lekte wachtwoorden naar GitHub",
+  "summary": "Apiiro vond 2539 geheimen in 1994 openbare repositories, via goedgekeurde commando's in een instellingenbestand.\n\nClaude Code slaat commando's die een gebruiker met 'Don't ask again' goedkeurt op in een instellingenbestand, inclusief eventuele wachtwoorden of API-sleutels in dat commando. Beveiligingsbedrijf Apiiro vond zo 2539 geheimen in 1994 openbare GitHub-repositories, meldt The Hacker News.\n\nHet bericht werd op Hacker News druk besproken.",
+  "sources": [
+    "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQmZyY2ZLS3FEMWtCUEhYN2QySERoRF9QZ3RkSGFmVW53M2xjS2NiVURxdW1yN3FUc2xUNmMtWWFPRHI5MHQyM0F5RHVWeGdCdEtOUUx5Q20zTlp3bDVacnBweWcxcjhlb1JDaGRNRWY4Y3pzVHpsak05ek56UElYZ3kwM2ZIYVBvMGRQRmVybE5xalkwdkk3WF9QY1lLcDA0NHc?oc=5",
+    "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9YS3VBRHpydjVLY3doT2I2TVUyUnlEQ0xWczB3ZlA4WHdheXUyUk9hWWlidXJpM0VKSUlmaU5UM3oyZlNCYkEtbElwcDZ0WGFQUUJ1WU5WeFZqTEt4bWx0T2Z2S3ZYRlM5NFRKWWlKNWdBdHVV0gF6QVVfeXFMTkRUQmYxZlNxaHlZLTRXV09Kb1hwOE50bndwOVhvWmR1WGtTN2FmYXJUWWVadXFOdFlCQWtaYnBlTFRadUpZNjU3VEExTFFnYm5GOWtTRVZJVTBCZDM4cWFnUEZFQllCVllILXduWWQ5SUlYVF9lWDdmWFE?oc=5",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTE9EcmxCaXBlaHZhQjBqZkJYZlhRUlBHdVhjTDRFcjU5czlKX0F1VkJWVm9VUEhSWU5sWXQtSzlMTzMtanFIUFN4cEpERHNzYndQeW5vbjVrWEdxWlZ2Zk1xdlNkRHVSOF90N3VwSlBIbXRMd2xzakHSAXZBVV95cUxPRHJsQmlwZWh2YUIwamZCWGZYUVJQR3VYY0w0RXI1OXM5Sl9BdVZCVlZvVVBIUllObFl0LUs5TE8zLWpxSFBTeHBKRERzc2J3UHlub241a1hHcVpWdmZNcXZTZER1UjhfdDd1cEpQSG10THdsc2pB?oc=5"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-08",
+  "slug": "claude-codes-niet-meer-vragen-lekte-wachtwoorden-naar-github",
+  "tts_slug": "claude-codes-niet-meer-vragen-lekte-wachtwoorden-naar-github",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-08T05:38:31",
+  "size_kb": 12
+}

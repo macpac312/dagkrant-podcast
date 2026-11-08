@@ -1,0 +1,17 @@
+{
+  "title": "Claude kan financiën bijhouden via koppeling met bank",
+  "summary": "Personal Finance werkt voorlopig alleen in de VS, via Plaid.\n\nAnthropic heeft Claude Personal Finance aangekondigd, waarmee Claude via een koppeling met een bank persoonlijke geldzaken kan bijhouden, meldt Tweakers. De functie werkt voorlopig alleen in de VS, in navolging van ChatGPT. Volgens Geeky Gadgets verloopt de koppeling via Plaid en kan Claude bestedingspatronen en onverwachte kosten opsporen, zonder advertenties.",
+  "sources": [
+    "https://tweakers.net/nieuws/254224/claude-kan-in-navolging-van-chatgpt-financien-bijhouden-door-koppeling-met-bank.html",
+    "https://www.geeky-gadgets.com/financial-data/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-08",
+  "slug": "claude-kan-financiën-bijhouden-via-koppeling-met-bank",
+  "tts_slug": "claude-kan-financiën-bijhouden-via-koppeling-met-bank",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-08T05:38:31",
+  "size_kb": 7
+}

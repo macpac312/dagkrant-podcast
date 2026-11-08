@@ -1,0 +1,18 @@
+{
+  "title": "Kwaadaardige browserextensies kunnen via Claude Dispatch code uitvoeren",
+  "summary": "Onderzoekers laten zien hoe extensies op claude.ai de desktopapp aansturen.\n\nOnderzoekers tonen aan hoe browserextensies misbruik kunnen maken van Claude Dispatch, de functie waarmee claude.ai taken naar Claude Desktop doorstuurt, meldt The Hacker News. Een extensie op claude.ai kan zo prompts goedkeuren en code laten uitvoeren op de computer van de gebruiker.",
+  "sources": [
+    "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+    "https://shiftdelete.net/en/claude-dispatch-flaw",
+    "https://cybersecuritynews.com/claude-dispatch-vulnerability/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-08",
+  "slug": "kwaadaardige-browserextensies-kunnen-via-claude-dispatch-cod",
+  "tts_slug": "kwaadaardige-browserextensies-kunnen-via-claude-dispatch-cod",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-08T05:38:31",
+  "size_kb": 14
+}

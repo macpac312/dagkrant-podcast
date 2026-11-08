@@ -1,0 +1,19 @@
+{
+  "title": "Grok-analyse: Musk schrijft niet als Satoshi Nakamoto",
+  "summary": "Een open-sourceproject vergeleek schrijfstijlen en vond grote verschillen.\n\nEen open-sourceproject op GitHub gebruikte Grok en stilometrie om de theorie te testen dat Elon Musk bitcoin-bedenker Satoshi Nakamoto is, meldt blockweeks. Satoshi gebruikte in 95,3 procent van de gevallen twee spaties na een punt en in 32,7 procent Britse spelling; bij Musk is dat 0 en 0,65 procent.",
+  "sources": [
+    "https://blockweeks.com/news/338042",
+    "https://applealmond.com/posts/331637",
+    "https://note.com/kanko_kenkyu/n/n4c7e7cdbc24c?hl=ko",
+    "https://note.com/imanani_note/n/n999c45a7e8eb"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-11-08",
+  "slug": "grok-analyse-musk-schrijft-niet-als-satoshi-nakamoto",
+  "tts_slug": "grok-analyse-musk-schrijft-niet-als-satoshi-nakamoto",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-08T05:38:31",
+  "size_kb": 12
+}
