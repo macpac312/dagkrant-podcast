@@ -1,0 +1,16 @@
+{
+  "title": "Chinese staatspropaganda in AI-modellen blijkt 'een dun laagje' dat eraf kan",
+  "summary": "Nous Research trainde Qwen3.8-27B bij tot Arete-27B; de propaganda daalde van 22 naar minder dan 1 procent.\n\nNous Research heeft Alibaba's Qwen3.8-27B bijgetraind tot Arete-27B en daarbij de pro-Chinese vooringenomenheid grotendeels verwijderd, meldt The Decoder. Het aandeel propaganda daalde van 22 procent naar minder dan 1 procent, terwijl de algemene capaciteiten in tests intact bleven.",
+  "sources": [
+    "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-09",
+  "slug": "chinese-staatspropaganda-in-ai-modellen-blijkt-een-dun-laagj",
+  "tts_slug": "chinese-staatspropaganda-in-ai-modellen-blijkt-een-dun-laagj",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-09T05:38:22",
+  "size_kb": 14
+}

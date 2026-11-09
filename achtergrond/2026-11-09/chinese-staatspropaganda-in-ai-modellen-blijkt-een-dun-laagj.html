@@ -1,0 +1,80 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/11/arete-27b-01-hero.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Nous Research trainde Alibaba's Qwen3.8-27B bij tot Arete-27B, zonder partijlijn.</li>
+<li>Met 53 miljoen tokens daalde het propaganda-aandeel van 22 naar onder 1 procent.</li>
+<li>Chinese vooringenomenheid lekt via synthetische trainingsdata ook naar westerse modellen.</li>
+<li>Censuur in gewichten blijkt oppervlakkig, maar wie bepaalt de 'juiste' waarden?</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Aandeel antwoorden met propaganda (Nous-test)</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Qwen3.8-27B</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:22%">22%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">DeepSeek V4.1 Flash</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:16%">16%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">GLM-5.3</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:15%">15%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Mistral Large 4 / Gemma 4 31B</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:1%">&lt;1%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Arete-27B</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:1%">&lt;1%</div></div></div>
+</div></div>
+<h5>De beste open modellen komen uit China</h5>
+<p>Wie vandaag een krachtig taalmodel lokaal wil draaien, komt al snel uit bij Chinese makers. Alibaba's Qwen-reeks, DeepSeek en Zhipu's GLM behoren tot de sterkste open-weight-modellen, en ze vormen de basis voor talloze afgeleide projecten wereldwijd. Daar zit volgens het Amerikaanse Nous Research een prijs aan: in de gewichten zit door de Chinese staat voorgeschreven gedrag ingebakken. Bij Qwen3.8-27B zag het team weigeringen, ontwijkende antwoorden en reacties in lijn met de Communistische Partij. Nous trainde het model daarom bij met 53 miljoen tokens tot Arete-27B, dat "westerse waarden" belooft. Het resultaat, meldt The Decoder: het aandeel antwoorden met propaganda daalde van 22 procent naar minder dan 1 procent, terwijl de algemene capaciteiten in tests intact bleven. Het origineel scoorde 2,32 op 5 voor feitelijke juistheid.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Nous de partijlijn eruit trainde</div>
+<div class="ns-viz-mech-subtitle">Van meetlat via rechter en leraar naar een bijgetraind model</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Meetlat</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Rechter</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Leraar</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Bijtrainen</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#fff" stroke="#7c3aed" stroke-width="1.5"><rect x="40" y="40" width="70" height="40" rx="5"/><rect x="125" y="40" width="70" height="40" rx="5"/><rect x="210" y="40" width="70" height="40" rx="5"/><rect x="82" y="100" width="70" height="40" rx="5"/><rect x="167" y="100" width="70" height="40" rx="5"/></g><g font-size="10" fill="#7c3aed" text-anchor="middle"><text x="75" y="64">vrije meningsuiting</text><text x="160" y="64">surveillance</text><text x="245" y="64">democratie</text><text x="117" y="124">onderwijs</text><text x="202" y="124">milieu</text></g><text x="160" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">803 prompts, 7 categorieën</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Meetlat</h6><p class="korte">Nous bouwde een test met 803 vragen over gevoelige politieke thema's.</p><p class="uitleg">Zeven categorieën, van vrije meningsuiting en staatsideologie tot privacy, democratie en milieu. Per vraag legde het team twee tot vier feiten vast uit gedateerde bronnen: wetten, nieuwsberichten, onderzoeken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><line x1="160" y1="40" x2="160" y2="150" stroke="#44403c" stroke-width="3"/><line x1="90" y1="70" x2="230" y2="70" stroke="#44403c" stroke-width="3"/><path d="M70 110 L110 110 L90 70 Z" fill="#a78bfa"/><path d="M210 110 L250 110 L230 70 Z" fill="#7c3aed"/><rect x="130" y="150" width="60" height="10" fill="#44403c"/><text x="90" y="130" text-anchor="middle" font-size="11" fill="#44403c">feiten</text><text x="230" y="130" text-anchor="middle" font-size="11" fill="#44403c">antwoord</text><text x="160" y="185" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Grok 4.7 als blinde rechter</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Rechter</h6><p class="korte">Grok 4.7 beoordeelt blind of een antwoord feiten noemt, weglaat of tegenspreekt.</p><p class="uitleg">Propaganda telt als het model Beijings officiële lezing herhaalt, onderschrijft of als even geldig perspectief presenteert. De rechter moet de letterlijke formulering citeren en weet niet welk model antwoordde.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="90" cy="90" r="34" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/><text x="90" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Inkling</text><circle cx="230" cy="90" r="26" fill="#a78bfa" fill-opacity=".2" stroke="#a78bfa" stroke-width="2"/><text x="230" y="95" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Qwen</text><line x1="126" y1="90" x2="200" y2="90" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="6 4"/><path d="M196 84 L204 90 L196 96 Z" fill="#7c3aed"/><text x="160" y="170" text-anchor="middle" font-size="11" fill="#44403c">voorbeeldantwoorden van de leraar</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Leraar</h6><p class="korte">Inkling van Thinking Machines Lab levert de voorbeeldantwoorden.</p><p class="uitleg">Een open model schendt geen voorwaarden die distillatie verbieden. Nvidia's Nemotron 3 Ultra viel af wegens onregelmatigheden bij China-onderwerpen. Ironisch: Inkling zelf werd deels getraind op synthetische data van het Chinese Kimi K2.5.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="60" y="50" width="200" height="90" rx="10" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/><rect x="60" y="50" width="200" height="16" rx="8" fill="#dc2626" opacity=".55"/><text x="160" y="62" text-anchor="middle" font-size="10" fill="#fff">dun laagje: verwijderd</text><text x="160" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">Arete-27B</text><text x="160" y="125" text-anchor="middle" font-size="11" fill="#44403c">capaciteiten intact</text><text x="160" y="175" text-anchor="middle" font-size="12" fill="#44403c">53 miljoen tokens bijtraining</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Bijtrainen</h6><p class="korte">Met supervised fine-tuning op 53 miljoen tokens verdwijnt de propaganda grotendeels.</p><p class="uitleg">Het aandeel propaganda zakt van 22 naar onder 1 procent, op het niveau van westerse modellen als Mistral Large 4 en Gemma 4 31B. De algemene prestaties blijven volgens Nous op peil.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Een dun laagje, en een besmettelijk laagje</h5>
+<p>De kernbevinding is technisch geruststellend en politiek verontrustend tegelijk. Geruststellend, omdat 53 miljoen tokens in de wereld van taalmodellen weinig is: een fractie van wat voor de pretraining nodig was. Dat suggereert dat de ideologische sturing niet diep in de kennis van het model zit, maar vooral in de laatste afstemmingsfase is aangebracht. Ook Chinese modellen weten dus wat er is gebeurd; ze zijn getraind het niet te zeggen. De vergelijking met andere modellen bevestigt dat beeld: GLM-5.3 en DeepSeek V4.1 Flash komen op 15 en 16 procent, westerse modellen onder de 1 procent. Verontrustend is de tweede waarneming. Nous zag ook bij Nvidia's Nemotron aanwijzingen voor Chinese vooringenomenheid en vermoedt dat die meeliftte via training op Chinese open modellen. Het team rapporteert vergelijkbare besmetting in eigen projecten. Omdat de hele sector op synthetische data van andere modellen leunt, kan sturing zich zo stilletjes door het ecosysteem verspreiden.</p>
+<blockquote>Censuur in Chinese open modellen blijkt geen fundament maar een vernisje. Het risico zit erin dat dat vernis via synthetische data op andere modellen afgeeft.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📏 Feitelijke juistheid origineel Qwen3.8-27B</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:135"/>
+  </svg>
+  <div class="ns-viz-gauge-val">2,32 / 5</div>
+  <div class="ns-viz-gauge-label">Score op Nous-test, vóór bijtraining</div>
+</div></div>
+<h5>Wiens waarden?</h5>
+<p>Voor Europese bedrijven die open modellen inzetten, is het onderzoek praktisch relevant. Wie een Chinees basismodel gebruikt voor klantcontact, onderwijs of onderzoek, haalt ongemerkt een politiek gekleurde laag binnen, en de AI-verordening vraagt aanbieders juist om dit soort risico's in kaart te brengen. Tegelijk verdient de methode kritische blik. Dat Grok 4.7 van xAI als rechter optreedt, is een opmerkelijke keuze: The Decoder noemt het ironisch dat juist een model met een rechtse reputatie bepaalt wat neutraal is. De belofte van "westerse waarden" vervangt bovendien de ene normatieve keuze door een andere. Dat de test verankerd is in gedateerde, controleerbare feiten, maakt hem steviger dan een meningspeiling, maar wie de feiten selecteert, bepaalt nog altijd de uitkomst. Een onafhankelijke herhaling van de meting ontbreekt. Ook voor Brussel ligt hier een vraag. Als waardenoriëntatie met een paar dagen rekenwerk in elke richting te verschuiven is, zegt een certificering van een basismodel weinig over de afgeleide versies die in omloop komen. Toezicht zal dan eerder op het uiteindelijk ingezette model moeten letten dan op de oorspronkelijke maker.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Open-weight-model</summary>
+    <div class="ns-viz-concept-body">Een model waarvan de gewichten vrij te downloaden zijn. Iedereen kan het lokaal draaien en verder trainen, maar trainingsdata en -methode blijven vaak geheim.</div></details>
+  <details class="ns-viz-concept"><summary>Fine-tuning</summary>
+    <div class="ns-viz-concept-body">Bijtrainen van een bestaand model op een kleinere, gerichte dataset om gedrag te veranderen zonder het model opnieuw van nul op te bouwen.</div></details>
+  <details class="ns-viz-concept"><summary>Distillatie</summary>
+    <div class="ns-viz-concept-body">Een leerlingmodel leert van de antwoorden van een sterker leraarmodel. Veel commerciële aanbieders verbieden dit in hun voorwaarden.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Arete-27B laat zien dat staatscensuur in taalmodellen minder robuust is dan Beijing zou willen. Dat is goed nieuws voor wie Chinese open modellen wil gebruiken zonder partijlijn. Maar de belangrijkste les gaat verder dan China: modellen erven elkaars eigenaardigheden via synthetische data, en waardenoriëntatie is met relatief weinig training te herschrijven, in elke richting. Transparantie over trainingsherkomst en onafhankelijke meetlatten worden daarmee net zo belangrijk als de modellen zelf.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Q3KixQrxGhU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Q3KixQrxGhU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Is dit een Chinese influencer met AI?</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

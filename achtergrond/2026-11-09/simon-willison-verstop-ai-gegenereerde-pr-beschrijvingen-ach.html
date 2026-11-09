@@ -1,0 +1,62 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://static.simonwillison.net/static/2026/details-summary-card.webp" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© simonwillison.net</div></div><ul class="bg-bullets">
+<li>Simon Willison laat de meeste wijzigingen in zijn projecten als pull request door agents maken.</li>
+<li>AI-beschrijvingen zijn accuraat en volledig, maar lezen juist daardoor als 'slop'.</li>
+<li>Zijn oplossing: een korte menselijke intro, het agent-essay achter een uitklapblok.</li>
+<li>De echte schaarste verschuift van code schrijven naar menselijke aandacht en oordeel.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">🔄 De pull request, voor en na</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Lange, volledige beschrijving door de agent: probleem, oplossing, verificatie. Accuraat, maar de lezer haakt direct af.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>Korte, door een mens gekozen intro, soms met screenshot. Het agent-essay staat ingeklapt onder de modelnaam.</p></div>
+</div></div>
+<h5>Te goed om gelezen te worden</h5>
+<p>De meeste wijzigingen in de projecten van ontwikkelaar Simon Willison komen tegenwoordig binnen als pull requests die Claude Code of Codex voor hem openen. De pull request is zijn werkeenheid: hij bundelt er commits in, itereert erop tot een functie af is, documenteert beslissingen en voegt het eindresultaat samen. Het opvallende aan zijn observatie is dat het probleem niet zit in de kwaliteit van het agentwerk. Agents schrijven uitstekende beschrijvingen, accuraat en uitputtend. Juist dat maakt ze onleesbaar. 'Het is niet per se slop, maar het leest als slop', schrijft Willison. Zijn reflex — 'dat ga ik niet allemaal lezen' — komt voort uit een asymmetrie: de tekst kost meer tijd om te lezen dan het de auteur kostte om te laten schrijven, ook als die auteur hijzelf is. Dat is een nieuw soort informatieprobleem. Vroeger was een te korte of ontbrekende PR-beschrijving de klacht van reviewers; nu is het overvloed, en die overvloed is lastiger te corrigeren omdat elke zin op zich klopt.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚡ Willisons PR-werkwijze</div>
+<div class="ns-viz-flow"><svg viewBox="0 0 720 130" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs>
+  <rect class="anim-node" x="10" y="35" width="125" height="60" rx="9" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="72" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Agent</text>
+  <text x="72" y="78" text-anchor="middle" font-size="11" fill="#44403c">schrijft code + PR</text>
+  <line class="anim-line" x1="138" y1="65" x2="165" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="168" y="35" width="125" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="230" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Mens</text>
+  <text x="230" y="78" text-anchor="middle" font-size="11" fill="#44403c">kiest korte intro</text>
+  <line class="anim-line" x1="296" y1="65" x2="323" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="326" y="35" width="125" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="388" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Screenshot</text>
+  <text x="388" y="78" text-anchor="middle" font-size="11" fill="#44403c">optioneel</text>
+  <line class="anim-line" x1="454" y1="65" x2="481" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="484" y="35" width="125" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="546" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">&lt;details&gt;</text>
+  <text x="546" y="78" text-anchor="middle" font-size="11" fill="#44403c">agent-essay ingeklapt</text>
+  <line class="anim-line" x1="612" y1="65" x2="639" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect class="anim-node" x="642" y="35" width="70" height="60" rx="9" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="677" y="69" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Merge</text>
+</svg></div></div>
+<h5>Een HTML-element als redactionele ingreep</h5>
+<p>Willisons oplossing is opvallend eenvoudig. Het HTML-element details met een summary toont een ingeklapte kop die de lezer kan openklappen, en GitHub ondersteunt het rechtstreeks in Markdown. De openingsalinea van zijn pull requests kiest hij zorgvuldig, als de kortste tekst die een mens op snelheid brengt. Daaronder staat het volledige agent-essay, ingeklapt onder een kop met de modelnaam en vaak het inspanningsniveau, bijvoorbeeld 'Claude Opus 5.5 Medium'. Daarmee doet hij twee dingen tegelijk: hij herstelt de menselijke redactionele laag en hij maakt transparant welk deel door een model is geschreven. Dat laatste is meer dan etiquette. Elders in deze krant meldt xAI onzichtbare watermerken in zijn API-uitvoer, die bij korte teksten vaak niet eenduidig te herkennen zijn. Willisons expliciete label is de menselijke tegenhanger: geen detectie achteraf, maar openheid vooraf.</p>
+<blockquote>“Het is niet per se slop, maar het leest als slop.” — Simon Willison over door agents geschreven PR-beschrijvingen</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📊 De grenzen van codeeragenten, elders in de krant</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="26.4" data-suffix="%">26.4%</div><div class="ns-viz-stat-label">Taken volledig opgelost door beste agent (Alibaba-benchmark)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="72.8" data-suffix="%">72.8%</div><div class="ns-viz-stat-label">Aanvalsdoelen gehaald door open model DeepSeek V4.1 Flash</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1" data-prefix="&lt;" data-suffix="%">&lt;1%</div><div class="ns-viz-stat-label">Propaganda in Arete-27B na bijtrainen (was 22%)</div></div>
+</div></div>
+<h5>Van productie naar aandacht</h5>
+<p>Het stuk zegt veel over waar softwareontwikkeling nu staat. Als agents het grootste deel van de code én de documentatie leveren, wordt menselijke aandacht de schaarse grondstof. Tegelijk laten andere berichten zien dat die aandacht niet kan verdwijnen. In een nieuwe benchmark van Alibaba lost zelfs de beste agent maar 26,4 procent van de echte taken volledig zelf op; bij bijna drie op de vier is menselijke hulp nodig. Goldman Sachs trekt Claude Code juist in voor medewerkers buiten de IT, een teken dat organisaties worstelen met wie deze gereedschappen verantwoord kan inzetten. De rode draad: agents verhogen de productie, maar het beoordelen, kiezen en verantwoorden blijft mensenwerk. Willisons kleine conventie erkent dat zonder het werk van de agent weg te gooien. De informatie blijft beschikbaar voor wie hem nodig heeft, inclusief toekomstige agents die de geschiedenis van een project willen begrijpen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Pull request</summary>
+    <div class="ns-viz-concept-body">Voorstel om een reeks wijzigingen samen te voegen met de hoofdcode, met beschrijving en ruimte voor review en discussie.</div></details>
+  <details class="ns-viz-concept"><summary>&lt;details&gt;&lt;summary&gt;</summary>
+    <div class="ns-viz-concept-body">HTML-element dat een ingeklapte kop toont; klik erop en de rest van de tekst verschijnt. Werkt ook in GitHub-Markdown.</div></details>
+  <details class="ns-viz-concept"><summary>Slop</summary>
+    <div class="ns-viz-concept-body">Verzamelterm voor ongevraagde, massaal gegenereerde AI-tekst die meer leestijd kost dan hij waarde oplevert.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Willisons advies lijkt een kleine stijltip, maar raakt aan een fundamentele verschuiving. In een wereld waarin tekst vrijwel gratis is, wordt de korte menselijke samenvatting het waardevolste deel van elk document. Teams die agents serieus inzetten, doen er goed aan deze conventie over te nemen: label wat machinaal is, zet het menselijke oordeel bovenaan. Dat is geen wantrouwen tegenover AI, maar respect voor de tijd van de lezer.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=-wh3LZMeIwA" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/-wh3LZMeIwA/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Simon Willison: verstop AI-gegenereerde PR-beschrijvingen achter een uitklapblok 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/9/details-summary/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>

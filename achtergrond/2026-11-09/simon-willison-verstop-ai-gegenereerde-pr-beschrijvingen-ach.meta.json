@@ -1,0 +1,16 @@
+{
+  "title": "Simon Willison: verstop AI-gegenereerde PR-beschrijvingen achter een uitklapblok",
+  "summary": "De meeste wijzigingen in zijn projecten komen inmiddels als pull requests van Claude Code of Codex.\n\nDe meeste wijzigingen in de projecten van ontwikkelaar Simon Willison komen tegenwoordig als pull requests die Claude Code of Codex voor hem openen. Hij raadt aan de lange, AI-geschreven beschrijvingen achter een details-blok te verstoppen, zodat menselijke lezers eerst de kern zien.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/9/details-summary/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-09",
+  "slug": "simon-willison-verstop-ai-gegenereerde-pr-beschrijvingen-ach",
+  "tts_slug": "simon-willison-verstop-ai-gegenereerde-pr-beschrijvingen-ach",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-09T05:38:22",
+  "size_kb": 9
+}

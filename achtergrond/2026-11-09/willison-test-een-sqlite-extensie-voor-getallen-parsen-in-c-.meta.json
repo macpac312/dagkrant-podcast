@@ -1,0 +1,16 @@
+{
+  "title": "Willison test: een SQLite-extensie voor getallen parsen, in C en in Rust",
+  "summary": "Tijdens het uitlaten van de hond vroeg hij een agent om parse_number() in twee talen te bouwen.\n\nSimon Willison onderzocht hoe makkelijk of moeilijk het is om een SQLite-extensie te schrijven die strings als '-$1,234.56' of '12.5%' omzet naar getallen, in C en in Rust. Hij liet het onderzoek doen terwijl hij de hond uitliet.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-09",
+  "slug": "willison-test-een-sqlite-extensie-voor-getallen-parsen-in-c-",
+  "tts_slug": "willison-test-een-sqlite-extensie-voor-getallen-parsen-in-c-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-09T05:38:22",
+  "size_kb": 11
+}

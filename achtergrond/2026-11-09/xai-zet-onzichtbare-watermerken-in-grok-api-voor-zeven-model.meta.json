@@ -1,0 +1,16 @@
+{
+  "title": "xAI zet onzichtbare watermerken in Grok-API voor zeven modellen",
+  "summary": "Het merkteken geldt voor alle API-endpoints; korte teksten zijn er vaak niet eenduidig mee te herkennen.\n\nxAI heeft onzichtbare watermerken geactiveerd voor zeven Grok-modellen en alle API-endpoints, meldt het Duitse borncity. Korte teksten zijn er vaak niet eenduidig mee te herkennen.",
+  "sources": [
+    "https://borncity.com/news/grok-api-xai-aktiviert-unsichtbare-wasserzeichen-fuer-sieben-modelle/"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-11-09",
+  "slug": "xai-zet-onzichtbare-watermerken-in-grok-api-voor-zeven-model",
+  "tts_slug": "xai-zet-onzichtbare-watermerken-in-grok-api-voor-zeven-model",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-09T05:38:22",
+  "size_kb": 13
+}

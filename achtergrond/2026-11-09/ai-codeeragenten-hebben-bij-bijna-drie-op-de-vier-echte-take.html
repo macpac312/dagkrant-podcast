@@ -1,0 +1,102 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/11/co-design-bench-nano-banana-pro.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Alibaba's Co-Design Bench test codeeragenten op echte, lastige gebruikersverzoeken.</li>
+<li>Beste model GPT-6 Astra lost slechts 26,4 procent van de taken volledig op.</li>
+<li>Oudere benchmarks zijn verzadigd: modellen halen daar scores boven 99 procent.</li>
+<li>Menselijk nawerk blijft de norm; review wordt de nieuwe flessenhals.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📏 Volledig correct opgeloste taken, beste model</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:185"/>
+  </svg>
+  <div class="ns-viz-gauge-val">26,4%</div>
+  <div class="ns-viz-gauge-label">GPT-6 Astra op Co-Design Bench (The Decoder)</div>
+</div></div>
+<h5>Van verzadigde tests naar echte verzoeken</h5>
+<p>Wie de afgelopen maanden de ranglijsten van codeermodellen volgde, kon de indruk krijgen dat het probleem zo goed als opgelost is. Op gangbare benchmarks halen agenten die hun eigen code mogen draaien, controleren en verbeteren scores boven de 99 procent, en de verschillen tussen modellen zijn nauwelijks nog meetbaar. Onderzoekers van Alibaba en enkele Aziatische universiteiten zetten daar nu Co-Design Bench tegenover, meldt The Decoder. De taken komen uit echte codeersessies, en de makers kozen bewust gevallen waarin gebruikers hun verzoek meermaals moesten herformuleren of wijzigingen terugdraaiden. Agenten moeten bestaande webapps aanpassen, soms op basis van afbeeldingen, geluidsopnames, video's of documenten. De uitkomst is ontnuchterend. Het beste van tien geteste modellen, GPT-6 Astra, voldoet gemiddeld aan zo'n 70 procent van de eisen per taak, maar levert slechts in 26,4 procent van de gevallen een volledig correct resultaat. Op oudere tests zouden dezelfde modellen bijna foutloos lijken.</p>
+<div class="bg-inline-viz">
+<svg viewBox="0 0 220 110" width="220" height="110" aria-label="Benchmarkscores vergeleken">
+  <g font-size="9" fill="#78716c"><text x="8" y="104">oude tests</text><text x="82" y="104">eisen gehaald</text><text x="160" y="104">volledig goed</text></g>
+  <rect x="14" y="12" width="44" height="80" fill="var(--green)"/>
+  <rect x="90" y="36" width="44" height="56" fill="var(--accent)"/>
+  <rect x="166" y="71" width="44" height="21" fill="var(--orange)"/>
+  <g font-size="10" fill="#44403c" text-anchor="middle"><text x="36" y="9">&gt;99%</text><text x="112" y="32">~70%</text><text x="188" y="67">26,4%</text></g>
+</svg>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Bovenste modellen op oude tests versus Co-Design Bench.</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Co-Design Bench een agent beoordeelt</div>
+<div class="ns-viz-mech-subtitle">Van een lastig gebruikersverzoek naar een strenge dubbele keuring</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Echte vraag</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Agent werkt</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Browsertest</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Tweede rechter</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="40" width="240" height="120" rx="10" fill="#a78bfa" fill-opacity=".12" stroke="#a78bfa"/>
+      <rect x="60" y="60" width="160" height="18" rx="9" fill="#7c3aed" fill-opacity=".25"/><text x="70" y="73" font-size="10" fill="#44403c">'pas de totalen aan…'</text>
+      <rect x="100" y="90" width="160" height="18" rx="9" fill="#7c3aed" fill-opacity=".25"/><text x="110" y="103" font-size="10" fill="#44403c">'nee, ook de korting'</text>
+      <rect x="60" y="120" width="160" height="18" rx="9" fill="#7c3aed" fill-opacity=".25"/><text x="70" y="133" font-size="10" fill="#44403c">'terugdraaien graag'</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Echte vraag</h6>
+      <p class="korte">De taken komen uit echte sessies waarin agenten al struikelden.</p>
+      <p class="uitleg">De onderzoekers kozen verzoeken die gebruikers moesten herformuleren of waarvan ze wijzigingen terugdraaiden. Van een bedrag uit een bonnetje halen en alle afhankelijke totalen bijwerken tot complete projectverbouwingen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="30" width="260" height="140" rx="8" fill="#fff" stroke="#a78bfa"/>
+      <rect x="30" y="30" width="260" height="20" rx="8" fill="#a78bfa" fill-opacity=".3"/>
+      <rect x="45" y="65" width="100" height="40" fill="#7c3aed" fill-opacity=".2"/><text x="95" y="90" text-anchor="middle" font-size="10" fill="#44403c">layout</text>
+      <rect x="160" y="65" width="115" height="40" fill="#7c3aed" fill-opacity=".2"/><text x="217" y="90" text-anchor="middle" font-size="10" fill="#44403c">design</text>
+      <rect x="45" y="115" width="100" height="40" fill="#7c3aed" fill-opacity=".2"/><text x="95" y="140" text-anchor="middle" font-size="10" fill="#44403c">interactie</text>
+      <rect x="160" y="115" width="115" height="40" fill="#7c3aed" fill-opacity=".2"/><text x="217" y="140" text-anchor="middle" font-size="10" fill="#44403c">inhoud</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Agent werkt</h6>
+      <p class="korte">De agent past een bestaande webapp aan, vaak op meerdere vlakken tegelijk.</p>
+      <p class="uitleg">Hoe meer soorten wijzigingen een taak combineert, zoals layout, design, interactie en inhoud, hoe slechter alle modellen presteren. Juist die verweven eisen zijn in echte projecten de norm.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="40" width="200" height="120" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <circle cx="75" cy="52" r="4" fill="#a78bfa"/><circle cx="88" cy="52" r="4" fill="#a78bfa"/>
+      <path d="M90 110 l20 20 l40 -45" stroke="#16a34a" stroke-width="5" fill="none"/>
+      <path d="M190 90 l40 40 M230 90 l-40 40" stroke="#dc2626" stroke-width="5"/>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">AI-rechter klikt door de app</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Browsertest</h6>
+      <p class="korte">Een AI-rechter test de afgeronde app daadwerkelijk in een browser.</p>
+      <p class="uitleg">Er telt alleen wat echt werkt. Een functie die in de code lijkt te bestaan maar in de app niet reageert, levert geen punten op.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="130" cy="100" r="40" fill="none" stroke="#7c3aed" stroke-width="5"/><line x1="158" y1="128" x2="200" y2="170" stroke="#7c3aed" stroke-width="7" stroke-linecap="round"/>
+      <text x="130" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">mock-up?</text>
+      <text x="250" y="70" text-anchor="middle" font-size="11" fill="#44403c">hardcoded</text><text x="250" y="86" text-anchor="middle" font-size="11" fill="#44403c">resultaat?</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Tweede rechter</h6>
+      <p class="korte">Een tweede rechter controleert elk positief oordeel op trucs.</p>
+      <p class="uitleg">Die zoekt naar mock-ups en hardgecodeerde uitkomsten waarmee een agent een werkende functie kan veinzen. Pas als ook die controle slaagt, telt een onderdeel als gehaald.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waar het misgaat: de laatste details</h5>
+<p>Het verschil tussen 70 en 26,4 procent is de kern van het verhaal. In de meeste gevallen doet de agent het grootste deel van het werk goed, maar laat hij minstens één detail liggen. Wie zulke tools gebruikt, moet dus vrijwel altijd handmatig nawerken. De beoordeling is daarbij streng: een AI-rechter test de app in een browser, een tweede controleert elk positief oordeel en zoekt naar mock-ups of hardgecodeerde resultaten. Opvallend is dat meer rekenkracht weinig helpt. GLM-5.2 verbruikt bij kleinere wijzigingen bijna zes keer zoveel tokens als GPT-6 Astra en scoort toch duidelijk lager. Achter de koploper volgen Claude Opus 5 en Qwen3.8-Max; Grok 4.6 eindigt als laatste. Bij grote verbouwingen klimt het veel kleinere Qwen3.8-27B naar de tweede plek, al willen de auteurs daar geen algemeen voordeel uit afleiden. De bevinding past bij wat Richard Sutton nu betoogt: meer rekenkracht alleen levert geen begrip op. Het onderzoek suggereert dat het probleem niet in de hoeveelheid denkwerk zit, maar in het vasthouden van alle eisen tegelijk.</p>
+<blockquote>Een agent die 70 procent van de eisen haalt maar zelden alle, verschuift het werk van schrijven naar controleren, niet van mens naar machine.</blockquote>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">In de meeste gevallen doet de agent het grootste deel van het werk, maar laat hij minstens één detail onafgemaakt.</p>
+  <p class="ns-viz-quote-attr">— Samenvatting van het Co-Design Bench-onderzoek, via The Decoder</p>
+</div>
+<h5>Gevolgen voor bedrijven en ontwikkelaars</h5>
+<p>Voor organisaties die zwaar inzetten op codeeragenten is dit een nuttige correctie. Tegelijk blijkt dat Goldman Sachs Claude Code weghaalt bij handelaren en bankiers buiten de IT-afdeling, een teken dat ook grote gebruikers zoeken naar de grens tussen productiviteitswinst en risico. Als agenten vrijwel altijd een detail missen, verschuift het knelpunt naar review: iemand moet begrijpen wat er veranderd is en wat er stuk kan gaan. Dat vraagt juist de ervaring die junior-ontwikkelaars nog moeten opdoen. Tegelijk moet de benchmark niet als definitief oordeel gelden. De taken zijn bewust geselecteerd op moeilijkheid, en de beoordeling door AI-rechters heeft eigen beperkingen. Bovendien laat de vergelijking met oudere tests vooral zien hoe snel meetlatten verouderen. Ook op Co-Design Bench zullen scores stijgen; de vraag is of dat komt door betere modellen of door modellen die op de test zijn afgesteld.</p>
+<h5>Conclusie</h5>
+<p>Co-Design Bench prikt een ballon door die de sector zelf heeft opgeblazen: bijna perfecte scores op verzadigde tests zeiden weinig over het echte werk. De agenten van nu zijn uitstekende eerste-versiemachines, maar slechte afmakers. Dat is geen reden voor pessimisme, wel voor realisme. Wie de productiviteitswinst wil incasseren, moet investeren in review, testen en mensen die code begrijpen, want daar ligt het werk dat de machine laat liggen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=FFAPeIHdvcU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/FFAPeIHdvcU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">DeepSeek heeft zojuist een AI uitgebracht die codeert terwijl je slaapt</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

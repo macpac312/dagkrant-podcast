@@ -1,0 +1,93 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/515ad474-e013-48a0-b40f-739bca031d85/A.jpg?t=1794172002" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© latent.space</div></div><ul class="bg-bullets">
+<li>Stanfords CS146S laat studenten bijdragen aan echte open-sourceprojecten.</li>
+<li>Reden: codeeragenten maakten het huiswerk van vorig jaar in één prompt.</li>
+<li>De beheerder van de repo beoordeelt de patch, niet alleen de docent.</li>
+<li>Begrijpen, uitleggen en reviewen worden de kernvaardigheden van de ontwikkelaar.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 CS146S in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="10">10</div><div class="ns-viz-stat-label">Weken syllabus</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="9">9</div><div class="ns-viz-stat-label">Opdrachten plus eindproject in de eerste editie</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Edities; de tweede met open-sourcebeheerders</div></div>
+</div></div>
+<h5>Als het huiswerk in één prompt klaar is</h5>
+<p>Elke docent informatica staat inmiddels voor dezelfde vraag: wat geef je als opdracht als een codeeragent het werk van vorig jaar in één prompt afrondt? Mihail Eric, die aan Stanford het vak The Modern Software Developer (CS146S) geeft en bij het bedrijf Monaco de AI-inzet leidt, vertelt in de podcast Latent Space hoe hij die vraag beantwoordde. De eerste editie had negen opdrachten en een eindproject. In één oefening lieten studenten een AI-codereviewer los op een repository en beoordeelden ze de feedback. Bij de tweede editie concludeerde Eric dat studenten veel van die oefeningen in één keer door een agent konden laten maken. Toen hij een zaal met tweede- en derdejaars vroeg hoe zij programmeerden, bleek iedereen die hij ondervroeg al met een agent te werken. Het vak moest dus over iets anders gaan dan het schrijven van code zelf. Een opdracht die een agent in één keer foutloos afrondt, meet immers niet meer wat de student kan, maar wat het model kan.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 De nieuwe opdracht: van onbekende repo naar geaccepteerde patch</div>
+<div class="ns-viz-mech-subtitle">Hoe studenten leren wat een agent niet voor hen doet</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Repo verkennen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Wijziging</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Uitleggen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Review</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="30" width="110" height="140" rx="6" fill="#a78bfa" fill-opacity=".12" stroke="#a78bfa"/>
+      <text x="55" y="55" font-size="11" fill="#7c3aed">📁 src/</text><text x="70" y="75" font-size="11" fill="#44403c">core/</text><text x="70" y="95" font-size="11" fill="#44403c">api/</text><text x="55" y="115" font-size="11" fill="#7c3aed">📁 tests/</text><text x="55" y="135" font-size="11" fill="#44403c">README</text>
+      <circle cx="220" cy="90" r="34" fill="none" stroke="#7c3aed" stroke-width="4"/><line x1="244" y1="114" x2="275" y2="145" stroke="#7c3aed" stroke-width="6" stroke-linecap="round"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Repo verkennen</h6>
+      <p class="korte">Studenten leren een onbekende open-sourcecodebase kennen.</p>
+      <p class="uitleg">Ze moeten uitzoeken waarom de code zich gedraagt zoals hij doet en welke ontwerpkeuzes eraan ten grondslag liggen. Dat is context die een agent niet vanzelf heeft en die een student zelf moet opbouwen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="40" width="240" height="120" rx="6" fill="#fff" stroke="#a78bfa"/>
+      <rect x="55" y="60" width="200" height="14" fill="#dc2626" fill-opacity=".15"/><text x="60" y="71" font-size="10" fill="#dc2626">− oude regel</text>
+      <rect x="55" y="80" width="200" height="14" fill="#16a34a" fill-opacity=".15"/><text x="60" y="91" font-size="10" fill="#16a34a">+ nieuwe regel</text>
+      <rect x="55" y="100" width="200" height="14" fill="#16a34a" fill-opacity=".15"/><text x="60" y="111" font-size="10" fill="#16a34a">+ test</text>
+      <text x="160" y="145" text-anchor="middle" font-size="11" fill="#44403c">agent mag helpen</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Wijziging</h6>
+      <p class="korte">Ze stellen een wijziging voor; een agent kan het schrijfwerk doen.</p>
+      <p class="uitleg">'Je kunt een agent in een middag een feature laten bouwen,' schrijft Latent Space. De vraag is of de beheerder die feature wil en wat de patch elders kan breken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="90" cy="90" r="26" fill="#a78bfa" fill-opacity=".4"/><rect x="66" y="120" width="48" height="40" rx="10" fill="#a78bfa" fill-opacity=".4"/>
+      <rect x="140" y="50" width="150" height="70" rx="12" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed"/>
+      <text x="215" y="80" text-anchor="middle" font-size="11" fill="#44403c">'deze regel verandert…</text><text x="215" y="98" text-anchor="middle" font-size="11" fill="#44403c">omdat…'</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Uitleggen</h6>
+      <p class="korte">De student moet de patch uitleggen aan wie hem misschien merget.</p>
+      <p class="uitleg">Een hulpmiddel uit het gesprek: de explain-diff-skill van Geoffrey Litt, die een wijziging omzet in een visuele rondleiding en je erover overhoort. Welke vraag dwingt je de code opnieuw te openen?</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="230" cy="80" r="26" fill="#7c3aed" fill-opacity=".45"/><rect x="206" y="110" width="48" height="40" rx="10" fill="#7c3aed" fill-opacity=".45"/>
+      <text x="230" y="175" text-anchor="middle" font-size="11" fill="#44403c">beheerder</text>
+      <circle cx="110" cy="100" r="34" fill="#16a34a" fill-opacity=".15" stroke="#16a34a" stroke-width="2"/><path d="M95 100 l10 10 l20 -22" stroke="#16a34a" stroke-width="4" fill="none"/>
+      <text x="110" y="160" text-anchor="middle" font-size="11" fill="#44403c">merge of feedback</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Review</h6>
+      <p class="korte">De beheerder van het project beoordeelt de patch van de student.</p>
+      <p class="uitleg">Dat gesprek is volgens Latent Space precies hoe een junior van een senior leert. De beoordeling komt van iemand die het project kent en de gevolgen moet dragen, niet alleen van de docent.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Begrip als nieuwe schaarste</h5>
+<p>Daarom haalde Eric open-sourcebeheerders de collegezaal in. Een deel van het huiswerk is nu een bijdrage aan een bestaand project, waarbij de beheerder van de repository de patch beoordeelt. De logica is helder. Een agent kan een feature in een middag implementeren, maar de student moet nog altijd uitzoeken of de beheerder die feature wil, waarom de code zich gedraagt zoals hij doet en wat de patch elders kan breken. Dat zijn precies de vaardigheden die de verschuiving in het vak typeren: van code produceren naar code begrijpen, verantwoorden en reviewen. De tien weken tellende syllabus beweegt mee, met onderdelen over de lus, tools en harness binnen een codeeragent, contextbeheer voor grote codebases en vaardigheden om een diff echt te doorgronden. Opvallend genoeg bouwt Eric in begeleidend materiaal zelf een codeeragent vanaf nul na en ontleedt hij de harness van Claude Code: wie de machine wil sturen, moet weten hoe hij werkt.</p>
+<blockquote>Wanneer schrijven goedkoop wordt, verschuift de waarde naar het oordeel: weten wat je moet bouwen, waarom het werkt en wat het kan breken.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Begrippen uit de cursus</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Harness</summary>
+    <div class="ns-viz-concept-body">De software rond een taalmodel die de agent-lus draait: het model kiest een actie, de harness voert tools uit (bestanden lezen, tests draaien) en voert de uitkomst terug.</div></details>
+  <details class="ns-viz-concept"><summary>Contextbeheer</summary>
+    <div class="ns-viz-concept-body">Het selecteren van welke code, documentatie en instructies een agent te zien krijgt. In grote codebases bepaalt dat sterk of de agent de juiste wijziging maakt.</div></details>
+  <details class="ns-viz-concept"><summary>Explain-diff</summary>
+    <div class="ns-viz-concept-body">Een skill van Geoffrey Litt die een codewijziging omzet in een visuele rondleiding en de gebruiker daarover ondervraagt, om te toetsen of je je eigen patch begrijpt.</div></details>
+  <details class="ns-viz-concept"><summary>'Buy to learn, build to keep'</summary>
+    <div class="ns-viz-concept-body">Erics vuistregel bij Monaco: koop een tool om te leren wat je nodig hebt, bouw zelf wat voor jouw organisatie essentieel blijft.</div></details>
+</div></div>
+<h5>Van de collegezaal naar de werkvloer</h5>
+<p>Eric toetst zijn lesstof ook in de praktijk. Bij Monaco koos zijn team voor codereview een bestaand product en bleef het Devin gebruiken, maar de werkomgevingen voor achtergrondagenten bouwde het zelf, omdat een agent een plek nodig heeft om het product te draaien, fouten te reproduceren en patches te testen, en dat afhangt van hoe de eigen cloud is ingericht. Zijn vuistregel: 'You buy to learn, and you build to keep.' De parallel met het onderwijs ligt voor de hand. Ook bedrijven merken dat het knelpunt verschuift naar review en begrip. Dat blijkt uit het Alibaba-onderzoek waarin zelfs het beste model slechts een kwart van de echte taken volledig oplost, en uit het besluit van Goldman Sachs om Claude Code weg te halen bij medewerkers buiten de IT. Voor Nederlandse opleidingen, die met dezelfde vraag worstelen, biedt de Stanford-aanpak een bruikbaar model: beoordeel niet het product, maar het vermogen het te verdedigen tegenover iemand die het moet onderhouden.</p>
+<h5>Conclusie</h5>
+<p>CS146S laat zien dat AI het programmeeronderwijs niet overbodig maakt, maar het zwaartepunt verlegt. Waar opdrachten vroeger toetsten of een student code kon schrijven, toetsen ze nu of hij code kan begrijpen, verantwoorden en laten accepteren in een echte gemeenschap. Dat is moeilijker en waardevoller. Het risico is dat opleidingen die stap te laat zetten en studenten afleveren die snel kunnen genereren maar niet kunnen beoordelen. Juist die vaardigheid wordt de komende jaren schaars.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=k1njvbBmfsw" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/k1njvbBmfsw/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Stanford CS230 | Autumn 2025 | Lecture 8: Agents, Prompts, and RAG</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://latent.space/p/cs146s/" target="_blank" style="color:var(--accent)">latent.space ↗</a> &bull; <a href="https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/" target="_blank" style="color:var(--accent)">latent.space ↗</a></div>

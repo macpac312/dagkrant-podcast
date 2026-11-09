@@ -1,0 +1,16 @@
+{
+  "title": "Karpathy bouwt in een weekend een videoplatform met Claude en 20 jaar Hacker News",
+  "summary": "Opus 5.5 filterde 43 miljoen reacties tot 6.454 gecureerde video's, beter dan YouTube's eigen aanbevelingen, zegt hij.\n\nOpenAI-medeoprichter Andrej Karpathy gebruikte Claude Opus 5.5 om 43 miljoen Hacker News-reacties te filteren tot 6.454 gecureerde video's, meldt The Decoder. Het resultaat is volgens hem beter dan de aanbevelingen van YouTube zelf. Hij bouwde het platform in een weekend.",
+  "sources": [
+    "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-09",
+  "slug": "karpathy-bouwt-in-een-weekend-een-videoplatform-met-claude-e",
+  "tts_slug": "karpathy-bouwt-in-een-weekend-een-videoplatform-met-claude-e",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-09T05:38:22",
+  "size_kb": 13
+}
