@@ -1,0 +1,102 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.basenor.com/cdn/shop/articles/fe90923572070b7f5f0c5e4edc2f5b68.jpg?v=1794251018" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© basenor.com</div></div><ul class="bg-bullets">
+<li>SpaceX zet Grok in om losse voorwerpen in raketonderdelen op te sporen.</li>
+<li>Grok zou 99,9 procent scoren tegen 94 procent voor menselijke inspecteurs.</li>
+<li>De mens bedient de camera, het model beoordeelt de beelden.</li>
+<li>De claim komt uit tweede hand en is niet onafhankelijk getoetst.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 FOD-detectie volgens SpaceX</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="99.9" data-suffix="%">99.9%</div><div class="ns-viz-stat-label">Nauwkeurigheid Grok</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="94" data-suffix="%">94%</div><div class="ns-viz-stat-label">Nauwkeurigheid menselijke inspecteur</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5.9" data-suffix=" pp">5.9 pp</div><div class="ns-viz-stat-label">Verschil in procentpunten</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2.1" data-suffix=" bln">2.1 bln</div><div class="ns-viz-stat-label">Parameters Grok 4.7 (biljoen)</div></div>
+</div></div>
+<h5>Het kleinste risico in de raketbouw</h5>
+<p>In de lucht- en ruimtevaart heet het FOD: foreign object debris. Het zijn metaalkrullen, draadresten, losse bevestigingsmiddelen of ander vuil dat tijdens productie of assemblage in een onderdeel achterblijft. In een raketmotor of een buis onder druk kan één vergeten fragment een catastrofe veroorzaken. De luchtvaart kent die les al decennia; het neerstorten van een Concorde in 2000, veroorzaakt door een metalen strip op de startbaan, is het bekendste voorbeeld van wat een los voorwerp kan aanrichten. De gangbare controle is arbeidsintensief: een inspecteur voert een borescoop, een flexibele camera, door buizen en holtes en zoekt het beeld af. Volgens de vicepresident voor lanceringen van SpaceX, geciteerd door Sawyer Merritt en verwerkt door Basenor, doet Grok dat nu op de fabrieksvloer, niet voor planning of e-mail, maar voor deze veiligheidskritische taak.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe AI-ondersteunde FOD-inspectie werkt</div>
+<div class="ns-viz-mech-subtitle">Van camera in de buis naar gemarkeerd vreemd voorwerp</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Borescoop</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Beelden</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Grok-analyse</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Beslissing</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="120" y="80" width="180" height="40" rx="20" fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M30,150 C60,150 80,100 140,100" fill="none" stroke="#44403c" stroke-width="4"/>
+      <circle cx="145" cy="100" r="6" fill="#7c3aed"/>
+      <circle cx="30" cy="150" r="14" fill="#7c3aed" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <text x="210" y="145" text-anchor="middle" font-size="11" fill="#44403c">buis of holte in raketonderdeel</text>
+      <circle class="ns-viz-mech-hotspot" cx="145" cy="100" r="7" data-tip="Cameratip van de borescoop"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Borescoop</h6><p class="korte">Een menselijke inspecteur voert de flexibele camera in buizen en holtes.</p><p class="uitleg">Het fysieke werk blijft bij de mens: camera inbrengen, door de buis navigeren en beelden vastleggen. Dat is bewust zo gehouden.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="30" width="200" height="130" rx="8" fill="#1c1917"/>
+      <circle cx="160" cy="95" r="50" fill="none" stroke="#a78bfa" stroke-width="3"/>
+      <circle cx="160" cy="95" r="25" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-opacity=".6"/>
+      <path d="M185,110 L195,104 L192,116 z" fill="#d4d0cb"/>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">beeld van binnenuit</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Beelden</h6><p class="korte">De camerabeelden van het interieur worden vastgelegd voor analyse.</p><p class="uitleg">Bij handmatige inspectie zoekt de inspecteur deze beelden zelf af. Dat is tijdrovend en, zo blijkt uit SpaceX-cijfers, niet foutloos: de mens haalt 94 procent.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="30" width="200" height="130" rx="8" fill="#1c1917"/>
+      <circle cx="160" cy="95" r="50" fill="none" stroke="#a78bfa" stroke-width="3"/>
+      <path d="M185,110 L195,104 L192,116 z" fill="#d4d0cb"/>
+      <rect x="176" y="96" width="28" height="28" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+      <text x="230" y="92" font-size="11" fill="#dc2626" font-weight="700">FOD?</text>
+      <circle class="ns-viz-mech-hotspot" cx="190" cy="110" r="7" data-tip="Mogelijk vreemd voorwerp gemarkeerd"/>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Grok-analyse</h6><p class="korte">Grok analyseert de beelden en markeert mogelijke vreemde voorwerpen.</p><p class="uitleg">Grok 4.7 zou volgens Basenor getraind zijn op technische data van SpaceX, waaronder raketontwikkeling. Dat domeinspecifieke trainen verklaart mogelijk de hoge score van 99,9 procent.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="100" cy="80" r="22" fill="#7c3aed" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="78" y="105" width="44" height="55" rx="10" fill="#7c3aed" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="170" y="60" width="110" height="80" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+      <path d="M200,100 L218,118 L252,82" fill="none" stroke="#7c3aed" stroke-width="5"/>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">mens in de lus</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Beslissing</h6><p class="korte">Het onderdeel wordt vrijgegeven of eerst schoongemaakt na de markering.</p><p class="uitleg">SpaceX spreekt van ondersteunde inspectie, geen volledige automatisering. Dat omzeilt de regelgevings- en veiligheidsvragen van autonome inspectie aan vluchthardware.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom een klein verschil groot is</h5>
+<p>Een verschil van 5,9 procentpunt klinkt bescheiden, maar het gaat om missers, niet om treffers. Een inspecteur die 94 procent haalt, mist in zes van de honderd gevallen iets; bij 99,9 procent daalt dat naar ongeveer één op de duizend. Bij duizenden borescoopinspecties per raket is dat het verschil tussen tientallen gemiste voorwerpen en een handvol. Dat is een fundamenteel ander risicoprofiel. Belangrijk is de rolverdeling. De mens doet het fysieke werk, het model neemt het patroonherkennen over: precies de taak waarin vermoeidheid en eentonigheid menselijke fouten veroorzaken. Voor xAI is dit een belangrijke toepassing. Grok nadert volgens SpaceX-documenten en Similarweb-data honderd miljoen maandelijkse gebruikers, maar staat vooral bekend als chatbot. Industriële inzet bij het zusterbedrijf laat een ander, serieuzer gezicht zien.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Gemiste voorwerpen per 1.000 inspecties</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Mens (94%)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">60</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Grok (99,9%)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:2%">1</div></div></div>
+</div></div>
+<blockquote>De mens houdt de camera vast, het model kijkt mee: ondersteunde inspectie, geen vervanging.</blockquote>
+<h5>Kanttekeningen bij een mooie claim</h5>
+<p>De cijfers verdienen voorzichtigheid. Ze komen van een SpaceX-bestuurder, doorgegeven via een bekende Tesla- en SpaceX-commentator en vervolgens uitgewerkt door Basenor, geen vakmedium voor ruimtevaart. Er is geen methodologie gepubliceerd: hoe is nauwkeurigheid gemeten, op welke set beelden, en tellen valse alarmen mee? Een model dat vaak te veel markeert, kan een hoge detectiescore halen maar inspecteurs overspoelen. Ook de belangenverstrengeling is evident: xAI en SpaceX vallen onder hetzelfde Musk-imperium, en een succesverhaal helpt Grok, dat in prijsvergelijkingen als relatief duur model naar voren komt. Tegelijk past de toepassing in een bredere trend in luchtvaart en industrie, waar computervisie al langer wordt ingezet voor visuele kwaliteitscontrole. Wat nieuw is, is dat een taalmodel met beeldvaardigheden die rol krijgt bij vluchthardware.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>FOD</summary>
+    <div class="ns-viz-concept-body">Foreign object debris: elk materiaal dat tijdens productie in een onderdeel achterblijft, zoals metaalkrullen, draadresten of bevestigingsmiddelen.</div></details>
+  <details class="ns-viz-concept"><summary>Borescoop</summary>
+    <div class="ns-viz-concept-body">Flexibele camera die in buizen en holtes wordt gevoerd om het interieur van een onderdeel te bekijken zonder het te demonteren.</div></details>
+  <details class="ns-viz-concept"><summary>Mens in de lus</summary>
+    <div class="ns-viz-concept-body">Werkwijze waarin AI ondersteunt maar een mens het fysieke werk en de eindverantwoordelijkheid houdt. Vermijdt de regelgevingsvragen van volledig autonome inspectie.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Als de cijfers kloppen, is dit een van de nuttigste toepassingen van generatieve AI tot nu toe: saai, specifiek en veiligheidskritisch. Juist daar loont het om de mens te ontlasten zonder hem te vervangen. Maar een claim van 99,9 procent zonder methode is een persbericht, geen bewijs. SpaceX zou er goed aan doen de meetopzet te publiceren. Tot die tijd laat het verhaal vooral zien hoe xAI zijn model wil positioneren: niet als chatbot, maar als industrieel gereedschap.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=wrYfMsOzzW8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/wrYfMsOzzW8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">SpaceX zet Grok in om vreemde voorwerpen in de fabriek op te sporen 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.basenor.com/blogs/news/grok-at-spacex-5-details-that-matter-on-fod-detection" target="_blank" style="color:var(--accent)">basenor.com ↗</a></div>

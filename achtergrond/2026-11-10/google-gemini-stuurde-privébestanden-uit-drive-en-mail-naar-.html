@@ -1,0 +1,52 @@
+<ul class="bg-bullets">
+<li>Een GitHub-publicatie suggereert dat Gemini Drive-bestanden en mails naar menselijke beoordelaars stuurde.</li>
+<li>Kern: koppelingen met persoonlijke data belanden mogelijk in de reviewketen voor modelverbetering.</li>
+<li>Op Hacker News scoorde het stuk bijna 500 punten; Google reageerde nog niet inhoudelijk.</li>
+<li>De claim is onbevestigd, maar raakt aan de kern van vertrouwen in AI-assistenten.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De zaak in cijfers</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="500" data-prefix="~">~500</div><div class="ns-viz-stat-label">Punten op Hacker News</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Betrokken diensten: Drive en Gmail</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="0">0</div><div class="ns-viz-stat-label">Inhoudelijke reacties van Google</div></div>
+</div></div>
+<h5>Een claim die snel rondging</h5>
+<p>Een publicatie op GitHub suggereert dat Google Gemini persoonlijke bestanden uit Drive en e-mails naar menselijke beoordelaars heeft gestuurd. Het stuk werd op Hacker News een van de best gelezen onderwerpen, met bijna 500 punten. Google heeft volgens de beschikbare informatie nog niet inhoudelijk gereageerd, en de claim is niet onafhankelijk bevestigd. Toch is de ophef begrijpelijk. Menselijke review is geen geheim: grote AI-aanbieders, Google inbegrepen, melden in hun privacyvoorwaarden dat een deel van de gesprekken met hun assistenten door mensen wordt beoordeeld om de kwaliteit te verbeteren, en raden gebruikers aan geen vertrouwelijke informatie in te voeren. Het nieuwe en gevoelige element is dat het hier niet zou gaan om wat gebruikers zelf intypen, maar om inhoud die de assistent zelf ophaalt uit gekoppelde mailboxen en documenten.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚡ De vermoede route van privédata</div>
+<div class="ns-viz-flow"><svg viewBox="0 0 720 130" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="arr-gm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs>
+<rect class="anim-node" x="10" y="35" width="130" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+<text x="75" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Drive &amp; Gmail</text>
+<text x="75" y="78" text-anchor="middle" font-size="11" fill="#44403c">privébestanden</text>
+<line class="anim-line" x1="143" y1="65" x2="173" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr-gm)"/>
+<rect class="anim-node" x="176" y="35" width="130" height="60" rx="9" fill="#7c3aed" fill-opacity=".13" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="241" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Gemini</text>
+<text x="241" y="78" text-anchor="middle" font-size="11" fill="#44403c">haalt inhoud op</text>
+<line class="anim-line" x1="309" y1="65" x2="339" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr-gm)"/>
+<rect class="anim-node" x="342" y="35" width="130" height="60" rx="9" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-width="1.8"/>
+<text x="407" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Gesprek + context</text>
+<text x="407" y="78" text-anchor="middle" font-size="11" fill="#44403c">in reviewselectie</text>
+<line class="anim-line" x1="475" y1="65" x2="505" y2="65" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr-gm)"/>
+<rect class="anim-node" x="508" y="35" width="130" height="60" rx="9" fill="#dc2626" fill-opacity=".1" stroke="#dc2626" stroke-width="1.8"/>
+<text x="573" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">Beoordelaar</text>
+<text x="573" y="78" text-anchor="middle" font-size="11" fill="#44403c">mens leest mee</text>
+</svg></div></div>
+<h5>Waar de grens vervaagt</h5>
+<p>Het probleem zit in de architectuur van moderne assistenten. Om nuttig te zijn, mogen ze in je mail zoeken, documenten samenvatten en agenda's lezen. Het antwoord van het model bevat dan fragmenten van die privé-inhoud. Wordt zo'n gesprek vervolgens geselecteerd voor menselijke kwaliteitscontrole, dan reist de opgehaalde context mogelijk mee naar een annotator, vaak werkzaam bij een externe dienstverlener. Of dat in dit geval zo is gegaan, en of het een fout, een bewuste keuze of een misverstand over instellingen betreft, is onduidelijk zolang Google zwijgt. Het verschil is wezenlijk: een gebruiker die toestemt dat zijn chats worden beoordeeld, stemt niet automatisch toe dat de mail van zijn huisarts of het contract in zijn Drive door een onbekende wordt gelezen. Juist die tweede laag maakt de claim zo explosief.</p>
+<blockquote>Wie een assistent toegang geeft tot zijn mailbox, geeft niet automatisch een annotator toegang tot zijn leven.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat de claim zou betekenen</div>
+<div class="ns-viz-scenario">
+<div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VERWACHTING</h6><p>Menselijke review betreft wat de gebruiker zelf intypt; gekoppelde mail en documenten blijven buiten bereik van beoordelaars.</p></div>
+<div class="ns-viz-scenario-arrow">→</div>
+<div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>VERMOEDEN</h6><p>Opgehaalde inhoud uit Drive en Gmail reist mee met gesprekken en komt zo bij menselijke annotators terecht.</p></div>
+</div></div>
+<h5>Gevolgen voor de AI-sector</h5>
+<p>De timing is ongemakkelijk voor de hele sector. Anthropic brengt deze week nieuwe frontiermodellen uit en zet een beursgang door, IBM wil Claude Mythos in zijn beheerplatform inbouwen en Meta lanceert een klein model voor het repetitieve werk van agents. Al die plannen veronderstellen dat bedrijven en consumenten bereid zijn AI diep toegang te geven tot hun data. OpenAI bouwt intussen een 'Control Room' om modelwerk direct te kunnen stoppen bij veiligheidszorgen, wat laat zien dat toezicht op wat modellen doen een eigen discipline wordt. Voor Europese gebruikers komt daar de AVG bij: als persoonsgegevens uit mail zonder duidelijke grondslag bij beoordelaars belanden, is dat een kwestie voor de Ierse privacytoezichthouder, die voor Google in de EU leidend is. Een snelle, inhoudelijke reactie van Google is daarom geen luxe.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+<details class="ns-viz-concept"><summary>Menselijke review</summary><div class="ns-viz-concept-body">Mensen beoordelen een steekproef van gesprekken met een AI-assistent om fouten op te sporen en het model te verbeteren.</div></details>
+<details class="ns-viz-concept"><summary>Annotator</summary><div class="ns-viz-concept-body">Beoordelaar die modeluitvoer labelt of scoort, vaak in dienst van een externe dienstverlener in plaats van het AI-bedrijf zelf.</div></details>
+<details class="ns-viz-concept"><summary>Gekoppelde context</summary><div class="ns-viz-concept-body">Inhoud die een assistent zelf ophaalt uit verbonden diensten, zoals mail of documenten, om een vraag te beantwoorden.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Zolang de claim onbevestigd is, past voorzichtigheid. Maar het is veelzeggend dat een GitHub-publicatie zonder reactie van Google zoveel aandacht trekt: het vertrouwen is fragiel. AI-bedrijven vragen gebruikers om hun digitale leven open te stellen, maar leggen zelden helder uit wie er meekijkt. De les is breder dan Google: wie agents toegang geeft tot privédata, moet menselijke review van die data standaard uitsluiten, niet verstoppen in voorwaarden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=xGmsDjv7Pt4" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/xGmsDjv7Pt4/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">How to Connect Google Drive to Gemini  (full guide 2026)</div></div></a></div>

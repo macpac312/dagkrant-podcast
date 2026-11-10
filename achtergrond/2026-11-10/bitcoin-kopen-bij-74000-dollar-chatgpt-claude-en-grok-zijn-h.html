@@ -1,0 +1,73 @@
+<ul class="bg-bullets">
+<li>Bitcoin staat na vijf verliesweken rond 75.000 dollar, 40,5 procent onder de top van oktober 2025.</li>
+<li>Strategy kocht gemiddeld voor 75.456 dollar; de koers ligt 0,6 procent onder dat break-evenpunt.</li>
+<li>ChatGPT en Claude adviseren gespreid kopen, Grok wil eerst een slot boven 80.000 dollar.</li>
+<li>De onenigheid van de modellen zegt meer over het format dan over de koers.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Bitcoin op 8 november</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="75034">$75034</div><div class="ns-viz-stat-label">Actuele koers</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="40.5" data-suffix="%">40.5%</div><div class="ns-viz-stat-label">Onder record van $126.080</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="850364">850364</div><div class="ns-viz-stat-label">Bitcoins in bezit van Strategy</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="75456">$75456</div><div class="ns-viz-stat-label">Gemiddelde aankoopprijs Strategy</div></div>
+</div></div>
+<h5>Een koers op een gevoelig punt</h5>
+<p>Bitcoin sloot op 8 november op 74.740 dollar, het laagste slot in een maand, en noteert nu rond 75.034 dollar. Dat is 40,5 procent onder het record van 126.080 dollar uit oktober 2025. De munt staat op weg naar een vijfde verliesweek op rij: het slot lag onder de vorige weekafsluiting van 78.231 dollar. Over de afgelopen week verloor bitcoin 3 procent, in november tot dusver 3,1 procent en sinds het begin van het jaar 14,4 procent. Bovendien handelt de koers 5 procent onder het 20-daags gemiddelde van 79.005 dollar en 8,2 procent onder het 50-daags gemiddelde van 81.760 dollar, wat handelaren doorgaans lezen als teken van een neerwaartse trend. Het meest symbolische niveau is dat van Strategy, de grootste zakelijke houder. Volgens een 8-K-melding bezit het bedrijf 850.364 bitcoins, ter waarde van zo'n 63,8 miljard dollar, gekocht tegen gemiddeld 75.456 dollar. De koers ligt daar slechts 0,6 procent onder.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Koers tegenover de referentieniveaus (dollar)</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Actuele koers</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:60%">75.034</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Break-even Strategy</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:60%">75.456</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Weekslot 1 nov</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:62%">78.231</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">20-daags gemiddelde</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:63%">79.005</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">50-daags gemiddelde</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:65%">81.760</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Record okt 2025</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">126.080</div></div></div>
+</div></div>
+<h5>Drie modellen, drie verhalen</h5>
+<p>Yahoo Finance legde de vraag of bitcoin rond 75.000 dollar een koopje is voor een belegger met een horizon van drie jaar, voor aan ChatGPT, Claude en Grok. Hun antwoorden lopen sterk uiteen. ChatGPT en Claude zien een goed moment voor de lange termijn: ChatGPT adviseert geleidelijk instappen, Claude gespreide aankopen. Grok raadt aan te wachten tot de koers boven 80.000 dollar sluit. Ook in hun verklaringen verschillen ze. Claude wijt de daling aan verkopen door bedrijven en verwacht nog een daling van 10 tot 20 procent; ChatGPT en Grok wijzen op uitstroom uit bitcoin-ETF's. De koersdoelen tonen dezelfde spreiding. ChatGPT voorspelt eind 2026 een stijging van 13,3 procent en eind 2027 van 59,9 procent. Claude ziet eerst een lichte daling van 4 procent en daarna een stijging van 39,9 procent, Grok eerst een daling van 9,4 procent en dan een stijging van 46,6 procent.</p>
+<div class="ns-viz"><div class="ns-viz-title">📈 Voorspellingen vanaf $75.034 (procent)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-4bd6ff15"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-4bd6ff15'),{
+    type:'bar',
+    data:{
+      labels:['ChatGPT','Claude','Grok'],
+      datasets:[
+        {label:'Eind 2026',data:[13.3,-4,-9.4],backgroundColor:'rgba(167,139,250,.7)',borderColor:'#a78bfa',borderWidth:1.5,borderRadius:6},
+        {label:'Eind 2027',data:[59.9,39.9,46.6],backgroundColor:'rgba(124,58,237,.85)',borderColor:'#7c3aed',borderWidth:1.5,borderRadius:6}
+      ]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:true,labels:{color:'#78716c'}},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<blockquote>ChatGPT en Claude zeggen gespreid kopen voor wie drie jaar vasthoudt; Grok zegt wachten op een slot boven 80.000 dollar.</blockquote>
+<h5>Wat de onenigheid betekent</h5>
+<p>Dergelijke AI-voorspellingen zijn een populair format bij financiële sites, en dat is precies het probleem. Een taalmodel heeft geen bijzondere kennis van toekomstige koersen; het reproduceert redeneringen die in zijn trainingsdata en in de aangeleverde cijfers zitten. Dat de drie modellen het oneens zijn, laat vooral zien hoe gevoelig de uitkomst is voor framing en willekeur. Interessanter is de onderliggende vraag die ze alle drie raken: wat gebeurt er als de koers ruim onder het break-evenpunt van Strategy zakt? Het bedrijf is uitgegroeid tot een hefboom op bitcoin, en een langdurige koers onder de aankoopprijs zet druk op het verhaal waarmee het kapitaal ophaalt. Voor Grok is het een week van aandacht: de chatbot nadert volgens SpaceX-documenten 100 miljoen maandelijkse gebruikers, maar is volgens OrcaRouter ook zestien keer duurder dan een concurrent.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Het advies per model</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>ChatGPT</h6>
+    <ul><li>Geleidelijk kopen voor de lange termijn</li><li>Wijst op uitstroom uit ETF's</li><li>Meest optimistisch: +59,9% eind 2027</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Claude</h6>
+    <ul><li>Gespreid kopen</li><li>Wijt daling aan verkopen door bedrijven</li><li>Verwacht nog 10 tot 20% daling</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Grok</h6>
+    <ul><li>Wachten op slot boven 80.000 dollar</li><li>Wijst op uitstroom uit ETF's</li><li>Eerst -9,4%, dan +46,6%</li></ul></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>De vraag of bitcoin bij 75.000 dollar een koopje is, kan geen taalmodel beantwoorden; de spreiding in hun voorspellingen bewijst dat. Wat wel telt, is het niveau van Strategy. Zolang de koers rond 75.456 dollar schommelt, is dat een psychologische grens voor de hele markt. Zakt bitcoin er duidelijk onder, dan wordt de grootste zakelijke houder van een steunpilaar een risicofactor. Dat inzicht is nuttiger dan elk AI-koersdoel.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=FLCPWOSXrrI" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/FLCPWOSXrrI/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Duet is hier (beter dan ChatGPT Dots en Grok Bot?)</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://finance.yahoo.com/markets/crypto/articles/ai-price-prediction-bitcoin-buy-213927196.html" target="_blank" style="color:var(--accent)">finance.yahoo.com ↗</a></div>

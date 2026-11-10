@@ -1,0 +1,60 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/07/meta_logo-2.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Meta lanceert Muse Ember, zijn kleinste en zuinigste AI-model, gebouwd voor routinewerk van agents.</li>
+<li>Het kost circa $0,14 per taak, tegen $2,39 voor Muse Spark 1.3 bij bijna gelijke score.</li>
+<li>Bij echt programmeerwerk verliest het van Claude Haiku: 27,2 tegen 34,9 procent.</li>
+<li>De AI-markt splitst zich: dure denkers bovenaan, goedkope werkpaarden voor de massa.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Muse Ember in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="0.14">$0.14</div><div class="ns-viz-stat-label">Kosten per taak (Artificial Analysis)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="2.39">$2.39</div><div class="ns-viz-stat-label">Muse Spark 1.3, zelfde test</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1" data-suffix=" mln">1 mln</div><div class="ns-viz-stat-label">Tokens contextvenster</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Modaliteiten: tekst, beeld, audio, video</div></div>
+</div></div>
+<h5>Het onzichtbare werk van agents</h5>
+<p>Wie aan AI-agents denkt, ziet een systeem dat zelfstandig complexe opdrachten uitvoert. In de praktijk bestaat het meeste werk uit eentonige stappen: een tool aanroepen, een verzoek naar het juiste onderdeel sturen, gegevens uit een document halen, een klein stukje code aanpassen. Voor precies dat werk heeft Meta Muse Ember gebouwd, zijn kleinste en meest efficiënte model tot nu toe, meldt The Decoder. Het verwerkt tekst, beeld, audio en video en kan tot een miljoen tokens tegelijk lezen. Het is direct beschikbaar via de Meta Model API en Muse Code. De prijs is agressief: 10 dollarcent per miljoen inputtokens en 50 dollarcent per miljoen outputtokens. Meta claimt bovendien op elk redeneerniveau meer intelligentie per dollar te leveren dan Claude Haiku 5.5 en GPT-6 Luna, de kleine modellen van Anthropic en OpenAI.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:.3rem .5rem">Muse Ember</th>
+    <th style="text-align:right;padding:.3rem .5rem">Prijs per mln tokens</th>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Input</td><td style="text-align:right">$0,10</td></tr>
+    <tr><td style="padding:.25rem .5rem">Output</td><td style="text-align:right">$0,50</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">API-tarieven Muse Ember volgens Meta.</p>
+</div>
+<div class="ns-viz"><div class="ns-viz-title">📏 Bijna dezelfde score, fractie van de prijs</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:7"/>
+  </svg>
+  <div class="ns-viz-gauge-val">36 / 37</div>
+  <div class="ns-viz-gauge-label">Score Muse Ember t.o.v. Muse Spark 1.3 (Artificial Analysis) — voor 6% van de kosten</div>
+</div></div>
+<h5>Goedkoop, maar geen denker</h5>
+<p>De vergelijking met Meta's eigen grotere model is veelzeggend. In de test van Artificial Analysis haalt Muse Ember een score van 36, tegen 37 voor Muse Spark 1.3. Het verschil is één punt, maar de prijs per taak daalt van 2,39 dollar naar ongeveer 14 dollarcent: zo'n zeventienmaal goedkoper. Voor bedrijven die miljoenen agentstappen per dag laten uitvoeren, is dat het verschil tussen een experiment en een rendabel product. Toch laat Meta zelf zien waar de grens ligt. Op FrontierCode 2.0-AA, een test met echte programmeertaken, scoort Claude Haiku 34,9 procent en Muse Ember 27,2 procent. Ook volgens Meta schiet het model tekort bij taken die werkelijk redeneren vragen. Dat is geen schande maar een ontwerpkeuze: een klein model wint op snelheid en kosten, en verliest zodra een probleem meerdere denkstappen vergt die niet in een patroon passen.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Echt programmeerwerk: FrontierCode 2.0-AA</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Claude Haiku 5.5</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:34.9%">34,9%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Muse Ember</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:27.2%">27,2%</div></div></div>
+</div></div>
+<blockquote>Muse Ember is niet gebouwd om het slimste model te zijn, maar om het goedkoopste werkpaard te worden in een wereld vol agents.</blockquote>
+<h5>Een markt in twee lagen</h5>
+<p>De lancering past in een duidelijk patroon. Aan de top brengen AI-labs steeds zwaardere modellen uit: Anthropic presenteerde in dezelfde week Claude Fable 5.2 en Mythos 5.2, sterker in code, wetenschap en cyber, met een zwaardere versie alleen voor geverifieerde organisaties. IBM wil de cybervaardigheden van Mythos in zijn beheerplatform inbouwen. Daaronder ontstaat een prijzenslag om de goedkope laag, waar volume het verdienmodel is. Agentsystemen combineren beide werelden: een groot model plant en beslist, kleine modellen voeren de honderden tussenstappen uit. Wie die onderlaag domineert, verdient aan elke klik. Voor Meta, dat lang vooral bekendstond om open modellen, is het een poging om met prijs en efficiëntie terrein te winnen op Anthropic en OpenAI. Kanttekening: de meeste vergelijkingen komen uit Meta's eigen tests, onafhankelijke metingen moeten het beeld bevestigen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Tool call</summary>
+    <div class="ns-viz-concept-body">Een agent roept een extern hulpmiddel aan, zoals een zoekfunctie, database of rekenmodule, en verwerkt het antwoord in zijn volgende stap.</div></details>
+  <details class="ns-viz-concept"><summary>Routering</summary>
+    <div class="ns-viz-concept-body">Bepalen welk model of welk onderdeel een verzoek moet afhandelen. Vaak doet een klein, goedkoop model dit voordat een groot model ingrijpt.</div></details>
+  <details class="ns-viz-concept"><summary>Intelligentie per dollar</summary>
+    <div class="ns-viz-concept-body">Benchmarkprestatie gedeeld door de kosten van een taak. Meta claimt hierop beter te scoren dan Claude Haiku 5.5 en GPT-6 Luna.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Muse Ember laat zien waar de echte economische strijd in AI zich afspeelt: niet alleen in de prestigieuze top, maar in de onderlaag van miljarden kleine taken. Daar is een model dat bijna even goed scoort voor een fractie van de prijs een serieuze bedreiging voor de concurrentie. Maar wie het inzet voor werk dat echt redeneren vraagt, betaalt de besparing terug in fouten. De slimme gebruiker combineert: Ember voor het sjouwwerk, een zwaarder model voor het denkwerk.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=ToEfj_sjw8A" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/ToEfj_sjw8A/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Meta Muse Ember: Het 10-centmodel gebouwd voor agentvolume #AI #AINews</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/meta-launches-muse-ember-a-small-ai-model-built-for-the-repetitive-work-agents-actually-do/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

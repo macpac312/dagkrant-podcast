@@ -1,0 +1,57 @@
+---
+titel: "Motorola bevestigt per ongeluk: brede vouwtelefoon heet Razr Flex en komt in 2027"
+url: https://androidworld.nl/nieuws/motorola-komt-in-2027-met-een-brede-foldable-en-hij-heet-razr-flex/
+bron: motorola-razr-flex
+kind: motorola-razr-flex
+gegenereerd: 2026-11-10T05:39:21
+---
+
+© androidworld.nl
+
+Een te vroeg gepubliceerde supportpagina bevestigt de naam Razr Flex en lancering in 2027.
+
+Motorola mist daarmee waarschijnlijk de eerder gelekte introductie in december 2026.
+
+Het toestel kiest voor compact: een buitenscherm van vermoedelijk 4,97 inch.
+
+Motorola stapt in de brede-foldablerace tegen Apple, Samsung en Huawei.
+
+Een lek uit eigen huis
+
+Motorola komt in 2027 met een bredere vouwtelefoon die Razr Flex heet. Dat blijkt niet uit een aankondiging, maar uit een supportpagina die het bedrijf te vroeg online zette, melden Androidworld, Tbreak en 9to5Google. De pagina verklapt weinig, maar bevestigt wel de naam en het jaar. Het toestel was al eerder geteased: rond Apples presentatie van de iPhone Duo liet Motorola een silhouet zien van een zwart apparaat, zonder verdere details. Motorola maakt al jaren vouwtelefoons. Eerst waren dat vooral clamshells, die als een oester openklappen, aangevuld met concepten zoals toestellen met rolbare schermen. Dit jaar kwam daar met de Razr Fold een boekvormig model bij. De Razr Flex wordt het derde formaat in de lijn, en het eerste dat zich richt op de jongste trend: de brede foldable. Dat formaat, met een binnenscherm dat meer op een klein tablet lijkt, is dit jaar door Apple en Huawei in één klap van niche naar hoofdcategorie getild.
+
+Compact tegen de grote spelers
+
+Het interessante zit in de keuzes. Volgens de geruchten krijgt de Razr Flex 3D-glas en een scherm waarin de vouw nauwelijks zichtbaar is, met waarschijnlijk twee camera's achterop, vergelijkbaar met de brede vouwtoestellen van Apple en Samsung. Het buitenscherm wordt vermoedelijk slechts 4,97 inch, duidelijk kleiner dan bij andere brede foldables. Motorola kiest dus niet voor maximaal schermoppervlak, maar voor compactheid. Dat is een bewuste positionering. Waar Apple met de iPhone Duo, Samsung met de verwachte Galaxy Z Fold 8 en Huawei met de Pura X-reeks het brede formaat tot vlaggenschip maken, probeert Motorola een toestel te bouwen dat dichtgeklapt in elke broekzak past. Volgens AndroidPure betekent de vermelding als 2027-model wel dat de eerder gelekte introductie in december 2026 waarschijnlijk niet doorgaat. Ook Gizmochina en Braziliaanse sites puzzelen nog op de exacte datum.
+
+clamshell
+
+breed (Flex)
+
+boek (Fold)
+
+Schematisch: de drie vouwformaten in de Razr-lijn.
+
+Motorola gaat niet voor het grootste scherm, maar voor de kleinste broekzak: compact als antwoord op de brede-foldablerace.
+
+Gevolgen en perspectieven
+
+Dat het toestel naar 2027 schuift, is commercieel minder erg dan het lijkt. Androidworld wijst erop dat fabrikanten in de laatste maanden van het jaar zelden nieuwe telefoons uitbrengen: ze verkopen in de feestdagen liever hun bestaande modellen en bewaren nieuwkomers voor het nieuwe jaar. Toch heeft het uitstel een prijs. Apple heeft met de iPhone Duo een voorsprong genomen, en Huawei meldt via Huawei Central dat zijn brede Pura X Max in China goed verkoopt tegenover Apples nieuwkomer. Elke maand die Motorola later komt, geeft concurrenten meer tijd om de categorie te definiëren. Voor Motorola, dat in Europa een middenpositie in de smartphonemarkt inneemt, is een onderscheidend formaat juist een kans om zichtbaar te blijven. Compactheid kan dat onderscheid bieden, mits prijs en software overtuigen.
+
+Conclusie
+
+Het lek is onhandig, maar niet schadelijk: het bevestigt vooral dat Motorola de brede foldable serieus neemt. De echte vraag is of compact een niche of een sterke propositie is. Apple en Huawei bewijzen dat de brede vorm verkoopt; Motorola wedt erop dat kleiner beter is. Dat kan slim zijn, maar wie later komt, moet duidelijk beter of duidelijk anders zijn. De Razr Flex kiest voor anders.
+
+▶ YouTube
+
+Motorola Razr Flex — Samsung zag dit niet aankomen
+
+Bronnen:
+
+ 
+
+androidworld.nl ↗
+
+ • 
+
+9to5google.com ↗

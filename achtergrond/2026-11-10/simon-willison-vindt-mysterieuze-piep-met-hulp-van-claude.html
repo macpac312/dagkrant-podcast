@@ -1,0 +1,74 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://static.simonwillison.net/static/2026/beep-locator-card.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© simonwillison.net</div></div><ul class="bg-bullets">
+<li>Simon Willison liet Claude Code een systeem bouwen om een mysterieuze piep te lokaliseren.</li>
+<li>Vijf apparaten luisterden mee en trianguleerden het geluid in een kamer vol verhuisdozen.</li>
+<li>De bron, tot op ongeveer 40 centimeter: een oude koolmonoxidemelder met lege batterijen.</li>
+<li>Het voorbeeld toont hoe AI wegwerpsoftware voor één klus rendabel maakt.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe Beep Locator een piep vindt</div>
+<div class="ns-viz-mech-subtitle">Van losse apparaten naar een kruisje op de kaart van de kamer</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Luisteraars</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Posities</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Kloptest</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Triangulatie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="130" y="70" width="60" height="60" rx="6" fill="#7c3aed"/><text x="160" y="104" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Python-server</text><g fill="#a78bfa"><rect x="30" y="30" width="34" height="46" rx="4"/><rect x="256" y="30" width="34" height="46" rx="4"/><rect x="30" y="130" width="22" height="40" rx="4"/><rect x="250" y="135" width="50" height="32" rx="3"/><rect x="140" y="160" width="40" height="28" rx="3"/></g><g stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3"><line x1="64" y1="53" x2="130" y2="85"/><line x1="256" y1="53" x2="190" y2="85"/><line x1="52" y1="150" x2="130" y2="120"/><line x1="250" y1="150" x2="190" y2="120"/><line x1="160" y1="160" x2="160" y2="130"/></g></svg></div>
+<div class="ns-viz-mech-info"><h6>Luisteraars</h6><p class="korte">Een Python-webserver toont de interface; apparaten verbinden via QR-code of URL.</p><p class="uitleg">Willison gebruikte twee iPads, een telefoon, een MacBook Pro en een Surface Ultra. Elk apparaat wordt een microfoon op een eigen plek in de kamer.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="25" width="260" height="150" fill="#fff" stroke="#7c3aed" stroke-width="2"/><g fill="#a78bfa"><circle cx="60" cy="50" r="9"/><circle cx="260" cy="50" r="9"/><circle cx="60" cy="150" r="9"/><circle cx="260" cy="150" r="9"/><circle cx="160" cy="160" r="9"/></g><path d="M150 90 L178 90" stroke="#7c3aed" stroke-width="3"/><path d="M170 82 L180 90 L170 98" fill="none" stroke="#7c3aed" stroke-width="3"/><text x="160" y="115" text-anchor="middle" font-size="11" fill="#7c3aed" font-weight="700">Rough mode: slepen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Posities</h6><p class="korte">De apparaten spelen geluiden naar elkaar om hun onderlinge afstand te schatten.</p><p class="uitleg">Dat werkte niet bijzonder goed. Daarom kwam er een 'Rough mode': de gebruiker sleept de iconen grofweg naar hun plek, waarna de geluidsmetingen die posities bijstellen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="25" width="260" height="150" fill="#fff" stroke="#7c3aed" stroke-width="2"/><g fill="#7c3aed"><path d="M110 80 L120 90 L110 100 L100 90 Z"/><path d="M200 120 L210 130 L200 140 L190 130 Z"/><path d="M170 60 L180 70 L170 80 L160 70 Z"/></g><g fill="none" stroke="#a78bfa" stroke-width="2"><circle cx="110" cy="90" r="20"/><circle cx="110" cy="90" r="34"/></g><text x="160" y="190" text-anchor="middle" font-size="11" fill="#44403c">klappen = ruit op de kaart</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Kloptest</h6><p class="korte">Met een klapmodus test de gebruiker of het systeem een geluid correct plaatst.</p><p class="uitleg">Willison klapte op verschillende plekken in de kamer; elke klap verscheen als ruit op de kaart. Zo kreeg hij vertrouwen dat het systeem een geluid werkelijk kon lokaliseren.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="25" width="260" height="150" fill="#fff" stroke="#7c3aed" stroke-width="2"/><g stroke="#a78bfa" stroke-width="1.5"><line x1="60" y1="50" x2="205" y2="110"/><line x1="260" y1="50" x2="205" y2="110"/><line x1="60" y1="150" x2="205" y2="110"/><line x1="260" y1="150" x2="205" y2="110"/></g><circle cx="205" cy="110" r="16" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/><g stroke="#dc2626" stroke-width="4"><line x1="197" y1="102" x2="213" y2="118"/><line x1="213" y1="102" x2="197" y2="118"/></g><text x="205" y="145" text-anchor="middle" font-size="11" fill="#7c3aed" font-weight="700">± 40 cm</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Triangulatie</h6><p class="korte">Na bevestiging van de juiste piep berekent het systeem de meest waarschijnlijke plek.</p><p class="uitleg">De gebruiker markeert een opgenomen geluid als 'de mysterieuze piep'. Daarna luistert het systeem gericht naar die frequentie, meet de tussenpozen en combineert de metingen tot een locatie, hier tot op ongeveer 40 centimeter.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Een huishoudelijk mysterie</h5>
+<p>Het begon met een herkenbaar ergernisje. Het huis van ontwikkelaar en blogger Simon Willison heeft een kamer vol verhuisdozen die na de laatste verhuizing nooit zijn uitgepakt. Een paar weken geleden begon daar af en toe iets te piepen. De piepjes lagen zo ver uit elkaar dat het vrijwel onmogelijk was om op het gehoor te bepalen waar het geluid vandaan kwam, en elke doos doorzoeken was geen aantrekkelijk vooruitzicht. Willison koos een ongebruikelijke route: hij liet Claude Code een programma bouwen dat hij Beep Locator noemde. Het idee is eenvoudig, de uitvoering niet: zet meerdere apparaten met microfoons door de kamer, laat ze tegelijk luisteren en bereken uit de verschillen tussen hun waarnemingen waar het geluid ontstaat. Het is in feite een huiskamerversie van de technieken waarmee ook schoten of onderzeeërs worden gelokaliseerd.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 De zoektocht in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="5">5</div><div class="ns-viz-stat-label">Luisterende apparaten</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="±" data-target="40" data-suffix=" cm">±40 cm</div><div class="ns-viz-stat-label">Nauwkeurigheid van de locatie</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2007">2007</div><div class="ns-viz-stat-label">Jaar van het BeepBeep-paper</div></div>
+</div></div>
+<h5>Van wetenschappelijk paper naar wegwerpsoftware</h5>
+<p>Opvallend is hoe snel Claude de wetenschappelijke basis vond. Het model wees Willison op BeepBeep, een paper uit 2007 van Chunyi Peng en collega's over een nauwkeurig, akoestisch systeem om afstanden te meten en apparaten te lokaliseren met gewone consumentenelektronica. Niet alles werkte meteen: het laten piepen van apparaten naar elkaar om hun posities te bepalen bleek onbetrouwbaar. Willison loste dat pragmatisch op met een 'Rough mode', waarin je de apparaten handmatig ongeveer op een kaart sleept. Een klapmodus diende als test. Het eindresultaat werkte zoals bedoeld: binnen ongeveer 40 centimeter wees het systeem de plek aan. Onder de stapel dozen lag een oude koolmonoxidemelder die dringend om nieuwe batterijen vroeg. Wat vroeger een weekendproject van een specialist was, werd zo een klus die een thuisgebruiker met een codeeragent zelf kan klaren.</p>
+<blockquote>De piep bleek een oude koolmonoxidemelder die dringend nieuwe batterijen nodig had: een triviale oorzaak, gevonden met software die er speciaal voor werd gebouwd.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat AI-programmeren verandert</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>VOOR</h6>
+    <p>Maatwerksoftware voor één klus is te duur. Je doorzoekt dus elke doos, of je laat het piepen.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>NA</h6>
+    <p>Een codeeragent bouwt een werkend lokalisatiesysteem op basis van een paper uit 2007.</p></div>
+</div></div>
+<h5>Wat het zegt over de codeeragent</h5>
+<p>Het verhaal is anekdotisch, maar het raakt aan een bredere verschuiving. Codeeragents maken software rendabel die nooit gebouwd zou worden omdat ze maar één keer nodig is. Willison is daarin een graadmeter: hij documenteert al jaren hoe hij taalmodellen in de praktijk gebruikt en voegde in dezelfde week de nieuwe modellen Fable 5.2 en Mythos 5.2 toe aan zijn commandoregeltool llm-anthropic. Die modellen kosten 8 en 40 dollar per miljoen tokens, 20 procent minder dan voorheen, en Fable scoort 65 bij Artificial Analysis. De concurrentie zit niet stil: Cursor en Google geven hun codeeragents een stem, terwijl Claude Code nog stil blijft. Het Beep Locator-voorbeeld laat echter zien dat de waarde niet in de interface zit, maar in het vermogen om kennis, zoals een vergeten paper, om te zetten in werkende code.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Triangulatie</summary>
+    <div class="ns-viz-concept-body">Een locatie bepalen uit metingen vanaf meerdere bekende punten. Hier: microfoons op verschillende plekken die hetzelfde geluid horen.</div></details>
+  <details class="ns-viz-concept"><summary>BeepBeep</summary>
+    <div class="ns-viz-concept-body">Onderzoek uit 2007 naar akoestische afstandsmeting en lokalisatie met gewone consumentenapparaten, door Peng, Shen, Zhang, Li en Tan.</div></details>
+  <details class="ns-viz-concept"><summary>Claude Code</summary>
+    <div class="ns-viz-concept-body">Anthropics codeeragent die op instructie zelfstandig software schrijft, test en aanpast. Willison liet er Beep Locator mee bouwen.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Het mooiste aan dit verhaal is de disproportie: een geavanceerd lokalisatiesysteem om een vergeten koolmonoxidemelder te vinden. Juist daarin zit de les. Als software bijna gratis wordt om te maken, verschuift de vraag van 'is het de moeite waard?' naar 'wat wil ik weten?'. Dat de eerste aanpak faalde en een menselijke pragmatische ingreep nodig was, is net zo leerzaam. De agent levert de bouwstenen; de gebruiker blijft degene die bepaalt wanneer goed genoeg goed genoeg is.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Pt3Od3myqGU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Pt3Od3myqGU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Simon Willison vindt mysterieuze piep met hulp van Claude 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>

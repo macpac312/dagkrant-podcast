@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI bouwt 'Control Room' om modelwerk direct te kunnen stoppen",
+  "summary": "Een centraal systeem volgt alle modeltaken in de onderzoeksinfrastructuur en grijpt in bij veiligheidszorgen.\n\nOpenAI beschrijft Control Room, een centraal systeem dat modelwerk in de onderzoeksinfrastructuur volgt en het snel kan stoppen als er veiligheids- of beveiligingszorgen zijn.\n\nHet systeem moet overzicht geven over trainings- en evaluatietaken die verspreid over clusters draaien.",
+  "sources": [
+    "https://openai.com/index/control-room"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-10",
+  "slug": "openai-bouwt-control-room-om-modelwerk-direct-te-kunnen-stop",
+  "tts_slug": "openai-bouwt-control-room-om-modelwerk-direct-te-kunnen-stop",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-10T05:39:20",
+  "size_kb": 12
+}

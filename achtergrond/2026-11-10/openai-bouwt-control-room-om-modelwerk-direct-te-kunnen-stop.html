@@ -1,0 +1,71 @@
+<ul class="bg-bullets">
+<li>OpenAI beschrijft Control Room, een centraal systeem dat al het modelwerk volgt.</li>
+<li>Het overziet trainings- en evaluatietaken die verspreid over clusters draaien.</li>
+<li>Bij veiligheids- of beveiligingszorgen kan het die taken snel stilleggen.</li>
+<li>Veiligheid verschuift van modelregels naar beheersing van de eigen infrastructuur.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Control Room in kern</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Centraal overzicht over alle clusters</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Soorten taken: training en evaluatie</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Stopgronden: veiligheid en beveiliging</div></div>
+</div></div>
+<h5>Een noodrem voor het lab zelf</h5>
+<p>In het debat over AI-veiligheid ging het lange tijd vooral over wat een model naar buiten toe mag zeggen of doen. OpenAI verlegt met Control Room de aandacht naar binnen. Het bedrijf beschrijft een centraal systeem dat al het modelwerk in zijn onderzoeksinfrastructuur volgt en dat werk snel kan stoppen wanneer er veiligheids- of beveiligingszorgen opduiken. Het gaat om trainings- en evaluatietaken die verspreid over clusters draaien, vaak tegelijk en door verschillende teams gestart. In zo'n omgeving is het niet vanzelfsprekend dat iemand op elk moment weet welk model waar draait en wat het aan het doen is. Control Room moet dat overzicht leveren. Het idee sluit aan bij wat in andere risicovolle sectoren al lang normaal is: een controlekamer met zicht op het hele proces en de bevoegdheid om in te grijpen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe Control Room ingrijpt</div>
+<div class="ns-viz-mech-subtitle">Van verspreide taken naar één knop om te stoppen</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Verspreid werk</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Centraal zicht</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Signaal</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Stop</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#a78bfa" opacity=".5" stroke="#7c3aed"><rect x="20" y="40" width="80" height="120" rx="6"/><rect x="120" y="40" width="80" height="120" rx="6"/><rect x="220" y="40" width="80" height="120" rx="6"/></g><g fill="#7c3aed"><rect x="30" y="55" width="60" height="10"/><rect x="30" y="75" width="60" height="10"/><rect x="30" y="95" width="60" height="10"/><rect x="130" y="55" width="60" height="10"/><rect x="130" y="75" width="60" height="10"/><rect x="230" y="55" width="60" height="10"/><rect x="230" y="75" width="60" height="10"/><rect x="230" y="95" width="60" height="10"/><rect x="230" y="115" width="60" height="10"/></g><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">clusters met trainings- en evaluatietaken</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Verspreid werk</h6><p class="korte">Trainings- en evaluatietaken draaien verspreid over meerdere rekenclusters.</p><p class="uitleg">In een groot AI-lab starten teams voortdurend nieuwe taken op verschillende machines. Zonder centraal register is lastig te overzien welk model waar draait en met welke rechten.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="20" width="120" height="70" rx="8" fill="#7c3aed"/><rect x="110" y="30" width="100" height="45" fill="#ede9fe"/><g fill="#7c3aed"><rect x="118" y="40" width="25" height="6"/><rect x="118" y="52" width="40" height="6"/><rect x="118" y="64" width="30" height="6"/></g><text x="160" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Control Room</text><g fill="#a78bfa" stroke="#7c3aed"><rect x="20" y="150" width="60" height="35" rx="5"/><rect x="130" y="150" width="60" height="35" rx="5"/><rect x="240" y="150" width="60" height="35" rx="5"/></g><g stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3"><line x1="50" y1="150" x2="140" y2="90"/><line x1="160" y1="150" x2="160" y2="110"/><line x1="270" y1="150" x2="180" y2="90"/></g></svg></div>
+<div class="ns-viz-mech-info"><h6>Centraal zicht</h6><p class="korte">Eén systeem volgt alle modeltaken in de onderzoeksinfrastructuur.</p><p class="uitleg">Control Room bundelt informatie over lopend werk op één plek. Dat geeft het veiligheidsteam overzicht dat voorheen over clusters en teams versnipperd was.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="40" width="120" height="80" rx="8" fill="#7c3aed"/><rect x="110" y="50" width="100" height="55" fill="#ede9fe"/><polygon points="160,58 185,98 135,98" fill="#dc2626"/><text x="160" y="94" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">!</text><path d="M60 150 Q160 120 260 150" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="5 4"/><text x="160" y="175" text-anchor="middle" font-size="11" fill="#44403c">veiligheids- of beveiligingszorg</text><circle class="ns-viz-mech-hotspot" cx="160" cy="80" r="7" data-tip="Zorg over gedrag of over beveiliging van het werk"/></svg></div>
+<div class="ns-viz-mech-info"><h6>Signaal</h6><p class="korte">Er ontstaat een zorg over veiligheid of beveiliging van een lopende taak.</p><p class="uitleg">Dat kan gaan over onverwacht gedrag van een model tijdens training of evaluatie, maar ook over beveiliging: werk dat niet had mogen draaien of gevoelige gewichten die risico lopen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><polygon points="160,30 205,48 222,92 205,136 160,154 115,136 98,92 115,48" fill="#dc2626"/><text x="160" y="100" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">STOP</text><g fill="#a78bfa" opacity=".4"><rect x="20" y="160" width="60" height="25" rx="4"/><rect x="130" y="165" width="60" height="25" rx="4"/><rect x="240" y="160" width="60" height="25" rx="4"/></g></svg></div>
+<div class="ns-viz-mech-info"><h6>Stop</h6><p class="korte">Het betrokken modelwerk wordt snel stilgelegd, ongeacht op welk cluster het draait.</p><p class="uitleg">De kern van Control Room is snelheid: niet eerst uitzoeken waar een taak loopt, maar direct kunnen ingrijpen. Daarna kan het team in rust onderzoeken wat er misging.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom juist nu</h5>
+<p>De timing is geen toeval. Frontiermodellen worden steeds vaker ingezet als agents die zelfstandig taken uitvoeren, code schrijven en systemen benaderen. Daarmee verandert ook het risico binnen het lab: een model dat tijdens training of evaluatie onverwacht gedrag vertoont, draait niet in een afgeschermde demo maar op echte infrastructuur, met toegang tot rekenkracht en soms tot netwerken. Tegelijk is die infrastructuur zelf een doelwit. De gewichten van een topmodel vertegenwoordigen miljarden aan investeringen en zijn aantrekkelijk voor criminelen en staten. Een systeem dat zowel gedrag als beveiliging bewaakt, adresseert beide zorgen in één keer. Concurrent Anthropic kiest in dezelfde week een andere route met zijn nieuwe modellen Fable 5.2 en Mythos 5.2: de risico's worden aan de uitgang beheerst, met een publieke versie die gevoelige biologie- en cybervragen blokkeert en een zwaardere versie alleen voor geverifieerde organisaties.</p>
+<blockquote>Wie een krachtig model niet op elk moment kan stilzetten, beheerst het niet; Control Room maakt van die stelling een technische voorziening.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Twee routes naar beheersing</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>OpenAI: Control Room</h6>
+    <ul><li>Beheersing binnen de eigen infrastructuur</li><li>Volgt training en evaluatie centraal</li><li>Kan modelwerk direct stoppen</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Anthropic: Fable en Mythos 5.2</h6>
+    <ul><li>Beheersing bij de uitrol naar gebruikers</li><li>Publieke versie blokkeert gevoelige verzoeken</li><li>Zwaarste versie alleen voor geverifieerde organisaties</li></ul></div>
+</div></div>
+<h5>Wat het betekent voor toezicht</h5>
+<p>Voor toezichthouders, ook in Europa, is Control Room interessant omdat het iets controleerbaars oplevert. De Europese AI-verordening vraagt aanbieders van de krachtigste modellen om risico's te beoordelen en te beperken, maar zegt weinig over hoe dat er in een rekencentrum uitziet. Een centrale stopvoorziening is concreet: je kunt vragen of hij bestaat, wie hem bedient en hoe vaak hij is gebruikt. Tegelijk blijft het een systeem dat OpenAI zelf ontwerpt, beheert en beschrijft. Er is geen externe partij die bevestigt dat het werkt zoals beloofd. Dat wantrouwen is niet theoretisch: elders in deze krant blijkt dat bij Google privébestanden uit Drive en mail bij menselijke beoordelaars belandden, een voorbeeld van hoe interne processen buiten het zicht van gebruikers kunnen ontsporen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Trainingstaak</summary>
+    <div class="ns-viz-concept-body">Het rekenwerk waarin een model op grote hoeveelheden data leert. Kan weken duren en draait op duizenden chips tegelijk.</div></details>
+  <details class="ns-viz-concept"><summary>Evaluatietaak</summary>
+    <div class="ns-viz-concept-body">Het testen van een model op vaardigheden en risico's, bijvoorbeeld of het gevaarlijke kennis prijsgeeft of onverwacht handelt.</div></details>
+  <details class="ns-viz-concept"><summary>Cluster</summary>
+    <div class="ns-viz-concept-body">Een groep gekoppelde servers met AI-chips. Grote labs verdelen hun werk over meerdere clusters, soms in verschillende datacenters.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Control Room is een verstandige en eigenlijk vanzelfsprekende stap: een lab dat modellen bouwt die het zelf niet volledig begrijpt, hoort een noodrem te hebben die altijd werkt. Dat OpenAI dit nu uitgebreid beschrijft, zegt ook iets over de concurrentie om vertrouwen in een sector die naar de beurs kijkt. Maar een noodrem waarvan alleen de bouwer weet of hij werkt, is een belofte, geen garantie. De waarde van Control Room hangt af van de vraag of OpenAI buitenstaanders laat meekijken.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=9QIrvML5DAc" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/9QIrvML5DAc/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI bouwt 'Control Room' om modelwerk direct te kunnen stoppen 2026</div></div></a></div>

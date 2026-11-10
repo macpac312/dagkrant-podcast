@@ -1,0 +1,67 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://cms.orcarouter.ai/api/media/file/1-3938-1200x630.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© orcarouter.ai</div></div><ul class="bg-bullets">
+<li>Nex-N2.6 kost 0,12/0,40 dollar per miljoen tokens, Grok 4.7 2/6 dollar: zestien keer zoveel.</li>
+<li>Boven 200.000 invoertokens verdubbelt Grok's tarief; het gat loopt op tot ruim 33 keer.</li>
+<li>Grok 4.7 heeft een onafhankelijke score en documentatie, Nex-N2.6 nog niets meetbaars.</li>
+<li>De prijs koopt geen intelligentie maar zekerheid: context, staat van dienst en een leverancier.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Twee modellen, wat controleerbaar is</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Grok 4.7 (SpaceXAI)</h6>
+    <ul><li>$2 in / $6 uit; boven 200K: $4 / $12</li><li>Context 500.000 tokens, tot 450.000 uitvoer</li><li>Redeneren: low, medium, high, xhigh</li><li>Wel onafhankelijke score; gesloten, alleen API</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Nex-N2.6 (Nex-AGI)</h6>
+    <ul><li>$0,12 in / $0,40 uit (introductiekorting)</li><li>Context 262.144 tokens, uitvoer 235.929</li><li>Redeneren verplicht: high of medium</li><li>Geen onafhankelijke score; ~321 mld parameters</li></ul></div>
+</div></div>
+<h5>Geen korting, maar een andere aankoop</h5>
+<p>Het prijsverschil is fors. Volgens een vergelijking van routeringsdienst OrcaRouter kost het nieuwe Nex-N2.6 0,12 dollar per miljoen invoertokens en 0,40 dollar per miljoen uitvoertokens, tegenover 2 en 6 dollar voor Grok 4.7. Dat is ongeveer een zestiende. Gaat een prompt over de 200.000 tokens, dan verdubbelt het tarief van Grok 4.7 naar 4 en 12 dollar en loopt het verschil bij invoer op tot meer dan 33 op 1. Toch is de conclusie van OrcaRouter niet dat Nex goedkoper en dus beter is. "Niemand, ook Nex-AGI niet, heeft een getal gepubliceerd waarmee je kunt zeggen welk model beter is." Grok 4.7, het vlaggenschip van SpaceXAI, kwam op 21 september uit en is de gemeten, gevestigde optie. Nex-N2.6, opvolger van Nex-N2.5 Pro, staat sinds 10 november live op de eigen API van de maker, met een prijs, een contextlengte en één zin positionering.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Prijs per miljoen uitvoertokens</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Grok 4.7 (&gt;200K)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">$12,00</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Grok 4.7</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:50%">$6,00</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Nex-N2.6 (lijstprijs)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:5%">$0,50</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Nex-N2.6 (intro)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:4%">$0,40</div></div></div>
+</div></div>
+<h5>Wat de zestien keer koopt</h5>
+<p>Ontleed op wat controleerbaar is, ligt het verschil niet in het prijskaartje maar in alles eromheen. Grok 4.7 biedt een contextvenster van 500.000 tokens met tot 450.000 uitvoertokens per aanroep; Nex-N2.6 komt tot 262.144 tokens context. Beide nemen tekst en beeld en leveren tekst, maar alleen SpaceXAI documenteert bestandsinvoer. Bij Nex is redeneren verplicht, in de standen hoog of middel; Grok kan voor mechanische taken naar de goedkoopste stand. Nex-N2.6 is nagetraind op GLM-5.3-Flash met ongeveer 321 miljard parameters, terwijl SpaceXAI over de omvang van Grok niets publiceert. Over de gewichten is Nex ook niet transparant: de Hugging Face-pagina vraagt om inloggen. De paradox is dat het goedkopere model op technische punten opener is, maar op het punt dat voor kopers telt, onafhankelijke prestaties, niets te bieden heeft. Een verplicht redeneermodel kan bovendien meer tokens verbruiken, waardoor de werkelijke prijs per taak hoger uitvalt dan het tarief doet vermoeden.</p>
+<blockquote>"Het prijsverschil tussen Nex-N2.6 en Grok 4.7 is geen korting. Het is een andere categorie aankoop." — OrcaRouter</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe je kiest tussen goedkoop en gevestigd</div>
+<div class="ns-viz-mech-subtitle">Van tarief naar werkelijke kosten en risico per taak</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Tarief</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Contextdrempel</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Redeneerstand</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Bewijs</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="60" y="40" width="70" height="130" rx="6" fill="#7c3aed"/><text x="95" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">$2</text><rect x="190" y="162" width="70" height="8" rx="3" fill="#a78bfa"/><text x="225" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">$0,12</text><text x="160" y="25" text-anchor="middle" font-size="12" fill="#44403c">invoer per miljoen tokens</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Tarief</h6><p class="korte">Op het prijskaartje is Nex-N2.6 ongeveer zestien keer goedkoper dan Grok 4.7.</p><p class="uitleg">De Nex-prijs bevat een introductiekorting van 20 procent: de doorgestreepte lijstprijs is 0,15 en 0,50 dollar. Grok 4.7 rekent 2 dollar invoer en 6 dollar uitvoer per miljoen tokens.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><polyline points="30,140 160,140 160,70 290,70" fill="none" stroke="#7c3aed" stroke-width="4"/><line x1="160" y1="40" x2="160" y2="170" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,4"/><text x="160" y="190" text-anchor="middle" font-size="11" fill="#dc2626">200K tokens</text><text x="90" y="130" text-anchor="middle" font-size="12" fill="#7c3aed">$2 / $6</text><text x="225" y="60" text-anchor="middle" font-size="12" fill="#7c3aed">$4 / $12</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Contextdrempel</h6><p class="korte">Boven 200.000 invoertokens verdubbelt Grok 4.7 zijn tarief naar 4 en 12 dollar.</p><p class="uitleg">Het verschil met Nex loopt dan bij invoer op tot meer dan 33 op 1. Juist bij lange documenten, waar Grok's venster van 500.000 tokens het verschil maakt, wordt het duur.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="120" width="45" height="40" fill="#a78bfa"/><rect x="100" y="95" width="45" height="65" fill="#a78bfa"/><rect x="160" y="70" width="45" height="90" fill="#7c3aed"/><rect x="220" y="45" width="45" height="115" fill="#7c3aed"/><g font-size="10" text-anchor="middle" fill="#44403c"><text x="62" y="178">low</text><text x="122" y="178">medium</text><text x="182" y="178">high</text><text x="242" y="178">xhigh</text></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Redeneerstand</h6><p class="korte">Grok kan zuinig draaien; bij Nex staat nadenken altijd aan, standaard op hoog.</p><p class="uitleg">Meer redeneren betekent meer gegenereerde tokens. De werkelijke kosten per taak hangen daardoor af van hoe breedsprakig een model denkt, niet alleen van het tarief.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="45" y="55" width="100" height="90" rx="8" fill="#7c3aed"/><text x="95" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Grok 4.7</text><text x="95" y="118" text-anchor="middle" font-size="18" fill="#fff">✓</text><rect x="175" y="55" width="100" height="90" rx="8" fill="#a78bfa" opacity=".5"/><text x="225" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Nex-N2.6</text><text x="225" y="120" text-anchor="middle" font-size="18" fill="#44403c">?</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Bewijs</h6><p class="korte">Alleen Grok 4.7 heeft een onafhankelijke score; Nex-N2.6 staat op geen enkele ranglijst.</p><p class="uitleg">Daarnaast koop je bij Grok twee jaar publieke benchmarkhistorie, een gedocumenteerd tool-calling-contract en een leverancier met een verkoopafdeling.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Grok tussen massa en premium</h5>
+<p>De vergelijking zegt ook iets over de positie van Grok zelf. De chatbot van xAI nadert volgens SpaceX-documenten en Similarweb-data 100 miljoen maandelijkse gebruikers, en SpaceX zet Grok in om vreemde voorwerpen in de fabriek op te sporen, een veiligheidskritische taak. Dat verklaart waarom SpaceXAI zich niet laat meetrekken in een prijzenslag: voor zakelijke klanten is betrouwbaarheid de verkooptroef. Tegelijk zet de stroom goedkope modellen, vaak gebouwd op Chinese open basismodellen zoals GLM, de marges van gesloten aanbieders onder druk. Voor ontwikkelaars ligt de praktische route voor de hand: goedkope modellen eerst zelf testen op eigen taken en pas daarna inzetten, en dure modellen reserveren voor werk waar fouten duur zijn. Dat modellen het onderling oneens kunnen zijn, bleek ook bij een vraag over bitcoin, waarover ChatGPT, Claude en Grok tot verschillende conclusies kwamen.</p>
+<h5>Conclusie</h5>
+<p>Zestien keer duurder is alleen een argument als je weet wat je voor het verschil terugkrijgt. Hier is dat helder: geen bewezen extra intelligentie, maar meetbaarheid, een groter contextvenster en een aanspreekbare leverancier. Nex-N2.6 kan een koopje blijken, maar op dit moment is het een belofte zonder bewijs. Wie bedrijfsprocessen aan een model toevertrouwt, hoort eerst te meten. Tot er een onafhankelijke score is, betaalt Grok's premie zich terug in zekerheid.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=OmGJNFqpQAo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/OmGJNFqpQAo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Grok 4.7 uitgelegd: benchmarks, prijsstelling en het X-debat</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.orcarouter.ai/blog/nex-n2-6-vs-grok-4-7" target="_blank" style="color:var(--accent)">orcarouter.ai ↗</a></div>

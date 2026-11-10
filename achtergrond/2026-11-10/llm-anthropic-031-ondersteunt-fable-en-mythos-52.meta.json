@@ -1,0 +1,16 @@
+{
+  "title": "llm-anthropic 0.31 ondersteunt Fable en Mythos 5.2",
+  "summary": "Simon Willison voegde de nieuwe modellen dezelfde dag toe aan zijn LLM-commandoregeltool.\n\nSimon Willison heeft versie 0.31 van llm-anthropic uitgebracht, waarmee de nieuwe Fable 5.2 en Mythos 5.2 vanaf de commandoregel te gebruiken zijn.\n\nWie de LLM-tool gebruikt, kan na installatie van de plugin en het instellen van een API-sleutel direct prompts naar Fable 5.2 sturen.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/9/llm-anthropic/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-10",
+  "slug": "llm-anthropic-031-ondersteunt-fable-en-mythos-52",
+  "tts_slug": "llm-anthropic-031-ondersteunt-fable-en-mythos-52",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-10T05:39:21",
+  "size_kb": 13
+}
