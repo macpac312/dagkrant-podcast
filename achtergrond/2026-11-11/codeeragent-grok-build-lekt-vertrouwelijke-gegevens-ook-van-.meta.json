@@ -1,0 +1,16 @@
+{
+  "title": "Codeeragent Grok Build lekt vertrouwelijke gegevens, ook van SpaceXSI zelf",
+  "summary": "De vibe-coding-tool lekt bedrijfsinformatie en geheimen van duizenden gebruikers.\n\nGrok Build, de vibe-coding-agent van SpaceXSI, lekt data van duizenden gebruikers, waaronder vertrouwelijke bedrijfsinformatie en andere gevoelige geheimen, meldt Ars Technica. Daaronder zijn gegevens van SpaceXSI zelf, het bedrijf van Musk dat het platform aanbiedt.",
+  "sources": [
+    "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+  ],
+  "topic": "grok",
+  "kind": "grok",
+  "datum_iso": "2026-11-11",
+  "slug": "codeeragent-grok-build-lekt-vertrouwelijke-gegevens-ook-van-",
+  "tts_slug": "codeeragent-grok-build-lekt-vertrouwelijke-gegevens-ook-van-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-11T05:44:24",
+  "size_kb": 9
+}

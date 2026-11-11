@@ -1,0 +1,18 @@
+{
+  "title": "Robots leren van video: Nvidia GR00T 2 en Gemini Robotics 2.5",
+  "summary": "Nvidia traint op 400.000 uur menselijke video, Google scoort 96 procent bij het sorteren van metalen onderdelen bij Mercedes-Benz.\n\nNvidia's nieuwe model GR00T 2 moet robots nieuwe taken leren zonder dat mensen ze moeizaam op afstand besturen, meldt The Decoder. Het systeem vertaalt handbewegingen uit video's naar robotarmen en is getraind op ongeveer 400.000 uur beeld. De slagingspercentages lopen nog sterk uiteen.\n\nGoogle DeepMind presenteerde Gemini Robotics 2.5, zijn 'meest capabele vision-l",
+  "sources": [
+    "https://the-decoder.com/nvidias-model-gr00t-2-watches-humans-on-video-then-imagines-itself-as-the-robot/",
+    "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "https://the-decoder.com/google-deepminds-gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in-a-mercedes-benz-assembly-pilot/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-11",
+  "slug": "robots-leren-van-video-nvidia-gr00t-2-en-gemini-robotics-25",
+  "tts_slug": "robots-leren-van-video-nvidia-gr00t-2-en-gemini-robotics-25",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-11T05:44:23",
+  "size_kb": 13
+}

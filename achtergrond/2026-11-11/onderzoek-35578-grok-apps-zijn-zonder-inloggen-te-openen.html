@@ -1,0 +1,83 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.unite.ai/wp-content/uploads/2026/11/claroc-research-finds-35578-grok-apps-accessible-without-sign-in.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© unite.ai</div></div><ul class="bg-bullets">
+<li>35.578 van de 37.571 online Grok-apps bleken zonder inloggen te openen.</li>
+<li>Elke app krijgt een eigen hostnaam onder grok.me, vindbaar via passieve DNS-indexen.</li>
+<li>Claroc schat dat 650 tot 800 apps privégegevens bevatten, ook van SpaceXSI en X.</li>
+<li>Interne data van 30 organisaties lag open, onder wie zes Fortune 500-bedrijven.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📏 Zonder inloggen toegankelijk</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#dc2626" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:13"/>
+  </svg>
+  <div class="ns-viz-gauge-val">94,7%</div>
+  <div class="ns-viz-gauge-label">35.578 van 37.571 online Grok-apps zonder login te openen</div>
+</div></div>
+<h5>Het onderzoek</h5>
+<p>Op 10 november publiceerde Claroc Research een onderzoek naar apps die gebruikers met Grok bouwen en publiceren. Volgens Unite.AI werken die apps eenvoudig: mensen beschrijven in een chat wat ze willen, en publiceren het resultaat vanuit hetzelfde chatvenster, in de modus Build van Grok. Elke gepubliceerde app krijgt een eigen hostnaam onder grok.me. Claroc vond met gangbare technieken voor het ontdekken van subdomeinen 43.601 namen. Van de 37.571 apps die tijdens de test nog online waren, konden er 35.578 zonder inloggen worden geopend, bijna 95 procent. De overige 1.993 gaven een HTTP 401-foutmelding, gekoppeld aan de instellingen 'Alleen jij' of 'Uitgenodigde gebruikers'. De onderzoekers laadden de eerste pagina's eenmalig vanaf het openbare internet, zonder in te loggen, en bekeken opgeslagen kopieën offline. De meeste open apps bleken onschuldig: spelletjes, landingspagina's en rekentools.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Van subdomein tot gevoelige data</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Gevonden namen onder grok.me</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">43.601</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Online tijdens test</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:86%">37.571</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Open zonder login</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:82%">35.578</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Afgeschermd (HTTP 401)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:4.6%">1.993</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Met privégegevens (schatting)</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:1.8%">650–800</div></div></div>
+</div></div>
+<h5>Waarom willekeurige adressen niet helpen</h5>
+<p>Het onderzoek laat zien waarom 'beveiliging door onvindbaarheid' faalt. Een app-adres kan bestaan uit vier willekeurige woorden, maar zodra iemand het opent, vraagt een computer via het Domain Name System op waar die naam naartoe wijst. Zulke DNS-verzoeken kunnen terechtkomen in doorzoekbare passieve DNS-indexen die hostnamen verzamelen. Daardoor worden ook schijnbaar geheime adressen na gebruik vindbaar. Bij gedeelde links waarbij de willekeurige code in het URL-pad staat, lekt die code niet via DNS, maar zoekmachines en linkscanners kunnen hem alsnog blootleggen. Wat er vervolgens te zien was, is ernstig. De 24 apps van medewerkers van SpaceXSI, voorheen xAI, en X bevatten een vertrouwelijk inwerkplan voor de zakelijke verkoop, een regiokaart met 594 strategische accounts en hun verkoopkansen, en acht advertentievoorstellen, mediaplannen en presentaties. Een voorstel was gericht aan een Amerikaanse federale instantie en als vertrouwelijk aangemerkt.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Getroffen</th><th style="text-align:right;padding:.3rem .5rem">Aantal</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Organisaties naast SpaceXSI en X</td><td style="text-align:right">30</td></tr>
+    <tr><td style="padding:.25rem .5rem">waarvan meer dan 1.000 medewerkers</td><td style="text-align:right">26</td></tr>
+    <tr><td style="padding:.25rem .5rem">waarvan Fortune 500</td><td style="text-align:right">6</td></tr>
+    <tr><td style="padding:.25rem .5rem">Apps van SpaceXSI- en X-medewerkers</td><td style="text-align:right">24</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Organisaties met blootgestelde interne gegevens volgens Claroc.</p>
+</div>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe een Grok-app vindbaar wordt</div>
+<div class="ns-viz-mech-subtitle">Van chatopdracht tot openbaar leesbare bedrijfsdata</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Bouwen in chat</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Eigen hostnaam</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">DNS-spoor</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Open deur</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="50" y="25" width="220" height="150" rx="10" fill="#fff" stroke="#a8a29e" stroke-width="1.5"/><rect x="65" y="40" width="150" height="28" rx="12" fill="#e7e5e4"/><text x="140" y="58" text-anchor="middle" font-size="10" fill="#44403c">"Maak een verkoopdashboard"</text><rect x="105" y="80" width="150" height="28" rx="12" fill="#7c3aed" fill-opacity=".18"/><text x="180" y="98" text-anchor="middle" font-size="10" fill="#7c3aed">App klaar. Publiceren?</text><rect x="175" y="130" width="80" height="28" rx="8" fill="#7c3aed"/><text x="215" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Build</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Bouwen in chat</h6><p class="korte">Een gebruiker beschrijft een app in de chat en publiceert hem direct.</p><p class="uitleg">In de modus Build van Grok gebeuren bouwen en publiceren in hetzelfde chatvenster. Er zit geen IT-afdeling of beveiligingscontrole tussen het idee en een live app op internet.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="80" width="260" height="40" rx="20" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="160" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed" font-family="monospace">blauw-kat-ster-vier.grok.me</text><text x="160" y="150" text-anchor="middle" font-size="10" fill="#44403c">elke app een eigen subdomein</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Eigen hostnaam</h6><p class="korte">Elke gepubliceerde app krijgt een eigen naam onder grok.me.</p><p class="uitleg">Het adres heeft de vorm naam.grok.me en kan uit willekeurige woorden bestaan. Dat lijkt onraadbaar, maar Claroc vond met standaardtechnieken voor subdomeinontdekking 43.601 van zulke namen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="20" y="75" width="80" height="50" rx="8" fill="#1c1917"/><text x="60" y="104" text-anchor="middle" font-size="10" fill="#fff">browser</text><path d="M105,100 L145,100" stroke="#7c3aed" stroke-width="2.5"/><path d="M145,94 L155,100 L145,106 z" fill="#7c3aed"/><circle cx="185" cy="100" r="28" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="185" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">DNS</text><path d="M213,100 L240,100" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="4 3"/><rect x="245" y="60" width="60" height="80" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="1.8"/><g stroke="#a8a29e" stroke-width="3"><line x1="253" y1="78" x2="297" y2="78"/><line x1="253" y1="92" x2="290" y2="92"/><line x1="253" y1="106" x2="297" y2="106"/><line x1="253" y1="120" x2="285" y2="120"/></g><circle class="ns-viz-mech-hotspot" cx="275" cy="55" r="7" data-tip="Passieve DNS-index verzamelt opgevraagde hostnamen"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>DNS-spoor</h6><p class="korte">Wie de app opent, laat de naam achter in doorzoekbare DNS-indexen.</p><p class="uitleg">Een DNS-verzoek zoekt op waar een hostnaam naartoe wijst. Passieve DNS-indexen verzamelen die verzoeken, waardoor zelfs adressen van vier willekeurige woorden na gebruik doorzoekbaar worden. Codes in een URL-pad lekken zo niet, maar kunnen via zoekindexering en linkscanners uitlekken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="30" width="120" height="145" rx="4" fill="#e7e5e4" stroke="#a8a29e" stroke-width="2"/><path d="M100,30 L160,45 L160,190 L100,175 z" fill="#7c3aed" fill-opacity=".35" stroke="#7c3aed" stroke-width="2"/><rect x="170" y="70" width="40" height="50" rx="3" fill="#fff" stroke="#dc2626" stroke-width="1.5"/><text x="190" y="92" text-anchor="middle" font-size="7" font-weight="700" fill="#dc2626">VERTROU-</text><text x="190" y="102" text-anchor="middle" font-size="7" font-weight="700" fill="#dc2626">WELIJK</text><text x="160" y="196" text-anchor="middle" font-size="10" fill="#44403c">geen login nodig</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Open deur</h6><p class="korte">Zonder afscherming opent iedereen met het adres de app en zijn data.</p><p class="uitleg">Alleen apps met 'Alleen jij' of 'Uitgenodigde gebruikers' gaven een 401-fout. De rest, 35.578 apps, was open. Daaronder interne stukken van SpaceXSI en X, zoals een accountoverzicht richting een verkoopdoel van 1,6 miljoen dollar.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>Bijna 95 procent van de Grok-apps stond open; de bescherming rustte op de aanname dat niemand de adressen zou vinden.</blockquote>
+<h5>Gevolgen en perspectieven</h5>
+<p>Naast SpaceXSI en X vond Claroc interne gegevens van dertig organisaties, waarvan 26 met meer dan duizend medewerkers en zes uit de Fortune 500. Om tot de schatting van 650 tot 800 apps met privégegevens te komen, liet het bureau een AI-model mogelijke gevallen signaleren en beoordeelde het de gemarkeerde pagina's daarna handmatig. Het onderzoek sluit aan op de parallelle bevindingen over Grok Build, waarbij ook de deellinks van duizenden gebruikers op te sommen bleken. Samen schetsen ze een platform waarop openbaar de standaard is en afscherming een bewuste extra stap. Voor bedrijven, ook in Nederland, is de les dat medewerkers met zulke tools ongemerkt schaduw-IT bouwen: interne dashboards en klantoverzichten die buiten elk beveiligingsbeleid om online staan. Voor toezichthouders onder de AVG wordt de vraag wie verantwoordelijk is als een AI-platform zo'n app publiceert, steeds dringender. Het platform, of de gebruiker die op 'publiceren' drukte?</p>
+<h5>Conclusie</h5>
+<p>Het cijfer van 94,7 procent is geen ongeluk maar een ontwerpkeuze. Een platform dat bouwen en publiceren in één chatvenster samenbrengt, moet afscherming de standaard maken, niet een instelling die gebruikers zelf moeten ontdekken. Dat de meeste open apps spelletjes waren, is geen geruststelling: het gaat om de honderden die dat niet waren. Zolang vibe-codingplatforms openbaarheid als standaard kiezen, zullen bedrijfsgeheimen blijven uitlekken via adressen die niemand had mogen vinden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=uVgFRM8c_Y8" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/uVgFRM8c_Y8/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">How To Fix Grok App Not Working On Android Phone 2026 | Grok App Error Fix</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.unite.ai/nl/claroc-research-finds-35-578-grok-apps-accessible-without-sign-in/" target="_blank" style="color:var(--accent)">unite.ai ↗</a></div>

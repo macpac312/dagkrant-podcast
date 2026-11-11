@@ -1,0 +1,101 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© deepmind.google</div></div><ul class="bg-bullets">
+<li>Gemini 4 Carbon, Googles sterkste model, is nu algemeen beschikbaar.</li>
+<li>Introductieprijs $2/$10 per miljoen tokens verdubbelt op 1 december naar $4/$20.</li>
+<li>Een dag eerder passeerde Anthropics Fable 5.2 Carbon al in de Artificial Analysis-index.</li>
+<li>De echte strijd verschuift van benchmarkscores naar kosten per taak en agent-zwermen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Twee weken in de snelste modelcyclus</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">eerder</div><div>Google lanceert Gemini 4 Argon voor breed gebruik</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">eind okt</div><div>Carbon naar selecte cyberverdedigers via Fairwind-programma</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">9 nov</div><div>Anthropic presenteert topmodel Claude Fable 5.2</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">10 nov</div><div>Carbon algemeen beschikbaar via API, Gemini-app en AI Mode</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">1 dec</div><div>Prijs verdubbelt naar $4 / $20 per miljoen tokens</div></div>
+</div></div>
+<h5>Een topmodel dat al ingehaald is</h5>
+<p>Google DeepMind noemt Gemini 4 Carbon zijn sterkste model, met topprestaties op het gebied van cyberbeveiliging en langlopende agent-taken in software, kenniswerk en wetenschap. Twee weken geleden ging het eerst naar een selecte groep cyberverdedigers via het Fairwind-programma; nu kunnen alle betalende ontwikkelaars en bedrijven het gebruiken via Google AI Studio en Gemini for Business, en rolt het uit naar Ultra-abonnees in de Gemini-app, Antigravity en AI Mode in Search. Simon Willison noemt het "Googles beste Gemini ooit". Toch is de timing ongelukkig. The Decoder constateert dat het model in de snelste modelcyclus tot nu toe al aanvoelt als nieuws van gisteren: een dag eerder presenteerde Anthropic Claude Fable 5.2, dat Carbon in de Artificial Analysis-test verslaat, zelfs op een lagere redeneerstand. Op de High-stand scoort Fable 62 punten in de totaalindex tegen 60 voor Carbon.</p>
+<div class="ns-viz"><div class="ns-viz-title">📈 Kosten per opgeloste taak (Artificial Analysis)</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-f7e42bcb"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-f7e42bcb'),{
+    type:'bar',
+    data:{
+      labels:['GPT-6 Astra Max','Gemini 4 Carbon','Fable 5.2 High','Opus 5.5 Max','Fable 5.2 Max'],
+      datasets:[{
+        label:'Dollar per taak',data:[6.25,7.76,9,10.04,26.5],
+        backgroundColor:['#a78bfa','#7c3aed','#a78bfa','#a78bfa','#a78bfa'],borderRadius:6
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10,
+          callbacks:{label:function(c){return '$'+c.parsed.x.toFixed(2)+' per taak';}}}
+      },
+      scales:{
+        x:{grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c',callback:function(v){return '$'+v;}}},
+        y:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Prijs per token versus prijs per taak</h5>
+<p>Het interessantste aan Carbon is niet de topscore, maar de economie. De introductieprijs van 2 dollar per miljoen invoertokens en 10 dollar per miljoen uitvoertokens is dezelfde als die van Argon en, volgens Willison, van GPT-6.1 Sol en Claude Sonnet 5.5. Op 1 december verdubbelt die naar 4 en 20 dollar, het niveau van Opus 5.5. Google positioneert Argon nadrukkelijk als de betere keuze voor het meeste software- en kenniswerk, terwijl Carbon bedoeld is voor taken die de grenzen van modelintelligentie opzoeken. The Decoder vindt dat opvallend, gezien de gelijke tokenprijs, maar de verklaring zit in het verbruik: Carbon gebruikt meer tokens om dieper te redeneren en langere verificatielussen te draaien. Per taak berekend kostte Carbon in de Artificial Analysis-test 7,76 dollar, al tegen de standaardprijs. Dat is goedkoper dan de oudere budgetvariant Flash 3.8, en ruim onder Fable 5.2 op de hoogste stand, dat 26,50 dollar per taak kost.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)">
+    <th style="text-align:left;padding:.3rem .5rem">Per miljoen tokens</th>
+    <th style="text-align:right;padding:.3rem .5rem">Invoer</th>
+    <th style="text-align:right;padding:.3rem .5rem">Uitvoer</th>
+  </tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Carbon tot 1 dec</td><td style="text-align:right">$2</td><td style="text-align:right">$10</td></tr>
+    <tr><td style="padding:.25rem .5rem">Carbon vanaf 1 dec</td><td style="text-align:right">$4</td><td style="text-align:right">$20</td></tr>
+    <tr><td style="padding:.25rem .5rem">Argon (introductie)</td><td style="text-align:right">$2</td><td style="text-align:right">$10</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Prijzen volgens Google DeepMind en Simon Willison.</p>
+</div>
+<blockquote>Google claimt de eerste plaats op CursorBench 4.0, Perplexity's WANDR en Zapier's AutomationBench, tegen meer dan twee keer lagere kosten per taak dan het beste externe model.</blockquote>
+<div class="ns-viz ns-viz-mech" data-autoplay="1">
+<div class="ns-viz-title">🔬 Hoe /swarm werkt</div>
+<div class="ns-viz-mech-subtitle">Van één prompt naar een gecoördineerd team van agents</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Prompt</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Regie</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Uitvoering</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Verificatie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><rect x="50" y="60" width="220" height="60" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="66" y="95" font-size="12" fill="#44403c" font-family="monospace">/swarm bouw een 3D-game…</text><rect x="252" y="80" width="3" height="18" fill="#7c3aed"/><text x="160" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Eén opdracht in Antigravity</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Prompt</h6><p class="korte">Een ontwikkelaar geeft één opdracht in Googles Antigravity-omgeving.</p><p class="uitleg">De /swarm-functie, nu als preview, zet die prompt om in een team van agents dat de gebruiker in realtime kan volgen. Google demonstreerde het met een open-wereldgame op de campus in Mountain View.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><circle cx="160" cy="70" r="34" fill="#7c3aed"/><text x="160" y="67" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Carbon</text><text x="160" y="82" text-anchor="middle" font-size="9" fill="#ede9fe">architect</text><g font-size="10" fill="#7c3aed" text-anchor="middle"><text x="60" y="150">ontwerp</text><text x="160" y="160">coördinatie</text><text x="260" y="150">audit</text></g><g stroke="#a78bfa" stroke-width="2"><line x1="135" y1="95" x2="70" y2="135"/><line x1="160" y1="104" x2="160" y2="145"/><line x1="185" y1="95" x2="250" y2="135"/></g></svg></div>
+    <div class="ns-viz-mech-info"><h6>Regie</h6><p class="korte">Carbon krijgt de rollen die het diepste redeneren vragen.</p><p class="uitleg">Ontwikkelaars wijzen het zware model toe aan architectuurontwerp, coördinatie en audit. Daar zijn de extra tokens die Carbon verbruikt het best besteed.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><g fill="#a78bfa" fill-opacity=".25" stroke="#7c3aed" stroke-width="2"><rect x="20" y="50" width="80" height="80" rx="8"/><rect x="120" y="50" width="80" height="80" rx="8"/><rect x="220" y="50" width="80" height="80" rx="8"/></g><g fill="#a78bfa"><circle cx="60" cy="90" r="16"/><circle cx="160" cy="90" r="16"/><circle cx="260" cy="90" r="16"/></g><g font-size="10" fill="#44403c" text-anchor="middle"><text x="60" y="122">3D-assets</text><text x="160" y="122">game-code</text><text x="260" y="122">audio</text></g><text x="160" y="165" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Lichtere modellen, parallel en geïsoleerd</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Uitvoering</h6><p class="korte">Snellere, lichtere modellen werken parallel in afgeschermde werkruimtes.</p><p class="uitleg">In Googles demo modelleerden subagents 3D-assets in Blender, bouwden ze de browsergame in Three.js met WebGL-shaders en combineerden ze geluidseffecten met Lyria-muziek.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f3ff"/><path d="M160 30 L230 55 V105 C230 140 195 160 160 172 C125 160 90 140 90 105 V55 Z" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="3"/><path d="M128 100 L152 124 L196 80" stroke="#7c3aed" stroke-width="6" fill="none" stroke-linecap="round"/><text x="160" y="192" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Elke wijziging getest</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Verificatie</h6><p class="korte">Tegendraadse verificatie-agents testen elke wijziging voordat die doorgaat.</p><p class="uitleg">Die adversariële controle is de kern van Googles belofte voor langlopende taken: niet één slim model, maar een systeem dat zijn eigen fouten zoekt. Het verklaart ook waarom Carbon per taak meer tokens gebruikt.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Wat dit zegt over de markt</h5>
+<p>Carbon past in een week waarin de AI-sector op vrijwel alle fronten tegelijk beweegt. Anthropic zet zijn beursgang in gang bij een waardering van 1400 miljard dollar, Meta mikt met Muse Ember op de goedkope onderkant van de markt, en OpenAI maakt van ChatGPT een platform voor zakelijke agents. Tegelijk gaat in New York een veiligheidswet in en tekenden labs in Parijs een verklaring over noodstopmechanismen. Dat Carbon eerst naar cyberverdedigers ging, past in dat klimaat: modellen met sterke beveiligingscapaciteiten worden gefaseerd uitgerold. Voor Europese bedrijven die zulke modellen inzetten, is de les praktisch. Een vergelijking op tokenprijs zegt weinig; een model dat meer redeneert, kan per token goedkoop en per taak duur zijn, of andersom. Met een verdubbeling van de prijs binnen drie weken en een Flash-variant van Gemini 4 die volgens The Decoder waarschijnlijk snel volgt, zijn kostenberekeningen bovendien zelden langer dan een maand houdbaar.</p>
+<h5>Conclusie</h5>
+<p>Google heeft met Carbon een sterk en relatief efficiënt model, maar verloor de race om de krantenkop door twee weken testen. Dat is minder erg dan het lijkt. In een markt waar het leiderschap per week wisselt, wint niet wie één dag bovenaan staat, maar wie de beste kosten per opgeloste taak levert en de infrastructuur eromheen bouwt. Met /swarm en de koppeling aan Antigravity zet Google daarop in. De introductieprijs is vooral een lokmiddel; de echte toets komt na 1 december.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=Tv4Z7f4MKa0" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/Tv4Z7f4MKa0/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Google Gemini 4 Carbon IS UIT: Bijna net zo slim als Claude, voor 1/3 van de prijs</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" target="_blank" style="color:var(--accent)">deepmind.google ↗</a> &bull; <a href="https://simonwillison.net/2026/Nov/10/llm-gemini/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a> &bull; <a href="https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

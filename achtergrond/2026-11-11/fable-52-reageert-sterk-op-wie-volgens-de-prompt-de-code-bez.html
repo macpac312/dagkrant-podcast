@@ -1,0 +1,45 @@
+<ul class="bg-bullets">
+<li>Fable 5.2 past zijn codeergedrag aan op wat de prompt zegt over eigendom.</li>
+<li>Zonder eigendomsinformatie voegt het model vooral toe, ook als dat code dupliceert.</li>
+<li>Met de zin 'deze codebase is van jou' voegt het in ongeveer de helft dubbele code samen.</li>
+<li>Eén zin in de prompt bepaalt zo mee hoeveel technische schuld een AI-agent achterlaat.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat één zin verandert</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before">
+    <h6>ZONDER EIGENDOMSZIN</h6>
+    <p>De prompt zwijgt over eigendom of noemt de code van een ander. Het model bouwt voorzichtig voort op de bestaande structuur, ook als het daarmee code herhaalt.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after">
+    <h6>MET EIGENDOMSZIN</h6>
+    <p>De prompt zegt dat de codebase van het model is en dat het erop blijft voortbouwen. Het model verbetert de structuur en voegt herhaalde code vaker samen.</p></div>
+</div></div>
+<h5>Een model dat zich als gast gedraagt</h5>
+<p>In de nieuwe handleiding voor het prompten van Claude Fable 5.2 staat een observatie die ontwikkelaars direct raakt. Simon Willison, een van de meest gevolgde bloggers over taalmodellen, citeerde op 10 november de passage: het model reageert nauwkeurig op wat de prompt zegt over wie de code bezit waaraan het werkt. In Anthropics tests op kleine programmeertaken bleek dat Fable 5.2, als de prompt niets over eigendom zei of de codebase als die van iemand anders presenteerde, vooral voortbouwde op wat er al stond, zelfs als dat betekende dat bestaande code werd herhaald. Dat is in zekere zin keurig gedrag. Een externe ontwikkelaar die in andermans project werkt, gooit ook niet ongevraagd de architectuur om. Maar voor wie een AI-agent inzet om een eigen project te onderhouden, levert die bescheidenheid precies het verkeerde op: steeds meer dubbele code en een structuur die nooit wordt opgeruimd.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Herhaalde code samengevoegd</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Met 'deze codebase is van jou'</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:50%">~50%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Zonder die zin</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:9%">&lt;10%</div></div></div>
+</div></div>
+<h5>Waarom framing zoveel uitmaakt</h5>
+<p>De oplossing die Anthropic voorstelt is verrassend simpel. Wie wil dat het model de structuur verbetert, moet zeggen dat de code van het model zelf is, met een zin als: deze codebase is van jou, het doel en de opbouw zijn jouw beslissing, en je blijft erop voortbouwen. Met die zin voegde het model in ongeveer de helft van de pogingen herhaalde code samen, zonder die zin in minder dan een tiende. Dat is een effect van meer dan een factor vijf, veroorzaakt door één regel tekst. Het past in een breder patroon. Grote taalmodellen zijn getraind om te raden welke rol ze spelen en wat er van die rol verwacht wordt. Een gast is terughoudend, een eigenaar neemt verantwoordelijkheid voor de lange termijn. Hoe sterker en zelfstandiger de modellen worden, hoe preciezer ze die sociale signalen oppikken. Dat maakt ze bruikbaarder, maar ook gevoeliger voor de vaak onbewuste aannames in een prompt.</p>
+<blockquote>Eén zin over eigendom verschuift het gedrag van het model van ruim onder de tien procent naar ongeveer de helft: prompting is bij deze modellen geen trucje maar opdrachtformulering.</blockquote>
+<div class="ns-viz ns-viz-quote">
+  <p class="ns-viz-quote-text">"This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it."</p>
+  <p class="ns-viz-quote-attr">— Voorbeeldzin uit Anthropics handleiding 'Prompting Claude Fable 5.2'</p>
+</div>
+<h5>Gevolgen voor teams die met agents werken</h5>
+<p>Voor ontwikkelteams, ook in Nederland, die AI-agents steeds vaker zelfstandig laten programmeren, heeft dit praktische gevolgen. Standaardinstructies in projectbestanden en agentconfiguraties bepalen mee of een agent opruimt of stapelt. Wie dat niet expliciet regelt, krijgt een model dat zich als voorzichtige inhuurkracht gedraagt, met een groeiende berg technische schuld als gevolg. Tegelijk is er een keerzijde. Een model dat zich eigenaar voelt, zal sneller bestaande code herschrijven, en dat is niet altijd gewenst in gedeelde of gevoelige systemen waar anderen op bouwen. De bevinding vraagt daarom niet om één standaardzin voor alles, maar om bewuste keuzes per project: waar mag de agent herstructureren, en waar moet hij juist van de bestaande opbouw afblijven. Ook valt op dat de cijfers uit kleine programmeertaken komen. Hoe het effect uitpakt in grote, rommelige codebases, meldt de handleiding niet.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Dubbele code samenvoegen</summary>
+    <div class="ns-viz-concept-body">Herhaalde stukken code onderbrengen in één gedeelde functie of module, zodat een wijziging maar op één plek hoeft. Het klassieke 'refactoren'.</div></details>
+  <details class="ns-viz-concept"><summary>Technische schuld</summary>
+    <div class="ns-viz-concept-body">De opgestapelde kosten van snelle oplossingen: elke duplicatie maakt latere aanpassingen trager en foutgevoeliger.</div></details>
+  <details class="ns-viz-concept"><summary>Systeemprompt</summary>
+    <div class="ns-viz-concept-body">De vaste instructies waarmee een agent elke taak begint. Een zin over eigendom hoort daar, zodat het gedrag consistent is.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Dit is een klein detail met grote betekenis. Het laat zien dat de nieuwste modellen niet alleen opdrachten uitvoeren, maar de verhoudingen interpreteren waarin die opdracht wordt gegeven. Dat Anthropic dit zelf documenteert, is verstandig: het maakt van een onzichtbare valkuil een stuurknop. Maar het legt ook verantwoordelijkheid bij de gebruiker. Wie een agent zijn code toevertrouwt, moet voortaan net zo zorgvuldig nadenken over het mandaat als bij een menselijke collega.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=NgnrNaGX43s" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/NgnrNaGX43s/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Finally, Use Claude Fable 5.2 \u0026 Opus 5.5 Without Paying!</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>

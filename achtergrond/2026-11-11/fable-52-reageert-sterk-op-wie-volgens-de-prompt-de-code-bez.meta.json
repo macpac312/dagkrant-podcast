@@ -1,0 +1,16 @@
+{
+  "title": "Fable 5.2 reageert sterk op wie volgens de prompt de code bezit",
+  "summary": "In tests van Anthropic voegde het model zonder eigendomsinformatie vaker toe dan dat het aanpaste.\n\nClaude Fable 5.2 reageert nauwkeurig op wat een prompt zegt over wie de code bezit waaraan het werkt, citeert Simon Willison uit Anthropics handleiding voor prompting. In tests op kleine programmeertaken voegde het model, als de prompt niets zei over eigendom of de codebase als die van een ander presenteerde, vaker iets toe dan dat het bestaande code aanpaste.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-11",
+  "slug": "fable-52-reageert-sterk-op-wie-volgens-de-prompt-de-code-bez",
+  "tts_slug": "fable-52-reageert-sterk-op-wie-volgens-de-prompt-de-code-bez",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-11T05:44:24",
+  "size_kb": 7
+}
