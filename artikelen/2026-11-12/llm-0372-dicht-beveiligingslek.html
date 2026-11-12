@@ -1,0 +1,9 @@
+<h1>Release: llm 0.37.2</h1>
+<p>Fixes a security issue reported by <a href="https://github.com/BluePlexus" target="_blank" rel="noopener">Daniel de Araujo</a> in <a href="https://github.com/simonw/llm/security/advisories/GHSA-v9h7-jj4g-f862" target="_blank" rel="noopener">GHSA-v9h7-jj4g-f862</a> and <a href="https://github.com/simonw/llm/security/advisories/GHSA-r639-rr7r-x72w" target="_blank" rel="noopener">GHSA-r639-rr7r-x72w</a>.</p>
+<p>LLM has a mechanism called <a href="https://llm.datasette.io/en/stable/other-models.html#configure-an-openai-compatible-model" target="_blank" rel="noopener">extra-openai-models.yaml</a> - now managed by the new-in-0.37 <a href="https://llm.datasette.io/en/stable/other-models.html#openai-endpoint-add" target="_blank" rel="noopener">llm openai endpoint add</a> command - for using LLM with OpenAI-compatible API endpoints from other providers.</p>
+<p>Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by api_key_name had never been stored, or if a responses: true model was run with -o chat_completions 1.</p>
+<h2>Recent articles</h2>
+<p>This is a <strong>beat</strong> by Simon Willison, posted on 11th November 2026.</p>
+<h2>Monthly briefing</h2>
+<p>Sponsor me for <strong>$10/month</strong> and get a curated email digest of the month&#x27;s most important LLM developments.</p>
+<p class="bg-footer">Bron: <a href="https://simonwillison.net/2026/Nov/11/llm/" target="_blank" rel="noopener">simonwillison.net</a></p>
