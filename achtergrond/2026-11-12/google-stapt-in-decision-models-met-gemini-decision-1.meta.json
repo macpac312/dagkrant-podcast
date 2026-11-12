@@ -1,0 +1,18 @@
+{
+  "title": "Google stapt in 'decision models' met Gemini Decision 1",
+  "summary": "De API beoordeelt tot 1000 gesloten vragen in één keer, in 150 tot 250 milliseconden, voor een vijfde van de prijs van Gemini 3.5 Flash.\n\nGoogle DeepMind lanceert de Gemini Decisions API. Gemini Decision 1 beoordeelt tot 1000 gesloten vragen (ja/nee, keuze, rubric-score) in één keer, over tekst, beeld, audio en video. Resultaten komen in 150 tot 250 milliseconden, tegen ongeveer vijf keer lagere kosten dan Gemini 3.5 Flash-Lite.\n\nSimon Willison merkt op dat de API vrijwel identiek is aan die van",
+  "sources": [
+    "https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/",
+    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-12",
+  "slug": "google-stapt-in-decision-models-met-gemini-decision-1",
+  "tts_slug": "google-stapt-in-decision-models-met-gemini-decision-1",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-12T05:38:17",
+  "size_kb": 15
+}

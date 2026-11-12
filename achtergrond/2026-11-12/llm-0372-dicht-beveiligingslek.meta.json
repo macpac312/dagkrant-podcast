@@ -1,0 +1,16 @@
+{
+  "title": "llm 0.37.2 dicht beveiligingslek",
+  "summary": "Simon Willison repareert twee gemelde kwetsbaarheden in zijn LLM-commandoregeltool.\n\nSimon Willison heeft llm 0.37.2 uitgebracht. De release dicht een beveiligingsprobleem dat Daniel de Araujo meldde, in het mechanisme waarmee LLM met OpenAI-compatibele modellen werkt (extra-openai-models.yaml).",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/11/llm/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-12",
+  "slug": "llm-0372-dicht-beveiligingslek",
+  "tts_slug": "llm-0372-dicht-beveiligingslek",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-12T05:38:17",
+  "size_kb": 12
+}

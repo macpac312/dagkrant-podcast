@@ -1,0 +1,17 @@
+{
+  "title": "AWS lanceert 'emulator' waarin autonome AI-agents veilig kunnen oefenen",
+  "summary": "Het project van Amazon kreeg op Hacker News 744 punten en 227 reacties.\n\nAmazon Web Services heeft een AWS-emulator gepresenteerd: een omgeving waarin autonome AI-agents met AWS-diensten kunnen werken zonder echte infrastructuur aan te raken. CTO Werner Vogels schrijft erover op zijn blog All Things Distributed.\n\nOp Hacker News werd het een van de best besproken items van de dag.",
+  "sources": [
+    "https://github.com/aws/aws-emulator",
+    "https://simonwillison.net/2026/Nov/11/aws-emulator/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-12",
+  "slug": "aws-lanceert-emulator-waarin-autonome-ai-agents-veilig-kunne",
+  "tts_slug": "aws-lanceert-emulator-waarin-autonome-ai-agents-veilig-kunne",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-12T05:38:17",
+  "size_kb": 14
+}

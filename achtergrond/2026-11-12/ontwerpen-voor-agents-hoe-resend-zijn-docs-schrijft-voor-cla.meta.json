@@ -1,0 +1,16 @@
+{
+  "title": "Ontwerpen voor agents: hoe Resend zijn docs schrijft voor Claude Code",
+  "summary": "Zeno Rocha over het verschil tussen answer engine optimization en agent experience.\n\nWaar houdt answer engine optimization op en begint agent experience? Zeno Rocha van Resend vertelt aan Latent Space hoe zijn bedrijf documentatie en tools ontwerpt zodat AI-agents als Claude Code de e-mail-API kiezen en kunnen gebruiken.",
+  "sources": [
+    "https://latent.space/p/resend/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-12",
+  "slug": "ontwerpen-voor-agents-hoe-resend-zijn-docs-schrijft-voor-cla",
+  "tts_slug": "ontwerpen-voor-agents-hoe-resend-zijn-docs-schrijft-voor-cla",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-12T05:38:17",
+  "size_kb": 13
+}

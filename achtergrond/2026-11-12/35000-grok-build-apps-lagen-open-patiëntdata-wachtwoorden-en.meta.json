@@ -1,0 +1,19 @@
+{
+  "title": "35.000 Grok Build-apps lagen open: patiëntdata, wachtwoorden en SpaceXSI's eigen salespijplijn",
+  "summary": "Beveiligingsbedrijf Claroc vond dat 35.578 van de 37.571 live apps zonder inlog toegankelijk waren. Oorzaak: 'iedereen met de link' stond standaard aan.\n\nBeveiligingsbedrijf Claroc ontdekte dat 35.578 van de 37.571 live apps die met Grok Build van SpaceXSI zijn gebouwd, zonder inloggen te openen waren. Daaronder patiëntgegevens, wachtwoorden in platte tekst en vertrouwelijke documenten van SpaceXSI zelf, waaronder de salespijplijn. 24 apps waren door eigen medewerkers gebouwd.\n\nDe oorzaak was ee",
+  "sources": [
+    "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc0VRZHlYUkFSY2RCM2tOUXFJTHZ4d3lSbkZ2eFRhNG5oV1h4dEpDTlRXVjIyQ2dieHhKTURnX0dnYnVtTjhhR0RCYmtaaTJ0ajlCUGliRGhDVmZNRW82MTR3X2lRUXBJaDEyNkVubkpiVjJYSzJMcVl6UWhmdTRkQ2pXdHpkR0tkVmxrVTYyZWV2Nlp2c1JjNEJKZVlZZmp6bVdUalQxNEgxei0wZ21iWWpvYl8?oc=5",
+    "https://cryptobriefing.com/claroc-grok-build-apps-exposed-online/",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MOFRHSldIV2ZCZm96dlVCTThNRmFZeEdBQlVuQUdhMFBEV0tDVDNMZTZ2bzA2cDhURnNQcldqZmJtVm05eE5Fejd2clhicWx4RDd1Q1BWR1h4eWtHaDdTVTg0N3VKQkk?oc=5"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-12",
+  "slug": "35000-grok-build-apps-lagen-open-patiëntdata-wachtwoorden-en",
+  "tts_slug": "35000-grok-build-apps-lagen-open-patiëntdata-wachtwoorden-en",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-12T05:38:17",
+  "size_kb": 13
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Claude Code lekt per ongeluk geheimen op GitHub",
+  "summary": "Onderzoekers van Apiiro vinden gevoelige gegevens in publieke repositories, via instellingenbestanden.\n\nClaude Code lekt gevoelige informatie op publieke GitHub-repositories door een omissie in de manier waarop instellingenbestanden worden behandeld, melden AI-beveiligingsonderzoekers van Apiiro aan Ars Technica.",
+  "sources": [
+    "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-12",
+  "slug": "claude-code-lekt-per-ongeluk-geheimen-op-github",
+  "tts_slug": "claude-code-lekt-per-ongeluk-geheimen-op-github",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-12T05:38:17",
+  "size_kb": 15
+}

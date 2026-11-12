@@ -1,0 +1,61 @@
+<ul class="bg-bullets">
+<li>Anthropic traint en draait Claude op vier chipfamilies: AWS Trainium, Google TPU, Nvidia en AMD.</li>
+<li>Met Mythos was Claude binnen drie dagen op AMD-gpu's aan de praat, bijna zonder menselijke hulp.</li>
+<li>De tweede troef zijn 'compute multipliers': efficiëntiewinsten die elkaar versterken.</li>
+<li>Als de claims kloppen, krimpt Nvidia's CUDA-voorsprong; de beursprijs van $70-78 blijft onder verwachting.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Anthropic aan rekenkracht komt</div>
+<div class="ns-viz-mech-subtitle">Van vier chipleveranciers naar één verwisselbare pool.</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Vier chips</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Eén pool</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">AI porteert</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Multipliers</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="25" y="30" width="125" height="55" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="87" y="63" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AWS Trainium</text><rect x="170" y="30" width="125" height="55" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="232" y="63" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Google TPU</text><rect x="25" y="110" width="125" height="55" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="87" y="143" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Nvidia GPU</text><rect x="170" y="110" width="125" height="55" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="232" y="143" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AMD GPU</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Vier chipfamilies</h6><p class="korte">Claude draait op Trainium, TPU, Nvidia en AMD.</p><p class="uitleg">Elke chip vraagt een eigen software- en inferentiestack: duur en moeilijk. Anthropic zegt er jaren geleden bewust op in te zetten, toen veel anderen dat de moeite niet waard vonden.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><circle cx="160" cy="100" r="42" fill="#7c3aed" fill-opacity=".2" stroke="#7c3aed" stroke-width="2.5"/><text x="160" y="97" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Eén</text><text x="160" y="113" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">pool</text><circle cx="50" cy="50" r="14" fill="#a78bfa"/><circle cx="270" cy="50" r="14" fill="#a78bfa"/><circle cx="50" cy="150" r="14" fill="#a78bfa"/><circle cx="270" cy="150" r="14" fill="#a78bfa"/><line x1="62" y1="60" x2="124" y2="86" stroke="#7c3aed" stroke-width="2"/><line x1="258" y1="60" x2="196" y2="86" stroke="#7c3aed" stroke-width="2"/><line x1="62" y1="140" x2="124" y2="114" stroke="#7c3aed" stroke-width="2"/><line x1="258" y1="140" x2="196" y2="114" stroke="#7c3aed" stroke-width="2"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Eén pool</h6><p class="korte">Verschillende leveranciers, architecturen en locaties tellen als één verwisselbare voorraad.</p><p class="uitleg">Het bedrijf kiest per taak de beste prijs-kwaliteit: sommige chips zijn beter voor training, andere voor inferentie. Anthropic zegt zo meer uit elke dollar te halen dan elk ander frontier-lab.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="25" y="70" width="100" height="60" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="75" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Mythos</text><line x1="130" y1="100" x2="185" y2="100" stroke="#7c3aed" stroke-width="2.5"/><path d="M185,100 L177,94 L177,106 z" fill="#7c3aed"/><rect x="190" y="70" width="105" height="60" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="242" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AMD-kernels</text><text x="242" y="113" text-anchor="middle" font-size="10" fill="#44403c">≈100% door AI</text><text x="160" y="170" text-anchor="middle" font-size="11" fill="#44403c">3 dagen, bijna geen menselijke hulp</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>AI porteert</h6><p class="korte">Het model Mythos zette Claude in drie dagen op AMD.</p><p class="uitleg">Voorheen kostte een nieuw chipplatform dozijnen ingenieurs maanden werk. Claude schreef of porteerde vrijwel alle kernels zelf, aldus Tom Brown. Onafhankelijk getoetst is dit nog niet.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="60" width="40" height="100" fill="#a78bfa"/><rect x="110" y="110" width="40" height="50" fill="#7c3aed"/><rect x="190" y="25" width="40" height="135" fill="#a78bfa" fill-opacity=".55"/><text x="60" y="52" text-anchor="middle" font-size="11" fill="#44403c">100</text><text x="130" y="102" text-anchor="middle" font-size="11" fill="#44403c">25</text><text x="210" y="17" text-anchor="middle" font-size="11" fill="#44403c">400</text><text x="95" y="182" text-anchor="middle" font-size="10" fill="#44403c">zelfde model: 4x minder</text><text x="235" y="182" text-anchor="middle" font-size="10" fill="#44403c">slimmer model: 4x meer</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Multipliers</h6><p class="korte">Efficiëntiewinsten vermenigvuldigen de fysieke capaciteit en stapelen op elkaar.</p><p class="uitleg">Bij een 4x-multiplier heb je 25 in plaats van 100 eenheden nodig voor hetzelfde model, of train je met 100 eenheden wat vroeger 400 kostte. Claude moet dit uiteindelijk zelf kunnen ontdekken.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>De troef achter de beursgang</h5>
+<p>Anthropic is gestart met de roadshow voor zijn beursgang, en de bijbehorende video bevat volgens Simon Willison informatie die het bedrijf eerder niet publiek maakte. Het meest opvallende is het onderdeel 'Approach to compute', waarin medeoprichter en compute-chef Tom Brown uitlegt waarom Anthropic denkt hardware beter te benutten dan rivalen. De aandelen zijn geprijsd op 70 tot 78 dollar, lager dan verwacht. De boodschap aan beleggers is daarom ook defensief: dit is geen bedrijf dat afhankelijk is van één leverancier, maar een bedrijf dat rekenkracht als goed uitwisselbare grondstof behandelt.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 De claims in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="4">4</div><div class="ns-viz-stat-label">Chipfamilies voor training en inferentie</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Dagen om Claude op AMD te krijgen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="78">$78</div><div class="ns-viz-stat-label">Bovengrens koersrange (ondergrens $70)</div></div>
+</div></div>
+<h5>CUDA onder druk</h5>
+<p>Nvidia's voornaamste verdedigingslinie is niet de chip zelf maar CUDA, het softwareecosysteem dat ontwikkelaars aan de hardware bindt. Overstappen naar een andere architectuur kost zoveel werk dat veel bedrijven er niet aan beginnen, en dat verklaart mede Nvidia's marge van boven de 70 procent. Als een model die portering in dagen kan doen, verschuift de onderhandelingsmacht naar kopers. The Decoder noemt het een mogelijke erosie van de CUDA-voorsprong. Dat is een conditionele conclusie: de cijfers komen uit een investeerderspresentatie en niet uit onafhankelijk onderzoek, en prestaties van een gepoorteerde kernel zijn iets anders dan een volledig geoptimaliseerde. Toch past het bij de signalen van afgelopen maanden: Nvidia staat ongeveer 15 procent lager dan begin november en beleggers wachten op de Anthropic-beursgang.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Compute multiplier van 4x (rekenvoorbeeld uit de video)</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Zonder multiplier</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:25%">100 eenheden</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Met: zelfde model</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:6%">25</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Met: slimmer model</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">400-equivalent</div></div></div>
+</div></div>
+<blockquote>Elke multiplier die we ontdekken vergroot onze pool totale effectieve compute; ze stapelen.</blockquote>
+<h5>Wat het betekent</h5>
+<p>Brown spreekt van 'total effective compute': fysieke capaciteit maal ontdekte multipliers. Dat is een slimme manier om te zeggen dat Anthropic geen kapitaalwedloop alleen wil winnen met meer chips, wat gezien de enorme investeringen van concurrenten een nuchtere strategie is. Het risico is dat de uitspraken over recursieve zelfverbetering, waarbij Claude zelf multipliers vindt, vooral toekomstmuziek zijn. Voor beleggers telt in de tussentijd vooral het bewijs dat een multi-chipaanpak de marges beschermt, zeker nu de koersrange onder de verwachting ligt.</p>
+<h5>Conclusie</h5>
+<p>De roadshow maakt van een technisch detail het hart van het verhaal: flexibiliteit is Anthropic's grondstofstrategie. Als de drie dagen op AMD representatief zijn, raakt het ecosysteemvoordeel van Nvidia een van zijn belangrijkste steunen kwijt. Tot er onafhankelijk bewijs is, blijft dit een pitch van een bedrijf dat wil verkopen; maar het is een pitch die precies de zwakke plek van de chipmarkt raakt.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=T61Ga4QrrxM" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/T61Ga4QrrxM/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Roadshowvideo Anthropic onthult hoe het bedrijf over rekenkracht denkt 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a> &bull; <a href="https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>
