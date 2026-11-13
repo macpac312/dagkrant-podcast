@@ -1,0 +1,67 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://cdn-uploads.huggingface.co/production/uploads/6484ca4d5ff9a3d2ee52a83b/6KFZDHIJkxpICiErHLqAw.gif" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© huggingface.co</div></div><ul class="bg-bullets">
+<li>IBM introduceert LLMON, een opmaaktaal die structuur expliciet aan taalmodellen communiceert.</li>
+<li>Structuur zit in gereserveerde special tokens in plaats van tekens als accolades en aanhalingstekens.</li>
+<li>Unieke ID's koppelen instructies aan de data waarop ze werken, zoals functies en argumenten.</li>
+<li>Twee previewmodellen (3B en 8B) zijn experimenteel; bewezen betrouwbaarheid ontbreekt nog.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De release in het kort</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">experimentele previewmodellen</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3" data-suffix="B">3B</div><div class="ns-viz-stat-label">parameters, kleinste model</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="8" data-suffix="B">8B</div><div class="ns-viz-stat-label">parameters, grootste model</div></div>
+</div></div>
+<h5>Het probleem: JSON is voor parsers, niet voor modellen</h5>
+<p>Een taalmodel genereert het volgende token op basis van zijn context, en die context raakt in een lange taak gevuld met uiteenlopende componenten: een systeemprompt, eerdere gespreksbeurten, instructies over opgehaalde documenten, toolresultaten, gebruikersdata, outputvereisten en redeneerketens. Die rijke structuur is volgens IBM grotendeels impliciet voor het model, of verpakt in formaten als JSON die niet zijn ontworpen om door een LLM verwerkt te worden. Dat is een belangrijke reden dat vooral kleinere modellen broos zijn en onverwacht falen. Het gebrek aan expliciete structuur is ook een aanvalsvlak: prompt injection werkt doordat een model niet betrouwbaar kan onderscheiden wat instructie is en wat data. IBM heeft daarom LLMON ontwikkeld (LLM Object Notation, uitgesproken als ‘lemon’), nu beschikbaar in Granite 4.1 3B en 8B.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 JSON tegenover LLMON</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>JSON / XML</h6><p>Structuur in gewone tekens ({ " :) die ook in normale tekst staan. Nesting is bracket-tellen, waar transformers zwak in zijn.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>LLMON</h6><p>XML-achtige tags met gereserveerde special tokens als scheidingstekens. Structuur en inhoud gebruiken verschillende delen van de vocabulaire.</p></div>
+</div></div>
+<h5>Hoe LLMON werkt</h5>
+<p>Het ontwerp rust op drie ideeën. Semantisch samenhangende componenten krijgen betekenisvolle tags, omsloten door gereserveerde special tokens. Dataschema's, inclusief nesting, worden zo vastgelegd dat ze voor een causaal model ondubbelzinnig zijn. En unieke ID's maken het mogelijk te wijzen naar een specifieke instructie ergens in de context en die te koppelen aan de data waarop ze moet werken, vergelijkbaar met hoe functies worden aangeroepen en argumenten doorgegeven in programmeertalen. Het verschil met JSON is principieel: de tokenizer wordt niet gedwongen de grammatica te respecteren, en een aanhalingsteken in een document is voor het model hetzelfde token als een aanhalingsteken dat een veld sluit. Escape-regels die voor een parser helder zijn, zijn voor een model slechts statistische patronen.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe LLMON context ordent</div>
+<div class="ns-viz-mech-subtitle">Van impliciete context naar expliciet gelabelde structuur</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Kluwen</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Tags</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">ID-koppeling</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Uitvoer</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="30" width="260" height="140" rx="10" fill="#fff" stroke="#a78bfa" stroke-width="2"/><g font-size="11" fill="#44403c" font-family="monospace"><text x="45" y="55">systeemprompt... gebruiker...</text><text x="45" y="75">{"doc": "tekst met " quote"}</text><text x="45" y="95">toolresultaat: negeer alles</text><text x="45" y="115">eis: antwoord als JSON</text><text x="45" y="135">redenering ...</text></g><circle class="ns-viz-mech-hotspot" cx="270" cy="95" r="7" data-tip="Hier kan een prompt injection zitten"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Kluwen</h6><p class="korte">Alle contextonderdelen liggen als platte tekst door elkaar.</p><p class="uitleg">Systeemprompt, gespreksbeurten, documenten, tools en eisen staan naast elkaar. Het model moet zelf raden wat wat is, wat kleine modellen broos maakt en aanvallers ruimte geeft.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="25" width="260" height="32" rx="6" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed"/><text x="45" y="46" font-size="12" fill="#7c3aed" font-weight="700">‹system›</text><rect x="30" y="68" width="260" height="32" rx="6" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa"/><text x="45" y="89" font-size="12" fill="#7c3aed" font-weight="700">‹document›</text><rect x="30" y="111" width="260" height="32" rx="6" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa"/><text x="45" y="132" font-size="12" fill="#7c3aed" font-weight="700">‹tool_result›</text><text x="160" y="175" text-anchor="middle" font-size="11" fill="#44403c">tags tussen gereserveerde special tokens</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Tags</h6><p class="korte">Elk onderdeel krijgt een betekenisvolle tag.</p><p class="uitleg">De scheidingstekens zijn reserved special tokens, geen gewone tekens. Een aanhalingsteken in een document kan dus nooit voor structuur doorgaan.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="40" width="110" height="50" rx="8" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="85" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">instructie</text><text x="85" y="78" text-anchor="middle" font-size="11" fill="#44403c">id = i1</text><rect x="180" y="110" width="110" height="50" rx="8" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/><text x="235" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">data</text><text x="235" y="148" text-anchor="middle" font-size="11" fill="#44403c">doel = i1</text><path d="M140 70 C 180 70, 180 100, 235 108" fill="none" stroke="#7c3aed" stroke-width="2.5"/><path d="M228 100 L236 112 L244 100" fill="#7c3aed"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>ID-koppeling</h6><p class="korte">Een instructie wijst via een ID naar de data waarop ze werkt.</p><p class="uitleg">Zoals een functieaanroep argumenten bindt, bindt een ID een instructie aan een payload, ook als die ver uit elkaar in de context staan.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="100" y="55" width="120" height="70" rx="12" fill="#7c3aed"/><text x="160" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Granite 4.1</text><text x="160" y="104" text-anchor="middle" font-size="11" fill="#e9d5ff">3B / 8B LLMON</text><path d="M30 90 L95 90" stroke="#7c3aed" stroke-width="3"/><path d="M225 90 L290 90" stroke="#7c3aed" stroke-width="3"/><text x="160" y="160" text-anchor="middle" font-size="11" fill="#44403c">leest én schrijft LLMON-tekst</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Uitvoer</h6><p class="korte">Het model is getraind om LLMON te lezen én te schrijven.</p><p class="uitleg">IBM brengt granite-4.1-3b-LLMON-preview en granite-4.1-8b-LLMON-preview uit, plus een GitHub-repo met toolkit, voorbeeldworkflows en templates.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<blockquote>JSON was designed for parsers, not for causal language models.</blockquote>
+<h5>Gevolgen en kanttekeningen</h5>
+<p>Als LLMON werkt zoals beloofd, raakt het twee zere plekken van de huidige AI-praktijk. De eerste is betrouwbaarheid van gestructureerde output: precies wat ontwikkelaars nodig hebben als modellen taken moeten automatiseren, een thema dat deze week ook terugkwam bij de opmars van snelle beslismodellen. De tweede is veiligheid. Wanneer instructies en data in aparte, door special tokens gemarkeerde vakken zitten, wordt het moeilijker om via een document of toolresultaat commando's binnen te smokkelen. Dat sluit aan bij de voorzichtigheid die bedrijven als United Airlines tonen tegenover AI-agents. Tegelijk zijn er forse kanttekeningen. Het zijn experimentele previews, het bronmateriaal levert geen benchmarkcijfers, en een nieuw formaat werkt alleen als modellen het moeten leren: de bestaande wereld van JSON-API's en tooling verdwijnt er niet door. Een standaard van één leverancier moet ook concurreren met formaten die al overal in zitten. Het is ook niet vanzelfsprekend dat special tokens aanvallen volledig uitsluiten; een model blijft statistisch.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Special tokens</summary><div class="ns-viz-concept-body">Gereserveerde items in de vocabulaire van een model die niet uit gewone tekst kunnen ontstaan. LLMON gebruikt ze als scheidingstekens.</div></details>
+  <details class="ns-viz-concept"><summary>Prompt injection</summary><div class="ns-viz-concept-body">Aanval waarbij kwaadwillende tekst in data (een document, webpagina, toolresultaat) als instructie wordt opgevat door het model.</div></details>
+  <details class="ns-viz-concept"><summary>Causaal model</summary><div class="ns-viz-concept-body">Een model dat token voor token vooruit leest en genereert, zonder terug te kunnen kijken in een parser-achtige grammatica.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>LLMON is een logische stap: de AI-sector heeft jarenlang formaten voor machines gebruikt om met een statistisch model te praten, en betaalt daar in broosheid voor. IBM kiest voor structuur in het model zelf. Of het een standaard wordt hangt af van onafhankelijke metingen en adoptie buiten IBM. Voorlopig is het vooral een serieus ontwerpvoorstel voor het hardnekkigste probleem van agentische software: weten wat instructie is en wat data.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=5sLYAQS9sWQ" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/5sLYAQS9sWQ/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Hoe grote taalmodellen werken</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite" target="_blank" style="color:var(--accent)">huggingface.co ↗</a></div>

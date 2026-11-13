@@ -1,0 +1,16 @@
+{
+  "title": "IBM introduceert LLMON, een opmaaktaal voor taalmodellen",
+  "summary": "De nieuwe Granite 4.1-modellen van 3 en 8 miljard parameters ondersteunen LLMON.\n\nIBM presenteert LLMON, een opmaaktaal die speciaal is ontworpen voor taalmodellen. De taal zit in de nieuwe Granite 4.1-modellen van 3 en 8 miljard parameters.\n\nLLMON moet gestructureerde output betrouwbaarder maken dan JSON of XML.",
+  "sources": [
+    "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-13",
+  "slug": "ibm-introduceert-llmon-een-opmaaktaal-voor-taalmodellen",
+  "tts_slug": "ibm-introduceert-llmon-een-opmaaktaal-voor-taalmodellen",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-13T05:32:12",
+  "size_kb": 12
+}

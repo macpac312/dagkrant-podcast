@@ -1,0 +1,71 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://latent.space/og/card/post/ainews-d-day-decision-models-day/d2600d673d83d2c42c810a6c57c6e5942326283dfe350801c137d18f262c4f90.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© latent.space</div></div><ul class="bg-bullets">
+<li>Google lanceerde Gemini Decision 1: een model dat keuzes scoort in plaats van tekst te genereren.</li>
+<li>Het kost $0,10 per miljoen inputtokens en antwoordt in 150–250 milliseconden.</li>
+<li>TypeSafe's Jev kostte minder en zette de trend; Google wint zelf 5 van 7 gedeelde benchmarks.</li>
+<li>Onafhankelijke tests zijn gemengder: de echte strijd gaat om betrouwbaarheid in productie.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Gemini Decision 1 in specs</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-prefix="$" data-target="0.10">$0.10</div><div class="ns-viz-stat-label">per miljoen inputtokens, output gratis</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1000">1000</div><div class="ns-viz-stat-label">vragen per verzoek</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="255">255</div><div class="ns-viz-stat-label">meerkeuzeopties maximaal</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="256" data-suffix="K">256K</div><div class="ns-viz-stat-label">contextvenster</div></div>
+</div></div>
+<h5>De dag van System One</h5>
+<p>Op de tweede AI Engineer Code Summit in San Francisco draaide alles om ‘System One’-modellen: niet-generatieve modellen die gestructureerde keuzes, scores of kansen teruggeven. Ze zijn doorgaans veel sneller en goedkoper dan redeneermodellen, de ‘System Two’-variant. Op 11 november maakte Google daar een product van: Sundar Pichai en Logan Kilpatrick kondigden Gemini Decision 1 aan, een gekalibreerd multimodaal beslismodel. Het verwerkt tekst, beeld, audio, video en pdf, kan tot 1000 vragen per verzoek aan en hecht aan elk antwoord een zekerheidsscore. Volgens Latent Space versloeg Google daarmee Anthropic, dat naar verluidt ook aan zoiets werkt. Opvallend is de herkomst: een intern prototype van Google DeepMind, dat een klein team in ongeveer zes weken als model en API uitbracht. Het toont hoe snel een goed afgebakend idee uit het lab in de markt kan belanden.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Beslissen in één pass</div>
+<div class="ns-viz-mech-subtitle">Van vraag naar gescoorde keuze, zonder tekst te genereren</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Invoer</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Keuzes</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Eén pass</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Score</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="40" width="70" height="50" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="2"/><text x="65" y="70" text-anchor="middle" font-size="11" fill="#7c3aed">tekst</text><rect x="125" y="40" width="70" height="50" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/><text x="160" y="70" text-anchor="middle" font-size="11" fill="#7c3aed">beeld</text><rect x="220" y="40" width="70" height="50" rx="6" fill="#fff" stroke="#a78bfa" stroke-width="2"/><text x="255" y="70" text-anchor="middle" font-size="11" fill="#7c3aed">pdf / audio</text><path d="M160 100 L160 150" stroke="#7c3aed" stroke-width="3"/><path d="M150 142 L160 156 L170 142" fill="#7c3aed"/></svg></div>
+    <div class="ns-viz-mech-info"><h6>Invoer</h6><p class="korte">Tekst, beeld, audio, video of pdf gaat erin.</p><p class="uitleg">Het model accepteert meerdere formaten en tot 1000 vragen per verzoek, binnen een context van 256K tokens.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="40" y="30" width="240" height="30" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#7c3aed"/><text x="60" y="50" font-size="12" fill="#44403c">A  ja</text><rect x="40" y="72" width="240" height="30" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#7c3aed"/><text x="60" y="92" font-size="12" fill="#44403c">B  nee</text><rect x="40" y="114" width="240" height="30" rx="6" fill="#a78bfa" fill-opacity=".2" stroke="#7c3aed"/><text x="60" y="134" font-size="12" fill="#44403c">C  rubriekscore 1-5</text><text x="160" y="175" text-anchor="middle" font-size="11" fill="#7c3aed">gesloten set, max. 255 opties</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Keuzes</h6><p class="korte">De ontwikkelaar definieert een gesloten set antwoorden.</p><p class="uitleg">Ja/nee, meerkeuze (tot 255 opties) of rubric-scoring. Het model hoeft dus niets te verzinnen, alleen te kiezen.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="110" y="55" width="100" height="90" rx="12" fill="#7c3aed"/><text x="160" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Decision 1</text><text x="160" y="124" text-anchor="middle" font-size="11" fill="#e9d5ff">1 pass</text><path d="M30 100 L105 100" stroke="#7c3aed" stroke-width="3"/><path d="M215 100 L290 100" stroke="#7c3aed" stroke-width="3"/><text x="160" y="175" text-anchor="middle" font-size="11" fill="#44403c">geen token-voor-token generatie</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Eén pass</h6><p class="korte">Alle opties worden in één doorloop gescoord.</p><p class="uitleg">Waar een taalmodel tekst woord voor woord opbouwt, scoort dit model de keuzes direct. Dat verklaart de latentie van 150–250 ms end-to-end.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><text x="40" y="55" font-size="12" fill="#44403c">A</text><rect x="60" y="42" width="200" height="16" rx="4" fill="#e7e5e4"/><rect x="60" y="42" width="150" height="16" rx="4" fill="#7c3aed"/><text x="40" y="95" font-size="12" fill="#44403c">B</text><rect x="60" y="82" width="200" height="16" rx="4" fill="#e7e5e4"/><rect x="60" y="82" width="40" height="16" rx="4" fill="#a78bfa"/><text x="160" y="150" text-anchor="middle" font-size="12" fill="#7c3aed" font-weight="700">antwoord + zekerheidsscore</text><text x="160" y="170" text-anchor="middle" font-size="10" fill="#78716c">(illustratief)</text></svg></div>
+    <div class="ns-viz-mech-info"><h6>Score</h6><p class="korte">Elk antwoord komt met een zekerheidsscore.</p><p class="uitleg">Gekalibreerde scores laten code bepalen wanneer te vertrouwen en wanneer door te sturen naar een duurder model of mens.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Waarom betrouwbaarheid het verkooppraatje is</h5>
+<p>De trend begon niet bij Google. Jev van TypeSafe AI kwam in september uit en werd volgens Latent Space meteen een openbaring voor AI-engineers; het bedrijf passeerde inmiddels $100 miljoen aan jaarlijkse omzet. Medeoprichter Diogo Almeida stelde het probleem van taalmodellen als hart van software scherp: ‘you get Einstein 95% of the time, but Mr. Bean 5% of the time’. Wie niet kan zien welke het is, kan niets automatiseren. Zijn oplossing: System One-aanroepen overal in applicatiecode strooien, want ‘code is the language of automation’. Bij Cloudflare liet Michelle Chen zien welke delen van een mislukte build een classifier kan afhandelen, en bij Glean draaien dergelijke modellen naast LLM's en andere classifiers. Het patroon is duidelijk: het dure redeneermodel blijft voor het moeilijke werk, de snelle beslisser doet het poortwachterswerk.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+  <thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">Model</th><th style="text-align:right;padding:.3rem .5rem">$/1M input</th><th style="text-align:right;padding:.3rem .5rem">JevBench</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:.25rem .5rem">Gemini Decision 1</td><td style="text-align:right">0,10</td><td style="text-align:right">92,2%</td></tr>
+    <tr><td style="padding:.25rem .5rem">Jev 1.14</td><td style="text-align:right">0,042</td><td style="text-align:right">90,0%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Eigen tests Google; onafhankelijk beeld is gemengder.</p>
+</div>
+<blockquote>Je krijgt Einstein 95 procent van de tijd en Mr. Bean 5 procent. Wie niet weet welke het is, kan niets automatiseren.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">📊 Google tegenover Jev, volgens Google</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Decision 1</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:92%">92,2%</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Jev 1.14</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:90%">90,0%</div></div></div>
+</div></div>
+<h5>Gevolgen en kanttekeningen</h5>
+<p>Voor ontwikkelaars verschuift de rekensom. Google noemt Decision 1 ongeveer vijf keer goedkoper dan Flash-Lite, en met $0 voor output wordt classificeren op grote schaal betaalbaar. Maar Jev is met $0,042 per miljoen tokens nog altijd goedkoper, en Google's eigen overwinning op vijf van zeven gedeelde benchmarks (92,2% tegen 90,0% op JevBench) is een zelfgekozen test; Latent Space waarschuwt zelf voor de gebruikelijke benchmarkvoorbehouden en Artificial Analysis levert gemengdere resultaten, met een score van 66 op de Decision Index. Voor het bredere AI-verhaal is het een signaal: terwijl de markt wacht op de beursgang van Anthropic en frontiermodellen hun denkstappen steeds vaker verbergen, is een model dat expliciet een zekerheidsscore meegeeft juist een stap naar controleerbaarheid. Dat past ook bij het nieuws dat United Airlines AI-agents weert: bedrijven willen automatiseren, maar alleen met voorspelbare componenten.</p>
+<h5>Conclusie</h5>
+<p>Decision models maken van AI een gewone softwarecomponent: snel, goedkoop, met een foutmarge die je kunt uitlezen. Dat is minder spectaculair dan een nieuw frontiermodel, maar waarschijnlijk economisch belangrijker. Dat Google, TypeSafe en straks Anthropic tegelijk in deze niche zitten, wijst op een nieuwe laag in de AI-stack. De winnaar bepaalt niet de benchmark, maar de betrouwbaarheid in productie.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=DH9f4cViMqg" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/DH9f4cViMqg/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Where decisions happen in 2026: Google AI Mode \u0026 AI answer engines</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://latent.space/p/ainews-d-day-decision-models-day/" target="_blank" style="color:var(--accent)">latent.space ↗</a> &bull; <a href="https://latent.space/p/jev-revolution/" target="_blank" style="color:var(--accent)">latent.space ↗</a></div>

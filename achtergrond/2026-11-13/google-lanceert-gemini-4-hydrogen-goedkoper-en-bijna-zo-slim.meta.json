@@ -1,0 +1,20 @@
+{
+  "title": "Google lanceert Gemini 4 Hydrogen: goedkoper en bijna zo slim als Claude Sonnet 5.5",
+  "summary": "Het nieuwe kleinste model vervangt de Flash-reeks en scoort beter dan het grotere Argon, vier weken na diens lancering.\n\nGoogle heeft Gemini 4 Hydrogen gelanceerd, het goedkoopste lid van de Gemini 4-familie en opvolger van de Flash-reeks. Op de Artificial Analysis Intelligence Index komt Hydrogen dicht bij Claude Sonnet 5.5, voor minder geld. Per taak is het wel ongeveer 2,5 keer duurder dan GPT-6.1 Sol, meldt The Decoder.\n\nOpvallend: Hydrogen scoort hoger dan het grotere en duurdere Gemini 4 A",
+  "sources": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/",
+    "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+    "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+    "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-13",
+  "slug": "google-lanceert-gemini-4-hydrogen-goedkoper-en-bijna-zo-slim",
+  "tts_slug": "google-lanceert-gemini-4-hydrogen-goedkoper-en-bijna-zo-slim",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-13T05:32:11",
+  "size_kb": 16
+}
