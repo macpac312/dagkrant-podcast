@@ -1,0 +1,16 @@
+{
+  "title": "llama.cpp bereikt versie 1.0",
+  "summary": "Het open-sourceproject voor lokaal draaien van taalmodellen noemt de release 'een sterker fundament'.\n\nllama.cpp, de populaire software om taalmodellen lokaal op eigen hardware te draaien, heeft versie 1.0.0 uitgebracht, meldt Hugging Face.",
+  "sources": [
+    "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-14",
+  "slug": "llamacpp-bereikt-versie-10",
+  "tts_slug": "llamacpp-bereikt-versie-10",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-14T05:36:27",
+  "size_kb": 13
+}

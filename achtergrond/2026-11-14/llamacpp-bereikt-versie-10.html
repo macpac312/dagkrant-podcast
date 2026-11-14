@@ -1,0 +1,68 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© huggingface.co</div></div><ul class="bg-bullets">
+<li>llama.cpp bereikt versie 1.0.0, 3,5 jaar na de start van het project.</li>
+<li>Vanaf nu worden API- en ABI-breuken zichtbaar gemaakt met majorversie-verhogingen volgens semantic versioning.</li>
+<li>Het project draait multimodale modellen van consumentenhardware tot bedrijfsservers, via quantisatie en geoptimaliseerde backends.</li>
+<li>Hugging Face-infrastructuur en hardwaresteun van onder meer NVIDIA, AMD, Qualcomm, Arm, IBM en Intel borgen de kwaliteit.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het project in cijfers</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3.5" data-suffix=" jaar">3.5 jaar</div><div class="ns-viz-stat-label">Sinds de start</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1.0" data-prefix="v" data-suffix=".0">v1.0.0</div><div class="ns-viz-stat-label">Eerste stabiele release</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="6">6</div><div class="ns-viz-stat-label">Hardwarepartners voor CI-runners</div></div>
+</div></div>
+<h5>Rijpheid na 3,5 jaar</h5>
+<p>Dat llama.cpp versie 1.0.0 haalt, zegt meer over de rol van het project dan over de code zelf. De software maakt het mogelijk multimodale taalmodellen te draaien op een breed scala aan hardware, van consumentenlaptops tot zware bedrijfsservers. Het ontwikkelteam noemt de combinatie van quantisatie, geoptimaliseerde backends en een draagbare C/C++-implementatie de meest lichtgewicht en veelzijdige basis voor cross-platform en privacyvriendelijke AI-producten. Na 3,5 jaar zijn tal van downstreamtoepassingen afhankelijk van het project. Elke nieuwe integratie betekent dat meer ontwikkelaars leunen op de bibliotheekinterfaces, en dus is een flexibele maar stabiele API volgens het team onmisbaar. Versie 1.0.0 is daarom vooral een belofte aan die gebruikers: wie bovenop llama.cpp bouwt, krijgt voortaan duidelijkheid over wanneer iets kapot kan gaan.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Van experiment tot fundament</div>
+<div class="ns-viz-timeline">
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">begin</div><div>Project start als eenvoudige manier om modellen lokaal te draaien</div></div>
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">3,5 jaar later</div><div>Veel downstreamtoepassingen bouwen op de bibliotheek</div></div>
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">nu</div><div>Versie 1.0.0 van de libraries met semantic versioning</div></div>
+<div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">straks</div><div>Meer distributiekanalen en verpakking in release-pijplijnen</div></div>
+</div></div>
+<h5>Wat versienummer 1.0 verandert</h5>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe semantic versioning ontwikkelaars beschermt</div>
+<div class="ns-viz-mech-subtitle">Van onzichtbare breuken naar zichtbare majorversies</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Wijziging</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Beoordeling</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Release</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Adoptie</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="60" width="110" height="60" rx="9" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.8"/><text x="75" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Codewijziging</text><text x="75" y="103" text-anchor="middle" font-size="10" fill="#44403c">in llama.cpp</text><line x1="132" y1="90" x2="178" y2="90" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/><circle cx="178" cy="90" r="4" fill="#7c3aed"/><rect x="180" y="60" width="120" height="60" rx="9" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.8"/><text x="240" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">Interface</text><text x="240" y="103" text-anchor="middle" font-size="10" fill="#44403c">API · ABI</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Wijziging</h6><p class="korte">Een ontwikkelaar past de bibliotheek aan.</p><p class="uitleg">Een wijziging in llama.cpp of ggml raakt de interface waarop andere software draait.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="110" y="20" width="100" height="50" rx="9" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.8"/><text x="160" y="43" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Toets</text><text x="160" y="58" text-anchor="middle" font-size="10" fill="#44403c">breekt het?</text><line x1="130" y1="72" x2="80" y2="120" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/><circle cx="80" cy="120" r="4" fill="#7c3aed"/><line x1="190" y1="72" x2="240" y2="120" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/><circle cx="240" cy="120" r="4" fill="#7c3aed"/><rect x="20" y="120" width="110" height="56" rx="9" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.8"/><text x="75" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">Nee</text><text x="75" y="161" text-anchor="middle" font-size="10" fill="#44403c">minor of patch</text><rect x="190" y="120" width="110" height="56" rx="9" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.8"/><text x="245" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Ja</text><text x="245" y="161" text-anchor="middle" font-size="10" fill="#44403c">majorversie</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Beoordeling</h6><p class="korte">Het team toetst of API of ABI breekt.</p><p class="uitleg">Alleen een onverenigbare wijziging in API of ABI telt als breuk. Zo'n grens wordt voortaan expliciet gemaakt.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="100" y="40" width="120" height="50" rx="9" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.8"/><text x="160" y="63" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Versie</text><text x="160" y="78" text-anchor="middle" font-size="10" fill="#44403c">1.x → 2.0</text><line x1="160" y1="92" x2="160" y2="130" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/><circle cx="160" cy="130" r="4" fill="#7c3aed"/><text x="160" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Waarschuwing voor gebruikers</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Release</h6><p class="korte">Het versienummer toont de aard van de update.</p><p class="uitleg">Een majorversie-verhoging waarschuwt downstream-consumenten dat aanpassing nodig kan zijn; kleinere nummers zijn veilig te nemen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="60" width="90" height="60" rx="9" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.8"/><text x="65" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Verpakker</text><text x="65" y="103" text-anchor="middle" font-size="10" fill="#44403c">release-pijplijn</text><line x1="112" y1="90" x2="138" y2="90" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/><circle cx="138" cy="90" r="4" fill="#7c3aed"/><rect x="140" y="60" width="80" height="60" rx="9" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.8"/><text x="180" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">App</text><text x="180" y="103" text-anchor="middle" font-size="10" fill="#44403c">downstream</text><line x1="222" y1="90" x2="248" y2="90" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/><circle cx="248" cy="90" r="4" fill="#7c3aed"/><rect x="250" y="60" width="60" height="60" rx="9" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.8"/><text x="280" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Gebruiker</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Adoptie</h6><p class="korte">Distributeurs en apps kunnen veilig meebewegen.</p><p class="uitleg">Verpakkers en eindgebruikers nemen updates op in hun release-pijplijnen met minder verrassingen, terwijl de CI op echte hardware elke wijziging controleert.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<p>Het team past vanaf nu semantic versioning toe op alle ggml-org-projecten, met majorversies voor API- en ABI-breuken. Voor een project dat jarenlang snel en pragmatisch bewoog, is dat een cultuurverandering: stabiliteit wordt een expliciet product. De bron kondigt ook aan dat de distributie wordt uitgebreid en verwijst naar een discussie over het opnemen van ggml-org-software in packaging- en releasepijplijnen.</p>
+<blockquote>Voortaan zullen llama.cpp en ggml API- en ABI-onverenigbaarheden zichtbaar maken met majorversie-verhogingen.</blockquote>
+<h5>Kwaliteit op schaal en de rol van AI</h5>
+<p>Het project erkent dat AI-capaciteiten voor softwareontwikkeling snel groeien en zegt LLM's zorgvuldig en verstandig in de eigen ontwikkelcyclus te integreren. Prioriteit blijft een hoogwaardige codebase, controle over de architectuur en begrip van implementatiedetails. Om het hogere tempo te ondersteunen, investeert het team meer in CI-infrastructuur. Met Hugging Face-technologieën als HF Buckets en HF Jobs schaalt de capaciteit mee, zodat elke wijziging op de hoofdbranches op juistheid wordt getest. Daarbij helpen zelfgehoste runners op alle grote hardwareplatforms, met steun van NVIDIA, AMD, Qualcomm, Arm, IBM en Intel. Dat is relevant voor de hele markt: wie lokale AI wil, is afhankelijk van een bibliotheek die op uiteenlopende chips betrouwbaar werkt. Het contrast met de grote cloudstoringen van deze week, waaronder die bij Microsoft en Claude, maakt het argument van lokale controle en privacy extra zichtbaar.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+<details class="ns-viz-concept"><summary>Quantisatie</summary><div class="ns-viz-concept-body">Het verkleinen van modelgewichten naar lagere precisie, zodat grote modellen op gewone hardware passen.</div></details>
+<details class="ns-viz-concept"><summary>API en ABI</summary><div class="ns-viz-concept-body">De interface waarop andere software bouwt: API op broncodeniveau, ABI op binair niveau. Breuken daarin dwingen downstream-aanpassingen af.</div></details>
+<details class="ns-viz-concept"><summary>Semantic versioning</summary><div class="ns-viz-concept-body">Een afspraak waarbij het versienummer aangeeft of een update onverenigbaar is: een majorversie betekent een mogelijke breuk.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Versie 1.0 maakt van llama.cpp officieel wat het feitelijk al was: infrastructuur. Dat verplicht tot voorspelbaarheid. De open vraag is of het project de snelheid van experimenteren kan behouden nu elke breuk een majorversie kost. Gelet op de brede hardwaresteun en de investering in testen lijkt het team die afweging bewust te hebben gemaakt, ten gunste van het vertrouwen van de ontwikkelaars die erop bouwen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=TYLstWlAvHM" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/TYLstWlAvHM/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">llama.cpp versie 1.0.0 voegt platformoverschrijdende bibliotheken toe</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank" style="color:var(--accent)">huggingface.co ↗</a></div>
