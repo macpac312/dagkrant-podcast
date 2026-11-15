@@ -1,0 +1,16 @@
+{
+  "title": "Claude Code 2.1.325 repareert zstd-fout en bugs in machtigingen",
+  "summary": "Een onderhoudsrelease voor de codeeragent, met fixes voor compressie en het toestemmingssysteem.\n\nClaude Code versie 2.1.325 is uit. De update repareert een probleem met zstd-compressie en enkele bugs in het systeem voor machtigingen, meldt Meteora Web.",
+  "sources": [
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb2duZFB2QUZNZVo1RmJfVkV2UWwxYktmVV9QVklxYjRTODVuNjdXam1VWmJfSU9pcm5BWFdlSERTWXZRUXJ5VDJtUE5RZzdqaE5MU1JUNEZWLW9rY0piZ2xkU1doSFA5Q1JibWZJeXFQWml1LV9WemE3ZmVMbWhXc3VHcHo3VXZIbzlaeWQwQml3WFE5anc?oc=5"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-15",
+  "slug": "claude-code-21325-repareert-zstd-fout-en-bugs-in-machtiginge",
+  "tts_slug": "claude-code-21325-repareert-zstd-fout-en-bugs-in-machtiginge",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-15T05:35:33",
+  "size_kb": 5
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Anthropic: oude prompt-gewoonten maken Claude Opus 5.5 trager",
+  "summary": "Opus 5.5 is nu het standaardmodel op alle betaalde abonnementen. Anthropics advies: stop met 'think hard' en begin op medium inspanning.\n\nAnthropic heeft Claude Opus 5.5 het standaardmodel gemaakt op alle betaalde abonnementen, en een handleiding gepubliceerd die afrekent met oude prompt-gewoonten, meldt The Decoder. De belangrijkste les: laat instructies als 'think hard' weg en begin op de inspanningsstand Medium.\n\nOude trucs om modellen grondiger te laten nadenken, maken het nieuwe model volge",
+  "sources": [
+    "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+    "https://www.online-tech-tips.com/anthropic-claude-fable-5-2-vs-opus-5-5/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-15",
+  "slug": "anthropic-oude-prompt-gewoonten-maken-claude-opus-55-trager",
+  "tts_slug": "anthropic-oude-prompt-gewoonten-maken-claude-opus-55-trager",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-15T05:35:33",
+  "size_kb": 6
+}

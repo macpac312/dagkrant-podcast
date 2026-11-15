@@ -1,0 +1,20 @@
+{
+  "title": "Cursor bevestigt hack: valse Claude Code-extensie met SSH-achterdeur in marketplace",
+  "summary": "Via een gelekte sleutel bij leverancier Fireworks AI konden aanvallers data stelen en een kwaadaardige extensie verspreiden. Cursor zet Fireworks aan de kant.\n\nCodeereditor Cursor heeft een inbraak bevestigd waarbij aanvallers een valse Claude Code-extensie in de Cursor-marketplace plaatsten. De extensie bevatte een SSH-achterdeur. De aanvallers kwamen binnen via een sleutel die was gelekt bij Fireworks AI, een leverancier van Cursor. Ze konden ook data stelen.\n\nCursor heeft de samenwerking met ",
+  "sources": [
+    "https://www.online-tech-tips.com/cursor-breach-malicious-claude-code-extension/",
+    "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU0x5eDE1M0hYQ2FMemNxd2QyanFDUnBsaVEzMGVWSFhZVGVjbGU5ZzdCQTh4cV94cHJYVGxWNm81eXNmUW9iNHNqZ21yUlZodWx5YnpaZ3EzWUZFNVZqWld0Y01vVGtESXNnTGhmTUQ2dnB6Vm1IWmEzMFBWZWQxZVZfVC1WZG1ISXo5UUg1V0xtTWFNN2kwaUxkVkdJSkpjenBudEVPQ1dSNTF2a0pYWURJTnZiM3I0c3IzZ09RRmt2N1lVeTZIcS01R29OZ2ZXZVZtaXlXQ0xEVHM3VDVLWlFJbFlqSm8?oc=5",
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMEJicWFhbzZPdy1Lb3F1Ulh5WUdjaEUxTnhjQkdRdDJuTldjZ3U3cFJzaEdHUWpnUnhkbTZIQTdBR1R6WVZYZy04RWhkVV9Eb1FEU1VudVNiV01NaUVCUkg5VXdUZUZiY1JOajI3X2ZWSDVmT2dLa1U0Z2hhUmdpOC1NV0ttTDd4?oc=5",
+    "https://www.2-spyware.com/cursor-confirms-breach-behind-fake-claude-code-extension",
+    "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-15",
+  "slug": "cursor-bevestigt-hack-valse-claude-code-extensie-met-ssh-ach",
+  "tts_slug": "cursor-bevestigt-hack-valse-claude-code-extensie-met-ssh-ach",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-15T05:35:33",
+  "size_kb": 13
+}

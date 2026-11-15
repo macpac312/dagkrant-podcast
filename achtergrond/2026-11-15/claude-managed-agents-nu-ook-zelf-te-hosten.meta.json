@@ -1,0 +1,16 @@
+{
+  "title": "Claude Managed Agents nu ook zelf te hosten",
+  "summary": "Sinds 12 november kunnen organisaties Anthropics agentplatform op eigen infrastructuur draaien, met lokale opslag van sessies.\n\nAnthropic heeft op 12 november een zelf-gehoste versie van Claude Managed Agents uitgebracht. Organisaties, zoals universiteiten, kunnen sessiegegevens daarmee lokaal opslaan, maar nemen ook het beheer op zich, meldt CASRAI.",
+  "sources": [
+    "https://casrai.org/news/claude-managed-agents-self-hosted-release-2026"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-15",
+  "slug": "claude-managed-agents-nu-ook-zelf-te-hosten",
+  "tts_slug": "claude-managed-agents-nu-ook-zelf-te-hosten",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-15T05:35:33",
+  "size_kb": 6
+}

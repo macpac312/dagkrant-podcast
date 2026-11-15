@@ -1,0 +1,17 @@
+{
+  "title": "OpenAI heft robotica-team op: algemene modellen sturen robots zelf aan",
+  "summary": "Voor de tweede keer verspreidt OpenAI zijn roboticaonderzoekers over andere teams. GPT-6 Astra kan robots kennelijk direct besturen.\n\nOpenAI heft zijn zelfstandige roboticateam op, voor de tweede keer in zijn geschiedenis, meldt The Decoder. Niet door gebrek aan data, maar omdat algemene modellen als GPT-6 Astra robots kennelijk direct kunnen aansturen. Een aparte eenheid is daardoor overbodig. De onderzoekers worden verdeeld over andere teams; OpenAI noemt dat een manier om de robotica te versn",
+  "sources": [
+    "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+    "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-15",
+  "slug": "openai-heft-robotica-team-op-algemene-modellen-sturen-robots",
+  "tts_slug": "openai-heft-robotica-team-op-algemene-modellen-sturen-robots",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-15T05:35:33",
+  "size_kb": 11
+}
