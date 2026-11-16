@@ -1,0 +1,19 @@
+{
+  "title": "Claude Fable 5.2 genereert geen afbeeldingen, het schildert ze met code",
+  "summary": "In plaats van pixels te berekenen schrijft Anthropics model Python-code die honderdduizenden gesimuleerde penseelstreken op een virtueel doek zet, met borstelstructuur. Ook Simon Willison leunt op Fable 5.2 voor Datasette.\n\nAnthropics Claude Fable 5.2 maakt afbeeldingen op een andere manier dan beeldgeneratoren. Het taalmodel schrijft Python-code die honderdduizenden gesimuleerde penseelstreken op een virtueel doek plaatst, compleet met structuur van de borstelharen, meldt The Decoder.\n\nHet mode",
+  "sources": [
+    "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+    "https://simonwillison.net/2026/Nov/15/datasette/",
+    "https://simonwillison.net/2026/Nov/15/datasette-2/",
+    "https://simonwillison.net/2026/Nov/14/datasette-vega/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-16",
+  "slug": "claude-fable-52-genereert-geen-afbeeldingen-het-schildert-ze",
+  "tts_slug": "claude-fable-52-genereert-geen-afbeeldingen-het-schildert-ze",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-16T05:35:52",
+  "size_kb": 14
+}

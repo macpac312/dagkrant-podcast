@@ -1,0 +1,16 @@
+{
+  "title": "'Code Mode': Claude Code schrijft zelf de handleiding voor zijn gereedschap",
+  "summary": "Een Japanse ontwikkelaarsblog beschrijft een experiment waarin Claude Code zijn eigen werkprocedures voor tools opstelt.\n\nOp het Japanse platform note beschrijft een ontwikkelaar in speelse dialoogvorm een experiment dat hij 'Code Mode' noemt: Claude Code laten schrijven hoe het zijn gereedschappen moet gebruiken. Het model stelt daarbij zijn eigen 'handleiding' op.\n\nHet idee is dat het model zo efficiënter werkt, omdat het niet telkens opnieuw hoeft uit te zoeken hoe een tool werkt.",
+  "sources": [
+    "https://note.com/manabi_ai_note/n/nb2878a2e2b9c?hl=en"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-16",
+  "slug": "code-mode-claude-code-schrijft-zelf-de-handleiding-voor-zijn",
+  "tts_slug": "code-mode-claude-code-schrijft-zelf-de-handleiding-voor-zijn",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-16T05:35:53",
+  "size_kb": 11
+}
