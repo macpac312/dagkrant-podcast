@@ -1,0 +1,37 @@
+<h1>Software is breaking down at a systemic level</h1>
+<p>Software hasn’t been working too well lately, has it?</p>
+<p>This weekend we saw the double-whammy of a 2 day global Microsoft outage, then an FAA ground-stop that halted all flights in the United States.</p>
+<p>Can you believe it’s only been <strong>four weeks</strong> since the <a href="https://en.wikipedia.org/wiki/PHP2Shell" target="_blank" rel="noopener">PHP2Shell</a> vulnerability? A critical exploit in PHP, powering an estimated 70% of the world’s websites, with sites taken completely offline as engineers frantically patched their systems.</p>
+<p>And then there was the <a href="https://en.wikipedia.org/wiki/EMudhra#2026_weak_key_incident" target="_blank" rel="noopener">eMudhra fiasco</a>, where thousands of SSL certificates - the way we secure HTTPS websites and internet traffic - were compromised by a private key so weak, it was almost comical.</p>
+<p>It’s like 2026 has been a year of hacks, outages, vulnerabilities and IT panics. What exactly is going on here?</p>
+<p>You might be tempted to blame AI, and you wouldn’t be completely wrong. Artificial intelligence models are definitely a part of this. Even if companies like Microsoft don’t divulge whether broken systems were built with AI, we do know that hackers and researchers can now use AI technology to find complicated exploits in a matter of hours.</p>
+<p>I work with AI heavily in my job. It’s tremendously powerful. It’s also corrosive if used unwisely.</p>
+<p>But AI is both a cause and a symptom of the problem here. What we are seeing is software breaking down at a systemic level. This problem is insidious because it is not only the software itself that is broken, but the entire way we’ve come to build it.</p>
+<h2>What does it mean for a failure to be systemic?</h2>
+<p>Look at the recent crises in software reliability and you’ll notice they don’t share immediate causes - that we know of - yet they look uncannily <em>similar</em> to each other.</p>
+<h2>Microsoft</h2>
+<p>The Microsoft outage likely emerged from a <a href="https://x.com/tomwarren/status/2121212124508885175" target="_blank" rel="noopener">network configuration failure</a> that stopped MS datacenters communicating with each other. Exactly what happened next remains confidential, but it seems to have triggered a cascading failure where no service could be restored into a valid state long enough to bear traffic.</p>
+<p>Reddit and Bluesky speculated that even MSFT engineers had no real handle on the complexity of this outage.</p>
+<p>Microsoft have faced increasing criticism for the (un)reliability of their Azure platform. Back in March, ex-MSFT engineer Axel Rischin published this <a href="https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion" target="_blank" rel="noopener">scathing criticism</a>:</p>
+<blockquote>Microsoft rushed Azure out of the gates under intense competitive pressure. Corners were cut. Fundamental principles of reliability and operational simplicity were quietly abandoned.</blockquote>
+<blockquote>Instead of going back to the drawing board to tackle the growing technical debt, Microsoft relied on quick fixes: layers of automation running mitigation scripts, a growing team of on-call staff, and, when automation was not enough, manual repairs.</blockquote>
+<p>His article depicts a highly complex system made of low quality parts, where nobody can make sense of the whole picture.</p>
+<h2>The PHP event</h2>
+<p>On October 21st, security research firm Wiz <a href="https://www.wiz.io/blog/php2shell-php-rce" target="_blank" rel="noopener">proudly shared an exploit that could execute arbitrary code on any PHP website</a>. Called PHP2Shell, Wiz trumpeted the power of AI tools to achieve exploits far beyond the skills of human attackers.</p>
+<p>It turns out the PHP runtime had hidden several complex memory bookkeeping bugs for over a decade. PHP is used extensively in e-commerce and most famously in WordPress, which was once the go-to for cheaply building simple websites.</p>
+<p>The PHP2Shell writeup depicts an internet dependent on a long chain of dependencies, hiding vulnerabilities too complex for any human to identify.</p>
+<h2>Shai Hulud attack, May 2026</h2>
+<p>Most people outside of tech won’t have heard of this, but back in May we faced a crisis when an attacker compromised some important packages in the JavaScript ecosystem (NPM).</p>
+<p>These packages used GitHub Actions to perform Continuous Integration (CI) - automated tests, releases, etc. - and had a crucial misconfiguration where anyone who forked their projects could insert compromised code back upstream.</p>
+<p>When the next upstream CI build ran, it would retrieve libraries from a cache. The JavaScript package manager, NPM, allows these libraries to include scripts. They’re intended for housekeeping tasks, but here, they were used to hijack the projects’ secret tokens.</p>
+<p>The JavaScript ecosystem has long been criticised for poor security. NPM projects are complicated chains of dependencies calling dependencies calling dependencies.</p>
+<p>Any dependency may carry scripts. Any dependency author was just one slip away from allowing their code to be compromised - all they had to do was copy-paste the wrong code.</p>
+<p>In other words: a highly complex system made of low quality parts, where a single error can compromise everything.</p>
+<h2>How we lost control</h2>
+<p>It wasn’t always like this. Only 12 years ago, tech was a different industry.</p>
+<p>Building software was <em>hard</em>. Computer programs comprise millions of tiny instructions, and turning these into a workable system is like constructing a watch by hand, with hundreds of interacting components. Except, unlike a watch, each computer program must do something completely new and different.</p>
+<p>It was the most fun I’d had as an adult. It was as much an art as a science. You had to be able to hold everything in your head at once: visualise how all the tiny parts could be orchestrated into a cohesive whole. I recommend anyone the adventure of writing a computer program by hand.</p>
+<p>But, it was less fun if you were a manager. Not many people can write computer programs well, and it’s very hard to scale human beings. Getting them to communicate without misunderstandings is hard. Many projects failed. You can find programmers who know how to manage the complexity, but they want to be paid lots of money.</p>
+<p>Different movements attempted to solve the core problem. Some people thought that software development practices could help, like if you turned programming into highly structured templates of “best practices”. Or if you used management styles like SCRUM. But they only ever helped so much.</p>
+<p>About ten years ago, two small revolutions happened in our industry, whilst the rest of the world paid little attention. They were cloud computing, and open source libraries.</p>
+<p class="bg-footer">Bron: <a href="https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/" target="_blank" rel="noopener">breck-mckye.com</a></p>

@@ -1,0 +1,38 @@
+<figure class="reader-hero"><img src="https://assets.st-note.com/production/uploads/images/337125774/rectangle_large_type_2_9368cc296e955be0863964fd7e0ce4dc.png?fit=bounds&amp;quality=85&amp;width=1280" alt="Grok Buildとは。機能・料金・注意点｜土門大貴/daikidomon" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>Grok Buildとは。機能・料金・注意点｜土門大貴/daikidomon</h1>
+<p>SpaceXAI(旧xAI)のコーディングエージェント「Grok Build」を、Claude CodeやCodexと比べながら整理します。</p>
+<h2>「Grokのエージェント」は2種類ある</h2>
+<p>GrokをつくるxAIは、2026年2月にSpaceXに買収され、7月に社名をSpaceXAIに変えました(<a href="https://www.engadget.com/2209300/xai-now-officially-spacexai/" target="_blank" rel="noopener">Engadgetの報道</a>)。10月にはマスク氏がSpaceXSIへの再改称を表明しています(<a href="https://www.khaleejtimes.com/world/americas/musk-renames-spacexai-to-spacexsi-trumps-super-intelligence" target="_blank" rel="noopener">Khaleej Times(Reuters配信)</a>)。</p>
+<p>11月17日時点の公式サイトは「SpaceXSI」表記ですが、この記事では報道で定着している「SpaceXAI」で呼びます。同社の「Grok」の名の付くエージェントは、次の2系統です。</p>
+<p>Grok Botについては、<a href="https://note.com/daikidomon/n/n888c3f38cac9" target="_blank" rel="noopener">Grok Botとは。仕事を任せる&quot;AIの同僚&quot;</a>で解説しました(公式の説明は<a href="https://docs.x.ai/grok-bot/overview" target="_blank" rel="noopener">SpaceXAI Docs「Grok Bot」</a>)。この記事はGrok Buildに絞ります。</p>
+<p>GitHubのsuperagent-ai/grok-cliも紛らわしい存在です。Grok APIで動くコミュニティ製のエージェント(MITライセンス)で、READMEに「xAIとは無関係」と明記されています(<a href="https://github.com/superagent-ai/grok-cli" target="_blank" rel="noopener">GitHub「superagent-ai/grok-cli」</a>)。公式のGrok Buildとは別物です。</p>
+<p>機能の並びはClaude Codeとほぼ同じで、CLAUDE.mdやClaude Codeのフック設定も読み込む</p>
+<h2>Grok Buildの基本情報</h2>
+<p>一方、公式ブログは5月25日付で「SuperGrokとX Premium Plusの全加入者が利用可能」としています(<a href="https://x.ai/news/grok-build-cli" target="_blank" rel="noopener">SpaceXAI「Introducing Grok Build」</a>)。上位プランで先に始まり、25日に対象が広がったと読めますが、公式はその経緯を説明していません。</p>
+<p>ソース公開の日付も、リポジトリ作成の7月14日(UTC)から報道の16日まで幅があります。1.0.0は8月7日に出て、権限確認の画面で実行予定のスクリプト全文を表示するようになりました(<a href="https://www.eweek.com/news/grok-build-1-0-security/" target="_blank" rel="noopener">eWeekの報道</a>)。</p>
+<p>/planで入るか、Shift+Tabでモードを切り替えます。エージェントはコードベースを調べて計画を書き、承認画面を開きます。承認画面では、計画の行ごとにコメントを付けたり、修正を頼んだりできます(<a href="https://docs.x.ai/build/features/plan-mode" target="_blank" rel="noopener">SpaceXAI Docs「Plan Mode」</a>)。</p>
+<h2>サブエージェントとworktree: 並列で動かしても衝突させない</h2>
+<p>大きなタスクは、サブエージェントに分けて並列で進めます。組み込みは、何でもできるgeneral-purpose、読んで探すだけのexplore、計画を書くだけのplanの3種類です(<a href="https://docs.x.ai/build/features/subagents" target="_blank" rel="noopener">SpaceXAI Docs「Subagents」</a>)。</p>
+<p>git worktreeとの統合は、公式ブログが強調している点です。grok -wで起動すると、セッションがリポジトリの独立したコピーで動き、並列のエージェントが互いのファイルを上書きしません。サブエージェントもworktreeでの分離を求められます(<a href="https://docs.x.ai/build/features/worktrees" target="_blank" rel="noopener">SpaceXAI Docs「Worktrees」</a>)。</p>
+<p>セッションを終えてもworktreeは残るので、grok worktree gcなどで掃除します。Claude Codeにも--worktreeフラグがあり、発想はほぼ同じです。手でworktreeを切る運用は<a href="https://note.com/daikidomon/n/nf03744b3cc23" target="_blank" rel="noopener">Git worktreeでClaude Codeを並列に走らせる</a>にまとめています。</p>
+<h2>ヘッドレス実行とACP: 自動化や他ツールに組み込む</h2>
+<p>ACP(Agent Client Protocol)は、エディタなどのアプリとコーディングエージェントをつなぐ共通規格です。grok agent stdioで起動すると、ACPのエージェントとして標準入出力で応答します。CIで動かすときは、--no-auto-updateで更新チェックを止めるよう公式ドキュメントが勧めています。</p>
+<h2>AGENTS.md、スキル、フック、MCP: Claude Codeの資産をそのまま読む</h2>
+<p>ルール: AGENTS.mdに加えてCLAUDE.md、.claude/rules/、.cursor/rules/も読む(<a href="https://docs.x.ai/build/features/project-rules" target="_blank" rel="noopener">SpaceXAI Docs「AGENTS.md」</a>)</p>
+<p>フック: Claude Codeの.claude/settings.jsonとCursorの.cursor/hooks.jsonも読む(<a href="https://docs.x.ai/build/features/hooks" target="_blank" rel="noopener">SpaceXAI Docs「Hooks」</a>)</p>
+<p>スキル: SKILL.md形式で、/スキル名のコマンドにもなる(<a href="https://docs.x.ai/build/features/skills-plugins-marketplaces" target="_blank" rel="noopener">SpaceXAI Docs「Skills, Plugins &amp; Marketplaces」</a>)</p>
+<p>Claude Code向けに書いた危険コマンド止めのフックも、流用できる可能性があります(<a href="https://note.com/daikidomon/n/n0a173343ba40" target="_blank" rel="noopener">Hooksで危険コマンドを物理的に止める</a>)。ただし同じように動くとは限りません。プロジェクト側のフックは/hooks-trustで信頼を与えるまで動かないので、grok inspectで読み込み状況を確かめます。</p>
+<h2>本体は無料、推論はサブスクかAPI</h2>
+<p>Grok Buildの本体(ハーネス)はApache-2.0で、使うこと自体にお金はかかりません。費用が発生するのは、モデルを動かす推論の部分です。払い方は3通りあります。</p>
+<p><strong>サブスクでログインする</strong>: 10月12日に始まったThe X Subscriptionは、Free(0ドル)、Plus(月8ドル)、Premium(月30ドル)、Super(月100ドル)、Ultra(月200ドル)の5段階(<a href="https://docs.x.ai/x-subscription/pricing" target="_blank" rel="noopener">SpaceXAI Docs「Pricing」</a>)。Cursorの料金ページでは、FreeにGrok Buildの限定利用、Plus以上にGrok Buildが含まれている(<a href="https://cursor.com/pricing" target="_blank" rel="noopener">Cursor「Pricing」</a>)</p>
+<p><strong>APIキーで従量課金にする</strong>: XAI_API_KEYを設定する。API最新のgrok-4.7は、100万トークンあたり入力2ドル、出力6ドル(20万トークン未満の場合)(<a href="https://docs.x.ai/developers/models/grok-4.7" target="_blank" rel="noopener">SpaceXAI Docs「Grok 4.7」</a>)</p>
+<p><strong>自前のモデルを使う</strong>: ~/.grok/config.tomlに、OpenAI互換やAnthropic形式のAPIを登録できる</p>
+<p>7月にGrok 4.5が出たとき、Engadgetは「Grok Buildの既定モデルになった」と報じました(<a href="https://www.engadget.com/2211260/spacex-ai-grok-4-5-cursor" target="_blank" rel="noopener">Engadgetの報道</a>)。その後8月にGrok 4.6が出て、いまの公式ドキュメントはgrok-4.7を最新モデルとして紹介しています。</p>
+<p>ところが、Grok Buildの現在の既定モデルは公式ドキュメントに書かれておらず、解説記事も4.5、4.6と分かれます。使うときはgrok modelsで一覧を出し、/modelで選ぶのが確実です。</p>
+<h2>SpaceX傘下のCursorとの関係</h2>
+<p>Cursorは8月14日、SpaceXによる買収が完了したと発表しました。4月にSpaceXAIとモデル学習で提携したところから始まった手続きです(<a href="https://cursor.com/blog/joining-spacex" target="_blank" rel="noopener">Cursor Blog「Cursor is now a part of SpaceX」</a>)。Cursor自体は<a href="https://note.com/daikidomon/n/ne3b496f915f4" target="_blank" rel="noopener">Cursorとは何か。VSCodeと何が違うのか</a>で解説しています。</p>
+<p>Grok 4.5は、CursorとSpaceXAIが共同で学習したモデル。Cursorのデータも使われたと報じられている(<a href="https://www.infoworld.com/article/4194895/spacexai-launches-grok-4-5-touts-lower-coding-task-costs-than-ai-rivals.html" target="_blank" rel="noopener">InfoWorldの報道</a>)</p>
+<p>買収完了の2日前に出たGrok 4.6を、Cursorのブログは「私たちがリリースした」と書いている</p>
+<p>Cursorの中でClaudeやGPTなど他社モデルを使う分は、この枠に含まれない。初回からAPIの定価で別に課金される(<a href="https://docs.x.ai/x-subscription/overview" target="_blank" rel="noopener">SpaceXAI Docs「What is The X Subscription?」</a>)</p>
+<p>2026年7月12日、セキュリティ研究者のCereblab氏が、Grok Build(バージョン0.2.93)の通信を調べた報告を公開しました。The RegisterとeWeekによると、指摘は次のとおりです(<a href="https://www.theregister.com/ai-and-ml/2026/07/14/musk-promises-purge-after-grok-build-caught-sending-entire-repos-to-the-cloud/5271123" target="_blank" rel="noopener">The Registerの報道</a>、<a href="https://www.eweek.com/news/grok-build-developer-repos-cloud-upload-xai/" target="_blank" rel="noopener">eWeekの報道</a>)。</p>
+<p class="bg-footer">Bron: <a href="https://note.com/daikidomon/n/nbfe7ceffc872" target="_blank" rel="noopener">note.com</a></p>
