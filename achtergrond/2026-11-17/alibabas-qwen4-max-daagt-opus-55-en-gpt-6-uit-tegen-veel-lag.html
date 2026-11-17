@@ -1,0 +1,70 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/07/qwen_logo-1.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Qwen4-Max heeft 2,4 biljoen parameters, maar activeert er per token slechts 71 miljard.</li>
+<li>Een hybride aandachtsarchitectuur maakt lange contexten van een miljoen tokens veel goedkoper.</li>
+<li>Alibaba claimt 62 procent lagere kosten per taak, bij een hogere benchmarkscore.</li>
+<li>Externe resultaten zijn gemengd en een onafhankelijke evaluatie ontbreekt nog.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Qwen4-Max in vier getallen</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value">2,4 bln</div><div class="ns-viz-stat-label">Parameters in totaal</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-suffix=" mld" data-target="71">71 mld</div><div class="ns-viz-stat-label">Actief per token (circa 3 procent)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value">1 mln</div><div class="ns-viz-stat-label">Tokens contextvenster</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-suffix="%" data-target="62">62%</div><div class="ns-viz-stat-label">Lagere kosten per Work360-taak (Alibaba)</div></div>
+</div></div>
+<h5>Goedkoper rekenen met een groter model</h5>
+<p>Alibaba lanceert Qwen4-Max, een vlaggenschip dat zich meet met Opus 5.5, GPT-6 en Kimi K3.1 Pro. Het is een mixture-of-experts-model: van de 2,4 biljoen parameters doet per token slechts 71 miljard mee, zo'n drie procent. Het model verwerkt beelden en biedt een contextvenster van een miljoen tokens. De strategie is duidelijk. Waar Amerikaanse laboratoria vooral inzetten op maximale capaciteit, jaagt Alibaba op efficiëntie: meer kennis in het model, minder rekenwerk per antwoord. Volgens The Decoder eindigt Qwen4-Max net achter Kimi K3.1 Pro en mikt het op professioneel werk in industrie, wetenschap en financiën. Dat het prijskaartje centraal staat, past bij de Chinese aanpak: waar de VS de toegang tot AI-chips verder beperkt, bijvoorbeeld met nieuwe exportregels voor vijf landen, loont zuinig omgaan met rekenkracht dubbel.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe lange context goedkoop wordt</div>
+<div class="ns-viz-mech-subtitle">Van een miljoen tokens naar een handvol relevante</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Invoer</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Compressie</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Selectie</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Experts</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#a78bfa" fill-opacity=".55" stroke="#7c3aed"><rect x="30" y="40" width="40" height="24" rx="3"/><rect x="76" y="40" width="40" height="24" rx="3"/><rect x="122" y="40" width="40" height="24" rx="3"/><rect x="168" y="40" width="40" height="24" rx="3"/><rect x="214" y="40" width="40" height="24" rx="3"/><rect x="30" y="70" width="40" height="24" rx="3"/><rect x="76" y="70" width="40" height="24" rx="3"/><rect x="122" y="70" width="40" height="24" rx="3"/><rect x="168" y="70" width="40" height="24" rx="3"/><rect x="214" y="70" width="40" height="24" rx="3"/></g><text x="160" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Lang document of codebase</text><text x="160" y="155" text-anchor="middle" font-size="11" fill="#44403c">tot 1.000.000 tokens</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Invoer</h6><p class="korte">Het model krijgt een heel document of een volledige codebase.</p><p class="uitleg">Klassieke aandacht laat elk onderdeel van de context met elk ander meetellen. Bij een miljoen tokens loopt de rekenrekening daardoor snel op.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="30" y="30" width="80" height="140" rx="8" fill="#a78bfa" fill-opacity=".2" stroke="#7c3aed" stroke-width="2"/><rect x="120" y="30" width="80" height="140" rx="8" fill="#a78bfa" fill-opacity=".3" stroke="#7c3aed" stroke-width="2"/><rect x="210" y="30" width="80" height="140" rx="8" fill="#a78bfa" fill-opacity=".4" stroke="#7c3aed" stroke-width="2"/><text x="70" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Laag 1</text><text x="160" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Laag 2</text><text x="250" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Laag 3</text><text x="160" y="192" text-anchor="middle" font-size="11" fill="#44403c">comprimeren naar een compacte toestand</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Compressie</h6><p class="korte">Drie lagen vatten de eerdere context samen in een compacte toestand.</p><p class="uitleg">Volgens Alibaba combineert Qwen4 twee methoden. Drie lagen comprimeren wat eerder in de tekst stond, zodat het model niet alles gedetailleerd hoeft te bewaren.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#a78bfa" fill-opacity=".25" stroke="#a78bfa"><rect x="30" y="40" width="40" height="24" rx="3"/><rect x="76" y="40" width="40" height="24" rx="3"/><rect x="122" y="40" width="40" height="24" rx="3"/><rect x="168" y="40" width="40" height="24" rx="3"/><rect x="214" y="40" width="40" height="24" rx="3"/></g><rect x="76" y="40" width="40" height="24" rx="3" fill="#7c3aed" fill-opacity=".85" stroke="#7c3aed"/><rect x="214" y="40" width="40" height="24" rx="3" fill="#7c3aed" fill-opacity=".85" stroke="#7c3aed"/><line x1="96" y1="68" x2="150" y2="120" stroke="#7c3aed" stroke-width="2"/><line x1="234" y1="68" x2="170" y2="120" stroke="#7c3aed" stroke-width="2"/><circle cx="160" cy="135" r="20" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="160" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">4e laag</text><text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">pikt alleen het relevante deel</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Selectie</h6><p class="korte">Een vierde laag kiest alleen de delen die ertoe doen.</p><p class="uitleg">Het model hoeft niet elk deel van de context dezelfde aandacht te geven. Dat snijdt de rekenkosten bij lange invoer sterk, aldus Alibaba.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><g fill="#a78bfa" fill-opacity=".18" stroke="#a78bfa"><circle cx="60" cy="60" r="14"/><circle cx="100" cy="60" r="14"/><circle cx="140" cy="60" r="14"/><circle cx="180" cy="60" r="14"/><circle cx="220" cy="60" r="14"/><circle cx="260" cy="60" r="14"/><circle cx="60" cy="100" r="14"/><circle cx="100" cy="100" r="14"/><circle cx="140" cy="100" r="14"/><circle cx="180" cy="100" r="14"/><circle cx="220" cy="100" r="14"/><circle cx="260" cy="100" r="14"/></g><circle cx="100" cy="60" r="14" fill="#7c3aed" fill-opacity=".85" stroke="#7c3aed"/><circle cx="220" cy="100" r="14" fill="#7c3aed" fill-opacity=".85" stroke="#7c3aed"/><text x="160" y="155" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">71 mld van 2,4 bln actief</text><text x="160" y="175" text-anchor="middle" font-size="11" fill="#44403c">per token, circa 3 procent</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Experts</h6><p class="korte">Per token wordt maar een klein deel van het model geactiveerd.</p><p class="uitleg">Het mixture-of-experts-ontwerp zet 71 miljard van 2,4 biljoen parameters aan. Ook een N-gram-embeddinglaag van 328 miljard parameters levert veelvoorkomende reeksen kant-en-klaar.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Efficiëntie als wapen</h5>
+<p>De winst zit volgens Alibaba niet alleen in de architectuur, maar in het verbruik. Op Work360, de eigen benchmark voor industriële werktaken in 721 vakgebieden, gebruikt Qwen4-Max ruwweg een kwart tot een derde minder tokens dan zijn voorganger; op de agentbenchmark Terminal-Bench 4.0 bijna de helft minder. De gemiddelde kosten per taak dalen met 62 procent, van $4,43 naar $1,67, terwijl de score stijgt van 47,74 naar 52,69. De basisversie scoort 5 tot 13 procent beter dan Qwen3.8-Max-Base met 25 procent minder actieve parameters. Training verliep volgens het team stabiel, zonder plotselinge pieken in het verlies. Het zijn bedrijfscijfers van de bouwer zelf, op eigen benchmarks.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Kosten per Work360-taak</div>
+<div class="ns-viz-bars">
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Voorganger</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">$4,43</div></div></div>
+  <div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Qwen4-Max</div>
+    <div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:38%">$1,67</div></div></div>
+</div></div>
+<blockquote>Op externe benchmarks zijn de resultaten gemengd: het beste op Agents' Last Exam v1.1 met 46,7 punten, maar achter Opus 5.5 en de GPT-modellen op Humanity's Last Exam.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Qwen4-Max tegenover Grok 4.7</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Qwen4-Max (Alibaba)</h6>
+    <ul><li>Context: 1.000.000 tokens</li><li>Rekening sinds 16 november publiek</li><li>Nog geen onafhankelijke evaluatie</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>Grok 4.7 (SpaceXAI)</h6>
+    <ul><li>Context: 500.000 tokens</li><li>$2 invoer, $6 uitvoer, $0,50 cache per miljoen tokens</li><li>Vier redeneerniveaus, gemeten score</li></ul></div>
+</div></div>
+<h5>Wat het betekent voor de markt</h5>
+<p>De vergelijkingssite OrcaRouter stelt dat een verzoek met 400.000 tokens invoer en 20.000 tokens uitvoer op Qwen4-Max $6,80 kost en op Grok 4.7 $8,00. Wie dat naloopt met de genoemde Grok-lijstprijzen komt lager uit, dus de absolute bedragen verdienen voorzichtigheid; het principe blijft dat Qwen voordeel haalt bij lange invoer. Tegelijk heeft Grok iets wat Qwen mist: een gemeten score en een jaar operationele geschiedenis. Voor Nederlandse bedrijven die lange documenten of codebases verwerken, kan de prijs doorslaggevend zijn, maar zij nemen ook een afhankelijkheid op zich van een Chinees model terwijl Washington de chiptoegang verder beperkt. Moonshot, dat Kimi juist naar de wetenschap stuurt, toont dat Chinese laboratoria hun eigen niches kiezen.</p>
+<h5>Conclusie</h5>
+<p>Qwen4-Max is minder een uitdager van het hoogste niveau dan een prijsbreker. De architectuur is interessant genoeg om serieus te nemen, maar zolang de claims uit eigen benchmarks komen, is vertrouwen een kwestie van afwachten. De echte test is niet of het model Opus 5.5 verslaat, maar of klanten met een miljoen tokens aan context dezelfde kwaliteit krijgen voor de helft van het geld.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=a7MU6GLASRA" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/a7MU6GLASRA/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Alibaba's Qwen4-Max Is HERE! 2.4 TRILLION Params, Beats Claude — But NOT Kimi!</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/alibabas-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pro-at-much-lower-prices/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a> &bull; <a href="https://www.orcarouter.ai/blog/qwen-4-max-vs-grok-4-7" target="_blank" style="color:var(--accent)">orcarouter.ai ↗</a></div>

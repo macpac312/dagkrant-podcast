@@ -1,0 +1,17 @@
+{
+  "title": "Alibaba's Qwen4-Max daagt Opus 5.5 en GPT-6 uit tegen veel lagere prijzen",
+  "summary": "Qwen4-Max heeft 2,4 biljoen parameters, maar activeert er per token slechts 71 miljard. Het model eindigt net achter Kimi K3.1 Pro.\n\nAlibaba lanceert Qwen4-Max, een vlaggenschipmodel met 2,4 biljoen parameters waarvan per token slechts 71 miljard actief zijn. Een hybride architectuur maakt lange contexten veel goedkoper. Volgens The Decoder eindigt het model net achter Kimi K3.1 Pro en concurreert het met Opus 5.5 en GPT-6.\n\nEen kostenvergelijking met Grok 4.7 laat zien dat het contextvenster va",
+  "sources": [
+    "https://the-decoder.com/alibabas-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pro-at-much-lower-prices/",
+    "https://www.orcarouter.ai/blog/qwen-4-max-vs-grok-4-7"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-17",
+  "slug": "alibabas-qwen4-max-daagt-opus-55-en-gpt-6-uit-tegen-veel-lag",
+  "tts_slug": "alibabas-qwen4-max-daagt-opus-55-en-gpt-6-uit-tegen-veel-lag",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-17T05:35:36",
+  "size_kb": 13
+}
