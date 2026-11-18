@@ -1,0 +1,64 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://media.xenospectrum.com/claude_code_mode_javascript_tool_automation_4689b179da.webp" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© xenospectrum.com</div></div><ul class="bg-bullets">
+<li>Claude Code krijgt Code Mode: Claude schrijft JavaScript dat meerdere tools in één keer aanstuurt.</li>
+<li>Normaal roept Claude tools als Bash, Read en Edit één voor één aan.</li>
+<li>Het script draait in de sessie en combineert tools zonder tussentijds overleg per stap.</li>
+<li>Dat bespaart rondes en context, maar vraagt om vertrouwen in gegenereerde code.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe Code Mode werkt</div>
+<div class="ns-viz-mech-subtitle">Van losse tool-aanroepen naar één script</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Opdracht</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Script</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Uitvoering</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Resultaat</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><defs><marker id="mk1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs><rect x="10" y="60" width="139" height="80" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="79.5" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Gebruiker</text><text x="79.5" y="114" text-anchor="middle" font-size="10" fill="#44403c">opdracht</text><line x1="151" y1="100" x2="169" y2="100" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#mk1)"/><rect x="171" y="60" width="139" height="80" rx="10" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/><text x="240.5" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Claude</text><text x="240.5" y="114" text-anchor="middle" font-size="10" fill="#44403c">plant</text><text x="160" y="175" text-anchor="middle" font-size="11" font-style="italic" fill="#57534e">Een taak met meerdere stappen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Opdracht</h6><p class="korte">De gebruiker geeft een taak die meerdere stappen vraagt.</p><p class="uitleg">Bijvoorbeeld: lees een reeks bestanden, pas ze aan en draai een commando. Normaal zijn dat veel afzonderlijke aanroepen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><defs><marker id="mk2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs><rect x="10" y="60" width="300" height="80" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="160.0" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Claude</text><text x="160.0" y="114" text-anchor="middle" font-size="10" fill="#44403c">schrijft JS</text><text x="160" y="175" text-anchor="middle" font-size="11" font-style="italic" fill="#57534e">Eén script voor de hele reeks</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Script</h6><p class="korte">Claude genereert JavaScript op basis van de opdracht.</p><p class="uitleg">In plaats van één tool tegelijk kiest Claude ervoor de hele reeks in code te vatten, met lussen en voorwaarden waar dat nodig is.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><defs><marker id="mk3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs><rect x="10" y="60" width="139" height="80" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="79.5" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Script</text><text x="79.5" y="114" text-anchor="middle" font-size="10" fill="#44403c">Bash</text><line x1="151" y1="100" x2="169" y2="100" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#mk3)"/><rect x="171" y="60" width="139" height="80" rx="10" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/><text x="240.5" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Read</text><text x="240.5" y="114" text-anchor="middle" font-size="10" fill="#44403c">Edit</text><text x="160" y="175" text-anchor="middle" font-size="11" font-style="italic" fill="#57534e">Meerdere tools tegelijk</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Uitvoering</h6><p class="korte">Claude Code voert het script uit in de sessie.</p><p class="uitleg">Het script combineert tools als Bash, Read en Edit in één keer, in plaats van na elk resultaat opnieuw te beslissen.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><defs><marker id="mk4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs><rect x="10" y="60" width="300" height="80" rx="10" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/><text x="160.0" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Resultaat</text><text x="160.0" y="114" text-anchor="middle" font-size="10" fill="#44403c">terug naar Claude</text><text x="160" y="175" text-anchor="middle" font-size="11" font-style="italic" fill="#57534e">Eén antwoord in plaats van vele</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Resultaat</h6><p class="korte">Het eindresultaat komt terug in het gesprek.</p><p class="uitleg">Claude ziet het uitgekomen resultaat en hoeft niet elk tussenresultaat door te lopen. Dat spaart rondes met het model.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Van stap voor stap naar programmeren</h5>
+<p>Claude Code heeft een nieuwe functie, Code Mode, meldt het Japanse xenospectrum. Normaal roept Claude tools als Bash, Read en Edit één voor één aan en beslist het na elk resultaat over de volgende stap. In Code Mode genereert Claude op basis van de opdracht JavaScript dat Claude Code in de sessie uitvoert, waarmee meerdere tools in één keer worden gecombineerd. Het is een kleine architectuurwijziging met grote implicaties: het model schrijft niet langer alleen code voor een gebruiker, maar gebruikt code als zijn eigen werkwijze. Voor dit stuk is geen verdere bronnentekst beschikbaar, dus detailvragen over beperkingen en veiligheidsmaatregelen blijven open.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+<div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VOOR</h6><p>Claude roept Bash, Read en Edit één voor één aan en beslist na elk resultaat over de volgende stap, met veel heen-en-weer tussen model en tools.</p></div>
+<div class="ns-viz-scenario-arrow">→</div>
+<div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>NA</h6><p>Claude schrijft een JavaScript-script dat meerdere tools in één keer combineert en in de sessie wordt uitgevoerd.</p></div>
+</div></div>
+<h5>Waarom dit logisch is</h5>
+<p>Het idee past in een bredere trend: agents worden efficiënter als ze logica in code kunnen vatten. Een lus over honderd bestanden is in code één regel; als losse tool-aanroepen zijn het honderd rondes, elk met tokens, wachttijd en kans op afdwalen. Door tussenresultaten in het script te houden in plaats van in het gesprek, blijft bovendien de context schoon, wat bij lange sessies een knelpunt is. Dat maakt Code Mode vooral aantrekkelijk voor repetitieve, grootschalige taken zoals refactors over een volledige codebase. De prijs is controleerbaarheid: wie elke stap ziet, kan elke stap goedkeuren, terwijl een script als geheel moet worden vertrouwd of vooraf nagelezen.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+<details class="ns-viz-concept"><summary>Tool-aanroep</summary><div class="ns-viz-concept-body">Een enkele handeling die Claude Code namens het model uitvoert, zoals een bestand lezen, aanpassen of een shell-commando draaien.</div></details>
+<details class="ns-viz-concept"><summary>Code Mode</summary><div class="ns-viz-concept-body">Werkwijze waarin Claude een JavaScript-script genereert dat meerdere tools combineert en in de sessie draait.</div></details>
+<details class="ns-viz-concept"><summary>Context</summary><div class="ns-viz-concept-body">De informatie die het model in een gesprek kan zien; tussenresultaten in een script hoeven daar niet allemaal in terecht te komen.</div></details>
+</div></div>
+<h5>Perspectieven en context</h5>
+<p>De vraag is hoe gebruikers en bedrijven dit ontvangen. Ontwikkelaars die al veel met Claude Code werken, zullen de snelheidswinst waarderen; wie zorg heeft over wijzigingen aan een productiecodebase, zal willen weten hoe rechten en goedkeuringen werken als een script meerdere tools tegelijk aanstuurt. Dat het ecosysteem rond Claude Code volwassen wordt, blijkt uit ander nieuws in dezelfde krant: een Japanse scholingsfirma bouwt een site voor 80 procent met Claude Code en is toegelaten tot Claude Startups, terwijl een hoofdontwikkelaar van de desktopapp, Anthony Morris, in oktober naar OpenAI is vertrokken. Het toont hoe sterk de concurrentie om ontwikkelaars en talent is.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Uit dezelfde krant</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-suffix="%" data-target="80">80%</div><div class="ns-viz-stat-label">Aandeel site gebouwd met Claude Code (AIリスキル)</div></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>Code Mode is geen revolutie maar een slimme verschuiving: het model gebruikt de taal waarin het sterk is, code, om zijn eigen gereedschap te bedienen. De winst in snelheid en context is aannemelijk; de werkelijke toets is of de beveiligings- en goedkeuringsmechanismen meegroeien. Wie agents wil laten werken met meer autonomie, moet de controle mee ontwerpen, niet achteraf toevoegen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=GBJYWBPJONc" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/GBJYWBPJONc/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Claude Code 2.1.323: Codemodus laat Claude JavaScript schrijven om tools aan te roepen</div></div></a></div>

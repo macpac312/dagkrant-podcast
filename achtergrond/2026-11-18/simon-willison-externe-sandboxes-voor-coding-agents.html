@@ -1,0 +1,69 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://static.simonwillison.net/static/2026/sandbox-proxy.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© simonwillison.net</div></div><ul class="bg-bullets">
+<li>Willison beschrijft een patroon waarin de agent buiten de sandbox draait en alleen zijn code erin.</li>
+<li>Drie sandboxserver-implementaties bieden dezelfde localhost-API, bruikbaar met Pi, Claude Code of Codex.</li>
+<li>Een allow-list proxy en vervanging van credentials beperken wat gelekte of gemanipuleerde code kan.</li>
+<li>Doel: veilig experimenteren met lokale modellen zonder schade door fouten of prompt-injectie.</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Het externe sandbox-patroon</div>
+<div class="ns-viz-mech-subtitle">De agent blijft buiten; alleen zijn code draait binnen de sandbox</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Agent buiten</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Localhost-API</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Allow-list proxy</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Geheimen buiten</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="10" y="45" width="120" height="80" rx="10" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="70" y="69" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Agent</text><text x="70" y="85" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">Pi, Claude Code,</text><text x="70" y="101" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">Codex</text><rect x="190" y="45" width="120" height="80" rx="10" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="250" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Lokaal</text><text x="250" y="93" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">model</text><line x1="134" y1="85" x2="184" y2="85" stroke="#7c3aed" stroke-width="2.5"/><path d="M186,85 l-9,-5 v10 z" fill="#7c3aed"/><text x="160" y="72" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="700">draait buiten</text><text x="160" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Geen code-uitvoering hier</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Agent buiten</h6><p class="korte">De agent zelf draait buiten de sandbox.</p><p class="uitleg">Het patroon van Willison en Prime Radiant scheidt het brein van de agent van de omgeving waar zijn code wordt uitgevoerd.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="10" y="45" width="120" height="80" rx="10" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="70" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Agent</text><rect x="190" y="45" width="120" height="80" rx="10" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="250" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Sandbox</text><text x="250" y="93" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">server</text><line x1="134" y1="85" x2="184" y2="85" stroke="#7c3aed" stroke-width="2.5"/><path d="M186,85 l-9,-5 v10 z" fill="#7c3aed"/><text x="160" y="72" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="700">localhost API</text><text x="160" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Dezelfde API voor alle drie</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Localhost-API</h6><p class="korte">Code gaat via een lokale API naar de sandbox.</p><p class="uitleg">Er zijn drie implementaties van de sandboxserver, die allemaal dezelfde localhost-API bieden.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="10" y="45" width="120" height="80" rx="10" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="70" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Code in</text><text x="70" y="93" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">sandbox</text><rect x="190" y="45" width="120" height="80" rx="10" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="250" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Toegestane</text><text x="250" y="93" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">hosts</text><line x1="134" y1="85" x2="184" y2="85" stroke="#7c3aed" stroke-width="2.5"/><path d="M186,85 l-9,-5 v10 z" fill="#7c3aed"/><text x="160" y="72" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="700">HTTP/HTTPS</text><text x="160" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Allow-list</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Allow-list proxy</h6><p class="korte">Een optionele proxy bepaalt met welke hosts de code mag praten.</p><p class="uitleg">De allow-list kan via een UI worden aangepast terwijl de sandbox draait.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4"/><rect x="10" y="45" width="120" height="80" rx="10" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="2"/><text x="70" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">Code met</text><text x="70" y="93" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">placeholder</text><rect x="190" y="45" width="120" height="80" rx="10" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="2"/><text x="250" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#44403c">API-sleutel</text><text x="250" y="93" text-anchor="middle" font-size="12" font-weight="400" fill="#44403c">bij proxy</text><line x1="134" y1="85" x2="184" y2="85" stroke="#7c3aed" stroke-width="2.5"/><path d="M186,85 l-9,-5 v10 z" fill="#7c3aed"/><text x="160" y="72" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="700">vervangt</text><text x="160" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Geheim blijft buiten</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Geheimen buiten</h6><p class="korte">Credentials worden vervangen zonder het geheim aan de agent te geven.</p><p class="uitleg">Authenticated API-aanroepen werken, maar de agent ziet de sleutel nooit.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Het probleem: code die niemand heeft gelezen</h5>
+<p>Coding agents schrijven en draaien code die geen mens vooraf controleert. Dat is hun kracht en hun risico. Een fout van het model of een prompt-injectie, verborgen instructies in een webpagina of document die de agent leest, kan schadelijke acties op de eigen machine veroorzaken. Simon Willison onderzoekt samen met het AI-lab Prime Radiant, achter het project Superpowers, nieuwe manieren om die code veilig uit te voeren, met nadruk op het veilig uitproberen van lokale modellen. Zijn post van 17 november 2026 is een linkpost naar de bijdrage op het blog van Prime Radiant.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het ontwerp in cijfers</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Sandboxserver-implementaties</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="3">3</div><div class="ns-viz-stat-label">Genoemde agents: Pi, Claude Code, Codex</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Gedeelde localhost-API</div></div>
+</div></div>
+<h5>Waarom de agent buiten de sandbox hoort</h5>
+<p>Het kernidee van het externe sandbox-patroon is een scheiding van rollen. Veel bestaande oplossingen draaien de hele agent in een container of virtuele machine. Hier blijft de agent zelf buiten en stuurt hij alleen opdrachten naar een speciale sandbox, via een API op localhost. Daardoor kan dezelfde sandbox met verschillende agents worden gebruikt, en hoeft een agent niet te worden aangepast aan elke omgeving. De sandbox bevat optioneel een HTTP/HTTPS-proxy met allow-list: alleen vooraf goedgekeurde hosts zijn bereikbaar, zodat gemanipuleerde code geen data naar een willekeurige server kan sturen.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Wat verandert er</div>
+<div class="ns-viz-scenario">
+<div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>VOOR</h6><p>De agent en zijn code draaien samen op de eigen machine; een fout of prompt-injectie raakt bestanden, netwerk en geheimen.</p></div>
+<div class="ns-viz-scenario-arrow">→</div>
+<div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>NA</h6><p>Alleen de uitgevoerde code draait in de sandbox, met netwerk beperkt tot een allow-list en API-sleutels die de agent nooit ziet.</p></div>
+</div></div>
+<blockquote>I continue to be fascinated by the challenge of safely running untrusted code. — Simon Willison</blockquote>
+<h5>Geheimen zonder gelekt te worden</h5>
+<p>De meest praktische eigenschap is de credential-vervanging. Wanneer de code in de sandbox een geauthenticeerde API wil aanroepen, plaatst de agent een placeholder en vervangt de proxy die door het echte geheim. De agent, en dus ook elke prompt-injectie in de agent, ziet de sleutel nooit. Dat is bruikbaarder dan een totaalverbod op netwerktoegang, want veel nuttig werk vereist API-aanroepen. Het patroon past bij een bredere beweging in AI-beveiliging: geef modellen niet méér rechten dan nodig, en dwing grenzen af buiten het model, niet binnen zijn prompt.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+<details class="ns-viz-concept"><summary>Prompt-injectie</summary><div class="ns-viz-concept-body">Een aanval waarbij een model onbetrouwbare tekst leest die verborgen instructies bevat en die vervolgens uitvoert.</div></details>
+<details class="ns-viz-concept"><summary>Sandbox</summary><div class="ns-viz-concept-body">Een afgeschermde omgeving waarin code draait met beperkte toegang tot bestanden, netwerk en geheimen.</div></details>
+<details class="ns-viz-concept"><summary>Allow-list proxy</summary><div class="ns-viz-concept-body">Een tussenstation dat alleen verbindingen naar vooraf toegestane hosts doorlaat.</div></details>
+</div></div>
+<h5>Context en gevolgen</h5>
+<p>In dezelfde krant staat een kritiek Java-lek met een score van 9,2 op 10, waarmee aanvallers op afstand systemen kunnen overnemen, en een bericht over AI-agents die medische formulieren invullen voor Amerikaanse verzekeraars. Beide lijnen laten zien waarom agent-sandboxing belangrijk wordt: hoe meer taken agents overnemen en hoe bruikbaarder ze worden voor aanvallers en bedrijven, hoe belangrijker de afbakening van wat ze mogen doen. De bron gaat niet in op prestatieverlies of uitvoerige beveiligingstests; dat blijft nog te beoordelen.</p>
+<h5>Conclusie</h5>
+<p>Het externe sandbox-patroon is geen wondermiddel, maar een verstandige architectuurkeuze: houd de agent los van het gevaarlijke deel en laat de omgeving de regels afdwingen. Wie lokale modellen draait, krijgt zo een manier om te experimenteren zonder de eigen machine in te zetten. De echte test is of de aanpak onder druk standhoudt wanneer agents steeds zelfstandiger worden.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=9RKrSF9d2SE" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/9RKrSF9d2SE/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">2026 in LLMs — Simon Willison, Datasette</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>

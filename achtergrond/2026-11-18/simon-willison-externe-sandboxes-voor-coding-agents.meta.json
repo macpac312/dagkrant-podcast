@@ -1,0 +1,16 @@
+{
+  "title": "Simon Willison: externe sandboxes voor coding agents",
+  "summary": "Hoe je code van agents veilig draait, zodat een fout of prompt-injectie geen schade op je eigen machine aanricht.\n\nSimon Willison beschrijft nieuwe manieren om code te sandboxen die door agents wordt uitgevoerd. Doel: veilig experimenteren met lokale modellen zonder dat een fout of een prompt-injectieaanval schadelijke acties op de eigen machine veroorzaakt.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-18",
+  "slug": "simon-willison-externe-sandboxes-voor-coding-agents",
+  "tts_slug": "simon-willison-externe-sandboxes-voor-coding-agents",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-18T05:32:38",
+  "size_kb": 13
+}

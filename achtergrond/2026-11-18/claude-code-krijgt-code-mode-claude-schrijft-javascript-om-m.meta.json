@@ -1,0 +1,16 @@
+{
+  "title": "Claude Code krijgt 'Code Mode': Claude schrijft JavaScript om meerdere tools tegelijk aan te sturen",
+  "summary": "In plaats van losse tool-aanroepen genereert Claude een script dat in de sessie draait en tools combineert.\n\nClaude Code heeft een nieuwe functie, Code Mode, meldt het Japanse xenospectrum. Normaal roept Claude tools als Bash, Read en Edit één voor één aan en beslist na elk resultaat over de volgende stap. In Code Mode genereert Claude op basis van de opdracht JavaScript dat Claude Code in de sessie uitvoert, waarmee meerdere tools in één keer worden gecombineerd.",
+  "sources": [
+    "https://xenospectrum.com/claude-code-mode-tool-permissions/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-18",
+  "slug": "claude-code-krijgt-code-mode-claude-schrijft-javascript-om-m",
+  "tts_slug": "claude-code-krijgt-code-mode-claude-schrijft-javascript-om-m",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-18T05:32:42",
+  "size_kb": 11
+}
