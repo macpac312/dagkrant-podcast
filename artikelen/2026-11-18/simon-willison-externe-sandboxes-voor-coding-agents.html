@@ -1,0 +1,14 @@
+<figure class="reader-hero"><img src="https://static.simonwillison.net/static/2026/sandbox-proxy.png" alt="External sandboxes for coding agents" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>External sandboxes for coding agents</h1>
+<p><strong><a href="https://blog.primeradiant.com/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">External sandboxes for coding agents</a></strong>. I&#x27;ve been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine.</p>
+<p>I worked on this project with <a href="https://primeradiant.com" target="_blank" rel="noopener">Prime Radiant</a>, the AI research lab behind Superpowers and <a href="https://github.com/orgs/prime-radiant-inc/repositories" target="_blank" rel="noopener">other projects</a>.</p>
+<p><a href="https://blog.primeradiant.com/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">My post</a> on the Prime Radiant blog introduces the <strong>external sandbox</strong> pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.</p>
+<p>To demonstrate this pattern we&#x27;ve released three sandbox server implementations:</p>
+<p>Each of these implementations offers the same localhost API. You can then configure Pi, Claude Code, or Codex to send API calls to that sandbox any time they want to execute code.</p>
+<p>The sandboxes also include an optional HTTP/HTTPS allow-list proxy, so you can control exactly which hosts your agent&#x27;s code is allowed to communicate with - plus a credential replacement mechanism to make authenticated API calls without sharing a secret with the agent. Here&#x27;s the UI you can use to reconfigure that proxy while the sandbox is still running:</p>
+<p>I continue to be fascinated by the challenge of safely running untrusted code. This external sandbox pattern provides a neat way to experiment with different approaches.</p>
+<h2>Recent articles</h2>
+<p>This is a <strong>link post</strong> by Simon Willison, posted on 17th November 2026.</p>
+<h2>Monthly briefing</h2>
+<p>Sponsor me for <strong>$10/month</strong> and get a curated email digest of the month&#x27;s most important LLM developments.</p>
+<p class="bg-footer">Bron: <a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">simonwillison.net</a></p>

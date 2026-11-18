@@ -1,0 +1,24 @@
+<figure class="reader-hero"><img src="https://media.xenospectrum.com/claude_code_mode_javascript_tool_automation_4689b179da.webp" alt="Claude Codeに新機能「Code Mode」登場、AIがJavaScriptで複数のツールを連携し作業を自動化" decoding="async" referrerpolicy="no-referrer-when-downgrade"></figure>
+<h1>Claude Codeに新機能「Code Mode」登場、AIがJavaScriptで複数のツールを連携し作業を自動化</h1>
+<p>Anthropicは2026年11月12日（UTC）に公開した<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.323" target="_blank" rel="noopener">Claude Code v2.1.323</a>に、実験機能「Code Mode」を追加した。既定では無効だが、有効にするとClaudeが生成したJavaScriptから、BashやEditなどのツールを呼び出せるようになる。例えば、ファイルを検索して編集対象を選び、修正を加えてテストを実行するまでの一連の作業を、一つのJavaScriptにまとめられる。各ツールの実行結果をJavaScript内で処理することで、Claudeが読み取る情報量を減らせる仕組みだ。一方、実行中に編集対象が決まる場合、権限設定による確認がどの段階で行われるかも重要になる。</p>
+<h2>JavaScriptで複数のツールを連携させるCode Mode</h2>
+<p>通常のClaude Codeでは、ClaudeがBashやRead、Editなどのツールを直接呼び出し、その結果を読んで次の操作を判断する。一方、<a href="https://code.claude.com/docs/en/code-mode" target="_blank" rel="noopener">Anthropicの公式文書</a>によると、Code Modeでは利用者が対話形式で作業を指示すると、Claudeがその内容に応じたJavaScriptを生成し、Claude Codeがセッション内で実行する。前のツールの実行結果から必要な情報を取り出し、次のツールに渡す処理をJavaScriptに記述できるため、すべての中間結果をClaudeに読み込ませる必要がなくなる。</p>
+<p>Anthropicが示した例は、プログラム内のリトライ上限を引き上げる作業だ。JavaScriptはまずリトライ処理が定義されたファイルを検索し、結果から編集対象のパスを選択する。続いて、そのパスを編集ツールに渡して変更を加え、関連するテストを実行する。最後にClaudeへ返すのは、編集したファイルのパスとテストの出力だけだ。検索で得られた候補一覧はJavaScript内で処理され、Claudeが直接読み取る必要はない。</p>
+<p>こうした処理では、検索結果が返ってくるまで編集対象を決められず、変更後の動作を確かめるテストも編集が完了してから実行する必要がある。一方、異なるディレクトリの検索など、互いの結果に依存しない処理は並列実行できる。Code Modeでは、独立した複数の検索を同時に実行し、結果がそろってから編集やテストに進むといった処理も、一つのJavaScriptにまとめられる。</p>
+<p>対話画面には、編集差分など個々のツール呼び出しの内容が表示される。Claudeに返す情報を編集対象のパスとテスト結果だけに絞っても、利用者は実行された編集内容を確認できる。検索結果からどのように編集対象を選んだのかなど、生成されたJavaScript自体を確認したい場合は、Ctrl+Oでトランスクリプトを開き、折りたたまれた「Code」の行を展開する。</p>
+<p>Code Modeでは、選択した権限モードによって、生成されたJavaScriptや個々のツール呼び出しに対する確認方法が異なる。<a href="https://code.claude.com/docs/en/code-mode#permission-checks" target="_blank" rel="noopener">Anthropicの公式文書</a>によると、自動モード（Auto mode）では、分類器がJavaScriptを実行前に審査する。一方、denyやaskの権限ルール、PreToolUseフックは、JavaScript内で実行される個々のツール呼び出しに適用される。</p>
+<p>例えば、先ほどのファイル編集では、編集対象のパスは検索結果が返ってくるまで確定しない。実行前の分類器が確認できるのは、検索結果からパスを選び、編集ツールに渡すという処理の流れまでだ。検索で見つかるファイルの一覧や、実際に選択されるパスは、JavaScriptを実行して初めて判明する。編集ツールが呼び出される時点では具体的なパスが引数に設定されているため、編集対象に応じた制御には、そのツール呼び出しに適用される権限ルールやフックを使うことになる。</p>
+<p>denyは指定した操作を拒否し、askは利用者に確認を求める権限ルールだ。PreToolUseフックは、ツールが実行される直前に動作する。例えば、特定のファイルを編集する前に確認を求める設定なら、検索結果から選ばれたパスを含むEditの呼び出しが、その設定に該当するかを確認すればよい。自動モード以外ではJavaScriptに対する事前の分類器審査は行われず、各モードの権限設定に従って、確認が必要なツール呼び出しの時点で利用者に許可を求める。</p>
+<p><a href="https://code.claude.com/docs/en/code-mode" target="_blank" rel="noopener">Anthropicの公式文書</a>によると、Code Modeを利用するには、Claude Code v2.1.323以降のネイティブ版、ClaudeのサブスクリプションまたはConsoleアカウント、ターミナル上の対話セッションが必要だ。対応モデルはClaude Opus 5.5、Sonnet 5.5、Haiku 5.5、Fable 5.2で、WindowsではGit for Windowsのインストールも求められる。</p>
+<p>初めてCode Modeのセッションを開始する際には、有効化の確認が表示される。ユーザー設定ファイルから有効化することもできるが、プロジェクトの設定ファイルに指定しても反映されない。リポジトリに含まれる設定によって、利用者の意図に反してCode Modeが有効になることを防ぐ仕組みだ。</p>
+<p>利用できるのはターミナルでの対話セッションに限られ、非対話実行の-p、Agent SDK、VS Codeのパネル、Claude Desktop、クラウドセッションには対応しない。また、ゲートウェイや公式文書に記載された外部クラウドプロバイダー経由の利用、HIPAA向け構成やゼロデータ保持を利用する組織も対象外となる。</p>
+<p>Code Modeで開始したセッションを再開するには、Code Modeを有効にした状態でターミナルから開く必要がある。組織の管理者がCode Modeを無効にしても、すでに開いているCode Modeセッションは、Claude Codeを終了または再起動するまで利用できる。その後は、管理設定で無効になっている限り、新しいセッションでCode Modeを使うことも、既存のCode Modeセッションを再開することもできない。</p>
+<p>Agent Teamsと併用する場合は、Claude Code v2.1.326以降が必要だ。同一プロセス内で動作する既定の表示方式では、チームメイトもCode Modeで動作する。一方、分割ペインを使う場合、チームメイトはCode Modeの対象外となる。</p>
+<p>長時間のテストやビルドを実行する場合、Claudeが処理の完了を待つ方式では、権限確認に費やした時間を含めて10分で実行が停止する。一方、条件を満たしてJavaScriptをバックグラウンドで実行できる場合は、最長2時間まで処理を継続でき、その間もClaudeとの対話が可能だ。ただし、バックグラウンドで動作するのは開いている対話セッション内のJavaScriptであり、セッション自体をバックグラウンドセッションに移す機能には対応していない。</p>
+<h2>先行するAPI機能「Programmatic Tool Calling」との違い</h2>
+<p>Anthropicは2025年11月24日、API向けの「Programmatic Tool Calling」を<a href="https://www.anthropic.com/research/advanced-tool-use" target="_blank" rel="noopener">発表している</a>。この仕組みでは、開発者が生成コードから呼び出せるツールをあらかじめ指定する。Claudeが生成したPythonコードはCode Executionツール上で実行され、APIを通じて返されたツールの実行結果を受け取る。Pythonはその中間結果を必要に応じて次の処理に利用し、最終的な結果をClaudeに返す。</p>
+<p>複数のツールを組み合わせ、中間結果を生成コード内で処理してClaudeに返す情報を絞る点は、今回のCode Modeと共通している。ただし、Programmatic Tool Callingでは、開発者がコードから呼び出せるツールを指定する。一方、Claude CodeのCode Modeでは、対話セッション内でJavaScriptがツールを呼び出すため、既存の権限ルールやフックを通じて、実際に行われる操作を制御することになる。</p>
+<p>実際に試す場合は、検索結果から一つのファイルを選んで編集し、関連するテストを実行するような作業が適している。編集したパスとテスト結果だけをClaudeに返しても作業を進められるか、検索によって編集対象が決まる場合でも、意図した権限確認が行われるかを確認できる。こうした基本的な動作を把握することで、複数ファイルにまたがる処理へと適用範囲を広げる際の判断材料になる。</p>
+<p class="bg-footer">Bron: <a href="https://xenospectrum.com/claude-code-mode-tool-permissions/" target="_blank" rel="noopener">xenospectrum.com</a></p>
+<p class="reader-truncated">Dit artikel lijkt onvolledig (teaser of meter). Open bij de bron voor de volledige tekst.</p>
+<p><a class="reader-bron-link" href="https://xenospectrum.com/claude-code-mode-tool-permissions/" target="_blank" rel="noopener">Open bij de bron ↗</a></p>
