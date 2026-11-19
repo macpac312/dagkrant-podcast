@@ -10,23 +10,8 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-11-19T05:30:29+00:00",
+  "updated_at": "2026-11-19T05:40:00+00:00",
   "history": [
-    {
-      "date": "2026-10-30",
-      "route": "claude",
-      "duration_s": 2054,
-      "finished_at": "2026-10-30T05:43:10+00:00",
-      "durations_s": {
-        "nieuws": 182,
-        "artikelen": 84,
-        "krant": 444,
-        "achtergronden_1": 248,
-        "podcast": 441,
-        "publiceren": 31,
-        "achtergronden_2": 624
-      }
-    },
     {
       "date": "2026-10-31",
       "route": "claude",
@@ -311,6 +296,21 @@
         "publiceren": 38,
         "achtergronden_2": 317
       }
+    },
+    {
+      "date": "2026-11-19",
+      "route": "claude",
+      "duration_s": 1911,
+      "finished_at": "2026-11-19T05:40:00+00:00",
+      "durations_s": {
+        "nieuws": 268,
+        "artikelen": 336,
+        "krant": 104,
+        "achtergronden_1": 180,
+        "podcast": 418,
+        "publiceren": 34,
+        "achtergronden_2": 571
+      }
     }
   ],
   "default_duration_s": 2700,
@@ -346,14 +346,30 @@
     {
       "step": "achtergronden_2",
       "at": "2026-11-19T05:30:29+00:00"
+    },
+    {
+      "step": "klaar",
+      "at": "2026-11-19T05:40:00+00:00"
     }
   ],
-  "status": "running",
+  "status": "done",
   "date": "2026-11-19",
-  "step": "achtergronden (ronde 2)",
-  "step_index": 6,
-  "progress": 86,
+  "step": "klaar",
+  "step_index": 7,
+  "progress": 100,
   "started_at": "2026-11-19T05:08:09+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-11-19T05:40:00+00:00",
+  "duration_s": 1911,
+  "error": null,
+  "durations_s": {
+    "nieuws": 268,
+    "artikelen": 336,
+    "krant": 104,
+    "achtergronden_1": 180,
+    "podcast": 418,
+    "publiceren": 34,
+    "achtergronden_2": 571
+  },
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-11-19.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
