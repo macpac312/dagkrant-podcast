@@ -1,0 +1,17 @@
+{
+  "title": "Microsoft vervangt externe AI-modellen door goedkopere eigen modellen",
+  "summary": "MAI presenteerde op Ignite zeven nieuwe modellen. MAI Code 2 haalt volgens Microsoft 98% van de prestaties van GPT-6.1 Sol tegen 40% van de kosten.\n\nDe AI-divisie van Microsoft (MAI) presenteerde op Ignite zeven nieuwe modellen voor code, security, beeld, taal en routering, meldt The Decoder. MAI Code 2 haalt volgens Microsoft 98% van de prestaties van OpenAI's GPT-6.1 Sol, tegen 40% van de kosten.\n\nDe modellen moeten externe modellen in Microsofts eigen producten vervangen.",
+  "sources": [
+    "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+    "https://microsoft.ai/news/microsoft-ignite-2026/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-19",
+  "slug": "microsoft-vervangt-externe-ai-modellen-door-goedkopere-eigen",
+  "tts_slug": "microsoft-vervangt-externe-ai-modellen-door-goedkopere-eigen",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-19T05:36:54",
+  "size_kb": 16
+}

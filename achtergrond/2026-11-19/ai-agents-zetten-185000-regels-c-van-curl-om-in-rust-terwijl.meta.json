@@ -1,0 +1,16 @@
+{
+  "title": "AI-agents zetten 185.000 regels C van curl om in Rust, terwijl het project gewoon doordraait",
+  "summary": "Curl-maker Daniel Stenberg: in ruim drie weken 340.000 regels Rust, en tegelijk meer dan 300 commits en 200 bugfixes in het echte project.\n\nAI-agents hebben 185.000 regels C-code van curl omgezet in 340.000 regels Rust, schrijft curl-maker Daniel Stenberg, geciteerd door Simon Willison. In dezelfde ruim drie weken werden in het echte curl-project meer dan 300 commits samengevoegd, waaronder ruim 200 bugfixes.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/18/daniel-stenberg/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-19",
+  "slug": "ai-agents-zetten-185000-regels-c-van-curl-om-in-rust-terwijl",
+  "tts_slug": "ai-agents-zetten-185000-regels-c-van-curl-om-in-rust-terwijl",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-19T05:36:54",
+  "size_kb": 5
+}

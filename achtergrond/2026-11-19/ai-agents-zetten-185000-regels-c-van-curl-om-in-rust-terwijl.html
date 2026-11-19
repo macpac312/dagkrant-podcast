@@ -1,0 +1,36 @@
+<ul class="bg-bullets">
+<li>AI-agents zetten 185.000 regels C van curl om in 340.000 regels Rust.</li>
+<li>In dezelfde ruim drie weken voegde het echte project 300+ commits en 200+ bugfixes toe.</li>
+<li>Stenberg vraagt of de klonen het tempo bij kunnen houden.</li>
+<li>Regels code zeggen weinig over onderhoud, bugfixes en vertrouwen.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Drie weken, twee werelden</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="185000">185000</div><div class="ns-viz-stat-label">Regels C in curl omgezet door agents</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="340000">340000</div><div class="ns-viz-stat-label">Regels Rust in de herschrijving</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-suffix="+" data-target="300">300+</div><div class="ns-viz-stat-label">Commits samengevoegd in het echte project</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-suffix="+" data-target="200">200+</div><div class="ns-viz-stat-label">Bugfixes in het echte project</div></div>
+</div></div>
+<h5>Een herschrijving in drie weken</h5>
+<p>Curl-maker Daniel Stenberg schrijft, geciteerd door Simon Willison, dat AI-agents 185.000 regels C-code van curl hebben omgezet in 340.000 regels Rust; die telling deed hij zelf. In dezelfde ruim drie weken voegde het echte curl-project meer dan 300 commits samen, waaronder ruim 200 bugfixes. Ook werden enkele kwetsbaarheden verholpen. Zijn punt is niet dat de herschrijving mislukt is, maar dat ze stilstaat: zodra de omzetting klaar is, begint een nieuw project dat het verloop van het origineel moet bijhouden. Zijn retorische vraag, of de klonen dat kunnen volhouden, geeft de kern weer.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Omvang van de herschrijving</div>
+<div class="ns-viz-bars">
+<div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Origineel C</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:54%">185.000</div></div></div>
+<div class="ns-viz-bar-row"><div class="ns-viz-bar-label">Rust-versie</div><div class="ns-viz-bar-track"><div class="ns-viz-bar-fill" style="--w:100%">340.000</div></div></div>
+</div></div>
+<h5>Waarom het tempo ertoe doet</h5>
+<p>Een software-project als curl, dat overal draait, is geen momentopname maar een stroom van correcties. Elke bugfix is kennis over randgevallen die de nieuwe code niet automatisch heeft. Dat de Rust-versie bijna twee keer zoveel regels telt (340.000 tegen 185.000, afgeleid), zegt hierbij weinig: meer regels is niet beter, en een geautomatiseerde vertaling kan veel standaardcode toevoegen. Waar het om gaat is of de kopie dezelfde bugfixes, beveiligingspatches en gedragsdetails blijft overnemen. Stenberg suggereert van niet vanzelf: zijn team repareerde in drie weken honderden dingen die de herschrijvingen missen.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Kloon tegen levend project</div>
+<div class="ns-viz-compare">
+<div class="ns-viz-compare-col"><h6>🤖 Rust-herschrijving</h6><ul><li>185.000 regels C omgezet in 340.000 regels Rust</li><li>Door AI-agents in ruim drie weken</li><li>Heeft de 200+ bugfixes niet</li></ul></div>
+<div class="ns-viz-compare-col"><h6>🛠 Echt curl-project</h6><ul><li>300+ commits in dezelfde periode</li><li>Ruim 200 bugfixes</li><li>Ook enkele kwetsbaarheden verholpen</li></ul></div>
+</div></div>
+<blockquote>We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually.</blockquote>
+<h5>AI-codeertempo en onderhoud</h5>
+<p>Het verhaal past in de lopende discussie over AI-codeeragents. Microsoft pakt tegelijk uit met goedkopere codemodellen, Google brengt een nieuw Gemini-model voor softwareontwikkeling en OpenAI verlaagt de prijzen van GPT-6.2 Astra. Als code genereren zo goedkoop wordt, verschuift de schaarste naar wat niet te kopiëren is: jaren aan bugrapporten, testgevallen en de vertrouwensrelatie van een onderhouder met zijn gebruikers. Meningen verschillen: voorstanders van herschrijven in Rust wijzen op geheugenveiligheid, terwijl Stenberg de nadruk legt op doorlopend onderhoud (de bron geeft alleen zijn standpunt).</p>
+<div class="ns-viz ns-viz-quote">
+<p class="ns-viz-quote-text">Will these clones keep up?</p>
+<p class="ns-viz-quote-attr">— Daniel Stenberg, maker van curl</p>
+</div>
+<h5>Conclusie</h5>
+<p>De curl-vergelijking is een nuttige tegenwicht voor AI-hype. Een code-omzetting van drie weken is indrukwekkend, maar een project is meer dan zijn code op een dag. De vraag is niet of agents kunnen vertalen, maar of iemand bereid is jarenlang dezelfde honderden correcties bij te houden. Tot dat bewezen is, wint het project dat gewoon doordraait.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=7vCLNcz1JiU" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/7vCLNcz1JiU/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Hoe word je in 2026 een AI-agentontwikkelaar: een stappenplan</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/" target="_blank" style="color:var(--accent)">simonwillison.net ↗</a></div>
