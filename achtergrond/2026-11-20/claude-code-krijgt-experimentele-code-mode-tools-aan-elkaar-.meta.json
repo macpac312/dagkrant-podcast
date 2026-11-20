@@ -1,0 +1,20 @@
+{
+  "title": "Claude Code krijgt experimentele 'Code Mode': tools aan elkaar knopen met JavaScript",
+  "summary": "Met versie 2.1.323 schrijft Claude een script dat meerdere tools aanroept en de resultaten direct doorgeeft, in plaats van elke tool apart aan te roepen.\n\nAnthropic heeft op 12 november Claude Code versie 2.1.323 uitgebracht met een experimentele functie, 'Code Mode', meldt gihyo.jp. Met Code Mode genereert Claude een JavaScript-script dat meerdere tools combineert; Claude Code voert het uit, waarbij de uitkomst van de ene tool direct naar de volgende gaat.\n\nJapanse en Vietnamese techsites beste",
+  "sources": [
+    "https://gihyo.jp/article/2026/11/claude-code-mode",
+    "https://note.com/mewz_muse/n/n08372eb6a0a4",
+    "https://quantrimang.com/code-mode-cua-claude-code-218184",
+    "https://sunmedia.tw/news/technology/1795127502-Uber%E8%A8%AD4%E9%A0%85Claude%20Code%E9%A0%90%E8%A8%AD%E9%85%8D%E7%BD%AE%E3%80%80%E6%88%90%E5%8A%9F%E5%A4%A7%E7%A0%8D%E9%80%BE%E4%BA%94%E6%88%90AI%E9%96%8B%E7%99%BC%E6%88%90%E6%9C%AC",
+    "https://note.com/rio_tc/n/nf7c085506752?hl=ko"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-20",
+  "slug": "claude-code-krijgt-experimentele-code-mode-tools-aan-elkaar-",
+  "tts_slug": "claude-code-krijgt-experimentele-code-mode-tools-aan-elkaar-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-20T05:36:10",
+  "size_kb": 14
+}
