@@ -10,23 +10,8 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-11-20T05:29:30+00:00",
+  "updated_at": "2026-11-20T05:39:30+00:00",
   "history": [
-    {
-      "date": "2026-10-31",
-      "route": "claude",
-      "duration_s": 1928,
-      "finished_at": "2026-10-31T05:40:37+00:00",
-      "durations_s": {
-        "nieuws": 257,
-        "artikelen": 358,
-        "krant": 89,
-        "achtergronden_1": 241,
-        "podcast": 333,
-        "publiceren": 36,
-        "achtergronden_2": 614
-      }
-    },
     {
       "date": "2026-11-01",
       "route": "claude",
@@ -311,6 +296,21 @@
         "publiceren": 34,
         "achtergronden_2": 571
       }
+    },
+    {
+      "date": "2026-11-20",
+      "route": "claude",
+      "duration_s": 1860,
+      "finished_at": "2026-11-20T05:39:30+00:00",
+      "durations_s": {
+        "nieuws": 605,
+        "artikelen": 9,
+        "krant": 59,
+        "achtergronden_1": 166,
+        "podcast": 389,
+        "publiceren": 32,
+        "achtergronden_2": 600
+      }
     }
   ],
   "default_duration_s": 2700,
@@ -346,14 +346,30 @@
     {
       "step": "achtergronden_2",
       "at": "2026-11-20T05:29:30+00:00"
+    },
+    {
+      "step": "klaar",
+      "at": "2026-11-20T05:39:30+00:00"
     }
   ],
-  "status": "running",
+  "status": "done",
   "date": "2026-11-20",
-  "step": "achtergronden (ronde 2)",
-  "step_index": 6,
-  "progress": 86,
+  "step": "klaar",
+  "step_index": 7,
+  "progress": 100,
   "started_at": "2026-11-20T05:08:30+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-11-20T05:39:30+00:00",
+  "duration_s": 1860,
+  "error": null,
+  "durations_s": {
+    "nieuws": 605,
+    "artikelen": 9,
+    "krant": 59,
+    "achtergronden_1": 166,
+    "podcast": 389,
+    "publiceren": 32,
+    "achtergronden_2": 600
+  },
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-11-20.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
