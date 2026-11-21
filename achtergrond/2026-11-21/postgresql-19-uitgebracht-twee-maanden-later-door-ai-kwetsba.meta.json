@@ -1,0 +1,17 @@
+{
+  "title": "PostgreSQL 19 uitgebracht, twee maanden later door 'AI-kwetsbaarheidsapocalyps'",
+  "summary": "De release kwam later dan gebruikelijk omdat het team een stroom door AI gemelde kwetsbaarheden moest afhandelen.\n\nPostgreSQL 19 is uit. Normaal verschijnt een nieuwe versie in september, maar dit jaar kwam die twee maanden later, vooral door de stroom problemen die het team moest oplossen als onderdeel van wat Simon Willison 'de aanhoudende AI-gemelde kwetsbaarheidsapocalyps' noemt.\n\nAI-tools vinden steeds meer bugs in opensourcesoftware.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+    "https://www.postgresql.org/docs/release/19.0/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-21",
+  "slug": "postgresql-19-uitgebracht-twee-maanden-later-door-ai-kwetsba",
+  "tts_slug": "postgresql-19-uitgebracht-twee-maanden-later-door-ai-kwetsba",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-21T05:34:26",
+  "size_kb": 14
+}

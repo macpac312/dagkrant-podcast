@@ -1,0 +1,17 @@
+{
+  "title": "OpenAI maakt het veel moeilijker om de redeneerstappen van zijn modellen te stelen",
+  "summary": "In red-teamtests daalde het slagingspercentage van 54 naar 0,2 procent. OpenAI schort duizenden accounts op wegens 'adversarial distillation'.\n\nOpenAI heeft de bescherming tegen het uitlezen van interne redeneringen van GPT-6.2 Astra en GPT-6.2 Sol fors aangescherpt. In adaptieve red-teamtests daalde het succespercentage van pogingen om de afgeschermde redeneringen te extraheren van 54 naar 0,2 procent, meldt The Decoder. Het bedrijf schort ook duizenden accounts op.\n\nIn een eigen blog beschrijf",
+  "sources": [
+    "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+    "https://openai.com/index/combatting-adversarial-distillation"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-21",
+  "slug": "openai-maakt-het-veel-moeilijker-om-de-redeneerstappen-van-z",
+  "tts_slug": "openai-maakt-het-veel-moeilijker-om-de-redeneerstappen-van-z",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-21T05:34:26",
+  "size_kb": 15
+}
