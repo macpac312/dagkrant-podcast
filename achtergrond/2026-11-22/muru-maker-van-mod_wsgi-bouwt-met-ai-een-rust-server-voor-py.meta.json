@@ -1,0 +1,16 @@
+{
+  "title": "Muru: maker van mod_wsgi bouwt met AI een Rust-server voor Python-apps",
+  "summary": "Graham Dumpleton denkt al twintig jaar na over de ideale manier om Python-webapps te draaien. Muru is zijn antwoord.\n\nGraham Dumpleton begon twintig jaar geleden mod_wsgi en denkt sindsdien na over de beste manier om Python-webapplicaties in productie te draaien. Muru is zijn nieuwe, met AI-hulp gebouwde server in Rust, voor ASGI- en WSGI-apps in ontwikkeling en productie, schrijft Simon Willison.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/21/muru/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-22",
+  "slug": "muru-maker-van-mod_wsgi-bouwt-met-ai-een-rust-server-voor-py",
+  "tts_slug": "muru-maker-van-mod_wsgi-bouwt-met-ai-een-rust-server-voor-py",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-22T05:36:23",
+  "size_kb": 13
+}

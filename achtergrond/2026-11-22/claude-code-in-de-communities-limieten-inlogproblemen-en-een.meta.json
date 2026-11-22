@@ -1,0 +1,19 @@
+{
+  "title": "Claude Code in de communities: limieten, inlogproblemen en een telemetrie-checker",
+  "summary": "Russische en Chinese ontwikkelaarssites schrijven handleidingen over Claude Code-limieten; een opensourcetool claimt telemetrie elke 20 seconden.\n\nOp het Russische vc.ru verschenen deze week handleidingen over de gebruikslimieten van Claude Code en Codex (hoe ze werken, waar je je tegoed ziet en hoe je ze oprekt) en over inlogproblemen in de terminal, inclusief regionale beperkingen van Anthropic.\n\nOp een Chinese techsite wordt de opensourcetool claude-leak-check besproken, die zou laten zien da",
+  "sources": [
+    "https://vc.ru/ai/3270653-limity-claude-code-i-codex-kak-rabotayut-i-kak-ih-sbrosit",
+    "https://www.80aj.com/2026/11/21/claude-leak-detection/",
+    "https://vc.ru/ai/3270572-problemy-s-avtorizatsiey-v-claude-code",
+    "https://note.com/haya_tech/n/n494b717929ce"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-22",
+  "slug": "claude-code-in-de-communities-limieten-inlogproblemen-en-een",
+  "tts_slug": "claude-code-in-de-communities-limieten-inlogproblemen-en-een",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-22T05:36:23",
+  "size_kb": 15
+}

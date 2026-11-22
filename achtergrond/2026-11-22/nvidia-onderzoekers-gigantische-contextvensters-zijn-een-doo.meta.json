@@ -1,0 +1,16 @@
+{
+  "title": "Nvidia-onderzoekers: gigantische contextvensters zijn een doodlopende weg",
+  "summary": "Periodieke samenvattingen en gericht zoeken leveren meestal hetzelfde resultaat, tegen een fractie van de kosten.\n\nTaalmodellen hebben hun volledige contextvenster vaak niet nodig, betogen onderzoekers van Nvidia. Lange contexten zijn traag, duur en foutgevoelig. In tests haalden periodieke samenvattingen en gericht zoeken op trefwoorden meestal hetzelfde resultaat als de volledige context, tegen een fractie van de kosten.",
+  "sources": [
+    "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-22",
+  "slug": "nvidia-onderzoekers-gigantische-contextvensters-zijn-een-doo",
+  "tts_slug": "nvidia-onderzoekers-gigantische-contextvensters-zijn-een-doo",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-22T05:36:23",
+  "size_kb": 15
+}

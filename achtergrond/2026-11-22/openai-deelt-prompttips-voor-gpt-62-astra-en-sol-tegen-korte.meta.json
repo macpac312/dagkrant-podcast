@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI deelt prompttips voor GPT-6.2 Astra en Sol tegen korte antwoorden",
+  "summary": "Nieuwe sjablonen moeten overdreven korte antwoorden, onnodige vragen en te veel testen bij programmeren tegengaan.\n\nOpenAI heeft nieuwe promptsjablonen uitgebracht voor GPT-6.2 Astra en Sol. Ze moeten veelvoorkomend gedrag corrigeren: te korte antwoorden, onnodige vervolgvragen en overmatig testen bij programmeerwerk. Ook de API verandert: wie de gespreksgeschiedenis bewerkt, kan redeneerinhoud kwijtraken, meldt The Decoder.",
+  "sources": [
+    "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-22",
+  "slug": "openai-deelt-prompttips-voor-gpt-62-astra-en-sol-tegen-korte",
+  "tts_slug": "openai-deelt-prompttips-voor-gpt-62-astra-en-sol-tegen-korte",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-22T05:36:23",
+  "size_kb": 9
+}

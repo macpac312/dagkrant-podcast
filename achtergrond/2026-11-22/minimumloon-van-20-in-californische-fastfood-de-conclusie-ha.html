@@ -1,0 +1,67 @@
+<ul class="bg-bullets">
+<li>VoxEU draaide 1440 plausibele 'synthetic control'-analyses van het Californische fastfood-minimumloon van $20.</li>
+<li>De uitkomsten lopen sterk uiteen: banen verloren of niet, afhankelijk van onschuldige keuzes.</li>
+<li>De vergelijkingsgroep, dus de 'controlestaten', blijkt de grootste bron van onenigheid.</li>
+<li>De les: één onderzoek is zelden het laatste woord; spreiding verdient meer aandacht dan het gemiddelde.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 Het experiment in cijfers</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="20" data-prefix="$">$20</div><div class="ns-viz-stat-label">Minimumloon per uur, fastfood Californië</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1440">1440</div><div class="ns-viz-stat-label">Plausibele analyses gedraaid</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="1">1</div><div class="ns-viz-stat-label">Vraag: banen verloren of niet?</div></div>
+</div></div>
+<h5>Een beleidsvraag met twee antwoorden</h5>
+<p>Sinds Californië het minimumloon voor de fastfoodsector optrok naar $20 per uur, strijden onderzoekers over de vraag of dat banen heeft gekost. De ene studie vindt geen effect, de andere wel. Dat is geen academische muggenzifterij: wie het beleid wil kopiëren of juist wil afwijzen, leunt op deze uitkomsten. Een column op VoxEU zoekt de verklaring niet in de data zelf maar in de manier waarop ze worden vergeleken. Het gaat om 'synthetic control', een methode die de Californische fastfoodsector vergelijkt met een gewogen mix van sectoren of staten waar het minimumloon niet steeg. Hoe die mix wordt samengesteld, bepaalt de uitkomst.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe synthetic control werkt</div>
+<div class="ns-viz-mech-subtitle">Van behandelde regio naar een kunstmatige tweeling</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Behandeling</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Donorpool</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Tweeling</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">1440 uitkomsten</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="60" width="120" height="70" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="1.8"/><text x="80.0" y="92.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Californië</text><text x="80.0" y="108.0" text-anchor="middle" font-size="10" fill="#44403c">$20 fastfood</text><line x1="145" y1="95" x2="185" y2="95" stroke="#7c3aed" stroke-width="2.5"/><path d="M185,95 l-7,-4 l0,8 z" fill="#7c3aed"/><rect x="190" y="60" width="110" height="70" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><text x="245.0" y="92.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Beleid</text><text x="245.0" y="108.0" text-anchor="middle" font-size="10" fill="#44403c">minimumloon omhoog</text><text x="160" y="170" text-anchor="middle" font-size="11" font-weight="400" fill="#44403c">Eén regio krijgt de maatregel</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Behandeling</h6><p class="korte">Eén regio krijgt het hogere minimumloon, de rest niet.</p><p class="uitleg">Het uitgangspunt is een behandelde eenheid, hier de Californische fastfoodsector, en een groep eenheden die buiten de maatregel blijven.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="25" width="90" height="40" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="1.8"/><text x="65.0" y="49.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Staat A</text><rect x="115" y="25" width="90" height="40" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><text x="160.0" y="49.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Staat B</text><rect x="210" y="25" width="90" height="40" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="1.8"/><text x="255.0" y="49.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Staat C</text><rect x="20" y="80" width="90" height="40" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><text x="65.0" y="104.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Staat D</text><rect x="115" y="80" width="90" height="40" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="1.8"/><text x="160.0" y="104.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Staat E</text><rect x="210" y="80" width="90" height="40" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><text x="255.0" y="104.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">...</text><text x="160" y="165" text-anchor="middle" font-size="11" font-weight="400" fill="#44403c">Kies wie in de vergelijkingsgroep mag</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Donorpool</h6><p class="korte">De onderzoeker kiest wie als vergelijkingsmateriaal dient.</p><p class="uitleg">Elke keuze lijkt onschuldig: welke staten, welke sectoren, welke periode. Samen vormen ze de donorpool waaruit de tweeling wordt gebouwd.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="65" width="80" height="60" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="1.8"/><text x="55.0" y="99.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Mix</text><line x1="100" y1="95" x2="130" y2="95" stroke="#7c3aed" stroke-width="2.5"/><path d="M130,95 l-7,-4 l0,8 z" fill="#7c3aed"/><rect x="135" y="65" width="80" height="60" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="1.8"/><text x="175.0" y="99.0" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Gewogen</text><line x1="220" y1="95" x2="250" y2="95" stroke="#7c3aed" stroke-width="2.5"/><path d="M250,95 l-7,-4 l0,8 z" fill="#7c3aed"/><rect x="255" y="65" width="55" height="60" rx="9" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="1.8"/><text x="282.5" y="99.0" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">Tweeling</text><text x="160" y="165" text-anchor="middle" font-size="11" font-weight="400" fill="#44403c">Gewichten maken het verleden zo gelijk mogelijk</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Tweeling</h6><p class="korte">Gewichten maken een kunstmatige Californië zonder beleid.</p><p class="uitleg">De methode kiest gewichten zodat de tweeling vóór de maatregel zo veel mogelijk op Californië lijkt, zodat het verschil daarna het effect moet laten zien.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><line x1="30" y1="150" x2="300" y2="150" stroke="#a8a29e"/><line x1="165" y1="30" x2="165" y2="150" stroke="#dc2626" stroke-dasharray="4 3"/><rect x="40" y="138" width="16" height="12" fill="#7c3aed" fill-opacity=".7"/><rect x="62" y="124" width="16" height="26" fill="#7c3aed" fill-opacity=".7"/><rect x="84" y="106" width="16" height="44" fill="#7c3aed" fill-opacity=".7"/><rect x="106" y="80" width="16" height="70" fill="#7c3aed" fill-opacity=".7"/><rect x="128" y="55" width="16" height="95" fill="#7c3aed" fill-opacity=".7"/><rect x="150" y="40" width="16" height="110" fill="#7c3aed" fill-opacity=".7"/><rect x="172" y="50" width="16" height="100" fill="#7c3aed" fill-opacity=".7"/><rect x="194" y="72" width="16" height="78" fill="#7c3aed" fill-opacity=".7"/><rect x="216" y="100" width="16" height="50" fill="#7c3aed" fill-opacity=".7"/><rect x="238" y="120" width="16" height="30" fill="#7c3aed" fill-opacity=".7"/><rect x="260" y="134" width="16" height="16" fill="#7c3aed" fill-opacity=".7"/><text x="165" y="24" text-anchor="middle" font-size="10" font-weight="400" fill="#dc2626">geen effect</text><text x="165" y="175" text-anchor="middle" font-size="11" font-weight="400" fill="#44403c">Spreiding van geschatte effecten</text></svg></div>
+<div class="ns-viz-mech-info"><h6>1440 uitkomsten</h6><p class="korte">De spreiding tussen plausibele analyses is breed.</p><p class="uitleg">De auteurs draaien 1440 varianten. Het resultaat laat zien dat 'banen verloren' of 'niet verloren' vaak afhangt van de gekozen vergelijkingsgroep, niet van het beleid zelf.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>De onschuldige keuzes</h5>
+<p>Het sterkste argument van de auteurs is dat geen enkele keuze fout is. Elke analyse is plausibel, elke vergelijkingsgroep te verdedigen. Maar de spreiding in uitkomsten maakt zichtbaar hoeveel ruimte de onderzoeker heeft. Die ruimte is niet nieuw: in de empirische economie wordt al jaren gewaarschuwd voor 'forking paths', het idee dat kleine beslissingen in de analyse samen een groot verschil maken. Wat de VoxEU-column toevoegt, is een systematische kaart van die paden voor één beleidsvraag. Daarmee verschuift de vraag van 'wat is het effect?' naar 'hoe robuust is het effect voor alle redelijke keuzes?'</p>
+<blockquote>Kleine, ogenschijnlijk onschuldige keuzes bij het samenstellen van de vergelijkingsgroep bepalen de uitkomst.</blockquote>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+<details class="ns-viz-concept"><summary>Synthetic control</summary><div class="ns-viz-concept-body">Een methode die een behandelde regio vergelijkt met een gewogen combinatie van regio's zonder beleid, zodat een kunstmatige 'tweeling' ontstaat.</div></details>
+<details class="ns-viz-concept"><summary>Donorpool</summary><div class="ns-viz-concept-body">De groep eenheden waaruit de tweeling wordt samengesteld. Wie erin zit, kan de uitkomst bepalen.</div></details>
+<details class="ns-viz-concept"><summary>Robuustheid</summary><div class="ns-viz-concept-body">De mate waarin een uitkomst overeind blijft als je redelijke analysekeuzes varieert.</div></details>
+</div></div>
+<h5>Gevolgen voor beleid en debat</h5>
+<p>Voor beleidsmakers is de les ongemakkelijk. Een vakbond of werkgeversorganisatie kan altijd een studie vinden die de eigen positie steunt, en beide zijn dan 'wetenschappelijk'. De oplossing zit niet in het mislukken van de methode, maar in transparantie: publiceer de hele verdeling van uitkomsten, niet de ene gunstige. Dat geldt ook voor Nederland, waar het minimumloon een vast terugkerend verkiezingsonderwerp is en rapporten van planbureaus zwaar wegen. Wie een enkel cijfer krijgt voorgelegd, mag vragen: onder welke aannames, en wat gebeurt er als die verschuiven?</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Hoe lees je zo'n studie?</div>
+<div class="ns-viz-scenario">
+<div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>ENKEL CIJFER</h6><p>Eén studie, één conclusie: 'het minimumloon heeft banen gekost' of 'het heeft geen effect'.</p></div>
+<div class="ns-viz-scenario-arrow">→</div>
+<div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>VERDELING</h6><p>De hele spreiding van 1440 plausibele analyses; de onzekerheid is het resultaat, niet de ruis.</p></div>
+</div></div>
+<h5>Conclusie</h5>
+<p>De Californische discussie zal niet worden beslecht door nog een studie. Ze wordt gewonnen door de onderzoeker die laat zien hoe gevoelig zijn eigen uitkomst is. Dat is een lastiger verhaal dan 'wel' of 'niet', maar wel het eerlijke. Wie het minimumloon als politiek instrument serieus neemt, moet ook accepteren dat de empirie meer ruimte laat dan beide kampen toegeven.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=3wAfz1dEyxo" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/3wAfz1dEyxo/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">$20/hr Burger Jobs: What Happened? #shorts</div></div></a></div>
