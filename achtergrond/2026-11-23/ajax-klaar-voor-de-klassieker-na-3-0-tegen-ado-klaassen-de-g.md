@@ -1,0 +1,49 @@
+---
+titel: "Ajax klaar voor de Klassieker na 3-0 tegen ADO, Klaassen de grote man"
+url: https://www.vi.nl/video/samenvatting-ajax-is-klaar-voor-klassieker-na-eenvoudige-middag-tegen-ado
+bron: sport
+kind: sport
+gegenereerd: 2026-11-23T05:33:26
+---
+
+© vi.nl
+
+Ajax wint met 3-0 van ADO Den Haag; Davy Klaassen is de grote man.
+
+Eén punt achter koploper PSV in een extreem dichte Eredivisie.
+
+Na dertien speelronden scheidt steeds één punt de nummers één tot en met zeven.
+
+Volgende week zondag wacht de Klassieker bij Feyenoord in De Kuip.
+
+Een zondagmiddag zonder drama
+
+Ajax heeft zondagmiddag precies gedaan wat van een koploperskandidaat verwacht wordt: een lagere tegenstander zonder veel omhaal van tafel vegen. Het 3-0 tegen ADO Den Haag was volgens de berichtgeving eenvoudig, en Davy Klaassen was de grote man bij de Amsterdammers. In een competitie waarin de marges dun zijn, is zo’n avond zonder zenuwen meer waard dan de eindstand doet vermoeden: de ploeg houdt het doelsaldo gezond, spaart energie en neemt vertrouwen mee naar de afspraak die er echt toe doet. Ajax staat daarmee op 28 punten, één punt achter PSV dat er 29 heeft.
+
+De context maakt die zege zwaarder dan hij oogt. Na dertien speelronden scheidt volgens het bijbehorende overzicht steeds één punt de nummers één tot en met zeven: PSV 29, Ajax 28, Twente 27, AZ 26, en dan volgen nog drie ploegen op die ladder. Zo’n competitie bestraft elke misstap onmiddellijk. Een gelijkspel tegen een nummer van onderin kan Ajax in één weekend van tweede naar zesde brengen, een zege duwt je net zo hard omhoog. Dat verklaart waarom een ogenschijnlijk routineuze overwinning toch nieuwswaarde heeft.
+
+Klaassen als dirigent
+
+Dat Klaassen de aandacht naar zich toe trekt past in een bekend patroon. Ajax kent in zijn geschiedenis het type middenvelder dat het tempo bepaalt, ruimtes leest en op de juiste momenten aanwezig is in het strafschopgebied. De bronnen zijn schaars over de details van de wedstrijd, dus een nauwkeurige reconstructie van zijn aandeel in de drie doelpunten valt hier niet te geven. Wel is helder dat de ploeg zijn leiderschap nodig heeft in een weekend waarin de blik al vooruit gericht is. Een speler die in de aanloop naar een grote wedstrijd in vorm is, geeft een trainer houvast bij de opstelling.
+
+Tegelijk is voorzichtigheid geboden. ADO Den Haag is niet het type tegenstander waaraan je de werkelijke sterkte van een titelkandidaat afmeet. Een 3-0 laat zien dat Ajax zijn werk afmaakt tegen een tegenstander die dat toelaat, niet dat de ploeg gewapend is tegen een thuisspelend Feyenoord, dat in De Kuip zijn eigen publiek achter zich heeft. De Klassieker is zelden een wedstrijd waarin vorm de doorslag geeft; intensiteit, discipline en een enkel moment vaak wel.
+
+Een week naar de Klassieker
+
+De komende zeven dagen draaien om één vraag: hoe neem je dit momentum mee zonder te denken dat het vanzelf gaat? Voor Ajax is het ideale scenario helder. Wint de ploeg in De Kuip en laat PSV elders punten liggen, dan staat Ajax bovenaan. Verliest het, dan kan het in deze krappe ladder snel naar het peloton terugvallen. Voor Feyenoord is de wedstrijd evengoed een scharniermoment, al zijn er in de bronnen geen details over hun eigen vorm opgenomen.
+
+Opvallend is hoe sterk de Eredivisie dit seizoen op een mathematisch spel lijkt. Als zeven ploegen binnen een punt of drie van elkaar staan, krijgen directe ontmoetingen extra gewicht: een Klassieker is dan niet alleen prestige, maar ook een zespuntenwedstrijd in de breedste zin. Dat kleurt ook de toon in de media. Kleine verschillen worden uitvergroot, een invaller kan een week lang gevierd of verguisd worden, en trainers moeten elke persconferentie balanceren tussen zelfvertrouwen en nuchterheid.
+
+Conclusie
+
+Ajax heeft zijn huiswerk gemaakt, maar het echte examen volgt zondag. De 3-0 is een geruststelling, geen garantie. In een competitie waarin één punt alles scheidt, is de Klassieker meer dan een rivaliteitsduel: het is de wedstrijd die bepaalt of Ajax zijn aansluiting bij de top verstevigt of juist weer moet gaan achtervolgen. Klaassen kan de toon zetten, maar de eigenlijke test is of Ajax ook tegen een tegenstander die terugbijt dezelfde rust uitstraalt.
+
+▶ YouTube
+
+Three points secured in Amsterdam! ✅ | Highlights Ajax - ADO Den Haag | VriendenLoterij Eredivisie
+
+Bronnen:
+
+ 
+
+vi.nl ↗

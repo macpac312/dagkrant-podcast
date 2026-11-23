@@ -1,0 +1,16 @@
+{
+  "title": "Beginnersgids lokale AI: Inkling, Qwen en Unsloth op je eigen hardware",
+  "summary": "Een praktische handleiding om open modellen lokaal te draaien en bij te trainen, populair op Hacker News.\n\nEen beginnersgids van GPU Partner legt uit hoe je open modellen als Inkling en Qwen lokaal draait en met Unsloth bijtraint. De gids haalde 340 punten op Hacker News.\n\nHij behandelt hardwarekeuze, kwantisatie en fine-tuning op consumentenhardware.",
+  "sources": [
+    "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-23",
+  "slug": "beginnersgids-lokale-ai-inkling-qwen-en-unsloth-op-je-eigen-",
+  "tts_slug": "beginnersgids-lokale-ai-inkling-qwen-en-unsloth-op-je-eigen-",
+  "archive_hits": 0,
+  "has_visuals": true,
+  "generated_at": "2026-11-23T05:33:26",
+  "size_kb": 14
+}

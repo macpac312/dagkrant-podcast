@@ -1,0 +1,16 @@
+{
+  "title": "Perplexity's Monitor API maakt van zoeken een permanente waakhond",
+  "summary": "De API zoekt op schema en waarschuwt agents via webhook alleen bij relevante veranderingen.\n\nPerplexity lanceert een Monitor API die het web op vaste momenten doorzoekt en agents via een webhook alleen waarschuwt als er iets relevants verandert. Een eigen beslismodel filtert onbelangrijke resultaten weg.\n\nHet is volgens Perplexity onderdeel van een strategie om zich te onderscheiden in een markt van steeds inwisselbaardere chatbots.",
+  "sources": [
+    "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-23",
+  "slug": "perplexitys-monitor-api-maakt-van-zoeken-een-permanente-waak",
+  "tts_slug": "perplexitys-monitor-api-maakt-van-zoeken-een-permanente-waak",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-23T05:33:26",
+  "size_kb": 13
+}

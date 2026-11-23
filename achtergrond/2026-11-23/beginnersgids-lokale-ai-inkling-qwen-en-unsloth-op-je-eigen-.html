@@ -1,0 +1,78 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth/opengraph-image-17m7t5?6653c98c6cd84ba6" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© gpupartner.com</div></div><ul class="bg-bullets">
+<li>Een GPU Partner-gids helpt beginners open modellen als Qwen en Inkling lokaal te draaien.</li>
+<li>Kwantisatie laat grote modellen in de VRAM van een consumentenkaart passen.</li>
+<li>Met Unsloth Desktop duurt de installatie volgens de gids 10 tot 15 minuten.</li>
+<li>Lokaal levert privacy en geen limieten, maar kleinere modellen dan de cloud.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📊 De gids in cijfers</div>
+<div class="ns-viz-stats">
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="340">340</div><div class="ns-viz-stat-label">Punten op Hacker News</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="15">15</div><div class="ns-viz-stat-label">Minuten (max.) installatie</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="56">56</div><div class="ns-viz-stat-label">GB: volledig Qwen-model</div></div>
+<div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="32">32</div><div class="ns-viz-stat-label">GB VRAM voor 27B–35B</div></div>
+</div></div>
+<h5>Weg uit de cloud</h5>
+<p>Open-weight modellen als Qwen en Inkling maken lokale AI voor consumenten realistisch, en een beginnersgids van GPU Partner haalde daarmee 340 punten op Hacker News. De redenering van de auteur: cloudaanbieders worden voor routinetaken steeds meer een infrastructuur- of nutsbedrijf. Hij noemt de kwaliteit van de nieuwste versies bij OpenAI en Anthropic soms teruglopend, de controle over wat je mag draaien groot, de kosten oplopend en de privacyzorgen reëel. Zijn eigen motief was praktisch: zware onderzoeks-, dataverzamel- en codetaken uitbesteden zonder constant op gebruikslimieten te letten. Let op: dit is een persoonlijke ervaring, geen vergelijkend onderzoek, en de kwaliteitsclaim over cloudmodellen is zijn standpunt.</p>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Zo draai je lokale AI</div>
+<div class="ns-viz-mech-subtitle">Van videokaart naar privé-assistent in vier stappen</div>
+<div class="ns-viz-mech-pills">
+<button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Hardware</span></button>
+<button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Kwantiseren</span></button>
+<button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">Unsloth</span></button>
+<button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">LAN-toegang</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+<div class="ns-viz-mech-fase active" data-fase="0">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4" rx="8"/><rect x="20" y="60" width="100" height="80" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.6"/><text x="70.0" y="98.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">GPU</text><text x="70.0" y="112.0" text-anchor="middle" font-size="9.5" fill="#44403c">8–12 GB VRAM</text><line x1="122" y1="100" x2="158" y2="100" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="158" cy="100" r="3.5" fill="#7c3aed"/><rect x="160" y="70" width="60" height="60" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.6"/><text x="190.0" y="104.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">9–12B</text><rect x="230" y="70" width="70" height="60" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.6"/><text x="265.0" y="98.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">27–35B</text><text x="265.0" y="112.0" text-anchor="middle" font-size="9.5" fill="#44403c">bij 32 GB</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Hardware</h6><p class="korte">Je begint bij het geheugen van je videokaart.</p><p class="uitleg">Als vuistregel draaien 8-12 GB VRAM modellen van 9B-12B parameters, terwijl 32 GB plaats biedt aan 27B-35B-modellen met ruimte voor lange gesprekken.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="1">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4" rx="8"/><rect x="15" y="70" width="80" height="60" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.6"/><text x="55.0" y="98.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Volledig</text><text x="55.0" y="112.0" text-anchor="middle" font-size="9.5" fill="#44403c">±56 GB</text><line x1="97" y1="100" x2="123" y2="100" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="123" cy="100" r="3.5" fill="#7c3aed"/><rect x="125" y="70" width="80" height="60" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.6"/><text x="165.0" y="104.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Q8 / Q4</text><line x1="207" y1="100" x2="233" y2="100" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="233" cy="100" r="3.5" fill="#7c3aed"/><rect x="235" y="70" width="75" height="60" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.6"/><text x="272.5" y="98.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Past in GPU</text><text x="272.5" y="112.0" text-anchor="middle" font-size="9.5" fill="#44403c">Q4–Q2</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Kwantiseren</h6><p class="korte">Gewichten worden gecomprimeerd zodat het model in je VRAM past.</p><p class="uitleg">Het volledige Qwen-model is ongeveer 56 GB en past niet op een consumentenkaart. Kwantisatie van Q8 naar Q4 of Q2 ruilt wat nauwkeurigheid voor geheugen en snelheid.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="2">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4" rx="8"/><rect x="30" y="40" width="120" height="50" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.6"/><text x="90.0" y="63.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Unsloth Desktop</text><text x="90.0" y="77.0" text-anchor="middle" font-size="9.5" fill="#44403c">installeren</text><line x1="90" y1="92" x2="90" y2="118" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="90" cy="118" r="3.5" fill="#7c3aed"/><rect x="30" y="120" width="120" height="50" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.6"/><text x="90.0" y="143.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Model</text><text x="90.0" y="157.0" text-anchor="middle" font-size="9.5" fill="#44403c">download</text><text x="235" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">context</text><text x="235" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">instellen</text></svg></div>
+<div class="ns-viz-mech-info"><h6>Unsloth</h6><p class="korte">Installeer Unsloth Desktop, kies een quantized model en stel de contextgrootte in.</p><p class="uitleg">Geen terminalcommando's, Python-omgevingen of abonnementen nodig. Met de hardware op orde duurt het volgens de gids 10-15 minuten, exclusief downloaden.</p></div>
+</div>
+<div class="ns-viz-mech-fase" data-fase="3">
+<div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="200" fill="#f5f5f4" rx="8"/><rect x="100" y="20" width="120" height="50" rx="8" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed" stroke-width="1.6"/><text x="160.0" y="43.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">PC met GPU</text><text x="160.0" y="57.0" text-anchor="middle" font-size="9.5" fill="#44403c">draait model</text><line x1="160" y1="72" x2="70" y2="115" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="70" cy="115" r="3.5" fill="#7c3aed"/><line x1="160" y1="72" x2="160" y2="115" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="160" cy="115" r="3.5" fill="#7c3aed"/><line x1="160" y1="72" x2="250" y2="115" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="4 3"/><circle cx="250" cy="115" r="3.5" fill="#7c3aed"/><rect x="30" y="118" width="80" height="40" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.6"/><text x="70.0" y="142.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Laptop</text><rect x="120" y="118" width="80" height="40" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.6"/><text x="160.0" y="142.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Telefoon</text><rect x="210" y="118" width="80" height="40" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-width="1.6"/><text x="250.0" y="142.0" text-anchor="middle" font-size="11" font-weight="700" fill="#7c3aed">Tablet</text></svg></div>
+<div class="ns-viz-mech-info"><h6>LAN-toegang</h6><p class="korte">Schakel toegang via het thuisnetwerk in.</p><p class="uitleg">Daarna kan iedereen thuis het model gebruiken: een privé-assistent zonder cloudabonnement, op eigen hardware. Fine-tuning met Unsloth is een vervolgstap.</p></div>
+</div>
+</div>
+<div class="ns-viz-mech-controls">
+<button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+<button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+<button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+<span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Quantisatie als sleutel</h5>
+<p>Het technische hart van de gids is kwantisatie. Een model slaat zijn kennis op in gewichten; die in lagere precisie opslaan maakt het kleiner en sneller, ten koste van enige nauwkeurigheid. De auteur vergelijkt het met dezelfde foto opgeslagen met 8, 4 en 2 bits per pixel: details verdwijnen stapsgewijs. Dat bepaalt direct wat je kunt draaien. Het volledige Qwen-model van ongeveer 56 GB past niet op een gewone grafische kaart, tenzij je een Mac met uniform geheugen hebt. Een gekwantiseerde variant wel. Volgens de gids is de afweging niet voor iedere taak hetzelfde: voor routinewerk is het verlies meestal acceptabel, voor veeleisend redeneren minder.</p>
+<div class="bg-inline-viz">
+<table style="font-size:.82rem;width:100%;border-collapse:collapse">
+<thead><tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.3rem .5rem">VRAM</th><th style="text-align:right;padding:.3rem .5rem">Modelgrootte</th></tr></thead>
+<tbody>
+<tr><td style="padding:.25rem .5rem;text-align:left">8–12 GB</td><td style="padding:.25rem .5rem;text-align:right">9B–12B</td></tr>
+<tr><td style="padding:.25rem .5rem;text-align:left">32 GB</td><td style="padding:.25rem .5rem;text-align:right">27B–35B</td></tr>
+<tr><td style="padding:.25rem .5rem;text-align:left">Mac met uniform geheugen</td><td style="padding:.25rem .5rem;text-align:right">volledig ±56 GB</td></tr>
+</tbody>
+</table>
+<p style="font-size:.7rem;color:var(--t3);margin-top:.3rem">Vuistregel uit de gids; hangt af van kwantisatie.</p>
+</div>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Cloud versus lokaal</div>
+<div class="ns-viz-compare">
+<div class="ns-viz-compare-col"><h6>☁ Cloud</h6><ul><li>Direct de nieuwste modellen</li><li>Gebruikslimieten en abonnementen</li><li>Data verlaat je netwerk</li></ul></div>
+<div class="ns-viz-compare-col"><h6>🏠 Lokaal</h6><ul><li>Eenmalige hardware-investering</li><li>Geen limieten, privé</li><li>Kleinere, gekwantiseerde modellen</li></ul></div>
+</div></div>
+<blockquote>Installeer Unsloth Desktop, download een gekwantiseerd model dat in je VRAM past, stel de contextgrootte in en zet LAN-toegang aan.</blockquote>
+<h5>Wat betekent dit voor gebruikers</h5>
+<p>De beperking is dat lokale modellen kleiner zijn dan de grote cloudmodellen. Voor een gezin of klein team zijn ze echter genoeg voor samenvatten, schrijven en eenvoudige code, en privacy is vanzelfsprekend beter geregeld. Het sluit aan bij berichten over lekkende AI-routers: wie niets naar derden stuurt, loopt dat risico niet. Bij zakelijk gebruik kunnen bedrijven zo AVG-gevoelige data binnenshuis houden, maar de kosten van een krachtige GPU en stroom komen dan voor eigen rekening. Hardware, geheugen en bijtrainen met Unsloth blijven drempels voor wie verder wil dan de basis.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+<details class="ns-viz-concept"><summary>Kwantisatie</summary><div class="ns-viz-concept-body">Gewichten van een model opslaan met minder bits (Q8, Q4, Q2). Kleiner en sneller, iets minder nauwkeurig.</div></details>
+<details class="ns-viz-concept"><summary>VRAM</summary><div class="ns-viz-concept-body">Geheugen op de grafische kaart. Bepaalt hoe groot een model kan zijn dat je lokaal draait.</div></details>
+<details class="ns-viz-concept"><summary>Fine-tuning</summary><div class="ns-viz-concept-body">Een bestaand model bijtrainen op eigen data, ook op consumentenhardware, bijvoorbeeld met Unsloth.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>Lokale AI is geen vervanger van de grootste cloudmodellen, maar wel een volwassen alternatief voor alledaagse taken. De echte drempel is niet de software, die nu in een kwartier draait, maar het geheugen van je videokaart. Wie privacy en voorspelbare kosten belangrijker vindt dan topprestatie, heeft nu een serieuze keuze.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=OIfGD0EDeso" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/OIfGD0EDeso/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Inkling 2 Mini: het 20GB lokale model dat Qwen 3.8 27B verslaat?</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth" target="_blank" style="color:var(--accent)">gpupartner.com ↗</a></div>

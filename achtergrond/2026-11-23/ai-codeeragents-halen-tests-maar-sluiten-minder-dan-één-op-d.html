@@ -1,0 +1,43 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/11/cowork-benchmark-chatgpt-5-6.jpg" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>Een nieuwe benchmark plaatst AI-codeeragents in een gesimuleerd softwarebedrijf.</li>
+<li>Zelfs Claude Opus 5.5 en GPT-6 Astra sluiten minder dan één op de tien taken volledig af.</li>
+<li>Op standaardtests als SWE-bench halen dezelfde modellen bijna topscores.</li>
+<li>Les: echte werkvloeren vragen meer dan geïsoleerde probleemoplossing.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📏 Volledig afgeronde taken</div>
+<div class="ns-viz-gauge">
+  <svg viewBox="0 0 200 110">
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#e5e7eb" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round" class="ns-viz-gauge-arc" style="--off:226"/>
+  </svg>
+  <div class="ns-viz-gauge-val"><10%</div>
+  <div class="ns-viz-gauge-label">Opus 5.5 en GPT-6 Astra op de gesimuleerde werkvloer</div>
+</div></div>
+<h5>Van schone test naar rommelige baan</h5>
+<p>AI-codeeragents staan dicht bij de top van standaardbenchmarks. SWE-bench is volgens The Decoder bijna verzadigd, en Anthropic zegt dat Claude meer dan 80 procent van de productiecode van het bedrijf schrijft. Een nieuw experiment zet agents nu voor het eerst als digitale werknemers in een gesimuleerd softwarebedrijf, met collega's, projectborden en chatgeschiedenissen. De opdracht: zelfstandig software doorontwikkelen en tickets betrouwbaar afsluiten. Het resultaat is ontnuchterend. Zelfs Claude Opus 5.5 en GPT-6 Astra voltooien minder dan één op de tien taken volledig.</p>
+<p>Het contrast met de benchmarkcijfers is groot, maar niet onverklaarbaar. Een standaardtest levert een afgebakend probleem met een duidelijke definitie van "klaar": een falende test die slaagt moet. Op een werkvloer is niets zo helder. Overdrachten zijn onvolledig, afspraken staan verspreid over chatberichten en een ticket impliceert vaak contextkennis die nergens is opgeschreven. Een agent moet dan zelf bepalen wat er van hem wordt verwacht, bij wie hij moet navragen en wanneer iets echt af is. Dat is minder een programmeertaak dan een coördinatietaak.</p>
+<div class="ns-viz"><div class="ns-viz-title">📊 Beeld in cijfers</div>
+<div class="ns-viz-stats">
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="80" data-suffix="%">80%</div><div class="ns-viz-stat-label">% van de Claude-productiecode die door Claude zelf wordt geschreven (volgens Anthropic)</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="10" data-suffix="%" data-prefix="&lt;">&lt;10%</div><div class="ns-viz-stat-label">Bovengrens van volledig afgeronde taken</div></div>
+  <div class="ns-viz-stat"><div class="ns-viz-stat-value ns-viz-count" data-target="2">2</div><div class="ns-viz-stat-label">Modellen getest: Opus 5.5 en GPT-6 Astra</div></div>
+</div></div>
+<h5>Waarom dit ertoe doet</h5>
+<p>De uitkomst past bij de waarschuwing van METR dat gangbare, gemakkelijk uit te voeren tests de praktische capaciteit van modellen kunnen overschatten, omdat ontwikkelaars in zeer gelijkaardige omgevingen trainen. METR benadrukt ook dat de modellen moeite houden met open vragen zonder directe feedback en met situaties die moeilijk na te bootsen zijn. De gesimuleerde werkvloer is precies zo'n situatie: weinig directe feedback, veel impliciete verwachtingen. Het is daarmee een nuttig tegenwicht voor het idee dat hoge scores op SWE-bench betekenen dat softwareontwikkeling bijna geautomatiseerd is.</p>
+<div class="ns-viz"><div class="ns-viz-title">🔄 Test versus werkvloer</div>
+<div class="ns-viz-scenario">
+  <div class="ns-viz-scenario-side ns-viz-scenario-before"><h6>STANDAARDTEST</h6><p>Een geïsoleerde taak met een duidelijke definitie van klaar: een test die moet slagen. Agents scoren hoog en benchmarks raken verzadigd.</p></div>
+  <div class="ns-viz-scenario-arrow">→</div>
+  <div class="ns-viz-scenario-side ns-viz-scenario-after"><h6>WERKVLOER</h6><p>Een gesimuleerd bedrijf met collega's, borden en onvolledige overdrachten: minder dan één op de tien taken wordt volledig afgesloten.</p></div>
+</div></div>
+<h5>Twee lezingen</h5>
+<p>Optimisten zullen betogen dat dit slechts een momentopname is. De snelheid waarmee modellen verbeteren, zoals METR laat zien met een verdubbeling van de taaklengte elke 3,6 maanden, doet vermoeden dat zulke cijfers snel stijgen. Als de volledige taakafronding nu onder de tien procent ligt, kan dat in een jaar heel anders zijn. Sceptici wijzen erop dat de moeilijkheid niet in de omvang van het probleem zit, maar in de omgeving, en dat meer rekenkracht niet vanzelf leidt tot meer oordeelsvermogen of goede communicatie met collega's.</p>
+<p>De waarheid ligt waarschijnlijk in het midden. Agents zijn nu al nuttig als versneller bij begrensde taken, wat de claim van Anthropic over de productiecode ondersteunt, maar nog niet als autonome collega. Dat verschil heeft praktische gevolgen: bedrijven die vertrouwen op agents moeten processen inrichten waarin mensen de overdracht verzorgen, de definitie van klaar bewaken en de eindverantwoordelijkheid houden. Voor de arbeidsmarkt betekent het dat de vraag naar coördinatie en oordeelsvermogen waarschijnlijk niet zo snel verdwijnt als de ruwe programmeervraag.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>SWE-bench</summary><div class="ns-viz-concept-body">Veelgebruikte benchmark voor software-engineeringtaken; volgens The Decoder bijna verzadigd door de beste modellen.</div></details>
+  <details class="ns-viz-concept"><summary>Gesimuleerde werkvloer</summary><div class="ns-viz-concept-body">Een testomgeving met collega's, projectborden en chatgeschiedenissen waarin een agent als digitale werknemer opereert.</div></details>
+</div></div>
+<p>Ook de tijdsdimensie speelt een rol. Een agent die in een gesimuleerde omgeving werkt, moet over meerdere stappen consistent blijven, tussentijdse beslissingen onthouden en fouten van eerdere stappen herstellen. Kleine foutkansen per stap stapelen zich in een lange keten op, waardoor het eindresultaat veel slechter is dan de prestaties op losse deeltaken doen vermoeden. Dat verklaart ook waarom het percentage volledig afgeronde taken zo laag kan uitvallen terwijl de afzonderlijke handelingen vaak correct zijn. De meetlat verschuift van "kan het dit?" naar "kan het dit betrouwbaar, van begin tot eind?".</p>
+<h5>Conclusie</h5>
+<p>De boodschap van deze benchmark is niet dat AI-codeeragents falen, maar dat benchmarks die slagen niet hetzelfde zijn als werk dat af is. Wie de capaciteiten van agents wil beoordelen, moet ze meten in de omgeving waarin ze straks moeten functioneren. Tot die tijd is een score van bijna honderd procent op een schone test vooral een bewijs dat de test is uitgespeeld, geen bewijs dat de baan is overgenomen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=-suGvXddm8I" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/-suGvXddm8I/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">Nieuwe benchmark SWE-CoWork: AI-codeagenten lossen minder dan 8% op</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a></div>

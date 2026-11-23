@@ -1,0 +1,16 @@
+{
+  "title": "Goedkope AI-inferentieproviders stelen sleutels en lezen mee",
+  "summary": "Dragos stuurde twee miljoen nepverzoeken en vond gecompromitteerde providers, honderden gestolen AWS-sleutels en resellers die klantvragen lazen.\n\nBeveiligingsonderzoekers van Dragos stuurden twee miljoen nep-AI-verzoeken door de toeleveringsketen van goedkope inferentieproviders. Ze vonden minstens drie gecompromitteerde aanbieders, honderden gestolen AWS-sleutels en marktplaatsresellers die simpelweg de verzoeken van klanten meelazen.\n\nOpenRouter reageerde door betrokken aanbieders te verwijde",
+  "sources": [
+    "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-23",
+  "slug": "goedkope-ai-inferentieproviders-stelen-sleutels-en-lezen-mee",
+  "tts_slug": "goedkope-ai-inferentieproviders-stelen-sleutels-en-lezen-mee",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-23T05:33:26",
+  "size_kb": 15
+}

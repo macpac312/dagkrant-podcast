@@ -1,0 +1,16 @@
+{
+  "title": "Nieuwe dataset met LLM's brengt begrotingsbeleid in 142 landen in kaart",
+  "summary": "De Global Fiscal Actions-database classificeert belasting- en uitgavenmaatregelen per kwartaal sinds 1990.\n\nVergelijkbare data over wat regeringen fiscaal doen zijn schaars. Een VoxEU-column introduceert de Global Fiscal Actions-dataset: een kwartaaldatabase van belasting- en uitgavenmaatregelen in 142 landen sinds 1990.\n\nDe onderzoekers gebruikten grote taalmodellen om maatregelen te classificeren naar richting, instrument en motivatie.",
+  "sources": [
+    "https://cepr.org/voxeu/columns/inside-fiscal-policy-new-dataset-government-actions"
+  ],
+  "topic": "financieel",
+  "kind": "financieel",
+  "datum_iso": "2026-11-23",
+  "slug": "nieuwe-dataset-met-llms-brengt-begrotingsbeleid-in-142-lande",
+  "tts_slug": "nieuwe-dataset-met-llms-brengt-begrotingsbeleid-in-142-lande",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-23T05:33:26",
+  "size_kb": 12
+}
