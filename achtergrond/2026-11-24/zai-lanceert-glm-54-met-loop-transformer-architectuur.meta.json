@@ -1,0 +1,17 @@
+{
+  "title": "Z.ai lanceert GLM-5.4 met 'loop transformer'-architectuur",
+  "summary": "Het Chinese lab laat lagen meerdere keren per stap draaien, en claimt daarmee beter codeerwerk.\n\nHet Chinese AI-lab Z.ai heeft GLM-5.4 uitgebracht, zijn eerste model met een looped transformer-architectuur. Waar in een standaard transformer elke laag één keer per stap draait, laat een loop transformer dezelfde lagen meerdere keren lopen.\n\nZ.ai positioneert het model als stap naar 'gegeneraliseerd coderen'. Op Hacker News kreeg de aankondiging ruim 1000 punten.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "https://z.ai/blog/glm-5.4"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-24",
+  "slug": "zai-lanceert-glm-54-met-loop-transformer-architectuur",
+  "tts_slug": "zai-lanceert-glm-54-met-loop-transformer-architectuur",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-24T05:33:16",
+  "size_kb": 14
+}

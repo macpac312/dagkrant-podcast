@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI en Cisco introduceren Shirudo voor bescherming tijdens patchen",
+  "summary": "Een open-source runtime voor Linux beschermt draaiende systemen terwijl teams updates uitrollen.\n\nOpenAI en Cisco introduceren Shirudo, een open-source runtime voor Linux. Het helpt teams draaiende systemen te beschermen in de periode tussen het bekend worden van een kwetsbaarheid en het uitrollen van de patch.\n\nDe lancering komt nu AI-hacktools als ARTEX het vinden en misbruiken van lekken versnellen.",
+  "sources": [
+    "https://openai.com/index/introducing-shirudo"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-24",
+  "slug": "openai-en-cisco-introduceren-shirudo-voor-bescherming-tijden",
+  "tts_slug": "openai-en-cisco-introduceren-shirudo-voor-bescherming-tijden",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-24T05:33:32",
+  "size_kb": 11
+}

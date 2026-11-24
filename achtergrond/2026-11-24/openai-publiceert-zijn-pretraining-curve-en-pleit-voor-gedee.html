@@ -1,0 +1,58 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://the-decoder.com/wp-content/uploads/2026/10/openai_safety.png" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© the-decoder.com</div></div><ul class="bg-bullets">
+<li>OpenAI-hoofdwetenschapper Pachocki publiceert voor het eerst perplexity-scores van de GPT-reeks.</li>
+<li>Vaardigheden verschijnen bij opvallend precieze drempels, van vloeiend gesprek tot wiskunde.</li>
+<li>OpenAI wil dat concurrenten gedeelde ontwikkelingslimieten afspreken; Microsoft sluit aan.</li>
+<li>Anthropic en andere toplabs zijn nog nodig om de afspraak gewicht te geven.</li>
+</ul>
+<div class="ns-viz"><div class="ns-viz-title">📈 Log-perplexity en wat het ontsluit</div>
+<div class="ns-viz-chart"><canvas id="chart-bg-1-fb93f86d"></canvas></div>
+<script>(function(){
+  if(typeof Chart==='undefined')return;
+  new Chart(document.getElementById('chart-bg-1-fb93f86d'),{
+    type:'bar',
+    data:{
+      labels:['GPT-3.5','GPT-4','GPT-6 Astra','Intern model','MAI-2 Base (Microsoft)'],
+      datasets:[{
+        label:'Log-perplexity (lager = beter)',data:[0.99,0.91,0.76,0.73,0.819],
+        backgroundColor:['#a78bfa','#a78bfa','#7c3aed','#7c3aed','#94a3b8'],borderRadius:6
+      }]
+    },
+    options:{
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:'rgba(28,25,23,.9)',titleColor:'#fafaf9',bodyColor:'#d4d0cb',cornerRadius:8,padding:10}
+      },
+      scales:{
+        y:{min:0.6,grid:{color:'rgba(148,163,184,.15)'},ticks:{color:'#78716c'}},
+        x:{grid:{display:false},ticks:{color:'#78716c'}}
+      },
+      responsive:true,maintainAspectRatio:false
+    }
+  });
+})();</script></div>
+<h5>Een maat voor vooruitgang</h5>
+<p>Jakub Pachocki, hoofdwetenschapper van OpenAI, heeft voor het eerst interne perplexity-scores van de hele GPT-reeks gepubliceerd, tot en met een nog niet uitgebracht model voorbij GPT-6. Perplexity meet hoe goed een voorgetraind basismodel het volgende token in een tekst voorspelt: lager is beter, en een score van 2 betekent grofweg dat het model even onzeker is als bij een keuze tussen twee even waarschijnlijke opties. De cijfers staan op een logaritmische schaal, log-perplexity, en zijn volgens een nieuwsbrief gemeten op een interne, achtergehouden codeerdataset, met 'notable caveats'. Dat is de eerste kanttekening: vergelijking met andere labs kan alleen als zij dezelfde set gebruiken. OpenAI publiceerde dit soort cijfers vroeger vaak, tot het stopte met open publiceren; dat het nu terugkeert, noemt Pachocki een afweging, omdat rivalen zo beter zien waar OpenAI staat.</p>
+<div class="ns-viz"><div class="ns-viz-title">⏱ Drempels waar vaardigheden opduiken</div>
+<div class="ns-viz-timeline">
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">~0,99</div><div>GPT-3.5: vloeiend gesprek, basis voor ChatGPT</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">~0,91</div><div>GPT-4: productief stap-voor-stap redeneren</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">&lt;0,80</div><div>Transformatieve vaardigheden in cybersecurity en wiskunde</div></div>
+  <div class="ns-viz-timeline-item"><div class="ns-viz-timeline-date">~0,76</div><div>GPT-6 Astra: honderden open wiskundeproblemen vallen snel</div></div>
+</div></div>
+<h5>Drempels en voorspelbaarheid</h5>
+<p>Het opvallendste is dat vaardigheden volgens Pachocki bij verrassend precieze scores verschijnen, terwijl dat vooraf niet duidelijk was. Rond 0,99 werd vloeiend gesprek mogelijk, rond 0,91 productief redeneren, onder 0,8 ontstonden transformatieve mogelijkheden in cybersecurity en wiskunde. OpenAI voert al meer dan een jaar open wiskundeproblemen aan zijn modellen; vanaf een model rond 0,76 kwamen er doorbraken. Volgens de nieuwsbrief Latent Space begon toen een groot aantal moeilijke problemen snel te vallen. Pachocki extrapoleert dat een volgende sprong rond 0,68 tot 0,70 zou kunnen liggen. Dat maakt de curve ook een voorspellend instrument: wie de score kent, kan inschatten wat een model gaat kunnen. Een extrapolatie blijft overigens een inschatting en geen meting.</p>
+<blockquote>Veel vaardigheden van moderne modellen blijken verrassend precies samen te vallen met specifieke perplexity-scores. (Jakub Pachocki, OpenAI)</blockquote>
+<h5>Gedeelde limieten</h5>
+<p>Achter de publicatie zit een beleidsvoorstel. OpenAI waarschuwt dat komende systemen veiligheidstests kunnen voorbijstreven en roept concurrenten op om gedeelde limieten af te spreken: labs zouden een eerste grens aan de ontwikkeling stellen en vastleggen wat nodig is om die te passeren, bijvoorbeeld een opvolger van chain-of-thought-monitoring. Pachocki hoopt op een gemeenschappelijke wetenschappelijke basis waarmee labs hun tempo op kritieke momenten kunnen afstemmen. Microsoft's Mustafa Suleyman ondertekende mee en liet MAI-2 Base op de OpenAI-evaluatieset draaien, met een score van 0,819. Volgens Latent Space zijn nog minstens enkele toplabs nodig, vooral Anthropic, voordat dit als zelfregulering gaat tellen. Dat OpenAI zijn eigen voorsprong deelt, is een gok: transparantie kan vertrouwen wekken, maar geeft ook rivalen informatie.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Perplexity</summary>
+    <div class="ns-viz-concept-body">Maat voor hoe verrast een model is door het volgende token in een tekst. Lager is beter; 2 komt overeen met kiezen tussen twee even waarschijnlijke opties.</div></details>
+  <details class="ns-viz-concept"><summary>Log-perplexity</summary>
+    <div class="ns-viz-concept-body">Dezelfde score op logaritmische schaal, zoals OpenAI die rapporteert. Ook hier geldt: lager is beter.</div></details>
+  <details class="ns-viz-concept"><summary>Chain-of-thought-monitoring</summary>
+    <div class="ns-viz-concept-body">Het meelezen van de tussenstappen waarmee een model redeneert. Pachocki noemt een opvolger daarvan als voorwaarde om een eerste limiet te passeren.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>De publicatie is dubbelzinnig, en dat is wat haar interessant maakt: ze toont OpenAI's voorsprong en vraagt tegelijk om remmen. Haar waarde hangt af van twee dingen die nog niet vaststaan: of de score op een interne set een eerlijke gemeenschappelijke maatstaf kan worden, en of genoeg concurrenten volgen. Zonder Anthropic en anderen blijft het een voorstel van twee partijen.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=WsmJMKi0gKs" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/WsmJMKi0gKs/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">OpenAI publiceert zijn pretraining-curve en pleit voor gedeelde limieten 2026</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/" target="_blank" style="color:var(--accent)">the-decoder.com ↗</a> &bull; <a href="https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/" target="_blank" style="color:var(--accent)">latent.space ↗</a></div>

@@ -1,0 +1,102 @@
+<div style="margin:-1.5rem -2rem 1.5rem;overflow:hidden;max-height:220px;position:relative"><img src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/11/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-3McPHi.png?fit=258%2C258&ssl=1" alt="" loading="lazy" style="width:100%;object-fit:cover;display:block" onerror="this.parentElement.style.display='none'"><div style="position:absolute;bottom:.4rem;right:.6rem;font-size:.55rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 8px;border-radius:3px">© jack-clark.net</div></div><ul class="bg-bullets">
+<li>Chinese onderzoekers bouwden AscendGYM, een benchmark om kernels voor Huawei's Ascend-chips met AI te verbeteren.</li>
+<li>Exportcontroles dwingen Chinese organisaties naar Huawei in plaats van naar de beste westerse chips.</li>
+<li>In tests scoort Opus 5 het best, gevolgd door GPT-5.6 en GLM-5.3.</li>
+<li>Jack Clark ziet het als bouwsteen voor Chinese recursieve zelfverbetering (RSI).</li>
+</ul>
+<div class="ns-viz ns-viz-mech" data-autoplay="0">
+<div class="ns-viz-title">🔬 Hoe AscendGYM een kernel test</div>
+<div class="ns-viz-mech-subtitle">Van een werkende kernel naar een snellere, met behoud van juistheid</div>
+<div class="ns-viz-mech-pills">
+  <button class="ns-viz-mech-pill active" data-fase="0"><span class="num">1</span><span class="label">Startkernel</span></button>
+  <button class="ns-viz-mech-pill" data-fase="1"><span class="num">2</span><span class="label">Agent</span></button>
+  <button class="ns-viz-mech-pill" data-fase="2"><span class="num">3</span><span class="label">AscendForge</span></button>
+  <button class="ns-viz-mech-pill" data-fase="3"><span class="num">4</span><span class="label">Score</span></button>
+</div>
+<div class="ns-viz-mech-stages">
+  <div class="ns-viz-mech-fase active" data-fase="0">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="95" y="50" width="130" height="100" rx="9" fill="#7c3aed" fill-opacity=".12" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="82" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed">Kernel</text>
+      <rect x="115" y="95" width="90" height="8" rx="3" fill="#a78bfa"/>
+      <rect x="115" y="110" width="70" height="8" rx="3" fill="#a78bfa"/>
+      <rect x="115" y="125" width="80" height="8" rx="3" fill="#a78bfa"/>
+      <text x="160" y="180" text-anchor="middle" font-size="11" fill="#44403c">correct, maar nog niet snel</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Startkernel</h6><p class="korte">Er is een correcte implementatie voor een Ascend-chip.</p><p class="uitleg">Kernels zijn de kleine programma's die op de chip de rekenwerk doen. De vraag van AscendGYM: kan een agent een correcte kernel verder versnellen binnen een acceptabel budget?</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="1">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <circle cx="90" cy="100" r="40" fill="#7c3aed" fill-opacity=".15" stroke="#7c3aed" stroke-width="2"/>
+      <text x="90" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AI-agent</text>
+      <text x="90" y="112" text-anchor="middle" font-size="10" fill="#44403c">herschrijft code</text>
+      <line x1="135" y1="100" x2="185" y2="100" stroke="#7c3aed" stroke-width="3"/>
+      <polygon points="185,92 200,100 185,108" fill="#7c3aed"/>
+      <rect x="205" y="70" width="100" height="60" rx="9" fill="#a78bfa" fill-opacity=".15" stroke="#a78bfa" stroke-width="2"/>
+      <text x="255" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Nieuwe kernel</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Agent</h6><p class="korte">Een model past de kernel aan, via een coderingstool.</p><p class="uitleg">De onderzoekers testten modellen in Claude Code, Codex en OpenCode. Claude Code geeft de beste absolute scores; GLM doet het daar goed, GPT juist in Codex.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="2">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="30" y="60" width="260" height="80" rx="9" fill="#7c3aed" fill-opacity=".1" stroke="#7c3aed" stroke-width="2"/>
+      <text x="160" y="52" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">AscendForge</text>
+      <rect x="45" y="80" width="55" height="40" rx="6" fill="#a78bfa" fill-opacity=".3"/>
+      <text x="72" y="104" text-anchor="middle" font-size="9" fill="#44403c">compileren</text>
+      <rect x="107" y="80" width="55" height="40" rx="6" fill="#a78bfa" fill-opacity=".3"/>
+      <text x="134" y="104" text-anchor="middle" font-size="9" fill="#44403c">juistheid</text>
+      <rect x="169" y="80" width="55" height="40" rx="6" fill="#a78bfa" fill-opacity=".3"/>
+      <text x="196" y="104" text-anchor="middle" font-size="9" fill="#44403c">meten</text>
+      <rect x="231" y="80" width="50" height="40" rx="6" fill="#a78bfa" fill-opacity=".3"/>
+      <text x="256" y="104" text-anchor="middle" font-size="9" fill="#44403c">feedback</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>AscendForge</h6><p class="korte">Eén omgeving voor compileren, controleren, meten en terugkoppelen.</p><p class="uitleg">De evaluatie-omgeving biedt uniforme interfaces voor compilatie, juistheidscontrole, prestatiemeting en feedback. De agent krijgt zo uitslag terug waarop hij verder kan werken.</p></div>
+  </div>
+  <div class="ns-viz-mech-fase" data-fase="3">
+    <div class="ns-viz-mech-illu"><svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="200" fill="#f5f5f4"/>
+      <rect x="60" y="60" width="60" height="100" rx="4" fill="#a78bfa" fill-opacity=".5"/>
+      <rect x="130" y="85" width="60" height="75" rx="4" fill="#a78bfa" fill-opacity=".4"/>
+      <rect x="200" y="105" width="60" height="55" rx="4" fill="#a78bfa" fill-opacity=".3"/>
+      <text x="90" y="52" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">Opus 5</text>
+      <text x="160" y="77" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">GPT-5.6</text>
+      <text x="230" y="97" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">GLM-5.3</text>
+      <text x="160" y="185" text-anchor="middle" font-size="11" fill="#44403c">volgorde van de beste modellen</text>
+    </svg></div>
+    <div class="ns-viz-mech-info"><h6>Score</h6><p class="korte">Drie dimensies: toepasbaarheid, specialisatie en efficiëntie.</p><p class="uitleg">AscendGYM kijkt naar prestatie over meerdere gevallen, de beste haalbare snelheid voor specifieke vormen, en wat de optimalisatie kost. Opus 5 scoort het best maar gebruikt meer tokens; GPT-5.6 is zuiniger.</p></div>
+  </div>
+</div>
+<div class="ns-viz-mech-controls">
+  <button class="ns-viz-mech-prev" title="Vorige fase">◀</button>
+  <button class="ns-viz-mech-play" title="Auto-play"><span class="play-icon">▶</span></button>
+  <button class="ns-viz-mech-next" title="Volgende fase">▶</button>
+  <span class="ns-viz-mech-progress">1/4</span>
+</div>
+</div>
+<h5>Software voor een chip die moet volstaan</h5>
+<p>Onderzoekers van het Shenzhen Loop Area Institute hebben AscendGYM gebouwd en vrijgegeven, een benchmark voor het optimaliseren van kernels op Ascend-chips van Huawei. Het doel is tweeledig: de effectiviteit van door AI ontworpen kernels evalueren, en nieuwe kernels ontwerpen. Het belang komt voort uit de exportcontroles die Chinese organisaties beletten de beste westerse halfgeleiders te kopen, waardoor ze op Huawei zijn aangewezen. Als de hardware niet de snelste is, wordt software die er meer uit haalt des te belangrijker. Jack Clark, die erover schrijft in zijn nieuwsbrief Import AI, noemt het een ingrediënt voor een Chinese variant van recursieve zelfverbetering: AI die de software verbetert waarop zijn eigen training en inferentie draaien.</p>
+<div class="ns-viz"><div class="ns-viz-title">⚖ Hoe de modellen presteren</div>
+<div class="ns-viz-compare">
+  <div class="ns-viz-compare-col"><h6>Opus 5</h6>
+    <ul><li>Beste model in de test</li><li>Beste absolute scores in Claude Code</li><li>Verbruikt meer tokens</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>GPT-5.6</h6>
+    <ul><li>Tweede in de ranglijst</li><li>Doet het goed in Codex</li><li>Efficiënter met tokens</li></ul></div>
+  <div class="ns-viz-compare-col"><h6>GLM-5.3</h6>
+    <ul><li>Derde in de ranglijst</li><li>Scoort goed in Claude Code</li><li>Chinees model</li></ul></div>
+</div></div>
+<h5>Wat het betekent voor exportcontroles</h5>
+<p>Clark wijst op een tweede gevolg: de software kan de prestaties van beschikbare chips verhogen en daarmee de werking van exportcontroles beïnvloeden. Het citaat is in de bron afgebroken, dus de precieze redenering is hier niet te reconstrueren. De logica ligt wel voor de hand: als een agent met weinig menselijke inbreng meer rekenkracht uit een Ascend-chip haalt, verkleint dat het nadeel van het gebrek aan topchips. Ook de keuze van modellen is veelzeggend: de beste score is voor een Amerikaans model, terwijl het Chinese GLM niet ver achterblijft. Dat suggereert dat Chinese labs ook zonder topmodellen aan zichzelf kunnen bouwen, maar dat westerse modellen nog steeds de maatstaf zijn.</p>
+<div class="ns-viz"><div class="ns-viz-title">💡 Verklaard</div>
+<div class="ns-viz-concepts">
+  <details class="ns-viz-concept"><summary>Kernel</summary>
+    <div class="ns-viz-concept-body">Een klein, sterk geoptimaliseerd rekenprogramma dat direct op de chip draait en bepaalt hoe snel een bewerking verloopt.</div></details>
+  <details class="ns-viz-concept"><summary>NPU</summary>
+    <div class="ns-viz-concept-body">Neural processing unit: een chip voor AI-berekeningen. Huawei's Ascend is er een.</div></details>
+  <details class="ns-viz-concept"><summary>Recursieve zelfverbetering (RSI)</summary>
+    <div class="ns-viz-concept-body">AI die de software verbetert waarmee AI wordt getraind en uitgevoerd, zodat de verbetering zichzelf kan versnellen.</div></details>
+</div></div>
+<h5>Conclusie</h5>
+<p>AscendGYM is geen doorbraak maar een meetlat, en die is voor China precies wat nodig is: een gestandaardiseerde manier om te zien welke agenten de eigen chips beter benutten. Of dat de achterstand op westerse hardware dicht, blijft onbewezen. Zeker is dat exportcontroles het probleem verleggen van hardware naar software, en dat is een terrein waar de grenzen veel minder scherp te trekken zijn.</p><div style="margin:1.4rem 0 .8rem;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--border)"><a href="https://www.youtube.com/watch?v=CHvLLmdh5OQ" target="_blank" style="display:flex;align-items:center;gap:.8rem;padding:.7rem;text-decoration:none;color:inherit"><img src="https://img.youtube.com/vi/CHvLLmdh5OQ/mqdefault.jpg" style="width:120px;height:68px;object-fit:cover;border-radius:4px;flex-shrink:0" onerror="this.parentElement.parentElement.style.display='none'"><div><div style="font-size:.65rem;color:var(--t3);margin-bottom:.25rem">&#9654; YouTube</div><div style="font-size:.85rem;font-weight:600;line-height:1.3">China JUST Replaced NVIDIA With a Chip NOBODY Was Watching (It's Not Huawei)</div></div></a></div><div class="bg-footer" style="margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border)"><strong>Bronnen:</strong> <a href="https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/" target="_blank" style="color:var(--accent)">jack-clark.net ↗</a></div>

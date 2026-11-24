@@ -1,0 +1,20 @@
+{
+  "title": "Anthropic lanceert Claude Ship: AI-agenten die code reviewen, repareren en goedkeuren",
+  "summary": "Teambeleid en GitHub-regels bepalen wanneer nog een mens moet tekenen. Een onderdeel kan bestaande automatische reviews stilleggen.\n\nAnthropic heeft Claude Ship gelanceerd, een set tools waarmee AI-agenten pull requests op GitHub beoordelen, fouten repareren en wijzigingen goedkeuren. Ontwikkelaars sturen de agent bij met een opmerking aan @claude of stoppen hem met '@claude stop'.\n\nTeambeleid en de branch-regels van GitHub bepalen wanneer een mens nog moet tekenen. Het onderdeel PR Steward keur",
+  "sources": [
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+    "https://www.fonearena.com/blog/497487/anthropic-claude-ship.html",
+    "https://xenospectrum.com/en/claude-ship-approvals-review-beta/",
+    "https://www.absolutegeeks.com/tech-news/anthropics-claude-ship-lets-ai-approve-your-code-without-a-human/",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQU3ZOV3pXSG1DYUhvVUNGSV91ejJOS090MGRHZWpzaks5UktCTTA3MzEzSjRCR3h1c2VDbW9tamR3dFc1MXZyNHpuQXBRcVVPOUQ2d3lSd2dHMWN3Nkdtd1JIQWJKSDY5TGhjU09HbGVwZmtXdHJVNlo0MEJsdVJFLVBzMHhQdGdRelM1QWVjWkx4R3RJMl82MzdGN194a1V5d3RBLVdxRDlCWjlEUDRZREF2dC05Qm5fTnk4eGFscVNPV1ZWNlh2SUZjVVZfY011amfSAdcBQVVfeXFMT21NS2I4UjdLS3ZiWlJTdHJpZF9uMVU2bWdoalpCQUUwTHVIWVF2NlZlcDUtSS1BLWE1TW43ejU4eFo4LWZvdXR2TzZMNkpXUzRNZlU1a2M4TG85SktqWUI3Z2k4OXRmQm1qOTJ5Zm8xQmJPbkhVNXBpWXJ3aDdrZzRTRkZTenhJLVM1NHdSS05fdWVvOXlSdTFsQkM5WkV6dGxaUHRRZnhOVGRKamRtNnM0SzBRRjJVZGw1ay1Lb2hjUzNzREdYRFhGSnprNzRseE5RWmdZYTQ?oc=5"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-24",
+  "slug": "anthropic-lanceert-claude-ship-ai-agenten-die-code-reviewen-",
+  "tts_slug": "anthropic-lanceert-claude-ship-ai-agenten-die-code-reviewen-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-24T05:33:41",
+  "size_kb": 12
+}

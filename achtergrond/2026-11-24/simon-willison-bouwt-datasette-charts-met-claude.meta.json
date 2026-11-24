@@ -1,0 +1,16 @@
+{
+  "title": "Simon Willison bouwt datasette-charts met Claude",
+  "summary": "Een idee van een jaar werd in een weekend een plugin.\n\nOntwikkelaar Simon Willison heeft datasette-charts uitgebracht, een plugin om grafieken te maken in Datasette. Hij liet Claude Fable 5.2 een eerste prototype bouwen; dat ging zo goed dat het een volwaardige plugin werd.\n\nDe plugin is te proberen in Datasette Lite, in de browser.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/23/datasette-charts/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-24",
+  "slug": "simon-willison-bouwt-datasette-charts-met-claude",
+  "tts_slug": "simon-willison-bouwt-datasette-charts-met-claude",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-24T05:33:39",
+  "size_kb": 13
+}
