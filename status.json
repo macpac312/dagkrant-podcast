@@ -10,23 +10,8 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-11-24T05:26:35+00:00",
+  "updated_at": "2026-11-24T05:36:41+00:00",
   "history": [
-    {
-      "date": "2026-11-04",
-      "route": "claude",
-      "duration_s": 2277,
-      "finished_at": "2026-11-04T05:45:57+00:00",
-      "durations_s": {
-        "nieuws": 158,
-        "artikelen": 532,
-        "krant": 74,
-        "achtergronden_1": 216,
-        "podcast": 354,
-        "publiceren": 35,
-        "achtergronden_2": 908
-      }
-    },
     {
       "date": "2026-11-05",
       "route": "claude",
@@ -311,6 +296,21 @@
         "publiceren": 32,
         "achtergronden_2": 470
       }
+    },
+    {
+      "date": "2026-11-24",
+      "route": "claude",
+      "duration_s": 1706,
+      "finished_at": "2026-11-24T05:36:41+00:00",
+      "durations_s": {
+        "nieuws": 121,
+        "artikelen": 389,
+        "krant": 51,
+        "achtergronden_1": 171,
+        "podcast": 342,
+        "publiceren": 26,
+        "achtergronden_2": 606
+      }
     }
   ],
   "default_duration_s": 2700,
@@ -346,14 +346,30 @@
     {
       "step": "achtergronden_2",
       "at": "2026-11-24T05:26:35+00:00"
+    },
+    {
+      "step": "klaar",
+      "at": "2026-11-24T05:36:41+00:00"
     }
   ],
-  "status": "running",
+  "status": "done",
   "date": "2026-11-24",
-  "step": "achtergronden (ronde 2)",
-  "step_index": 6,
-  "progress": 86,
+  "step": "klaar",
+  "step_index": 7,
+  "progress": 100,
   "started_at": "2026-11-24T05:08:15+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-11-24T05:36:41+00:00",
+  "duration_s": 1706,
+  "error": null,
+  "durations_s": {
+    "nieuws": 121,
+    "artikelen": 389,
+    "krant": 51,
+    "achtergronden_1": 171,
+    "podcast": 342,
+    "publiceren": 26,
+    "achtergronden_2": 606
+  },
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-11-24.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
