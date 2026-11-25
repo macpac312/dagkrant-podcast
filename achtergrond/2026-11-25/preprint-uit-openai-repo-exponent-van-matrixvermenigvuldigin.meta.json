@@ -1,0 +1,16 @@
+{
+  "title": "Preprint uit OpenAI-repo: exponent van matrixvermenigvuldiging is 9/4",
+  "summary": "Een paper stelt dat matrixvermenigvuldiging in Θ(n^2,25) kan. Op Hacker News volgden 331 punten en 150 reacties.\n\nIn de math-repository van OpenAI op GitHub verscheen een preprint met de claim dat de exponent van matrixvermenigvuldiging precies 9/4 is: Θ(n^2,25). Op Hacker News kreeg het stuk 331 punten en 150 reacties.\n\nDe beste bekende bovengrens lag tot nu toe rond 2,37; de naïeve methode is n³.",
+  "sources": [
+    "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"
+  ],
+  "topic": "tech",
+  "kind": "tech",
+  "datum_iso": "2026-11-25",
+  "slug": "preprint-uit-openai-repo-exponent-van-matrixvermenigvuldigin",
+  "tts_slug": "preprint-uit-openai-repo-exponent-van-matrixvermenigvuldigin",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-25T05:36:40",
+  "size_kb": 6
+}

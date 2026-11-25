@@ -1,0 +1,16 @@
+{
+  "title": "Gemini 4 Neon: Google DeepMind terug in de kopgroep",
+  "summary": "Het nieuwe model verslaat volgens Latent Space concurrenten Astra en Fable op LiveBench en maakt een TypeScript-naar-Rust-benchmark 48,6% sneller.\n\nGoogle DeepMind heeft Gemini 4 Neon uitgebracht. Volgens de AINews-nieuwsbrief van Latent Space verslaat het model OpenAI's Astra en Anthropics Fable op LiveBench, en verkort het de looptijd van een TypeScript-naar-Rust-benchmark met 48,6%.\n\nLatent Space spreekt van een 'volledige terugkeer' van GDM als frontierlab.",
+  "sources": [
+    "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/"
+  ],
+  "topic": "tech",
+  "kind": "tech",
+  "datum_iso": "2026-11-25",
+  "slug": "gemini-4-neon-google-deepmind-terug-in-de-kopgroep",
+  "tts_slug": "gemini-4-neon-google-deepmind-terug-in-de-kopgroep",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-25T05:36:39",
+  "size_kb": 6
+}

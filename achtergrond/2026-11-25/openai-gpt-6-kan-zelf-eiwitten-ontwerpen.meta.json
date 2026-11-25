@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI: GPT-6 kan zelf eiwitten ontwerpen",
+  "summary": "Zonder gespecialiseerde tools ontwierpen GPT-6-modellen eiwitstructuren en -sequenties. Labtests vonden binding bij vijf doelwitten.\n\nOpenAI meldt dat GPT-6-modellen eiwitstructuren en -sequenties kunnen ontwerpen met alleen redeneren en code, zonder speciale biologische modellen. In labtests werd bewijs gevonden van binding aan vijf doelwitten.",
+  "sources": [
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+  ],
+  "topic": "tech",
+  "kind": "tech",
+  "datum_iso": "2026-11-25",
+  "slug": "openai-gpt-6-kan-zelf-eiwitten-ontwerpen",
+  "tts_slug": "openai-gpt-6-kan-zelf-eiwitten-ontwerpen",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-25T05:36:40",
+  "size_kb": 11
+}
