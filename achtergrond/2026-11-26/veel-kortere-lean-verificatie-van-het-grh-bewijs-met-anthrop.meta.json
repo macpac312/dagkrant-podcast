@@ -1,0 +1,17 @@
+{
+  "title": "Veel kortere Lean-verificatie van het GRH-bewijs, met Anthropic",
+  "summary": "Een nieuwe formele verificatie van de gegeneraliseerde Riemann-hypothese is fors korter. Scott Aaronson spreekt van 'een nieuw continent van wiskundige waarheid'.\n\nOp GitHub staat een veel kortere versie van de formele Lean-verificatie van het bewijs van de gegeneraliseerde Riemann-hypothese (GRH), gemaakt met Anthropic. Het project trok op Hacker News honderden reacties.\n\nComplexiteitstheoreticus Scott Aaronson schreef deze week dat 'een heel nieuw continent van wiskundige waarheid' opengaat, e",
+  "sources": [
+    "https://github.com/lsernau/grh-lean",
+    "https://simonwillison.net/2026/Nov/25/scott-aaronson/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-26",
+  "slug": "veel-kortere-lean-verificatie-van-het-grh-bewijs-met-anthrop",
+  "tts_slug": "veel-kortere-lean-verificatie-van-het-grh-bewijs-met-anthrop",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-26T05:36:46",
+  "size_kb": 14
+}

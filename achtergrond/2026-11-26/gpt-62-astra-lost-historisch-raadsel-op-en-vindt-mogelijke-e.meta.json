@@ -1,0 +1,17 @@
+{
+  "title": "GPT-6.2 Astra lost historisch raadsel op en vindt mogelijke exoplaneten",
+  "summary": "Een historicus liet Astra de maker van een anoniem schetsboek uit 1808 vinden. Amateurastronomen zochten met Astra in data van Kepler en TESS.\n\nHistoricus Mark Humphries liet GPT-6.2 Astra met minimale instructies de maker identificeren van een anoniem schetsboek uit 1808 in de collectie van Yale, beschrijft Simon Willison. Ook publiceerde OpenAI hoe twee amateurastronomen met Codex en Astra potentiële exoplaneten vonden in publieke data van NASA's Kepler- en TESS-telescopen.",
+  "sources": [
+    "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+    "https://openai.com/index/searching-for-distant-planets-with-astra"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-26",
+  "slug": "gpt-62-astra-lost-historisch-raadsel-op-en-vindt-mogelijke-e",
+  "tts_slug": "gpt-62-astra-lost-historisch-raadsel-op-en-vindt-mogelijke-e",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-26T05:36:46",
+  "size_kb": 13
+}

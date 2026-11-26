@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI test 'Private Inference': bedrijfsdata die het zelf niet kan inzien",
+  "summary": "Bedrijven moeten vragen kunnen stellen aan de krachtigste modellen zonder dat OpenAI bij de data kan.\n\nOpenAI test een functie genaamd 'Private Inference' waarmee bedrijven vragen kunnen stellen aan de krachtigste modellen zonder dat OpenAI toegang heeft tot de data. Daarmee wil het bedrijf vertrouwen winnen voor gevoelig werk.",
+  "sources": [
+    "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-26",
+  "slug": "openai-test-private-inference-bedrijfsdata-die-het-zelf-niet",
+  "tts_slug": "openai-test-private-inference-bedrijfsdata-die-het-zelf-niet",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-26T05:36:46",
+  "size_kb": 13
+}

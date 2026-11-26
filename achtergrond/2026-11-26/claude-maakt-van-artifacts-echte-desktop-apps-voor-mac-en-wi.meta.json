@@ -1,0 +1,20 @@
+{
+  "title": "Claude maakt van artifacts echte desktop-apps voor Mac en Windows",
+  "summary": "Met 'Install as app' (bèta) zet je een in Claude gebouwde tool als app op je computer. IT-beheerders bepalen welke rechten zo'n app krijgt.\n\nAnthropic laat Claude-gebruikers artifacts, de tools en pagina's die je in Claude bouwt, installeren als desktop-app op Mac en Windows. De functie heet 'Install as app' en is in bèta. Volgens ZDNET en TechRepublic kunnen apps beperkte rechten vragen en kunnen IT-afdelingen bepalen wat is toegestaan.",
+  "sources": [
+    "https://www.absolutegeeks.com/tech-news/claude-can-now-turn-your-artifacts-into-real-desktop-apps/",
+    "https://www.techrepublic.com/article/news-claude-artifacts-desktop-apps/",
+    "https://www.zdnet.com/innovation/claude-artifacts-desktop-apps-mac-windows/",
+    "https://www.inc.com/aaron-mok/anthropic-claude-turn-workflows-into-desktop-apps/91442773",
+    "https://www.eweek.com/news/claude-artifacts-install-as-app-mac-windows/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-26",
+  "slug": "claude-maakt-van-artifacts-echte-desktop-apps-voor-mac-en-wi",
+  "tts_slug": "claude-maakt-van-artifacts-echte-desktop-apps-voor-mac-en-wi",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-26T05:36:46",
+  "size_kb": 15
+}
