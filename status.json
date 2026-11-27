@@ -10,23 +10,8 @@
   ],
   "route": "claude",
   "route_label": "Claude (geplande taak)",
-  "updated_at": "2026-11-27T05:28:49+00:00",
+  "updated_at": "2026-11-27T05:40:01+00:00",
   "history": [
-    {
-      "date": "2026-11-07",
-      "route": "claude",
-      "duration_s": 2064,
-      "finished_at": "2026-11-07T05:42:35+00:00",
-      "durations_s": {
-        "nieuws": 124,
-        "artikelen": 410,
-        "krant": 84,
-        "achtergronden_1": 192,
-        "podcast": 297,
-        "publiceren": 33,
-        "achtergronden_2": 924
-      }
-    },
     {
       "date": "2026-11-08",
       "route": "claude",
@@ -311,6 +296,21 @@
         "publiceren": 32,
         "achtergronden_2": 658
       }
+    },
+    {
+      "date": "2026-11-27",
+      "route": "claude",
+      "duration_s": 1927,
+      "finished_at": "2026-11-27T05:40:01+00:00",
+      "durations_s": {
+        "nieuws": 586,
+        "artikelen": 11,
+        "krant": 56,
+        "achtergronden_1": 155,
+        "podcast": 412,
+        "publiceren": 35,
+        "achtergronden_2": 672
+      }
     }
   ],
   "default_duration_s": 2700,
@@ -346,14 +346,30 @@
     {
       "step": "achtergronden_2",
       "at": "2026-11-27T05:28:49+00:00"
+    },
+    {
+      "step": "klaar",
+      "at": "2026-11-27T05:40:01+00:00"
     }
   ],
-  "status": "running",
+  "status": "done",
   "date": "2026-11-27",
-  "step": "achtergronden (ronde 2)",
-  "step_index": 6,
-  "progress": 86,
+  "step": "klaar",
+  "step_index": 7,
+  "progress": 100,
   "started_at": "2026-11-27T05:07:54+00:00",
-  "finished_at": null,
-  "error": null
+  "finished_at": "2026-11-27T05:40:01+00:00",
+  "duration_s": 1927,
+  "error": null,
+  "durations_s": {
+    "nieuws": 586,
+    "artikelen": 11,
+    "krant": 56,
+    "achtergronden_1": 155,
+    "podcast": 412,
+    "publiceren": 35,
+    "achtergronden_2": 672
+  },
+  "krant_url": "https://macpac312.github.io/dagkrant-podcast/2026-11-27.html",
+  "laatste_url": "https://macpac312.github.io/dagkrant-podcast/laatste.html"
 }
