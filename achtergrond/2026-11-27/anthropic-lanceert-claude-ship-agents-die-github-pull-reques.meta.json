@@ -1,0 +1,18 @@
+{
+  "title": "Anthropic lanceert Claude Ship: agents die GitHub-pull-requests reviewen, repareren en goedkeuren",
+  "summary": "Binnen teambeleid kunnen agents zelf PR's beoordelen en fixen. TechRepublic zet werking, kosten en toegang op een rij.\n\nAnthropic heeft Claude Ship gelanceerd, een dienst waarin agents GitHub-pull-requests beoordelen, repareren en goedkeuren binnen het beleid dat een team vastlegt. TechRepublic beschrijft hoe de agents werken, wat ze kosten en wie ze kan gebruiken.\n\nTeams bepalen zelf welke wijzigingen de agent mag goedkeuren en wanneer een mens moet meekijken.",
+  "sources": [
+    "https://www.techrepublic.com/article/news-anthropic-claude-ship-github-pull-requests/",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYjk3R1JuTVozQlFhWGFwd1dva3hCNkJ4WEVXUXJDRFNXVEl3TmxrbkJqVXZLMWJmWXVZcW13Y0c5a2VBWFR6bDIwYXU2Ry1GY3BTU2pCZ1hSTWRrZTdDZm51MGVzLWRfdHBRNnJQQWZYajVCcExTT0pYckRuTC1zSE1fQ3ZMSmExQkFrZVlVM0pKa0xRUEx1U3RhNzh6dXVJQ0E?oc=5",
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVG1KWnZ3U0RzWUpsWUplSWlGLXBqaDNmOURyZjE0NW1qblJCa2cwSDh3cDNnY1hGZ3MxNGVreFVCWjlsTldla2NFdmhzczU0bzJHdndGUXVwV3VSTzNyVFVzbk9XQWljdzhWMkZZQmpTQzc1eFphb0xOcHpvQXZzbzFPWE9kQ1otOHfSAYoBQVVfeXFMTVRtSlp2d1NEc1lKbFlKZUlpRi1wamgzZjlEcmYxNDVtam5SQmtnMEg4d3AzZ2NYRmdzMTRla3hVQlo5bE5XZWtjRXZoc3M1NG8yR3Z3RlF1cFd1Uk8zclRVc25PV0FpY3c4VjJGWUJqU0M3NXhaYW9MTnB6b0F2c28xT1hPZENaLTh3?oc=5"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-27",
+  "slug": "anthropic-lanceert-claude-ship-agents-die-github-pull-reques",
+  "tts_slug": "anthropic-lanceert-claude-ship-agents-die-github-pull-reques",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-27T05:37:07",
+  "size_kb": 15
+}
