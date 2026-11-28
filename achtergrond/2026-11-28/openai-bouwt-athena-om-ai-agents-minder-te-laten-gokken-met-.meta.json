@@ -1,0 +1,16 @@
+{
+  "title": "OpenAI bouwt 'Athena' om AI-agents minder te laten gokken met bedrijfsdata",
+  "summary": "Een semantische laag met standaarddefinities voor bedrijfsmetrics moet ChatGPT Work betrouwbaarder maken.\n\nOpenAI bouwt onder de codenaam Athena een semantische laag die AI-agents gestandaardiseerde definities geeft voor bedrijfsmetrics. De data-agent in ChatGPT Work is nog niet nauwkeurig genoeg. Daarmee kan OpenAI direct concurreren met Snowflake en Databricks.",
+  "sources": [
+    "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/"
+  ],
+  "topic": "aitech",
+  "kind": "aitech",
+  "datum_iso": "2026-11-28",
+  "slug": "openai-bouwt-athena-om-ai-agents-minder-te-laten-gokken-met-",
+  "tts_slug": "openai-bouwt-athena-om-ai-agents-minder-te-laten-gokken-met-",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-28T05:39:46",
+  "size_kb": 13
+}

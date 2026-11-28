@@ -1,0 +1,16 @@
+{
+  "title": "Together AI brengt Hurdle uit: open-source test voor Claude Code- en Codex-agents",
+  "summary": "Het tool scoort coding-agents op echte API-taken en blokkeert riskante acties, al hebben de veiligheidsfuncties grenzen.\n\nTogether AI heeft Hurdle uitgebracht, een open-source tool om coding-agents als Claude Code en Codex te testen op echte API-taken. Het scoort de agents en blokkeert riskante acties, maar eWeek wijst op grenzen in de veiligheidscontroles.",
+  "sources": [
+    "https://www.eweek.com/news/together-ai-hurdle-claude-code-codex-agent-evaluation/"
+  ],
+  "topic": "claude-desktop",
+  "kind": "claude-desktop",
+  "datum_iso": "2026-11-28",
+  "slug": "together-ai-brengt-hurdle-uit-open-source-test-voor-claude-c",
+  "tts_slug": "together-ai-brengt-hurdle-uit-open-source-test-voor-claude-c",
+  "archive_hits": 0,
+  "has_visuals": false,
+  "generated_at": "2026-11-28T05:39:47",
+  "size_kb": 14
+}
